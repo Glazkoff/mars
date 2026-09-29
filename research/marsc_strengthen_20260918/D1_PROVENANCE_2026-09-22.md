@@ -57,6 +57,10 @@ should be (a) placed under `d1d2/d1/sheets/` and in the release archive, and (b)
 `export.jsonl` (500 + 500 + 58 rows). Until that comparison is on record, the equality of platform entries
 and sheets rests on the author's account; the check is mechanical once the sheets are available.
 
+Since 2026-09-29 the comparison is a single command, `code/d1_reconcile.py` (export, key and the three completed
+sheets in, a report with the checked counts, every mismatch and the file hashes out); it has not been run on the
+real sheets, which are with the author.
+
 ## 6. Reproduction of the checks above
 
 Timing: the script in the earlier version of this file (per-account inter-item gaps from `export.jsonl`).
