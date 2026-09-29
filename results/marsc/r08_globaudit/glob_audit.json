@@ -1,0 +1,1541 @@
+{
+ "scanned": 121,
+ "flagged": 50,
+ "flagged_in_live_jobs": 0,
+ "rows": [
+  {
+   "sbatch": "mc_analyze.sbatch",
+   "superseded": false,
+   "pattern": "${MC_GLOB:-$MC/scores/acu_mc-*_seed*.jsonl}",
+   "expanded": "/home/user/results/marsc/scores/acu_mc-*_seed*.jsonl",
+   "n_files": 56,
+   "verdict": "MULTI_SYSTEM",
+   "why": "56 files, consumed by a script that groups by system",
+   "files": [
+    "acu_mc-A-lam1-crossenc-full_seed20260906.jsonl",
+    "acu_mc-A-lam1-crossenc-full_seed20260906_logits.jsonl",
+    "acu_mc-A-lam1-crossenc-full_seed20260907.jsonl",
+    "acu_mc-A-lam1-crossenc-full_seed20260907_logits.jsonl",
+    "acu_mc-A-lam1-crossenc-full_seed20260908.jsonl",
+    "acu_mc-A-lam1-crossenc-full_seed20260908_logits.jsonl",
+    "acu_mc-A-lam1-crossenc-inv_seed20260906.jsonl",
+    "acu_mc-A-lam1-crossenc-inv_seed20260906_logits.jsonl",
+    "acu_mc-A-lam1-crossenc-inv_seed20260907.jsonl",
+    "acu_mc-A-lam1-crossenc-inv_seed20260907_logits.jsonl",
+    "acu_mc-A-lam1-crossenc-inv_seed20260908.jsonl",
+    "acu_mc-A-lam1-crossenc-inv_seed20260908_logits.jsonl",
+    "acu_mc-A-lam1-crossenc-screenx_seed20260906.jsonl",
+    "acu_mc-A-lam1-crossenc-screenx_seed20260906_logits.jsonl",
+    "acu_mc-A-lam1-crossenc-xdom-rose_cnndm_seed20260906.jsonl",
+    "acu_mc-A-lam1-crossenc-xdom-rose_cnndm_seed20260906_logits.jsonl",
+    "acu_mc-A-lam1-crossenc-xdom-rose_cnndm_seed20260907.jsonl",
+    "acu_mc-A-lam1-crossenc-xdom-rose_cnndm_seed20260907_logits.jsonl",
+    "acu_mc-A-lam1-crossenc-xdom-rose_cnndm_seed20260908.jsonl",
+    "acu_mc-A-lam1-crossenc-xdom-rose_cnndm_seed20260908_logits.jsonl",
+    "acu_mc-A-lam1-crossenc-xdom-rose_samsum_seed20260906.jsonl",
+    "acu_mc-A-lam1-crossenc-xdom-rose_samsum_seed20260906_logits.jsonl",
+    "acu_mc-A-lam1-crossenc-xdom-rose_samsum_seed20260907.jsonl",
+    "acu_mc-A-lam1-crossenc-xdom-rose_samsum_seed20260907_logits.jsonl",
+    "acu_mc-A-lam1-crossenc-xdom-rose_samsum_seed20260908.jsonl",
+    "acu_mc-A-lam1-crossenc-xdom-rose_samsum_seed20260908_logits.jsonl",
+    "acu_mc-A-lam1-crossenc-xdom-rose_xsum_seed20260906.jsonl",
+    "acu_mc-A-lam1-crossenc-xdom-rose_xsum_seed20260906_logits.jsonl",
+    "acu_mc-A-lam1-crossenc-xdom-rose_xsum_seed20260907.jsonl",
+    "acu_mc-A-lam1-crossenc-xdom-rose_xsum_seed20260907_logits.jsonl",
+    "acu_mc-A-lam1-crossenc-xdom-rose_xsum_seed20260908.jsonl",
+    "acu_mc-A-lam1-crossenc-xdom-rose_xsum_seed20260908_logits.jsonl",
+    "acu_mc-A-lam1-tagger-screen_seed20260906.jsonl",
+    "acu_mc-A-lam1-tagger-screen_seed20260906_logits.jsonl",
+    "acu_mc-B-lam1-crossenc-screenx_seed20260906.jsonl",
+    "acu_mc-B-lam1-crossenc-screenx_seed20260906_logits.jsonl",
+    "acu_mc-B-lam1-tagger-screen_seed20260906.jsonl",
+    "acu_mc-B-lam1-tagger-screen_seed20260906_logits.jsonl",
+    "acu_mc-C-lam1-crossenc-screenx_seed20260906.jsonl",
+    "acu_mc-C-lam1-crossenc-screenx_seed20260906_logits.jsonl",
+    "acu_mc-C-lam1-tagger-screen_seed20260906.jsonl",
+    "acu_mc-C-lam1-tagger-screen_seed20260906_logits.jsonl",
+    "acu_mc-D-lam1-crossenc-screenx_seed20260906.jsonl",
+    "acu_mc-D-lam1-crossenc-screenx_seed20260906_logits.jsonl",
+    "acu_mc-D-lam1-tagger-screen_seed20260906.jsonl",
+    "acu_mc-D-lam1-tagger-screen_seed20260906_logits.jsonl",
+    "acu_mc-R-lam1-crossenc-full_seed20260906.jsonl",
+    "acu_mc-R-lam1-crossenc-full_seed20260906_logits.jsonl",
+    "acu_mc-R-lam1-crossenc-full_seed20260907.jsonl",
+    "acu_mc-R-lam1-crossenc-full_seed20260907_logits.jsonl",
+    "acu_mc-R-lam1-crossenc-full_seed20260908.jsonl",
+    "acu_mc-R-lam1-crossenc-full_seed20260908_logits.jsonl",
+    "acu_mc-R-lam1-crossenc-screenx_seed20260906.jsonl",
+    "acu_mc-R-lam1-crossenc-screenx_seed20260906_logits.jsonl",
+    "acu_mc-R-lam1-tagger-screen_seed20260906.jsonl",
+    "acu_mc-R-lam1-tagger-screen_seed20260906_logits.jsonl"
+   ]
+  },
+  {
+   "sbatch": "mc_e2ctl.sbatch",
+   "superseded": true,
+   "pattern": "$IMP2/scores/distilled_humanfact_seed*.jsonl",
+   "expanded": "/home/user/results/marsc/e2imp_all/scores/distilled_humanfact_seed*.jsonl",
+   "n_files": 3,
+   "verdict": "OK",
+   "why": "3 files, 3 distinct seeds",
+   "files": []
+  },
+  {
+   "sbatch": "mc_e2ctl.sbatch",
+   "superseded": true,
+   "pattern": "$IMP2/val/distilled_humanfact_seed*_imp0.2.jsonl",
+   "expanded": "/home/user/results/marsc/e2imp_all/val/distilled_humanfact_seed*_imp0.2.jsonl",
+   "n_files": 3,
+   "verdict": "OK",
+   "why": "3 files, 3 distinct seeds",
+   "files": []
+  },
+  {
+   "sbatch": "mc_e2ctl.sbatch",
+   "superseded": true,
+   "pattern": "$IMP2/val/units_distilled_xenc_seed*_imp0.2.jsonl",
+   "expanded": "/home/user/results/marsc/e2imp_all/val/units_distilled_xenc_seed*_imp0.2.jsonl",
+   "n_files": 3,
+   "verdict": "OK",
+   "why": "3 files, 3 distinct seeds",
+   "files": []
+  },
+  {
+   "sbatch": "mc_e2ctl.sbatch",
+   "superseded": true,
+   "pattern": "$IMP2/val/units_gemma+ent_mc-A-lam1-crossenc-inv_seed*_imp0.2.jsonl",
+   "expanded": "/home/user/results/marsc/e2imp_all/val/units_gemma+ent_mc-A-lam1-crossenc-inv_seed*_imp0.2.jsonl",
+   "n_files": 3,
+   "verdict": "OK",
+   "why": "3 files, 3 distinct seeds",
+   "files": []
+  },
+  {
+   "sbatch": "mc_e2ctl.sbatch",
+   "superseded": true,
+   "pattern": "$IMP2/val/units_gemma+ent_xenc_seed*_imp0.2.jsonl",
+   "expanded": "/home/user/results/marsc/e2imp_all/val/units_gemma+ent_xenc_seed*_imp0.2.jsonl",
+   "n_files": 3,
+   "verdict": "OK",
+   "why": "3 files, 3 distinct seeds",
+   "files": []
+  },
+  {
+   "sbatch": "mc_e2ctl.sbatch",
+   "superseded": true,
+   "pattern": "$M3/scores/units_distilled_xenc_seed*.jsonl",
+   "expanded": "/home/user/results/mars3/scores/units_distilled_xenc_seed*.jsonl",
+   "n_files": 3,
+   "verdict": "OK",
+   "why": "3 files, 3 distinct seeds",
+   "files": []
+  },
+  {
+   "sbatch": "mc_e2ctl.sbatch",
+   "superseded": true,
+   "pattern": "$M3/scores/units_gemma+ent_xenc_seed*.jsonl",
+   "expanded": "/home/user/results/mars3/scores/units_gemma+ent_xenc_seed*.jsonl",
+   "n_files": 3,
+   "verdict": "OK",
+   "why": "3 files, 3 distinct seeds",
+   "files": []
+  },
+  {
+   "sbatch": "mc_e2ctl.sbatch",
+   "superseded": true,
+   "pattern": "$MC/scores/units_gemma+ent_mc-A-lam1-crossenc-inv_seed*.jsonl",
+   "expanded": "/home/user/results/marsc/scores/units_gemma+ent_mc-A-lam1-crossenc-inv_seed*.jsonl",
+   "n_files": 3,
+   "verdict": "OK",
+   "why": "3 files, 3 distinct seeds",
+   "files": []
+  },
+  {
+   "sbatch": "mc_e2div.sbatch",
+   "superseded": true,
+   "pattern": "$DIV/val/distilled_humanfact_seed*_div1.jsonl",
+   "expanded": "/home/user/results/marsc/e2div/val/distilled_humanfact_seed*_div1.jsonl",
+   "n_files": 6,
+   "verdict": "DUP_SEED",
+   "why": "6 files but 3 distinct seeds; repeated {'20260906': 2, '20260907': 2, '20260908': 2}",
+   "files": [
+    "distilled_humanfact_seed20260906_div1.jsonl",
+    "distilled_humanfact_seed20260906_imp0.2_div1.jsonl",
+    "distilled_humanfact_seed20260907_div1.jsonl",
+    "distilled_humanfact_seed20260907_imp0.2_div1.jsonl",
+    "distilled_humanfact_seed20260908_div1.jsonl",
+    "distilled_humanfact_seed20260908_imp0.2_div1.jsonl"
+   ]
+  },
+  {
+   "sbatch": "mc_e2div.sbatch",
+   "superseded": true,
+   "pattern": "$DIV/val/distilled_humanfact_seed*_imp0.2_div1.jsonl",
+   "expanded": "/home/user/results/marsc/e2div/val/distilled_humanfact_seed*_imp0.2_div1.jsonl",
+   "n_files": 3,
+   "verdict": "OK",
+   "why": "3 files, 3 distinct seeds",
+   "files": []
+  },
+  {
+   "sbatch": "mc_e2div.sbatch",
+   "superseded": true,
+   "pattern": "$DIV/val/units_distilled_xenc_seed*_div1.jsonl",
+   "expanded": "/home/user/results/marsc/e2div/val/units_distilled_xenc_seed*_div1.jsonl",
+   "n_files": 6,
+   "verdict": "DUP_SEED",
+   "why": "6 files but 3 distinct seeds; repeated {'20260906': 2, '20260907': 2, '20260908': 2}",
+   "files": [
+    "units_distilled_xenc_seed20260906_div1.jsonl",
+    "units_distilled_xenc_seed20260906_imp0.2_div1.jsonl",
+    "units_distilled_xenc_seed20260907_div1.jsonl",
+    "units_distilled_xenc_seed20260907_imp0.2_div1.jsonl",
+    "units_distilled_xenc_seed20260908_div1.jsonl",
+    "units_distilled_xenc_seed20260908_imp0.2_div1.jsonl"
+   ]
+  },
+  {
+   "sbatch": "mc_e2div.sbatch",
+   "superseded": true,
+   "pattern": "$DIV/val/units_distilled_xenc_seed*_imp0.2_div1.jsonl",
+   "expanded": "/home/user/results/marsc/e2div/val/units_distilled_xenc_seed*_imp0.2_div1.jsonl",
+   "n_files": 3,
+   "verdict": "OK",
+   "why": "3 files, 3 distinct seeds",
+   "files": []
+  },
+  {
+   "sbatch": "mc_e2div.sbatch",
+   "superseded": true,
+   "pattern": "$DIV/val/units_gemma+ent_mc-A-lam1-crossenc-inv_seed*_div1.jsonl",
+   "expanded": "/home/user/results/marsc/e2div/val/units_gemma+ent_mc-A-lam1-crossenc-inv_seed*_div1.jsonl",
+   "n_files": 6,
+   "verdict": "DUP_SEED",
+   "why": "6 files but 3 distinct seeds; repeated {'20260906': 2, '20260907': 2, '20260908': 2}",
+   "files": [
+    "units_gemma+ent_mc-A-lam1-crossenc-inv_seed20260906_div1.jsonl",
+    "units_gemma+ent_mc-A-lam1-crossenc-inv_seed20260906_imp0.2_div1.jsonl",
+    "units_gemma+ent_mc-A-lam1-crossenc-inv_seed20260907_div1.jsonl",
+    "units_gemma+ent_mc-A-lam1-crossenc-inv_seed20260907_imp0.2_div1.jsonl",
+    "units_gemma+ent_mc-A-lam1-crossenc-inv_seed20260908_div1.jsonl",
+    "units_gemma+ent_mc-A-lam1-crossenc-inv_seed20260908_imp0.2_div1.jsonl"
+   ]
+  },
+  {
+   "sbatch": "mc_e2div.sbatch",
+   "superseded": true,
+   "pattern": "$DIV/val/units_gemma+ent_mc-A-lam1-crossenc-inv_seed*_imp0.2_div1.jsonl",
+   "expanded": "/home/user/results/marsc/e2div/val/units_gemma+ent_mc-A-lam1-crossenc-inv_seed*_imp0.2_div1.jsonl",
+   "n_files": 3,
+   "verdict": "OK",
+   "why": "3 files, 3 distinct seeds",
+   "files": []
+  },
+  {
+   "sbatch": "mc_e2div.sbatch",
+   "superseded": true,
+   "pattern": "$DIV/val/units_gemma+ent_xenc_seed*_imp0.2_div1.jsonl",
+   "expanded": "/home/user/results/marsc/e2div/val/units_gemma+ent_xenc_seed*_imp0.2_div1.jsonl",
+   "n_files": 3,
+   "verdict": "OK",
+   "why": "3 files, 3 distinct seeds",
+   "files": []
+  },
+  {
+   "sbatch": "mc_e2div.sbatch",
+   "superseded": true,
+   "pattern": "$IMP2/scores/distilled_humanfact_seed*.jsonl",
+   "expanded": "/home/user/results/marsc/e2imp_all/scores/distilled_humanfact_seed*.jsonl",
+   "n_files": 3,
+   "verdict": "OK",
+   "why": "3 files, 3 distinct seeds",
+   "files": []
+  },
+  {
+   "sbatch": "mc_e2div.sbatch",
+   "superseded": true,
+   "pattern": "$IMP2/val/distilled_humanfact_seed*_imp0.2.jsonl",
+   "expanded": "/home/user/results/marsc/e2imp_all/val/distilled_humanfact_seed*_imp0.2.jsonl",
+   "n_files": 3,
+   "verdict": "OK",
+   "why": "3 files, 3 distinct seeds",
+   "files": []
+  },
+  {
+   "sbatch": "mc_e2div.sbatch",
+   "superseded": true,
+   "pattern": "$IMP2/val/units_distilled_xenc_seed*_imp0.2.jsonl",
+   "expanded": "/home/user/results/marsc/e2imp_all/val/units_distilled_xenc_seed*_imp0.2.jsonl",
+   "n_files": 3,
+   "verdict": "OK",
+   "why": "3 files, 3 distinct seeds",
+   "files": []
+  },
+  {
+   "sbatch": "mc_e2div.sbatch",
+   "superseded": true,
+   "pattern": "$IMP2/val/units_gemma+ent_mc-A-lam1-crossenc-inv_seed*_imp0.2.jsonl",
+   "expanded": "/home/user/results/marsc/e2imp_all/val/units_gemma+ent_mc-A-lam1-crossenc-inv_seed*_imp0.2.jsonl",
+   "n_files": 3,
+   "verdict": "OK",
+   "why": "3 files, 3 distinct seeds",
+   "files": []
+  },
+  {
+   "sbatch": "mc_e2div.sbatch",
+   "superseded": true,
+   "pattern": "$IMP2/val/units_gemma+ent_xenc_seed*_imp0.2.jsonl",
+   "expanded": "/home/user/results/marsc/e2imp_all/val/units_gemma+ent_xenc_seed*_imp0.2.jsonl",
+   "n_files": 3,
+   "verdict": "OK",
+   "why": "3 files, 3 distinct seeds",
+   "files": []
+  },
+  {
+   "sbatch": "mc_e2div.sbatch",
+   "superseded": true,
+   "pattern": "$M3/scores/units_distilled_xenc_seed*.jsonl",
+   "expanded": "/home/user/results/mars3/scores/units_distilled_xenc_seed*.jsonl",
+   "n_files": 3,
+   "verdict": "OK",
+   "why": "3 files, 3 distinct seeds",
+   "files": []
+  },
+  {
+   "sbatch": "mc_e2div.sbatch",
+   "superseded": true,
+   "pattern": "$MC/scores/units_gemma+ent_mc-A-lam1-crossenc-inv_seed*.jsonl",
+   "expanded": "/home/user/results/marsc/scores/units_gemma+ent_mc-A-lam1-crossenc-inv_seed*.jsonl",
+   "n_files": 3,
+   "verdict": "OK",
+   "why": "3 files, 3 distinct seeds",
+   "files": []
+  },
+  {
+   "sbatch": "mc_e2div_full.sbatch",
+   "superseded": true,
+   "pattern": "$DF/val/units_gemma+ent_tagger_facts_seed*_div1.jsonl",
+   "expanded": "/home/user/results/marsc/e2div_full/val/units_gemma+ent_tagger_facts_seed*_div1.jsonl",
+   "n_files": 3,
+   "verdict": "OK",
+   "why": "3 files, 3 distinct seeds",
+   "files": []
+  },
+  {
+   "sbatch": "mc_e2div_full.sbatch",
+   "superseded": true,
+   "pattern": "$DF/val/units_gemma+ent_xenc_seed*_div1.jsonl",
+   "expanded": "/home/user/results/marsc/e2div_full/val/units_gemma+ent_xenc_seed*_div1.jsonl",
+   "n_files": 3,
+   "verdict": "OK",
+   "why": "3 files, 3 distinct seeds",
+   "files": []
+  },
+  {
+   "sbatch": "mc_e2div_full.sbatch",
+   "superseded": true,
+   "pattern": "$DF/val/units_gemma_xenc_seed*_div1.jsonl",
+   "expanded": "/home/user/results/marsc/e2div_full/val/units_gemma_xenc_seed*_div1.jsonl",
+   "n_files": 3,
+   "verdict": "OK",
+   "why": "3 files, 3 distinct seeds",
+   "files": []
+  },
+  {
+   "sbatch": "mc_e2div_full.sbatch",
+   "superseded": true,
+   "pattern": "$DF/val/units_spacy_tagger_seed*_div1.jsonl",
+   "expanded": "/home/user/results/marsc/e2div_full/val/units_spacy_tagger_seed*_div1.jsonl",
+   "n_files": 3,
+   "verdict": "OK",
+   "why": "3 files, 3 distinct seeds",
+   "files": []
+  },
+  {
+   "sbatch": "mc_e2div_full.sbatch",
+   "superseded": true,
+   "pattern": "$DF/val/units_spacy_xenc_seed*_div1.jsonl",
+   "expanded": "/home/user/results/marsc/e2div_full/val/units_spacy_xenc_seed*_div1.jsonl",
+   "n_files": 3,
+   "verdict": "OK",
+   "why": "3 files, 3 distinct seeds",
+   "files": []
+  },
+  {
+   "sbatch": "mc_e2div_full.sbatch",
+   "superseded": true,
+   "pattern": "$DIV/val/distilled_humanfact_seed*_div1.jsonl",
+   "expanded": "/home/user/results/marsc/e2div/val/distilled_humanfact_seed*_div1.jsonl",
+   "n_files": 6,
+   "verdict": "DUP_SEED",
+   "why": "6 files but 3 distinct seeds; repeated {'20260906': 2, '20260907': 2, '20260908': 2}",
+   "files": [
+    "distilled_humanfact_seed20260906_div1.jsonl",
+    "distilled_humanfact_seed20260906_imp0.2_div1.jsonl",
+    "distilled_humanfact_seed20260907_div1.jsonl",
+    "distilled_humanfact_seed20260907_imp0.2_div1.jsonl",
+    "distilled_humanfact_seed20260908_div1.jsonl",
+    "distilled_humanfact_seed20260908_imp0.2_div1.jsonl"
+   ]
+  },
+  {
+   "sbatch": "mc_e2div_full.sbatch",
+   "superseded": true,
+   "pattern": "$DIV/val/units_distilled_xenc_seed*_div1.jsonl",
+   "expanded": "/home/user/results/marsc/e2div/val/units_distilled_xenc_seed*_div1.jsonl",
+   "n_files": 6,
+   "verdict": "DUP_SEED",
+   "why": "6 files but 3 distinct seeds; repeated {'20260906': 2, '20260907': 2, '20260908': 2}",
+   "files": [
+    "units_distilled_xenc_seed20260906_div1.jsonl",
+    "units_distilled_xenc_seed20260906_imp0.2_div1.jsonl",
+    "units_distilled_xenc_seed20260907_div1.jsonl",
+    "units_distilled_xenc_seed20260907_imp0.2_div1.jsonl",
+    "units_distilled_xenc_seed20260908_div1.jsonl",
+    "units_distilled_xenc_seed20260908_imp0.2_div1.jsonl"
+   ]
+  },
+  {
+   "sbatch": "mc_e2div_full.sbatch",
+   "superseded": true,
+   "pattern": "$DIV/val/units_gemma+ent_mc-A-lam1-crossenc-inv_seed*_div1.jsonl",
+   "expanded": "/home/user/results/marsc/e2div/val/units_gemma+ent_mc-A-lam1-crossenc-inv_seed*_div1.jsonl",
+   "n_files": 6,
+   "verdict": "DUP_SEED",
+   "why": "6 files but 3 distinct seeds; repeated {'20260906': 2, '20260907': 2, '20260908': 2}",
+   "files": [
+    "units_gemma+ent_mc-A-lam1-crossenc-inv_seed20260906_div1.jsonl",
+    "units_gemma+ent_mc-A-lam1-crossenc-inv_seed20260906_imp0.2_div1.jsonl",
+    "units_gemma+ent_mc-A-lam1-crossenc-inv_seed20260907_div1.jsonl",
+    "units_gemma+ent_mc-A-lam1-crossenc-inv_seed20260907_imp0.2_div1.jsonl",
+    "units_gemma+ent_mc-A-lam1-crossenc-inv_seed20260908_div1.jsonl",
+    "units_gemma+ent_mc-A-lam1-crossenc-inv_seed20260908_imp0.2_div1.jsonl"
+   ]
+  },
+  {
+   "sbatch": "mc_e2div_full.sbatch",
+   "superseded": true,
+   "pattern": "$DIV/val/units_gemma+ent_mc-A-lam1-crossenc-inv_seed*_imp0.2_div1.jsonl",
+   "expanded": "/home/user/results/marsc/e2div/val/units_gemma+ent_mc-A-lam1-crossenc-inv_seed*_imp0.2_div1.jsonl",
+   "n_files": 3,
+   "verdict": "OK",
+   "why": "3 files, 3 distinct seeds",
+   "files": []
+  },
+  {
+   "sbatch": "mc_e2div_full.sbatch",
+   "superseded": true,
+   "pattern": "$IMP2/scores/distilled_humanfact_seed*.jsonl",
+   "expanded": "/home/user/results/marsc/e2imp_all/scores/distilled_humanfact_seed*.jsonl",
+   "n_files": 3,
+   "verdict": "OK",
+   "why": "3 files, 3 distinct seeds",
+   "files": []
+  },
+  {
+   "sbatch": "mc_e2div_full.sbatch",
+   "superseded": true,
+   "pattern": "$IMP2/val/distilled_humanfact_seed*_imp0.2.jsonl",
+   "expanded": "/home/user/results/marsc/e2imp_all/val/distilled_humanfact_seed*_imp0.2.jsonl",
+   "n_files": 3,
+   "verdict": "OK",
+   "why": "3 files, 3 distinct seeds",
+   "files": []
+  },
+  {
+   "sbatch": "mc_e2div_full.sbatch",
+   "superseded": true,
+   "pattern": "$M3/scores/units_distilled_xenc_seed*.jsonl",
+   "expanded": "/home/user/results/mars3/scores/units_distilled_xenc_seed*.jsonl",
+   "n_files": 3,
+   "verdict": "OK",
+   "why": "3 files, 3 distinct seeds",
+   "files": []
+  },
+  {
+   "sbatch": "mc_e2div_full.sbatch",
+   "superseded": true,
+   "pattern": "$M3/scores/units_spacy_tagger_seed*.jsonl",
+   "expanded": "/home/user/results/mars3/scores/units_spacy_tagger_seed*.jsonl",
+   "n_files": 3,
+   "verdict": "OK",
+   "why": "3 files, 3 distinct seeds",
+   "files": []
+  },
+  {
+   "sbatch": "mc_e2div_full.sbatch",
+   "superseded": true,
+   "pattern": "$MC/scores/units_gemma+ent_mc-A-lam1-crossenc-inv_seed*.jsonl",
+   "expanded": "/home/user/results/marsc/scores/units_gemma+ent_mc-A-lam1-crossenc-inv_seed*.jsonl",
+   "n_files": 3,
+   "verdict": "OK",
+   "why": "3 files, 3 distinct seeds",
+   "files": []
+  },
+  {
+   "sbatch": "mc_e2div_full.sbatch",
+   "superseded": true,
+   "pattern": "$PLAN_OUT/b2/scores/direct_enabled_seed*/units_validation.jsonl",
+   "expanded": "/home/user/results/plan2026/b2/scores/direct_enabled_seed*/units_validation.jsonl",
+   "n_files": 5,
+   "verdict": "OK",
+   "why": "5 files, 5 distinct seeds",
+   "files": []
+  },
+  {
+   "sbatch": "mc_e2imp.sbatch",
+   "superseded": true,
+   "pattern": "$IMP/scores/gemma+ent_tune_humanfact_seed*.jsonl",
+   "expanded": "/home/user/results/marsc/e2imp/scores/gemma+ent_tune_humanfact_seed*.jsonl",
+   "n_files": 3,
+   "verdict": "OK",
+   "why": "3 files, 3 distinct seeds",
+   "files": []
+  },
+  {
+   "sbatch": "mc_e2imp.sbatch",
+   "superseded": true,
+   "pattern": "$M3/scores/units_distilled_xenc_seed*.jsonl",
+   "expanded": "/home/user/results/mars3/scores/units_distilled_xenc_seed*.jsonl",
+   "n_files": 3,
+   "verdict": "OK",
+   "why": "3 files, 3 distinct seeds",
+   "files": []
+  },
+  {
+   "sbatch": "mc_e2imp.sbatch",
+   "superseded": true,
+   "pattern": "$M3/scores/units_gemma+ent_xenc_seed*.jsonl",
+   "expanded": "/home/user/results/mars3/scores/units_gemma+ent_xenc_seed*.jsonl",
+   "n_files": 3,
+   "verdict": "OK",
+   "why": "3 files, 3 distinct seeds",
+   "files": []
+  },
+  {
+   "sbatch": "mc_e2imp.sbatch",
+   "superseded": true,
+   "pattern": "$M3/scores/units_spacy_tagger_seed*.jsonl",
+   "expanded": "/home/user/results/mars3/scores/units_spacy_tagger_seed*.jsonl",
+   "n_files": 3,
+   "verdict": "OK",
+   "why": "3 files, 3 distinct seeds",
+   "files": []
+  },
+  {
+   "sbatch": "mc_e2imp.sbatch",
+   "superseded": true,
+   "pattern": "$MC/scores/units_gemma+ent_mc-A-lam1-crossenc-inv_seed*.jsonl",
+   "expanded": "/home/user/results/marsc/scores/units_gemma+ent_mc-A-lam1-crossenc-inv_seed*.jsonl",
+   "n_files": 3,
+   "verdict": "OK",
+   "why": "3 files, 3 distinct seeds",
+   "files": []
+  },
+  {
+   "sbatch": "mc_e2imp.sbatch",
+   "superseded": true,
+   "pattern": "$PLAN_OUT/b2/scores/direct_enabled_seed*/units_validation.jsonl",
+   "expanded": "/home/user/results/plan2026/b2/scores/direct_enabled_seed*/units_validation.jsonl",
+   "n_files": 5,
+   "verdict": "OK",
+   "why": "5 files, 5 distinct seeds",
+   "files": []
+  },
+  {
+   "sbatch": "mc_e2imp_all.sbatch",
+   "superseded": true,
+   "pattern": "$IMP2/scores/distilled_humanfact_seed*.jsonl",
+   "expanded": "/home/user/results/marsc/e2imp_all/scores/distilled_humanfact_seed*.jsonl",
+   "n_files": 3,
+   "verdict": "OK",
+   "why": "3 files, 3 distinct seeds",
+   "files": []
+  },
+  {
+   "sbatch": "mc_e2imp_all.sbatch",
+   "superseded": true,
+   "pattern": "$M3/scores/units_distilled_xenc_seed*.jsonl",
+   "expanded": "/home/user/results/mars3/scores/units_distilled_xenc_seed*.jsonl",
+   "n_files": 3,
+   "verdict": "OK",
+   "why": "3 files, 3 distinct seeds",
+   "files": []
+  },
+  {
+   "sbatch": "mc_e2imp_all.sbatch",
+   "superseded": true,
+   "pattern": "$MC/scores/units_gemma+ent_mc-A-lam1-crossenc-inv_seed*.jsonl",
+   "expanded": "/home/user/results/marsc/scores/units_gemma+ent_mc-A-lam1-crossenc-inv_seed*.jsonl",
+   "n_files": 3,
+   "verdict": "OK",
+   "why": "3 files, 3 distinct seeds",
+   "files": []
+  },
+  {
+   "sbatch": "mc_e2imp_all.sbatch",
+   "superseded": true,
+   "pattern": "$PLAN_OUT/b2/scores/direct_enabled_seed*/units_validation.jsonl",
+   "expanded": "/home/user/results/plan2026/b2/scores/direct_enabled_seed*/units_validation.jsonl",
+   "n_files": 5,
+   "verdict": "OK",
+   "why": "5 files, 5 distinct seeds",
+   "files": []
+  },
+  {
+   "sbatch": "mc_e2pilot_analyze.sbatch",
+   "superseded": true,
+   "pattern": "$G/b21/scores/acu_xenc_seed*.jsonl",
+   "expanded": "/home/user/results/mars2_gates/b21/scores/acu_xenc_seed*.jsonl",
+   "n_files": 3,
+   "verdict": "OK",
+   "why": "3 files, 3 distinct seeds",
+   "files": []
+  },
+  {
+   "sbatch": "mc_e2pilot_analyze.sbatch",
+   "superseded": true,
+   "pattern": "$MC/scores/units_gemma+ent_mc-A-lam1-crossenc-inv_seed*.jsonl",
+   "expanded": "/home/user/results/marsc/scores/units_gemma+ent_mc-A-lam1-crossenc-inv_seed*.jsonl",
+   "n_files": 3,
+   "verdict": "OK",
+   "why": "3 files, 3 distinct seeds",
+   "files": []
+  },
+  {
+   "sbatch": "mc_e2pilot_analyze.sbatch",
+   "superseded": true,
+   "pattern": "humanfact_xenc=$M3/m32/units_gemma+ent_validation.jsonl:$MC/scores/units_gemma+ent_mc-A-lam1-crossenc-inv_seed*.jsonl",
+   "expanded": "humanfact_xenc=/home/user/results/mars3/m32/units_gemma+ent_validation.jsonl:/home/user/results/marsc/scores/units_gemma+ent_mc-A-lam1-crossenc-inv_seed*.jsonl",
+   "n_files": 0,
+   "verdict": "EMPTY",
+   "why": "no file matched",
+   "files": []
+  },
+  {
+   "sbatch": "mc_g1_test.sbatch",
+   "superseded": true,
+   "pattern": "$G1/inv/union_humanfact_seed*.jsonl",
+   "expanded": "/home/user/results/marsc/g1_test/inv/union_humanfact_seed*.jsonl",
+   "n_files": 0,
+   "verdict": "EMPTY",
+   "why": "no file matched",
+   "files": []
+  },
+  {
+   "sbatch": "mc_g1_test.sbatch",
+   "superseded": true,
+   "pattern": "$G1/scores/distilled_xenc_seed*.jsonl",
+   "expanded": "/home/user/results/marsc/g1_test/scores/distilled_xenc_seed*.jsonl",
+   "n_files": 3,
+   "verdict": "OK",
+   "why": "3 files, 3 distinct seeds",
+   "files": []
+  },
+  {
+   "sbatch": "mc_g1_test.sbatch",
+   "superseded": true,
+   "pattern": "$G1/scores/gemma+ent_humanfact_seed*.jsonl",
+   "expanded": "/home/user/results/marsc/g1_test/scores/gemma+ent_humanfact_seed*.jsonl",
+   "n_files": 3,
+   "verdict": "OK",
+   "why": "3 files, 3 distinct seeds",
+   "files": []
+  },
+  {
+   "sbatch": "mc_g1_test.sbatch",
+   "superseded": true,
+   "pattern": "$G1/val/distilled_humanfact_seed*_div1.jsonl",
+   "expanded": "/home/user/results/marsc/g1_test/val/distilled_humanfact_seed*_div1.jsonl",
+   "n_files": 4,
+   "verdict": "PSEUDO_SEED",
+   "why": "non-numeric seed token(s) ['avg'] among 4 files",
+   "files": [
+    "distilled_humanfact_seed20260906_div1.jsonl",
+    "distilled_humanfact_seed20260907_div1.jsonl",
+    "distilled_humanfact_seed20260908_div1.jsonl",
+    "distilled_humanfact_seedavg_div1.jsonl"
+   ]
+  },
+  {
+   "sbatch": "mc_g1_test.sbatch",
+   "superseded": true,
+   "pattern": "$G1/val/distilled_xenc_seed*_div1.jsonl",
+   "expanded": "/home/user/results/marsc/g1_test/val/distilled_xenc_seed*_div1.jsonl",
+   "n_files": 4,
+   "verdict": "PSEUDO_SEED",
+   "why": "non-numeric seed token(s) ['avg'] among 4 files",
+   "files": [
+    "distilled_xenc_seed20260906_div1.jsonl",
+    "distilled_xenc_seed20260907_div1.jsonl",
+    "distilled_xenc_seed20260908_div1.jsonl",
+    "distilled_xenc_seedavg_div1.jsonl"
+   ]
+  },
+  {
+   "sbatch": "mc_g1_test.sbatch",
+   "superseded": true,
+   "pattern": "$G1/val/gemma+ent_humanfact_seed*_div1.jsonl",
+   "expanded": "/home/user/results/marsc/g1_test/val/gemma+ent_humanfact_seed*_div1.jsonl",
+   "n_files": 4,
+   "verdict": "PSEUDO_SEED",
+   "why": "non-numeric seed token(s) ['avg'] among 4 files",
+   "files": [
+    "gemma+ent_humanfact_seed20260906_div1.jsonl",
+    "gemma+ent_humanfact_seed20260907_div1.jsonl",
+    "gemma+ent_humanfact_seed20260908_div1.jsonl",
+    "gemma+ent_humanfact_seedavg_div1.jsonl"
+   ]
+  },
+  {
+   "sbatch": "mc_g1_test.sbatch",
+   "superseded": true,
+   "pattern": "$G1/val/gemma+ent_xenc_seed*_div1.jsonl",
+   "expanded": "/home/user/results/marsc/g1_test/val/gemma+ent_xenc_seed*_div1.jsonl",
+   "n_files": 4,
+   "verdict": "PSEUDO_SEED",
+   "why": "non-numeric seed token(s) ['avg'] among 4 files",
+   "files": [
+    "gemma+ent_xenc_seed20260906_div1.jsonl",
+    "gemma+ent_xenc_seed20260907_div1.jsonl",
+    "gemma+ent_xenc_seed20260908_div1.jsonl",
+    "gemma+ent_xenc_seedavg_div1.jsonl"
+   ]
+  },
+  {
+   "sbatch": "mc_g1_test.sbatch",
+   "superseded": true,
+   "pattern": "$G1/val/union_humanfact_seed*_div1.jsonl",
+   "expanded": "/home/user/results/marsc/g1_test/val/union_humanfact_seed*_div1.jsonl",
+   "n_files": 0,
+   "verdict": "EMPTY",
+   "why": "no file matched",
+   "files": []
+  },
+  {
+   "sbatch": "mc_g1_test.sbatch",
+   "superseded": true,
+   "pattern": "union_humanfact+div1=$G1/inv/units_union_test.jsonl:$G1/val/union_humanfact_seed*_div1.jsonl",
+   "expanded": "union_humanfact+div1=/home/user/results/marsc/g1_test/inv/units_union_test.jsonl:/home/user/results/marsc/g1_test/val/union_humanfact_seed*_div1.jsonl",
+   "n_files": 0,
+   "verdict": "EMPTY",
+   "why": "no file matched",
+   "files": []
+  },
+  {
+   "sbatch": "mc_g3.sbatch",
+   "superseded": true,
+   "pattern": "$DIV/val/distilled_humanfact_seed*_div1.jsonl",
+   "expanded": "/home/user/results/marsc/e2div/val/distilled_humanfact_seed*_div1.jsonl",
+   "n_files": 6,
+   "verdict": "DUP_SEED",
+   "why": "6 files but 3 distinct seeds; repeated {'20260906': 2, '20260907': 2, '20260908': 2}",
+   "files": [
+    "distilled_humanfact_seed20260906_div1.jsonl",
+    "distilled_humanfact_seed20260906_imp0.2_div1.jsonl",
+    "distilled_humanfact_seed20260907_div1.jsonl",
+    "distilled_humanfact_seed20260907_imp0.2_div1.jsonl",
+    "distilled_humanfact_seed20260908_div1.jsonl",
+    "distilled_humanfact_seed20260908_imp0.2_div1.jsonl"
+   ]
+  },
+  {
+   "sbatch": "mc_g3.sbatch",
+   "superseded": true,
+   "pattern": "$DIV/val/units_distilled_xenc_seed*_div1.jsonl",
+   "expanded": "/home/user/results/marsc/e2div/val/units_distilled_xenc_seed*_div1.jsonl",
+   "n_files": 6,
+   "verdict": "DUP_SEED",
+   "why": "6 files but 3 distinct seeds; repeated {'20260906': 2, '20260907': 2, '20260908': 2}",
+   "files": [
+    "units_distilled_xenc_seed20260906_div1.jsonl",
+    "units_distilled_xenc_seed20260906_imp0.2_div1.jsonl",
+    "units_distilled_xenc_seed20260907_div1.jsonl",
+    "units_distilled_xenc_seed20260907_imp0.2_div1.jsonl",
+    "units_distilled_xenc_seed20260908_div1.jsonl",
+    "units_distilled_xenc_seed20260908_imp0.2_div1.jsonl"
+   ]
+  },
+  {
+   "sbatch": "mc_g3.sbatch",
+   "superseded": true,
+   "pattern": "$DIV/val/units_gemma+ent_mc-A-lam1-crossenc-inv_seed*_div1.jsonl",
+   "expanded": "/home/user/results/marsc/e2div/val/units_gemma+ent_mc-A-lam1-crossenc-inv_seed*_div1.jsonl",
+   "n_files": 6,
+   "verdict": "DUP_SEED",
+   "why": "6 files but 3 distinct seeds; repeated {'20260906': 2, '20260907': 2, '20260908': 2}",
+   "files": [
+    "units_gemma+ent_mc-A-lam1-crossenc-inv_seed20260906_div1.jsonl",
+    "units_gemma+ent_mc-A-lam1-crossenc-inv_seed20260906_imp0.2_div1.jsonl",
+    "units_gemma+ent_mc-A-lam1-crossenc-inv_seed20260907_div1.jsonl",
+    "units_gemma+ent_mc-A-lam1-crossenc-inv_seed20260907_imp0.2_div1.jsonl",
+    "units_gemma+ent_mc-A-lam1-crossenc-inv_seed20260908_div1.jsonl",
+    "units_gemma+ent_mc-A-lam1-crossenc-inv_seed20260908_imp0.2_div1.jsonl"
+   ]
+  },
+  {
+   "sbatch": "mc_g3.sbatch",
+   "superseded": true,
+   "pattern": "$G3/val/union_mc-A-lam1-crossenc-inv_seed*_div1.jsonl",
+   "expanded": "/home/user/results/marsc/g3/val/union_mc-A-lam1-crossenc-inv_seed*_div1.jsonl",
+   "n_files": 0,
+   "verdict": "EMPTY",
+   "why": "no file matched",
+   "files": []
+  },
+  {
+   "sbatch": "mc_g3.sbatch",
+   "superseded": true,
+   "pattern": "$G3/val/union_xenc_seed*_div1.jsonl",
+   "expanded": "/home/user/results/marsc/g3/val/union_xenc_seed*_div1.jsonl",
+   "n_files": 0,
+   "verdict": "EMPTY",
+   "why": "no file matched",
+   "files": []
+  },
+  {
+   "sbatch": "mc_g3.sbatch",
+   "superseded": true,
+   "pattern": "$G3/val/units_gemma+ent_mc-A-lam1-crossenc-inv_seed*_div2.jsonl",
+   "expanded": "/home/user/results/marsc/g3/val/units_gemma+ent_mc-A-lam1-crossenc-inv_seed*_div2.jsonl",
+   "n_files": 3,
+   "verdict": "OK",
+   "why": "3 files, 3 distinct seeds",
+   "files": []
+  },
+  {
+   "sbatch": "mc_g3.sbatch",
+   "superseded": true,
+   "pattern": "$IMP2/scores/distilled_humanfact_seed*.jsonl",
+   "expanded": "/home/user/results/marsc/e2imp_all/scores/distilled_humanfact_seed*.jsonl",
+   "n_files": 3,
+   "verdict": "OK",
+   "why": "3 files, 3 distinct seeds",
+   "files": []
+  },
+  {
+   "sbatch": "mc_g3.sbatch",
+   "superseded": true,
+   "pattern": "$M3/scores/units_distilled_xenc_seed*.jsonl",
+   "expanded": "/home/user/results/mars3/scores/units_distilled_xenc_seed*.jsonl",
+   "n_files": 3,
+   "verdict": "OK",
+   "why": "3 files, 3 distinct seeds",
+   "files": []
+  },
+  {
+   "sbatch": "mc_g3.sbatch",
+   "superseded": true,
+   "pattern": "$M3/scores/units_gemma+ent_xenc_seed*.jsonl",
+   "expanded": "/home/user/results/mars3/scores/units_gemma+ent_xenc_seed*.jsonl",
+   "n_files": 3,
+   "verdict": "OK",
+   "why": "3 files, 3 distinct seeds",
+   "files": []
+  },
+  {
+   "sbatch": "mc_g3.sbatch",
+   "superseded": true,
+   "pattern": "$MC/e2div_full/val/units_spacy_tagger_seed*_div1.jsonl",
+   "expanded": "/home/user/results/marsc/e2div_full/val/units_spacy_tagger_seed*_div1.jsonl",
+   "n_files": 3,
+   "verdict": "OK",
+   "why": "3 files, 3 distinct seeds",
+   "files": []
+  },
+  {
+   "sbatch": "mc_g3.sbatch",
+   "superseded": true,
+   "pattern": "$MC/scores/units_gemma+ent_mc-A-lam1-crossenc-inv_seed*.jsonl",
+   "expanded": "/home/user/results/marsc/scores/units_gemma+ent_mc-A-lam1-crossenc-inv_seed*.jsonl",
+   "n_files": 3,
+   "verdict": "OK",
+   "why": "3 files, 3 distinct seeds",
+   "files": []
+  },
+  {
+   "sbatch": "mc_g3b.sbatch",
+   "superseded": true,
+   "pattern": "$B/val/union_gemma+ent_mc-A-lam1-crossenc-inv_seed*_div1.jsonl",
+   "expanded": "/home/user/results/marsc/g3/b/val/union_gemma+ent_mc-A-lam1-crossenc-inv_seed*_div1.jsonl",
+   "n_files": 3,
+   "verdict": "OK",
+   "why": "3 files, 3 distinct seeds",
+   "files": []
+  },
+  {
+   "sbatch": "mc_g3b.sbatch",
+   "superseded": true,
+   "pattern": "$B/val/union_gemma+ent_xenc_seed*_div1.jsonl",
+   "expanded": "/home/user/results/marsc/g3/b/val/union_gemma+ent_xenc_seed*_div1.jsonl",
+   "n_files": 3,
+   "verdict": "OK",
+   "why": "3 files, 3 distinct seeds",
+   "files": []
+  },
+  {
+   "sbatch": "mc_g3b.sbatch",
+   "superseded": true,
+   "pattern": "$DIV/val/units_distilled_xenc_seed*_div1.jsonl",
+   "expanded": "/home/user/results/marsc/e2div/val/units_distilled_xenc_seed*_div1.jsonl",
+   "n_files": 6,
+   "verdict": "DUP_SEED",
+   "why": "6 files but 3 distinct seeds; repeated {'20260906': 2, '20260907': 2, '20260908': 2}",
+   "files": [
+    "units_distilled_xenc_seed20260906_div1.jsonl",
+    "units_distilled_xenc_seed20260906_imp0.2_div1.jsonl",
+    "units_distilled_xenc_seed20260907_div1.jsonl",
+    "units_distilled_xenc_seed20260907_imp0.2_div1.jsonl",
+    "units_distilled_xenc_seed20260908_div1.jsonl",
+    "units_distilled_xenc_seed20260908_imp0.2_div1.jsonl"
+   ]
+  },
+  {
+   "sbatch": "mc_g3b.sbatch",
+   "superseded": true,
+   "pattern": "$DIV/val/units_gemma+ent_mc-A-lam1-crossenc-inv_seed*_div1.jsonl",
+   "expanded": "/home/user/results/marsc/e2div/val/units_gemma+ent_mc-A-lam1-crossenc-inv_seed*_div1.jsonl",
+   "n_files": 6,
+   "verdict": "DUP_SEED",
+   "why": "6 files but 3 distinct seeds; repeated {'20260906': 2, '20260907': 2, '20260908': 2}",
+   "files": [
+    "units_gemma+ent_mc-A-lam1-crossenc-inv_seed20260906_div1.jsonl",
+    "units_gemma+ent_mc-A-lam1-crossenc-inv_seed20260906_imp0.2_div1.jsonl",
+    "units_gemma+ent_mc-A-lam1-crossenc-inv_seed20260907_div1.jsonl",
+    "units_gemma+ent_mc-A-lam1-crossenc-inv_seed20260907_imp0.2_div1.jsonl",
+    "units_gemma+ent_mc-A-lam1-crossenc-inv_seed20260908_div1.jsonl",
+    "units_gemma+ent_mc-A-lam1-crossenc-inv_seed20260908_imp0.2_div1.jsonl"
+   ]
+  },
+  {
+   "sbatch": "mc_g3b.sbatch",
+   "superseded": true,
+   "pattern": "$M3/scores/units_distilled_xenc_seed*.jsonl",
+   "expanded": "/home/user/results/mars3/scores/units_distilled_xenc_seed*.jsonl",
+   "n_files": 3,
+   "verdict": "OK",
+   "why": "3 files, 3 distinct seeds",
+   "files": []
+  },
+  {
+   "sbatch": "mc_g3b.sbatch",
+   "superseded": true,
+   "pattern": "$M3/scores/units_gemma+ent_xenc_seed*.jsonl",
+   "expanded": "/home/user/results/mars3/scores/units_gemma+ent_xenc_seed*.jsonl",
+   "n_files": 3,
+   "verdict": "OK",
+   "why": "3 files, 3 distinct seeds",
+   "files": []
+  },
+  {
+   "sbatch": "mc_g3b.sbatch",
+   "superseded": true,
+   "pattern": "$MC/scores/units_gemma+ent_mc-A-lam1-crossenc-inv_seed*.jsonl",
+   "expanded": "/home/user/results/marsc/scores/units_gemma+ent_mc-A-lam1-crossenc-inv_seed*.jsonl",
+   "n_files": 3,
+   "verdict": "OK",
+   "why": "3 files, 3 distinct seeds",
+   "files": []
+  },
+  {
+   "sbatch": "mc_g7c_unisum_eval.sbatch",
+   "superseded": true,
+   "pattern": "$G7/scores/gemma+ent_humanfact_seed*.jsonl",
+   "expanded": "/home/user/results/marsc/g7_unisum/scores/gemma+ent_humanfact_seed*.jsonl",
+   "n_files": 3,
+   "verdict": "OK",
+   "why": "3 files, 3 distinct seeds",
+   "files": []
+  },
+  {
+   "sbatch": "mc_g7c_unisum_eval.sbatch",
+   "superseded": true,
+   "pattern": "$G7/scores/gemma+ent_xenc_seed*.jsonl",
+   "expanded": "/home/user/results/marsc/g7_unisum/scores/gemma+ent_xenc_seed*.jsonl",
+   "n_files": 3,
+   "verdict": "OK",
+   "why": "3 files, 3 distinct seeds",
+   "files": []
+  },
+  {
+   "sbatch": "mc_g7c_unisum_eval.sbatch",
+   "superseded": true,
+   "pattern": "$G7/val/gemma+ent_humanfact_seed*_div1.jsonl",
+   "expanded": "/home/user/results/marsc/g7_unisum/val/gemma+ent_humanfact_seed*_div1.jsonl",
+   "n_files": 4,
+   "verdict": "PSEUDO_SEED",
+   "why": "non-numeric seed token(s) ['avg'] among 4 files",
+   "files": [
+    "gemma+ent_humanfact_seed20260906_div1.jsonl",
+    "gemma+ent_humanfact_seed20260907_div1.jsonl",
+    "gemma+ent_humanfact_seed20260908_div1.jsonl",
+    "gemma+ent_humanfact_seedavg_div1.jsonl"
+   ]
+  },
+  {
+   "sbatch": "mc_g7c_unisum_eval.sbatch",
+   "superseded": true,
+   "pattern": "$G7/val/gemma+ent_xenc_seed*_div1.jsonl",
+   "expanded": "/home/user/results/marsc/g7_unisum/val/gemma+ent_xenc_seed*_div1.jsonl",
+   "n_files": 4,
+   "verdict": "PSEUDO_SEED",
+   "why": "non-numeric seed token(s) ['avg'] among 4 files",
+   "files": [
+    "gemma+ent_xenc_seed20260906_div1.jsonl",
+    "gemma+ent_xenc_seed20260907_div1.jsonl",
+    "gemma+ent_xenc_seed20260908_div1.jsonl",
+    "gemma+ent_xenc_seedavg_div1.jsonl"
+   ]
+  },
+  {
+   "sbatch": "mc_g7d_unisum_finish.sbatch",
+   "superseded": true,
+   "pattern": "$G7/scores/gemma+ent_humanfact_seed*.jsonl",
+   "expanded": "/home/user/results/marsc/g7_unisum/scores/gemma+ent_humanfact_seed*.jsonl",
+   "n_files": 3,
+   "verdict": "OK",
+   "why": "3 files, 3 distinct seeds",
+   "files": []
+  },
+  {
+   "sbatch": "mc_g7d_unisum_finish.sbatch",
+   "superseded": true,
+   "pattern": "$G7/scores/gemma+ent_xenc_seed*.jsonl",
+   "expanded": "/home/user/results/marsc/g7_unisum/scores/gemma+ent_xenc_seed*.jsonl",
+   "n_files": 3,
+   "verdict": "OK",
+   "why": "3 files, 3 distinct seeds",
+   "files": []
+  },
+  {
+   "sbatch": "mc_g7d_unisum_finish.sbatch",
+   "superseded": true,
+   "pattern": "$G7/val/gemma+ent_humanfact_seed*_div1.jsonl",
+   "expanded": "/home/user/results/marsc/g7_unisum/val/gemma+ent_humanfact_seed*_div1.jsonl",
+   "n_files": 4,
+   "verdict": "PSEUDO_SEED",
+   "why": "non-numeric seed token(s) ['avg'] among 4 files",
+   "files": [
+    "gemma+ent_humanfact_seed20260906_div1.jsonl",
+    "gemma+ent_humanfact_seed20260907_div1.jsonl",
+    "gemma+ent_humanfact_seed20260908_div1.jsonl",
+    "gemma+ent_humanfact_seedavg_div1.jsonl"
+   ]
+  },
+  {
+   "sbatch": "mc_g7d_unisum_finish.sbatch",
+   "superseded": true,
+   "pattern": "$G7/val/gemma+ent_xenc_seed*_div1.jsonl",
+   "expanded": "/home/user/results/marsc/g7_unisum/val/gemma+ent_xenc_seed*_div1.jsonl",
+   "n_files": 4,
+   "verdict": "PSEUDO_SEED",
+   "why": "non-numeric seed token(s) ['avg'] among 4 files",
+   "files": [
+    "gemma+ent_xenc_seed20260906_div1.jsonl",
+    "gemma+ent_xenc_seed20260907_div1.jsonl",
+    "gemma+ent_xenc_seed20260908_div1.jsonl",
+    "gemma+ent_xenc_seedavg_div1.jsonl"
+   ]
+  },
+  {
+   "sbatch": "mc_g7f_unisum_eval.sbatch",
+   "superseded": true,
+   "pattern": "$G7/scores/gemma+ent_humanfact_seed*.jsonl",
+   "expanded": "/home/user/results/marsc/g7_unisum/scores/gemma+ent_humanfact_seed*.jsonl",
+   "n_files": 3,
+   "verdict": "OK",
+   "why": "3 files, 3 distinct seeds",
+   "files": []
+  },
+  {
+   "sbatch": "mc_g7f_unisum_eval.sbatch",
+   "superseded": true,
+   "pattern": "$G7/scores/gemma+ent_xenc_seed*.jsonl",
+   "expanded": "/home/user/results/marsc/g7_unisum/scores/gemma+ent_xenc_seed*.jsonl",
+   "n_files": 3,
+   "verdict": "OK",
+   "why": "3 files, 3 distinct seeds",
+   "files": []
+  },
+  {
+   "sbatch": "mc_g7f_unisum_eval.sbatch",
+   "superseded": true,
+   "pattern": "$G7/val/gemma+ent_humanfact_seed*_div1.jsonl",
+   "expanded": "/home/user/results/marsc/g7_unisum/val/gemma+ent_humanfact_seed*_div1.jsonl",
+   "n_files": 4,
+   "verdict": "PSEUDO_SEED",
+   "why": "non-numeric seed token(s) ['avg'] among 4 files",
+   "files": [
+    "gemma+ent_humanfact_seed20260906_div1.jsonl",
+    "gemma+ent_humanfact_seed20260907_div1.jsonl",
+    "gemma+ent_humanfact_seed20260908_div1.jsonl",
+    "gemma+ent_humanfact_seedavg_div1.jsonl"
+   ]
+  },
+  {
+   "sbatch": "mc_g7f_unisum_eval.sbatch",
+   "superseded": true,
+   "pattern": "$G7/val/gemma+ent_xenc_seed*_div1.jsonl",
+   "expanded": "/home/user/results/marsc/g7_unisum/val/gemma+ent_xenc_seed*_div1.jsonl",
+   "n_files": 4,
+   "verdict": "PSEUDO_SEED",
+   "why": "non-numeric seed token(s) ['avg'] among 4 files",
+   "files": [
+    "gemma+ent_xenc_seed20260906_div1.jsonl",
+    "gemma+ent_xenc_seed20260907_div1.jsonl",
+    "gemma+ent_xenc_seed20260908_div1.jsonl",
+    "gemma+ent_xenc_seedavg_div1.jsonl"
+   ]
+  },
+  {
+   "sbatch": "mc_r03_summary_blind.sbatch",
+   "superseded": false,
+   "pattern": "$G/b21/xenc_seed*",
+   "expanded": "/home/user/results/mars2_gates/b21/xenc_seed*",
+   "n_files": 3,
+   "verdict": "OK",
+   "why": "3 files, 3 distinct seeds",
+   "files": []
+  },
+  {
+   "sbatch": "mc_r03_summary_blind.sbatch",
+   "superseded": false,
+   "pattern": "$MC/e1/mc-A-lam1-crossenc-inv_seed*/model",
+   "expanded": "/home/user/results/marsc/e1/mc-A-lam1-crossenc-inv_seed*/model",
+   "n_files": 3,
+   "verdict": "OK",
+   "why": "3 files, 3 distinct seeds",
+   "files": []
+  },
+  {
+   "sbatch": "mc_r04c_matched_train.sbatch",
+   "superseded": false,
+   "pattern": "$OUT/scores/acu_mc-*-r04*_seed*.jsonl",
+   "expanded": "/home/user/results/marsc/r04_matched/scores/acu_mc-*-r04*_seed*.jsonl",
+   "n_files": 24,
+   "verdict": "MULTI_SYSTEM",
+   "why": "24 files, consumed by a script that groups by system",
+   "files": [
+    "acu_mc-A-lam1-crossenc-r04human_seed20260906.jsonl",
+    "acu_mc-A-lam1-crossenc-r04human_seed20260906_logits.jsonl",
+    "acu_mc-A-lam1-crossenc-r04human_seed20260907.jsonl",
+    "acu_mc-A-lam1-crossenc-r04human_seed20260907_logits.jsonl",
+    "acu_mc-A-lam1-crossenc-r04human_seed20260908.jsonl",
+    "acu_mc-A-lam1-crossenc-r04human_seed20260908_logits.jsonl",
+    "acu_mc-A-lam1-crossenc-r04judge_seed20260906.jsonl",
+    "acu_mc-A-lam1-crossenc-r04judge_seed20260906_logits.jsonl",
+    "acu_mc-A-lam1-crossenc-r04judge_seed20260907.jsonl",
+    "acu_mc-A-lam1-crossenc-r04judge_seed20260907_logits.jsonl",
+    "acu_mc-A-lam1-crossenc-r04judge_seed20260908.jsonl",
+    "acu_mc-A-lam1-crossenc-r04judge_seed20260908_logits.jsonl",
+    "acu_mc-R-lam1-crossenc-r04human_seed20260906.jsonl",
+    "acu_mc-R-lam1-crossenc-r04human_seed20260906_logits.jsonl",
+    "acu_mc-R-lam1-crossenc-r04human_seed20260907.jsonl",
+    "acu_mc-R-lam1-crossenc-r04human_seed20260907_logits.jsonl",
+    "acu_mc-R-lam1-crossenc-r04human_seed20260908.jsonl",
+    "acu_mc-R-lam1-crossenc-r04human_seed20260908_logits.jsonl",
+    "acu_mc-R-lam1-crossenc-r04judge_seed20260906.jsonl",
+    "acu_mc-R-lam1-crossenc-r04judge_seed20260906_logits.jsonl",
+    "acu_mc-R-lam1-crossenc-r04judge_seed20260907.jsonl",
+    "acu_mc-R-lam1-crossenc-r04judge_seed20260907_logits.jsonl",
+    "acu_mc-R-lam1-crossenc-r04judge_seed20260908.jsonl",
+    "acu_mc-R-lam1-crossenc-r04judge_seed20260908_logits.jsonl"
+   ]
+  },
+  {
+   "sbatch": "mc_t02_kcurve.sbatch",
+   "superseded": true,
+   "pattern": "$G1/scores/distilled_xenc_seed*.jsonl",
+   "expanded": "/home/user/results/marsc/g1_test/scores/distilled_xenc_seed*.jsonl",
+   "n_files": 3,
+   "verdict": "OK",
+   "why": "3 files, 3 distinct seeds",
+   "files": []
+  },
+  {
+   "sbatch": "mc_t02_kcurve.sbatch",
+   "superseded": true,
+   "pattern": "$G1/scores/gemma+ent_humanfact_seed*.jsonl",
+   "expanded": "/home/user/results/marsc/g1_test/scores/gemma+ent_humanfact_seed*.jsonl",
+   "n_files": 3,
+   "verdict": "OK",
+   "why": "3 files, 3 distinct seeds",
+   "files": []
+  },
+  {
+   "sbatch": "mc_t02_kcurve.sbatch",
+   "superseded": true,
+   "pattern": "$G1/val/distilled_humanfact_seed*_div1.jsonl",
+   "expanded": "/home/user/results/marsc/g1_test/val/distilled_humanfact_seed*_div1.jsonl",
+   "n_files": 4,
+   "verdict": "PSEUDO_SEED",
+   "why": "non-numeric seed token(s) ['avg'] among 4 files",
+   "files": [
+    "distilled_humanfact_seed20260906_div1.jsonl",
+    "distilled_humanfact_seed20260907_div1.jsonl",
+    "distilled_humanfact_seed20260908_div1.jsonl",
+    "distilled_humanfact_seedavg_div1.jsonl"
+   ]
+  },
+  {
+   "sbatch": "mc_t02_kcurve.sbatch",
+   "superseded": true,
+   "pattern": "$G1/val/distilled_xenc_seed*_div1.jsonl",
+   "expanded": "/home/user/results/marsc/g1_test/val/distilled_xenc_seed*_div1.jsonl",
+   "n_files": 4,
+   "verdict": "PSEUDO_SEED",
+   "why": "non-numeric seed token(s) ['avg'] among 4 files",
+   "files": [
+    "distilled_xenc_seed20260906_div1.jsonl",
+    "distilled_xenc_seed20260907_div1.jsonl",
+    "distilled_xenc_seed20260908_div1.jsonl",
+    "distilled_xenc_seedavg_div1.jsonl"
+   ]
+  },
+  {
+   "sbatch": "mc_t02_kcurve.sbatch",
+   "superseded": true,
+   "pattern": "$G1/val/gemma+ent_humanfact_seed*_div1.jsonl",
+   "expanded": "/home/user/results/marsc/g1_test/val/gemma+ent_humanfact_seed*_div1.jsonl",
+   "n_files": 4,
+   "verdict": "PSEUDO_SEED",
+   "why": "non-numeric seed token(s) ['avg'] among 4 files",
+   "files": [
+    "gemma+ent_humanfact_seed20260906_div1.jsonl",
+    "gemma+ent_humanfact_seed20260907_div1.jsonl",
+    "gemma+ent_humanfact_seed20260908_div1.jsonl",
+    "gemma+ent_humanfact_seedavg_div1.jsonl"
+   ]
+  },
+  {
+   "sbatch": "mc_t02_kcurve.sbatch",
+   "superseded": true,
+   "pattern": "$G1/val/gemma+ent_xenc_seed*_div1.jsonl",
+   "expanded": "/home/user/results/marsc/g1_test/val/gemma+ent_xenc_seed*_div1.jsonl",
+   "n_files": 4,
+   "verdict": "PSEUDO_SEED",
+   "why": "non-numeric seed token(s) ['avg'] among 4 files",
+   "files": [
+    "gemma+ent_xenc_seed20260906_div1.jsonl",
+    "gemma+ent_xenc_seed20260907_div1.jsonl",
+    "gemma+ent_xenc_seed20260908_div1.jsonl",
+    "gemma+ent_xenc_seedavg_div1.jsonl"
+   ]
+  },
+  {
+   "sbatch": "mc_t02_kcurve.sbatch",
+   "superseded": true,
+   "pattern": "$G7/scores/gemma+ent_humanfact_seed*.jsonl",
+   "expanded": "/home/user/results/marsc/g7_unisum/scores/gemma+ent_humanfact_seed*.jsonl",
+   "n_files": 3,
+   "verdict": "OK",
+   "why": "3 files, 3 distinct seeds",
+   "files": []
+  },
+  {
+   "sbatch": "mc_t02_kcurve.sbatch",
+   "superseded": true,
+   "pattern": "$G7/scores/gemma+ent_xenc_seed*.jsonl",
+   "expanded": "/home/user/results/marsc/g7_unisum/scores/gemma+ent_xenc_seed*.jsonl",
+   "n_files": 3,
+   "verdict": "OK",
+   "why": "3 files, 3 distinct seeds",
+   "files": []
+  },
+  {
+   "sbatch": "mc_t02_kcurve.sbatch",
+   "superseded": true,
+   "pattern": "$G7/val/gemma+ent_humanfact_seed*_div1.jsonl",
+   "expanded": "/home/user/results/marsc/g7_unisum/val/gemma+ent_humanfact_seed*_div1.jsonl",
+   "n_files": 4,
+   "verdict": "PSEUDO_SEED",
+   "why": "non-numeric seed token(s) ['avg'] among 4 files",
+   "files": [
+    "gemma+ent_humanfact_seed20260906_div1.jsonl",
+    "gemma+ent_humanfact_seed20260907_div1.jsonl",
+    "gemma+ent_humanfact_seed20260908_div1.jsonl",
+    "gemma+ent_humanfact_seedavg_div1.jsonl"
+   ]
+  },
+  {
+   "sbatch": "mc_t02_kcurve.sbatch",
+   "superseded": true,
+   "pattern": "$G7/val/gemma+ent_xenc_seed*_div1.jsonl",
+   "expanded": "/home/user/results/marsc/g7_unisum/val/gemma+ent_xenc_seed*_div1.jsonl",
+   "n_files": 4,
+   "verdict": "PSEUDO_SEED",
+   "why": "non-numeric seed token(s) ['avg'] among 4 files",
+   "files": [
+    "gemma+ent_xenc_seed20260906_div1.jsonl",
+    "gemma+ent_xenc_seed20260907_div1.jsonl",
+    "gemma+ent_xenc_seed20260908_div1.jsonl",
+    "gemma+ent_xenc_seedavg_div1.jsonl"
+   ]
+  },
+  {
+   "sbatch": "mc_t03_adaptive.sbatch",
+   "superseded": true,
+   "pattern": "$G1/val/distilled_humanfact_seed*_div1.jsonl",
+   "expanded": "/home/user/results/marsc/g1_test/val/distilled_humanfact_seed*_div1.jsonl",
+   "n_files": 4,
+   "verdict": "PSEUDO_SEED",
+   "why": "non-numeric seed token(s) ['avg'] among 4 files",
+   "files": [
+    "distilled_humanfact_seed20260906_div1.jsonl",
+    "distilled_humanfact_seed20260907_div1.jsonl",
+    "distilled_humanfact_seed20260908_div1.jsonl",
+    "distilled_humanfact_seedavg_div1.jsonl"
+   ]
+  },
+  {
+   "sbatch": "mc_t03_adaptive.sbatch",
+   "superseded": true,
+   "pattern": "$G1/val/distilled_xenc_seed*_div1.jsonl",
+   "expanded": "/home/user/results/marsc/g1_test/val/distilled_xenc_seed*_div1.jsonl",
+   "n_files": 4,
+   "verdict": "PSEUDO_SEED",
+   "why": "non-numeric seed token(s) ['avg'] among 4 files",
+   "files": [
+    "distilled_xenc_seed20260906_div1.jsonl",
+    "distilled_xenc_seed20260907_div1.jsonl",
+    "distilled_xenc_seed20260908_div1.jsonl",
+    "distilled_xenc_seedavg_div1.jsonl"
+   ]
+  },
+  {
+   "sbatch": "mc_t03_adaptive.sbatch",
+   "superseded": true,
+   "pattern": "$G1/val/gemma+ent_humanfact_seed*_div1.jsonl",
+   "expanded": "/home/user/results/marsc/g1_test/val/gemma+ent_humanfact_seed*_div1.jsonl",
+   "n_files": 4,
+   "verdict": "PSEUDO_SEED",
+   "why": "non-numeric seed token(s) ['avg'] among 4 files",
+   "files": [
+    "gemma+ent_humanfact_seed20260906_div1.jsonl",
+    "gemma+ent_humanfact_seed20260907_div1.jsonl",
+    "gemma+ent_humanfact_seed20260908_div1.jsonl",
+    "gemma+ent_humanfact_seedavg_div1.jsonl"
+   ]
+  },
+  {
+   "sbatch": "mc_t03_adaptive.sbatch",
+   "superseded": true,
+   "pattern": "$G7/scores/gemma+ent_humanfact_seed*.jsonl",
+   "expanded": "/home/user/results/marsc/g7_unisum/scores/gemma+ent_humanfact_seed*.jsonl",
+   "n_files": 3,
+   "verdict": "OK",
+   "why": "3 files, 3 distinct seeds",
+   "files": []
+  },
+  {
+   "sbatch": "mc_t03_adaptive.sbatch",
+   "superseded": true,
+   "pattern": "$G7/val/gemma+ent_humanfact_seed*_div1.jsonl",
+   "expanded": "/home/user/results/marsc/g7_unisum/val/gemma+ent_humanfact_seed*_div1.jsonl",
+   "n_files": 4,
+   "verdict": "PSEUDO_SEED",
+   "why": "non-numeric seed token(s) ['avg'] among 4 files",
+   "files": [
+    "gemma+ent_humanfact_seed20260906_div1.jsonl",
+    "gemma+ent_humanfact_seed20260907_div1.jsonl",
+    "gemma+ent_humanfact_seed20260908_div1.jsonl",
+    "gemma+ent_humanfact_seedavg_div1.jsonl"
+   ]
+  },
+  {
+   "sbatch": "mc_t03_adaptive.sbatch",
+   "superseded": true,
+   "pattern": "$G7/val/gemma+ent_xenc_seed*_div1.jsonl",
+   "expanded": "/home/user/results/marsc/g7_unisum/val/gemma+ent_xenc_seed*_div1.jsonl",
+   "n_files": 4,
+   "verdict": "PSEUDO_SEED",
+   "why": "non-numeric seed token(s) ['avg'] among 4 files",
+   "files": [
+    "gemma+ent_xenc_seed20260906_div1.jsonl",
+    "gemma+ent_xenc_seed20260907_div1.jsonl",
+    "gemma+ent_xenc_seed20260908_div1.jsonl",
+    "gemma+ent_xenc_seedavg_div1.jsonl"
+   ]
+  },
+  {
+   "sbatch": "mc_t04_robust.sbatch",
+   "superseded": true,
+   "pattern": "$G1/val/distilled_humanfact_seed*_div1.jsonl",
+   "expanded": "/home/user/results/marsc/g1_test/val/distilled_humanfact_seed*_div1.jsonl",
+   "n_files": 4,
+   "verdict": "PSEUDO_SEED",
+   "why": "non-numeric seed token(s) ['avg'] among 4 files",
+   "files": [
+    "distilled_humanfact_seed20260906_div1.jsonl",
+    "distilled_humanfact_seed20260907_div1.jsonl",
+    "distilled_humanfact_seed20260908_div1.jsonl",
+    "distilled_humanfact_seedavg_div1.jsonl"
+   ]
+  },
+  {
+   "sbatch": "mc_t04_robust.sbatch",
+   "superseded": true,
+   "pattern": "$G1/val/distilled_xenc_seed*_div1.jsonl",
+   "expanded": "/home/user/results/marsc/g1_test/val/distilled_xenc_seed*_div1.jsonl",
+   "n_files": 4,
+   "verdict": "PSEUDO_SEED",
+   "why": "non-numeric seed token(s) ['avg'] among 4 files",
+   "files": [
+    "distilled_xenc_seed20260906_div1.jsonl",
+    "distilled_xenc_seed20260907_div1.jsonl",
+    "distilled_xenc_seed20260908_div1.jsonl",
+    "distilled_xenc_seedavg_div1.jsonl"
+   ]
+  },
+  {
+   "sbatch": "mc_t04_robust.sbatch",
+   "superseded": true,
+   "pattern": "$G1/val/gemma+ent_humanfact_seed*_div1.jsonl",
+   "expanded": "/home/user/results/marsc/g1_test/val/gemma+ent_humanfact_seed*_div1.jsonl",
+   "n_files": 4,
+   "verdict": "PSEUDO_SEED",
+   "why": "non-numeric seed token(s) ['avg'] among 4 files",
+   "files": [
+    "gemma+ent_humanfact_seed20260906_div1.jsonl",
+    "gemma+ent_humanfact_seed20260907_div1.jsonl",
+    "gemma+ent_humanfact_seed20260908_div1.jsonl",
+    "gemma+ent_humanfact_seedavg_div1.jsonl"
+   ]
+  },
+  {
+   "sbatch": "mc_t04_robust.sbatch",
+   "superseded": true,
+   "pattern": "$G1/val/gemma+ent_xenc_seed*_div1.jsonl",
+   "expanded": "/home/user/results/marsc/g1_test/val/gemma+ent_xenc_seed*_div1.jsonl",
+   "n_files": 4,
+   "verdict": "PSEUDO_SEED",
+   "why": "non-numeric seed token(s) ['avg'] among 4 files",
+   "files": [
+    "gemma+ent_xenc_seed20260906_div1.jsonl",
+    "gemma+ent_xenc_seed20260907_div1.jsonl",
+    "gemma+ent_xenc_seed20260908_div1.jsonl",
+    "gemma+ent_xenc_seedavg_div1.jsonl"
+   ]
+  },
+  {
+   "sbatch": "mc_t04_robust.sbatch",
+   "superseded": true,
+   "pattern": "$G7/val/gemma+ent_humanfact_seed*_div1.jsonl",
+   "expanded": "/home/user/results/marsc/g7_unisum/val/gemma+ent_humanfact_seed*_div1.jsonl",
+   "n_files": 4,
+   "verdict": "PSEUDO_SEED",
+   "why": "non-numeric seed token(s) ['avg'] among 4 files",
+   "files": [
+    "gemma+ent_humanfact_seed20260906_div1.jsonl",
+    "gemma+ent_humanfact_seed20260907_div1.jsonl",
+    "gemma+ent_humanfact_seed20260908_div1.jsonl",
+    "gemma+ent_humanfact_seedavg_div1.jsonl"
+   ]
+  },
+  {
+   "sbatch": "mc_t04_robust.sbatch",
+   "superseded": true,
+   "pattern": "$G7/val/gemma+ent_xenc_seed*_div1.jsonl",
+   "expanded": "/home/user/results/marsc/g7_unisum/val/gemma+ent_xenc_seed*_div1.jsonl",
+   "n_files": 4,
+   "verdict": "PSEUDO_SEED",
+   "why": "non-numeric seed token(s) ['avg'] among 4 files",
+   "files": [
+    "gemma+ent_xenc_seed20260906_div1.jsonl",
+    "gemma+ent_xenc_seed20260907_div1.jsonl",
+    "gemma+ent_xenc_seed20260908_div1.jsonl",
+    "gemma+ent_xenc_seedavg_div1.jsonl"
+   ]
+  },
+  {
+   "sbatch": "mc_t05_mars2_eval.sbatch",
+   "superseded": true,
+   "pattern": "$G1/val/distilled_xenc_seed*_div1.jsonl",
+   "expanded": "/home/user/results/marsc/g1_test/val/distilled_xenc_seed*_div1.jsonl",
+   "n_files": 4,
+   "verdict": "PSEUDO_SEED",
+   "why": "non-numeric seed token(s) ['avg'] among 4 files",
+   "files": [
+    "distilled_xenc_seed20260906_div1.jsonl",
+    "distilled_xenc_seed20260907_div1.jsonl",
+    "distilled_xenc_seed20260908_div1.jsonl",
+    "distilled_xenc_seedavg_div1.jsonl"
+   ]
+  },
+  {
+   "sbatch": "mc_t05_mars2_eval.sbatch",
+   "superseded": true,
+   "pattern": "$G1/val/gemma+ent_humanfact_seed*_div1.jsonl",
+   "expanded": "/home/user/results/marsc/g1_test/val/gemma+ent_humanfact_seed*_div1.jsonl",
+   "n_files": 4,
+   "verdict": "PSEUDO_SEED",
+   "why": "non-numeric seed token(s) ['avg'] among 4 files",
+   "files": [
+    "gemma+ent_humanfact_seed20260906_div1.jsonl",
+    "gemma+ent_humanfact_seed20260907_div1.jsonl",
+    "gemma+ent_humanfact_seed20260908_div1.jsonl",
+    "gemma+ent_humanfact_seedavg_div1.jsonl"
+   ]
+  },
+  {
+   "sbatch": "mc_t08_aggregation.sbatch",
+   "superseded": true,
+   "pattern": "$G1/val/distilled_xenc_seed*_div1.jsonl",
+   "expanded": "/home/user/results/marsc/g1_test/val/distilled_xenc_seed*_div1.jsonl",
+   "n_files": 4,
+   "verdict": "PSEUDO_SEED",
+   "why": "non-numeric seed token(s) ['avg'] among 4 files",
+   "files": [
+    "distilled_xenc_seed20260906_div1.jsonl",
+    "distilled_xenc_seed20260907_div1.jsonl",
+    "distilled_xenc_seed20260908_div1.jsonl",
+    "distilled_xenc_seedavg_div1.jsonl"
+   ]
+  },
+  {
+   "sbatch": "mc_t08_aggregation.sbatch",
+   "superseded": true,
+   "pattern": "$G1/val/gemma+ent_humanfact_seed*_div1.jsonl",
+   "expanded": "/home/user/results/marsc/g1_test/val/gemma+ent_humanfact_seed*_div1.jsonl",
+   "n_files": 4,
+   "verdict": "PSEUDO_SEED",
+   "why": "non-numeric seed token(s) ['avg'] among 4 files",
+   "files": [
+    "gemma+ent_humanfact_seed20260906_div1.jsonl",
+    "gemma+ent_humanfact_seed20260907_div1.jsonl",
+    "gemma+ent_humanfact_seed20260908_div1.jsonl",
+    "gemma+ent_humanfact_seedavg_div1.jsonl"
+   ]
+  },
+  {
+   "sbatch": "mc_t08_aggregation.sbatch",
+   "superseded": true,
+   "pattern": "$G7/val/gemma+ent_humanfact_seed*_div1.jsonl",
+   "expanded": "/home/user/results/marsc/g7_unisum/val/gemma+ent_humanfact_seed*_div1.jsonl",
+   "n_files": 4,
+   "verdict": "PSEUDO_SEED",
+   "why": "non-numeric seed token(s) ['avg'] among 4 files",
+   "files": [
+    "gemma+ent_humanfact_seed20260906_div1.jsonl",
+    "gemma+ent_humanfact_seed20260907_div1.jsonl",
+    "gemma+ent_humanfact_seed20260908_div1.jsonl",
+    "gemma+ent_humanfact_seedavg_div1.jsonl"
+   ]
+  },
+  {
+   "sbatch": "mc_t08_aggregation.sbatch",
+   "superseded": true,
+   "pattern": "$G7/val/gemma+ent_xenc_seed*_div1.jsonl",
+   "expanded": "/home/user/results/marsc/g7_unisum/val/gemma+ent_xenc_seed*_div1.jsonl",
+   "n_files": 4,
+   "verdict": "PSEUDO_SEED",
+   "why": "non-numeric seed token(s) ['avg'] among 4 files",
+   "files": [
+    "gemma+ent_xenc_seed20260906_div1.jsonl",
+    "gemma+ent_xenc_seed20260907_div1.jsonl",
+    "gemma+ent_xenc_seed20260908_div1.jsonl",
+    "gemma+ent_xenc_seedavg_div1.jsonl"
+   ]
+  }
+ ]
+}

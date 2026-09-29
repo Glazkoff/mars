@@ -1,0 +1,187 @@
+{
+ "annotators": {
+  "Annotator 1": 223,
+  "Annotator 2": 300
+ },
+ "systems": {
+  "judgefact.distilled+div1": {
+   "Annotator 1": {
+    "all": {
+     "n": 72,
+     "confirmed_omission_rate": 0.625
+    },
+    "false_alert": {
+     "n": 13,
+     "confirmed_omission_rate": 0.3076923076923077
+    },
+    "unknown": {
+     "n": 44,
+     "confirmed_omission_rate": 0.7727272727272727
+    },
+    "hit": {
+     "n": 15,
+     "confirmed_omission_rate": 0.4666666666666667
+    }
+   },
+   "Annotator 2": {
+    "all": {
+     "n": 100,
+     "confirmed_omission_rate": 0.68
+    },
+    "false_alert": {
+     "n": 20,
+     "confirmed_omission_rate": 0.35
+    },
+    "unknown": {
+     "n": 60,
+     "confirmed_omission_rate": 0.7833333333333333
+    },
+    "hit": {
+     "n": 20,
+     "confirmed_omission_rate": 0.7
+    }
+   }
+  },
+  "humanfact+div1": {
+   "Annotator 1": {
+    "all": {
+     "n": 75,
+     "confirmed_omission_rate": 0.5066666666666667
+    },
+    "unknown": {
+     "n": 46,
+     "confirmed_omission_rate": 0.5869565217391305
+    },
+    "false_alert": {
+     "n": 15,
+     "confirmed_omission_rate": 0.13333333333333333
+    },
+    "hit": {
+     "n": 14,
+     "confirmed_omission_rate": 0.6428571428571429
+    }
+   },
+   "Annotator 2": {
+    "all": {
+     "n": 100,
+     "confirmed_omission_rate": 0.61
+    },
+    "unknown": {
+     "n": 60,
+     "confirmed_omission_rate": 0.7333333333333333
+    },
+    "false_alert": {
+     "n": 20,
+     "confirmed_omission_rate": 0.15
+    },
+    "hit": {
+     "n": 20,
+     "confirmed_omission_rate": 0.7
+    }
+   }
+  },
+  "mars2": {
+   "Annotator 1": {
+    "all": {
+     "n": 76,
+     "confirmed_omission_rate": 0.5131578947368421
+    },
+    "false_alert": {
+     "n": 15,
+     "confirmed_omission_rate": 0.0
+    },
+    "unknown": {
+     "n": 44,
+     "confirmed_omission_rate": 0.6818181818181818
+    },
+    "hit": {
+     "n": 17,
+     "confirmed_omission_rate": 0.5294117647058824
+    }
+   },
+   "Annotator 2": {
+    "all": {
+     "n": 100,
+     "confirmed_omission_rate": 0.63
+    },
+    "false_alert": {
+     "n": 20,
+     "confirmed_omission_rate": 0.2
+    },
+    "unknown": {
+     "n": 60,
+     "confirmed_omission_rate": 0.7666666666666667
+    },
+    "hit": {
+     "n": 20,
+     "confirmed_omission_rate": 0.65
+    }
+   }
+  }
+ },
+ "agreement": {
+  "n": 223,
+  "q1_raw": 0.8834080717488789,
+  "q1_kappa": 0.0,
+  "q2_raw": 0.8475336322869955,
+  "q2_kappa": 0.6606999015483755,
+  "verdict_raw": 0.7668161434977578,
+  "verdict_kappa": 0.5196354598177299
+ },
+ "evaluator_status_vs_human": {
+  "Annotator 1": {
+   "n": 89,
+   "agreement_q2_vs_status": 0.7078651685393258
+  },
+  "Annotator 2": {
+   "n": 120,
+   "agreement_q2_vs_status": 0.725
+  }
+ },
+ "systems_both_agree": {
+  "judgefact.distilled+div1": {
+   "n": 53,
+   "confirmed_omission_rate": 0.7169811320754716
+  },
+  "mars2": {
+   "n": 58,
+   "confirmed_omission_rate": 0.603448275862069
+  },
+  "humanfact+div1": {
+   "n": 60,
+   "confirmed_omission_rate": 0.5833333333333334
+  }
+ },
+ "precision_natural_mix": {
+  "judgefact.distilled+div1": {
+   "weights": {
+    "hit": 0.15757656328621744,
+    "false_alert": 0.08156391519143681,
+    "unknown": 0.7608595215223456
+   },
+   "Annotator 1": 0.6865692218177807,
+   "Annotator 2": 0.7348575898098592,
+   "both_agree": 0.8063195834944753
+  },
+  "humanfact+div1": {
+   "weights": {
+    "hit": 0.16083178948812954,
+    "false_alert": 0.07861860161932209,
+    "unknown": 0.7605496088925485
+   },
+   "Annotator 1": 0.5602838979324763,
+   "Annotator 2": 0.6821114227391245,
+   "both_agree": 0.6657966813046066
+  },
+  "mars2": {
+   "weights": {
+    "hit": 0.06579067746214722,
+    "false_alert": 0.03193586752664563,
+    "unknown": 0.9022734550112073
+   },
+   "Annotator 1": 0.6500168052549813,
+   "Annotator 2": 0.7408940960309838,
+   "both_agree": 0.7725715886738942
+  }
+ }
+}

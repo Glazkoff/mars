@@ -1,0 +1,157 @@
+{
+ "registered": "research/marsc_20260916/PREREG.md E2 pilot",
+ "n_pairs": 1412,
+ "n_docs": 154,
+ "k": {
+  "5": {
+   "systems": {
+    "humanfact+imp": {
+     "recall": 0.2791029014389952,
+     "recall_stress": 0.24735849034302865,
+     "hit_rate": 0.18146836638338057,
+     "false_alert_rate": 0.06130783758262512,
+     "unknown_rate": 0.7572237960339944,
+     "n_pairs": 1412
+    },
+    "humanfact+leadpos": {
+     "recall": 0.1877265255541464,
+     "recall_stress": 0.16760970079208554,
+     "hit_rate": 0.11645420207743154,
+     "false_alert_rate": 0.03708687440982058,
+     "unknown_rate": 0.8464589235127478,
+     "n_pairs": 1412
+    },
+    "humanfact+random": {
+     "recall": 0.18837056848994777,
+     "recall_stress": 0.1677484460735137,
+     "hit_rate": 0.10469782813975449,
+     "false_alert_rate": 0.042044381491973565,
+     "unknown_rate": 0.8532577903682719,
+     "n_pairs": 1412
+    },
+    "judgefact+imp": {
+     "recall": 0.24587694185225534,
+     "recall_stress": 0.22352025652229865,
+     "hit_rate": 0.16872049102927292,
+     "false_alert_rate": 0.0539423984891407,
+     "unknown_rate": 0.7773371104815864,
+     "n_pairs": 1412
+    },
+    "humanfact": {
+     "recall": 0.18674381548558205,
+     "recall_stress": 0.1740910867217025,
+     "hit_rate": 0.11149669499527856,
+     "false_alert_rate": 0.034962228517469315,
+     "unknown_rate": 0.8535410764872522,
+     "n_pairs": 1412
+    }
+   },
+   "paired_recall": {
+    "humanfact+leadpos": {
+     "mean": 0.09038209225808372,
+     "ci": [
+      0.054621161548234286,
+      0.12795361263920335
+     ]
+    },
+    "humanfact+random": {
+     "mean": 0.09147823255768435,
+     "ci": [
+      0.05970476584839213,
+      0.12799243071864883
+     ]
+    },
+    "judgefact+imp": {
+     "mean": 0.0314186611248743,
+     "ci": [
+      0.012024985232071178,
+      0.05378643674842923
+     ]
+    },
+    "humanfact": {
+     "mean": 0.09159207968792638,
+     "ci": [
+      0.057048357681390036,
+      0.12970266027654348
+     ]
+    }
+   },
+   "primary": "humanfact+imp"
+  },
+  "10": {
+   "systems": {
+    "humanfact+imp": {
+     "recall": 0.411441526687589,
+     "recall_stress": 0.35221757650283614,
+     "hit_rate": 0.17367884122487523,
+     "false_alert_rate": 0.07676295022258195,
+     "unknown_rate": 0.7495582085525428,
+     "n_pairs": 1412
+    },
+    "humanfact+leadpos": {
+     "recall": 0.28042357790969275,
+     "recall_stress": 0.25902360147440506,
+     "hit_rate": 0.10951453527586673,
+     "false_alert_rate": 0.043760117361392147,
+     "unknown_rate": 0.8467253473627412,
+     "n_pairs": 1412
+    },
+    "humanfact+random": {
+     "recall": 0.3093791940932911,
+     "recall_stress": 0.2797455845279799,
+     "hit_rate": 0.10760235397275059,
+     "false_alert_rate": 0.050346519627681094,
+     "unknown_rate": 0.8420511263995684,
+     "n_pairs": 1412
+    },
+    "judgefact+imp": {
+     "recall": 0.3843800050403388,
+     "recall_stress": 0.32619447376647825,
+     "hit_rate": 0.1622765749359234,
+     "false_alert_rate": 0.0758422703358964,
+     "unknown_rate": 0.7618811547281803,
+     "n_pairs": 1412
+    },
+    "humanfact": {
+     "recall": 0.27915914059559355,
+     "recall_stress": 0.2612249527554784,
+     "hit_rate": 0.10519442196141914,
+     "false_alert_rate": 0.04064397005261028,
+     "unknown_rate": 0.8541616079859706,
+     "n_pairs": 1412
+    }
+   },
+   "paired_recall": {
+    "humanfact+leadpos": {
+     "mean": 0.13043335603618908,
+     "ci": [
+      0.08082915668158215,
+      0.17645784195378306
+     ]
+    },
+    "humanfact+random": {
+     "mean": 0.10205930179246865,
+     "ci": [
+      0.06517112714104917,
+      0.1424404229747016
+     ]
+    },
+    "judgefact+imp": {
+     "mean": 0.02640104477208012,
+     "ci": [
+      0.011774216425582348,
+      0.04636807921078598
+     ]
+    },
+    "humanfact": {
+     "mean": 0.13259578008345946,
+     "ci": [
+      0.08526272431211318,
+      0.17975636351970886
+     ]
+    }
+   },
+   "primary": "humanfact+imp"
+  }
+ }
+}

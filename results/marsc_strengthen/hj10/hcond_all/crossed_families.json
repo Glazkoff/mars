@@ -1,0 +1,397 @@
+{
+ "bars": {
+  "registered": "research/marsc_strengthen_20260918/PREREG.md -- Wave B / B2, hypothesis H-COND",
+  "declared_before_any_number_in_this_file_was_read": true,
+  "primary_estimand": "within-document, same-fact crossed accuracy P(z(f|omitting summary) > z(f|conveying summary)), ties 1/2; document-macro statistic, document-clustered bootstrap",
+  "chance_level_for_any_summary_blind_scorer": 0.5,
+  "pass": "H-COND PASSES if MARS-C's crossed accuracy exceeds EVERY off-the-shelf family's by a margin whose document-clustered one-sided 95% lower bound is above 0, on validation AND on the sealed TEST split.",
+  "fail": "H-COND FAILS if any off-the-shelf family matches MARS-C within that margin. Then the paper says so and the supervision claim narrows to the fixed-inventory verifier effect, which this endpoint does not touch.",
+  "candidate_blind": "A family whose document-macro crossed accuracy has a two-sided 95% document-clustered interval covering 0.500 is reported as CANDIDATE-BLIND, and any recall@k advantage it holds is evidence FOR the methodological claim, not against MARS-C.",
+  "primary_family": "humanfact (MARS-C natural-coverage cross-encoder, 3 seeds)",
+  "off_the_shelf_families": "every family whose kind is zs, lex or emb"
+ },
+ "split_docs_file": "/home/user/results/marsc_strengthen/hj10/docs/docs_omb_all.jsonl",
+ "docs": 112,
+ "cells": 982,
+ "triples": 793,
+ "docs_with_triples": 112,
+ "facts_with_triples": 248,
+ "chance_level": 0.5,
+ "bootstrap_seed": 20260917,
+ "n_boot": 2000,
+ "families": {
+  "humanfact": {
+   "kind": "ckpt",
+   "spec": "/home/user/results/marsc/e1/mc-A-lam1-crossenc-inv_seed*/model",
+   "checkpoints": [
+    "/home/user/results/marsc/e1/mc-A-lam1-crossenc-inv_seed20260906/model",
+    "/home/user/results/marsc/e1/mc-A-lam1-crossenc-inv_seed20260907/model",
+    "/home/user/results/marsc/e1/mc-A-lam1-crossenc-inv_seed20260908/model"
+   ],
+   "per_seed": {
+    "20260906": {
+     "n_triples": 793,
+     "n_docs": 112,
+     "discrimination_triple": 0.7868852459016393,
+     "discrimination_doc_macro": 0.8045575000833667,
+     "ci_doc_bootstrap": [
+      0.7581996079681873,
+      0.8469679929263371
+     ],
+     "sign_test_vs_half": {
+      "n_docs": 104,
+      "n_pos": 94,
+      "n_neg": 10,
+      "p_value": 2.8723304738734394e-18
+     }
+    },
+    "20260907": {
+     "n_triples": 793,
+     "n_docs": 112,
+     "discrimination_triple": 0.8234552332912989,
+     "discrimination_doc_macro": 0.8490174715719621,
+     "ci_doc_bootstrap": [
+      0.8128681550745298,
+      0.8831391410730958
+     ],
+     "sign_test_vs_half": {
+      "n_docs": 106,
+      "n_pos": 102,
+      "n_neg": 4,
+      "p_value": 1.2735868422334435e-25
+     }
+    },
+    "20260908": {
+     "n_triples": 793,
+     "n_docs": 112,
+     "discrimination_triple": 0.8234552332912989,
+     "discrimination_doc_macro": 0.8399351928271308,
+     "ci_doc_bootstrap": [
+      0.8019182217157695,
+      0.8781338837618381
+     ],
+     "sign_test_vs_half": {
+      "n_docs": 106,
+      "n_pos": 101,
+      "n_neg": 5,
+      "p_value": 2.6256041585124165e-24
+     }
+    }
+   },
+   "seed_averaged": {
+    "n_triples": 793,
+    "n_docs": 112,
+    "discrimination_triple": 0.807061790668348,
+    "discrimination_doc_macro": 0.8162147671568628,
+    "ci_doc_bootstrap": [
+     0.7707372011304522,
+     0.8570504894666201
+    ],
+    "sign_test_vs_half": {
+     "n_docs": 105,
+     "n_pos": 97,
+     "n_neg": 8,
+     "p_value": 1.4953374522738916e-20
+    }
+   },
+   "verdict_vs_chance": "CONDITIONS-ON-CANDIDATE",
+   "off_the_shelf": false
+  },
+  "judgefact": {
+   "kind": "ckpt",
+   "spec": "/home/user/results/mars2_gates/b21/xenc_seed*",
+   "checkpoints": [
+    "/home/user/results/mars2_gates/b21/xenc_seed20260906",
+    "/home/user/results/mars2_gates/b21/xenc_seed20260907",
+    "/home/user/results/mars2_gates/b21/xenc_seed20260908"
+   ],
+   "per_seed": {
+    "20260906": {
+     "n_triples": 793,
+     "n_docs": 112,
+     "discrimination_triple": 0.8335435056746532,
+     "discrimination_doc_macro": 0.8163846267673736,
+     "ci_doc_bootstrap": [
+      0.771475387029812,
+      0.8584117436036913
+     ],
+     "sign_test_vs_half": {
+      "n_docs": 105,
+      "n_pos": 100,
+      "n_neg": 5,
+      "p_value": 5.006007865146344e-24
+     }
+    },
+    "20260907": {
+     "n_triples": 793,
+     "n_docs": 112,
+     "discrimination_triple": 0.8108448928121059,
+     "discrimination_doc_macro": 0.8184766093937574,
+     "ci_doc_bootstrap": [
+      0.7734709769324396,
+      0.859833536279095
+     ],
+     "sign_test_vs_half": {
+      "n_docs": 104,
+      "n_pos": 98,
+      "n_neg": 6,
+      "p_value": 1.5916548600905782e-22
+     }
+    },
+    "20260908": {
+     "n_triples": 793,
+     "n_docs": 112,
+     "discrimination_triple": 0.7994955863808323,
+     "discrimination_doc_macro": 0.8146110006502602,
+     "ci_doc_bootstrap": [
+      0.772808172748266,
+      0.8545009344883786
+     ],
+     "sign_test_vs_half": {
+      "n_docs": 105,
+      "n_pos": 99,
+      "n_neg": 6,
+      "p_value": 8.435279808627725e-23
+     }
+    }
+   },
+   "seed_averaged": {
+    "n_triples": 793,
+    "n_docs": 112,
+    "discrimination_triple": 0.8221941992433796,
+    "discrimination_doc_macro": 0.8195181718520741,
+    "ci_doc_bootstrap": [
+     0.7730688694748734,
+     0.8586090556014072
+    ],
+    "sign_test_vs_half": {
+     "n_docs": 106,
+     "n_pos": 101,
+     "n_neg": 5,
+     "p_value": 2.6256041585124165e-24
+    }
+   },
+   "verdict_vs_chance": "CONDITIONS-ON-CANDIDATE",
+   "off_the_shelf": false
+  },
+  "nli": {
+   "kind": "zs",
+   "spec": "nli",
+   "seed_averaged": {
+    "n_triples": 793,
+    "n_docs": 112,
+    "discrimination_triple": 0.6809583858764187,
+    "discrimination_doc_macro": 0.6667440413665465,
+    "ci_doc_bootstrap": [
+     0.6182501320840836,
+     0.7151741360606743
+    ],
+    "sign_test_vs_half": {
+     "n_docs": 100,
+     "n_pos": 80,
+     "n_neg": 20,
+     "p_value": 1.1159089057251951e-09
+    }
+   },
+   "verdict_vs_chance": "CONDITIONS-ON-CANDIDATE",
+   "off_the_shelf": true
+  },
+  "summac_zs": {
+   "kind": "zs",
+   "spec": "summac_zs",
+   "seed_averaged": {
+    "n_triples": 793,
+    "n_docs": 112,
+    "discrimination_triple": 0.7023959646910467,
+    "discrimination_doc_macro": 0.6812857955682273,
+    "ci_doc_bootstrap": [
+     0.6375674553675637,
+     0.7280856287827632
+    ],
+    "sign_test_vs_half": {
+     "n_docs": 92,
+     "n_pos": 79,
+     "n_neg": 13,
+     "p_value": 1.073374741074801e-12
+    }
+   },
+   "verdict_vs_chance": "CONDITIONS-ON-CANDIDATE",
+   "off_the_shelf": true
+  },
+  "lex_token_recall": {
+   "kind": "lex",
+   "spec": "token_recall",
+   "seed_averaged": {
+    "n_triples": 793,
+    "n_docs": 112,
+    "discrimination_triple": 0.8682219419924337,
+    "discrimination_doc_macro": 0.878875769057623,
+    "ci_doc_bootstrap": [
+     0.8485290991396559,
+     0.9070313802604375
+    ],
+    "sign_test_vs_half": {
+     "n_docs": 105,
+     "n_pos": 105,
+     "n_neg": 0,
+     "p_value": 4.930380657631324e-32
+    }
+   },
+   "verdict_vs_chance": "CONDITIONS-ON-CANDIDATE",
+   "off_the_shelf": true
+  },
+  "lex_rougeL_recall": {
+   "kind": "lex",
+   "spec": "rougeL_recall",
+   "seed_averaged": {
+    "n_triples": 793,
+    "n_docs": 112,
+    "discrimination_triple": 0.862547288776797,
+    "discrimination_doc_macro": 0.8826733818527411,
+    "ci_doc_bootstrap": [
+     0.8547623932385454,
+     0.909285081219988
+    ],
+    "sign_test_vs_half": {
+     "n_docs": 107,
+     "n_pos": 107,
+     "n_neg": 0,
+     "p_value": 1.232595164407831e-32
+    }
+   },
+   "verdict_vs_chance": "CONDITIONS-ON-CANDIDATE",
+   "off_the_shelf": true
+  },
+  "emb_minilm": {
+   "kind": "emb",
+   "spec": "sentence-transformers/all-MiniLM-L6-v2",
+   "seed_averaged": {
+    "n_triples": 793,
+    "n_docs": 112,
+    "discrimination_triple": 0.8738965952080706,
+    "discrimination_doc_macro": 0.8827106363378684,
+    "ci_doc_bootstrap": [
+     0.854682849702381,
+     0.9103975118693309
+    ],
+    "sign_test_vs_half": {
+     "n_docs": 106,
+     "n_pos": 106,
+     "n_neg": 0,
+     "p_value": 2.465190328815662e-32
+    }
+   },
+   "verdict_vs_chance": "CONDITIONS-ON-CANDIDATE",
+   "off_the_shelf": true
+  }
+ },
+ "primary_family": "humanfact",
+ "margins_vs_primary": {
+  "judgefact": {
+   "n_docs": 112,
+   "observed_margin_doc_macro": -0.003303404695211417,
+   "ci95_two_sided": [
+    -0.04018318264805923,
+    0.03364210267440304
+   ],
+   "lower_bound_95_one_sided": -0.03566984085300787,
+   "p_one_sided_bootstrap": 0.586,
+   "n_docs_a_better": 14,
+   "n_docs_b_better": 17,
+   "n_docs_tied": 81,
+   "family_is_off_the_shelf": false,
+   "clears_bar_on_this_split": false
+  },
+  "nli": {
+   "n_docs": 112,
+   "observed_margin_doc_macro": 0.14947072579031612,
+   "ci95_two_sided": [
+    0.08696463611486262,
+    0.2091810682606375
+   ],
+   "lower_bound_95_one_sided": 0.09662097912081498,
+   "p_one_sided_bootstrap": 0.0,
+   "n_docs_a_better": 58,
+   "n_docs_b_better": 14,
+   "n_docs_tied": 40,
+   "family_is_off_the_shelf": true,
+   "clears_bar_on_this_split": true
+  },
+  "summac_zs": {
+   "n_docs": 112,
+   "observed_margin_doc_macro": 0.13492897158863545,
+   "ci95_two_sided": [
+    0.06722418133920235,
+    0.19839939882202876
+   ],
+   "lower_bound_95_one_sided": 0.07747621183890223,
+   "p_one_sided_bootstrap": 0.0,
+   "n_docs_a_better": 68,
+   "n_docs_b_better": 28,
+   "n_docs_tied": 16,
+   "family_is_off_the_shelf": true,
+   "clears_bar_on_this_split": true
+  },
+  "lex_token_recall": {
+   "n_docs": 112,
+   "observed_margin_doc_macro": -0.06266100190076031,
+   "ci95_two_sided": [
+    -0.10305036076930772,
+    -0.023390664859693898
+   ],
+   "lower_bound_95_one_sided": -0.09780042225223422,
+   "p_one_sided_bootstrap": 0.9995,
+   "n_docs_a_better": 21,
+   "n_docs_b_better": 46,
+   "n_docs_tied": 45,
+   "family_is_off_the_shelf": true,
+   "clears_bar_on_this_split": false
+  },
+  "lex_rougeL_recall": {
+   "n_docs": 112,
+   "observed_margin_doc_macro": -0.06645861469587835,
+   "ci95_two_sided": [
+    -0.10751687393707483,
+    -0.028843373286814758
+   ],
+   "lower_bound_95_one_sided": -0.10095681501767373,
+   "p_one_sided_bootstrap": 1.0,
+   "n_docs_a_better": 23,
+   "n_docs_b_better": 43,
+   "n_docs_tied": 46,
+   "family_is_off_the_shelf": true,
+   "clears_bar_on_this_split": false
+  },
+  "emb_minilm": {
+   "n_docs": 112,
+   "observed_margin_doc_macro": -0.06649586918100574,
+   "ci95_two_sided": [
+    -0.11296055531587636,
+    -0.0249754198554422
+   ],
+   "lower_bound_95_one_sided": -0.10388814379918634,
+   "p_one_sided_bootstrap": 1.0,
+   "n_docs_a_better": 24,
+   "n_docs_b_better": 47,
+   "n_docs_tied": 41,
+   "family_is_off_the_shelf": true,
+   "clears_bar_on_this_split": false
+  }
+ },
+ "hcond_split_verdict": {
+  "off_the_shelf_families_compared": [
+   "nli",
+   "summac_zs",
+   "lex_token_recall",
+   "lex_rougeL_recall",
+   "emb_minilm"
+  ],
+  "families_not_cleared": [
+   "lex_token_recall",
+   "lex_rougeL_recall",
+   "emb_minilm"
+  ],
+  "split_result": "FAIL-ON-THIS-SPLIT",
+  "note": "The registered bar requires PASS on validation AND on the sealed TEST split; use --combine."
+ }
+}

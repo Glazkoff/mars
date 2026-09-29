@@ -1,0 +1,507 @@
+{
+ "bars": {
+  "registered": "research/marsc_strengthen_20260918/PREREG.md -- Wave B / B2, hypothesis H-COND",
+  "declared_before_any_number_in_this_file_was_read": true,
+  "primary_estimand": "within-document, same-fact crossed accuracy P(z(f|omitting summary) > z(f|conveying summary)), ties 1/2; document-macro statistic, document-clustered bootstrap",
+  "chance_level_for_any_summary_blind_scorer": 0.5,
+  "pass": "H-COND PASSES if MARS-C's crossed accuracy exceeds EVERY off-the-shelf family's by a margin whose document-clustered one-sided 95% lower bound is above 0, on validation AND on the sealed TEST split.",
+  "fail": "H-COND FAILS if any off-the-shelf family matches MARS-C within that margin. Then the paper says so and the supervision claim narrows to the fixed-inventory verifier effect, which this endpoint does not touch.",
+  "candidate_blind": "A family whose document-macro crossed accuracy has a two-sided 95% document-clustered interval covering 0.500 is reported as CANDIDATE-BLIND, and any recall@k advantage it holds is evidence FOR the methodological claim, not against MARS-C.",
+  "primary_family": "humanfact (MARS-C natural-coverage cross-encoder, 3 seeds)",
+  "off_the_shelf_families": "every family whose kind is zs, lex or emb"
+ },
+ "split_docs_file": "/home/user/results/marsc_strengthen/hj3/docs/docs_unisum.jsonl",
+ "docs": 224,
+ "cells": 17207,
+ "triples": 26489,
+ "docs_with_triples": 224,
+ "facts_with_triples": 2160,
+ "chance_level": 0.5,
+ "bootstrap_seed": 20260917,
+ "n_boot": 2000,
+ "families": {
+  "humanfact": {
+   "kind": "ckpt",
+   "spec": "/home/user/results/marsc/e1/mc-A-lam1-crossenc-inv_seed*/model",
+   "checkpoints": [
+    "/home/user/results/marsc/e1/mc-A-lam1-crossenc-inv_seed20260906/model",
+    "/home/user/results/marsc/e1/mc-A-lam1-crossenc-inv_seed20260907/model",
+    "/home/user/results/marsc/e1/mc-A-lam1-crossenc-inv_seed20260908/model"
+   ],
+   "per_seed": {
+    "20260906": {
+     "n_triples": 26489,
+     "n_docs": 224,
+     "discrimination_triple": 0.8475027369851637,
+     "discrimination_doc_macro": 0.8579575725773825,
+     "ci_doc_bootstrap": [
+      0.8462816049406982,
+      0.8685027338884133
+     ],
+     "sign_test_vs_half": {
+      "n_docs": 224,
+      "n_pos": 224,
+      "n_neg": 0,
+      "p_value": 7.418412301374843e-68
+     }
+    },
+    "20260907": {
+     "n_triples": 26489,
+     "n_docs": 224,
+     "discrimination_triple": 0.8543923892936691,
+     "discrimination_doc_macro": 0.8640950959498126,
+     "ci_doc_bootstrap": [
+      0.8526881734561244,
+      0.8749969724108368
+     ],
+     "sign_test_vs_half": {
+      "n_docs": 223,
+      "n_pos": 223,
+      "n_neg": 0,
+      "p_value": 1.4836824602749686e-67
+     }
+    },
+    "20260908": {
+     "n_triples": 26489,
+     "n_docs": 224,
+     "discrimination_triple": 0.8553550530408849,
+     "discrimination_doc_macro": 0.8647418748708374,
+     "ci_doc_bootstrap": [
+      0.8529983954030188,
+      0.87546157164706
+     ],
+     "sign_test_vs_half": {
+      "n_docs": 224,
+      "n_pos": 223,
+      "n_neg": 1,
+      "p_value": 1.6691427678093396e-65
+     }
+    }
+   },
+   "seed_averaged": {
+    "n_triples": 26489,
+    "n_docs": 224,
+    "discrimination_triple": 0.8545245196119143,
+    "discrimination_doc_macro": 0.8643602210278758,
+    "ci_doc_bootstrap": [
+     0.8527686944451986,
+     0.8751708167939571
+    ],
+    "sign_test_vs_half": {
+     "n_docs": 223,
+     "n_pos": 223,
+     "n_neg": 0,
+     "p_value": 1.4836824602749686e-67
+    }
+   },
+   "verdict_vs_chance": "CONDITIONS-ON-CANDIDATE",
+   "off_the_shelf": false
+  },
+  "judgefact": {
+   "kind": "ckpt",
+   "spec": "/home/user/results/mars2_gates/b21/xenc_seed*",
+   "checkpoints": [
+    "/home/user/results/mars2_gates/b21/xenc_seed20260906",
+    "/home/user/results/mars2_gates/b21/xenc_seed20260907",
+    "/home/user/results/mars2_gates/b21/xenc_seed20260908"
+   ],
+   "per_seed": {
+    "20260906": {
+     "n_triples": 26489,
+     "n_docs": 224,
+     "discrimination_triple": 0.8538827437804372,
+     "discrimination_doc_macro": 0.8629752518754896,
+     "ci_doc_bootstrap": [
+      0.8501754840613462,
+      0.8750264190964115
+     ],
+     "sign_test_vs_half": {
+      "n_docs": 224,
+      "n_pos": 223,
+      "n_neg": 1,
+      "p_value": 1.6691427678093396e-65
+     }
+    },
+    "20260907": {
+     "n_triples": 26489,
+     "n_docs": 224,
+     "discrimination_triple": 0.8587526897957642,
+     "discrimination_doc_macro": 0.8667299161708308,
+     "ci_doc_bootstrap": [
+      0.8543194326614164,
+      0.8781711329994247
+     ],
+     "sign_test_vs_half": {
+      "n_docs": 224,
+      "n_pos": 223,
+      "n_neg": 1,
+      "p_value": 1.6691427678093396e-65
+     }
+    },
+    "20260908": {
+     "n_triples": 26489,
+     "n_docs": 224,
+     "discrimination_triple": 0.8555060591188796,
+     "discrimination_doc_macro": 0.8665962529435655,
+     "ci_doc_bootstrap": [
+      0.8567026939005865,
+      0.8761848612312685
+     ],
+     "sign_test_vs_half": {
+      "n_docs": 224,
+      "n_pos": 224,
+      "n_neg": 0,
+      "p_value": 7.418412301374843e-68
+     }
+    }
+   },
+   "seed_averaged": {
+    "n_triples": 26489,
+    "n_docs": 224,
+    "discrimination_triple": 0.8586394352372683,
+    "discrimination_doc_macro": 0.8693560639723208,
+    "ci_doc_bootstrap": [
+     0.8594696093645692,
+     0.8793662205927386
+    ],
+    "sign_test_vs_half": {
+     "n_docs": 224,
+     "n_pos": 224,
+     "n_neg": 0,
+     "p_value": 7.418412301374843e-68
+    }
+   },
+   "verdict_vs_chance": "CONDITIONS-ON-CANDIDATE",
+   "off_the_shelf": false
+  },
+  "nli": {
+   "kind": "zs",
+   "spec": "nli",
+   "seed_averaged": {
+    "n_triples": 26489,
+    "n_docs": 224,
+    "discrimination_triple": 0.7809090565895277,
+    "discrimination_doc_macro": 0.7964770605367905,
+    "ci_doc_bootstrap": [
+     0.7817067549760094,
+     0.8108613901817812
+    ],
+    "sign_test_vs_half": {
+     "n_docs": 223,
+     "n_pos": 221,
+     "n_neg": 2,
+     "p_value": 3.705793681028789e-63
+    }
+   },
+   "verdict_vs_chance": "CONDITIONS-ON-CANDIDATE",
+   "off_the_shelf": true
+  },
+  "summac_zs": {
+   "kind": "zs",
+   "spec": "summac_zs",
+   "seed_averaged": {
+    "n_triples": 26489,
+    "n_docs": 224,
+    "discrimination_triple": 0.7159575672920835,
+    "discrimination_doc_macro": 0.732263275100901,
+    "ci_doc_bootstrap": [
+     0.7146287072994865,
+     0.7496824209560858
+    ],
+    "sign_test_vs_half": {
+     "n_docs": 224,
+     "n_pos": 220,
+     "n_neg": 4,
+     "p_value": 7.714243821313192e-60
+    }
+   },
+   "verdict_vs_chance": "CONDITIONS-ON-CANDIDATE",
+   "off_the_shelf": true
+  },
+  "lex_token_recall": {
+   "kind": "lex",
+   "spec": "token_recall",
+   "seed_averaged": {
+    "n_triples": 26489,
+    "n_docs": 224,
+    "discrimination_triple": 0.839858054286685,
+    "discrimination_doc_macro": 0.8469834950275434,
+    "ci_doc_bootstrap": [
+     0.8365987336535479,
+     0.8565443163950245
+    ],
+    "sign_test_vs_half": {
+     "n_docs": 224,
+     "n_pos": 224,
+     "n_neg": 0,
+     "p_value": 7.418412301374843e-68
+    }
+   },
+   "verdict_vs_chance": "CONDITIONS-ON-CANDIDATE",
+   "off_the_shelf": true
+  },
+  "lex_rougeL_recall": {
+   "kind": "lex",
+   "spec": "rougeL_recall",
+   "seed_averaged": {
+    "n_triples": 26489,
+    "n_docs": 224,
+    "discrimination_triple": 0.8116765449809354,
+    "discrimination_doc_macro": 0.815967292287957,
+    "ci_doc_bootstrap": [
+     0.8050526358972732,
+     0.8269235349090983
+    ],
+    "sign_test_vs_half": {
+     "n_docs": 224,
+     "n_pos": 224,
+     "n_neg": 0,
+     "p_value": 7.418412301374843e-68
+    }
+   },
+   "verdict_vs_chance": "CONDITIONS-ON-CANDIDATE",
+   "off_the_shelf": true
+  },
+  "emb_minilm": {
+   "kind": "emb",
+   "spec": "sentence-transformers/all-MiniLM-L6-v2",
+   "seed_averaged": {
+    "n_triples": 26489,
+    "n_docs": 224,
+    "discrimination_triple": 0.8155271999697988,
+    "discrimination_doc_macro": 0.8213438340366215,
+    "ci_doc_bootstrap": [
+     0.8101460085502319,
+     0.8324937562568139
+    ],
+    "sign_test_vs_half": {
+     "n_docs": 224,
+     "n_pos": 224,
+     "n_neg": 0,
+     "p_value": 7.418412301374843e-68
+    }
+   },
+   "verdict_vs_chance": "CONDITIONS-ON-CANDIDATE",
+   "off_the_shelf": true
+  },
+  "factcg": {
+   "kind": "zs",
+   "spec": "factcg",
+   "seed_averaged": {
+    "n_triples": 26489,
+    "n_docs": 224,
+    "discrimination_triple": 0.821491940050587,
+    "discrimination_doc_macro": 0.8332977374361624,
+    "ci_doc_bootstrap": [
+     0.8192023112403095,
+     0.8461490855158325
+    ],
+    "sign_test_vs_half": {
+     "n_docs": 224,
+     "n_pos": 223,
+     "n_neg": 1,
+     "p_value": 1.6691427678093396e-65
+    }
+   },
+   "verdict_vs_chance": "CONDITIONS-ON-CANDIDATE",
+   "off_the_shelf": true
+  },
+  "minicheck7b": {
+   "kind": "zs",
+   "spec": "minicheck7b",
+   "seed_averaged": {
+    "n_triples": 26489,
+    "n_docs": 224,
+    "discrimination_triple": 0.8271169164558874,
+    "discrimination_doc_macro": 0.8391139945835455,
+    "ci_doc_bootstrap": [
+     0.8251905981234295,
+     0.851894047634494
+    ],
+    "sign_test_vs_half": {
+     "n_docs": 224,
+     "n_pos": 223,
+     "n_neg": 1,
+     "p_value": 1.6691427678093396e-65
+    }
+   },
+   "verdict_vs_chance": "CONDITIONS-ON-CANDIDATE",
+   "off_the_shelf": true
+  },
+  "judge_gemma31": {
+   "kind": "zs",
+   "spec": "judge_gemma31",
+   "seed_averaged": {
+    "n_triples": 26489,
+    "n_docs": 224,
+    "discrimination_triple": 0.8464834459586998,
+    "discrimination_doc_macro": 0.8587994980552579,
+    "ci_doc_bootstrap": [
+     0.8469312087662433,
+     0.8700951541068652
+    ],
+    "sign_test_vs_half": {
+     "n_docs": 224,
+     "n_pos": 223,
+     "n_neg": 1,
+     "p_value": 1.6691427678093396e-65
+    }
+   },
+   "verdict_vs_chance": "CONDITIONS-ON-CANDIDATE",
+   "off_the_shelf": true
+  }
+ },
+ "primary_family": "humanfact",
+ "margins_vs_primary": {
+  "judgefact": {
+   "n_docs": 224,
+   "observed_margin_doc_macro": -0.004995842944444923,
+   "ci95_two_sided": [
+    -0.011155859300559883,
+    0.0012193883236343798
+   ],
+   "lower_bound_95_one_sided": -0.01022637951341149,
+   "p_one_sided_bootstrap": 0.9455,
+   "n_docs_a_better": 95,
+   "n_docs_b_better": 106,
+   "n_docs_tied": 23,
+   "family_is_off_the_shelf": false,
+   "clears_bar_on_this_split": false
+  },
+  "nli": {
+   "n_docs": 224,
+   "observed_margin_doc_macro": 0.06788316049108521,
+   "ci95_two_sided": [
+    0.05857801045198317,
+    0.07746215147655258
+   ],
+   "lower_bound_95_one_sided": 0.06014192730204686,
+   "p_one_sided_bootstrap": 0.0,
+   "n_docs_a_better": 185,
+   "n_docs_b_better": 20,
+   "n_docs_tied": 19,
+   "family_is_off_the_shelf": true,
+   "clears_bar_on_this_split": true
+  },
+  "summac_zs": {
+   "n_docs": 224,
+   "observed_margin_doc_macro": 0.13209694592697485,
+   "ci95_two_sided": [
+    0.11898972102792597,
+    0.14531089125563157
+   ],
+   "lower_bound_95_one_sided": 0.1213225474463831,
+   "p_one_sided_bootstrap": 0.0,
+   "n_docs_a_better": 204,
+   "n_docs_b_better": 10,
+   "n_docs_tied": 10,
+   "family_is_off_the_shelf": true,
+   "clears_bar_on_this_split": true
+  },
+  "lex_token_recall": {
+   "n_docs": 224,
+   "observed_margin_doc_macro": 0.017376726000332354,
+   "ci95_two_sided": [
+    0.009433734938509535,
+    0.02501311548938443
+   ],
+   "lower_bound_95_one_sided": 0.010829858311623005,
+   "p_one_sided_bootstrap": 0.0,
+   "n_docs_a_better": 136,
+   "n_docs_b_better": 66,
+   "n_docs_tied": 22,
+   "family_is_off_the_shelf": true,
+   "clears_bar_on_this_split": true
+  },
+  "lex_rougeL_recall": {
+   "n_docs": 224,
+   "observed_margin_doc_macro": 0.04839292873991885,
+   "ci95_two_sided": [
+    0.03905492115204118,
+    0.05794948606489919
+   ],
+   "lower_bound_95_one_sided": 0.040369942682919185,
+   "p_one_sided_bootstrap": 0.0,
+   "n_docs_a_better": 174,
+   "n_docs_b_better": 42,
+   "n_docs_tied": 8,
+   "family_is_off_the_shelf": true,
+   "clears_bar_on_this_split": true
+  },
+  "emb_minilm": {
+   "n_docs": 224,
+   "observed_margin_doc_macro": 0.04301638699125436,
+   "ci95_two_sided": [
+    0.03241114681989998,
+    0.05351191260869297
+   ],
+   "lower_bound_95_one_sided": 0.033933155081692146,
+   "p_one_sided_bootstrap": 0.0,
+   "n_docs_a_better": 154,
+   "n_docs_b_better": 61,
+   "n_docs_tied": 9,
+   "family_is_off_the_shelf": true,
+   "clears_bar_on_this_split": true
+  },
+  "factcg": {
+   "n_docs": 224,
+   "observed_margin_doc_macro": 0.031062483591713486,
+   "ci95_two_sided": [
+    0.022637239135372494,
+    0.0397842005820534
+   ],
+   "lower_bound_95_one_sided": 0.024032391392549608,
+   "p_one_sided_bootstrap": 0.0,
+   "n_docs_a_better": 147,
+   "n_docs_b_better": 50,
+   "n_docs_tied": 27,
+   "family_is_off_the_shelf": true,
+   "clears_bar_on_this_split": true
+  },
+  "minicheck7b": {
+   "n_docs": 224,
+   "observed_margin_doc_macro": 0.02524622644433031,
+   "ci95_two_sided": [
+    0.017273790947428466,
+    0.033395971687846554
+   ],
+   "lower_bound_95_one_sided": 0.01872328832783877,
+   "p_one_sided_bootstrap": 0.0,
+   "n_docs_a_better": 143,
+   "n_docs_b_better": 59,
+   "n_docs_tied": 22,
+   "family_is_off_the_shelf": true,
+   "clears_bar_on_this_split": true
+  },
+  "judge_gemma31": {
+   "n_docs": 224,
+   "observed_margin_doc_macro": 0.005560722972617905,
+   "ci95_two_sided": [
+    -0.00040570091478966334,
+    0.011412727203500332
+   ],
+   "lower_bound_95_one_sided": 0.0006114212230734992,
+   "p_one_sided_bootstrap": 0.0325,
+   "n_docs_a_better": 110,
+   "n_docs_b_better": 84,
+   "n_docs_tied": 30,
+   "family_is_off_the_shelf": true,
+   "clears_bar_on_this_split": true
+  }
+ },
+ "hcond_split_verdict": {
+  "off_the_shelf_families_compared": [
+   "nli",
+   "summac_zs",
+   "lex_token_recall",
+   "lex_rougeL_recall",
+   "emb_minilm",
+   "factcg",
+   "minicheck7b",
+   "judge_gemma31"
+  ],
+  "families_not_cleared": [],
+  "split_result": "PASS-ON-THIS-SPLIT",
+  "note": "The registered bar requires PASS on validation AND on the sealed TEST split; use --combine."
+ }
+}

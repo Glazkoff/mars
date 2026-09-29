@@ -1,0 +1,31 @@
+# MARS-C T01-T08 submission ledger  2026-09-16T23:18:58Z
+T01 ablation grid           4894
+T02 recall@k curve          4895
+T03 adaptive budget         4896
+T04 robust tests            4897
+T08 seed aggregation        4898
+T05a MARS-2 TEST dumps      4899  (full_recovery + direct_enabled x 3 seeds)
+T05b MARS-2 emitter eval    4900  (after 4899)
+T06 anchored judge          4901  (2 families x 3 shards)
+T06b judge validation       4902  (after 4901)
+T07 label-efficiency curve  4903  (85/213/426/853 docs x 3 seeds)
+T07b curve evaluation       4904  (after 4903)
+
+# queue after submission
+         JOBID             NAME     STATE        TIME  NODES NODELIST(REASON)
+          4894      mc-t01-grid   PENDING        0:00      1 (None)
+          4895    mc-t02-kcurve   PENDING        0:00      1 (Priority)
+          4896  mc-t03-adaptive   PENDING        0:00      1 (Priority)
+          4897    mc-t04-robust   PENDING        0:00      1 (Priority)
+          4898       mc-t08-agg   PENDING        0:00      1 (Priority)
+4899_[0-2,9-11         b2-score   PENDING        0:00      1 (None)
+          4900     mc-t05-mars2   PENDING        0:00      1 (Dependency)
+  4901_[0-5%2]     mc-t06-judge   PENDING        0:00      1 (None)
+          4902    mc-t06b-valid   PENDING        0:00      1 (Dependency)
+ 4903_[0-11%4]     mc-t07-curve   PENDING        0:00      1 (None)
+          4904     mc-t07b-eval   PENDING        0:00      1 (Dependency)
+          4195         hw-watch   RUNNING  1-03:23:08      1 Euler
+        4886_4       arr-h4n160   RUNNING       43:47      1 Euler
+        4889_1        arr-h4big   RUNNING     1:21:07      1 Euler
+2026-09-16T23:23:30Z T07 rerun after --train-limit fix: 4913 / 4914
+2026-09-17T06:46:11Z T06b rerun after --primary-family fix: 4936

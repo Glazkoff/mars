@@ -1,0 +1,150 @@
+{
+ "block": "B6",
+ "written_utc": "2026-09-27T19:42:04.848578+00:00",
+ "which": [
+  "gpu"
+ ],
+ "host": "Euler",
+ "python": "3.12.14",
+ "device": "cuda",
+ "n_pairs": 200,
+ "n_docs": 50,
+ "n_docs_gemma": 25,
+ "env": {
+  "SLURM_JOB_ID": "7656",
+  "CUDA_VISIBLE_DEVICES": "0",
+  "HF_HOME": "/home/user/hf_cache"
+ },
+ "population": {
+  "gemma+ent": {
+   "file": "/home/user/results/mars3/m32/units_gemma+ent_validation.jsonl",
+   "pairs_with_units": 1466,
+   "units_total": 138261,
+   "units_per_pair": 94.31173260572987,
+   "documents": 190,
+   "pairs_per_document": 7.71578947368421,
+   "units_per_pair_first200": 165.54,
+   "pairs_per_document_first200": 11.764705882352942
+  },
+  "distilled": {
+   "file": "/home/user/results/mars3/m32/units_distilled_validation.jsonl",
+   "pairs_with_units": 1442,
+   "units_total": 58592,
+   "units_per_pair": 40.63245492371706,
+   "documents": 187,
+   "pairs_per_document": 7.711229946524064,
+   "units_per_pair_first200": 69.92,
+   "pairs_per_document_first200": 11.764705882352942
+  }
+ },
+ "stages": {
+  "offshelf": {
+   "lex:token_recall": {
+    "units": 6000,
+    "seconds": 0.09746789932250977,
+    "s_per_unit": 1.6244649887084962e-05,
+    "device": "cpu"
+   },
+   "lex:rougeL_recall": {
+    "units": 6000,
+    "seconds": 0.8747975826263428,
+    "s_per_unit": 0.00014579959710439046,
+    "device": "cpu"
+   },
+   "emb:minilm_maxcos": {
+    "units": 6000,
+    "seconds": 1.0512237548828125,
+    "s_per_unit": 0.0001752039591471354,
+    "model_load_seconds": 0.3138773441314697,
+    "device": "cuda"
+   },
+   "nli:nli": {
+    "units": 6000,
+    "seconds": 5.085475921630859,
+    "s_per_unit": 0.0008475793202718099,
+    "units_per_s": 1179.8305787820666,
+    "model_load_seconds": 0.34760332107543945,
+    "device": "cuda"
+   },
+   "nli:summac_zs": {
+    "units": 6000,
+    "seconds": 47.11905264854431,
+    "s_per_unit": 0.007853175441424052,
+    "units_per_s": 127.33702531655977,
+    "model_load_seconds": 0.7092075347900391,
+    "device": "cuda"
+   },
+   "nli:minicheck": {
+    "units": 900,
+    "seconds": 22.510141849517822,
+    "s_per_unit": 0.02501126872168647,
+    "units_per_s": 39.98197816862173,
+    "model_load_seconds": 0.797875165939331,
+    "device": "cuda"
+   },
+   "nli:alignscore": {
+    "units": 900,
+    "seconds": 0.8780999183654785,
+    "s_per_unit": 0.0009756665759616428,
+    "units_per_s": 1024.9403071068348,
+    "model_load_seconds": 1.8709778785705566,
+    "device": "cuda"
+   }
+  },
+  "offshelf_distilled": {
+   "lex:token_recall": {
+    "units": 6000,
+    "seconds": 0.08362150192260742,
+    "s_per_unit": 1.3936916987101237e-05,
+    "device": "cpu"
+   },
+   "lex:rougeL_recall": {
+    "units": 6000,
+    "seconds": 0.7415900230407715,
+    "s_per_unit": 0.0001235983371734619,
+    "device": "cpu"
+   },
+   "emb:minilm_maxcos": {
+    "units": 6000,
+    "seconds": 0.9721269607543945,
+    "s_per_unit": 0.00016202116012573243,
+    "model_load_seconds": 0.5425386428833008,
+    "device": "cuda"
+   },
+   "nli:nli": {
+    "units": 6000,
+    "seconds": 3.429614782333374,
+    "s_per_unit": 0.000571602463722229,
+    "units_per_s": 1749.4676168609926,
+    "model_load_seconds": 0.2927968502044678,
+    "device": "cuda"
+   },
+   "nli:summac_zs": {
+    "units": 6000,
+    "seconds": 41.68984651565552,
+    "s_per_unit": 0.006948307752609253,
+    "units_per_s": 143.9199349833744,
+    "model_load_seconds": 0.41407084465026855,
+    "device": "cuda"
+   },
+   "nli:minicheck": {
+    "units": 900,
+    "seconds": 21.44266438484192,
+    "s_per_unit": 0.023825182649824354,
+    "units_per_s": 41.972395960094445,
+    "model_load_seconds": 1.6344141960144043,
+    "device": "cuda"
+   },
+   "nli:alignscore": {
+    "units": 900,
+    "seconds": 0.6630465984344482,
+    "s_per_unit": 0.0007367184427049425,
+    "units_per_s": 1357.3706616171985,
+    "model_load_seconds": 1.6553385257720947,
+    "device": "cuda"
+   }
+  }
+ },
+ "gpu": "NVIDIA H200 NVL",
+ "finished_utc": "2026-09-27T19:44:49.071624+00:00"
+}

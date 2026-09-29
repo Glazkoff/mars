@@ -1,0 +1,11 @@
+{
+  "job_id": "6259",
+  "array_task": null,
+  "job_name": "mars-hj9-eval",
+  "node": "Euler",
+  "started_utc": "2026-09-23T00:54:34.832094+00:00",
+  "python": "/home/user/.venv-mars/bin/python",
+  "cwd": "/home/user/summ-mask-benchmark",
+  "gpus": null,
+  "nvidia_smi": "No devices were found"
+}

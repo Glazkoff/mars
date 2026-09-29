@@ -1,0 +1,1083 @@
+{
+ "registered": "research/mars_metric_20260923/PREREG.md, Amendment M-H (a)",
+ "datasets": {
+  "unisumeval": {
+   "n_pairs_total": 1828,
+   "n_docs_total": 225,
+   "source_words_quartiles_per_document": [
+    214.0,
+    773.0,
+    3359.0
+   ],
+   "dims": {
+    "completeness": {
+     "columns": [
+      "marsR_marsc",
+      "marsR_factcg",
+      "marsR_free",
+      "marsP_factcg",
+      "rouge1",
+      "rouge2",
+      "rougeL",
+      "bertscore_P",
+      "bertscore_R",
+      "bertscore_F",
+      "bartscore_ref2cand",
+      "bartscore_src2cand",
+      "alignscore",
+      "factcg_whole",
+      "a3cu_R",
+      "a3cu_F",
+      "a2cu_R",
+      "qaeval_F1",
+      "questeval",
+      "questeval_R",
+      "unieval_relevance",
+      "unieval_consistency",
+      "unieval_coherence",
+      "unieval_overall",
+      "geval_completeness",
+      "gevalplus_completeness",
+      "geval_faithfulness",
+      "gevalplus_faithfulness"
+     ],
+     "stage_1_pairs_with_human_dimension": 1828,
+     "stage_1_docs": 225,
+     "stage_2_pairs_every_column_scored": 911,
+     "stage_2_docs": 112,
+     "stage_3_docs_every_tau_defined": 78,
+     "stage_3_pairs_contributing": 636,
+     "docs_with_undefined_tau_per_column_on_stage_2": {
+      "gevalplus_faithfulness": 17,
+      "a2cu_R": 14,
+      "qaeval_F1": 10,
+      "rouge2": 3,
+      "geval_faithfulness": 2,
+      "rouge1": 1,
+      "rougeL": 1,
+      "geval_completeness": 1,
+      "marsR_marsc": 0,
+      "marsR_factcg": 0,
+      "marsR_free": 0,
+      "marsP_factcg": 0,
+      "bertscore_P": 0,
+      "bertscore_R": 0,
+      "bertscore_F": 0,
+      "bartscore_ref2cand": 0,
+      "bartscore_src2cand": 0,
+      "alignscore": 0,
+      "factcg_whole": 0,
+      "a3cu_R": 0,
+      "a3cu_F": 0,
+      "questeval": 0,
+      "questeval_R": 0,
+      "unieval_relevance": 0,
+      "unieval_consistency": 0,
+      "unieval_coherence": 0,
+      "unieval_overall": 0,
+      "gevalplus_completeness": 0
+     },
+     "check_meta_common": {
+      "n_pairs": 911,
+      "n_docs_all_tau": 78
+     },
+     "composition_full_pool": {
+      "n_pairs": 1828,
+      "n_docs": 225,
+      "domain_pairs": {
+       "booking": 204,
+       "dailylife": 209,
+       "interview": 194,
+       "lifestyle": 223,
+       "medical_literature": 193,
+       "meeting": 194,
+       "news": 212,
+       "report": 182,
+       "sci-fiction": 217
+      },
+      "domain_docs": {
+       "booking": 25,
+       "dailylife": 25,
+       "interview": 25,
+       "lifestyle": 25,
+       "medical_literature": 25,
+       "meeting": 25,
+       "news": 25,
+       "report": 25,
+       "sci-fiction": 25
+      },
+      "source_words_median_per_document": 773.0,
+      "source_words_quartile_share_per_document": {
+       "Q1": 0.249,
+       "Q2": 0.249,
+       "Q3": 0.249,
+       "Q4": 0.253
+      }
+     },
+     "composition_stage_2": {
+      "n_pairs": 911,
+      "n_docs": 112,
+      "domain_pairs": {
+       "dailylife": 201,
+       "interview": 156,
+       "lifestyle": 72,
+       "medical_literature": 78,
+       "meeting": 186,
+       "news": 206,
+       "report": 12
+      },
+      "domain_docs": {
+       "dailylife": 24,
+       "interview": 20,
+       "lifestyle": 8,
+       "medical_literature": 10,
+       "meeting": 24,
+       "news": 24,
+       "report": 2
+      },
+      "source_words_median_per_document": 515.5,
+      "source_words_quartile_share_per_document": {
+       "Q1": 0.259,
+       "Q2": 0.348,
+       "Q3": 0.393,
+       "Q4": 0.0
+      }
+     },
+     "composition_stage_3_cohort": {
+      "n_pairs": 636,
+      "n_docs": 78,
+      "domain_pairs": {
+       "dailylife": 184,
+       "interview": 86,
+       "lifestyle": 18,
+       "medical_literature": 47,
+       "meeting": 157,
+       "news": 138,
+       "report": 6
+      },
+      "domain_docs": {
+       "dailylife": 22,
+       "interview": 11,
+       "lifestyle": 2,
+       "medical_literature": 6,
+       "meeting": 20,
+       "news": 16,
+       "report": 1
+      },
+      "source_words_median_per_document": 468.5,
+      "source_words_quartile_share_per_document": {
+       "Q1": 0.269,
+       "Q2": 0.346,
+       "Q3": 0.385,
+       "Q4": 0.0
+      }
+     }
+    },
+    "faithfulness": {
+     "columns": [
+      "marsR_marsc",
+      "marsR_factcg",
+      "marsR_free",
+      "marsP_factcg",
+      "rouge1",
+      "rouge2",
+      "rougeL",
+      "bertscore_P",
+      "bertscore_R",
+      "bertscore_F",
+      "bartscore_ref2cand",
+      "bartscore_src2cand",
+      "alignscore",
+      "factcg_whole",
+      "a3cu_R",
+      "a3cu_F",
+      "a2cu_R",
+      "qaeval_F1",
+      "questeval",
+      "questeval_R",
+      "unieval_relevance",
+      "unieval_consistency",
+      "unieval_coherence",
+      "unieval_overall",
+      "geval_completeness",
+      "gevalplus_completeness",
+      "geval_faithfulness",
+      "gevalplus_faithfulness"
+     ],
+     "stage_1_pairs_with_human_dimension": 1828,
+     "stage_1_docs": 225,
+     "stage_2_pairs_every_column_scored": 911,
+     "stage_2_docs": 112,
+     "stage_3_docs_every_tau_defined": 75,
+     "stage_3_pairs_contributing": 614,
+     "docs_with_undefined_tau_per_column_on_stage_2": {
+      "gevalplus_faithfulness": 21,
+      "a2cu_R": 17,
+      "qaeval_F1": 15,
+      "rouge2": 8,
+      "geval_faithfulness": 7,
+      "rouge1": 6,
+      "rougeL": 6,
+      "geval_completeness": 6,
+      "marsR_marsc": 5,
+      "marsR_factcg": 5,
+      "marsR_free": 5,
+      "marsP_factcg": 5,
+      "bertscore_P": 5,
+      "bertscore_R": 5,
+      "bertscore_F": 5,
+      "bartscore_ref2cand": 5,
+      "bartscore_src2cand": 5,
+      "alignscore": 5,
+      "factcg_whole": 5,
+      "a3cu_R": 5,
+      "a3cu_F": 5,
+      "questeval": 5,
+      "questeval_R": 5,
+      "unieval_relevance": 5,
+      "unieval_consistency": 5,
+      "unieval_coherence": 5,
+      "unieval_overall": 5,
+      "gevalplus_completeness": 5
+     },
+     "check_meta_common": {
+      "n_pairs": 911,
+      "n_docs_all_tau": 75
+     },
+     "composition_full_pool": {
+      "n_pairs": 1828,
+      "n_docs": 225,
+      "domain_pairs": {
+       "booking": 204,
+       "dailylife": 209,
+       "interview": 194,
+       "lifestyle": 223,
+       "medical_literature": 193,
+       "meeting": 194,
+       "news": 212,
+       "report": 182,
+       "sci-fiction": 217
+      },
+      "domain_docs": {
+       "booking": 25,
+       "dailylife": 25,
+       "interview": 25,
+       "lifestyle": 25,
+       "medical_literature": 25,
+       "meeting": 25,
+       "news": 25,
+       "report": 25,
+       "sci-fiction": 25
+      },
+      "source_words_median_per_document": 773.0,
+      "source_words_quartile_share_per_document": {
+       "Q1": 0.249,
+       "Q2": 0.249,
+       "Q3": 0.249,
+       "Q4": 0.253
+      }
+     },
+     "composition_stage_2": {
+      "n_pairs": 911,
+      "n_docs": 112,
+      "domain_pairs": {
+       "dailylife": 201,
+       "interview": 156,
+       "lifestyle": 72,
+       "medical_literature": 78,
+       "meeting": 186,
+       "news": 206,
+       "report": 12
+      },
+      "domain_docs": {
+       "dailylife": 24,
+       "interview": 20,
+       "lifestyle": 8,
+       "medical_literature": 10,
+       "meeting": 24,
+       "news": 24,
+       "report": 2
+      },
+      "source_words_median_per_document": 515.5,
+      "source_words_quartile_share_per_document": {
+       "Q1": 0.259,
+       "Q2": 0.348,
+       "Q3": 0.393,
+       "Q4": 0.0
+      }
+     },
+     "composition_stage_3_cohort": {
+      "n_pairs": 614,
+      "n_docs": 75,
+      "domain_pairs": {
+       "dailylife": 176,
+       "interview": 86,
+       "lifestyle": 18,
+       "medical_literature": 47,
+       "meeting": 149,
+       "news": 138
+      },
+      "domain_docs": {
+       "dailylife": 21,
+       "interview": 11,
+       "lifestyle": 2,
+       "medical_literature": 6,
+       "meeting": 19,
+       "news": 16
+      },
+      "source_words_median_per_document": 468.0,
+      "source_words_quartile_share_per_document": {
+       "Q1": 0.267,
+       "Q2": 0.347,
+       "Q3": 0.387,
+       "Q4": 0.0
+      }
+     }
+    },
+    "conciseness": {
+     "columns": [
+      "marsR_marsc",
+      "marsR_factcg",
+      "marsR_free",
+      "marsP_factcg",
+      "rouge1",
+      "rouge2",
+      "rougeL",
+      "bertscore_P",
+      "bertscore_R",
+      "bertscore_F",
+      "bartscore_ref2cand",
+      "bartscore_src2cand",
+      "alignscore",
+      "factcg_whole",
+      "a3cu_R",
+      "a3cu_F",
+      "a2cu_R",
+      "qaeval_F1",
+      "questeval",
+      "questeval_R",
+      "unieval_relevance",
+      "unieval_consistency",
+      "unieval_coherence",
+      "unieval_overall",
+      "geval_completeness",
+      "gevalplus_completeness",
+      "geval_faithfulness",
+      "gevalplus_faithfulness"
+     ],
+     "stage_1_pairs_with_human_dimension": 1828,
+     "stage_1_docs": 225,
+     "stage_2_pairs_every_column_scored": 911,
+     "stage_2_docs": 112,
+     "stage_3_docs_every_tau_defined": 73,
+     "stage_3_pairs_contributing": 596,
+     "docs_with_undefined_tau_per_column_on_stage_2": {
+      "gevalplus_faithfulness": 23,
+      "a2cu_R": 21,
+      "qaeval_F1": 16,
+      "rouge2": 10,
+      "geval_faithfulness": 9,
+      "rouge1": 8,
+      "rougeL": 8,
+      "geval_completeness": 8,
+      "marsR_marsc": 7,
+      "marsR_factcg": 7,
+      "marsR_free": 7,
+      "marsP_factcg": 7,
+      "bertscore_P": 7,
+      "bertscore_R": 7,
+      "bertscore_F": 7,
+      "bartscore_ref2cand": 7,
+      "bartscore_src2cand": 7,
+      "alignscore": 7,
+      "factcg_whole": 7,
+      "a3cu_R": 7,
+      "a3cu_F": 7,
+      "questeval": 7,
+      "questeval_R": 7,
+      "unieval_relevance": 7,
+      "unieval_consistency": 7,
+      "unieval_coherence": 7,
+      "unieval_overall": 7,
+      "gevalplus_completeness": 7
+     },
+     "check_meta_common": {
+      "n_pairs": 911,
+      "n_docs_all_tau": 73
+     },
+     "composition_full_pool": {
+      "n_pairs": 1828,
+      "n_docs": 225,
+      "domain_pairs": {
+       "booking": 204,
+       "dailylife": 209,
+       "interview": 194,
+       "lifestyle": 223,
+       "medical_literature": 193,
+       "meeting": 194,
+       "news": 212,
+       "report": 182,
+       "sci-fiction": 217
+      },
+      "domain_docs": {
+       "booking": 25,
+       "dailylife": 25,
+       "interview": 25,
+       "lifestyle": 25,
+       "medical_literature": 25,
+       "meeting": 25,
+       "news": 25,
+       "report": 25,
+       "sci-fiction": 25
+      },
+      "source_words_median_per_document": 773.0,
+      "source_words_quartile_share_per_document": {
+       "Q1": 0.249,
+       "Q2": 0.249,
+       "Q3": 0.249,
+       "Q4": 0.253
+      }
+     },
+     "composition_stage_2": {
+      "n_pairs": 911,
+      "n_docs": 112,
+      "domain_pairs": {
+       "dailylife": 201,
+       "interview": 156,
+       "lifestyle": 72,
+       "medical_literature": 78,
+       "meeting": 186,
+       "news": 206,
+       "report": 12
+      },
+      "domain_docs": {
+       "dailylife": 24,
+       "interview": 20,
+       "lifestyle": 8,
+       "medical_literature": 10,
+       "meeting": 24,
+       "news": 24,
+       "report": 2
+      },
+      "source_words_median_per_document": 515.5,
+      "source_words_quartile_share_per_document": {
+       "Q1": 0.259,
+       "Q2": 0.348,
+       "Q3": 0.393,
+       "Q4": 0.0
+      }
+     },
+     "composition_stage_3_cohort": {
+      "n_pairs": 596,
+      "n_docs": 73,
+      "domain_pairs": {
+       "dailylife": 159,
+       "interview": 86,
+       "lifestyle": 18,
+       "medical_literature": 47,
+       "meeting": 150,
+       "news": 130,
+       "report": 6
+      },
+      "domain_docs": {
+       "dailylife": 19,
+       "interview": 11,
+       "lifestyle": 2,
+       "medical_literature": 6,
+       "meeting": 19,
+       "news": 15,
+       "report": 1
+      },
+      "source_words_median_per_document": 485.0,
+      "source_words_quartile_share_per_document": {
+       "Q1": 0.247,
+       "Q2": 0.342,
+       "Q3": 0.411,
+       "Q4": 0.0
+      }
+     }
+    }
+   }
+  },
+  "summeval": {
+   "n_pairs_total": 1600,
+   "n_docs_total": 100,
+   "source_words_quartiles_per_document": [
+    281.75,
+    367.0,
+    444.5
+   ],
+   "dims": {
+    "relevance": {
+     "columns": [
+      "marsR_marsc",
+      "marsR_factcg",
+      "marsR_free",
+      "marsP_factcg",
+      "rouge1",
+      "rouge2",
+      "rougeL",
+      "bertscore_P",
+      "bertscore_R",
+      "bertscore_F",
+      "bartscore_ref2cand",
+      "bartscore_src2cand",
+      "alignscore",
+      "factcg_whole",
+      "a3cu_R",
+      "a3cu_F",
+      "a2cu_R",
+      "qaeval_F1",
+      "questeval",
+      "questeval_R",
+      "unieval_relevance",
+      "unieval_consistency",
+      "unieval_coherence",
+      "unieval_overall"
+     ],
+     "stage_1_pairs_with_human_dimension": 1600,
+     "stage_1_docs": 100,
+     "stage_2_pairs_every_column_scored": 1600,
+     "stage_2_docs": 100,
+     "stage_3_docs_every_tau_defined": 100,
+     "stage_3_pairs_contributing": 1600,
+     "docs_with_undefined_tau_per_column_on_stage_2": {
+      "marsR_marsc": 0,
+      "marsR_factcg": 0,
+      "marsR_free": 0,
+      "marsP_factcg": 0,
+      "rouge1": 0,
+      "rouge2": 0,
+      "rougeL": 0,
+      "bertscore_P": 0,
+      "bertscore_R": 0,
+      "bertscore_F": 0,
+      "bartscore_ref2cand": 0,
+      "bartscore_src2cand": 0,
+      "alignscore": 0,
+      "factcg_whole": 0,
+      "a3cu_R": 0,
+      "a3cu_F": 0,
+      "a2cu_R": 0,
+      "qaeval_F1": 0,
+      "questeval": 0,
+      "questeval_R": 0,
+      "unieval_relevance": 0,
+      "unieval_consistency": 0,
+      "unieval_coherence": 0,
+      "unieval_overall": 0
+     },
+     "check_meta_common": {
+      "n_pairs": 1600,
+      "n_docs_all_tau": 100
+     }
+    },
+    "consistency": {
+     "columns": [
+      "marsR_marsc",
+      "marsR_factcg",
+      "marsR_free",
+      "marsP_factcg",
+      "rouge1",
+      "rouge2",
+      "rougeL",
+      "bertscore_P",
+      "bertscore_R",
+      "bertscore_F",
+      "bartscore_ref2cand",
+      "bartscore_src2cand",
+      "alignscore",
+      "factcg_whole",
+      "a3cu_R",
+      "a3cu_F",
+      "a2cu_R",
+      "qaeval_F1",
+      "questeval",
+      "questeval_R",
+      "unieval_relevance",
+      "unieval_consistency",
+      "unieval_coherence",
+      "unieval_overall"
+     ],
+     "stage_1_pairs_with_human_dimension": 1600,
+     "stage_1_docs": 100,
+     "stage_2_pairs_every_column_scored": 1600,
+     "stage_2_docs": 100,
+     "stage_3_docs_every_tau_defined": 96,
+     "stage_3_pairs_contributing": 1536,
+     "docs_with_undefined_tau_per_column_on_stage_2": {
+      "marsR_marsc": 4,
+      "marsR_factcg": 4,
+      "marsR_free": 4,
+      "marsP_factcg": 4,
+      "rouge1": 4,
+      "rouge2": 4,
+      "rougeL": 4,
+      "bertscore_P": 4,
+      "bertscore_R": 4,
+      "bertscore_F": 4,
+      "bartscore_ref2cand": 4,
+      "bartscore_src2cand": 4,
+      "alignscore": 4,
+      "factcg_whole": 4,
+      "a3cu_R": 4,
+      "a3cu_F": 4,
+      "a2cu_R": 4,
+      "qaeval_F1": 4,
+      "questeval": 4,
+      "questeval_R": 4,
+      "unieval_relevance": 4,
+      "unieval_consistency": 4,
+      "unieval_coherence": 4,
+      "unieval_overall": 4
+     },
+     "check_meta_common": {
+      "n_pairs": 1600,
+      "n_docs_all_tau": 96
+     }
+    },
+    "coherence": {
+     "columns": [
+      "marsR_marsc",
+      "marsR_factcg",
+      "marsR_free",
+      "marsP_factcg",
+      "rouge1",
+      "rouge2",
+      "rougeL",
+      "bertscore_P",
+      "bertscore_R",
+      "bertscore_F",
+      "bartscore_ref2cand",
+      "bartscore_src2cand",
+      "alignscore",
+      "factcg_whole",
+      "a3cu_R",
+      "a3cu_F",
+      "a2cu_R",
+      "qaeval_F1",
+      "questeval",
+      "questeval_R",
+      "unieval_relevance",
+      "unieval_consistency",
+      "unieval_coherence",
+      "unieval_overall"
+     ],
+     "stage_1_pairs_with_human_dimension": 1600,
+     "stage_1_docs": 100,
+     "stage_2_pairs_every_column_scored": 1600,
+     "stage_2_docs": 100,
+     "stage_3_docs_every_tau_defined": 100,
+     "stage_3_pairs_contributing": 1600,
+     "docs_with_undefined_tau_per_column_on_stage_2": {
+      "marsR_marsc": 0,
+      "marsR_factcg": 0,
+      "marsR_free": 0,
+      "marsP_factcg": 0,
+      "rouge1": 0,
+      "rouge2": 0,
+      "rougeL": 0,
+      "bertscore_P": 0,
+      "bertscore_R": 0,
+      "bertscore_F": 0,
+      "bartscore_ref2cand": 0,
+      "bartscore_src2cand": 0,
+      "alignscore": 0,
+      "factcg_whole": 0,
+      "a3cu_R": 0,
+      "a3cu_F": 0,
+      "a2cu_R": 0,
+      "qaeval_F1": 0,
+      "questeval": 0,
+      "questeval_R": 0,
+      "unieval_relevance": 0,
+      "unieval_consistency": 0,
+      "unieval_coherence": 0,
+      "unieval_overall": 0
+     },
+     "check_meta_common": {
+      "n_pairs": 1600,
+      "n_docs_all_tau": 100
+     }
+    },
+    "fluency": {
+     "columns": [
+      "marsR_marsc",
+      "marsR_factcg",
+      "marsR_free",
+      "marsP_factcg",
+      "rouge1",
+      "rouge2",
+      "rougeL",
+      "bertscore_P",
+      "bertscore_R",
+      "bertscore_F",
+      "bartscore_ref2cand",
+      "bartscore_src2cand",
+      "alignscore",
+      "factcg_whole",
+      "a3cu_R",
+      "a3cu_F",
+      "a2cu_R",
+      "qaeval_F1",
+      "questeval",
+      "questeval_R",
+      "unieval_relevance",
+      "unieval_consistency",
+      "unieval_coherence",
+      "unieval_overall"
+     ],
+     "stage_1_pairs_with_human_dimension": 1600,
+     "stage_1_docs": 100,
+     "stage_2_pairs_every_column_scored": 1600,
+     "stage_2_docs": 100,
+     "stage_3_docs_every_tau_defined": 98,
+     "stage_3_pairs_contributing": 1568,
+     "docs_with_undefined_tau_per_column_on_stage_2": {
+      "marsR_marsc": 2,
+      "marsR_factcg": 2,
+      "marsR_free": 2,
+      "marsP_factcg": 2,
+      "rouge1": 2,
+      "rouge2": 2,
+      "rougeL": 2,
+      "bertscore_P": 2,
+      "bertscore_R": 2,
+      "bertscore_F": 2,
+      "bartscore_ref2cand": 2,
+      "bartscore_src2cand": 2,
+      "alignscore": 2,
+      "factcg_whole": 2,
+      "a3cu_R": 2,
+      "a3cu_F": 2,
+      "a2cu_R": 2,
+      "qaeval_F1": 2,
+      "questeval": 2,
+      "questeval_R": 2,
+      "unieval_relevance": 2,
+      "unieval_consistency": 2,
+      "unieval_coherence": 2,
+      "unieval_overall": 2
+     },
+     "check_meta_common": {
+      "n_pairs": 1600,
+      "n_docs_all_tau": 98
+     }
+    }
+   }
+  },
+  "rose": {
+   "n_pairs_total": 2688,
+   "n_docs_total": 286,
+   "source_words_quartiles_per_document": [
+    90.0,
+    266.0,
+    581.75
+   ],
+   "dims": {
+    "acu_recall": {
+     "columns": [
+      "marsR_marsc",
+      "marsR_factcg",
+      "marsR_free",
+      "marsP_factcg",
+      "rouge1",
+      "rouge2",
+      "rougeL",
+      "bertscore_P",
+      "bertscore_R",
+      "bertscore_F",
+      "bartscore_ref2cand",
+      "bartscore_src2cand",
+      "alignscore",
+      "factcg_whole",
+      "a3cu_R",
+      "a3cu_F",
+      "a2cu_R",
+      "qaeval_F1",
+      "questeval",
+      "questeval_R",
+      "unieval_relevance",
+      "unieval_consistency",
+      "unieval_coherence",
+      "unieval_overall"
+     ],
+     "stage_1_pairs_with_human_dimension": 2688,
+     "stage_1_docs": 286,
+     "stage_2_pairs_every_column_scored": 2688,
+     "stage_2_docs": 286,
+     "stage_3_docs_every_tau_defined": 223,
+     "stage_3_pairs_contributing": 2172,
+     "docs_with_undefined_tau_per_column_on_stage_2": {
+      "a2cu_R": 60,
+      "qaeval_F1": 51,
+      "marsR_marsc": 45,
+      "marsR_factcg": 45,
+      "marsR_free": 45,
+      "marsP_factcg": 45,
+      "rouge1": 45,
+      "rouge2": 45,
+      "rougeL": 45,
+      "bertscore_P": 45,
+      "bertscore_R": 45,
+      "bertscore_F": 45,
+      "bartscore_ref2cand": 45,
+      "bartscore_src2cand": 45,
+      "alignscore": 45,
+      "factcg_whole": 45,
+      "a3cu_R": 45,
+      "a3cu_F": 45,
+      "questeval": 45,
+      "questeval_R": 45,
+      "unieval_relevance": 45,
+      "unieval_consistency": 45,
+      "unieval_coherence": 45,
+      "unieval_overall": 45
+     },
+     "check_meta_common": {
+      "n_pairs": 2688,
+      "n_docs_all_tau": 223
+     }
+    }
+   }
+  }
+ },
+ "contrasts": {
+  "unisumeval/completeness/marsR_marsc-a3cu_R": {
+   "pairs_both_scored": 1440,
+   "docs_both_scored": 179,
+   "docs_both_tau_defined": 179,
+   "pairs_contributing": 1440,
+   "composition": {
+    "n_pairs": 1440,
+    "n_docs": 179,
+    "domain_pairs": {
+     "dailylife": 201,
+     "interview": 169,
+     "lifestyle": 72,
+     "medical_literature": 193,
+     "meeting": 194,
+     "news": 212,
+     "report": 182,
+     "sci-fiction": 217
+    },
+    "domain_docs": {
+     "dailylife": 24,
+     "interview": 22,
+     "lifestyle": 8,
+     "medical_literature": 25,
+     "meeting": 25,
+     "news": 25,
+     "report": 25,
+     "sci-fiction": 25
+    },
+    "source_words_median_per_document": 1293.0,
+    "source_words_quartile_share_per_document": {
+     "Q1": 0.162,
+     "Q2": 0.223,
+     "Q3": 0.296,
+     "Q4": 0.318
+    }
+   }
+  },
+  "unisumeval/completeness/marsR_factcg-geval_completeness": {
+   "pairs_both_scored": 1440,
+   "docs_both_scored": 179,
+   "docs_both_tau_defined": 178,
+   "pairs_contributing": 1431,
+   "composition": {
+    "n_pairs": 1431,
+    "n_docs": 178,
+    "domain_pairs": {
+     "dailylife": 201,
+     "interview": 169,
+     "lifestyle": 63,
+     "medical_literature": 193,
+     "meeting": 194,
+     "news": 212,
+     "report": 182,
+     "sci-fiction": 217
+    },
+    "domain_docs": {
+     "dailylife": 24,
+     "interview": 22,
+     "lifestyle": 7,
+     "medical_literature": 25,
+     "meeting": 25,
+     "news": 25,
+     "report": 25,
+     "sci-fiction": 25
+    },
+    "source_words_median_per_document": 1305.0,
+    "source_words_quartile_share_per_document": {
+     "Q1": 0.157,
+     "Q2": 0.225,
+     "Q3": 0.298,
+     "Q4": 0.32
+    }
+   }
+  },
+  "unisumeval/completeness/marsR_free-geval_completeness": {
+   "pairs_both_scored": 1290,
+   "docs_both_scored": 157,
+   "docs_both_tau_defined": 155,
+   "pairs_contributing": 1272,
+   "composition": {
+    "n_pairs": 1272,
+    "n_docs": 155,
+    "domain_pairs": {
+     "booking": 204,
+     "dailylife": 209,
+     "interview": 181,
+     "lifestyle": 196,
+     "medical_literature": 78,
+     "meeting": 186,
+     "news": 206,
+     "report": 12
+    },
+    "domain_docs": {
+     "booking": 25,
+     "dailylife": 25,
+     "interview": 23,
+     "lifestyle": 22,
+     "medical_literature": 10,
+     "meeting": 24,
+     "news": 24,
+     "report": 2
+    },
+    "source_words_median_per_document": 318.0,
+    "source_words_quartile_share_per_document": {
+     "Q1": 0.342,
+     "Q2": 0.355,
+     "Q3": 0.303,
+     "Q4": 0.0
+    }
+   }
+  },
+  "unisumeval/completeness/marsR_free-a3cu_R": {
+   "pairs_both_scored": 1086,
+   "docs_both_scored": 132,
+   "docs_both_tau_defined": 132,
+   "pairs_contributing": 1086,
+   "composition": {
+    "n_pairs": 1086,
+    "n_docs": 132,
+    "domain_pairs": {
+     "dailylife": 209,
+     "interview": 181,
+     "lifestyle": 214,
+     "medical_literature": 78,
+     "meeting": 186,
+     "news": 206,
+     "report": 12
+    },
+    "domain_docs": {
+     "dailylife": 25,
+     "interview": 23,
+     "lifestyle": 24,
+     "medical_literature": 10,
+     "meeting": 24,
+     "news": 24,
+     "report": 2
+    },
+    "source_words_median_per_document": 431.5,
+    "source_words_quartile_share_per_document": {
+     "Q1": 0.348,
+     "Q2": 0.295,
+     "Q3": 0.356,
+     "Q4": 0.0
+    }
+   }
+  },
+  "unisumeval/faithfulness/marsP_factcg-factcg_whole": {
+   "pairs_both_scored": 1828,
+   "docs_both_scored": 225,
+   "docs_both_tau_defined": 210,
+   "pairs_contributing": 1713,
+   "composition": {
+    "n_pairs": 1713,
+    "n_docs": 210,
+    "domain_pairs": {
+     "booking": 188,
+     "dailylife": 201,
+     "interview": 187,
+     "lifestyle": 223,
+     "medical_literature": 176,
+     "meeting": 180,
+     "news": 212,
+     "report": 138,
+     "sci-fiction": 208
+    },
+    "domain_docs": {
+     "booking": 23,
+     "dailylife": 24,
+     "interview": 24,
+     "lifestyle": 25,
+     "medical_literature": 23,
+     "meeting": 23,
+     "news": 25,
+     "report": 19,
+     "sci-fiction": 24
+    },
+    "source_words_median_per_document": 705.0,
+    "source_words_quartile_share_per_document": {
+     "Q1": 0.262,
+     "Q2": 0.248,
+     "Q3": 0.252,
+     "Q4": 0.238
+    }
+   }
+  },
+  "unisumeval/faithfulness/marsP_factcg-alignscore": {
+   "pairs_both_scored": 1828,
+   "docs_both_scored": 225,
+   "docs_both_tau_defined": 210,
+   "pairs_contributing": 1713,
+   "composition": {
+    "n_pairs": 1713,
+    "n_docs": 210,
+    "domain_pairs": {
+     "booking": 188,
+     "dailylife": 201,
+     "interview": 187,
+     "lifestyle": 223,
+     "medical_literature": 176,
+     "meeting": 180,
+     "news": 212,
+     "report": 138,
+     "sci-fiction": 208
+    },
+    "domain_docs": {
+     "booking": 23,
+     "dailylife": 24,
+     "interview": 24,
+     "lifestyle": 25,
+     "medical_literature": 23,
+     "meeting": 23,
+     "news": 25,
+     "report": 19,
+     "sci-fiction": 24
+    },
+    "source_words_median_per_document": 705.0,
+    "source_words_quartile_share_per_document": {
+     "Q1": 0.262,
+     "Q2": 0.248,
+     "Q3": 0.252,
+     "Q4": 0.238
+    }
+   }
+  },
+  "summeval/relevance/marsR_marsc-unieval_relevance": {
+   "pairs_both_scored": 1600,
+   "docs_both_scored": 100,
+   "docs_both_tau_defined": 100,
+   "pairs_contributing": 1600
+  },
+  "rose/acu_recall/marsR_marsc-a2cu_R": {
+   "pairs_both_scored": 2688,
+   "docs_both_scored": 286,
+   "docs_both_tau_defined": 226,
+   "pairs_contributing": 2196
+  }
+ }
+}

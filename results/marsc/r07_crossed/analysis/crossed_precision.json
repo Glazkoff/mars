@@ -1,0 +1,130 @@
+{
+ "registered": "post-hoc completion of the G6 precision design with the validated coverage judge",
+ "max_rank": 10,
+ "n_pairs": 1388,
+ "unjudged_slots": 0,
+ "note": "judge-estimated omission rate among emitted units, NOT a human confirmed-omission rate",
+ "systems": {
+  "humanfact+div1": {
+   "judged_omission_rate": 0.8344068775444856,
+   "ci": [
+    0.8208055083825078,
+    0.8472649710100177
+   ],
+   "n_units": 12464
+  },
+  "humanfact.distilled+div1": {
+   "judged_omission_rate": 0.8662032272082704,
+   "ci": [
+    0.8538575045171769,
+    0.8779920291843923
+   ],
+   "n_units": 12084
+  },
+  "judgefact+div1": {
+   "judged_omission_rate": 0.8452083619230593,
+   "ci": [
+    0.8312143843488403,
+    0.8586040851859476
+   ],
+   "n_units": 11900
+  },
+  "judgefact.distilled+div1": {
+   "judged_omission_rate": 0.8703750400256165,
+   "ci": [
+    0.8580679420543434,
+    0.8822686590846713
+   ],
+   "n_units": 12096
+  },
+  "mars2": {
+   "judged_omission_rate": 0.8394295206074744,
+   "ci": [
+    0.8252484876034948,
+    0.8527246938040347
+   ],
+   "n_units": 11207
+  }
+ },
+ "crossed": {
+  "inventories": [
+   "distilled",
+   "gemma+ent"
+  ],
+  "verifiers": [
+   "human",
+   "judge"
+  ],
+  "inventory_effect_gemma+ent_minus_distilled": {
+   "point": -0.028481513883170946,
+   "ci": [
+    -0.035519017885732584,
+    -0.02167879943163625
+   ]
+  },
+  "verifier_effect_judge_minus_human": {
+   "point": 0.0074866485979598356,
+   "ci": [
+    0.005076509680481222,
+    0.009909384863455465
+   ]
+  },
+  "interaction": {
+   "point": 0.006629671561227752,
+   "ci": [
+    0.0018502198549928991,
+    0.011579768194501622
+   ]
+  }
+ },
+ "human_cells_for_comparison": {
+  "humanfact+div1": {
+   "both_agree": {
+    "point": 0.6403070877449479,
+    "ci": [
+     0.49411060807854745,
+     0.7770455129744563
+    ],
+    "n_boot": 10000,
+    "n_items": 47
+   },
+   "n_items_in_budget": 61
+  },
+  "humanfact.distilled+div1": {
+   "both_agree": {
+    "point": 0.8696786351428178,
+    "ci": [
+     0.8047446488201428,
+     0.9286270968521895
+    ],
+    "n_boot": 10000,
+    "n_items": 40
+   },
+   "n_items_in_budget": 56
+  },
+  "judgefact.distilled+div1": {
+   "both_agree": {
+    "point": 0.8249394734708135,
+    "ci": [
+     0.7073316027452374,
+     0.9246540088253884
+    ],
+    "n_boot": 10000,
+    "n_items": 44
+   },
+   "n_items_in_budget": 59
+  },
+  "mars2": {
+   "both_agree": {
+    "point": 0.7830199899364165,
+    "ci": [
+     0.6481428113992956,
+     0.9059352271167834
+    ],
+    "n_boot": 10000,
+    "n_items": 53
+   },
+   "n_items_in_budget": 63
+  }
+ }
+}

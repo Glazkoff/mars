@@ -1,0 +1,300 @@
+{"item_id": "H001", "system": "judgefact.distilled+div1", "pair_id": "rose:cnndm:00220ec77d4406741f9c017c07839ef2e76b3eab:gsum", "status": "false_alert", "fact": "This community has thrown in the towel.", "score": 0.9876151283582052}
+{"item_id": "H002", "system": "judgefact.distilled+div1", "pair_id": "rose:cnndm:e84f9b5d17fd6f7e0a21fed4a795e3a6fab4b577:simcls", "status": "unknown", "fact": "The celebration was only in a charity penalty shoot out.", "score": -2.361661454041799}
+{"item_id": "H003", "system": "humanfact+div1", "pair_id": "rose:xsum:21549079:pegasus", "status": "unknown", "fact": "Wallace was not overlooked during his lifetime.", "score": -4.017002292077703}
+{"item_id": "H004", "system": "mars2", "pair_id": "rose:samsum:13730545:CODS", "status": "false_alert", "fact": "a scholarship", "score": 0.08690975904464722}
+{"item_id": "H005", "system": "humanfact+div1", "pair_id": "rose:samsum:13828432:PEGASUS", "status": "unknown", "fact": "Emma", "score": -2.8099870113003647}
+{"item_id": "H006", "system": "judgefact.distilled+div1", "pair_id": "rose:xsum:34590780:bart.beam_patience", "status": "unknown", "fact": "The slogan is a pun on the French expression for \"that's enough\".", "score": -4.0018457770347595}
+{"item_id": "H007", "system": "humanfact+div1", "pair_id": "rose:xsum:37981840:brio-ranking", "status": "unknown", "fact": "The Shimmer Estate is likely to be demolished.", "score": -4.006059414425297}
+{"item_id": "H008", "system": "mars2", "pair_id": "rose:xsum:27851029:cliff", "status": "unknown", "fact": "five-decade", "score": 0.9588686481118203}
+{"item_id": "H009", "system": "mars2", "pair_id": "rose:samsum:13821325:UniLM", "status": "unknown", "fact": "Ophelia:", "score": 0.057205164432525636}
+{"item_id": "H010", "system": "mars2", "pair_id": "rose:xsum:21549079:cliff", "status": "unknown", "fact": "Victorians", "score": 0.9520098928362131}
+{"item_id": "H011", "system": "judgefact.distilled+div1", "pair_id": "rose:xsum:38778766:brio", "status": "unknown", "fact": "The free kick is in the attacking half.", "score": -0.6691763997077942}
+{"item_id": "H012", "system": "humanfact+div1", "pair_id": "rose:cnndm:06a5bb08f7fc7b99f573671f085d1c7c44e97325:matchsum", "status": "false_alert", "fact": "David Luiz", "score": -0.5337422601312514}
+{"item_id": "H013", "system": "mars2", "pair_id": "rose:samsum:13730545:S-BART", "status": "false_alert", "fact": "a scholarship", "score": 0.08660590648651123}
+{"item_id": "H014", "system": "mars2", "pair_id": "rose:samsum:13865119:BART", "status": "unknown", "fact": "Amelia", "score": 0.9237167708575725}
+{"item_id": "H015", "system": "mars2", "pair_id": "rose:cnndm:009e3f5f1cf97ecfc8afddecbfceb72cd03cbbb3:gsum", "status": "unknown", "fact": "Steven Gerrard", "score": 0.9548606524243951}
+{"item_id": "H016", "system": "mars2", "pair_id": "rose:cnndm:06018c4454e465a771424e6df9e33c6fdaeb1daf:brio-ext", "status": "unknown", "fact": "22", "score": 0.9608165200799703}
+{"item_id": "H017", "system": "humanfact+div1", "pair_id": "rose:cnndm:06a5bb08f7fc7b99f573671f085d1c7c44e97325:brio-ext", "status": "unknown", "fact": "second", "score": -2.446403755544011}
+{"item_id": "H018", "system": "judgefact.distilled+div1", "pair_id": "rose:samsum:13810207:PLM-BART", "status": "unknown", "fact": "Lynn says you've spoiled all the fun.", "score": -4.024386167526245}
+{"item_id": "H019", "system": "judgefact.distilled+div1", "pair_id": "rose:cnndm:06f7d1e1c729dddaecfe964f9104459811ccba48:frost", "status": "hit", "fact": "Alan Greaves claimed 'the Illuminati framed him by downloading child abuse images on his computer'.", "score": 0.0010210790593797963}
+{"item_id": "H020", "system": "mars2", "pair_id": "rose:cnndm:e8fd26eb7eeff757c31d0ea24b0257f9fd089b79:matchsum", "status": "unknown", "fact": "a protective boot", "score": 0.9221037849783897}
+{"item_id": "H021", "system": "judgefact.distilled+div1", "pair_id": "rose:cnndm:e8c4c5c772a260c2c90a191298a8da82902087f4:cliff", "status": "false_alert", "fact": "The clash is a last-eight clash.", "score": -4.9928938120914}
+{"item_id": "H022", "system": "humanfact+div1", "pair_id": "rose:cnndm:ea7269787a3c775e4191281f038c1f2b9a395da2:matchsum", "status": "hit", "fact": "The Hague is also known as 'the Widow of Indonesia'.", "score": -4.006810672090159}
+{"item_id": "H023", "system": "humanfact+div1", "pair_id": "rose:cnndm:054fb31f1923c05ffc9d8e9e06ddf9b6a9d206e5:glob", "status": "unknown", "fact": "Rand Paul's", "score": -2.34243154800788}
+{"item_id": "H024", "system": "mars2", "pair_id": "rose:samsum:13727877:UniLM", "status": "unknown", "fact": "Kimberly", "score": 0.0437436580657959}
+{"item_id": "H025", "system": "judgefact.distilled+div1", "pair_id": "rose:samsum:13810034:BART", "status": "unknown", "fact": "Mary says it is safe with one of our cashiers whenever you come.", "score": 0.38965227206548053}
+{"item_id": "H026", "system": "judgefact.distilled+div1", "pair_id": "rose:samsum:13819035:CODS", "status": "unknown", "fact": "Harry says always.", "score": -4.0082493623097735}
+{"item_id": "H027", "system": "judgefact.distilled+div1", "pair_id": "rose:samsum:13829744:S-BART", "status": "unknown", "fact": "Joanne says such a clich\u00e9 is clich\u00e9.", "score": -4.022917071978251}
+{"item_id": "H028", "system": "judgefact.distilled+div1", "pair_id": "rose:xsum:36397983:cliff-pegasus", "status": "unknown", "fact": "He readers watched TV.", "score": -4.001114269097646}
+{"item_id": "H029", "system": "humanfact+div1", "pair_id": "rose:cnndm:06a4f261911beb5d606fbae72041b8b205d45803:brio-ext", "status": "unknown", "fact": "Mauricio Pochettino", "score": 0.9929838982083793}
+{"item_id": "H030", "system": "mars2", "pair_id": "rose:samsum:13828403:CODS", "status": "unknown", "fact": "Harley", "score": 0.036931860446929934}
+{"item_id": "H031", "system": "judgefact.distilled+div1", "pair_id": "rose:cnndm:0312bea2586ef3a65a1b9a3d25328d1b417e2871:simcls", "status": "false_alert", "fact": "Phil wanted to know.", "score": 0.2732177923123042}
+{"item_id": "H032", "system": "mars2", "pair_id": "rose:samsum:13810120:BART", "status": "false_alert", "fact": "Mary", "score": 0.03252754211425781}
+{"item_id": "H033", "system": "mars2", "pair_id": "rose:cnndm:0034b7c223e24477e046cf3ee085dd006be38b27:gold", "status": "unknown", "fact": "Facebook", "score": 0.9577506154775619}
+{"item_id": "H034", "system": "humanfact+div1", "pair_id": "rose:cnndm:e8fd26eb7eeff757c31d0ea24b0257f9fd089b79:matchsum", "status": "hit", "fact": "The England defender took a hefty blow from a collision with Kieran Trippier.", "score": -4.024921118253808}
+{"item_id": "H035", "system": "humanfact+div1", "pair_id": "rose:cnndm:070c821245a929ad635ac203eebb33a92cae968d:ctrlsum", "status": "unknown", "fact": "Fages got his over again three minutes into the second half.", "score": -4.008862305481479}
+{"item_id": "H036", "system": "humanfact+div1", "pair_id": "rose:samsum:13865119:Ctrl-DiaSumm", "status": "hit", "fact": "James says \"ME TOO, of course!\".", "score": -4.009012472408082}
+{"item_id": "H037", "system": "judgefact.distilled+div1", "pair_id": "rose:xsum:27851029:brio", "status": "unknown", "fact": "Mr Zulaaga is a former finance minister.", "score": -4.834903915723165}
+{"item_id": "H038", "system": "humanfact+div1", "pair_id": "rose:cnndm:e865434d5fef489d5a6845e9998384aa0bbf648e:pegasus", "status": "unknown", "fact": "Aoki told Puppy Tales that Aoki has never learned properly about dog training.", "score": -4.007515458246825}
+{"item_id": "H039", "system": "mars2", "pair_id": "rose:cnndm:e865434d5fef489d5a6845e9998384aa0bbf648e:cliff", "status": "false_alert", "fact": "two", "score": 0.9536194268614053}
+{"item_id": "H040", "system": "judgefact.distilled+div1", "pair_id": "rose:xsum:34590780:bart", "status": "hit", "fact": "The opposition have been campaigning under the slogan \"Sassoufit\".", "score": -6.51384570201238}
+{"item_id": "H041", "system": "mars2", "pair_id": "rose:samsum:13681755:PEGASUS", "status": "false_alert", "fact": "tomorrow", "score": 0.028875434398651124}
+{"item_id": "H042", "system": "mars2", "pair_id": "rose:xsum:36264301:bart", "status": "hit", "fact": "the current world record holder grown in Switzerland", "score": 0.6172902882099152}
+{"item_id": "H043", "system": "judgefact.distilled+div1", "pair_id": "rose:xsum:38052755:frost", "status": "false_alert", "fact": "The government says it will consult on the issue.", "score": 0.9230036934216818}
+{"item_id": "H044", "system": "judgefact.distilled+div1", "pair_id": "rose:cnndm:ea65fecbe36355c4d2b354190078c63c048c5837:bart", "status": "false_alert", "fact": "The fire quickly spread to the body of the vehicle.", "score": -1.665998436403849}
+{"item_id": "H045", "system": "humanfact+div1", "pair_id": "rose:xsum:40362671:pegasus", "status": "unknown", "fact": "A result against Warwickshire will put us in a great position before the back end of the summer.", "score": -4.006510082539616}
+{"item_id": "H046", "system": "mars2", "pair_id": "rose:xsum:38778766:frost", "status": "unknown", "fact": "6", "score": 0.9597765853628516}
+{"item_id": "H047", "system": "humanfact+div1", "pair_id": "rose:xsum:35933681:frost", "status": "false_alert", "fact": "Sunderland face West Brom.", "score": -4.840001057764625}
+{"item_id": "H048", "system": "humanfact+div1", "pair_id": "rose:cnndm:e82fd60b8e06755184e0bd8add6967600b6788f1:simcls", "status": "unknown", "fact": "Allen Batschelet", "score": -2.342545647917414}
+{"item_id": "H049", "system": "humanfact+div1", "pair_id": "rose:cnndm:053d6e62bfaaa32b4b9f206251c292405da578b2:pegasus", "status": "false_alert", "fact": "David Crossley", "score": 0.10796305620696177}
+{"item_id": "H050", "system": "judgefact.distilled+div1", "pair_id": "rose:samsum:13612134:PEGASUS", "status": "unknown", "fact": "Daniel is 2 hours only.", "score": 0.9341220259666443}
+{"item_id": "H051", "system": "mars2", "pair_id": "rose:cnndm:042aac3be278658a55b253138a43a2ad1d631ba2:brio", "status": "hit", "fact": "just hours", "score": 0.9605911383405328}
+{"item_id": "H052", "system": "mars2", "pair_id": "rose:samsum:13820209:PLM-BART", "status": "false_alert", "fact": "2 weeks ago", "score": 0.06120032072067261}
+{"item_id": "H053", "system": "humanfact+div1", "pair_id": "rose:cnndm:ea2cf109e0da1cdd557d1cdbee5650e96d55a58d:brio-ext", "status": "false_alert", "fact": "The news was devastating.", "score": 0.06253650472839567}
+{"item_id": "H054", "system": "mars2", "pair_id": "rose:samsum:13810207:MV-BART", "status": "hit", "fact": "strangers in our dreams", "score": 0.4354741632938385}
+{"item_id": "H055", "system": "mars2", "pair_id": "rose:xsum:21549079:brio", "status": "unknown", "fact": "half", "score": 0.9570998912677169}
+{"item_id": "H056", "system": "mars2", "pair_id": "rose:xsum:36295621:frost", "status": "unknown", "fact": "Carlo Alberto Pinelli", "score": 0.9497785914689303}
+{"item_id": "H057", "system": "mars2", "pair_id": "rose:cnndm:e96d8694cfb0f637db97c2758600cce59e9991ad:glob", "status": "unknown", "fact": "1463", "score": 0.9579823998734355}
+{"item_id": "H058", "system": "humanfact+div1", "pair_id": "rose:cnndm:029a691b9c08cb7a285ba4c00d2a3d4c2c5b6cde:brio", "status": "false_alert", "fact": "The fortress is located about 3,800km from Moscow.", "score": -3.2361643508390636}
+{"item_id": "H059", "system": "mars2", "pair_id": "rose:cnndm:04f597aa4ce93c8cde0ecedd7be8dab29353daf0:frost", "status": "unknown", "fact": "five to 10 years", "score": 0.9623306145891547}
+{"item_id": "H060", "system": "humanfact+div1", "pair_id": "rose:cnndm:e7a3b9bcfc48eab1224876151735ebc994595798:brio", "status": "unknown", "fact": "The new moving artwork was unveiled this week.", "score": 0.9884486307336418}
+{"item_id": "H061", "system": "mars2", "pair_id": "rose:samsum:13829744:MV-BART", "status": "false_alert", "fact": "Christmas", "score": 0.04987269639968872}
+{"item_id": "H062", "system": "judgefact.distilled+div1", "pair_id": "rose:xsum:40397379:bart", "status": "unknown", "fact": "The error was corrected.", "score": -0.6690440773963928}
+{"item_id": "H063", "system": "mars2", "pair_id": "rose:cnndm:e82fd60b8e06755184e0bd8add6967600b6788f1:brio-ext", "status": "unknown", "fact": "The Biggest Loser", "score": 0.9568137668073178}
+{"item_id": "H064", "system": "humanfact+div1", "pair_id": "rose:samsum:13821554:S-BART", "status": "unknown", "fact": "Samantha is pumped.", "score": -4.008403624533834}
+{"item_id": "H065", "system": "judgefact.distilled+div1", "pair_id": "rose:samsum:13819314:PLM-BART", "status": "false_alert", "fact": "Chandler says open your door.", "score": 0.0020945791620761156}
+{"item_id": "H066", "system": "judgefact.distilled+div1", "pair_id": "rose:cnndm:e7e61e9871b891d0a4f7e609cf326b767b7786f9:simcls", "status": "hit", "fact": "The World Happiness Report states the top 10 happiest places on Earth.", "score": 0.019739469047635794}
+{"item_id": "H067", "system": "humanfact+div1", "pair_id": "rose:cnndm:ea65fecbe36355c4d2b354190078c63c048c5837:brio-ext", "status": "unknown", "fact": "Footage was taken by motorists.", "score": -4.008989987358709}
+{"item_id": "H068", "system": "mars2", "pair_id": "rose:xsum:22492378:brio", "status": "unknown", "fact": "Wood Green", "score": 0.9420181246474385}
+{"item_id": "H069", "system": "humanfact+div1", "pair_id": "rose:cnndm:058add7f1d147491b54ac4c4ff0ecbf27992ebaa:brio-ext", "status": "unknown", "fact": "Rajee lived in solitude.", "score": -2.341245409931101}
+{"item_id": "H070", "system": "mars2", "pair_id": "rose:samsum:13729817:Ctrl-DiaSumm", "status": "unknown", "fact": "Frederick", "score": 0.9054683241993189}
+{"item_id": "H071", "system": "mars2", "pair_id": "rose:samsum:13730333:Ctrl-DiaSumm", "status": "unknown", "fact": "you", "score": 0.519181452691555}
+{"item_id": "H072", "system": "mars2", "pair_id": "rose:samsum:13821554:BART", "status": "unknown", "fact": "one of those", "score": 0.957586295157671}
+{"item_id": "H073", "system": "humanfact+div1", "pair_id": "rose:cnndm:e7a3b9bcfc48eab1224876151735ebc994595798:frost", "status": "hit", "fact": "Over 50 families have contributed to the art project.", "score": 0.9889861733311229}
+{"item_id": "H074", "system": "humanfact+div1", "pair_id": "rose:cnndm:029a691b9c08cb7a285ba4c00d2a3d4c2c5b6cde:simcls", "status": "unknown", "fact": "The fortress is connected to other land via a small walkway.", "score": -4.008301487992326}
+{"item_id": "H075", "system": "humanfact+div1", "pair_id": "rose:cnndm:e865434d5fef489d5a6845e9998384aa0bbf648e:cliff", "status": "false_alert", "fact": "A pair of border collies were caught on camera.", "score": 0.050933519576249725}
+{"item_id": "H076", "system": "humanfact+div1", "pair_id": "rose:xsum:35933681:cliff-pegasus", "status": "unknown", "fact": "The situation sometimes occurs when a player forgets to pay their previous representative.", "score": -4.006552611232118}
+{"item_id": "H077", "system": "judgefact.distilled+div1", "pair_id": "rose:cnndm:05b2de3be942a2627353d8a946bca4dda2b94b9a:frost", "status": "hit", "fact": "Chelsea had a strong showing in Manchester.", "score": -0.6860297520955404}
+{"item_id": "H078", "system": "mars2", "pair_id": "rose:xsum:30301895:brio-ranking", "status": "unknown", "fact": "BBC News", "score": 0.93497957251966}
+{"item_id": "H079", "system": "judgefact.distilled+div1", "pair_id": "rose:xsum:34040680:cliff", "status": "unknown", "fact": "Analysts at the time said that moment helped her to secure victory in the state.", "score": -4.005959749221802}
+{"item_id": "H080", "system": "humanfact+div1", "pair_id": "rose:samsum:13716103:BART", "status": "unknown", "fact": "Ethan", "score": -4.892685312693078}
+{"item_id": "H081", "system": "judgefact.distilled+div1", "pair_id": "rose:cnndm:062755422619dde15d62b9cb071eb1c74103d453:matchsum", "status": "false_alert", "fact": "Toby escaped from Wendy Stoke\u2019s garden 11 months ago.", "score": -1.666130583830333}
+{"item_id": "H082", "system": "mars2", "pair_id": "rose:samsum:13611740:PEGASUS", "status": "false_alert", "fact": "Susie", "score": 0.04025390148162842}
+{"item_id": "H083", "system": "humanfact+div1", "pair_id": "rose:xsum:38988032:frost", "status": "hit", "fact": "The woman was not injured.", "score": -4.011635737330207}
+{"item_id": "H084", "system": "mars2", "pair_id": "rose:cnndm:01c5856ecf23f2b493fee298ee7be469b9c0a2e9:brio", "status": "hit", "fact": "first", "score": 0.3816853642463684}
+{"item_id": "H085", "system": "mars2", "pair_id": "rose:samsum:13729407:MV-BART", "status": "hit", "fact": "Indiana", "score": 0.03241562843322754}
+{"item_id": "H086", "system": "humanfact+div1", "pair_id": "rose:xsum:37498266:bart", "status": "unknown", "fact": "Each is easier said than done.", "score": -4.007602525066802}
+{"item_id": "H087", "system": "mars2", "pair_id": "rose:samsum:13730164:PLM-BART", "status": "hit", "fact": "Emma", "score": 0.05637980699539184}
+{"item_id": "H088", "system": "judgefact.distilled+div1", "pair_id": "rose:xsum:36431726:cliff", "status": "unknown", "fact": "Darayya's electricity supply was cut off more than three years ago.", "score": -4.001592755317688}
+{"item_id": "H089", "system": "judgefact.distilled+div1", "pair_id": "rose:cnndm:e96d8694cfb0f637db97c2758600cce59e9991ad:brio-ext", "status": "unknown", "fact": "Thomas Gainsborough is among the estate\u2019s collection.", "score": -4.006036400794983}
+{"item_id": "H090", "system": "mars2", "pair_id": "rose:cnndm:0752136176bc088b9e8582177ed83d7d44339e47:glob", "status": "unknown", "fact": "the dead", "score": 0.9342114843428135}
+{"item_id": "H091", "system": "mars2", "pair_id": "rose:samsum:13729905:S-BART", "status": "hit", "fact": "Jacob", "score": 0.038074147701263425}
+{"item_id": "H092", "system": "mars2", "pair_id": "rose:cnndm:ea7269787a3c775e4191281f038c1f2b9a395da2:gold", "status": "unknown", "fact": "14", "score": 0.9592736991122365}
+{"item_id": "H093", "system": "judgefact.distilled+div1", "pair_id": "rose:samsum:13682006:BART", "status": "hit", "fact": "Anne was all sweet with Tom.", "score": 0.2613081733385722}
+{"item_id": "H094", "system": "judgefact.distilled+div1", "pair_id": "rose:cnndm:009e3f5f1cf97ecfc8afddecbfceb72cd03cbbb3:frost", "status": "unknown", "fact": "Daniel Surridge paid tribute on his Instagram account.", "score": -2.364332854747772}
+{"item_id": "H095", "system": "mars2", "pair_id": "rose:cnndm:0034b7c223e24477e046cf3ee085dd006be38b27:ctrlsum", "status": "unknown", "fact": "England", "score": 0.958619375154376}
+{"item_id": "H096", "system": "judgefact.distilled+div1", "pair_id": "rose:cnndm:054fb31f1923c05ffc9d8e9e06ddf9b6a9d206e5:ctrlsum", "status": "hit", "fact": "Paul was alone at the time of the crash.", "score": 0.005255516540880005}
+{"item_id": "H097", "system": "humanfact+div1", "pair_id": "rose:xsum:36264301:cliff-pegasus", "status": "unknown", "fact": "165", "score": -4.012238705754335}
+{"item_id": "H098", "system": "judgefact.distilled+div1", "pair_id": "rose:samsum:13810207:MV-BART", "status": "false_alert", "fact": "Jess dreamt she was a lion tamer last night.", "score": 0.0008030590446045002}
+{"item_id": "H099", "system": "judgefact.distilled+div1", "pair_id": "rose:xsum:33492125:frost", "status": "hit", "fact": "The discovery of the town lying along a hill-slope near Winterborne Kingston has been described as \"extremely significant\" by archaeologists.", "score": -4.477758665879567}
+{"item_id": "H100", "system": "mars2", "pair_id": "rose:xsum:27786442:cliff", "status": "unknown", "fact": "Saturday", "score": 0.9583481296896934}
+{"item_id": "H101", "system": "humanfact+div1", "pair_id": "rose:samsum:13828432:PEGASUS", "status": "unknown", "fact": "tomorrow", "score": -4.619275623256054}
+{"item_id": "H102", "system": "mars2", "pair_id": "rose:xsum:27786442:brio", "status": "unknown", "fact": "5 June", "score": 0.963206482026726}
+{"item_id": "H103", "system": "humanfact+div1", "pair_id": "rose:samsum:13820209:PEGASUS", "status": "unknown", "fact": "The other person is in the photo.", "score": -0.6929854513300345}
+{"item_id": "H104", "system": "humanfact+div1", "pair_id": "rose:xsum:34040680:frost", "status": "unknown", "fact": "Campaign finance scandals create mistrust.", "score": -4.0073491279045745}
+{"item_id": "H105", "system": "judgefact.distilled+div1", "pair_id": "rose:cnndm:062755422619dde15d62b9cb071eb1c74103d453:cliff", "status": "unknown", "fact": "I think everybody was keeping their eye out for him all this time.", "score": -4.026114185651143}
+{"item_id": "H106", "system": "humanfact+div1", "pair_id": "rose:cnndm:06a4f261911beb5d606fbae72041b8b205d45803:gsum", "status": "hit", "fact": "London", "score": -2.357498951994104}
+{"item_id": "H107", "system": "humanfact+div1", "pair_id": "rose:cnndm:029a691b9c08cb7a285ba4c00d2a3d4c2c5b6cde:gold", "status": "unknown", "fact": "The ruined structures have led experts to believe the island was used as a fortress or prison.", "score": 0.9285777311575364}
+{"item_id": "H108", "system": "judgefact.distilled+div1", "pair_id": "rose:samsum:13682307:Ctrl-DiaSumm", "status": "unknown", "fact": "Violet was going to get brazilian waxing.", "score": -4.516489664713542}
+{"item_id": "H109", "system": "mars2", "pair_id": "rose:samsum:13727877:S-BART", "status": "hit", "fact": "my umbrella", "score": 0.13159462213516235}
+{"item_id": "H110", "system": "judgefact.distilled+div1", "pair_id": "rose:xsum:35933681:bart.beam_patience", "status": "unknown", "fact": "The appeal is against a third offence of sexual touching.", "score": -4.001881202061971}
+{"item_id": "H111", "system": "judgefact.distilled+div1", "pair_id": "rose:cnndm:023255e81c3ee95d35ca9704ece8f930c29a7c9b:pegasus", "status": "unknown", "fact": "Adams Federici has taken to Twitter to apologise for his crucial gaffe.", "score": 0.5388247246543566}
+{"item_id": "H112", "system": "judgefact.distilled+div1", "pair_id": "rose:cnndm:06b2d962f2177533fcfdbef63ae6f0873b4d1a01:bart", "status": "unknown", "fact": "Valencia flew through this air.", "score": -4.06147034962972}
+{"item_id": "H113", "system": "mars2", "pair_id": "rose:samsum:13680702:UniLM", "status": "unknown", "fact": "a theatre here\r\n", "score": 0.13175657987594605}
+{"item_id": "H114", "system": "humanfact+div1", "pair_id": "rose:samsum:13682221:PEGASUS", "status": "unknown", "fact": "Megan", "score": 0.9910685145664252}
+{"item_id": "H115", "system": "mars2", "pair_id": "rose:samsum:13828403:PLM-BART", "status": "unknown", "fact": "Harley", "score": 0.03647593259811401}
+{"item_id": "H116", "system": "judgefact.distilled+div1", "pair_id": "rose:cnndm:e75b6ed6f701d518da417d48a07322e8b2ede1bf:simcls", "status": "hit", "fact": "The sweet was aimed at Puncheon.", "score": -4.730723184843858}
+{"item_id": "H117", "system": "mars2", "pair_id": "rose:cnndm:00a51d5454f2ef7dbf4c53471223a27fb9c20681:bart", "status": "unknown", "fact": "Washington", "score": 0.9573902310803533}
+{"item_id": "H118", "system": "mars2", "pair_id": "rose:samsum:13680347:MV-BART", "status": "false_alert", "fact": "Steven", "score": 0.03185499906539917}
+{"item_id": "H119", "system": "humanfact+div1", "pair_id": "rose:samsum:13820209:BART", "status": "false_alert", "fact": "Yvonne is dating a hot Argentinian.", "score": -4.07184159837652}
+{"item_id": "H120", "system": "judgefact.distilled+div1", "pair_id": "rose:cnndm:023255e81c3ee95d35ca9704ece8f930c29a7c9b:ctrlsum", "status": "unknown", "fact": "Adam Federici is a Reading goalkeeper.", "score": -4.999499128103101}
+{"item_id": "H121", "system": "judgefact.distilled+div1", "pair_id": "rose:cnndm:e88c2be654ed7b112e8b4222b55ab740c7792f88:brio", "status": "unknown", "fact": "No bread means less cutlery, butter and expenditure.", "score": -4.007800539334615}
+{"item_id": "H122", "system": "judgefact.distilled+div1", "pair_id": "rose:samsum:13864578:MV-BART", "status": "hit", "fact": "Maxwell heard there was some problem with Marcus at school.", "score": 0.0978673795859019}
+{"item_id": "H123", "system": "humanfact+div1", "pair_id": "rose:samsum:13821325:PEGASUS", "status": "false_alert", "fact": "Martha asks about the lenses from the profile picture.", "score": -4.027432846685927}
+{"item_id": "H124", "system": "mars2", "pair_id": "rose:samsum:13729905:PLM-BART", "status": "false_alert", "fact": "3 days ago", "score": 0.05574345588684082}
+{"item_id": "H125", "system": "mars2", "pair_id": "rose:cnndm:05b2de3be942a2627353d8a946bca4dda2b94b9a:simcls", "status": "unknown", "fact": "Etihad", "score": 0.9588343985378742}
+{"item_id": "H126", "system": "humanfact+div1", "pair_id": "rose:cnndm:e7a3b9bcfc48eab1224876151735ebc994595798:matchsum", "status": "hit", "fact": "Over 5000", "score": -2.342203414254048}
+{"item_id": "H127", "system": "judgefact.distilled+div1", "pair_id": "rose:cnndm:e865434d5fef489d5a6845e9998384aa0bbf648e:bart", "status": "hit", "fact": "This isn't the first time the dogs have shown off their skills.", "score": 0.9568335016568502}
+{"item_id": "H128", "system": "mars2", "pair_id": "rose:cnndm:05cf349b0acd480c600238ba1c40b59a8aafc8b7:bart", "status": "hit", "fact": "Kenya Power", "score": 0.8789635829627513}
+{"item_id": "H129", "system": "mars2", "pair_id": "rose:cnndm:052c7787b6441b9368f9c1ca963747ffe191ce49:matchsum", "status": "unknown", "fact": "September last year", "score": 0.9642631215974689}
+{"item_id": "H130", "system": "judgefact.distilled+div1", "pair_id": "rose:cnndm:044c19650ec8d4d4d501045dfa9d06f38586ad3d:ctrlsum", "status": "unknown", "fact": "John Diamond is a Crown lawyer.", "score": -4.002893269062042}
+{"item_id": "H131", "system": "mars2", "pair_id": "rose:cnndm:070c821245a929ad635ac203eebb33a92cae968d:gsum", "status": "unknown", "fact": "just 25 minutes", "score": 0.9630585733801127}
+{"item_id": "H132", "system": "mars2", "pair_id": "rose:cnndm:e96d8694cfb0f637db97c2758600cce59e9991ad:simcls", "status": "unknown", "fact": "Lady Juliet Worsley", "score": 0.9570838453248143}
+{"item_id": "H133", "system": "mars2", "pair_id": "rose:cnndm:044c19650ec8d4d4d501045dfa9d06f38586ad3d:frost", "status": "unknown", "fact": "more than 40 years", "score": 0.9690576421096921}
+{"item_id": "H134", "system": "humanfact+div1", "pair_id": "rose:cnndm:e75b6ed6f701d518da417d48a07322e8b2ede1bf:glob", "status": "hit", "fact": "Jason Puncheon is a Crystal Palace midfielder.", "score": 0.9857278106350673}
+{"item_id": "H135", "system": "humanfact+div1", "pair_id": "rose:cnndm:e865434d5fef489d5a6845e9998384aa0bbf648e:gsum", "status": "false_alert", "fact": "Holly hops onto Aoki's legs.", "score": 0.9747112652730953}
+{"item_id": "H136", "system": "mars2", "pair_id": "rose:xsum:37498266:bart.beam_patience", "status": "unknown", "fact": "45%", "score": 0.9520586848258972}
+{"item_id": "H137", "system": "humanfact+div1", "pair_id": "rose:samsum:13611567:S-BART", "status": "unknown", "fact": "martial says they will go together.", "score": -4.401877218536631}
+{"item_id": "H138", "system": "mars2", "pair_id": "rose:samsum:13730164:S-BART", "status": "hit", "fact": "Emma", "score": 0.050932776927947995}
+{"item_id": "H139", "system": "humanfact+div1", "pair_id": "rose:samsum:13820209:CODS", "status": "false_alert", "fact": "Sam", "score": 0.8106381579527776}
+{"item_id": "H140", "system": "mars2", "pair_id": "rose:xsum:37981840:brio-ranking", "status": "unknown", "fact": "60", "score": 0.9546409965492785}
+{"item_id": "H141", "system": "judgefact.distilled+div1", "pair_id": "rose:xsum:37498266:cliff-pegasus", "status": "unknown", "fact": "Dr Paula Fujiwara is from the International Union Against Tuberculosis and Lung Disease.", "score": -4.0027793645858765}
+{"item_id": "H142", "system": "mars2", "pair_id": "rose:cnndm:e865434d5fef489d5a6845e9998384aa0bbf648e:gsum", "status": "hit", "fact": "camera", "score": 0.9514423780143261}
+{"item_id": "H143", "system": "humanfact+div1", "pair_id": "rose:cnndm:06b2d962f2177533fcfdbef63ae6f0873b4d1a01:bart", "status": "unknown", "fact": "The speaker deems this as a lethal force encounter.", "score": 0.3642329913330635}
+{"item_id": "H144", "system": "humanfact+div1", "pair_id": "rose:samsum:13727877:Ctrl-DiaSumm", "status": "false_alert", "fact": "Kimberly got it a few years back.", "score": -4.942891168420981}
+{"item_id": "H145", "system": "judgefact.distilled+div1", "pair_id": "rose:cnndm:05b2de3be942a2627353d8a946bca4dda2b94b9a:simcls", "status": "unknown", "fact": "Kean Bryan is a box-to-box midfielder.", "score": -4.002731998761495}
+{"item_id": "H146", "system": "humanfact+div1", "pair_id": "rose:cnndm:06f7d1e1c729dddaecfe964f9104459811ccba48:cliff", "status": "hit", "fact": "Alan Greaves claimed the Illuminati framed him.", "score": 0.9928137280598143}
+{"item_id": "H147", "system": "humanfact+div1", "pair_id": "rose:cnndm:037578626844197480fbe0e89070b15080e0d712:bart", "status": "unknown", "fact": "Many promenades line Lake Zurich.", "score": -0.6741278626355952}
+{"item_id": "H148", "system": "humanfact+div1", "pair_id": "rose:samsum:13611740:BART", "status": "false_alert", "fact": "Mary is back.", "score": -4.962388508965938}
+{"item_id": "H149", "system": "mars2", "pair_id": "rose:cnndm:e8fd26eb7eeff757c31d0ea24b0257f9fd089b79:matchsum", "status": "hit", "fact": "Spurs", "score": 0.057791054248809814}
+{"item_id": "H150", "system": "judgefact.distilled+div1", "pair_id": "rose:cnndm:06a5bb08f7fc7b99f573671f085d1c7c44e97325:cliff", "status": "hit", "fact": "The tie has a two goal lead.", "score": -4.650101721286774}
+{"item_id": "H151", "system": "judgefact.distilled+div1", "pair_id": "rose:cnndm:e8fd26eb7eeff757c31d0ea24b0257f9fd089b79:brio", "status": "unknown", "fact": "He will continue to be assessed by Spurs' medical team in the coming days.", "score": -1.135993202527364}
+{"item_id": "H152", "system": "judgefact.distilled+div1", "pair_id": "rose:xsum:33077317:bart.beam_patience", "status": "unknown", "fact": "Mr Doherty gave details of what he said were documents related to Mr O'Brien's IBRC loans on Tuesday.", "score": -6.507274150848389}
+{"item_id": "H153", "system": "humanfact+div1", "pair_id": "rose:xsum:34590780:brio", "status": "unknown", "fact": "People are demonstrating across the city.", "score": -0.6734393822170809}
+{"item_id": "H154", "system": "mars2", "pair_id": "rose:samsum:13611567:Ctrl-DiaSumm", "status": "unknown", "fact": "luke", "score": 0.14301947355270386}
+{"item_id": "H155", "system": "humanfact+div1", "pair_id": "rose:xsum:37981840:cliff-pegasus", "status": "unknown", "fact": "Pressure group Stop HS2 said that once the high-speed railway was operating, existing intercity services to London would be reduced by up to two trains an hour.", "score": -4.00670443321643}
+{"item_id": "H156", "system": "judgefact.distilled+div1", "pair_id": "rose:cnndm:05b2de3be942a2627353d8a946bca4dda2b94b9a:matchsum", "status": "unknown", "fact": "Yaya Toure has a movement.", "score": -4.001915593942006}
+{"item_id": "H157", "system": "judgefact.distilled+div1", "pair_id": "rose:xsum:32079597:pegasus", "status": "unknown", "fact": "No past leader compares to GEJ in democracy, performance and transformation.", "score": -4.009603043397267}
+{"item_id": "H158", "system": "mars2", "pair_id": "rose:cnndm:e8c4c5c772a260c2c90a191298a8da82902087f4:bart", "status": "false_alert", "fact": "6", "score": 0.9587957740761339}
+{"item_id": "H159", "system": "humanfact+div1", "pair_id": "rose:samsum:13680358:MV-BART", "status": "unknown", "fact": "Martin bought two.", "score": -4.081422067831801}
+{"item_id": "H160", "system": "humanfact+div1", "pair_id": "rose:xsum:38679324:brio", "status": "unknown", "fact": "Mr Toolis said that Pictish symbols carved on to bedrock drew them to Trusty's Hill.", "score": -4.839646079070206}
+{"item_id": "H161", "system": "judgefact.distilled+div1", "pair_id": "rose:xsum:38778766:frost", "status": "unknown", "fact": "Simon (Grayson) sent a message at the start of the game.", "score": -4.002905746301015}
+{"item_id": "H162", "system": "judgefact.distilled+div1", "pair_id": "rose:cnndm:052c7787b6441b9368f9c1ca963747ffe191ce49:brio", "status": "unknown", "fact": "Peter Pratt is the Chairman of the bench.", "score": -4.001148283481598}
+{"item_id": "H163", "system": "judgefact.distilled+div1", "pair_id": "rose:xsum:32079597:cliff", "status": "unknown", "fact": "People see themselves by their ethnic group.", "score": -4.004286726315816}
+{"item_id": "H164", "system": "judgefact.distilled+div1", "pair_id": "rose:xsum:36397983:cliff", "status": "hit", "fact": "Some of Dahl's other words include: Other words include.", "score": 0.9654225707054138}
+{"item_id": "H165", "system": "humanfact+div1", "pair_id": "rose:cnndm:0312bea2586ef3a65a1b9a3d25328d1b417e2871:frost", "status": "unknown", "fact": "Phil", "score": 0.9208408460517713}
+{"item_id": "H166", "system": "judgefact.distilled+div1", "pair_id": "rose:samsum:13817976:CODS", "status": "false_alert", "fact": "Kim is all in good time.", "score": -4.08003169298172}
+{"item_id": "H167", "system": "humanfact+div1", "pair_id": "rose:cnndm:e82fd60b8e06755184e0bd8add6967600b6788f1:pegasus", "status": "unknown", "fact": "Trainers are on the NBC show, \"The Biggest Loser.\"", "score": -4.00629255108962}
+{"item_id": "H168", "system": "humanfact+div1", "pair_id": "rose:cnndm:e8c4c5c772a260c2c90a191298a8da82902087f4:brio", "status": "hit", "fact": "Berdych approaches the net.", "score": -4.028554236545638}
+{"item_id": "H169", "system": "judgefact.distilled+div1", "pair_id": "rose:cnndm:ea65fecbe36355c4d2b354190078c63c048c5837:matchsum", "status": "false_alert", "fact": "The fire quickly spread to the body of the vehicle.", "score": 0.0011025298348007102}
+{"item_id": "H170", "system": "judgefact.distilled+div1", "pair_id": "rose:xsum:27786442:bart", "status": "unknown", "fact": "You have to feel very sorry for those players who gave their all at Aldershot on the last day of the season.", "score": -4.003514091173808}
+{"item_id": "H171", "system": "mars2", "pair_id": "rose:cnndm:05b2de3be942a2627353d8a946bca4dda2b94b9a:simcls", "status": "unknown", "fact": "6", "score": 0.9588717680424452}
+{"item_id": "H172", "system": "humanfact+div1", "pair_id": "rose:cnndm:06a4f261911beb5d606fbae72041b8b205d45803:ctrlsum", "status": "hit", "fact": "Emmanuel Adebayor is on the left.", "score": 0.9884331485702149}
+{"item_id": "H173", "system": "judgefact.distilled+div1", "pair_id": "rose:cnndm:e8c4c5c772a260c2c90a191298a8da82902087f4:cliff", "status": "unknown", "fact": "Juan Monaco plays the backhand.", "score": -1.540790855884552}
+{"item_id": "H174", "system": "mars2", "pair_id": "rose:samsum:13612134:PEGASUS", "status": "hit", "fact": "Marco", "score": 0.7337903060019016}
+{"item_id": "H175", "system": "humanfact+div1", "pair_id": "rose:xsum:32079597:bart.beam_patience", "status": "unknown", "fact": "over 15 years", "score": -4.007727234214299}
+{"item_id": "H176", "system": "humanfact+div1", "pair_id": "rose:samsum:13828797:PEGASUS", "status": "unknown", "fact": "Nick", "score": 0.21960441864916902}
+{"item_id": "H177", "system": "humanfact+div1", "pair_id": "rose:cnndm:0034b7c223e24477e046cf3ee085dd006be38b27:brio-ext", "status": "unknown", "fact": "Homeowners have been told to remove any non-recyclable material from the wheelie bin lids.", "score": 0.9893334098678673}
+{"item_id": "H178", "system": "judgefact.distilled+div1", "pair_id": "rose:xsum:29630691:pegasus", "status": "hit", "fact": "A CAS report has criticised poor practice.", "score": -3.0841188666721187}
+{"item_id": "H179", "system": "judgefact.distilled+div1", "pair_id": "rose:xsum:30974482:cliff-pegasus", "status": "hit", "fact": "The former peer took an interview with the Financial Times.", "score": -4.8460954030354815}
+{"item_id": "H180", "system": "judgefact.distilled+div1", "pair_id": "rose:xsum:40397379:cliff-pegasus", "status": "unknown", "fact": "Timo Werner netted two times.", "score": -5.669007221857707}
+{"item_id": "H181", "system": "mars2", "pair_id": "rose:samsum:13827914:PLM-BART", "status": "false_alert", "fact": "John", "score": 0.03315720558166504}
+{"item_id": "H182", "system": "humanfact+div1", "pair_id": "rose:cnndm:06a4f261911beb5d606fbae72041b8b205d45803:pegasus", "status": "hit", "fact": "Adebayor is looking to leave the north London club.", "score": -4.008160911943036}
+{"item_id": "H183", "system": "humanfact+div1", "pair_id": "rose:cnndm:0752136176bc088b9e8582177ed83d7d44339e47:gsum", "status": "unknown", "fact": "A very high-resolution picture of the process is needed to visualize this orchestra of healing.", "score": -4.014536228499263}
+{"item_id": "H184", "system": "judgefact.distilled+div1", "pair_id": "rose:xsum:34917918:cliff", "status": "unknown", "fact": "Doctors worry keeping the price so high will make it impossible for hospitals to stock the drug for the few patients who need it.", "score": -4.0123631954193115}
+{"item_id": "H185", "system": "humanfact+div1", "pair_id": "rose:cnndm:06a4f261911beb5d606fbae72041b8b205d45803:bart", "status": "unknown", "fact": "Spurs", "score": -4.4341872358490955}
+{"item_id": "H186", "system": "judgefact.distilled+div1", "pair_id": "rose:samsum:13829744:PLM-BART", "status": "hit", "fact": "Evelyn says if you want to bring your mum over here they could spend Christmas together.", "score": 0.2189137563109398}
+{"item_id": "H187", "system": "mars2", "pair_id": "rose:samsum:13864532:CODS", "status": "hit", "fact": "their decision\r\nNaheeda", "score": 0.9097322553396225}
+{"item_id": "H188", "system": "judgefact.distilled+div1", "pair_id": "rose:cnndm:e8c4c5c772a260c2c90a191298a8da82902087f4:bart", "status": "false_alert", "fact": "Berthych defeated Argentine Monaco 6-3, 6-4.", "score": -4.993867781789352}
+{"item_id": "H189", "system": "mars2", "pair_id": "rose:samsum:13680358:MV-BART", "status": "unknown", "fact": "Alex", "score": 0.02826690673828125}
+{"item_id": "H190", "system": "humanfact+div1", "pair_id": "rose:samsum:13864890:PEGASUS", "status": "hit", "fact": "Sam needs help.", "score": 0.9915460242405113}
+{"item_id": "H191", "system": "mars2", "pair_id": "rose:samsum:13680993:PEGASUS", "status": "hit", "fact": "Ikea Family", "score": 0.411949896812439}
+{"item_id": "H192", "system": "mars2", "pair_id": "rose:cnndm:01c5856ecf23f2b493fee298ee7be469b9c0a2e9:gsum", "status": "unknown", "fact": "at least an hour", "score": 0.9472535505890847}
+{"item_id": "H193", "system": "humanfact+div1", "pair_id": "rose:xsum:33077317:bart", "status": "unknown", "fact": "The certain information regards Mr O'Brien's relationship with IBRC.", "score": -4.839983450839817}
+{"item_id": "H194", "system": "humanfact+div1", "pair_id": "rose:samsum:13821325:MV-BART", "status": "false_alert", "fact": "Crazy Lenses", "score": -4.910128338244779}
+{"item_id": "H195", "system": "humanfact+div1", "pair_id": "rose:samsum:13810034:BART", "status": "unknown", "fact": "Mary", "score": -4.145842336231348}
+{"item_id": "H196", "system": "mars2", "pair_id": "rose:xsum:39282308:brio", "status": "unknown", "fact": "30", "score": 0.9537819623947144}
+{"item_id": "H197", "system": "mars2", "pair_id": "rose:xsum:35412241:frost", "status": "unknown", "fact": "Christmas", "score": 0.951417738944292}
+{"item_id": "H198", "system": "humanfact+div1", "pair_id": "rose:xsum:32079597:brio-ranking", "status": "unknown", "fact": "No past leader compares to GEJ in transformation.", "score": -4.006856143832156}
+{"item_id": "H199", "system": "mars2", "pair_id": "rose:samsum:13680993:UniLM", "status": "hit", "fact": "a Daim's frozen cake and a bag of meatballs", "score": 0.9408783629536629}
+{"item_id": "H200", "system": "mars2", "pair_id": "rose:samsum:13716129:PEGASUS", "status": "false_alert", "fact": "an angel\r\nDave: i'll have to hit on her soon\r\n", "score": 0.6881325662136077}
+{"item_id": "H201", "system": "judgefact.distilled+div1", "pair_id": "rose:cnndm:06a5bb08f7fc7b99f573671f085d1c7c44e97325:gsum", "status": "unknown", "fact": "He scored the brace to put the Spanish side firmly in control in the tie.", "score": 0.0017957057377013068}
+{"item_id": "H202", "system": "humanfact+div1", "pair_id": "rose:xsum:36928888:cliff-pegasus", "status": "unknown", "fact": "Major UK banks have the resilience necessary to maintain lending to the real economy.", "score": -4.014460869623798}
+{"item_id": "H203", "system": "judgefact.distilled+div1", "pair_id": "rose:cnndm:ea7269787a3c775e4191281f038c1f2b9a395da2:cliff", "status": "false_alert", "fact": "The home of Girl With A Pearl Earring is the 'Dutch Mona Lisa'.", "score": 0.040853304167588554}
+{"item_id": "H204", "system": "humanfact+div1", "pair_id": "rose:samsum:13864578:S-BART", "status": "hit", "fact": "Maxwell suggests talking through all the issues.", "score": -4.0070624051587425}
+{"item_id": "H205", "system": "humanfact+div1", "pair_id": "rose:samsum:13821297:UniLM", "status": "unknown", "fact": "Jack", "score": -4.6105505837445975}
+{"item_id": "H206", "system": "humanfact+div1", "pair_id": "rose:samsum:13817976:MV-BART", "status": "false_alert", "fact": "Kim", "score": 0.5574476214689127}
+{"item_id": "H207", "system": "mars2", "pair_id": "rose:xsum:33492125:cliff-pegasus", "status": "unknown", "fact": "annually", "score": 0.941569396853447}
+{"item_id": "H208", "system": "mars2", "pair_id": "rose:samsum:13730545:Ctrl-DiaSumm", "status": "false_alert", "fact": "Allison", "score": 0.025114834308624268}
+{"item_id": "H209", "system": "judgefact.distilled+div1", "pair_id": "rose:samsum:13815477:PEGASUS", "status": "unknown", "fact": "Susan says he changed his number.", "score": 0.8601126869519552}
+{"item_id": "H210", "system": "judgefact.distilled+div1", "pair_id": "rose:cnndm:044c19650ec8d4d4d501045dfa9d06f38586ad3d:glob", "status": "unknown", "fact": "Herbert was behind the wheel.", "score": 0.02714796643704176}
+{"item_id": "H211", "system": "humanfact+div1", "pair_id": "rose:samsum:13821325:PLM-BART", "status": "unknown", "fact": "Martha", "score": -4.790507484587821}
+{"item_id": "H212", "system": "mars2", "pair_id": "rose:cnndm:e8c4c5c772a260c2c90a191298a8da82902087f4:brio-ext", "status": "unknown", "fact": "5", "score": 0.9625168211758137}
+{"item_id": "H213", "system": "mars2", "pair_id": "rose:samsum:13612134:MV-BART", "status": "false_alert", "fact": "the airport", "score": 0.06026691198348999}
+{"item_id": "H214", "system": "humanfact+div1", "pair_id": "rose:samsum:13612134:PLM-BART", "status": "false_alert", "fact": "Simone may come in December.", "score": -4.773645636577138}
+{"item_id": "H215", "system": "judgefact.distilled+div1", "pair_id": "rose:cnndm:e7a3b9bcfc48eab1224876151735ebc994595798:matchsum", "status": "false_alert", "fact": "The messages in the installation are symbolic of the microscopic asbestos fibres inhaled by those exposed.", "score": 0.7048890193303426}
+{"item_id": "H216", "system": "mars2", "pair_id": "rose:cnndm:ea65fecbe36355c4d2b354190078c63c048c5837:brio-ext", "status": "hit", "fact": "the carriageway", "score": 0.6173327475786209}
+{"item_id": "H217", "system": "judgefact.distilled+div1", "pair_id": "rose:samsum:13612134:PEGASUS", "status": "unknown", "fact": "The weekend is if you want to host.", "score": -2.9563643783330917}
+{"item_id": "H218", "system": "humanfact+div1", "pair_id": "rose:cnndm:052183f629ebae6251bfb15753877a55885d2044:brio", "status": "unknown", "fact": "Goggles that could help the blind see have come a step closer to reality.", "score": -0.762435986196835}
+{"item_id": "H219", "system": "judgefact.distilled+div1", "pair_id": "rose:xsum:33641648:brio-ranking", "status": "unknown", "fact": "This is much more difficult to do.", "score": -4.001396695772807}
+{"item_id": "H220", "system": "humanfact+div1", "pair_id": "rose:cnndm:009e3f5f1cf97ecfc8afddecbfceb72cd03cbbb3:frost", "status": "unknown", "fact": "Pepe Reina is the former Liverpool goalkeeper.", "score": -0.6741337324163247}
+{"item_id": "H221", "system": "judgefact.distilled+div1", "pair_id": "rose:cnndm:e865434d5fef489d5a6845e9998384aa0bbf648e:pegasus", "status": "unknown", "fact": "The videos are on YouTube.", "score": 0.9915530482927958}
+{"item_id": "H222", "system": "judgefact.distilled+div1", "pair_id": "rose:cnndm:04f597aa4ce93c8cde0ecedd7be8dab29353daf0:simcls", "status": "unknown", "fact": "Parkinson's patients had much weaker connections in the basal ganglia region of the brain at a very early stage.", "score": -4.0078509251276655}
+{"item_id": "H223", "system": "judgefact.distilled+div1", "pair_id": "rose:samsum:13817976:S-BART", "status": "unknown", "fact": "I will grill it.", "score": -4.94891666000088}
+{"item_id": "H224", "system": "judgefact.distilled+div1", "pair_id": "rose:cnndm:0312bea2586ef3a65a1b9a3d25328d1b417e2871:ctrlsum", "status": "false_alert", "fact": "The DNA test confirmed Phil was not her father.", "score": -2.4990562249634727}
+{"item_id": "H225", "system": "humanfact+div1", "pair_id": "rose:cnndm:053d6e62bfaaa32b4b9f206251c292405da578b2:simcls", "status": "unknown", "fact": "A laser is used to break up the stone.", "score": -4.0074053605496065}
+{"item_id": "H226", "system": "mars2", "pair_id": "rose:cnndm:00a51d5454f2ef7dbf4c53471223a27fb9c20681:pegasus", "status": "unknown", "fact": "more services", "score": 0.9562016081064939}
+{"item_id": "H227", "system": "mars2", "pair_id": "rose:samsum:13821325:CODS", "status": "hit", "fact": "Crazy Lenses", "score": 0.6858254820108414}
+{"item_id": "H228", "system": "mars2", "pair_id": "rose:samsum:13810120:MV-BART", "status": "false_alert", "fact": "Mary", "score": 0.03986196517944336}
+{"item_id": "H229", "system": "judgefact.distilled+div1", "pair_id": "rose:cnndm:06a5bb08f7fc7b99f573671f085d1c7c44e97325:brio", "status": "false_alert", "fact": "Luis Suarez puts the ball through David Luiz's legs.", "score": -4.9525559190660715}
+{"item_id": "H230", "system": "mars2", "pair_id": "rose:samsum:13865119:MV-BART", "status": "unknown", "fact": "two", "score": 0.9607265293598175}
+{"item_id": "H231", "system": "judgefact.distilled+div1", "pair_id": "rose:cnndm:e75b6ed6f701d518da417d48a07322e8b2ede1bf:matchsum", "status": "hit", "fact": "The incident occurred at Selhurst Park.", "score": -4.245585759480794}
+{"item_id": "H232", "system": "mars2", "pair_id": "rose:samsum:13821297:Ctrl-DiaSumm", "status": "false_alert", "fact": "your help", "score": 0.1374916911125183}
+{"item_id": "H233", "system": "humanfact+div1", "pair_id": "rose:cnndm:062755422619dde15d62b9cb071eb1c74103d453:frost", "status": "hit", "fact": "Toby is 109-year-old.", "score": 0.9931421784964413}
+{"item_id": "H234", "system": "humanfact+div1", "pair_id": "rose:xsum:29999399:bart.beam_patience", "status": "unknown", "fact": "Jed Wallace almost broke the deadlock midway through the first half of the replay.", "score": -4.0060835779311175}
+{"item_id": "H235", "system": "mars2", "pair_id": "rose:samsum:13730927:Ctrl-DiaSumm", "status": "false_alert", "fact": "2", "score": 0.10141719579696655}
+{"item_id": "H236", "system": "judgefact.distilled+div1", "pair_id": "rose:cnndm:062755422619dde15d62b9cb071eb1c74103d453:ctrlsum", "status": "hit", "fact": "Wendy immediately arranged to collect him.", "score": 0.6214584882060686}
+{"item_id": "H237", "system": "mars2", "pair_id": "rose:cnndm:e96d8694cfb0f637db97c2758600cce59e9991ad:glob", "status": "unknown", "fact": "more than three centuries", "score": 0.9553804595023394}
+{"item_id": "H238", "system": "mars2", "pair_id": "rose:samsum:13819035:PLM-BART", "status": "unknown", "fact": "Harry", "score": 0.03459348678588867}
+{"item_id": "H239", "system": "judgefact.distilled+div1", "pair_id": "rose:xsum:29999399:frost", "status": "unknown", "fact": "Jordan Roberts assisted with a cross.", "score": -4.001358171304067}
+{"item_id": "H240", "system": "judgefact.distilled+div1", "pair_id": "rose:samsum:13821554:MV-BART", "status": "hit", "fact": "Malik says they can go for runs together like they used to.", "score": -4.023109078407288}
+{"item_id": "H241", "system": "humanfact+div1", "pair_id": "rose:xsum:35933681:bart", "status": "unknown", "fact": "It was taken out of our hands by other factors.", "score": -4.009283831641308}
+{"item_id": "H242", "system": "humanfact+div1", "pair_id": "rose:xsum:40653705:bart", "status": "unknown", "fact": "Wild dogs are main threats to the wombats.", "score": -0.6750650727396798}
+{"item_id": "H243", "system": "judgefact.distilled+div1", "pair_id": "rose:samsum:13812901:S-BART", "status": "false_alert", "fact": "Winnie says Nanna has broken her leg.", "score": 0.20692737524708113}
+{"item_id": "H244", "system": "judgefact.distilled+div1", "pair_id": "rose:cnndm:0312bea2586ef3a65a1b9a3d25328d1b417e2871:brio-ext", "status": "false_alert", "fact": "Phil wanted to know.", "score": 0.7156979143619537}
+{"item_id": "H245", "system": "mars2", "pair_id": "rose:samsum:13612134:PLM-BART", "status": "unknown", "fact": "2 hours", "score": 0.05572034120559692}
+{"item_id": "H246", "system": "mars2", "pair_id": "rose:cnndm:ea2cf109e0da1cdd557d1cdbee5650e96d55a58d:cliff", "status": "unknown", "fact": "persistent indigestion and heartburn, trapped wind and frequent burping", "score": 0.9419454034417868}
+{"item_id": "H247", "system": "judgefact.distilled+div1", "pair_id": "rose:xsum:34234477:frost", "status": "unknown", "fact": "Police have appealing for anyone who noticed any suspicious activity to contact police.", "score": -4.001917978127797}
+{"item_id": "H248", "system": "judgefact.distilled+div1", "pair_id": "rose:xsum:38679324:brio", "status": "false_alert", "fact": "Dr Christopher bowles said that may not have been the case.", "score": -4.622631687670946}
+{"item_id": "H249", "system": "humanfact+div1", "pair_id": "rose:cnndm:058227ed9ea147a7557bfeffb57c48c0061f521c:ctrlsum", "status": "false_alert", "fact": "Russian Space Command", "score": 0.04495280874294327}
+{"item_id": "H250", "system": "humanfact+div1", "pair_id": "rose:samsum:13716129:UniLM", "status": "false_alert", "fact": "Dave will have to hit on her soon.", "score": 0.42960010638002716}
+{"item_id": "H251", "system": "humanfact+div1", "pair_id": "rose:cnndm:044c19650ec8d4d4d501045dfa9d06f38586ad3d:gold", "status": "false_alert", "fact": "Alfred Guy Vuozzo's sister was nine years old.", "score": 0.9857327804041018}
+{"item_id": "H252", "system": "humanfact+div1", "pair_id": "rose:cnndm:ea7269787a3c775e4191281f038c1f2b9a395da2:brio-ext", "status": "hit", "fact": "The Hague has netted a new fan.", "score": 0.9925441867164669}
+{"item_id": "H253", "system": "humanfact+div1", "pair_id": "rose:samsum:13682006:UniLM", "status": "hit", "fact": "She wants to take Tom away from me.", "score": 0.9922683970612995}
+{"item_id": "H254", "system": "judgefact.distilled+div1", "pair_id": "rose:cnndm:e7a3b9bcfc48eab1224876151735ebc994595798:frost", "status": "unknown", "fact": "More and more cases made themselves known.", "score": -4.006390988826752}
+{"item_id": "H255", "system": "mars2", "pair_id": "rose:samsum:13612134:S-BART", "status": "false_alert", "fact": "the airport", "score": 0.0704274296760559}
+{"item_id": "H256", "system": "judgefact.distilled+div1", "pair_id": "rose:xsum:26564445:bart", "status": "unknown", "fact": "Helen chalkmers said she was \"thrilled\" to be revealing the first acts.", "score": -5.676796197891235}
+{"item_id": "H257", "system": "judgefact.distilled+div1", "pair_id": "rose:cnndm:e84f9b5d17fd6f7e0a21fed4a795e3a6fab4b577:bart", "status": "unknown", "fact": "The match was a friendly match against the Tories in Edinburgh today.", "score": 0.0009318145845706264}
+{"item_id": "H258", "system": "humanfact+div1", "pair_id": "rose:cnndm:e84f9b5d17fd6f7e0a21fed4a795e3a6fab4b577:matchsum", "status": "unknown", "fact": "He said he is confident the Conservatives can pull off a win on polling day.", "score": -4.0065941738891535}
+{"item_id": "H259", "system": "mars2", "pair_id": "rose:cnndm:e7f566c4eb50cd059217eb8744b407fd57408bdd:brio-ext", "status": "unknown", "fact": "500,000", "score": 0.958222346380353}
+{"item_id": "H260", "system": "humanfact+div1", "pair_id": "rose:xsum:26564445:cliff-pegasus", "status": "unknown", "fact": "Scottish", "score": -4.087949725121175}
+{"item_id": "H261", "system": "humanfact+div1", "pair_id": "rose:samsum:13716129:PEGASUS", "status": "false_alert", "fact": "Dave will have to hit on her soon.", "score": 0.6048218545057885}
+{"item_id": "H262", "system": "mars2", "pair_id": "rose:cnndm:06018c4454e465a771424e6df9e33c6fdaeb1daf:simcls", "status": "unknown", "fact": "22", "score": 0.9582587094977498}
+{"item_id": "H263", "system": "mars2", "pair_id": "rose:cnndm:e88c2be654ed7b112e8b4222b55ab740c7792f88:simcls", "status": "unknown", "fact": "7", "score": 0.9599782073870301}
+{"item_id": "H264", "system": "judgefact.distilled+div1", "pair_id": "rose:samsum:13680442:PEGASUS", "status": "hit", "fact": "A company comes and organize everything.", "score": -4.005090653896332}
+{"item_id": "H265", "system": "humanfact+div1", "pair_id": "rose:xsum:36295621:brio", "status": "unknown", "fact": "Humphrey Bogart's", "score": -0.6744738729412628}
+{"item_id": "H266", "system": "humanfact+div1", "pair_id": "rose:samsum:13729817:S-BART", "status": "unknown", "fact": "all night", "score": -4.009636942059871}
+{"item_id": "H267", "system": "judgefact.distilled+div1", "pair_id": "rose:xsum:33641648:pegasus", "status": "unknown", "fact": "The Sun ages and grows brighter.", "score": -4.000887791315715}
+{"item_id": "H268", "system": "judgefact.distilled+div1", "pair_id": "rose:xsum:40397379:cliff-pegasus", "status": "unknown", "fact": "He rescinded Siani's dismissal.", "score": -4.003412385781606}
+{"item_id": "H269", "system": "judgefact.distilled+div1", "pair_id": "rose:xsum:36431726:cliff-pegasus", "status": "unknown", "fact": "It borders a military airport.", "score": -4.838544269402822}
+{"item_id": "H270", "system": "humanfact+div1", "pair_id": "rose:samsum:13680358:BART", "status": "hit", "fact": "Alex: Hon", "score": 0.9915906142578756}
+{"item_id": "H271", "system": "judgefact.distilled+div1", "pair_id": "rose:cnndm:070c821245a929ad635ac203eebb33a92cae968d:brio", "status": "unknown", "fact": "The crowd was 6,358.", "score": 0.9968268275260925}
+{"item_id": "H272", "system": "mars2", "pair_id": "rose:cnndm:058add7f1d147491b54ac4c4ff0ecbf27992ebaa:cliff", "status": "unknown", "fact": "just $100 per session", "score": 0.9614981546998024}
+{"item_id": "H273", "system": "mars2", "pair_id": "rose:xsum:40397379:bart", "status": "unknown", "fact": "Kerem Demirbay", "score": 0.9453180361539125}
+{"item_id": "H274", "system": "humanfact+div1", "pair_id": "rose:samsum:13865119:UniLM", "status": "hit", "fact": "James suggests cuddling.", "score": -4.006454754380038}
+{"item_id": "H275", "system": "mars2", "pair_id": "rose:samsum:13681928:PLM-BART", "status": "false_alert", "fact": "thursday", "score": 0.0970573902130127}
+{"item_id": "H276", "system": "humanfact+div1", "pair_id": "rose:cnndm:01c5856ecf23f2b493fee298ee7be469b9c0a2e9:bart", "status": "unknown", "fact": "Ruby Walsh warned riders.", "score": -4.609047995639048}
+{"item_id": "H277", "system": "judgefact.distilled+div1", "pair_id": "rose:cnndm:e8fd26eb7eeff757c31d0ea24b0257f9fd089b79:brio-ext", "status": "false_alert", "fact": "Results from the scan have shown up heavy bruising.", "score": -4.999447623714029}
+{"item_id": "H278", "system": "mars2", "pair_id": "rose:xsum:22492378:brio", "status": "unknown", "fact": "Mario Testino", "score": 0.9527470789849758}
+{"item_id": "H279", "system": "humanfact+div1", "pair_id": "rose:cnndm:e7a3b9bcfc48eab1224876151735ebc994595798:gsum", "status": "unknown", "fact": "The new moving artwork helps raise awareness.", "score": 0.9073722640823267}
+{"item_id": "H280", "system": "judgefact.distilled+div1", "pair_id": "rose:samsum:13817976:Ctrl-DiaSumm", "status": "unknown", "fact": "Margot could try the marketplace at Polna street.", "score": -4.995616945476892}
+{"item_id": "H281", "system": "humanfact+div1", "pair_id": "rose:cnndm:044c19650ec8d4d4d501045dfa9d06f38586ad3d:simcls", "status": "false_alert", "fact": "Vuozzo is of Lower Montague.", "score": -2.3432892558945437}
+{"item_id": "H282", "system": "judgefact.distilled+div1", "pair_id": "rose:cnndm:e7f566c4eb50cd059217eb8744b407fd57408bdd:brio", "status": "unknown", "fact": "Mayweather bought his son a Bentley golf cart for his 15th birthday.", "score": 0.9875015815099081}
+{"item_id": "H283", "system": "judgefact.distilled+div1", "pair_id": "rose:xsum:36928888:cliff-pegasus", "status": "unknown", "fact": "Ewen Stevenson is RBS chief financial officer.", "score": -4.001749674479167}
+{"item_id": "H284", "system": "judgefact.distilled+div1", "pair_id": "rose:cnndm:023255e81c3ee95d35ca9704ece8f930c29a7c9b:simcls", "status": "hit", "fact": "I am sure it will make me stronger.", "score": -4.010166049003601}
+{"item_id": "H285", "system": "humanfact+div1", "pair_id": "rose:samsum:13817976:PEGASUS", "status": "unknown", "fact": "Margot is curious.", "score": -4.006333140856213}
+{"item_id": "H286", "system": "judgefact.distilled+div1", "pair_id": "rose:xsum:37498266:brio-ranking", "status": "unknown", "fact": "Animal tubersculosesis affects those in close contact with infected animals.", "score": -2.7751809656620026}
+{"item_id": "H287", "system": "humanfact+div1", "pair_id": "rose:cnndm:e7e61e9871b891d0a4f7e609cf326b767b7786f9:ctrlsum", "status": "unknown", "fact": "The Tasmanian Wilderness is a UNESCO World Heritage Site.", "score": -4.007726875334687}
+{"item_id": "H288", "system": "mars2", "pair_id": "rose:cnndm:0752136176bc088b9e8582177ed83d7d44339e47:pegasus", "status": "hit", "fact": "Goethe University Frankfurt", "score": 0.9509763456881046}
+{"item_id": "H289", "system": "mars2", "pair_id": "rose:samsum:13815477:Ctrl-DiaSumm", "status": "unknown", "fact": "Matt", "score": 0.03587774038314819}
+{"item_id": "H290", "system": "judgefact.distilled+div1", "pair_id": "rose:xsum:40397379:frost", "status": "false_alert", "fact": "Can had his legs high.", "score": -4.835148910681407}
+{"item_id": "H291", "system": "mars2", "pair_id": "rose:cnndm:06b2d962f2177533fcfdbef63ae6f0873b4d1a01:brio", "status": "unknown", "fact": "this air", "score": 0.9505698192864657}
+{"item_id": "H292", "system": "mars2", "pair_id": "rose:samsum:13828403:PEGASUS", "status": "unknown", "fact": "Harley", "score": 0.03590484857559204}
+{"item_id": "H293", "system": "humanfact+div1", "pair_id": "rose:xsum:34590780:frost", "status": "unknown", "fact": "Denis Sassou Nguesso is President.", "score": -4.013324292642545}
+{"item_id": "H294", "system": "humanfact+div1", "pair_id": "rose:xsum:35412241:frost", "status": "unknown", "fact": "The main building at the Kirkstall site was contaminated by flood water.", "score": -4.009619715794181}
+{"item_id": "H295", "system": "judgefact.distilled+div1", "pair_id": "rose:cnndm:053d6e62bfaaa32b4b9f206251c292405da578b2:simcls", "status": "unknown", "fact": "They reduce the amount of citrate.", "score": -4.00209794441859}
+{"item_id": "H296", "system": "humanfact+div1", "pair_id": "rose:cnndm:e96d8694cfb0f637db97c2758600cce59e9991ad:gold", "status": "hit", "fact": "Roberts attended a hearing last year.", "score": -0.6743096946862802}
+{"item_id": "H297", "system": "judgefact.distilled+div1", "pair_id": "rose:samsum:13716129:UniLM", "status": "unknown", "fact": "Mike says she came from Houston.", "score": -4.99886875783947}
+{"item_id": "H298", "system": "mars2", "pair_id": "rose:cnndm:052183f629ebae6251bfb15753877a55885d2044:bart", "status": "unknown", "fact": "Australia", "score": 0.9353295944631099}
+{"item_id": "H299", "system": "judgefact.distilled+div1", "pair_id": "rose:xsum:36397983:bart", "status": "unknown", "fact": "We can see children doing that in their own writing.", "score": -4.002496441205342}
+{"item_id": "H300", "system": "mars2", "pair_id": "rose:samsum:13812901:PLM-BART", "status": "hit", "fact": "Winnie", "score": 0.027186548709869383}

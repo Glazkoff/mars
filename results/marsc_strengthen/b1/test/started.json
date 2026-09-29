@@ -1,0 +1,11 @@
+{
+  "job_id": "5319",
+  "array_task": null,
+  "job_name": "b1-eval-test",
+  "node": "Euler",
+  "started_utc": "2026-09-18T12:29:59.294214+00:00",
+  "python": "/home/user/.venv-mars/bin/python",
+  "cwd": "/home/user/summ-mask-benchmark",
+  "gpus": null,
+  "nvidia_smi": "No devices were found"
+}

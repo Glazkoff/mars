@@ -1,0 +1,98 @@
+{
+ "rose_test": {
+  "docs": "/home/user/results/marsc/e0/docs_test.jsonl",
+  "cells": 11554,
+  "token_recall_conveying_cells": {
+   "n": 5420,
+   "mean": 0.7631006241282509,
+   "p10": 0.4285714285714286,
+   "median": 0.8,
+   "p90": 1.0,
+   "share_ge_0.8": 0.5274907749077491,
+   "share_eq_1": 0.3474169741697417
+  },
+  "token_recall_omitting_cells": {
+   "n": 6134,
+   "mean": 0.39741450582320276,
+   "p10": 0.0,
+   "median": 0.4,
+   "p90": 0.75,
+   "share_ge_0.8": 0.07597000326051516,
+   "share_eq_1": 0.017769807629605477
+  },
+  "gap_per_triple": {
+   "n": 20000,
+   "mean": 0.3318774124705704,
+   "p10": 0.0,
+   "median": 0.33333333333333337,
+   "p90": 0.75,
+   "share_ge_0.8": 0.08295,
+   "share_eq_1": 0.04925
+  },
+  "triples_with_positive_gap": 0.73085
+ },
+ "unisum": {
+  "docs": "/home/user/results/marsc_strengthen/hj3/docs/docs_unisum.jsonl",
+  "cells": 17207,
+  "token_recall_conveying_cells": {
+   "n": 7821,
+   "mean": 0.6203585494683738,
+   "p10": 0.2857142857142857,
+   "median": 0.6363636363636364,
+   "p90": 1.0,
+   "share_ge_0.8": 0.29088351873162,
+   "share_eq_1": 0.10113796189745557
+  },
+  "token_recall_omitting_cells": {
+   "n": 9386,
+   "mean": 0.2780347792372048,
+   "p10": 0.0,
+   "median": 0.25,
+   "p90": 0.5833333333333334,
+   "share_ge_0.8": 0.020669081610909867,
+   "share_eq_1": 0.002983166418069465
+  },
+  "gap_per_triple": {
+   "n": 26489,
+   "mean": 0.3063966209555627,
+   "p10": -0.07692307692307687,
+   "median": 0.30000000000000004,
+   "p90": 0.7000000000000001,
+   "share_ge_0.8": 0.054173430480576844,
+   "share_eq_1": 0.010343916342632792
+  },
+  "triples_with_positive_gap": 0.7858356298841028
+ },
+ "omb": {
+  "docs": "/home/user/results/marsc_strengthen/hj10/docs/docs_omb_complete.jsonl",
+  "cells": 426,
+  "token_recall_conveying_cells": {
+   "n": 276,
+   "mean": 0.631593829401042,
+   "p10": 0.35,
+   "median": 0.6282894736842105,
+   "p90": 0.9272486772486772,
+   "share_ge_0.8": 0.2753623188405797,
+   "share_eq_1": 0.07246376811594203
+  },
+  "token_recall_omitting_cells": {
+   "n": 150,
+   "mean": 0.30101008362362563,
+   "p10": 0.08595317725752503,
+   "median": 0.26969696969696966,
+   "p90": 0.5671428571428571,
+   "share_ge_0.8": 0.02,
+   "share_eq_1": 0.006666666666666667
+  },
+  "gap_per_triple": {
+   "n": 276,
+   "mean": 0.3272959043662827,
+   "p10": 0.05225806451612908,
+   "median": 0.2941176470588235,
+   "p90": 0.625,
+   "share_ge_0.8": 0.03260869565217391,
+   "share_eq_1": 0.028985507246376812
+  },
+  "triples_with_positive_gap": 0.9057971014492754
+ }
+}

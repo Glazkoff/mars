@@ -1,0 +1,33 @@
+{
+ "arm": "judgefact",
+ "variant": "resblind",
+ "model": "/home/user/results/marsc_strengthen/c2c4/models/surface_judgefact.json",
+ "model_arm": "judgefact",
+ "apply_units_file": "/home/user/results/marsc/g7_unisum/units_gemma+ent_unisum.jsonl",
+ "apply_split": "unisum",
+ "unit_set": "gemma+ent",
+ "model_fit_split": "validation",
+ "files": {
+  "/home/user/results/marsc_strengthen/c2c4/resblind/unisum/gemma+ent_xenc_seed20260906.jsonl": {
+   "from": "/home/user/results/marsc/g7_unisum/scores/gemma+ent_xenc_seed20260906.jsonl",
+   "seed_key": "20260906",
+   "n_pairs": 1813,
+   "n_pairs_skipped": 0,
+   "r2_on_fit_split": 0.07565277325615116
+  },
+  "/home/user/results/marsc_strengthen/c2c4/resblind/unisum/gemma+ent_xenc_seed20260907.jsonl": {
+   "from": "/home/user/results/marsc/g7_unisum/scores/gemma+ent_xenc_seed20260907.jsonl",
+   "seed_key": "20260907",
+   "n_pairs": 1813,
+   "n_pairs_skipped": 0,
+   "r2_on_fit_split": 0.07554613701252544
+  },
+  "/home/user/results/marsc_strengthen/c2c4/resblind/unisum/gemma+ent_xenc_seed20260908.jsonl": {
+   "from": "/home/user/results/marsc/g7_unisum/scores/gemma+ent_xenc_seed20260908.jsonl",
+   "seed_key": "20260908",
+   "n_pairs": 1813,
+   "n_pairs_skipped": 0,
+   "r2_on_fit_split": 0.07188124660099238
+  }
+ }
+}

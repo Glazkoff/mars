@@ -1,0 +1,55 @@
+{
+ "k": 10,
+ "systems": {
+  "humanfact+div1": {
+   "n_pairs": 1388,
+   "units_as_annotated": 12497,
+   "units_corrected": 12464,
+   "shared": 7382,
+   "jaccard_like_recall": 0.5907017684244219
+  },
+  "humanfact.distilled+div1": {
+   "n_pairs": 1388,
+   "units_as_annotated": 12072,
+   "units_corrected": 12084,
+   "shared": 8012,
+   "jaccard_like_recall": 0.6636845593108018
+  },
+  "judgefact.distilled+div1": {
+   "n_pairs": 1388,
+   "units_as_annotated": 12081,
+   "units_corrected": 12096,
+   "shared": 7638,
+   "jaccard_like_recall": 0.6322324310901416
+  },
+  "mars2": {
+   "n_pairs": 1388,
+   "units_as_annotated": 11258,
+   "units_corrected": 11258,
+   "shared": 11258,
+   "jaccard_like_recall": 1.0
+  }
+ },
+ "annotated_items_still_in_corrected_topk": {
+  "judgefact.distilled+div1": {
+   "in": 48,
+   "of": 100,
+   "share": 0.48
+  },
+  "humanfact+div1": {
+   "in": 51,
+   "of": 100,
+   "share": 0.51
+  },
+  "mars2": {
+   "in": 70,
+   "of": 100,
+   "share": 0.7
+  },
+  "humanfact.distilled+div1": {
+   "in": 53,
+   "of": 100,
+   "share": 0.53
+  }
+ }
+}

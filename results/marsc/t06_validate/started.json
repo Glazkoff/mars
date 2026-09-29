@@ -1,0 +1,11 @@
+{
+  "job_id": "4937",
+  "array_task": null,
+  "job_name": "mc-t06b-valid",
+  "node": "Euler",
+  "started_utc": "2026-09-17T06:47:13.648922+00:00",
+  "python": "/home/user/.venv-mars/bin/python",
+  "cwd": "/home/user/summ-mask-benchmark",
+  "gpus": null,
+  "nvidia_smi": "No devices were found"
+}

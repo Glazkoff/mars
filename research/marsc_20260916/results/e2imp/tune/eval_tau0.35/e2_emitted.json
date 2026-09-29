@@ -1,0 +1,37 @@
+{
+ "registered": "research/marsc_20260916/PREREG.md E2 pilot",
+ "n_pairs": 202,
+ "n_docs": 101,
+ "k": {
+  "10": {
+   "systems": {
+    "hf_imp0.35": {
+     "recall": 0.3815089743237993,
+     "recall_stress": 0.344867258490013,
+     "hit_rate": 0.17097084708470847,
+     "false_alert_rate": 0.09967586044318717,
+     "unknown_rate": 0.7293532924721042,
+     "n_pairs": 202
+    },
+    "hf_nofilter": {
+     "recall": 0.3538503763772433,
+     "recall_stress": 0.40507051165733804,
+     "hit_rate": 0.13730748074807478,
+     "false_alert_rate": 0.03482437529467232,
+     "unknown_rate": 0.8278681439572529,
+     "n_pairs": 202
+    }
+   },
+   "paired_recall": {
+    "hf_nofilter": {
+     "mean": 0.025571068926315433,
+     "ci": [
+      -0.019820677024488795,
+      0.0731714497260292
+     ]
+    }
+   },
+   "primary": "hf_imp0.35"
+  }
+ }
+}

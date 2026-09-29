@@ -1,0 +1,11 @@
+{
+  "job_id": "4913",
+  "array_task": "11",
+  "job_name": "mc-t07-curve",
+  "node": "Euler",
+  "started_utc": "2026-09-17T00:04:17.643866+00:00",
+  "python": "/home/user/.venv-mars/bin/python",
+  "cwd": "/home/user/summ-mask-benchmark",
+  "gpus": "0",
+  "nvidia_smi": "NVIDIA H200 NVL, 143771 MiB"
+}

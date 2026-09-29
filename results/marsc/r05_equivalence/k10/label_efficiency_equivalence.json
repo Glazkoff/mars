@@ -1,0 +1,76 @@
+{
+ "registered": "post-hoc analysis of the registered T07 label-efficiency curve",
+ "k": "10",
+ "reference": "frac100+div1",
+ "n_docs": 150,
+ "declared_margin": 0.05,
+ "alpha": 0.05,
+ "n_boot": 20000,
+ "note": "TOST on document-level paired differences; equivalence requires the whole 90% interval inside +/-0.05",
+ "systems": {
+  "frac10+div1": {
+   "n_docs": 150,
+   "mean_loss_vs_reference": -0.013771180347677298,
+   "ci95_two_sided": [
+    -0.038099378183165604,
+    0.009878921830237369
+   ],
+   "tost_interval": [
+    -0.034154484844865274,
+    0.006153039883245825
+   ],
+   "equivalent_at_declared_margin": true,
+   "non_inferior_at_declared_margin": true,
+   "smallest_margin_supported": 0.034154484844865274,
+   "p_two_sided_vs_zero": 0.2551
+  },
+  "frac100+div1": {
+   "n_docs": 150,
+   "mean_loss_vs_reference": 0.0,
+   "ci95_two_sided": [
+    0.0,
+    0.0
+   ],
+   "tost_interval": [
+    0.0,
+    0.0
+   ],
+   "equivalent_at_declared_margin": true,
+   "non_inferior_at_declared_margin": true,
+   "smallest_margin_supported": 0.0,
+   "p_two_sided_vs_zero": 2.0
+  },
+  "frac25+div1": {
+   "n_docs": 150,
+   "mean_loss_vs_reference": -0.008315052176331734,
+   "ci95_two_sided": [
+    -0.0340468261161265,
+    0.01616918419933246
+   ],
+   "tost_interval": [
+    -0.029940889362495008,
+    0.012352752420193285
+   ],
+   "equivalent_at_declared_margin": true,
+   "non_inferior_at_declared_margin": true,
+   "smallest_margin_supported": 0.029940889362495008,
+   "p_two_sided_vs_zero": 0.5208
+  },
+  "frac50+div1": {
+   "n_docs": 150,
+   "mean_loss_vs_reference": -0.0010208897742650606,
+   "ci95_two_sided": [
+    -0.016546450833179238,
+    0.014341703493265977
+   ],
+   "tost_interval": [
+    -0.014000280546659737,
+    0.011847910854118899
+   ],
+   "equivalent_at_declared_margin": true,
+   "non_inferior_at_declared_margin": true,
+   "smallest_margin_supported": 0.014000280546659737,
+   "p_two_sided_vs_zero": 0.9072
+  }
+ }
+}

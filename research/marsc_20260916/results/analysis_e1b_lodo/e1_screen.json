@@ -1,0 +1,100 @@
+{
+ "registered": "research/marsc_20260916/PREREG.md E1",
+ "n_pairs": 1412,
+ "n_docs": 154,
+ "n_validation_tetrads": 1276,
+ "systems": {
+  "mc-A-lam1-crossenc-xdom-rose_cnndm": {
+   "auroc_pooled": 0.9737432405537211,
+   "auroc_macro": 0.970286175416301,
+   "auroc_lexical_stress": 0.9656143896817723,
+   "n_stress": 4353,
+   "logloss": 0.21210551118660131,
+   "by_resource": {
+    "rose_cnndm": 0.9721471512024358,
+    "rose_samsum": 0.9695636183725375,
+    "rose_xsum": 0.9837583781047159
+   },
+   "four_cell_strict": 0.7954545454545454,
+   "C_positive_rate": 0.9796238244514106,
+   "n_tetrads_scored": 1276
+  },
+  "mc-A-lam1-crossenc-xdom-rose_samsum": {
+   "auroc_pooled": 0.9737499297081357,
+   "auroc_macro": 0.970096517369784,
+   "auroc_lexical_stress": 0.9684949433995187,
+   "n_stress": 4353,
+   "logloss": 0.20614366434427184,
+   "by_resource": {
+    "rose_cnndm": 0.9740616377191382,
+    "rose_samsum": 0.963839131187262,
+    "rose_xsum": 0.9850777170750875
+   },
+   "four_cell_strict": 0.8126959247648903,
+   "C_positive_rate": 0.981974921630094,
+   "n_tetrads_scored": 1276
+  },
+  "mc-A-lam1-crossenc-xdom-rose_xsum": {
+   "auroc_pooled": 0.9741526168038962,
+   "auroc_macro": 0.9727142392452934,
+   "auroc_lexical_stress": 0.9672044378848796,
+   "n_stress": 4353,
+   "logloss": 0.2057034490618645,
+   "by_resource": {
+    "rose_cnndm": 0.973418272127911,
+    "rose_samsum": 0.9694366374704652,
+    "rose_xsum": 0.9830873740922933
+   },
+   "four_cell_strict": 0.817398119122257,
+   "C_positive_rate": 0.981974921630094,
+   "n_tetrads_scored": 1276
+  }
+ },
+ "primary": "mc-A-lam1-crossenc-xdom-rose_cnndm",
+ "paired": {
+  "mc-A-lam1-crossenc-xdom-rose_samsum": {
+   "lexical_stress": {
+    "mean": -0.0030208559752154867,
+    "ci": [
+     -0.007707028034411509,
+     0.0017287957812365227
+    ]
+   },
+   "pooled": {
+    "mean": -8.186990881971446e-05,
+    "ci": [
+     -0.002454232123897673,
+     0.0020511866994807866
+    ]
+   }
+  },
+  "mc-A-lam1-crossenc-xdom-rose_xsum": {
+   "lexical_stress": {
+    "mean": -0.0017588350631806448,
+    "ci": [
+     -0.0056990438578952305,
+     0.0021942471369998428
+    ]
+   },
+   "pooled": {
+    "mean": -0.0004206255083313981,
+    "ci": [
+     -0.0024841102680075136,
+     0.001448741589770945
+    ]
+   }
+  }
+ },
+ "screen": {
+  "strongest_control": "mc-A-lam1-crossenc-xdom-rose_samsum",
+  "delta_lexical_stress": -0.0028805537177464258,
+  "ci_lexical_stress": [
+   -0.007707028034411509,
+   0.0017287957812365227
+  ],
+  "delta_pooled": -6.689154414596388e-06,
+  "generic_contrast_ties": false,
+  "PASS": false,
+  "HEADROOM": false
+ }
+}

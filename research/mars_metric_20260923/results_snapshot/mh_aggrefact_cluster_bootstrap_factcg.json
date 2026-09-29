@@ -1,0 +1,103 @@
+{
+ "registered": "research/mars_metric_20260923/PREREG.md, Amendment M-H (b)",
+ "verifier": "factcg",
+ "n_boot": 2000,
+ "seed": 20260918,
+ "datasets": {
+  "AggreFact-CNN": {
+   "n_test_claims": 558,
+   "n_source_documents": 384,
+   "claims_per_document": 1.453125,
+   "bacc_whole": 0.676699233112722,
+   "bacc_decomp_min": 0.632209265679168
+  },
+  "AggreFact-XSum": {
+   "n_test_claims": 558,
+   "n_source_documents": 483,
+   "claims_per_document": 1.15527950310559,
+   "bacc_whole": 0.7546365914786968,
+   "bacc_decomp_min": 0.7476961634856372
+  },
+  "ClaimVerify": {
+   "n_test_claims": 1088,
+   "n_source_documents": 697,
+   "claims_per_document": 1.5609756097560976,
+   "bacc_whole": 0.7802624718643896,
+   "bacc_decomp_min": 0.774226297205302
+  },
+  "ExpertQA": {
+   "n_test_claims": 3702,
+   "n_source_documents": 3135,
+   "claims_per_document": 1.1808612440191388,
+   "bacc_whole": 0.5944782694178703,
+   "bacc_decomp_min": 0.5946958307874433
+  },
+  "FactCheck-GPT": {
+   "n_test_claims": 1566,
+   "n_source_documents": 1199,
+   "claims_per_document": 1.3060884070058383,
+   "bacc_whole": 0.7520762560343286,
+   "bacc_decomp_min": 0.7563472197389595
+  },
+  "Lfqa": {
+   "n_test_claims": 1911,
+   "n_source_documents": 100,
+   "claims_per_document": 19.11,
+   "bacc_whole": 0.8644169423773982,
+   "bacc_decomp_min": 0.8516915276821102
+  },
+  "RAGTruth": {
+   "n_test_claims": 16371,
+   "n_source_documents": 450,
+   "claims_per_document": 36.38,
+   "bacc_whole": 0.8311207195327095,
+   "bacc_decomp_min": 0.8183101951646063
+  },
+  "Reveal": {
+   "n_test_claims": 1710,
+   "n_source_documents": 1498,
+   "claims_per_document": 1.1415220293724966,
+   "bacc_whole": 0.8981106870229008,
+   "bacc_decomp_min": 0.9020610687022901
+  },
+  "TofuEval-MediaS": {
+   "n_test_claims": 726,
+   "n_source_documents": 15,
+   "claims_per_document": 48.4,
+   "bacc_whole": 0.7106561161951137,
+   "bacc_decomp_min": 0.6795609100831165
+  },
+  "TofuEval-MeetB": {
+   "n_test_claims": 772,
+   "n_source_documents": 15,
+   "claims_per_document": 51.46666666666667,
+   "bacc_whole": 0.7307931404072883,
+   "bacc_decomp_min": 0.7246195069667738
+  },
+  "Wice": {
+   "n_test_claims": 358,
+   "n_source_documents": 355,
+   "claims_per_document": 1.008450704225352,
+   "bacc_whole": 0.8242331400226137,
+   "bacc_decomp_min": 0.802421855053434
+  }
+ },
+ "macro": {
+  "bacc_whole": 0.7652257788605482,
+  "bacc_decomp_min": 0.7530763491408038,
+  "bacc_decomp_mean": 0.7373668894387614
+ },
+ "contrast": {
+  "decomp_min_minus_whole_macro_points": -1.214942971974442,
+  "ci95_claim_resampling_points": [
+   -1.9115984533977626,
+   -0.46049596010163407
+  ],
+  "ci95_document_resampling_points": [
+   -1.8737455660888163,
+   -0.4772109037351652
+  ],
+  "n_documents_total": 8331,
+  "n_claims_total": 29320
+ }
+}

@@ -1,0 +1,64 @@
+{
+ "families": {
+  "gemma": {
+   "coverage_vs_human": {
+    "Annotator 1": {
+     "n": 300,
+     "accuracy": 0.9066666666666666
+    },
+    "Annotator 2": {
+     "n": 300,
+     "accuracy": 0.8633333333333333
+    },
+    "both_agree": {
+     "n": 255,
+     "accuracy": 0.9529411764705882
+    }
+   },
+   "verdict_vs_human": {
+    "Annotator 1": {
+     "n": 300,
+     "accuracy": 0.6966666666666667
+    },
+    "Annotator 2": {
+     "n": 300,
+     "accuracy": 0.7066666666666667
+    },
+    "both_agree": {
+     "n": 229,
+     "accuracy": 0.7641921397379913
+    }
+   }
+  },
+  "qwen": {
+   "coverage_vs_human": {
+    "Annotator 1": {
+     "n": 300,
+     "accuracy": 0.9
+    },
+    "Annotator 2": {
+     "n": 300,
+     "accuracy": 0.8433333333333334
+    },
+    "both_agree": {
+     "n": 255,
+     "accuracy": 0.9372549019607843
+    }
+   },
+   "verdict_vs_human": {
+    "Annotator 1": {
+     "n": 300,
+     "accuracy": 0.7766666666666666
+    },
+    "Annotator 2": {
+     "n": 300,
+     "accuracy": 0.7933333333333333
+    },
+    "both_agree": {
+     "n": 229,
+     "accuracy": 0.8733624454148472
+    }
+   }
+  }
+ }
+}

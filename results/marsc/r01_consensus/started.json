@@ -1,0 +1,11 @@
+{
+  "job_id": "4990",
+  "array_task": null,
+  "job_name": "mc-r01-consensus",
+  "node": "Euler",
+  "started_utc": "2026-09-17T12:24:06.215180+00:00",
+  "python": "/home/user/.venv-mars/bin/python",
+  "cwd": "/home/user/summ-mask-benchmark",
+  "gpus": null,
+  "nvidia_smi": "No devices were found"
+}

@@ -1,0 +1,79 @@
+{
+ "block": "B6",
+ "written_utc": "2026-09-18T10:52:28.743150+00:00",
+ "which": [
+  "cpu"
+ ],
+ "host": "Euler",
+ "python": "3.12.14",
+ "device": "cpu",
+ "n_pairs": 200,
+ "n_docs": 50,
+ "n_docs_gemma": 25,
+ "env": {
+  "SLURM_JOB_ID": "5344",
+  "CUDA_VISIBLE_DEVICES": "",
+  "HF_HOME": "/home/user/hf_cache"
+ },
+ "population": {
+  "gemma+ent": {
+   "file": "/home/user/results/mars3/m32/units_gemma+ent_validation.jsonl",
+   "pairs_with_units": 1466,
+   "units_total": 138261,
+   "units_per_pair": 94.31173260572987,
+   "documents": 190,
+   "pairs_per_document": 7.71578947368421,
+   "units_per_pair_first200": 165.54,
+   "pairs_per_document_first200": 11.764705882352942
+  },
+  "distilled": {
+   "file": "/home/user/results/mars3/m32/units_distilled_validation.jsonl",
+   "pairs_with_units": 1442,
+   "units_total": 58592,
+   "units_per_pair": 40.63245492371706,
+   "documents": 187,
+   "pairs_per_document": 7.711229946524064,
+   "units_per_pair_first200": 69.92,
+   "pairs_per_document_first200": 11.764705882352942
+  }
+ },
+ "stages": {
+  "emission": {
+   "pairs": 200,
+   "units": 33108,
+   "seconds": 0.07109785079956055,
+   "s_per_pair": 0.00035548925399780273,
+   "s_per_unit": 2.1474523015452625e-06,
+   "rule": "mc_diversity.py cap=1 then top-10",
+   "device": "cpu"
+  },
+  "evidence": {
+   "claim_rendering": {
+    "units": 33108,
+    "seconds": 3.4156885147094727,
+    "s_per_unit": 0.00010316807160533626,
+    "who_pays": "off-the-shelf comparators over m2 unit sets (b21_zeroshot render_claim)"
+   },
+   "marsc_premise_construction": {
+    "pairs": 200,
+    "seconds": 0.0010712146759033203,
+    "s_per_pair": 5.3560733795166015e-06,
+    "who_pays": "MARS-C (candidate clipped to 380 words; the source is NOT an input)"
+   },
+   "source_retrieval_seconds": 0.0,
+   "note": "no stage of MARS-C reads the source at inference time -- the verifier's premise is the candidate summary alone (marsc_method.tex).  The off-the-shelf comparators are scored the same way (document = candidate summary), so neither family pays an evidence-retrieval cost; the asymmetry is claim rendering, which only the comparator family pays."
+  },
+  "decomposition": {
+   "spacy_entity": {
+    "documents": 50,
+    "units": 2759,
+    "seconds": 4.128398895263672,
+    "s_per_document": 0.08256797790527344,
+    "units_per_document": 55.18,
+    "device": "cpu",
+    "role": "the '+ent' half of the gemma+ent inventory, never priced in the G4 table"
+   }
+  }
+ },
+ "finished_utc": "2026-09-18T10:52:38.739998+00:00"
+}

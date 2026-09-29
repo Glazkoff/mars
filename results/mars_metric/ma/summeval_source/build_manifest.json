@@ -1,0 +1,10 @@
+{
+ "pairs": 1600,
+ "documents": 100,
+ "sentence_tasks": 1244,
+ "documents_overlapping_marsc_training_sources": [
+  "dm-test-02c955067d00f38b6978b805d5a8701a787f78ac",
+  "dm-test-e7d8b6617691ea00d4ddc5fe2b7cbd105ba9a57e",
+  "dm-test-e880fda4c25289f8325574246f0f8ed4ff5eb26b"
+ ]
+}

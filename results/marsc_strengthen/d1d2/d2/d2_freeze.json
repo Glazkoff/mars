@@ -1,0 +1,159 @@
+{
+ "block": "D2",
+ "registered": "research/marsc_strengthen_20260918/PREREG.md, Wave D / D2 (governing proposal Block 3)",
+ "arms": [
+  "none",
+  "importance",
+  "llmjudge",
+  "mars2",
+  "marsc",
+  "oracle"
+ ],
+ "dump_arm_systems": {
+  "marsc": "humanfact+div1",
+  "llmjudge": "judgefact+div1",
+  "mars2": "mars2"
+ },
+ "budget": {
+  "K_facts": 10,
+  "max_fact_words": 60,
+  "max_source_words": 2500,
+  "word_budget_rule": "W = max(60, round(1.5 * original_words)) -- a function of the ORIGINAL summary only, hence arm-invariant",
+  "revision_calls_per_pair_per_arm": 1,
+  "candidates_per_call": 1
+ },
+ "inputs": {
+  "acu": "/home/user/results/mars2_gates/b18/acu_units_validation.jsonl",
+  "acu_sha256": "a6a431c033b3bd4b9afbfbbaad92480a3b81cd95e39c80602b8019807e50e30a",
+  "emitted": "/home/user/results/marsc/r07_crossed/emitted_validation_k10.jsonl",
+  "emitted_sha256": "2b31bcbbf57df0e77e5845af748ce4531706715ed23ef991541966068309bd2a",
+  "units_gemma": "/home/user/results/mars3/m32/units_gemma+ent_validation.jsonl",
+  "units_gemma_sha256": "0c10fce82cff51c640bb81ee35091fcb58ed3cea50ae88e8ecef2c7ae38637e2",
+  "importance_manifest": [
+   "/home/user/results/marsc/e2imp_all/scores/gemma+ent_importance_all_seed20260906.jsonl",
+   "/home/user/results/marsc/e2imp_all/scores/gemma+ent_importance_all_seed20260907.jsonl",
+   "/home/user/results/marsc/e2imp_all/scores/gemma+ent_importance_all_seed20260908.jsonl"
+  ],
+  "importance_sha256": {
+   "gemma+ent_importance_all_seed20260906.jsonl": "501e644addbef3009f3f6fc1c6f1c0e0609db91b950fb94556cdf2fedb165b2b",
+   "gemma+ent_importance_all_seed20260907.jsonl": "3d8b4943949e1c56d5a7d3877c99fb5a09b37d56f3124834b80cdb081dd7afdf",
+   "gemma+ent_importance_all_seed20260908.jsonl": "1f88e940947f4c7e7d19b184b5884c03570264dcc068d4a83c337c65d41d463d"
+  }
+ },
+ "selection": {
+  "seed": 20260918,
+  "docs_per_resource": 50,
+  "summaries_per_doc": 2,
+  "min_omitted": 2,
+  "n_eligible_pairs": 1118,
+  "n_eligible_docs": 136,
+  "n_selected_pairs": 267,
+  "n_selected_docs": 136,
+  "resources": {
+   "rose_cnndm": 90,
+   "rose_samsum": 92,
+   "rose_xsum": 85
+  },
+  "summarizers": {
+   "brio-ext": 3,
+   "simcls": 13,
+   "MV-BART": 4,
+   "CODS": 13,
+   "cliff-pegasus": 8,
+   "pegasus": 20,
+   "glob": 8,
+   "frost": 15,
+   "BART": 14,
+   "S-BART": 14,
+   "cliff": 23,
+   "gold": 12,
+   "brio-ranking": 9,
+   "PLM-BART": 11,
+   "brio": 16,
+   "gsum": 7,
+   "ctrlsum": 3,
+   "PEGASUS": 13,
+   "bart": 23,
+   "matchsum": 9,
+   "UniLM": 12,
+   "Ctrl-DiaSumm": 11,
+   "bart.beam_patience": 6
+  }
+ },
+ "n_rows": 1602,
+ "facts_per_arm": {
+  "none": {
+   "0": 267
+  },
+  "importance": {
+   "7": 42,
+   "8": 31,
+   "10": 109,
+   "9": 58,
+   "6": 13,
+   "3": 4,
+   "5": 6,
+   "4": 4
+  },
+  "llmjudge": {
+   "9": 65,
+   "10": 112,
+   "8": 33,
+   "7": 25,
+   "5": 7,
+   "6": 11,
+   "3": 4,
+   "4": 8,
+   "1": 1,
+   "2": 1
+  },
+  "mars2": {
+   "8": 53,
+   "6": 18,
+   "9": 81,
+   "7": 26,
+   "10": 59,
+   "5": 13,
+   "3": 7,
+   "4": 10
+  },
+  "marsc": {
+   "10": 173,
+   "8": 16,
+   "9": 30,
+   "7": 17,
+   "6": 17,
+   "5": 6,
+   "3": 4,
+   "4": 4
+  },
+  "oracle": {
+   "7": 28,
+   "3": 48,
+   "5": 29,
+   "4": 52,
+   "6": 19,
+   "2": 53,
+   "8": 13,
+   "10": 15,
+   "9": 10
+  }
+ },
+ "mean_facts_per_arm": {
+  "none": 0.0,
+  "importance": 8.577,
+  "llmjudge": 8.584,
+  "mars2": 8.086,
+  "marsc": 9.015,
+  "oracle": 4.708
+ },
+ "word_budget": {
+  "min": 60,
+  "max": 176,
+  "mean": 69.06
+ },
+ "outcome_policy": "NO outcome is computed here or by any job in this block. Every outcome needs two blinded reviewers plus adjudication; the only machine analogue is the support judge, which is the measured failure mode (kappa 0.4727, calls 36% of supported facts unsupported) and is therefore not an admissible substitute.",
+ "known_gap": "No off-the-shelf verifier (SummaC-ZS, MiniCheck, AlignScore) can be an arm: every off-the-shelf score file in r06_offshelf/ and r06b_fast/ -- including the directory misleadingly named val/ -- carries 2829 rows, the TEST inventory, with ZERO validation pair_ids. If Wave B1 lands validation off-shelf scores, an arm may be added ONLY by re-running this build and the generation unchanged, at the same seed, prompt and model.",
+ "checks_failed": [],
+ "status": "FROZEN"
+}

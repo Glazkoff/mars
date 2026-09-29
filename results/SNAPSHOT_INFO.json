@@ -1,0 +1,336 @@
+{
+ "pulled_at": "2026-09-28T22:28:21+00:00",
+ "source": "~/results/{marsc,marsc_strengthen,mars_metric} on the training cluster (read-only rsync)",
+ "selection": {
+  "trees": [
+   "^marsc/(g1_test|g4|g6|g6b|g7_unisum|r\\d\\d[a-z0-9_]*|t\\d\\d[a-z0-9_]*)/",
+   "^marsc/e0/census\\.json$",
+   "^marsc_strengthen/(a\\d[a-z0-9]*|b\\d[a-z0-9_]*|c\\d[a-z0-9]*|d1d2|hj\\d[a-z0-9_]*|w6)/",
+   "^mars_metric/(ma/meta|ma/summeval_source|mb|mc|me|mf|mg)/",
+   "^mars_metric/m0/census\\.json$"
+  ],
+  "excluded_dirs": [
+   "__pycache__",
+   "cache",
+   "hf",
+   "judge",
+   "logs",
+   "model",
+   "models",
+   "scores",
+   "checkpoint*"
+  ],
+  "json_max_bytes": 5242880,
+  "per_pair_jsonl_max_bytes": 2097152,
+  "hard_max_bytes": 5242880,
+  "d1_files": [
+   "marsc_strengthen/d1d2/d1/INSTRUCTIONS.md",
+   "marsc_strengthen/d1d2/d1/export.jsonl",
+   "marsc_strengthen/d1d2/d1/human_sample_blind.csv",
+   "marsc_strengthen/d1d2/d1/human_sample_key.jsonl"
+  ]
+ },
+ "files": 850,
+ "bytes": 29742395,
+ "by_tree": {
+  "mars_metric/m0": {
+   "files": 1,
+   "bytes": 12098
+  },
+  "mars_metric/ma": {
+   "files": 8,
+   "bytes": 2294751
+  },
+  "mars_metric/mb": {
+   "files": 6,
+   "bytes": 22342
+  },
+  "mars_metric/mc": {
+   "files": 16,
+   "bytes": 33385
+  },
+  "mars_metric/me": {
+   "files": 20,
+   "bytes": 8177
+  },
+  "mars_metric/mf": {
+   "files": 3,
+   "bytes": 55831
+  },
+  "mars_metric/mg": {
+   "files": 15,
+   "bytes": 16207254
+  },
+  "marsc/e0": {
+   "files": 1,
+   "bytes": 4383
+  },
+  "marsc/g1_test": {
+   "files": 5,
+   "bytes": 38417
+  },
+  "marsc/g4": {
+   "files": 3,
+   "bytes": 2352
+  },
+  "marsc/g6": {
+   "files": 6,
+   "bytes": 15401
+  },
+  "marsc/g7_unisum": {
+   "files": 6,
+   "bytes": 74202
+  },
+  "marsc/r01_consensus": {
+   "files": 17,
+   "bytes": 555998
+  },
+  "marsc/r02_human_rank": {
+   "files": 7,
+   "bytes": 39884
+  },
+  "marsc/r03_sumblind": {
+   "files": 6,
+   "bytes": 42168
+  },
+  "marsc/r04_matched": {
+   "files": 6,
+   "bytes": 21142
+  },
+  "marsc/r05_equivalence": {
+   "files": 5,
+   "bytes": 4565
+  },
+  "marsc/r06_offshelf": {
+   "files": 1,
+   "bytes": 308
+  },
+  "marsc/r06b_fast": {
+   "files": 5,
+   "bytes": 74832
+  },
+  "marsc/r07_crossed": {
+   "files": 20,
+   "bytes": 17564
+  },
+  "marsc/r08_globaudit": {
+   "files": 2,
+   "bytes": 62296
+  },
+  "marsc/r09_validation": {
+   "files": 5,
+   "bytes": 145461
+  },
+  "marsc/r10_policy_test": {
+   "files": 4,
+   "bytes": 47030
+  },
+  "marsc/r11_matching": {
+   "files": 13,
+   "bytes": 140813
+  },
+  "marsc/r12_precision": {
+   "files": 6,
+   "bytes": 87363
+  },
+  "marsc/t01_grid": {
+   "files": 4,
+   "bytes": 24809
+  },
+  "marsc/t02_kcurve": {
+   "files": 5,
+   "bytes": 159011
+  },
+  "marsc/t03_adaptive": {
+   "files": 5,
+   "bytes": 53642
+  },
+  "marsc/t04_robust": {
+   "files": 6,
+   "bytes": 39789
+  },
+  "marsc/t05_mars2": {
+   "files": 4,
+   "bytes": 15180
+  },
+  "marsc/t06_validate": {
+   "files": 4,
+   "bytes": 5397
+  },
+  "marsc/t07_curve": {
+   "files": 40,
+   "bytes": 32272
+  },
+  "marsc/t08_agg": {
+   "files": 5,
+   "bytes": 56945
+  },
+  "marsc_strengthen/a1": {
+   "files": 28,
+   "bytes": 366815
+  },
+  "marsc_strengthen/a2a3": {
+   "files": 10,
+   "bytes": 152153
+  },
+  "marsc_strengthen/a4a6": {
+   "files": 35,
+   "bytes": 482665
+  },
+  "marsc_strengthen/b0": {
+   "files": 33,
+   "bytes": 285555
+  },
+  "marsc_strengthen/b1": {
+   "files": 52,
+   "bytes": 286687
+  },
+  "marsc_strengthen/b10": {
+   "files": 4,
+   "bytes": 812
+  },
+  "marsc_strengthen/b11": {
+   "files": 1,
+   "bytes": 13750
+  },
+  "marsc_strengthen/b12": {
+   "files": 6,
+   "bytes": 28383
+  },
+  "marsc_strengthen/b12_stale_topk": {
+   "files": 6,
+   "bytes": 22598
+  },
+  "marsc_strengthen/b2": {
+   "files": 12,
+   "bytes": 33606
+  },
+  "marsc_strengthen/b3": {
+   "files": 28,
+   "bytes": 174268
+  },
+  "marsc_strengthen/b4": {
+   "files": 12,
+   "bytes": 81153
+  },
+  "marsc_strengthen/b5b7": {
+   "files": 8,
+   "bytes": 57360
+  },
+  "marsc_strengthen/b6b8": {
+   "files": 20,
+   "bytes": 153754
+  },
+  "marsc_strengthen/b9": {
+   "files": 4,
+   "bytes": 812
+  },
+  "marsc_strengthen/b9b10_eval": {
+   "files": 8,
+   "bytes": 124738
+  },
+  "marsc_strengthen/b9b10_eval_stale": {
+   "files": 12,
+   "bytes": 154335
+  },
+  "marsc_strengthen/c1c3": {
+   "files": 23,
+   "bytes": 760415
+  },
+  "marsc_strengthen/c2c4": {
+   "files": 51,
+   "bytes": 357690
+  },
+  "marsc_strengthen/d1d2": {
+   "files": 17,
+   "bytes": 1418578
+  },
+  "marsc_strengthen/hj10": {
+   "files": 33,
+   "bytes": 249241
+  },
+  "marsc_strengthen/hj10b": {
+   "files": 19,
+   "bytes": 1820367
+  },
+  "marsc_strengthen/hj11": {
+   "files": 27,
+   "bytes": 72361
+  },
+  "marsc_strengthen/hj12": {
+   "files": 47,
+   "bytes": 1374207
+  },
+  "marsc_strengthen/hj13": {
+   "files": 4,
+   "bytes": 18555
+  },
+  "marsc_strengthen/hj3": {
+   "files": 22,
+   "bytes": 155481
+  },
+  "marsc_strengthen/hj5": {
+   "files": 6,
+   "bytes": 5979
+  },
+  "marsc_strengthen/hj9": {
+   "files": 24,
+   "bytes": 231982
+  },
+  "marsc_strengthen/hj9_joint": {
+   "files": 10,
+   "bytes": 221742
+  },
+  "marsc_strengthen/hj9_xlarge": {
+   "files": 24,
+   "bytes": 232149
+  },
+  "marsc_strengthen/w6": {
+   "files": 3,
+   "bytes": 8516
+  }
+ },
+ "tree_digest": "a60b3bf6397ad3324b43b85f2b2349d55d732e2c1b2b9d98511cd93eac391680",
+ "d1_privacy": {
+  "file": "marsc_strengthen/d1d2/d1/export.jsonl",
+  "records": 1058,
+  "fields": [
+   "annotator",
+   "answers",
+   "comment",
+   "item_id",
+   "q1",
+   "q2",
+   "role",
+   "ts"
+  ],
+  "annotator_labels": {
+   "Adjudicator": 58,
+   "Annotator 1": 500,
+   "Annotator 2": 500
+  },
+  "non_empty_comments": 0,
+  "email_like_values": 0,
+  "identifying_labels_found": 0,
+  "status": "CLEAN",
+  "action": "shipped unchanged: annotators appear only as the neutral labels 'Annotator 1', 'Annotator 2', 'Adjudicator'; every comment is empty; no e-mail-like value; the only other fields are item ids, the two A/B answers and a Unix timestamp per answer"
+ },
+ "pending_outputs": {
+  "H-J12(c) unit-matched judge twin, RoSE TEST evaluation": {
+   "path": "marsc_strengthen/hj12/gemma_twin/eval_test/",
+   "present": true
+  },
+  "H-J12(d) inventory x verifier grid, evaluator output": {
+   "path": "marsc_strengthen/hj12/grid/eval/",
+   "present": true
+  },
+  "M-G pairwise-common contrasts": {
+   "path": "mars_metric/mg/meta/meta_pairwise.json",
+   "present": true
+  },
+  "M-G RoSE automatic-unit MARS-R": {
+   "path": "mars_metric/mg/rose/",
+   "present": true
+  }
+ }
+}

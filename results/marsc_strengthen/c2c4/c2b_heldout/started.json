@@ -1,0 +1,11 @@
+{
+  "job_id": "5352",
+  "array_task": null,
+  "job_name": "c2b-surface-heldout",
+  "node": "Euler",
+  "started_utc": "2026-09-18T11:28:03.307716+00:00",
+  "python": "/home/user/.venv-mars/bin/python",
+  "cwd": "/home/user/summ-mask-benchmark",
+  "gpus": null,
+  "nvidia_smi": "No devices were found"
+}

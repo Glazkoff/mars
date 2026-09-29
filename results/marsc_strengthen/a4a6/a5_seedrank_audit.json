@@ -1,0 +1,230 @@
+{
+ "registered": "research/marsc_strengthen_20260918/PREREG.md Wave A / A5 (provenance item 4c)",
+ "diversity_push": -5.0,
+ "arms": [
+  {
+   "label": "seedrank.humanfact.gemma+ent.TEST",
+   "system_pre": "humanfact",
+   "system_post": "humanfact+div1",
+   "pre_file": "/home/user/results/marsc/t08_agg/inv/gemma+ent_humanfact_seedrank.jsonl",
+   "post_file": "/home/user/results/marsc/t08_agg/val/gemma+ent_humanfact_seedrank_div1.jsonl",
+   "units_file": "/home/user/results/mars3/m32/units_gemma+ent_test.jsonl",
+   "n_pairs": 2829,
+   "n_units": 300360,
+   "max_units_per_pair": 439,
+   "score_range_pre": [
+    -438.0,
+    -0.0
+   ],
+   "score_range_post": [
+    -438.0,
+    -0.0
+   ],
+   "range_changed_by_div1": false,
+   "units_moved_by_div1": 7124,
+   "units_moved_share": 0.02371820482088161,
+   "observed_deltas": {
+    "-5": 7124
+   },
+   "demoted_units_still_in_top10": 5006,
+   "demoted_units_per_pair_in_top10": 1.7695298692117356,
+   "pre_div_top10_units_that_get_demoted": 7082,
+   "top10_overlap_pre_vs_post_mean": 0.9266171792152704,
+   "distinct_sentences_in_top10_pre_mean": 6.179568752209261,
+   "distinct_sentences_in_top10_post_mean": 6.440084835630965,
+   "k": 10
+  },
+  {
+   "label": "seedlead.humanfact.gemma+ent.TEST",
+   "system_pre": "humanfact",
+   "system_post": "humanfact+div1",
+   "pre_file": "/home/user/results/marsc/t08_agg/inv/gemma+ent_humanfact_seedlead.jsonl",
+   "post_file": "/home/user/results/marsc/t08_agg/val/gemma+ent_humanfact_seedlead_div1.jsonl",
+   "units_file": "/home/user/results/mars3/m32/units_gemma+ent_test.jsonl",
+   "n_pairs": 2829,
+   "n_units": 300360,
+   "max_units_per_pair": 439,
+   "score_range_pre": [
+    0.007903556456789375,
+    3.997214800000191
+   ],
+   "score_range_post": [
+    -4.99209644354321,
+    3.997214800000191
+   ],
+   "range_changed_by_div1": true,
+   "units_moved_by_div1": 240008,
+   "units_moved_share": 0.7990677853242776,
+   "observed_deltas": {
+    "-5": 240008
+   },
+   "demoted_units_still_in_top10": 2790,
+   "demoted_units_per_pair_in_top10": 0.9862142099681867,
+   "pre_div_top10_units_that_get_demoted": 2828,
+   "top10_overlap_pre_vs_post_mean": 0.9986567691763873,
+   "distinct_sentences_in_top10_pre_mean": 8.841993637327677,
+   "distinct_sentences_in_top10_post_mean": 8.855425945563804,
+   "k": 10
+  },
+  {
+   "label": "seedavg.humanfact.gemma+ent.TEST",
+   "system_pre": "humanfact",
+   "system_post": "humanfact+div1",
+   "pre_file": "/home/user/results/marsc/g1_test/inv/gemma+ent_humanfact_seedavg.jsonl",
+   "post_file": "/home/user/results/marsc/g1_test/val/gemma+ent_humanfact_seedavg_div1.jsonl",
+   "units_file": "/home/user/results/mars3/m32/units_gemma+ent_test.jsonl",
+   "n_pairs": 2829,
+   "n_units": 300360,
+   "max_units_per_pair": 439,
+   "score_range_pre": [
+    0.007911467924714088,
+    0.998213013013204
+   ],
+   "score_range_post": [
+    -4.992088532075286,
+    0.998213013013204
+   ],
+   "range_changed_by_div1": true,
+   "units_moved_by_div1": 240008,
+   "units_moved_share": 0.7990677853242776,
+   "observed_deltas": {
+    "-5": 240008
+   },
+   "demoted_units_still_in_top10": 2790,
+   "demoted_units_per_pair_in_top10": 0.9862142099681867,
+   "pre_div_top10_units_that_get_demoted": 10497,
+   "top10_overlap_pre_vs_post_mean": 0.7275715800636268,
+   "distinct_sentences_in_top10_pre_mean": 6.131141746200071,
+   "distinct_sentences_in_top10_post_mean": 8.855425945563804,
+   "k": 10
+  },
+  {
+   "label": "seedrank.xenc.distilled.TEST",
+   "system_pre": "xenc",
+   "system_post": "xenc+div1",
+   "pre_file": "/home/user/results/marsc/t08_agg/inv/distilled_xenc_seedrank.jsonl",
+   "post_file": "/home/user/results/marsc/t08_agg/val/distilled_xenc_seedrank_div1.jsonl",
+   "units_file": "/home/user/results/mars3/m32/units_distilled_test.jsonl",
+   "n_pairs": 2829,
+   "n_units": 123576,
+   "max_units_per_pair": 205,
+   "score_range_pre": [
+    -204.0,
+    -0.0
+   ],
+   "score_range_post": [
+    -204.0,
+    -0.0
+   ],
+   "range_changed_by_div1": false,
+   "units_moved_by_div1": 6863,
+   "units_moved_share": 0.05553667378779051,
+   "observed_deltas": {
+    "-5": 6863
+   },
+   "demoted_units_still_in_top10": 4742,
+   "demoted_units_per_pair_in_top10": 1.6762106751502297,
+   "pre_div_top10_units_that_get_demoted": 6813,
+   "top10_overlap_pre_vs_post_mean": 0.9267939201131142,
+   "distinct_sentences_in_top10_pre_mean": 6.097560975609756,
+   "distinct_sentences_in_top10_post_mean": 6.498055850123719,
+   "k": 10
+  },
+  {
+   "label": "seedavg.xenc.distilled.TEST",
+   "system_pre": "xenc",
+   "system_post": "xenc+div1",
+   "pre_file": "/home/user/results/marsc/g1_test/inv/distilled_xenc_seedavg.jsonl",
+   "post_file": "/home/user/results/marsc/g1_test/val/distilled_xenc_seedavg_div1.jsonl",
+   "units_file": "/home/user/results/mars3/m32/units_distilled_test.jsonl",
+   "n_pairs": 2829,
+   "n_units": 123576,
+   "max_units_per_pair": 205,
+   "score_range_pre": [
+    0.0003933721163775772,
+    0.9992149869600931
+   ],
+   "score_range_post": [
+    -4.999606627883622,
+    0.9992149869600931
+   ],
+   "range_changed_by_div1": true,
+   "units_moved_by_div1": 66741,
+   "units_moved_share": 0.5400805981744028,
+   "observed_deltas": {
+    "-5": 66741
+   },
+   "demoted_units_still_in_top10": 1770,
+   "demoted_units_per_pair_in_top10": 0.6256627783669141,
+   "pre_div_top10_units_that_get_demoted": 8062,
+   "top10_overlap_pre_vs_post_mean": 0.7775892541534112,
+   "distinct_sentences_in_top10_pre_mean": 6.089784376104631,
+   "distinct_sentences_in_top10_post_mean": 8.31389183457052,
+   "k": 10
+  },
+  {
+   "label": "seedrank.humanfact.gemma+ent.UNISUM",
+   "system_pre": "humanfactU",
+   "system_post": "humanfactU+div1",
+   "pre_file": "/home/user/results/marsc/t08_agg/inv/gemma+ent_humanfactU_seedrank.jsonl",
+   "post_file": "/home/user/results/marsc/t08_agg/val/gemma+ent_humanfactU_seedrank_div1.jsonl",
+   "units_file": "/home/user/results/marsc/g7_unisum/units_gemma+ent_unisum.jsonl",
+   "n_pairs": 1813,
+   "n_units": 559048,
+   "max_units_per_pair": 2236,
+   "score_range_pre": [
+    -2235.0,
+    -0.0
+   ],
+   "score_range_post": [
+    -2235.0,
+    -0.0
+   ],
+   "range_changed_by_div1": false,
+   "units_moved_by_div1": 4330,
+   "units_moved_share": 0.007745309883945565,
+   "observed_deltas": {
+    "-5": 4330
+   },
+   "demoted_units_still_in_top10": 3222,
+   "demoted_units_per_pair_in_top10": 1.777164920022063,
+   "pre_div_top10_units_that_get_demoted": 4312,
+   "top10_overlap_pre_vs_post_mean": 0.9398786541643686,
+   "distinct_sentences_in_top10_pre_mean": 6.14726971869829,
+   "distinct_sentences_in_top10_post_mean": 6.36569222283508,
+   "k": 10
+  },
+  {
+   "label": "seedavg.humanfact.gemma+ent.UNISUM",
+   "system_pre": "humanfact",
+   "system_post": "humanfact+div1",
+   "pre_file": "/home/user/results/marsc/g7_unisum/inv/gemma+ent_humanfact_seedavg.jsonl",
+   "post_file": "/home/user/results/marsc/g7_unisum/val/gemma+ent_humanfact_seedavg_div1.jsonl",
+   "units_file": "/home/user/results/marsc/g7_unisum/units_gemma+ent_unisum.jsonl",
+   "n_pairs": 1813,
+   "n_units": 559048,
+   "max_units_per_pair": 2236,
+   "score_range_pre": [
+    0.008003806850562492,
+    0.9981728593508402
+   ],
+   "score_range_post": [
+    -4.991996193149437,
+    0.9981728593508402
+   ],
+   "range_changed_by_div1": true,
+   "units_moved_by_div1": 408316,
+   "units_moved_share": 0.7303773557905582,
+   "observed_deltas": {
+    "-5": 408316
+   },
+   "demoted_units_still_in_top10": 2849,
+   "demoted_units_per_pair_in_top10": 1.5714285714285714,
+   "pre_div_top10_units_that_get_demoted": 6195,
+   "top10_overlap_pre_vs_post_mean": 0.8154440154440155,
+   "distinct_sentences_in_top10_pre_mean": 6.1114175399889685,
+   "distinct_sentences_in_top10_post_mean": 7.956977385548814,
+   "k": 10
+  }
+ ]
+}

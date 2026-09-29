@@ -1,0 +1,17 @@
+{
+ "arm": "mars_sentences",
+ "n_pairs": 200,
+ "seconds_batched_total": 103.71861726301722,
+ "seconds_per_pair_batched": 0.5185930863150862,
+ "latency_batch1_median_ms": 430.3898444632068,
+ "latency_batch1_p90_ms": 1176.3649531640112,
+ "peak_alloc_batched_bytes": 58158114816,
+ "peak_alloc_batch1_bytes": 53254219776,
+ "weight_bytes_in_memory": 6614818836,
+ "alloc_after_load_bytes": 6648391680,
+ "facts_per_candidate": 5.165,
+ "reference_facts_per_pair": 7.115,
+ "mean_P": 0.7080330669231283,
+ "mean_R": 0.2134254493057685,
+ "device": "NVIDIA H200 NVL"
+}

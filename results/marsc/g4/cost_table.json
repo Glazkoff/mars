@@ -1,0 +1,78 @@
+{
+ "device": "NVIDIA H200 NVL",
+ "n_pairs_timed": 200,
+ "verifier": {
+  "humanfact|gemma+ent": {
+   "pairs": 200,
+   "units": 33108,
+   "units_per_pair": 165.54,
+   "seconds": 27.682716608047485,
+   "s_per_pair": 0.13841358304023743,
+   "s_per_unit": 0.0008361337624757607
+  },
+  "judgefact|gemma+ent": {
+   "pairs": 200,
+   "units": 33108,
+   "units_per_pair": 165.54,
+   "seconds": 27.262261152267456,
+   "s_per_pair": 0.1363113057613373,
+   "s_per_unit": 0.0008234342500986908
+  },
+  "humanfact|distilled": {
+   "pairs": 200,
+   "units": 13984,
+   "units_per_pair": 69.92,
+   "seconds": 12.758882999420166,
+   "s_per_pair": 0.06379441499710083,
+   "s_per_unit": 0.0009123915188372544
+  },
+  "judgefact|distilled": {
+   "pairs": 200,
+   "units": 13984,
+   "units_per_pair": 69.92,
+   "seconds": 12.749009370803833,
+   "s_per_pair": 0.06374504685401916,
+   "s_per_unit": 0.0009116854527176654
+  },
+  "humanfact|spacy": {
+   "pairs": 200,
+   "units": 7868,
+   "units_per_pair": 39.34,
+   "seconds": 6.269885063171387,
+   "s_per_pair": 0.03134942531585693,
+   "s_per_unit": 0.0007968842225688086
+  },
+  "judgefact|spacy": {
+   "pairs": 200,
+   "units": 7868,
+   "units_per_pair": 39.34,
+   "seconds": 6.268064975738525,
+   "s_per_pair": 0.03134032487869263,
+   "s_per_unit": 0.0007966528947303667
+  }
+ },
+ "inventory": {
+  "gemma+ent": {
+   "pairs_per_document_in_sample": 11.764705882352942,
+   "gpu_seconds_total": 13182.0,
+   "documents": 1986.0,
+   "s_per_document": 6.637462235649547,
+   "s_per_pair_amortised": 0.5641842900302114
+  },
+  "distilled": {
+   "pairs_per_document_in_sample": 11.764705882352942,
+   "gpu_seconds_total": 470.0,
+   "documents": 1986.0,
+   "s_per_document": 0.2366565961732125,
+   "s_per_pair_amortised": 0.02011581067472306
+  },
+  "spacy": {
+   "pairs_per_document_in_sample": 11.764705882352942
+  },
+  "gemma": {
+   "gpu_seconds_total": 13182.0,
+   "documents": 1986.0,
+   "s_per_document": 6.637462235649547
+  }
+ }
+}

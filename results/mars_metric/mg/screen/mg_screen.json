@@ -1,0 +1,816 @@
+{
+ "screen": "M-G",
+ "kind": "exploratory_post_hoc_descriptive",
+ "protocol": "research/mars_metric_20260923/MG_SCREEN.md",
+ "protocol_written": "2026-09-24",
+ "generated_utc": "2026-09-24T12:09:52.467483+00:00",
+ "job_id": "7035",
+ "node": "Euler",
+ "code_ref": "unknown-rsync-deploy",
+ "code_sha256": "63ef5223f71f9223ae200861e2809fd4294493b8e2f37fe0e40c787e6b06de15",
+ "seed": 20260924,
+ "n_boot": 2000,
+ "min_pairs": 30,
+ "statistic": "per-document Kendall tau-b, mean over documents (>=3 scored pairs, human and metric non-constant at 1e-6; identical to ma_meta.py's summary tau)",
+ "bootstrap": "document-clustered percentile bootstrap, same draws for every column (paired)",
+ "columns": [
+  "marsR_marsc",
+  "marsR_marsc_shufcand",
+  "marsR_marsc_nocand",
+  "D1_marsc",
+  "D2_marsc",
+  "marsR_factcg",
+  "marsR_factcg_shufcand",
+  "marsR_factcg_nocand",
+  "D1_factcg",
+  "D2_factcg"
+ ],
+ "contrasts": [
+  "D1_marsc-raw_marsc",
+  "D2_marsc-raw_marsc",
+  "raw_marsc-shufcand_marsc",
+  "D1_marsc-shufcand_marsc",
+  "D1_factcg-raw_factcg",
+  "D2_factcg-raw_factcg",
+  "raw_factcg-shufcand_factcg",
+  "D1_factcg-shufcand_factcg",
+  "D1_marsc-D1_factcg",
+  "raw_marsc-raw_factcg"
+ ],
+ "verdicts": "none by design; no bars, no PASS/FAIL",
+ "input_validation": "fail closed: duplicate pair_id, orphan score ids, non-finite saved scores, and pair-id set disagreement between the two score files abort the run; per-pair missing values (e.g. no reference) are allowed, counted, excluded",
+ "interpretation_limits": [
+  "Exploratory post-hoc reanalysis of the exposed M-A test sets (M-A bars failed, Amendment M-A.1): no registered bar, no PASS/FAIL, no method or publication claim can follow from this file.",
+  "All intervals are descriptive: the saved shuffled-candidate derangement (seed 20260917, within dataset x system) couples documents through shared shuffled candidates.",
+  "Pair-level means only; fact-level logits are not read or reconstructed.",
+  "Any future claim requires fresh independent human data and a new registration written before that data is read (MG_SCREEN.md, fresh-data requirement)."
+ ],
+ "inputs": {
+  "pairs": {
+   "path": "/home/user/results/mars_metric/ma/tasks/pairs_ma.jsonl",
+   "sha256": "661aebd73c05d5da3026bd7fc9a38ed24ef7f127c2bd1e221417c52889db2afc",
+   "bytes": 43590718,
+   "rows": 6116,
+   "n_pairs_index": 6116
+  },
+  "scores_marsR_marsc": {
+   "path": "/home/user/results/mars_metric/ma/scores/scores_marsR_marsc.jsonl",
+   "sha256": "e13d0fa198fa46fc1a54c85e40f5817c72e72e6689d805a1de82f25bfe693981",
+   "bytes": 1306682,
+   "rows": 6116,
+   "n_nonfinite_values": 0,
+   "n_orphan_rows": 0
+  },
+  "scores_marsR_factcg": {
+   "path": "/home/user/results/mars_metric/ma/scores/scores_marsR_factcg.jsonl",
+   "sha256": "ca2e0a05236716210f5edd6702d04bcdfe698ac65e9795ed06974a96697df88b",
+   "bytes": 1304007,
+   "rows": 6116,
+   "n_nonfinite_values": 0,
+   "n_orphan_rows": 0
+  }
+ },
+ "datasets": {
+  "unisumeval": {
+   "dimension": "completeness",
+   "n_pairs": 1828,
+   "n_human_missing": 0,
+   "n_docs": 225,
+   "n_systems": 9,
+   "columns": {
+    "marsR_marsc": {
+     "n_scored": 1440,
+     "n_missing": 388,
+     "mean": 0.2878959671076283,
+     "n_docs_ge3": 179,
+     "n_docs_metric_constant": 0,
+     "n_docs_human_constant": 0,
+     "docs_used": 179,
+     "summary_tau": {
+      "observed": 0.36070921920054405,
+      "ci95_descriptive": [
+       0.3134995282525457,
+       0.40688191790735206
+      ]
+     }
+    },
+    "marsR_marsc_shufcand": {
+     "n_scored": 1440,
+     "n_missing": 388,
+     "mean": 0.0078033185538377865,
+     "n_docs_ge3": 179,
+     "n_docs_metric_constant": 0,
+     "n_docs_human_constant": 0,
+     "docs_used": 179,
+     "summary_tau": {
+      "observed": 0.22159041865101056,
+      "ci95_descriptive": [
+       0.1814415461144997,
+       0.26251413941751756
+      ]
+     }
+    },
+    "marsR_marsc_nocand": {
+     "n_scored": 1440,
+     "n_missing": 388,
+     "mean": 0.0035283653764449185,
+     "n_docs_ge3": 179,
+     "n_docs_metric_constant": 179,
+     "n_docs_human_constant": 0,
+     "docs_used": 0,
+     "summary_tau": {
+      "observed": null,
+      "ci95_descriptive": null
+     }
+    },
+    "D1_marsc": {
+     "n_scored": 1440,
+     "n_missing": 388,
+     "mean": 0.28009264855379057,
+     "n_docs_ge3": 179,
+     "n_docs_metric_constant": 0,
+     "n_docs_human_constant": 0,
+     "docs_used": 179,
+     "summary_tau": {
+      "observed": 0.3474908756550175,
+      "ci95_descriptive": [
+       0.29843131120595795,
+       0.3935815704808936
+      ]
+     }
+    },
+    "D2_marsc": {
+     "n_scored": 1440,
+     "n_missing": 388,
+     "mean": 0.2843676017311834,
+     "n_docs_ge3": 179,
+     "n_docs_metric_constant": 0,
+     "n_docs_human_constant": 0,
+     "docs_used": 179,
+     "summary_tau": {
+      "observed": 0.36070921920054405,
+      "ci95_descriptive": [
+       0.3134995282525457,
+       0.40688191790735206
+      ]
+     }
+    },
+    "marsR_factcg": {
+     "n_scored": 1440,
+     "n_missing": 388,
+     "mean": 0.3113749829150308,
+     "n_docs_ge3": 179,
+     "n_docs_metric_constant": 0,
+     "n_docs_human_constant": 0,
+     "docs_used": 179,
+     "summary_tau": {
+      "observed": 0.4170180119509755,
+      "ci95_descriptive": [
+       0.3766247266772719,
+       0.45570618700034293
+      ]
+     }
+    },
+    "marsR_factcg_shufcand": {
+     "n_scored": 1440,
+     "n_missing": 388,
+     "mean": 0.02981060263262296,
+     "n_docs_ge3": 179,
+     "n_docs_metric_constant": 0,
+     "n_docs_human_constant": 0,
+     "docs_used": 179,
+     "summary_tau": {
+      "observed": -0.029257087703635283,
+      "ci95_descriptive": [
+       -0.07468128212998308,
+       0.015474434565820977
+      ]
+     }
+    },
+    "marsR_factcg_nocand": {
+     "n_scored": 1440,
+     "n_missing": 388,
+     "mean": 0.9971838548147577,
+     "n_docs_ge3": 179,
+     "n_docs_metric_constant": 179,
+     "n_docs_human_constant": 0,
+     "docs_used": 0,
+     "summary_tau": {
+      "observed": null,
+      "ci95_descriptive": null
+     }
+    },
+    "D1_factcg": {
+     "n_scored": 1440,
+     "n_missing": 388,
+     "mean": 0.28156438028240777,
+     "n_docs_ge3": 179,
+     "n_docs_metric_constant": 0,
+     "n_docs_human_constant": 0,
+     "docs_used": 179,
+     "summary_tau": {
+      "observed": 0.41181359499279385,
+      "ci95_descriptive": [
+       0.3697946351402927,
+       0.4493864353017148
+      ]
+     }
+    },
+    "D2_factcg": {
+     "n_scored": 1440,
+     "n_missing": 388,
+     "mean": -0.6858088718997268,
+     "n_docs_ge3": 179,
+     "n_docs_metric_constant": 0,
+     "n_docs_human_constant": 0,
+     "docs_used": 179,
+     "summary_tau": {
+      "observed": 0.4170180119509755,
+      "ci95_descriptive": [
+       0.3766247266772719,
+       0.45570618700034293
+      ]
+     }
+    }
+   },
+   "contrasts": {
+    "D1_marsc-raw_marsc": {
+     "observed": -0.013218343545526534,
+     "ci95_descriptive": [
+      -0.023299436909380897,
+      -0.004178553786404091
+     ]
+    },
+    "D2_marsc-raw_marsc": {
+     "observed": 0.0,
+     "ci95_descriptive": [
+      0.0,
+      0.0
+     ],
+     "structural_duplicate_of_raw": true,
+     "note": "no-candidate leg is document-constant here; D2 preserves raw's within-document ranking and this contrast is a value-scale shift, not a ranking change"
+    },
+    "raw_marsc-shufcand_marsc": {
+     "observed": 0.1391188005495335,
+     "ci95_descriptive": [
+      0.08157482656327943,
+      0.19628269797030576
+     ]
+    },
+    "D1_marsc-shufcand_marsc": {
+     "observed": 0.12590045700400695,
+     "ci95_descriptive": [
+      0.06467447294418034,
+      0.18517517999966573
+     ]
+    },
+    "D1_factcg-raw_factcg": {
+     "observed": -0.005204416958181635,
+     "ci95_descriptive": [
+      -0.016795105049330687,
+      0.004942834884286011
+     ]
+    },
+    "D2_factcg-raw_factcg": {
+     "observed": 0.0,
+     "ci95_descriptive": [
+      0.0,
+      0.0
+     ],
+     "structural_duplicate_of_raw": true,
+     "note": "no-candidate leg is document-constant here; D2 preserves raw's within-document ranking and this contrast is a value-scale shift, not a ranking change"
+    },
+    "raw_factcg-shufcand_factcg": {
+     "observed": 0.44627509965461076,
+     "ci95_descriptive": [
+      0.38496400179526125,
+      0.5080888884881002
+     ]
+    },
+    "D1_factcg-shufcand_factcg": {
+     "observed": 0.44107068269642913,
+     "ci95_descriptive": [
+      0.376953771713351,
+      0.504731017817304
+     ]
+    },
+    "D1_marsc-D1_factcg": {
+     "observed": -0.06432271933777634,
+     "ci95_descriptive": [
+      -0.09834525937700887,
+      -0.03196881980605068
+     ]
+    },
+    "raw_marsc-raw_factcg": {
+     "observed": -0.056308792750431436,
+     "ci95_descriptive": [
+      -0.09057977365847975,
+      -0.02472928770213764
+     ]
+    }
+   },
+   "nocand_varies_docs": {
+    "marsc": 0,
+    "factcg": 0
+   },
+   "nocand_document_constant": {
+    "marsc": true,
+    "factcg": true
+   }
+  },
+  "summeval": {
+   "dimension": "relevance",
+   "n_pairs": 1600,
+   "n_human_missing": 0,
+   "n_docs": 100,
+   "n_systems": 16,
+   "columns": {
+    "marsR_marsc": {
+     "n_scored": 1600,
+     "n_missing": 0,
+     "mean": 0.6780227191669747,
+     "n_docs_ge3": 100,
+     "n_docs_metric_constant": 0,
+     "n_docs_human_constant": 0,
+     "docs_used": 100,
+     "summary_tau": {
+      "observed": 0.29043873867366615,
+      "ci95_descriptive": [
+       0.25007619071045323,
+       0.3276522180522687
+      ]
+     }
+    },
+    "marsR_marsc_shufcand": {
+     "n_scored": 1600,
+     "n_missing": 0,
+     "mean": 0.02084714007042221,
+     "n_docs_ge3": 100,
+     "n_docs_metric_constant": 0,
+     "n_docs_human_constant": 0,
+     "docs_used": 100,
+     "summary_tau": {
+      "observed": 0.05959248127715875,
+      "ci95_descriptive": [
+       0.02029477257118656,
+       0.09573688940830387
+      ]
+     }
+    },
+    "marsR_marsc_nocand": {
+     "n_scored": 1600,
+     "n_missing": 0,
+     "mean": 0.004524896663414341,
+     "n_docs_ge3": 100,
+     "n_docs_metric_constant": 100,
+     "n_docs_human_constant": 0,
+     "docs_used": 0,
+     "summary_tau": {
+      "observed": null,
+      "ci95_descriptive": null
+     }
+    },
+    "D1_marsc": {
+     "n_scored": 1600,
+     "n_missing": 0,
+     "mean": 0.6571755790965524,
+     "n_docs_ge3": 100,
+     "n_docs_metric_constant": 0,
+     "n_docs_human_constant": 0,
+     "docs_used": 100,
+     "summary_tau": {
+      "observed": 0.26961086712239896,
+      "ci95_descriptive": [
+       0.22864323912510906,
+       0.3077549240258417
+      ]
+     }
+    },
+    "D2_marsc": {
+     "n_scored": 1600,
+     "n_missing": 0,
+     "mean": 0.6734978225035604,
+     "n_docs_ge3": 100,
+     "n_docs_metric_constant": 0,
+     "n_docs_human_constant": 0,
+     "docs_used": 100,
+     "summary_tau": {
+      "observed": 0.29043873867366615,
+      "ci95_descriptive": [
+       0.25007619071045323,
+       0.3276522180522687
+      ]
+     }
+    },
+    "marsR_factcg": {
+     "n_scored": 1600,
+     "n_missing": 0,
+     "mean": 0.6300123504712809,
+     "n_docs_ge3": 100,
+     "n_docs_metric_constant": 0,
+     "n_docs_human_constant": 0,
+     "docs_used": 100,
+     "summary_tau": {
+      "observed": 0.2841428458091666,
+      "ci95_descriptive": [
+       0.24127941296333,
+       0.3251896854740614
+      ]
+     }
+    },
+    "marsR_factcg_shufcand": {
+     "n_scored": 1600,
+     "n_missing": 0,
+     "mean": 0.09673800246190012,
+     "n_docs_ge3": 100,
+     "n_docs_metric_constant": 0,
+     "n_docs_human_constant": 0,
+     "docs_used": 100,
+     "summary_tau": {
+      "observed": 0.024723472286602516,
+      "ci95_descriptive": [
+       -0.016841212937651683,
+       0.0650674906571389
+      ]
+     }
+    },
+    "marsR_factcg_nocand": {
+     "n_scored": 1600,
+     "n_missing": 0,
+     "mean": 0.9989036050901074,
+     "n_docs_ge3": 100,
+     "n_docs_metric_constant": 100,
+     "n_docs_human_constant": 0,
+     "docs_used": 0,
+     "summary_tau": {
+      "observed": null,
+      "ci95_descriptive": null
+     }
+    },
+    "D1_factcg": {
+     "n_scored": 1600,
+     "n_missing": 0,
+     "mean": 0.5332743480093808,
+     "n_docs_ge3": 100,
+     "n_docs_metric_constant": 0,
+     "n_docs_human_constant": 0,
+     "docs_used": 100,
+     "summary_tau": {
+      "observed": 0.25795346392062396,
+      "ci95_descriptive": [
+       0.21510318311715618,
+       0.299885486539781
+      ]
+     }
+    },
+    "D2_factcg": {
+     "n_scored": 1600,
+     "n_missing": 0,
+     "mean": -0.36889125461882655,
+     "n_docs_ge3": 100,
+     "n_docs_metric_constant": 0,
+     "n_docs_human_constant": 0,
+     "docs_used": 100,
+     "summary_tau": {
+      "observed": 0.2841428458091666,
+      "ci95_descriptive": [
+       0.24127941296333,
+       0.3251896854740614
+      ]
+     }
+    }
+   },
+   "contrasts": {
+    "D1_marsc-raw_marsc": {
+     "observed": -0.020827871551267196,
+     "ci95_descriptive": [
+      -0.034425031203128155,
+      -0.008611053364774404
+     ]
+    },
+    "D2_marsc-raw_marsc": {
+     "observed": 0.0,
+     "ci95_descriptive": [
+      0.0,
+      0.0
+     ],
+     "structural_duplicate_of_raw": true,
+     "note": "no-candidate leg is document-constant here; D2 preserves raw's within-document ranking and this contrast is a value-scale shift, not a ranking change"
+    },
+    "raw_marsc-shufcand_marsc": {
+     "observed": 0.2308462573965074,
+     "ci95_descriptive": [
+      0.17635801756779576,
+      0.28481219270853986
+     ]
+    },
+    "D1_marsc-shufcand_marsc": {
+     "observed": 0.2100183858452402,
+     "ci95_descriptive": [
+      0.15242099878795073,
+      0.26630664149948985
+     ]
+    },
+    "D1_factcg-raw_factcg": {
+     "observed": -0.02618938188854264,
+     "ci95_descriptive": [
+      -0.048121221688997316,
+      -0.006506820027677503
+     ]
+    },
+    "D2_factcg-raw_factcg": {
+     "observed": 0.0,
+     "ci95_descriptive": [
+      0.0,
+      0.0
+     ],
+     "structural_duplicate_of_raw": true,
+     "note": "no-candidate leg is document-constant here; D2 preserves raw's within-document ranking and this contrast is a value-scale shift, not a ranking change"
+    },
+    "raw_factcg-shufcand_factcg": {
+     "observed": 0.25941937352256406,
+     "ci95_descriptive": [
+      0.19463303124090073,
+      0.32102918238953887
+     ]
+    },
+    "D1_factcg-shufcand_factcg": {
+     "observed": 0.23322999163402144,
+     "ci95_descriptive": [
+      0.16138528162632435,
+      0.30099180451084706
+     ]
+    },
+    "D1_marsc-D1_factcg": {
+     "observed": 0.011657403201774996,
+     "ci95_descriptive": [
+      -0.01966110898806874,
+      0.042869000206607055
+     ]
+    },
+    "raw_marsc-raw_factcg": {
+     "observed": 0.006295892864499553,
+     "ci95_descriptive": [
+      -0.022700360595601946,
+      0.03385216429603385
+     ]
+    }
+   },
+   "nocand_varies_docs": {
+    "marsc": 0,
+    "factcg": 0
+   },
+   "nocand_document_constant": {
+    "marsc": true,
+    "factcg": true
+   }
+  },
+  "rose": {
+   "dimension": "acu_recall",
+   "n_pairs": 2688,
+   "n_human_missing": 0,
+   "n_docs": 286,
+   "n_systems": 23,
+   "columns": {
+    "marsR_marsc": {
+     "n_scored": 2688,
+     "n_missing": 0,
+     "mean": 0.3813040623603536,
+     "n_docs_ge3": 286,
+     "n_docs_metric_constant": 0,
+     "n_docs_human_constant": 45,
+     "docs_used": 241,
+     "summary_tau": {
+      "observed": 0.5782756856649723,
+      "ci95_descriptive": [
+       0.5448228217765755,
+       0.6106405157506937
+      ]
+     }
+    },
+    "marsR_marsc_shufcand": {
+     "n_scored": 2688,
+     "n_missing": 0,
+     "mean": 0.0033695382786787928,
+     "n_docs_ge3": 286,
+     "n_docs_metric_constant": 0,
+     "n_docs_human_constant": 45,
+     "docs_used": 241,
+     "summary_tau": {
+      "observed": 0.031079187361818573,
+      "ci95_descriptive": [
+       -0.008053198278039646,
+       0.06993293517356829
+      ]
+     }
+    },
+    "marsR_marsc_nocand": {
+     "n_scored": 2688,
+     "n_missing": 0,
+     "mean": 0.0032004063194256867,
+     "n_docs_ge3": 286,
+     "n_docs_metric_constant": 286,
+     "n_docs_human_constant": 45,
+     "docs_used": 0,
+     "summary_tau": {
+      "observed": null,
+      "ci95_descriptive": null
+     }
+    },
+    "D1_marsc": {
+     "n_scored": 2688,
+     "n_missing": 0,
+     "mean": 0.37793452408167477,
+     "n_docs_ge3": 286,
+     "n_docs_metric_constant": 0,
+     "n_docs_human_constant": 45,
+     "docs_used": 241,
+     "summary_tau": {
+      "observed": 0.5675035706939201,
+      "ci95_descriptive": [
+       0.5331748901270936,
+       0.6004183052469739
+      ]
+     }
+    },
+    "D2_marsc": {
+     "n_scored": 2688,
+     "n_missing": 0,
+     "mean": 0.37810365604092794,
+     "n_docs_ge3": 286,
+     "n_docs_metric_constant": 0,
+     "n_docs_human_constant": 45,
+     "docs_used": 241,
+     "summary_tau": {
+      "observed": 0.5782556776394319,
+      "ci95_descriptive": [
+       0.5448021521210128,
+       0.6106203383196306
+      ]
+     }
+    },
+    "marsR_factcg": {
+     "n_scored": 2688,
+     "n_missing": 0,
+     "mean": 0.3442580313066128,
+     "n_docs_ge3": 286,
+     "n_docs_metric_constant": 0,
+     "n_docs_human_constant": 45,
+     "docs_used": 241,
+     "summary_tau": {
+      "observed": 0.5135741308573283,
+      "ci95_descriptive": [
+       0.47833645007098224,
+       0.546411104544993
+      ]
+     }
+    },
+    "marsR_factcg_shufcand": {
+     "n_scored": 2688,
+     "n_missing": 0,
+     "mean": 0.020654001696347093,
+     "n_docs_ge3": 286,
+     "n_docs_metric_constant": 0,
+     "n_docs_human_constant": 45,
+     "docs_used": 241,
+     "summary_tau": {
+      "observed": -0.008019854430643342,
+      "ci95_descriptive": [
+       -0.04114375089556914,
+       0.02490037772940404
+      ]
+     }
+    },
+    "marsR_factcg_nocand": {
+     "n_scored": 2688,
+     "n_missing": 0,
+     "mean": 0.997133830307528,
+     "n_docs_ge3": 286,
+     "n_docs_metric_constant": 286,
+     "n_docs_human_constant": 45,
+     "docs_used": 0,
+     "summary_tau": {
+      "observed": null,
+      "ci95_descriptive": null
+     }
+    },
+    "D1_factcg": {
+     "n_scored": 2688,
+     "n_missing": 0,
+     "mean": 0.3236040296102657,
+     "n_docs_ge3": 286,
+     "n_docs_metric_constant": 0,
+     "n_docs_human_constant": 45,
+     "docs_used": 241,
+     "summary_tau": {
+      "observed": 0.5008219598760354,
+      "ci95_descriptive": [
+       0.46745116221999183,
+       0.5326713443323791
+      ]
+     }
+    },
+    "D2_factcg": {
+     "n_scored": 2688,
+     "n_missing": 0,
+     "mean": -0.6528757990009153,
+     "n_docs_ge3": 286,
+     "n_docs_metric_constant": 0,
+     "n_docs_human_constant": 45,
+     "docs_used": 241,
+     "summary_tau": {
+      "observed": 0.5135081901938272,
+      "ci95_descriptive": [
+       0.4782728441934166,
+       0.5463445687222572
+      ]
+     }
+    }
+   },
+   "contrasts": {
+    "D1_marsc-raw_marsc": {
+     "observed": -0.010772114971052238,
+     "ci95_descriptive": [
+      -0.016380829836405354,
+      -0.005970691980864023
+     ]
+    },
+    "D2_marsc-raw_marsc": {
+     "observed": -2.0008025540474428e-05,
+     "ci95_descriptive": [
+      -6.155660623763382e-05,
+      0.0
+     ],
+     "structural_duplicate_of_raw": true,
+     "note": "no-candidate leg is document-constant here; D2 preserves raw's within-document ranking and this contrast is a value-scale shift, not a ranking change"
+    },
+    "raw_marsc-shufcand_marsc": {
+     "observed": 0.5471964983031538,
+     "ci95_descriptive": [
+      0.4948340239106479,
+      0.5956612242921254
+     ]
+    },
+    "D1_marsc-shufcand_marsc": {
+     "observed": 0.5364243833321015,
+     "ci95_descriptive": [
+      0.48361056680058956,
+      0.585925629837877
+     ]
+    },
+    "D1_factcg-raw_factcg": {
+     "observed": -0.012752170981292887,
+     "ci95_descriptive": [
+      -0.020814877573335083,
+      -0.00468597643440341
+     ]
+    },
+    "D2_factcg-raw_factcg": {
+     "observed": -6.594066350107397e-05,
+     "ci95_descriptive": [
+      -0.00020289443916953197,
+      0.0
+     ],
+     "structural_duplicate_of_raw": true,
+     "note": "no-candidate leg is document-constant here; D2 preserves raw's within-document ranking and this contrast is a value-scale shift, not a ranking change"
+    },
+    "raw_factcg-shufcand_factcg": {
+     "observed": 0.5215939852879716,
+     "ci95_descriptive": [
+      0.47139825915515865,
+      0.5713518889007511
+     ]
+    },
+    "D1_factcg-shufcand_factcg": {
+     "observed": 0.5088418143066787,
+     "ci95_descriptive": [
+      0.45880287086856164,
+      0.557465646883681
+     ]
+    },
+    "D1_marsc-D1_factcg": {
+     "observed": 0.0666816108178847,
+     "ci95_descriptive": [
+      0.039779344102363896,
+      0.09441353108203152
+     ]
+    },
+    "raw_marsc-raw_factcg": {
+     "observed": 0.06470155480764406,
+     "ci95_descriptive": [
+      0.03794455169986455,
+      0.09259912551418875
+     ]
+    }
+   },
+   "nocand_varies_docs": {
+    "marsc": 0,
+    "factcg": 0
+   },
+   "nocand_document_constant": {
+    "marsc": true,
+    "factcg": true
+   }
+  }
+ }
+}

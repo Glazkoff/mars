@@ -1,0 +1,375 @@
+{
+ "registered": "research/marsc_strengthen_20260918/PREREG.md A8",
+ "purpose": "complete the confidence-interval site audit: every interval site, its resampling unit, and whether that unit is the source document",
+ "roots_scanned": [
+  "research/marsc_20260916/code",
+  "research/mars2_gates_20260916/code",
+  "research/mars3_20260916/code",
+  "scripts/plan2026",
+  "scripts/conditional_value.py"
+ ],
+ "scan_pattern": "np\\.percentile|def wilson|wilson\\(|paired_group_bootstrap|proportion_confint|\\\"ci\\\"|'ci'|ci95|ci_doc_bootstrap|tost_interval",
+ "anchor_slack_lines": 15,
+ "n_scan_hits": 50,
+ "n_classified_sites": 34,
+ "n_unclassified_scan_hits": 1,
+ "counts_by_clustering": {
+  "document-clustered": 24,
+  "NOT document-clustered": 7,
+  "not-a-confidence-interval": 3
+ },
+ "sites": [
+  {
+   "file": "research/marsc_20260916/code/mc_e2_eval.py",
+   "anchor": "rk[\"paired_recall\"][n] = {\"mean\"",
+   "line": 272,
+   "n_anchor_hits": 1,
+   "resampling_unit": "document",
+   "clustering": "document-clustered",
+   "correct_for_a_document_clustered_design": true,
+   "evidence": "rng.choice(docs) then sub = [p for dd in pick for p in by_doc[dd]]; docs = common.doc_key(source)"
+  },
+  {
+   "file": "research/marsc_20260916/code/mc_e2_eval.py",
+   "anchor": "rk.setdefault(\"paired_omission_precision\"",
+   "line": 273,
+   "n_anchor_hits": 1,
+   "resampling_unit": "document",
+   "clustering": "document-clustered",
+   "correct_for_a_document_clustered_design": true,
+   "evidence": "same document draw as paired_recall"
+  },
+  {
+   "file": "research/marsc_20260916/code/mc_analyze.py",
+   "anchor": "rep[\"paired\"][other] = {\"lexical_stress\"",
+   "line": 137,
+   "n_anchor_hits": 1,
+   "resampling_unit": "document",
+   "clustering": "document-clustered",
+   "correct_for_a_document_clustered_design": true,
+   "evidence": "rng.choice(docs); by_doc keyed by doc_of[p]"
+  },
+  {
+   "file": "research/marsc_20260916/code/mc_matched_auroc.py",
+   "anchor": "rep[\"paired_vs_primary\"][t] = {\"mean\"",
+   "line": 94,
+   "n_anchor_hits": 1,
+   "resampling_unit": "document",
+   "clustering": "document-clustered",
+   "correct_for_a_document_clustered_design": true,
+   "evidence": "boot_docs = rng.choice(docs, ...); sub expands by_doc"
+  },
+  {
+   "file": "research/marsc_20260916/code/mc_judge_precision.py",
+   "anchor": "rep[\"paired\"][s_] = {\"other_minus_primary\"",
+   "line": 194,
+   "n_anchor_hits": 1,
+   "resampling_unit": "document",
+   "clustering": "document-clustered",
+   "correct_for_a_document_clustered_design": true,
+   "evidence": "rng.choice(docs); pair_doc = doc_of[tid]"
+  },
+  {
+   "file": "research/marsc_20260916/code/mc_summary_conditioning.py",
+   "anchor": "\"ci_doc_bootstrap\"",
+   "line": 114,
+   "n_anchor_hits": 2,
+   "resampling_unit": "document",
+   "clustering": "document-clustered",
+   "correct_for_a_document_clustered_design": true,
+   "evidence": "rng.choice(keys) where keys = sorted(doc_means)"
+  },
+  {
+   "file": "research/marsc_20260916/code/mc_equivalence.py",
+   "anchor": "lo2, hi2 = np.percentile(draws,",
+   "line": 63,
+   "n_anchor_hits": 1,
+   "resampling_unit": "document",
+   "clustering": "document-clustered",
+   "correct_for_a_document_clustered_design": true,
+   "evidence": "diff is one value per document; rng.choice over the document index (site NOT named in the paper's audit table)"
+  },
+  {
+   "file": "research/mars2_gates_20260916/code/analyze.py",
+   "anchor": "rep[\"paired_vs_primary\"][other] = {k:",
+   "line": 270,
+   "n_anchor_hits": 1,
+   "resampling_unit": "document",
+   "clustering": "document-clustered",
+   "correct_for_a_document_clustered_design": true,
+   "evidence": "rng.choice(docs); by_doc expansion"
+  },
+  {
+   "file": "research/mars3_20260916/code/stage0_diagnostics.py",
+   "anchor": "\"delta_r2_ci\"",
+   "line": 224,
+   "n_anchor_hits": 1,
+   "resampling_unit": "document",
+   "clustering": "document-clustered",
+   "correct_for_a_document_clustered_design": true,
+   "evidence": "rng.choice(docs) with idx_by[d]; g is the document group"
+  },
+  {
+   "file": "scripts/plan2026/b3_endpoint.py",
+   "anchor": "rep[\"paired\"][f\"{m} - {other}\"]",
+   "line": 254,
+   "n_anchor_hits": 1,
+   "resampling_unit": "document",
+   "clustering": "document-clustered",
+   "correct_for_a_document_clustered_design": true,
+   "evidence": "rng.choice(docs); by_doc keyed by doc_of[pair_id]"
+  },
+  {
+   "file": "scripts/plan2026/b0_recipe_conditional_value.py",
+   "anchor": "def rmse_group_bootstrap",
+   "line": 143,
+   "n_anchor_hits": 1,
+   "resampling_unit": "document (group)",
+   "clustering": "document-clustered",
+   "correct_for_a_document_clustered_design": true,
+   "evidence": "resamples np.unique(g); g = row['group'], documented as the source document in b4_certify.py:10"
+  },
+  {
+   "file": "scripts/plan2026/b4_certify.py",
+   "anchor": "def split_half",
+   "line": 66,
+   "n_anchor_hits": 1,
+   "resampling_unit": "document (group)",
+   "clustering": "document-clustered",
+   "correct_for_a_document_clustered_design": true,
+   "evidence": "splits np.unique(g) = source documents; a split-half spread, not a bootstrap CI on a contrast"
+  },
+  {
+   "file": "scripts/plan2026/b4_certify.py",
+   "anchor": "ci, ci_au, p = cv.paired_group_bootstrap",
+   "line": 155,
+   "n_anchor_hits": 1,
+   "resampling_unit": "document (group)",
+   "clustering": "document-clustered",
+   "correct_for_a_document_clustered_design": true,
+   "evidence": "delegates to cv.paired_group_bootstrap, which resamples np.unique(g)"
+  },
+  {
+   "file": "scripts/plan2026/a4_reliability_grouping.py",
+   "anchor": "res[tag] = {\"delta_logloss\"",
+   "line": 146,
+   "n_anchor_hits": 1,
+   "resampling_unit": "document x system",
+   "clustering": "NOT document-clustered",
+   "correct_for_a_document_clustered_design": false,
+   "evidence": "cv.paired_group_bootstrap on g2 = doc|system -- FINER than the document, so still anti-conservative if the same document appears under several systems"
+  },
+  {
+   "file": "scripts/plan2026/a4_reliability_grouping.py",
+   "anchor": "res[\"leave_one_system_out\"] = {\"delta_logloss\"",
+   "line": 154,
+   "n_anchor_hits": 1,
+   "resampling_unit": "document (group)",
+   "clustering": "document-clustered",
+   "correct_for_a_document_clustered_design": true,
+   "evidence": "cv.paired_group_bootstrap on g = the document group"
+  },
+  {
+   "file": "scripts/plan2026/a1_partial_input_reference.py",
+   "anchor": "\"frac_draws_positive\"",
+   "line": 568,
+   "n_anchor_hits": 1,
+   "resampling_unit": "document (group)",
+   "clustering": "document-clustered",
+   "correct_for_a_document_clustered_design": true,
+   "evidence": "percentiles over draws merged from the refit mode, whose every draw resamples groups ('Full-procedure group bootstrap ... resampling groups')"
+  },
+  {
+   "file": "scripts/plan2026/b6_rerank.py",
+   "anchor": "rep[\"paired\"] = {k: {\"mean\"",
+   "line": 65,
+   "n_anchor_hits": 1,
+   "resampling_unit": "document",
+   "clustering": "document-clustered",
+   "correct_for_a_document_clustered_design": true,
+   "evidence": "resamples srcs = source[:200] keys (site NOT named in the paper's audit table)"
+  },
+  {
+   "file": "scripts/conditional_value.py",
+   "anchor": "def paired_group_bootstrap",
+   "line": 128,
+   "n_anchor_hits": 1,
+   "resampling_unit": "document (group)",
+   "clustering": "document-clustered",
+   "correct_for_a_document_clustered_design": true,
+   "evidence": "the shared helper every group-bootstrap site above delegates to; resamples np.unique(g)"
+  },
+  {
+   "file": "scripts/conditional_value.py",
+   "anchor": "ci_ll, ci_au, p_ll = paired_group_bootstrap",
+   "line": 236,
+   "n_anchor_hits": 1,
+   "resampling_unit": "document (group)",
+   "clustering": "document-clustered",
+   "correct_for_a_document_clustered_design": true,
+   "evidence": "the recipe-level certify call; delegates to paired_group_bootstrap on gg"
+  },
+  {
+   "file": "research/mars2_gates_20260916/code/analyze.py",
+   "anchor": "ci, _, p = cv.paired_group_bootstrap",
+   "line": 304,
+   "n_anchor_hits": 1,
+   "resampling_unit": "document (group)",
+   "clustering": "document-clustered",
+   "correct_for_a_document_clustered_design": true,
+   "evidence": "the certify block's conditional-value CI; cv.paired_group_bootstrap on g"
+  },
+  {
+   "file": "research/mars2_gates_20260916/code/analyze.py",
+   "anchor": "ci2, _, p2 = cv.paired_group_bootstrap",
+   "line": 311,
+   "n_anchor_hits": 1,
+   "resampling_unit": "document (group)",
+   "clustering": "document-clustered",
+   "correct_for_a_document_clustered_design": true,
+   "evidence": "the over-reference CI in the same certify block; cv.paired_group_bootstrap on g"
+  },
+  {
+   "file": "scripts/plan2026/a1_partial_input_reference.py",
+   "anchor": "ci_b, _, p_b = cv.paired_group_bootstrap",
+   "line": 406,
+   "n_anchor_hits": 1,
+   "resampling_unit": "document (group)",
+   "clustering": "document-clustered",
+   "correct_for_a_document_clustered_design": true,
+   "evidence": "per-cell conditional-value CI; cv.paired_group_bootstrap on gg"
+  },
+  {
+   "file": "scripts/plan2026/a1_partial_input_reference.py",
+   "anchor": "ci_p, ci_au, p_p = cv.paired_group_bootstrap",
+   "line": 430,
+   "n_anchor_hits": 1,
+   "resampling_unit": "document (group)",
+   "clustering": "document-clustered",
+   "correct_for_a_document_clustered_design": true,
+   "evidence": "per-cell primary-rule CI; cv.paired_group_bootstrap on gg"
+  },
+  {
+   "file": "scripts/plan2026/b0_recipe_conditional_value.py",
+   "anchor": "ci, ci_au, p = cv.paired_group_bootstrap",
+   "line": 241,
+   "n_anchor_hits": 1,
+   "resampling_unit": "document (group)",
+   "clustering": "document-clustered",
+   "correct_for_a_document_clustered_design": true,
+   "evidence": "the binary-endpoint CI beside the RMSE group bootstrap; cv.paired_group_bootstrap on gg"
+  },
+  {
+   "file": "scripts/plan2026/b4_certify.py",
+   "anchor": "ci2, _, p2 = cv.paired_group_bootstrap",
+   "line": 162,
+   "n_anchor_hits": 1,
+   "resampling_unit": "document (group)",
+   "clustering": "document-clustered",
+   "correct_for_a_document_clustered_design": true,
+   "evidence": "the counters_plus_learned CI; cv.paired_group_bootstrap on g"
+  },
+  {
+   "file": "research/marsc_20260916/code/mc_crossed_precision.py",
+   "anchor": "\"ci\": [float(np.percentile(d, 2.5)), float(np.percentile(d, 97.5))],",
+   "line": 87,
+   "n_anchor_hits": 1,
+   "resampling_unit": "pair",
+   "clustering": "NOT document-clustered",
+   "correct_for_a_document_clustered_design": false,
+   "evidence": "DEFECT: variable named by_doc but keyed by t['pair_id']; the file never imports common and never calls doc_key. REPAIRED by research/marsc_strengthen_20260918/code/a2a3_clustered.py mode a2"
+  },
+  {
+   "file": "research/marsc_20260916/code/mc_crossed_precision.py",
+   "anchor": "return {\"point\": float(obs), \"ci\":",
+   "line": 97,
+   "n_anchor_hits": 1,
+   "resampling_unit": "pair",
+   "clustering": "NOT document-clustered",
+   "correct_for_a_document_clustered_design": false,
+   "evidence": "the crossed 2x2 effects reuse the same pair-level boot_idx. REPAIRED by a2a3_clustered.py mode a2"
+  },
+  {
+   "file": "research/marsc_20260916/code/mc_human_rank.py",
+   "anchor": "def boot_ci",
+   "line": 84,
+   "n_anchor_hits": 1,
+   "resampling_unit": "annotated item (within status stratum)",
+   "clustering": "NOT document-clustered",
+   "correct_for_a_document_clustered_design": false,
+   "evidence": "DEFECT: rng.choice over the items of each status; 8-12 summaries of one document enter independently. REPAIRED by a2a3_clustered.py mode a3"
+  },
+  {
+   "file": "research/marsc_20260916/code/mc_human_rank.py",
+   "anchor": "def wilson",
+   "line": 64,
+   "n_anchor_hits": 1,
+   "resampling_unit": "annotated item",
+   "clustering": "NOT document-clustered",
+   "correct_for_a_document_clustered_design": false,
+   "evidence": "DEFECT: binomial interval on the item count, which is not the independent unit. a2a3_clustered.py mode a3 reports a Wilson interval on the CLUSTER count beside it"
+  },
+  {
+   "file": "research/marsc_20260916/code/mc_human_rank.py",
+   "anchor": "\"wilson\": wilson(sum(v), len(v))",
+   "line": 166,
+   "n_anchor_hits": 1,
+   "resampling_unit": "annotated item",
+   "clustering": "NOT document-clustered",
+   "correct_for_a_document_clustered_design": false,
+   "evidence": "DEFECT: the per-status call site of the item-count Wilson interval. REPAIRED by a2a3_clustered.py mode a3, which emits wilson_on_items and wilson_on_clusters side by side"
+  },
+  {
+   "file": "scripts/plan2026/a5_metric_selection.py",
+   "anchor": "\"ci95\": [float(np.percentile(boots, 2.5))",
+   "line": 48,
+   "n_anchor_hits": 1,
+   "resampling_unit": "evaluation cell",
+   "clustering": "NOT document-clustered",
+   "correct_for_a_document_clustered_design": false,
+   "evidence": "DEFECT (third unclustered site, NOT named in the paper's audit table): rng.choice over the ~10 leave-one-cell-out evaluation cells. The cell, not the document, is the exchangeable unit for a selection experiment, but the interval is a 10-point bootstrap and must be labelled as such"
+  },
+  {
+   "file": "scripts/plan2026/b7_failure_analysis.py",
+   "anchor": "sw = np.percentile(",
+   "line": 64,
+   "n_anchor_hits": 1,
+   "resampling_unit": "n/a",
+   "clustering": "not-a-confidence-interval",
+   "correct_for_a_document_clustered_design": null,
+   "evidence": "tertile binning of source/candidate length, not a confidence interval"
+  },
+  {
+   "file": "scripts/plan2026/b4_certify.py",
+   "anchor": "\"p95\": float(np.percentile(vals, 95))",
+   "line": 90,
+   "n_anchor_hits": 1,
+   "resampling_unit": "n/a",
+   "clustering": "not-a-confidence-interval",
+   "correct_for_a_document_clustered_design": null,
+   "evidence": "descriptive cost percentile, not a confidence interval"
+  },
+  {
+   "file": "scripts/plan2026/b4_certify.py",
+   "anchor": "bins = np.digitize(cw, np.percentile(",
+   "line": 168,
+   "n_anchor_hits": 1,
+   "resampling_unit": "n/a",
+   "clustering": "not-a-confidence-interval",
+   "correct_for_a_document_clustered_design": null,
+   "evidence": "tertile binning, not a confidence interval"
+  }
+ ],
+ "unclassified_scan_hits": [
+  {
+   "file": "research/marsc_20260916/code/mc_human_rank.py",
+   "line": 200,
+   "text": "ci = d[\"ci\"]; parts.append(f\"{n} {d['point']:.3f} [{ci[0]:.3f},{ci[1]:.3f}]\" if ci else f\"{n} {d['point']:.3f}\")"
+  }
+ ],
+ "sites_not_named_in_the_papers_audit_table": [
+  "research/marsc_20260916/code/mc_equivalence.py:63",
+  "scripts/plan2026/b6_rerank.py:65",
+  "scripts/plan2026/a5_metric_selection.py:48"
+ ]
+}

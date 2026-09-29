@@ -1,0 +1,53 @@
+{
+ "tag": "t07-frac10",
+ "system": "mc:A|lam1|crossenc",
+ "config": {
+  "arm": "A",
+  "lam": 1.0,
+  "repr": "crossenc",
+  "backbone": "",
+  "data_dir": "/home/user/results/marsc/e0",
+  "resources": "",
+  "seed": 20260908,
+  "steps": 600,
+  "tetrads_per_step": 2,
+  "natural_per_step": 4,
+  "facts_per_natural": 6,
+  "lr": 0.0,
+  "max_len": 0,
+  "eval_acu": "/home/user/results/mars2_gates/b18/acu_units_validation.jsonl",
+  "out": "/home/user/results/marsc/t07_curve/t07-frac10_seed20260908",
+  "tag": "t07-frac10",
+  "scores_out": "/home/user/results/marsc/t07_curve/scores",
+  "eval_units": [
+   "gemma+ent=/home/user/results/mars3/m32/units_gemma+ent_validation.jsonl"
+  ],
+  "save_model": false,
+  "limit": 0,
+  "train_limit": 85,
+  "device": null
+ },
+ "backbone": "/home/user/hf_cache/hub/models--microsoft--deberta-large-mnli/snapshots/7296194b9009373def4f7c5dad292651e4b5cf4e",
+ "lr": 2e-05,
+ "max_len": 512,
+ "train_docs": 85,
+ "tetrad_docs": 79,
+ "cells_per_step_R": null,
+ "train_seconds": 70.70279884338379,
+ "cost": {
+  "encodings": 4800,
+  "tokens": 1682797,
+  "cells": 18841
+ },
+ "train_bce_last50": 0.12570255275815725,
+ "train_aux_last50": 0.0,
+ "train_four_cell_last200": 0.915,
+ "grad_norm_mean": 5.047471305678288,
+ "calibration": {
+  "n_cells": 2772,
+  "omitted_rate": 0.5797258297258298,
+  "slope": 0.6156873057817496,
+  "intercept": 0.3486168097762179
+ },
+ "eval_seconds_per_pair": 0.005900377930054921
+}

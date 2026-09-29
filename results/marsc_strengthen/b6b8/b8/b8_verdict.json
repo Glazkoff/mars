@@ -1,0 +1,104 @@
+{
+ "block": "B8",
+ "built_utc": "2026-09-18T11:33:24.477653+00:00",
+ "inputs": {
+  "vllm": "/home/user/results/marsc_strengthen/b6b8/b8/b8_vllm_path.json",
+  "hf": "/home/user/results/marsc_strengthen/b6b8/b8/b8_hf.json"
+ },
+ "vllm_loaded": true,
+ "hf_loaded": true,
+ "model": {
+  "repo_id": "Qwen/Qwen3.8-27B",
+  "snapshot": "/home/user/hf_cache/hub/models--Qwen--Qwen3.8-27B/snapshots/1d4bf0f2ff6012fd82039f2fa52739d0dd7c60c0/",
+  "resolved_revision": "1d4bf0f2ff6012fd82039f2fa52739d0dd7c60c0",
+  "architectures": [
+   "Qwen3_5ForConditionalGeneration"
+  ],
+  "model_type": "qwen3_5"
+ },
+ "prompt_sha256": "ad83f20964eab5ea9f135c857b0af4677a1ee1a2d43704e9e58b16aa759bede4",
+ "vllm": {
+  "vllm_version": "0.29.0",
+  "engine_init_seconds": 154.6579475402832,
+  "seconds": 26.073453426361084,
+  "sentences": 1383,
+  "documents": 50,
+  "s_per_document": 0.5214690685272216,
+  "documents_per_s": 1.9176592828876446,
+  "tokens_per_s": 2166.3796918781723,
+  "blank_raw_rate": 0.0,
+  "empty_parse_rate": 0.038322487346348515,
+  "propositions_per_sentence": 3.1945046999276934,
+  "think_trap_signature": false,
+  "error": null,
+  "verdict": null
+ },
+ "hf": {
+  "engine_init_seconds": 10.384440898895264,
+  "seconds": 162.07191467285156,
+  "sentences": 358,
+  "documents": 12,
+  "s_per_document": 13.505992889404297,
+  "documents_per_s": 0.07404120586976753,
+  "tokens_per_s": 96.5805829566226,
+  "blank_raw_rate": 0.0,
+  "empty_parse_rate": 0.030726256983240222,
+  "propositions_per_sentence": 3.335195530726257,
+  "think_trap_signature": false,
+  "error": null
+ },
+ "recorded_context": {
+  "s_per_document": 6.637462235649547,
+  "model": "google/gemma-4-31B-it",
+  "backend": "hf",
+  "provenance": "results/marsc/g4/cost_table.json -- sacct Elapsed of the eight decomposition array tasks divided by 1986 documents; ALLOCATION time, model load included"
+ },
+ "controlled_speedup": {
+  "same_model_same_prompt_same_workload": false,
+  "identical_document_set": false,
+  "hf_documents": 12,
+  "vllm_documents": 50,
+  "speedup_s_per_document": 25.899892638980674,
+  "speedup_generated_tokens_per_s": 22.430799499845243,
+  "note": "document sets may differ in size by design (the HF arm is deliberately smaller); the rate comparison is per document and per generated token, both of which are size-invariant"
+ },
+ "verdict": "vLLM loads ['Qwen3_5ForConditionalGeneration'] and is 25.90x faster per document than HF on the same model and workload",
+ "all_attempts_in_this_directory": [
+  {
+   "file": "b8_hf.json",
+   "backend": "hf",
+   "name": "hf",
+   "loaded": true,
+   "error": null,
+   "engine_init_seconds": 10.384440898895264,
+   "s_per_document": 13.505992889404297
+  },
+  {
+   "file": "b8_vllm.json",
+   "backend": "vllm",
+   "name": "vllm",
+   "loaded": false,
+   "error": "RuntimeError: Engine core initialization failed. See root cause above. Failed core proc(s): {}",
+   "engine_init_seconds": 121.65737843513489,
+   "s_per_document": null
+  },
+  {
+   "file": "b8_vllm_eager.json",
+   "backend": "vllm",
+   "name": "vllm_eager",
+   "loaded": false,
+   "error": "RuntimeError: Engine core initialization failed. See root cause above. Failed core proc(s): {}",
+   "engine_init_seconds": 54.56489706039429,
+   "s_per_document": null
+  },
+  {
+   "file": "b8_vllm_path.json",
+   "backend": "vllm",
+   "name": "vllm_path",
+   "loaded": true,
+   "error": null,
+   "engine_init_seconds": 154.6579475402832,
+   "s_per_document": 0.5214690685272216
+  }
+ ]
+}

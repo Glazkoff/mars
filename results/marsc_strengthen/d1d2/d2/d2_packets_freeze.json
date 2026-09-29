@@ -1,0 +1,84 @@
+{
+ "block": "D2",
+ "stage": "review packets",
+ "registered": "research/marsc_strengthen_20260918/PREREG.md, Wave D / D2",
+ "n_items": 1602,
+ "n_pairs": 267,
+ "n_documents": 136,
+ "n_pilot_items": 360,
+ "items_per_arm": {
+  "marsc": 267,
+  "importance": 267,
+  "mars2": 267,
+  "none": 267,
+  "llmjudge": 267,
+  "oracle": 267
+ },
+ "words_per_arm": {
+  "importance": {
+   "mean": 59.28,
+   "min": 24,
+   "max": 178
+  },
+  "llmjudge": {
+   "mean": 60.66,
+   "min": 24,
+   "max": 199
+  },
+  "mars2": {
+   "mean": 59.82,
+   "min": 22,
+   "max": 172
+  },
+  "marsc": {
+   "mean": 61.37,
+   "min": 21,
+   "max": 191
+  },
+  "none": {
+   "mean": 61.53,
+   "min": 25,
+   "max": 191
+  },
+  "oracle": {
+   "mean": 57.33,
+   "min": 18,
+   "max": 169
+  }
+ },
+ "over_budget_per_arm": {
+  "importance": 37,
+  "llmjudge": 53,
+  "mars2": 51,
+  "marsc": 56,
+  "none": 60,
+  "oracle": 35
+ },
+ "blind_schema": [
+  "item_id",
+  "revised",
+  "source",
+  "summary"
+ ],
+ "id_namespace": "R##### (disjoint from the H### omission-confirmation ids in the deployed database)",
+ "review_order_sha256": "f1155e376689bee6f20698d9bc342eb69215ea7060e0316aeb992ea1e88701cd",
+ "arms_sha256": "77c8a7bd2eded314fcc6f32bbe594e95a9fda024d6c0e2ac634628cae8374568",
+ "revisions_sha256": {
+  "revisions.jsonl": "a3afe8232f2c4ac05acf190dbbce41582aeb843849f030c5d04affd28f877d95"
+ },
+ "artifacts": {
+  "d2_review_blind.jsonl": "52e6a3edb7dfe9717d3c2bc0ad9e7b201cfbae280a175c01c3710db4449cfccf",
+  "d2_review_pilot_blind.jsonl": "4b6a9d5b482e2786a19f790c54c3dceb795287f24255a0e689cccf01515bd601",
+  "d2_review_key.jsonl": "2c2a7bec45ffb7509fc73bdd772206463247ae17b2e2753f182f725574e33230"
+ },
+ "questions": [
+  "q1 new important content",
+  "q2 preservation",
+  "q3 support",
+  "q4 redundancy",
+  "q5 usefulness"
+ ],
+ "outcome_policy": "NOT SCORED. Two blinded reviewers plus an adjudicator are required; the agreement-conditioned rate and the adjudicated rate must be reported separately (d1b_adjudicate.py). The support judge is not an admissible machine substitute for q3: it was measured at kappa 0.4727 and calls 36% of supported facts unsupported.",
+ "checks_failed": [],
+ "status": "FROZEN"
+}

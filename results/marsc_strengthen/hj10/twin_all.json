@@ -1,0 +1,1528 @@
+{
+ "docs": "/home/user/results/marsc_strengthen/hj10/docs/docs_omb_all.jsonl",
+ "cache": "/home/user/results/marsc_strengthen/hj10/hcond_all/cache",
+ "n_pairs": 293,
+ "n_consultations": 112,
+ "metric": "paired discrimination: z(fact|errored) > z(fact|clean twin), ties 1/2, chance 0.500",
+ "families": {
+  "humanfact": {
+   "paired_discrimination": 0.8174061433447098,
+   "ci95_consultation_bootstrap": [
+    0.7746435782527331,
+    0.8564245298620299
+   ],
+   "consultation_macro": 0.8225446428571429,
+   "ci95_macro": [
+    0.775297619047619,
+    0.8634672619047619
+   ],
+   "n_ties": 57,
+   "by": {
+    "residual_level": {
+     "complete": {
+      "n_pairs": 150,
+      "paired_discrimination": 0.85,
+      "ci95": [
+       0.806108276643991,
+       0.89
+      ]
+     },
+     "partial-strong": {
+      "n_pairs": 57,
+      "paired_discrimination": 0.7017543859649122,
+      "ci95": [
+       0.6076639344262295,
+       0.7909090909090909
+      ]
+     },
+     "partial-weak": {
+      "n_pairs": 86,
+      "paired_discrimination": 0.8372093023255814,
+      "ci95": [
+       0.7616279069767442,
+       0.9069767441860465
+      ]
+     }
+    },
+    "severity": {
+     "critical": {
+      "n_pairs": 151,
+      "paired_discrimination": 0.7847682119205298,
+      "ci95": [
+       0.7272652511961722,
+       0.8366855828220858
+      ]
+     },
+     "peripheral": {
+      "n_pairs": 39,
+      "paired_discrimination": 0.8461538461538461,
+      "ci95": [
+       0.7374835526315789,
+       0.9358974358974359
+      ]
+     },
+     "supporting": {
+      "n_pairs": 103,
+      "paired_discrimination": 0.8543689320388349,
+      "ci95": [
+       0.78,
+       0.9141602192134106
+      ]
+     }
+    },
+    "stratum": {
+     "aci": {
+      "n_pairs": 126,
+      "paired_discrimination": 0.7023809523809523,
+      "ci95": [
+       0.6416506410256411,
+       0.7621121514488791
+      ]
+     },
+     "authored": {
+      "n_pairs": 52,
+      "paired_discrimination": 0.9134615384615384,
+      "ci95": [
+       0.8461538461538461,
+       0.98
+      ]
+     },
+     "primock": {
+      "n_pairs": 94,
+      "paired_discrimination": 0.9202127659574468,
+      "ci95": [
+       0.8687484217171717,
+       0.9653508023216114
+      ]
+     },
+     "trapblind": {
+      "n_pairs": 21,
+      "paired_discrimination": 0.8095238095238095,
+      "ci95": [
+       0.6922619047619047,
+       0.9285714285714286
+      ]
+     }
+    },
+    "beyond_clip": {
+     "beyond": {
+      "n_pairs": 48,
+      "paired_discrimination": 0.4791666666666667,
+      "ci95": [
+       0.4431818181818182,
+       0.5
+      ]
+     },
+     "within": {
+      "n_pairs": 245,
+      "paired_discrimination": 0.8836734693877552,
+      "ci95": [
+       0.8415612767238784,
+       0.9246885066834525
+      ]
+     }
+    }
+   }
+  },
+  "judgefact": {
+   "paired_discrimination": 0.841296928327645,
+   "ci95_consultation_bootstrap": [
+    0.8033698501872659,
+    0.8762065836808761
+   ],
+   "consultation_macro": 0.8381696428571429,
+   "ci95_macro": [
+    0.7920386904761906,
+    0.8772321428571429
+   ],
+   "n_ties": 57,
+   "by": {
+    "residual_level": {
+     "complete": {
+      "n_pairs": 150,
+      "paired_discrimination": 0.8366666666666667,
+      "ci95": [
+       0.7893033628545758,
+       0.88
+      ]
+     },
+     "partial-strong": {
+      "n_pairs": 57,
+      "paired_discrimination": 0.7894736842105263,
+      "ci95": [
+       0.7131147540983607,
+       0.868421052631579
+      ]
+     },
+     "partial-weak": {
+      "n_pairs": 86,
+      "paired_discrimination": 0.8837209302325582,
+      "ci95": [
+       0.8152021250610649,
+       0.9430379746835443
+      ]
+     }
+    },
+    "severity": {
+     "critical": {
+      "n_pairs": 151,
+      "paired_discrimination": 0.7913907284768212,
+      "ci95": [
+       0.7382437796693404,
+       0.843760146103896
+      ]
+     },
+     "peripheral": {
+      "n_pairs": 39,
+      "paired_discrimination": 0.8717948717948718,
+      "ci95": [
+       0.7763157894736842,
+       0.9512485481997676
+      ]
+     },
+     "supporting": {
+      "n_pairs": 103,
+      "paired_discrimination": 0.9029126213592233,
+      "ci95": [
+       0.8425925925925926,
+       0.9508950455182072
+      ]
+     }
+    },
+    "stratum": {
+     "aci": {
+      "n_pairs": 126,
+      "paired_discrimination": 0.7579365079365079,
+      "ci95": [
+       0.7015503875968992,
+       0.8106409090909088
+      ]
+     },
+     "authored": {
+      "n_pairs": 52,
+      "paired_discrimination": 0.9134615384615384,
+      "ci95": [
+       0.8333333333333334,
+       0.9736842105263158
+      ]
+     },
+     "primock": {
+      "n_pairs": 94,
+      "paired_discrimination": 0.9202127659574468,
+      "ci95": [
+       0.8672524364288114,
+       0.965126303127506
+      ]
+     },
+     "trapblind": {
+      "n_pairs": 21,
+      "paired_discrimination": 0.8095238095238095,
+      "ci95": [
+       0.6922619047619047,
+       0.9285714285714286
+      ]
+     }
+    },
+    "beyond_clip": {
+     "beyond": {
+      "n_pairs": 48,
+      "paired_discrimination": 0.4791666666666667,
+      "ci95": [
+       0.4431818181818182,
+       0.5
+      ]
+     },
+     "within": {
+      "n_pairs": 245,
+      "paired_discrimination": 0.9122448979591836,
+      "ci95": [
+       0.8781818181818182,
+       0.9442286409915892
+      ]
+     }
+    }
+   }
+  },
+  "nli": {
+   "paired_discrimination": 0.7081911262798635,
+   "ci95_consultation_bootstrap": [
+    0.6631425516087037,
+    0.7532900182990588
+   ],
+   "consultation_macro": 0.6968005952380951,
+   "ci95_macro": [
+    0.640625,
+    0.7503720238095237
+   ],
+   "n_ties": 57,
+   "by": {
+    "residual_level": {
+     "complete": {
+      "n_pairs": 150,
+      "paired_discrimination": 0.69,
+      "ci95": [
+       0.629136402478103,
+       0.7483004460062171
+      ]
+     },
+     "partial-strong": {
+      "n_pairs": 57,
+      "paired_discrimination": 0.7017543859649122,
+      "ci95": [
+       0.5862068965517241,
+       0.8046875
+      ]
+     },
+     "partial-weak": {
+      "n_pairs": 86,
+      "paired_discrimination": 0.7441860465116279,
+      "ci95": [
+       0.6648351648351648,
+       0.8250540123456787
+      ]
+     }
+    },
+    "severity": {
+     "critical": {
+      "n_pairs": 151,
+      "paired_discrimination": 0.6788079470198676,
+      "ci95": [
+       0.6232715171879039,
+       0.7313501426690079
+      ]
+     },
+     "peripheral": {
+      "n_pairs": 39,
+      "paired_discrimination": 0.7692307692307693,
+      "ci95": [
+       0.6285714285714286,
+       0.8918918918918919
+      ]
+     },
+     "supporting": {
+      "n_pairs": 103,
+      "paired_discrimination": 0.7281553398058253,
+      "ci95": [
+       0.6377425970388155,
+       0.815
+      ]
+     }
+    },
+    "stratum": {
+     "aci": {
+      "n_pairs": 126,
+      "paired_discrimination": 0.6984126984126984,
+      "ci95": [
+       0.6382113821138211,
+       0.7537342135476464
+      ]
+     },
+     "authored": {
+      "n_pairs": 52,
+      "paired_discrimination": 0.75,
+      "ci95": [
+       0.6353966346153845,
+       0.8700092592592592
+      ]
+     },
+     "primock": {
+      "n_pairs": 94,
+      "paired_discrimination": 0.6914893617021277,
+      "ci95": [
+       0.6009848484848485,
+       0.7752808988764045
+      ]
+     },
+     "trapblind": {
+      "n_pairs": 21,
+      "paired_discrimination": 0.7380952380952381,
+      "ci95": [
+       0.5277412280701754,
+       0.90625
+      ]
+     }
+    },
+    "beyond_clip": {
+     "beyond": {
+      "n_pairs": 48,
+      "paired_discrimination": 0.53125,
+      "ci95": [
+       0.5,
+       0.5729166666666666
+      ]
+     },
+     "within": {
+      "n_pairs": 245,
+      "paired_discrimination": 0.7428571428571429,
+      "ci95": [
+       0.690677966101695,
+       0.7933906755300036
+      ]
+     }
+    }
+   }
+  },
+  "summac_zs": {
+   "paired_discrimination": 0.7184300341296929,
+   "ci95_consultation_bootstrap": [
+    0.6678953750668248,
+    0.7649164578111947
+   ],
+   "consultation_macro": 0.7027529761904762,
+   "ci95_macro": [
+    0.6528924851190476,
+    0.7544642857142857
+   ],
+   "n_ties": 83,
+   "by": {
+    "residual_level": {
+     "complete": {
+      "n_pairs": 150,
+      "paired_discrimination": 0.7166666666666667,
+      "ci95": [
+       0.6486393289841567,
+       0.7798809045898568
+      ]
+     },
+     "partial-strong": {
+      "n_pairs": 57,
+      "paired_discrimination": 0.7368421052631579,
+      "ci95": [
+       0.6481329690346084,
+       0.8145161290322581
+      ]
+     },
+     "partial-weak": {
+      "n_pairs": 86,
+      "paired_discrimination": 0.7093023255813954,
+      "ci95": [
+       0.6321531198686371,
+       0.7833333333333333
+      ]
+     }
+    },
+    "severity": {
+     "critical": {
+      "n_pairs": 151,
+      "paired_discrimination": 0.7119205298013245,
+      "ci95": [
+       0.6455696202531646,
+       0.7709706568208318
+      ]
+     },
+     "peripheral": {
+      "n_pairs": 39,
+      "paired_discrimination": 0.7564102564102564,
+      "ci95": [
+       0.6323529411764706,
+       0.875
+      ]
+     },
+     "supporting": {
+      "n_pairs": 103,
+      "paired_discrimination": 0.7135922330097088,
+      "ci95": [
+       0.625,
+       0.8018891275920045
+      ]
+     }
+    },
+    "stratum": {
+     "aci": {
+      "n_pairs": 126,
+      "paired_discrimination": 0.6706349206349206,
+      "ci95": [
+       0.5846017699115045,
+       0.7426497229326513
+      ]
+     },
+     "authored": {
+      "n_pairs": 52,
+      "paired_discrimination": 0.7788461538461539,
+      "ci95": [
+       0.6817985893416928,
+       0.8627490512333966
+      ]
+     },
+     "primock": {
+      "n_pairs": 94,
+      "paired_discrimination": 0.7712765957446809,
+      "ci95": [
+       0.7150537634408602,
+       0.8258426966292135
+      ]
+     },
+     "trapblind": {
+      "n_pairs": 21,
+      "paired_discrimination": 0.6190476190476191,
+      "ci95": [
+       0.3748641304347826,
+       0.8571428571428571
+      ]
+     }
+    },
+    "beyond_clip": {
+     "beyond": {
+      "n_pairs": 48,
+      "paired_discrimination": 0.6666666666666666,
+      "ci95": [
+       0.5319148936170213,
+       0.7959608843537412
+      ]
+     },
+     "within": {
+      "n_pairs": 245,
+      "paired_discrimination": 0.7285714285714285,
+      "ci95": [
+       0.6794847328244276,
+       0.7747985537190083
+      ]
+     }
+    }
+   }
+  },
+  "lex_token_recall": {
+   "paired_discrimination": 0.8993174061433447,
+   "ci95_consultation_bootstrap": [
+    0.8720485541333917,
+    0.9251720455624111
+   ],
+   "consultation_macro": 0.8984375,
+   "ci95_macro": [
+    0.8690476190476192,
+    0.9248511904761905
+   ],
+   "n_ties": 59,
+   "by": {
+    "residual_level": {
+     "complete": {
+      "n_pairs": 150,
+      "paired_discrimination": 0.96,
+      "ci95": [
+       0.9358108108108109,
+       0.9810156436589443
+      ]
+     },
+     "partial-strong": {
+      "n_pairs": 57,
+      "paired_discrimination": 0.7105263157894737,
+      "ci95": [
+       0.6475162521198418,
+       0.7767857142857143
+      ]
+     },
+     "partial-weak": {
+      "n_pairs": 86,
+      "paired_discrimination": 0.9186046511627907,
+      "ci95": [
+       0.8789213586291309,
+       0.9578313253012049
+      ]
+     }
+    },
+    "severity": {
+     "critical": {
+      "n_pairs": 151,
+      "paired_discrimination": 0.9105960264900662,
+      "ci95": [
+       0.8742133292757152,
+       0.9440880847953216
+      ]
+     },
+     "peripheral": {
+      "n_pairs": 39,
+      "paired_discrimination": 0.9358974358974359,
+      "ci95": [
+       0.8780487804878049,
+       0.9853046218487395
+      ]
+     },
+     "supporting": {
+      "n_pairs": 103,
+      "paired_discrimination": 0.8689320388349514,
+      "ci95": [
+       0.8220982142857143,
+       0.912038308913309
+      ]
+     }
+    },
+    "stratum": {
+     "aci": {
+      "n_pairs": 126,
+      "paired_discrimination": 0.8531746031746031,
+      "ci95": [
+       0.8140356486947395,
+       0.8901515151515151
+      ]
+     },
+     "authored": {
+      "n_pairs": 52,
+      "paired_discrimination": 0.9423076923076923,
+      "ci95": [
+       0.8839285714285714,
+       0.9909131493506493
+      ]
+     },
+     "primock": {
+      "n_pairs": 94,
+      "paired_discrimination": 0.9202127659574468,
+      "ci95": [
+       0.8651643258426966,
+       0.9698825301204819
+      ]
+     },
+     "trapblind": {
+      "n_pairs": 21,
+      "paired_discrimination": 0.9761904761904762,
+      "ci95": [
+       0.9166666666666666,
+       1.0
+      ]
+     }
+    },
+    "beyond_clip": {
+     "beyond": {
+      "n_pairs": 48,
+      "paired_discrimination": 0.9375,
+      "ci95": [
+       0.8877310358105506,
+       0.9803921568627451
+      ]
+     },
+     "within": {
+      "n_pairs": 245,
+      "paired_discrimination": 0.8918367346938776,
+      "ci95": [
+       0.8608650016594757,
+       0.921161825726141
+      ]
+     }
+    }
+   }
+  },
+  "lex_rougeL_recall": {
+   "paired_discrimination": 0.8924914675767918,
+   "ci95_consultation_bootstrap": [
+    0.8686847140345434,
+    0.9172419995038451
+   ],
+   "consultation_macro": 0.9002976190476192,
+   "ci95_macro": [
+    0.8735119047619048,
+    0.925967261904762
+   ],
+   "n_ties": 63,
+   "by": {
+    "residual_level": {
+     "complete": {
+      "n_pairs": 150,
+      "paired_discrimination": 0.95,
+      "ci95": [
+       0.9238410596026491,
+       0.9726073991240332
+      ]
+     },
+     "partial-strong": {
+      "n_pairs": 57,
+      "paired_discrimination": 0.7280701754385965,
+      "ci95": [
+       0.6636363636363637,
+       0.7931419334975368
+      ]
+     },
+     "partial-weak": {
+      "n_pairs": 86,
+      "paired_discrimination": 0.9011627906976745,
+      "ci95": [
+       0.859750959166895,
+       0.9397769650028686
+      ]
+     }
+    },
+    "severity": {
+     "critical": {
+      "n_pairs": 151,
+      "paired_discrimination": 0.9006622516556292,
+      "ci95": [
+       0.8657718120805369,
+       0.931684412895593
+      ]
+     },
+     "peripheral": {
+      "n_pairs": 39,
+      "paired_discrimination": 0.8974358974358975,
+      "ci95": [
+       0.8289473684210527,
+       0.9605263157894737
+      ]
+     },
+     "supporting": {
+      "n_pairs": 103,
+      "paired_discrimination": 0.8786407766990292,
+      "ci95": [
+       0.8333333333333334,
+       0.9207985930171965
+      ]
+     }
+    },
+    "stratum": {
+     "aci": {
+      "n_pairs": 126,
+      "paired_discrimination": 0.8412698412698413,
+      "ci95": [
+       0.8025210084033614,
+       0.8760883084577114
+      ]
+     },
+     "authored": {
+      "n_pairs": 52,
+      "paired_discrimination": 0.9615384615384616,
+      "ci95": [
+       0.92,
+       1.0
+      ]
+     },
+     "primock": {
+      "n_pairs": 94,
+      "paired_discrimination": 0.898936170212766,
+      "ci95": [
+       0.8548340210052513,
+       0.9402173913043478
+      ]
+     },
+     "trapblind": {
+      "n_pairs": 21,
+      "paired_discrimination": 1.0,
+      "ci95": [
+       1.0,
+       1.0
+      ]
+     }
+    },
+    "beyond_clip": {
+     "beyond": {
+      "n_pairs": 48,
+      "paired_discrimination": 0.90625,
+      "ci95": [
+       0.8522727272727273,
+       0.956149885583524
+      ]
+     },
+     "within": {
+      "n_pairs": 245,
+      "paired_discrimination": 0.889795918367347,
+      "ci95": [
+       0.86286509130525,
+       0.917362664073894
+      ]
+     }
+    }
+   }
+  },
+  "emb_minilm": {
+   "paired_discrimination": 0.9010238907849829,
+   "ci95_consultation_bootstrap": [
+    0.875,
+    0.9259259259259259
+   ],
+   "consultation_macro": 0.90625,
+   "ci95_macro": [
+    0.8798363095238095,
+    0.9311755952380951
+   ],
+   "n_ties": 52,
+   "by": {
+    "residual_level": {
+     "complete": {
+      "n_pairs": 150,
+      "paired_discrimination": 0.9433333333333334,
+      "ci95": [
+       0.9133298611111111,
+       0.9703709795321637
+      ]
+     },
+     "partial-strong": {
+      "n_pairs": 57,
+      "paired_discrimination": 0.8157894736842105,
+      "ci95": [
+       0.7413716133004926,
+       0.8867924528301887
+      ]
+     },
+     "partial-weak": {
+      "n_pairs": 86,
+      "paired_discrimination": 0.8837209302325582,
+      "ci95": [
+       0.8333333333333334,
+       0.9310344827586207
+      ]
+     }
+    },
+    "severity": {
+     "critical": {
+      "n_pairs": 151,
+      "paired_discrimination": 0.8940397350993378,
+      "ci95": [
+       0.8607541117712908,
+       0.9248406862745098
+      ]
+     },
+     "peripheral": {
+      "n_pairs": 39,
+      "paired_discrimination": 0.9102564102564102,
+      "ci95": [
+       0.85,
+       0.9625
+      ]
+     },
+     "supporting": {
+      "n_pairs": 103,
+      "paired_discrimination": 0.9077669902912622,
+      "ci95": [
+       0.8605769230769231,
+       0.9471331521739129
+      ]
+     }
+    },
+    "stratum": {
+     "aci": {
+      "n_pairs": 126,
+      "paired_discrimination": 0.8650793650793651,
+      "ci95": [
+       0.8181730091613814,
+       0.9090998568360772
+      ]
+     },
+     "authored": {
+      "n_pairs": 52,
+      "paired_discrimination": 0.9423076923076923,
+      "ci95": [
+       0.9021739130434783,
+       0.9875076219512195
+      ]
+     },
+     "primock": {
+      "n_pairs": 94,
+      "paired_discrimination": 0.9202127659574468,
+      "ci95": [
+       0.872218992248062,
+       0.9627757558790593
+      ]
+     },
+     "trapblind": {
+      "n_pairs": 21,
+      "paired_discrimination": 0.9285714285714286,
+      "ci95": [
+       0.8636363636363636,
+       0.9782608695652174
+      ]
+     }
+    },
+    "beyond_clip": {
+     "beyond": {
+      "n_pairs": 48,
+      "paired_discrimination": 0.90625,
+      "ci95": [
+       0.8436789772727272,
+       0.9607843137254902
+      ]
+     },
+     "within": {
+      "n_pairs": 245,
+      "paired_discrimination": 0.9,
+      "ci95": [
+       0.8694008649932158,
+       0.9261958874458874
+      ]
+     }
+    }
+   }
+  },
+  "factcg": {
+   "paired_discrimination": 0.9522184300341296,
+   "ci95_consultation_bootstrap": [
+    0.9241379310344827,
+    0.9768250043569188
+   ],
+   "consultation_macro": 0.9575892857142857,
+   "ci95_macro": [
+    0.9322916666666667,
+    0.9799107142857143
+   ],
+   "n_ties": 0,
+   "by": {
+    "residual_level": {
+     "complete": {
+      "n_pairs": 150,
+      "paired_discrimination": 1.0,
+      "ci95": [
+       1.0,
+       1.0
+      ]
+     },
+     "partial-strong": {
+      "n_pairs": 57,
+      "paired_discrimination": 0.8070175438596491,
+      "ci95": [
+       0.6922727272727273,
+       0.9138296317942722
+      ]
+     },
+     "partial-weak": {
+      "n_pairs": 86,
+      "paired_discrimination": 0.9651162790697675,
+      "ci95": [
+       0.9195402298850575,
+       1.0
+      ]
+     }
+    },
+    "severity": {
+     "critical": {
+      "n_pairs": 151,
+      "paired_discrimination": 0.9337748344370861,
+      "ci95": [
+       0.8867893081761007,
+       0.974025974025974
+      ]
+     },
+     "peripheral": {
+      "n_pairs": 39,
+      "paired_discrimination": 0.9743589743589743,
+      "ci95": [
+       0.9230769230769231,
+       1.0
+      ]
+     },
+     "supporting": {
+      "n_pairs": 103,
+      "paired_discrimination": 0.970873786407767,
+      "ci95": [
+       0.9351851851851852,
+       1.0
+      ]
+     }
+    },
+    "stratum": {
+     "aci": {
+      "n_pairs": 126,
+      "paired_discrimination": 0.8968253968253969,
+      "ci95": [
+       0.834709116938895,
+       0.946575005783021
+      ]
+     },
+     "authored": {
+      "n_pairs": 52,
+      "paired_discrimination": 1.0,
+      "ci95": [
+       1.0,
+       1.0
+      ]
+     },
+     "primock": {
+      "n_pairs": 94,
+      "paired_discrimination": 0.9893617021276596,
+      "ci95": [
+       0.9666666666666667,
+       1.0
+      ]
+     },
+     "trapblind": {
+      "n_pairs": 21,
+      "paired_discrimination": 1.0,
+      "ci95": [
+       1.0,
+       1.0
+      ]
+     }
+    },
+    "beyond_clip": {
+     "beyond": {
+      "n_pairs": 48,
+      "paired_discrimination": 0.9791666666666666,
+      "ci95": [
+       0.926829268292683,
+       1.0
+      ]
+     },
+     "within": {
+      "n_pairs": 245,
+      "paired_discrimination": 0.9469387755102041,
+      "ci95": [
+       0.9146341463414634,
+       0.9751063063680944
+      ]
+     }
+    }
+   }
+  },
+  "minicheck7b": {
+   "paired_discrimination": 0.8737201365187713,
+   "ci95_consultation_bootstrap": [
+    0.832142205422315,
+    0.9118670923848173
+   ],
+   "consultation_macro": 0.8623511904761906,
+   "ci95_macro": [
+    0.813969494047619,
+    0.9092261904761906
+   ],
+   "n_ties": 0,
+   "by": {
+    "residual_level": {
+     "complete": {
+      "n_pairs": 150,
+      "paired_discrimination": 0.8733333333333333,
+      "ci95": [
+       0.821911264287584,
+       0.92
+      ]
+     },
+     "partial-strong": {
+      "n_pairs": 57,
+      "paired_discrimination": 0.7719298245614035,
+      "ci95": [
+       0.6715174129353234,
+       0.8703703703703703
+      ]
+     },
+     "partial-weak": {
+      "n_pairs": 86,
+      "paired_discrimination": 0.9418604651162791,
+      "ci95": [
+       0.8888888888888888,
+       0.9882352941176471
+      ]
+     }
+    },
+    "severity": {
+     "critical": {
+      "n_pairs": 151,
+      "paired_discrimination": 0.7947019867549668,
+      "ci95": [
+       0.7283813877168308,
+       0.8611194779116466
+      ]
+     },
+     "peripheral": {
+      "n_pairs": 39,
+      "paired_discrimination": 1.0,
+      "ci95": [
+       1.0,
+       1.0
+      ]
+     },
+     "supporting": {
+      "n_pairs": 103,
+      "paired_discrimination": 0.941747572815534,
+      "ci95": [
+       0.8898827726809379,
+       0.9895833333333334
+      ]
+     }
+    },
+    "stratum": {
+     "aci": {
+      "n_pairs": 126,
+      "paired_discrimination": 0.873015873015873,
+      "ci95": [
+       0.8031466237174899,
+       0.9333333333333333
+      ]
+     },
+     "authored": {
+      "n_pairs": 52,
+      "paired_discrimination": 0.8461538461538461,
+      "ci95": [
+       0.7735849056603774,
+       0.9259259259259259
+      ]
+     },
+     "primock": {
+      "n_pairs": 94,
+      "paired_discrimination": 0.8936170212765957,
+      "ci95": [
+       0.8172043010752689,
+       0.9540229885057471
+      ]
+     },
+     "trapblind": {
+      "n_pairs": 21,
+      "paired_discrimination": 0.8571428571428571,
+      "ci95": [
+       0.7142857142857143,
+       0.9583333333333334
+      ]
+     }
+    },
+    "beyond_clip": {
+     "beyond": {
+      "n_pairs": 48,
+      "paired_discrimination": 0.7916666666666666,
+      "ci95": [
+       0.6730769230769231,
+       0.9130434782608695
+      ]
+     },
+     "within": {
+      "n_pairs": 245,
+      "paired_discrimination": 0.889795918367347,
+      "ci95": [
+       0.8499950592885376,
+       0.9267241379310345
+      ]
+     }
+    }
+   }
+  },
+  "judge_gemma31": {
+   "paired_discrimination": 0.9385665529010239,
+   "ci95_consultation_bootstrap": [
+    0.9117597038815526,
+    0.9644190988770545
+   ],
+   "consultation_macro": 0.9367559523809523,
+   "ci95_macro": [
+    0.9017857142857143,
+    0.9672619047619048
+   ],
+   "n_ties": 0,
+   "by": {
+    "residual_level": {
+     "complete": {
+      "n_pairs": 150,
+      "paired_discrimination": 0.98,
+      "ci95": [
+       0.9548313782991202,
+       1.0
+      ]
+     },
+     "partial-strong": {
+      "n_pairs": 57,
+      "paired_discrimination": 0.8421052631578947,
+      "ci95": [
+       0.7454545454545455,
+       0.9298245614035088
+      ]
+     },
+     "partial-weak": {
+      "n_pairs": 86,
+      "paired_discrimination": 0.9302325581395349,
+      "ci95": [
+       0.8705882352941177,
+       0.9770114942528736
+      ]
+     }
+    },
+    "severity": {
+     "critical": {
+      "n_pairs": 151,
+      "paired_discrimination": 0.9072847682119205,
+      "ci95": [
+       0.8590604026845637,
+       0.949702261474642
+      ]
+     },
+     "peripheral": {
+      "n_pairs": 39,
+      "paired_discrimination": 1.0,
+      "ci95": [
+       1.0,
+       1.0
+      ]
+     },
+     "supporting": {
+      "n_pairs": 103,
+      "paired_discrimination": 0.9611650485436893,
+      "ci95": [
+       0.9207811267852449,
+       0.990909090909091
+      ]
+     }
+    },
+    "stratum": {
+     "aci": {
+      "n_pairs": 126,
+      "paired_discrimination": 0.9047619047619048,
+      "ci95": [
+       0.8548352633030053,
+       0.9491556128715304
+      ]
+     },
+     "authored": {
+      "n_pairs": 52,
+      "paired_discrimination": 0.9230769230769231,
+      "ci95": [
+       0.8518321513002364,
+       0.9814814814814815
+      ]
+     },
+     "primock": {
+      "n_pairs": 94,
+      "paired_discrimination": 0.9787234042553191,
+      "ci95": [
+       0.9479166666666666,
+       1.0
+      ]
+     },
+     "trapblind": {
+      "n_pairs": 21,
+      "paired_discrimination": 1.0,
+      "ci95": [
+       1.0,
+       1.0
+      ]
+     }
+    },
+    "beyond_clip": {
+     "beyond": {
+      "n_pairs": 48,
+      "paired_discrimination": 0.9166666666666666,
+      "ci95": [
+       0.8444444444444444,
+       0.9787344858156027
+      ]
+     },
+     "within": {
+      "n_pairs": 245,
+      "paired_discrimination": 0.9428571428571428,
+      "ci95": [
+       0.9149776035834266,
+       0.96875
+      ]
+     }
+    }
+   }
+  },
+  "hj9factcghuman": {
+   "paired_discrimination": 0.764505119453925,
+   "ci95_consultation_bootstrap": [
+    0.7140516998166173,
+    0.8127150890346767
+   ],
+   "consultation_macro": 0.7834821428571429,
+   "ci95_macro": [
+    0.7321428571428571,
+    0.8329706101190475
+   ],
+   "n_ties": 48,
+   "by": {
+    "residual_level": {
+     "complete": {
+      "n_pairs": 150,
+      "paired_discrimination": 0.78,
+      "ci95": [
+       0.7167832167832168,
+       0.83975
+      ]
+     },
+     "partial-strong": {
+      "n_pairs": 57,
+      "paired_discrimination": 0.6403508771929824,
+      "ci95": [
+       0.5293976244343892,
+       0.75
+      ]
+     },
+     "partial-weak": {
+      "n_pairs": 86,
+      "paired_discrimination": 0.8197674418604651,
+      "ci95": [
+       0.7441860465116279,
+       0.8901132404181183
+      ]
+     }
+    },
+    "severity": {
+     "critical": {
+      "n_pairs": 151,
+      "paired_discrimination": 0.7781456953642384,
+      "ci95": [
+       0.7147876038280968,
+       0.8356643356643356
+      ]
+     },
+     "peripheral": {
+      "n_pairs": 39,
+      "paired_discrimination": 0.7307692307692307,
+      "ci95": [
+       0.5757386363636364,
+       0.8611111111111112
+      ]
+     },
+     "supporting": {
+      "n_pairs": 103,
+      "paired_discrimination": 0.7572815533980582,
+      "ci95": [
+       0.6898024541531823,
+       0.8252638243984802
+      ]
+     }
+    },
+    "stratum": {
+     "aci": {
+      "n_pairs": 126,
+      "paired_discrimination": 0.6111111111111112,
+      "ci95": [
+       0.5357142857142857,
+       0.6842159188955996
+      ]
+     },
+     "authored": {
+      "n_pairs": 52,
+      "paired_discrimination": 0.9230769230769231,
+      "ci95": [
+       0.8431114551083592,
+       1.0
+      ]
+     },
+     "primock": {
+      "n_pairs": 94,
+      "paired_discrimination": 0.8670212765957447,
+      "ci95": [
+       0.7880393610013174,
+       0.9361870100783873
+      ]
+     },
+     "trapblind": {
+      "n_pairs": 21,
+      "paired_discrimination": 0.8333333333333334,
+      "ci95": [
+       0.717391304347826,
+       0.9444444444444444
+      ]
+     }
+    },
+    "beyond_clip": {
+     "beyond": {
+      "n_pairs": 48,
+      "paired_discrimination": 0.5,
+      "ci95": [
+       0.5,
+       0.5
+      ]
+     },
+     "within": {
+      "n_pairs": 245,
+      "paired_discrimination": 0.8163265306122449,
+      "ci95": [
+       0.757316246844985,
+       0.8709677419354839
+      ]
+     }
+    }
+   }
+  },
+  "hj9factcgjudge": {
+   "paired_discrimination": 0.8361774744027304,
+   "ci95_consultation_bootstrap": [
+    0.7947189193915021,
+    0.8741390579220194
+   ],
+   "consultation_macro": 0.8549107142857143,
+   "ci95_macro": [
+    0.8132347470238096,
+    0.8917503720238095
+   ],
+   "n_ties": 48,
+   "by": {
+    "residual_level": {
+     "complete": {
+      "n_pairs": 150,
+      "paired_discrimination": 0.86,
+      "ci95": [
+       0.811727392977393,
+       0.9054163741663741
+      ]
+     },
+     "partial-strong": {
+      "n_pairs": 57,
+      "paired_discrimination": 0.6754385964912281,
+      "ci95": [
+       0.5517241379310345,
+       0.7796694915254238
+      ]
+     },
+     "partial-weak": {
+      "n_pairs": 86,
+      "paired_discrimination": 0.9011627906976745,
+      "ci95": [
+       0.8411764705882353,
+       0.9540360501567396
+      ]
+     }
+    },
+    "severity": {
+     "critical": {
+      "n_pairs": 151,
+      "paired_discrimination": 0.8443708609271523,
+      "ci95": [
+       0.7955833235673269,
+       0.8914559603299292
+      ]
+     },
+     "peripheral": {
+      "n_pairs": 39,
+      "paired_discrimination": 0.8589743589743589,
+      "ci95": [
+       0.7563888888888889,
+       0.95
+      ]
+     },
+     "supporting": {
+      "n_pairs": 103,
+      "paired_discrimination": 0.8155339805825242,
+      "ci95": [
+       0.7519817073170733,
+       0.8787878787878788
+      ]
+     }
+    },
+    "stratum": {
+     "aci": {
+      "n_pairs": 126,
+      "paired_discrimination": 0.746031746031746,
+      "ci95": [
+       0.6825382342718109,
+       0.8083333333333333
+      ]
+     },
+     "authored": {
+      "n_pairs": 52,
+      "paired_discrimination": 0.9423076923076923,
+      "ci95": [
+       0.8653846153846154,
+       1.0
+      ]
+     },
+     "primock": {
+      "n_pairs": 94,
+      "paired_discrimination": 0.898936170212766,
+      "ci95": [
+       0.83,
+       0.9574468085106383
+      ]
+     },
+     "trapblind": {
+      "n_pairs": 21,
+      "paired_discrimination": 0.8333333333333334,
+      "ci95": [
+       0.717391304347826,
+       0.9444444444444444
+      ]
+     }
+    },
+    "beyond_clip": {
+     "beyond": {
+      "n_pairs": 48,
+      "paired_discrimination": 0.5,
+      "ci95": [
+       0.5,
+       0.5
+      ]
+     },
+     "within": {
+      "n_pairs": 245,
+      "paired_discrimination": 0.9020408163265307,
+      "ci95": [
+       0.8594223954642098,
+       0.9400042735042734
+      ]
+     }
+    }
+   }
+  }
+ },
+ "missing": [],
+ "margins_vs_primary": {
+  "judgefact": {
+   "observed": -0.023890784982935155,
+   "ci95_two_sided": [
+    -0.04946996466431095,
+    0.0
+   ],
+   "lower_bound_95_one_sided": -0.04514000896057348
+  },
+  "nli": {
+   "observed": 0.10921501706484642,
+   "ci95_two_sided": [
+    0.0520815855704698,
+    0.16548104703212765
+   ],
+   "lower_bound_95_one_sided": 0.059598707032481865
+  },
+  "summac_zs": {
+   "observed": 0.09897610921501707,
+   "ci95_two_sided": [
+    0.03333333333333333,
+    0.15947021441685608
+   ],
+   "lower_bound_95_one_sided": 0.04516075089006365
+  },
+  "lex_token_recall": {
+   "observed": -0.08191126279863481,
+   "ci95_two_sided": [
+    -0.125850633356791,
+    -0.040813833676793206
+   ],
+   "lower_bound_95_one_sided": -0.11806031202435312
+  },
+  "lex_rougeL_recall": {
+   "observed": -0.07508532423208192,
+   "ci95_two_sided": [
+    -0.11525481005547362,
+    -0.03870684776457274
+   ],
+   "lower_bound_95_one_sided": -0.1076948976948977
+  },
+  "emb_minilm": {
+   "observed": -0.08361774744027303,
+   "ci95_two_sided": [
+    -0.1302264956297269,
+    -0.0399256691501104
+   ],
+   "lower_bound_95_one_sided": -0.12369337979094076
+  },
+  "factcg": {
+   "observed": -0.1348122866894198,
+   "ci95_two_sided": [
+    -0.1813380281690141,
+    -0.09010249183855627
+   ],
+   "lower_bound_95_one_sided": -0.17064846416382254
+  },
+  "minicheck7b": {
+   "observed": -0.05631399317406143,
+   "ci95_two_sided": [
+    -0.10751121646362137,
+    -0.005533540280658289
+   ],
+   "lower_bound_95_one_sided": -0.09768211920529801
+  },
+  "judge_gemma31": {
+   "observed": -0.12116040955631399,
+   "ci95_two_sided": [
+    -0.16445343478726823,
+    -0.07961014715572154
+   ],
+   "lower_bound_95_one_sided": -0.15501143790849672
+  },
+  "hj9factcghuman": {
+   "observed": 0.052901023890784986,
+   "ci95_two_sided": [
+    0.0035580901122945563,
+    0.10273972602739725
+   ],
+   "lower_bound_95_one_sided": 0.012365313790872443
+  },
+  "hj9factcgjudge": {
+   "observed": -0.01877133105802048,
+   "ci95_two_sided": [
+    -0.06122971372849481,
+    0.022876104667218997
+   ],
+   "lower_bound_95_one_sided": -0.052196453098980175
+  }
+ }
+}

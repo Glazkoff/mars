@@ -1,0 +1,150 @@
+{
+ "block": "B6",
+ "written_utc": "2026-09-27T21:25:41.006550+00:00",
+ "which": [
+  "gpu"
+ ],
+ "host": "Euler",
+ "python": "3.12.14",
+ "device": "cuda",
+ "n_pairs": 200,
+ "n_docs": 50,
+ "n_docs_gemma": 25,
+ "env": {
+  "SLURM_JOB_ID": "7672",
+  "CUDA_VISIBLE_DEVICES": "0",
+  "HF_HOME": "/home/user/hf_cache"
+ },
+ "population": {
+  "gemma+ent": {
+   "file": "/home/user/results/mars3/m32/units_gemma+ent_validation.jsonl",
+   "pairs_with_units": 1466,
+   "units_total": 138261,
+   "units_per_pair": 94.31173260572987,
+   "documents": 190,
+   "pairs_per_document": 7.71578947368421,
+   "units_per_pair_first200": 165.54,
+   "pairs_per_document_first200": 11.764705882352942
+  },
+  "distilled": {
+   "file": "/home/user/results/mars3/m32/units_distilled_validation.jsonl",
+   "pairs_with_units": 1442,
+   "units_total": 58592,
+   "units_per_pair": 40.63245492371706,
+   "documents": 187,
+   "pairs_per_document": 7.711229946524064,
+   "units_per_pair_first200": 69.92,
+   "pairs_per_document_first200": 11.764705882352942
+  }
+ },
+ "stages": {
+  "offshelf": {
+   "lex:token_recall": {
+    "units": 6000,
+    "seconds": 0.09836602210998535,
+    "s_per_unit": 1.6394337018330892e-05,
+    "device": "cpu"
+   },
+   "lex:rougeL_recall": {
+    "units": 6000,
+    "seconds": 0.8867263793945312,
+    "s_per_unit": 0.00014778772989908854,
+    "device": "cpu"
+   },
+   "emb:minilm_maxcos": {
+    "units": 6000,
+    "seconds": 1.037903070449829,
+    "s_per_unit": 0.00017298384507497151,
+    "model_load_seconds": 0.31247615814208984,
+    "device": "cuda"
+   },
+   "nli:nli": {
+    "units": 6000,
+    "seconds": 5.274864196777344,
+    "s_per_unit": 0.000879144032796224,
+    "units_per_s": 1137.4700421037712,
+    "model_load_seconds": 0.36258959770202637,
+    "device": "cuda"
+   },
+   "nli:summac_zs": {
+    "units": 6000,
+    "seconds": 47.87316083908081,
+    "s_per_unit": 0.007978860139846802,
+    "units_per_s": 125.33118546670008,
+    "model_load_seconds": 1.48240065574646,
+    "device": "cuda"
+   },
+   "nli:minicheck": {
+    "units": 900,
+    "seconds": 22.076987743377686,
+    "s_per_unit": 0.024529986381530762,
+    "units_per_s": 40.76643111196038,
+    "model_load_seconds": 0.8267536163330078,
+    "device": "cuda"
+   },
+   "nli:alignscore": {
+    "units": 900,
+    "seconds": 0.884014368057251,
+    "s_per_unit": 0.0009822381867302789,
+    "units_per_s": 1018.0830001415925,
+    "model_load_seconds": 1.9639110565185547,
+    "device": "cuda"
+   }
+  },
+  "offshelf_distilled": {
+   "lex:token_recall": {
+    "units": 6000,
+    "seconds": 0.08557415008544922,
+    "s_per_unit": 1.426235834757487e-05,
+    "device": "cpu"
+   },
+   "lex:rougeL_recall": {
+    "units": 6000,
+    "seconds": 0.7519004344940186,
+    "s_per_unit": 0.00012531673908233642,
+    "device": "cpu"
+   },
+   "emb:minilm_maxcos": {
+    "units": 6000,
+    "seconds": 0.9624848365783691,
+    "s_per_unit": 0.00016041413942972818,
+    "model_load_seconds": 0.06161904335021973,
+    "device": "cuda"
+   },
+   "nli:nli": {
+    "units": 6000,
+    "seconds": 3.2554473876953125,
+    "s_per_unit": 0.0005425745646158854,
+    "units_per_s": 1843.06464993977,
+    "model_load_seconds": 0.3089749813079834,
+    "device": "cuda"
+   },
+   "nli:summac_zs": {
+    "units": 6000,
+    "seconds": 41.96321368217468,
+    "s_per_unit": 0.006993868947029113,
+    "units_per_s": 142.98237607451657,
+    "model_load_seconds": 0.38095784187316895,
+    "device": "cuda"
+   },
+   "nli:minicheck": {
+    "units": 900,
+    "seconds": 22.32078456878662,
+    "s_per_unit": 0.024800871743096246,
+    "units_per_s": 40.32116331871953,
+    "model_load_seconds": 0.7476756572723389,
+    "device": "cuda"
+   },
+   "nli:alignscore": {
+    "units": 900,
+    "seconds": 0.666510820388794,
+    "s_per_unit": 0.000740567578209771,
+    "units_per_s": 1350.3156625049319,
+    "model_load_seconds": 1.8726680278778076,
+    "device": "cuda"
+   }
+  }
+ },
+ "gpu": "NVIDIA H200 NVL",
+ "finished_utc": "2026-09-27T21:28:26.938455+00:00"
+}

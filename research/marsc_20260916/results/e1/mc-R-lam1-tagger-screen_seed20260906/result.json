@@ -1,0 +1,48 @@
+{
+ "tag": "mc-R-lam1-tagger-screen",
+ "system": "mc:R|lam1|tagger",
+ "config": {
+  "arm": "R",
+  "lam": 1.0,
+  "repr": "tagger",
+  "backbone": "",
+  "data_dir": "/home/user/results/marsc/e0",
+  "resources": "rose_cnndm",
+  "seed": 20260906,
+  "steps": 600,
+  "tetrads_per_step": 2,
+  "natural_per_step": 4,
+  "facts_per_natural": 6,
+  "lr": 0.0,
+  "max_len": 0,
+  "eval_acu": "/home/user/results/mars2_gates/b18/acu_units_validation.jsonl",
+  "out": "/home/user/results/marsc/e1/mc-R-lam1-tagger-screen_seed20260906",
+  "tag": "mc-R-lam1-tagger-screen",
+  "scores_out": "/home/user/results/marsc/scores",
+  "limit": 0,
+  "device": null
+ },
+ "backbone": "/home/user/hf_cache/hub/models--answerdotai--ModernBERT-large/snapshots/45bb4654a4d5aaff24dd11d4781fa46d39bf8c13",
+ "lr": 3e-05,
+ "max_len": 3072,
+ "train_docs": 283,
+ "tetrad_docs": 250,
+ "cells_per_step_R": 4,
+ "train_seconds": 184.16127562522888,
+ "cost": {
+  "encodings": 4800,
+  "tokens": 4702665,
+  "cells": 19047
+ },
+ "train_bce_last50": 0.33751106679439546,
+ "train_aux_last50": 0.0,
+ "train_four_cell_last200": null,
+ "grad_norm_mean": 4.895683071613312,
+ "calibration": {
+  "n_cells": 4785,
+  "omitted_rate": 0.5799373040752351,
+  "slope": 0.6145707833593906,
+  "intercept": 0.10871498710786973
+ },
+ "eval_seconds_per_pair": 0.012291326063550566
+}

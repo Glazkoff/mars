@@ -1,0 +1,11 @@
+{
+  "job_id": "4991",
+  "array_task": null,
+  "job_name": "mc-r02-humanrank",
+  "node": "Euler",
+  "started_utc": "2026-09-17T12:25:46.208501+00:00",
+  "python": "/home/user/.venv-mars/bin/python",
+  "cwd": "/home/user/summ-mask-benchmark",
+  "gpus": null,
+  "nvidia_smi": "No devices were found"
+}

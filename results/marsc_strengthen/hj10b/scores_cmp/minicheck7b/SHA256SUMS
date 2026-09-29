@@ -1,0 +1,4 @@
+0a31f1853d2fc8a7897dd62167f410a39a2bb395595942355d3bf9165f98486b  ./scores/gemma+ent_nli_minicheck7b_empty.receipt.json
+881ace7fb203aab8c8bebbfeba82340c533a2f0a1d81aa813e13bca126f79ad6  ./scores/gemma+ent_nli_minicheck7b_real.receipt.json
+31bfd1c93fa853cc9896cbe94fc740f3b033a8fe7c9f3eea0ef65be42991ba51  ./scores/gemma+ent_nli_minicheck7b_shuffled.receipt.json
+d8ae364320bd199f68c93634877b2e6bce434a2c1db6f5278addb8a357bd8229  ./started.json

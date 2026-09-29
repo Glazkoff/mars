@@ -1,0 +1,11 @@
+{
+  "job_id": "6940",
+  "array_task": "0",
+  "job_name": "mars-me-cost",
+  "node": "Euler",
+  "started_utc": "2026-09-23T17:26:00.037799+00:00",
+  "python": "/home/user/.venv-mars/bin/python",
+  "cwd": "/home/user/summ-mask-benchmark",
+  "gpus": "0",
+  "nvidia_smi": "NVIDIA H200 NVL, 143771 MiB"
+}

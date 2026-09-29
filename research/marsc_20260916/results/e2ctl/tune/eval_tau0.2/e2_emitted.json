@@ -1,0 +1,21 @@
+{
+ "registered": "research/marsc_20260916/PREREG.md E2 pilot",
+ "n_pairs": 202,
+ "n_docs": 101,
+ "k": {
+  "10": {
+   "systems": {
+    "lead_imp0.2": {
+     "recall": 0.3244375117549546,
+     "recall_stress": 0.37498069129805656,
+     "hit_rate": 0.1293866886688669,
+     "false_alert_rate": 0.043240216878830735,
+     "unknown_rate": 0.8273730944523024,
+     "n_pairs": 202
+    }
+   },
+   "paired_recall": {},
+   "primary": "lead_imp0.2"
+  }
+ }
+}

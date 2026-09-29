@@ -1,0 +1,81 @@
+{
+ "registered": "PREREG.md Wave A / A1e",
+ "split": "validation",
+ "k": "10",
+ "consensus": "humanfact+div1",
+ "lead": "humanfact.lead+div1",
+ "single": "humanfact.single+div1",
+ "runs": {
+  "calibrated": "/home/user/results/marsc_strengthen/a1/eval_val_cal/e2_emitted.json",
+  "raw": "/home/user/results/marsc_strengthen/a1/eval_val_raw/e2_emitted.json"
+ },
+ "within_contract": {
+  "calibrated": {
+   "consensus": {
+    "system": "humanfact+div1",
+    "recall": 0.39988533781668795,
+    "omission_precision": 0.7184331797235023
+   },
+   "lead": {
+    "system": "humanfact.lead+div1",
+    "recall": 0.399963769189237,
+    "omission_precision": 0.7182320441988951
+   },
+   "single": {
+    "system": "humanfact.single+div1",
+    "recall": 0.3619037350155267,
+    "omission_precision": 0.7325761486835313
+   },
+   "abs_diff_lead_minus_consensus_recall": 7.843137254903709e-05,
+   "lead_minus_consensus_recall": 7.843137254903709e-05
+  },
+  "raw": {
+   "consensus": {
+    "system": "humanfact+div1",
+    "recall": 0.4028793916930948,
+    "omission_precision": 0.7186067827681026
+   },
+   "lead": {
+    "system": "humanfact.lead+div1",
+    "recall": 0.4029578230656438,
+    "omission_precision": 0.7184065934065934
+   },
+   "single": {
+    "system": "humanfact.single+div1",
+    "recall": 0.3635990451993279,
+    "omission_precision": 0.7312435765673175
+   },
+   "abs_diff_lead_minus_consensus_recall": 7.843137254903709e-05,
+   "lead_minus_consensus_recall": 7.843137254903709e-05
+  }
+ },
+ "across_contract": {
+  "consensus": {
+   "calibrated": 0.39988533781668795,
+   "raw": 0.4028793916930948,
+   "abs_delta": 0.0029940538764068325
+  },
+  "lead": {
+   "calibrated": 0.399963769189237,
+   "raw": 0.4029578230656438,
+   "abs_delta": 0.0029940538764068325
+  },
+  "single": {
+   "calibrated": 0.3619037350155267,
+   "raw": 0.3635990451993279,
+   "abs_delta": 0.001695310183801202
+  }
+ },
+ "external_reference": {
+  "test": {
+   "consensus": 0.376536,
+   "lead": 0.376803,
+   "abs_diff": 0.0002670000000000172
+  },
+  "unisum": {
+   "consensus": 0.347054,
+   "lead": 0.347304,
+   "abs_diff": 0.000250000000000028
+  }
+ }
+}

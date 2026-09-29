@@ -1,0 +1,608 @@
+{
+ "registered": "research/marsc_strengthen_20260918/PREREG.md -- Wave C / C4, hypothesis H-ATTR",
+ "pool": "unisum",
+ "acu_file": "/home/user/results/marsc/g7_unisum/acu_units_unisum.jsonl",
+ "k": 10,
+ "n_pairs_common": 1813,
+ "bootstrap_seed": 20260916,
+ "n_boot": 2000,
+ "cause_definitions": {
+  "inventory": "no inventory unit overlaps the ACU under mc_e2_eval.py's span+content-token rule",
+  "verifier": "an overlapping unit exists but none reaches the top-k under the RAW seed-averaged score",
+  "rule": "an overlapping unit is inside the RAW top-k but the div1 -5.0 demotion pushed every overlapping unit out of the final top-k",
+  "hit": "an overlapping unit is inside the FINAL (div1) top-k -- mc_e2_eval.py credits the match"
+ },
+ "systems": {
+  "humanfact+div1": {
+   "n_omitted_acus": 11273,
+   "n_docs": 222,
+   "n_hit": 2681,
+   "n_miss": 8592,
+   "observed": {
+    "hit_of_omitted": 0.2378248913332742,
+    "inventory_of_omitted": 0.14077885212454538,
+    "verifier_of_omitted": 0.5686152754368846,
+    "rule_of_omitted": 0.05278098110529584,
+    "inventory_of_misses": 0.18470670391061453,
+    "verifier_of_misses": 0.7460428305400373,
+    "rule_of_misses": 0.06925046554934823,
+    "ceiling": 0.8592211478754547
+   },
+   "counts": {
+    "hit": 2681,
+    "inventory": 1587,
+    "verifier": 6410,
+    "rule": 595
+   },
+   "document_clustered_bootstrap": {
+    "hit_of_omitted": {
+     "ci95": [
+      0.2058734626918295,
+      0.2726403493189541
+     ],
+     "boot_mean": 0.23795421042845322
+    },
+    "inventory_of_omitted": {
+     "ci95": [
+      0.11238433788214697,
+      0.1720585506523734
+     ],
+     "boot_mean": 0.14075978649402973
+    },
+    "verifier_of_omitted": {
+     "ci95": [
+      0.5229212438985631,
+      0.6124933876477456
+     ],
+     "boot_mean": 0.5683469184573327
+    },
+    "rule_of_omitted": {
+     "ci95": [
+      0.04322062463172581,
+      0.0634954086164933
+     ],
+     "boot_mean": 0.0529390846201844
+    },
+    "inventory_of_misses": {
+     "ci95": [
+      0.14654981133124398,
+      0.22508029297783574
+     ],
+     "boot_mean": 0.184765771924631
+    },
+    "verifier_of_misses": {
+     "ci95": [
+      0.7029630637573975,
+      0.7851344610699429
+     ],
+     "boot_mean": 0.7456798268152517
+    },
+    "rule_of_misses": {
+     "ci95": [
+      0.05595105007047806,
+      0.08497038027093398
+     ],
+     "boot_mean": 0.06955440126011737
+    },
+    "ceiling": {
+     "ci95": [
+      0.8279414493476266,
+      0.887615662117853
+     ],
+     "boot_mean": 0.8592402135059702
+    }
+   },
+   "by_resource": {
+    "unisum_CNNDM": {
+     "n_omitted_acus": 1015,
+     "counts": {
+      "hit": 332,
+      "inventory": 31,
+      "verifier": 499,
+      "rule": 153
+     },
+     "hit_of_omitted": 0.3270935960591133,
+     "inventory_of_omitted": 0.030541871921182268,
+     "verifier_of_omitted": 0.4916256157635468,
+     "rule_of_omitted": 0.15073891625615762,
+     "inventory_of_misses": 0.04538799414348463,
+     "verifier_of_misses": 0.7306002928257687,
+     "rule_of_misses": 0.2240117130307467,
+     "ceiling": 0.9694581280788177
+    },
+    "unisum_GovReport": {
+     "n_omitted_acus": 2132,
+     "counts": {
+      "hit": 138,
+      "inventory": 35,
+      "verifier": 1917,
+      "rule": 42
+     },
+     "hit_of_omitted": 0.0647279549718574,
+     "inventory_of_omitted": 0.016416510318949345,
+     "verifier_of_omitted": 0.899155722326454,
+     "rule_of_omitted": 0.019699812382739212,
+     "inventory_of_misses": 0.017552657973921765,
+     "verifier_of_misses": 0.9613841524573721,
+     "rule_of_misses": 0.02106318956870612,
+     "ceiling": 0.9835834896810507
+    },
+    "unisum_MeetingBank": {
+     "n_omitted_acus": 945,
+     "counts": {
+      "hit": 176,
+      "inventory": 128,
+      "verifier": 526,
+      "rule": 115
+     },
+     "hit_of_omitted": 0.18624338624338624,
+     "inventory_of_omitted": 0.13544973544973546,
+     "verifier_of_omitted": 0.5566137566137566,
+     "rule_of_omitted": 0.12169312169312169,
+     "inventory_of_misses": 0.16644993498049415,
+     "verifier_of_misses": 0.6840052015604682,
+     "rule_of_misses": 0.14954486345903772,
+     "ceiling": 0.8645502645502645
+    },
+    "unisum_MultiWOZ": {
+     "n_omitted_acus": 784,
+     "counts": {
+      "hit": 538,
+      "inventory": 40,
+      "verifier": 100,
+      "rule": 106
+     },
+     "hit_of_omitted": 0.6862244897959183,
+     "inventory_of_omitted": 0.05102040816326531,
+     "verifier_of_omitted": 0.12755102040816327,
+     "rule_of_omitted": 0.13520408163265307,
+     "inventory_of_misses": 0.16260162601626016,
+     "verifier_of_misses": 0.4065040650406504,
+     "rule_of_misses": 0.43089430894308944,
+     "ceiling": 0.9489795918367347
+    },
+    "unisum_Pubmed": {
+     "n_omitted_acus": 2092,
+     "counts": {
+      "hit": 601,
+      "inventory": 664,
+      "verifier": 813,
+      "rule": 14
+     },
+     "hit_of_omitted": 0.2872848948374761,
+     "inventory_of_omitted": 0.3173996175908222,
+     "verifier_of_omitted": 0.388623326959847,
+     "rule_of_omitted": 0.006692160611854685,
+     "inventory_of_misses": 0.44533869885982563,
+     "verifier_of_misses": 0.545271629778672,
+     "rule_of_misses": 0.009389671361502348,
+     "ceiling": 0.6826003824091779
+    },
+    "unisum_SQuALITY": {
+     "n_omitted_acus": 2060,
+     "counts": {
+      "hit": 105,
+      "inventory": 377,
+      "verifier": 1562,
+      "rule": 16
+     },
+     "hit_of_omitted": 0.050970873786407765,
+     "inventory_of_omitted": 0.18300970873786407,
+     "verifier_of_omitted": 0.7582524271844661,
+     "rule_of_omitted": 0.007766990291262136,
+     "inventory_of_misses": 0.19283887468030692,
+     "verifier_of_misses": 0.7989769820971867,
+     "rule_of_misses": 0.008184143222506393,
+     "ceiling": 0.816990291262136
+    },
+    "unisum_dialogsum": {
+     "n_omitted_acus": 652,
+     "counts": {
+      "hit": 383,
+      "inventory": 180,
+      "verifier": 44,
+      "rule": 45
+     },
+     "hit_of_omitted": 0.5874233128834356,
+     "inventory_of_omitted": 0.27607361963190186,
+     "verifier_of_omitted": 0.06748466257668712,
+     "rule_of_omitted": 0.06901840490797546,
+     "inventory_of_misses": 0.6691449814126395,
+     "verifier_of_misses": 0.16356877323420074,
+     "rule_of_misses": 0.16728624535315986,
+     "ceiling": 0.7239263803680982
+    },
+    "unisum_mediasum": {
+     "n_omitted_acus": 1339,
+     "counts": {
+      "hit": 210,
+      "inventory": 79,
+      "verifier": 947,
+      "rule": 103
+     },
+     "hit_of_omitted": 0.15683345780433158,
+     "inventory_of_omitted": 0.05899925317401045,
+     "verifier_of_omitted": 0.707244212098581,
+     "rule_of_omitted": 0.07692307692307693,
+     "inventory_of_misses": 0.06997342781222321,
+     "verifier_of_misses": 0.8387953941541186,
+     "rule_of_misses": 0.0912311780336581,
+     "ceiling": 0.9410007468259896
+    },
+    "unisum_wikihow": {
+     "n_omitted_acus": 254,
+     "counts": {
+      "hit": 198,
+      "inventory": 53,
+      "verifier": 2,
+      "rule": 1
+     },
+     "hit_of_omitted": 0.7795275590551181,
+     "inventory_of_omitted": 0.20866141732283464,
+     "verifier_of_omitted": 0.007874015748031496,
+     "rule_of_omitted": 0.003937007874015748,
+     "inventory_of_misses": 0.9464285714285714,
+     "verifier_of_misses": 0.03571428571428571,
+     "rule_of_misses": 0.017857142857142856,
+     "ceiling": 0.7913385826771654
+    }
+   },
+   "macro_recall_at_k": 0.3470543247257388,
+   "n_pairs_with_omitted_acu": 1670,
+   "units_file": "/home/user/results/marsc/g7_unisum/units_gemma+ent_unisum.jsonl",
+   "raw_manifest": [
+    "/home/user/results/marsc/g7_unisum/scores/gemma+ent_humanfact_seed20260906.jsonl",
+    "/home/user/results/marsc/g7_unisum/scores/gemma+ent_humanfact_seed20260907.jsonl",
+    "/home/user/results/marsc/g7_unisum/scores/gemma+ent_humanfact_seed20260908.jsonl"
+   ],
+   "div_manifest": [
+    "/home/user/results/marsc/g7_unisum/val/gemma+ent_humanfact_seed20260906_div1.jsonl",
+    "/home/user/results/marsc/g7_unisum/val/gemma+ent_humanfact_seed20260907_div1.jsonl",
+    "/home/user/results/marsc/g7_unisum/val/gemma+ent_humanfact_seed20260908_div1.jsonl"
+   ]
+  },
+  "judgefact+div1": {
+   "n_omitted_acus": 11273,
+   "n_docs": 222,
+   "n_hit": 2006,
+   "n_miss": 9267,
+   "observed": {
+    "hit_of_omitted": 0.17794730772642597,
+    "inventory_of_omitted": 0.14077885212454538,
+    "verifier_of_omitted": 0.6492504213607735,
+    "rule_of_omitted": 0.032023418788255126,
+    "inventory_of_misses": 0.1712528326319197,
+    "verifier_of_misses": 0.7897917341102838,
+    "rule_of_misses": 0.03895543325779648,
+    "ceiling": 0.8592211478754547
+   },
+   "counts": {
+    "hit": 2006,
+    "inventory": 1587,
+    "verifier": 7319,
+    "rule": 361
+   },
+   "document_clustered_bootstrap": {
+    "hit_of_omitted": {
+     "ci95": [
+      0.14894968871802358,
+      0.20978486722023434
+     ],
+     "boot_mean": 0.17837990830104283
+    },
+    "inventory_of_omitted": {
+     "ci95": [
+      0.11238433788214697,
+      0.1720585506523734
+     ],
+     "boot_mean": 0.14075978649402973
+    },
+    "verifier_of_omitted": {
+     "ci95": [
+      0.6060127320707328,
+      0.6896568186763476
+     ],
+     "boot_mean": 0.6488506527425383
+    },
+    "rule_of_omitted": {
+     "ci95": [
+      0.025210550543854963,
+      0.03965792063295553
+     ],
+     "boot_mean": 0.03200965246238919
+    },
+    "inventory_of_misses": {
+     "ci95": [
+      0.13646053302447328,
+      0.20928257877603937
+     ],
+     "boot_mean": 0.17135506245191862
+    },
+    "verifier_of_misses": {
+     "ci95": [
+      0.7506464413441234,
+      0.8253843749369931
+     ],
+     "boot_mean": 0.7896399175319628
+    },
+    "rule_of_misses": {
+     "ci95": [
+      0.030374475205687177,
+      0.04913188701459028
+     ],
+     "boot_mean": 0.03900502001611852
+    },
+    "ceiling": {
+     "ci95": [
+      0.8279414493476266,
+      0.887615662117853
+     ],
+     "boot_mean": 0.8592402135059702
+    }
+   },
+   "by_resource": {
+    "unisum_CNNDM": {
+     "n_omitted_acus": 1015,
+     "counts": {
+      "hit": 258,
+      "inventory": 31,
+      "verifier": 638,
+      "rule": 88
+     },
+     "hit_of_omitted": 0.2541871921182266,
+     "inventory_of_omitted": 0.030541871921182268,
+     "verifier_of_omitted": 0.6285714285714286,
+     "rule_of_omitted": 0.08669950738916256,
+     "inventory_of_misses": 0.04095112285336856,
+     "verifier_of_misses": 0.8428005284015853,
+     "rule_of_misses": 0.11624834874504623,
+     "ceiling": 0.9694581280788177
+    },
+    "unisum_GovReport": {
+     "n_omitted_acus": 2132,
+     "counts": {
+      "hit": 64,
+      "inventory": 35,
+      "verifier": 2005,
+      "rule": 28
+     },
+     "hit_of_omitted": 0.0300187617260788,
+     "inventory_of_omitted": 0.016416510318949345,
+     "verifier_of_omitted": 0.9404315196998124,
+     "rule_of_omitted": 0.013133208255159476,
+     "inventory_of_misses": 0.016924564796905222,
+     "verifier_of_misses": 0.9695357833655706,
+     "rule_of_misses": 0.013539651837524178,
+     "ceiling": 0.9835834896810507
+    },
+    "unisum_MeetingBank": {
+     "n_omitted_acus": 945,
+     "counts": {
+      "hit": 129,
+      "inventory": 128,
+      "verifier": 632,
+      "rule": 56
+     },
+     "hit_of_omitted": 0.1365079365079365,
+     "inventory_of_omitted": 0.13544973544973546,
+     "verifier_of_omitted": 0.6687830687830688,
+     "rule_of_omitted": 0.05925925925925926,
+     "inventory_of_misses": 0.1568627450980392,
+     "verifier_of_misses": 0.7745098039215687,
+     "rule_of_misses": 0.06862745098039216,
+     "ceiling": 0.8645502645502645
+    },
+    "unisum_MultiWOZ": {
+     "n_omitted_acus": 784,
+     "counts": {
+      "hit": 552,
+      "inventory": 40,
+      "verifier": 122,
+      "rule": 70
+     },
+     "hit_of_omitted": 0.7040816326530612,
+     "inventory_of_omitted": 0.05102040816326531,
+     "verifier_of_omitted": 0.1556122448979592,
+     "rule_of_omitted": 0.08928571428571429,
+     "inventory_of_misses": 0.1724137931034483,
+     "verifier_of_misses": 0.5258620689655172,
+     "rule_of_misses": 0.3017241379310345,
+     "ceiling": 0.9489795918367347
+    },
+    "unisum_Pubmed": {
+     "n_omitted_acus": 2092,
+     "counts": {
+      "hit": 185,
+      "inventory": 664,
+      "verifier": 1233,
+      "rule": 10
+     },
+     "hit_of_omitted": 0.08843212237093691,
+     "inventory_of_omitted": 0.3173996175908222,
+     "verifier_of_omitted": 0.5893881453154876,
+     "rule_of_omitted": 0.004780114722753346,
+     "inventory_of_misses": 0.3481908757210278,
+     "verifier_of_misses": 0.6465652857891977,
+     "rule_of_misses": 0.005243838489774515,
+     "ceiling": 0.6826003824091779
+    },
+    "unisum_SQuALITY": {
+     "n_omitted_acus": 2060,
+     "counts": {
+      "hit": 87,
+      "inventory": 377,
+      "verifier": 1581,
+      "rule": 15
+     },
+     "hit_of_omitted": 0.04223300970873786,
+     "inventory_of_omitted": 0.18300970873786407,
+     "verifier_of_omitted": 0.7674757281553398,
+     "rule_of_omitted": 0.007281553398058253,
+     "inventory_of_misses": 0.1910795742524075,
+     "verifier_of_misses": 0.801317790167258,
+     "rule_of_misses": 0.007602635580334516,
+     "ceiling": 0.816990291262136
+    },
+    "unisum_dialogsum": {
+     "n_omitted_acus": 652,
+     "counts": {
+      "hit": 378,
+      "inventory": 180,
+      "verifier": 48,
+      "rule": 46
+     },
+     "hit_of_omitted": 0.5797546012269938,
+     "inventory_of_omitted": 0.27607361963190186,
+     "verifier_of_omitted": 0.0736196319018405,
+     "rule_of_omitted": 0.0705521472392638,
+     "inventory_of_misses": 0.656934306569343,
+     "verifier_of_misses": 0.17518248175182483,
+     "rule_of_misses": 0.1678832116788321,
+     "ceiling": 0.7239263803680982
+    },
+    "unisum_mediasum": {
+     "n_omitted_acus": 1339,
+     "counts": {
+      "hit": 159,
+      "inventory": 79,
+      "verifier": 1057,
+      "rule": 44
+     },
+     "hit_of_omitted": 0.11874533233756535,
+     "inventory_of_omitted": 0.05899925317401045,
+     "verifier_of_omitted": 0.7893950709484691,
+     "rule_of_omitted": 0.03286034353995519,
+     "inventory_of_misses": 0.06694915254237288,
+     "verifier_of_misses": 0.8957627118644068,
+     "rule_of_misses": 0.03728813559322034,
+     "ceiling": 0.9410007468259896
+    },
+    "unisum_wikihow": {
+     "n_omitted_acus": 254,
+     "counts": {
+      "hit": 194,
+      "inventory": 53,
+      "verifier": 3,
+      "rule": 4
+     },
+     "hit_of_omitted": 0.7637795275590551,
+     "inventory_of_omitted": 0.20866141732283464,
+     "verifier_of_omitted": 0.011811023622047244,
+     "rule_of_omitted": 0.015748031496062992,
+     "inventory_of_misses": 0.8833333333333333,
+     "verifier_of_misses": 0.05,
+     "rule_of_misses": 0.06666666666666667,
+     "ceiling": 0.7913385826771654
+    }
+   },
+   "macro_recall_at_k": 0.29834688628514283,
+   "n_pairs_with_omitted_acu": 1670,
+   "units_file": "/home/user/results/marsc/g7_unisum/units_gemma+ent_unisum.jsonl",
+   "raw_manifest": [
+    "/home/user/results/marsc/g7_unisum/scores/gemma+ent_xenc_seed20260906.jsonl",
+    "/home/user/results/marsc/g7_unisum/scores/gemma+ent_xenc_seed20260907.jsonl",
+    "/home/user/results/marsc/g7_unisum/scores/gemma+ent_xenc_seed20260908.jsonl"
+   ],
+   "div_manifest": [
+    "/home/user/results/marsc/g7_unisum/val/gemma+ent_xenc_seed20260906_div1.jsonl",
+    "/home/user/results/marsc/g7_unisum/val/gemma+ent_xenc_seed20260907_div1.jsonl",
+    "/home/user/results/marsc/g7_unisum/val/gemma+ent_xenc_seed20260908_div1.jsonl"
+   ]
+  }
+ },
+ "inventory_ceiling": {
+  "/home/user/results/marsc/g7_unisum/units_gemma+ent_unisum.jsonl": {
+   "evaluated_pairs": {
+    "n_pairs": 1813,
+    "human_omitted_acus": 11273,
+    "ceiling_weak_pooled": 0.8592211478754547,
+    "by_resource": {
+     "unisum_CNNDM": {
+      "human_omitted": 1015,
+      "ceiling_weak": 0.9694581280788177
+     },
+     "unisum_GovReport": {
+      "human_omitted": 2132,
+      "ceiling_weak": 0.9835834896810507
+     },
+     "unisum_MeetingBank": {
+      "human_omitted": 945,
+      "ceiling_weak": 0.8645502645502645
+     },
+     "unisum_MultiWOZ": {
+      "human_omitted": 784,
+      "ceiling_weak": 0.9489795918367347
+     },
+     "unisum_Pubmed": {
+      "human_omitted": 2092,
+      "ceiling_weak": 0.6826003824091779
+     },
+     "unisum_SQuALITY": {
+      "human_omitted": 2060,
+      "ceiling_weak": 0.816990291262136
+     },
+     "unisum_dialogsum": {
+      "human_omitted": 652,
+      "ceiling_weak": 0.7239263803680982
+     },
+     "unisum_mediasum": {
+      "human_omitted": 1339,
+      "ceiling_weak": 0.9410007468259896
+     },
+     "unisum_wikihow": {
+      "human_omitted": 254,
+      "ceiling_weak": 0.7913385826771654
+     }
+    }
+   },
+   "all_acu_pairs": {
+    "n_pairs": 1813,
+    "human_omitted_acus": 11273,
+    "ceiling_weak_pooled": 0.8592211478754547,
+    "by_resource": {
+     "unisum_CNNDM": {
+      "human_omitted": 1015,
+      "ceiling_weak": 0.9694581280788177
+     },
+     "unisum_GovReport": {
+      "human_omitted": 2132,
+      "ceiling_weak": 0.9835834896810507
+     },
+     "unisum_MeetingBank": {
+      "human_omitted": 945,
+      "ceiling_weak": 0.8645502645502645
+     },
+     "unisum_MultiWOZ": {
+      "human_omitted": 784,
+      "ceiling_weak": 0.9489795918367347
+     },
+     "unisum_Pubmed": {
+      "human_omitted": 2092,
+      "ceiling_weak": 0.6826003824091779
+     },
+     "unisum_SQuALITY": {
+      "human_omitted": 2060,
+      "ceiling_weak": 0.816990291262136
+     },
+     "unisum_dialogsum": {
+      "human_omitted": 652,
+      "ceiling_weak": 0.7239263803680982
+     },
+     "unisum_mediasum": {
+      "human_omitted": 1339,
+      "ceiling_weak": 0.9410007468259896
+     },
+     "unisum_wikihow": {
+      "human_omitted": 254,
+      "ceiling_weak": 0.7913385826771654
+     }
+    }
+   }
+  }
+ },
+ "dominant_miss_cause": {
+  "humanfact+div1": "verifier",
+  "judgefact+div1": "verifier"
+ },
+ "decision_note": "If INVENTORY dominates, the bottleneck is decomposition coverage, not the verifier, and a matched-supervision training programme aimed at the verifier is aimed at the wrong stage. If VERIFIER dominates, verifier training is the right target. If RULE dominates, the emission rule is throwing away facts the verifier already ranked correctly."
+}

@@ -1,0 +1,269 @@
+{
+ "block": "B6",
+ "written_utc": "2026-09-18T11:16:19.906851+00:00",
+ "which": [
+  "gpu"
+ ],
+ "host": "Euler",
+ "python": "3.12.14",
+ "device": "cuda",
+ "n_pairs": 200,
+ "n_docs": 50,
+ "n_docs_gemma": 25,
+ "env": {
+  "SLURM_JOB_ID": "5345",
+  "CUDA_VISIBLE_DEVICES": "0",
+  "HF_HOME": "/home/user/hf_cache"
+ },
+ "population": {
+  "gemma+ent": {
+   "file": "/home/user/results/mars3/m32/units_gemma+ent_validation.jsonl",
+   "pairs_with_units": 1466,
+   "units_total": 138261,
+   "units_per_pair": 94.31173260572987,
+   "documents": 190,
+   "pairs_per_document": 7.71578947368421,
+   "units_per_pair_first200": 165.54,
+   "pairs_per_document_first200": 11.764705882352942
+  },
+  "distilled": {
+   "file": "/home/user/results/mars3/m32/units_distilled_validation.jsonl",
+   "pairs_with_units": 1442,
+   "units_total": 58592,
+   "units_per_pair": 40.63245492371706,
+   "documents": 187,
+   "pairs_per_document": 7.711229946524064,
+   "units_per_pair_first200": 69.92,
+   "pairs_per_document_first200": 11.764705882352942
+  }
+ },
+ "stages": {
+  "verification": {
+   "humanfact|gemma+ent|seed20260906": {
+    "pairs": 200,
+    "units": 33108,
+    "units_per_pair": 165.54,
+    "seconds": 34.671876668930054,
+    "s_per_unit": 0.0010472356128105006,
+    "s_per_pair_in_sample": 0.17335938334465026,
+    "model_load_seconds": 0.9197742938995361,
+    "checkpoint": "/home/user/results/marsc/e1/mc-A-lam1-crossenc-inv_seed20260906/model"
+   },
+   "humanfact|distilled|seed20260906": {
+    "pairs": 200,
+    "units": 13984,
+    "units_per_pair": 69.92,
+    "seconds": 15.312108993530273,
+    "s_per_unit": 0.0010949734692169818,
+    "s_per_pair_in_sample": 0.07656054496765137,
+    "model_load_seconds": 0.9197742938995361,
+    "checkpoint": "/home/user/results/marsc/e1/mc-A-lam1-crossenc-inv_seed20260906/model"
+   },
+   "humanfact|gemma+ent|seed20260907": {
+    "pairs": 200,
+    "units": 33108,
+    "units_per_pair": 165.54,
+    "seconds": 33.22266888618469,
+    "s_per_unit": 0.0010034634797083694,
+    "s_per_pair_in_sample": 0.16611334443092346,
+    "model_load_seconds": 0.3552737236022949,
+    "checkpoint": "/home/user/results/marsc/e1/mc-A-lam1-crossenc-inv_seed20260907/model"
+   },
+   "humanfact|distilled|seed20260907": {
+    "pairs": 200,
+    "units": 13984,
+    "units_per_pair": 69.92,
+    "seconds": 15.467492580413818,
+    "s_per_unit": 0.0011060849957389744,
+    "s_per_pair_in_sample": 0.0773374629020691,
+    "model_load_seconds": 0.3552737236022949,
+    "checkpoint": "/home/user/results/marsc/e1/mc-A-lam1-crossenc-inv_seed20260907/model"
+   },
+   "humanfact|gemma+ent|seed20260908": {
+    "pairs": 200,
+    "units": 33108,
+    "units_per_pair": 165.54,
+    "seconds": 34.25485444068909,
+    "s_per_unit": 0.0010346397982568891,
+    "s_per_pair_in_sample": 0.17127427220344543,
+    "model_load_seconds": 0.7956252098083496,
+    "checkpoint": "/home/user/results/marsc/e1/mc-A-lam1-crossenc-inv_seed20260908/model"
+   },
+   "humanfact|distilled|seed20260908": {
+    "pairs": 200,
+    "units": 13984,
+    "units_per_pair": 69.92,
+    "seconds": 15.703078269958496,
+    "s_per_unit": 0.0011229317984810137,
+    "s_per_pair_in_sample": 0.07851539134979248,
+    "model_load_seconds": 0.7956252098083496,
+    "checkpoint": "/home/user/results/marsc/e1/mc-A-lam1-crossenc-inv_seed20260908/model"
+   },
+   "judgefact|gemma+ent|seed20260906": {
+    "pairs": 200,
+    "units": 33108,
+    "units_per_pair": 165.54,
+    "seconds": 33.763768911361694,
+    "s_per_unit": 0.0010198069624067203,
+    "s_per_pair_in_sample": 0.16881884455680848,
+    "model_load_seconds": 0.44754457473754883,
+    "checkpoint": "/home/user/results/mars2_gates/b21/xenc_seed20260906"
+   },
+   "judgefact|distilled|seed20260906": {
+    "pairs": 200,
+    "units": 13984,
+    "units_per_pair": 69.92,
+    "seconds": 15.683696031570435,
+    "s_per_unit": 0.0011215457688480003,
+    "s_per_pair_in_sample": 0.07841848015785217,
+    "model_load_seconds": 0.44754457473754883,
+    "checkpoint": "/home/user/results/mars2_gates/b21/xenc_seed20260906"
+   },
+   "judgefact|gemma+ent|seed20260907": {
+    "pairs": 200,
+    "units": 33108,
+    "units_per_pair": 165.54,
+    "seconds": 34.46251606941223,
+    "s_per_unit": 0.0010409120475236267,
+    "s_per_pair_in_sample": 0.17231258034706115,
+    "model_load_seconds": 1.3495113849639893,
+    "checkpoint": "/home/user/results/mars2_gates/b21/xenc_seed20260907"
+   },
+   "judgefact|distilled|seed20260907": {
+    "pairs": 200,
+    "units": 13984,
+    "units_per_pair": 69.92,
+    "seconds": 15.677939176559448,
+    "s_per_unit": 0.001121134094433599,
+    "s_per_pair_in_sample": 0.07838969588279725,
+    "model_load_seconds": 1.3495113849639893,
+    "checkpoint": "/home/user/results/mars2_gates/b21/xenc_seed20260907"
+   },
+   "judgefact|gemma+ent|seed20260908": {
+    "pairs": 200,
+    "units": 33108,
+    "units_per_pair": 165.54,
+    "seconds": 33.69788146018982,
+    "s_per_unit": 0.0010178168859547487,
+    "s_per_pair_in_sample": 0.1684894073009491,
+    "model_load_seconds": 0.5222656726837158,
+    "checkpoint": "/home/user/results/mars2_gates/b21/xenc_seed20260908"
+   },
+   "judgefact|distilled|seed20260908": {
+    "pairs": 200,
+    "units": 13984,
+    "units_per_pair": 69.92,
+    "seconds": 15.638023853302002,
+    "s_per_unit": 0.0011182797377933353,
+    "s_per_pair_in_sample": 0.07819011926651001,
+    "model_load_seconds": 0.5222656726837158,
+    "checkpoint": "/home/user/results/mars2_gates/b21/xenc_seed20260908"
+   }
+  },
+  "aggregation": {
+   "gemma+ent": {
+    "seeds": 3,
+    "units": 33108,
+    "pairs": 200,
+    "repeats": 20,
+    "seconds_per_repeat": 0.00012491941452026368,
+    "s_per_unit": 3.773088513962295e-09,
+    "s_per_pair_in_sample": 6.245970726013184e-07
+   },
+   "distilled": {
+    "seeds": 3,
+    "units": 13984,
+    "pairs": 200,
+    "repeats": 20,
+    "seconds_per_repeat": 2.7680397033691405e-05,
+    "s_per_unit": 1.979433426322326e-09,
+    "s_per_pair_in_sample": 1.3840198516845704e-07
+   }
+  },
+  "offshelf": {
+   "lex:token_recall": {
+    "units": 6000,
+    "seconds": 0.1086418628692627,
+    "s_per_unit": 1.8106977144877117e-05,
+    "device": "cpu"
+   },
+   "lex:rougeL_recall": {
+    "units": 6000,
+    "seconds": 0.9975917339324951,
+    "s_per_unit": 0.00016626528898874919,
+    "device": "cpu"
+   },
+   "emb:minilm_maxcos": {
+    "units": 6000,
+    "seconds": 0.984410285949707,
+    "s_per_unit": 0.00016406838099161783,
+    "model_load_seconds": 0.10646772384643555,
+    "device": "cuda"
+   },
+   "nli:nli": {
+    "units": 6000,
+    "seconds": 6.083023548126221,
+    "s_per_unit": 0.0010138372580210367,
+    "units_per_s": 986.3515984330203,
+    "model_load_seconds": 0.5350089073181152,
+    "device": "cuda"
+   },
+   "nli:summac_zs": {
+    "units": 6000,
+    "seconds": 20.276713848114014,
+    "s_per_unit": 0.0033794523080190025,
+    "units_per_s": 295.90593648181675,
+    "model_load_seconds": 1.06526517868042,
+    "device": "cuda"
+   },
+   "nli:minicheck": {
+    "units": 900,
+    "seconds": 27.011679649353027,
+    "s_per_unit": 0.03001297738817003,
+    "units_per_s": 33.318920247951205,
+    "model_load_seconds": 1.0105581283569336,
+    "device": "cuda"
+   },
+   "nli:alignscore": {
+    "units": 900,
+    "seconds": 1.02144455909729,
+    "s_per_unit": 0.001134938398996989,
+    "units_per_s": 881.1050898302129,
+    "model_load_seconds": 2.863550901412964,
+    "device": "cuda"
+   }
+  },
+  "decomposition": {
+   "distilled": {
+    "documents": 50,
+    "sentences": 1383,
+    "propositions": 2990,
+    "seconds": 41.78267168998718,
+    "s_per_document": 0.8356534337997437,
+    "s_per_sentence": 0.030211620889361666,
+    "model_load_seconds": 0.2804398536682129,
+    "device": "cuda",
+    "decoding": "num_beams=4, max_new_tokens=192, no_repeat_ngram_size=3",
+    "measurement": "ACTIVE GENERATION on the current node, model load excluded"
+   },
+   "gemma": {
+    "documents": 25,
+    "sentences": 774,
+    "propositions": 2452,
+    "blank_outputs": 0,
+    "seconds": 272.3196129798889,
+    "s_per_document": 10.892784519195557,
+    "s_per_sentence": 0.3518341252970141,
+    "model_load_seconds": 10.478290557861328,
+    "snapshot": "/home/user/hf_cache/hub/models--google--gemma-4-31B-it/snapshots/842da3794eaa0b77d5f08bae87a17459d91ff475/",
+    "device": "cuda",
+    "decoding": "greedy, batch=12, max_new_tokens=160, chat template, thinking disabled",
+    "chat_prompt_tail": "|turn>model\n<|channel>thought\n<channel|>",
+    "measurement": "ACTIVE GENERATION on the current node, model load excluded",
+    "compare_to": "results/marsc/g4/cost_table.json, sacct Elapsed of 8 array tasks / 1986 documents (ALLOCATION time)"
+   }
+  }
+ },
+ "gpu": "NVIDIA H200 NVL",
+ "finished_utc": "2026-09-18T11:28:00.265511+00:00"
+}

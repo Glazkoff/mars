@@ -1,0 +1,71 @@
+{
+ "declared_before_numbers": true,
+ "rule_id": "mean_per_pair_normalised_rank_v1",
+ "rule": "fused[p][j] = 1 - mean over constituents f of ((rank_desc_f(p, j) - 1) / (n_finite(p) - 1)), ranks over the pair's finite scores with ties averaged, higher = more likely omitted; a unit non-finite in any constituent is written null.",
+ "fused_system": "fuse.mcshuf_summac",
+ "unit_set": "gemma+ent",
+ "n_output_seeds": 3,
+ "output_seed_labels": [
+  "20260906",
+  "20260907",
+  "20260908"
+ ],
+ "constituents": [
+  {
+   "name": "humanfactshuffled",
+   "n_files": 3,
+   "broadcast": false,
+   "files": [
+    "/home/user/results/marsc/r03_sumblind/scores/gemma+ent_humanfactshuffled_seed20260906.jsonl",
+    "/home/user/results/marsc/r03_sumblind/scores/gemma+ent_humanfactshuffled_seed20260907.jsonl",
+    "/home/user/results/marsc/r03_sumblind/scores/gemma+ent_humanfactshuffled_seed20260908.jsonl"
+   ],
+   "sha256": {
+    "gemma+ent_humanfactshuffled_seed20260906.jsonl": "355f44ceb89ecdb1ca50a67169b10549d0597ef8d6098e30ba293e17b26a8b4f",
+    "gemma+ent_humanfactshuffled_seed20260907.jsonl": "e01dfb1eef9e688de906d1bd3d09950be528b778eb6355624e851746efcf95b6",
+    "gemma+ent_humanfactshuffled_seed20260908.jsonl": "f6dbb2caef19052c8cc300d13573de79ae59d66739fb2fed167c9bfdc5d600bc"
+   },
+   "seed_tokens": [
+    "20260906",
+    "20260907",
+    "20260908"
+   ]
+  },
+  {
+   "name": "summac",
+   "n_files": 1,
+   "broadcast": true,
+   "files": [
+    "/home/user/results/marsc/r06b_fast/scores/gemma+ent_nli_summac_zs.jsonl"
+   ],
+   "sha256": {
+    "gemma+ent_nli_summac_zs.jsonl": "28ded43d335e869785442121129a02ba04fff779735cede3dcd137a98583bcdc"
+   },
+   "seed_tokens": [
+    ""
+   ]
+  }
+ ],
+ "output_stats": {
+  "n_pairs_written": [
+   2829,
+   2829,
+   2829
+  ],
+  "n_units_null_propagated": [
+   0,
+   0,
+   0
+  ],
+  "n_pairs_dropped_shape": [
+   0,
+   0,
+   0
+  ]
+ },
+ "outputs": [
+  "fuse.mcshuf_summac_seed20260906.jsonl",
+  "fuse.mcshuf_summac_seed20260907.jsonl",
+  "fuse.mcshuf_summac_seed20260908.jsonl"
+ ]
+}

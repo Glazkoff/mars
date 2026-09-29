@@ -1,0 +1,82 @@
+{
+ "pairs_file": "/home/user/data/omissionbench/pairs/dataset_v2.json",
+ "dataset_version": "factorial-v1",
+ "records": 500,
+ "evaluation_omission_pairs": 293,
+ "complete": {
+  "consultations": 95,
+  "omission_pairs": 150,
+  "facts": 150,
+  "crossed_cells": 426,
+  "same_fact_triples": 276,
+  "pairs_by_stratum": {
+   "aci": 51,
+   "authored": 26,
+   "primock": 59,
+   "trapblind": 14
+  },
+  "pairs_by_residual_level": {
+   "complete": 150
+  },
+  "pairs_by_severity": {
+   "supporting": 36,
+   "critical": 85,
+   "peripheral": 29
+  },
+  "pairs_by_cell": {
+   "complete|supporting": 36,
+   "complete|critical": 85,
+   "complete|peripheral": 29
+  },
+  "note_words_median": 370,
+  "note_words_max": 1077,
+  "notes_over_clip_share": 0.4897959183673469,
+  "pairs_first_removed_site_beyond_clip": 30,
+  "pairs_first_removed_site_beyond_clip_share": 0.2,
+  "clip_words": 380,
+  "label_semantics": "labels[fi]=1 the note states fact fi (clean twin, or an errored note of another fact); 0 the note is the one fact fi was removed from",
+  "sha256": "1d11d1974551650c99530bbfbc1c4b23a47f50451c8f5d4ea0d2ee82c55f7999"
+ },
+ "all": {
+  "consultations": 112,
+  "omission_pairs": 293,
+  "facts": 248,
+  "crossed_cells": 982,
+  "same_fact_triples": 793,
+  "pairs_by_stratum": {
+   "aci": 126,
+   "authored": 52,
+   "primock": 94,
+   "trapblind": 21
+  },
+  "pairs_by_residual_level": {
+   "complete": 150,
+   "partial-strong": 57,
+   "partial-weak": 86
+  },
+  "pairs_by_severity": {
+   "supporting": 103,
+   "critical": 151,
+   "peripheral": 39
+  },
+  "pairs_by_cell": {
+   "complete|supporting": 36,
+   "partial-strong|supporting": 33,
+   "partial-weak|supporting": 34,
+   "partial-strong|critical": 22,
+   "complete|critical": 85,
+   "complete|peripheral": 29,
+   "partial-strong|peripheral": 2,
+   "partial-weak|critical": 44,
+   "partial-weak|peripheral": 8
+  },
+  "note_words_median": 444,
+  "note_words_max": 1077,
+  "notes_over_clip_share": 0.5308641975308642,
+  "pairs_first_removed_site_beyond_clip": 48,
+  "pairs_first_removed_site_beyond_clip_share": 0.16382252559726962,
+  "clip_words": 380,
+  "label_semantics": "labels[fi]=1 the note states fact fi (clean twin, or an errored note of another fact); 0 the note is the one fact fi was removed from",
+  "sha256": "c1e4c8a7f1c90763ec9f89bc0bbf6dd69403443f9586f17700e6102ca8210ef5"
+ }
+}

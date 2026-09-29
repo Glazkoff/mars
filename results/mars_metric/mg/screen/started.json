@@ -1,0 +1,11 @@
+{
+  "job_id": "7035",
+  "array_task": null,
+  "job_name": "mars-mg-screen",
+  "node": "Euler",
+  "started_utc": "2026-09-24T12:09:51.228524+00:00",
+  "python": "/home/user/.venv-mars/bin/python",
+  "cwd": "/home/user/summ-mask-benchmark",
+  "gpus": null,
+  "nvidia_smi": "No devices were found"
+}

@@ -1,0 +1,28 @@
+{
+ "units": "/home/user/results/mars3/m32/units_distilled_validation.jsonl",
+ "units_name": "distilled",
+ "split": "validation",
+ "unit_set": "m2",
+ "candidate_mode": "real",
+ "shuffle_seed": 20260917,
+ "shard": "3/3",
+ "row_offset": 924,
+ "row_end": 1442,
+ "n_rows": 518,
+ "n_units": 19528,
+ "n_units_pool": 58592,
+ "batch": 64,
+ "device": "cuda",
+ "claim_word_cap": 96,
+ "systems": "lex",
+ "timings": {
+  "lex": {
+   "score_s": 1.4871230125427246,
+   "units_per_s": 13131.395207589772,
+   "out": [
+    "distilled_lex_token_recall.part3of3.jsonl",
+    "distilled_lex_rougeL_recall.part3of3.jsonl"
+   ]
+  }
+ }
+}

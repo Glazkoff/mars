@@ -1,0 +1,51 @@
+{
+ "units": "/home/user/results/mars3/m32/units_distilled_validation.jsonl",
+ "units_name": "distilled",
+ "split": "validation",
+ "unit_set": "m2",
+ "candidate_mode": "empty",
+ "shuffle_seed": 20260917,
+ "shard": "1/1",
+ "row_offset": 0,
+ "row_end": 1442,
+ "n_rows": 1442,
+ "n_units": 58592,
+ "n_units_pool": 58592,
+ "batch": 64,
+ "device": "cuda",
+ "claim_word_cap": 96,
+ "systems": "lex,minilm,nli,summac_zs",
+ "timings": {
+  "lex": {
+   "score_s": 0.5572047233581543,
+   "units_per_s": 105153.45176343533,
+   "out": [
+    "distilled_lex_token_recall_empty.part1of1.jsonl",
+    "distilled_lex_rougeL_recall_empty.part1of1.jsonl"
+   ]
+  },
+  "minilm": {
+   "score_s": 10.136266469955444,
+   "units_per_s": 5780.432092395215,
+   "out": [
+    "distilled_emb_minilm_maxcos_empty.part1of1.jsonl"
+   ]
+  },
+  "nli": {
+   "load_s": 0.37813591957092285,
+   "score_s": 12.902156114578247,
+   "units_per_s": 4541.25647524885,
+   "out": [
+    "distilled_nli_nli_empty.part1of1.jsonl"
+   ]
+  },
+  "summac_zs": {
+   "load_s": 0.7273540496826172,
+   "score_s": 81.2726514339447,
+   "units_per_s": 720.9313214989834,
+   "out": [
+    "distilled_nli_summac_zs_empty.part1of1.jsonl"
+   ]
+  }
+ }
+}

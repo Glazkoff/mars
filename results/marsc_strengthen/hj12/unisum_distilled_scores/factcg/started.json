@@ -1,0 +1,11 @@
+{
+  "job_id": "7895",
+  "array_task": null,
+  "job_name": "mars-hj12-ufactcg",
+  "node": "Euler",
+  "started_utc": "2026-09-28T16:32:58.359627+00:00",
+  "python": "/home/user/.venv-mars/bin/python",
+  "cwd": "/home/user/summ-mask-benchmark",
+  "gpus": "0",
+  "nvidia_smi": "NVIDIA H200 NVL, 143771 MiB"
+}

@@ -1,0 +1,1349 @@
+{
+ "grid": [
+  1,
+  2,
+  3,
+  4,
+  5,
+  6,
+  7,
+  8,
+  9,
+  10,
+  11,
+  12
+ ],
+ "arms": {
+  "MARS-C humanfact / gemma+ent / 3-seed": {
+   "inventory": "gemma+ent",
+   "decomposition_s_per_document": 6.842530995570662,
+   "per_summary_seconds": 0.2913448576387949,
+   "components": {
+    "units_per_pair": {
+     "value": 94.31173260572987,
+     "provenance": "measured split-wide"
+    },
+    "verification_s_per_unit": {
+     "value": 0.001028446296925253,
+     "provenance": "measured, mean over 3 checkpoint(s)",
+     "checkpoints_timed": 3
+    },
+    "verification_passes": {
+     "value": 3,
+     "provenance": "pipeline of record seed-averages 3"
+    },
+    "aggregation_s_per_unit": {
+     "value": 3.773088513962295e-09,
+     "provenance": "measured"
+    },
+    "emission_s_per_pair": {
+     "value": 0.00035548925399780273,
+     "provenance": "measured"
+    },
+    "premise_s_per_pair": {
+     "value": 5.3560733795166015e-06,
+     "provenance": "measured"
+    },
+    "decomposition": {
+     "gemma_llm": {
+      "s_per_document": 6.759963017665389,
+      "provenance": "measured active, 0.35183 s/sentence x 19.2135 corpus sentences/document (sample's own rate was 10.8928 s/document over 30.96 sentences/document)"
+     },
+     "spacy_entity": {
+      "s_per_document": 0.08256797790527344,
+      "provenance": "measured at the timing sample's own document length"
+     }
+    },
+    "decomposition_provenance": "gemma_llm=6.7600s (measured active, 0.35183 s/sentence x 19.2135 corpus sentences/document (sample's own rate was 10.8928 s/document over 30.96 sentences/document)); spacy_entity=0.0826s (measured at the timing sample's own document length)"
+   },
+   "note": "the pipeline of record is the 3-seed arm",
+   "cost_per_summary": {
+    "1": 7.1338758532094575,
+    "2": 3.7126103554241263,
+    "3": 2.5721885228290153,
+    "4": 2.0019776065314607,
+    "5": 1.6598510567529274,
+    "6": 1.4317666902339052,
+    "7": 1.2688492855774611,
+    "8": 1.1466612320851277,
+    "9": 1.0516260793688685,
+    "10": 0.9755979571958612,
+    "11": 0.9133931299634006,
+    "12": 0.8615557739363501
+   }
+  },
+  "MARS-C humanfact / gemma+ent / 1-seed": {
+   "inventory": "gemma+ent",
+   "decomposition_s_per_document": 6.842530995570662,
+   "per_summary_seconds": 0.09735539748234485,
+   "components": {
+    "units_per_pair": {
+     "value": 94.31173260572987,
+     "provenance": "measured split-wide"
+    },
+    "verification_s_per_unit": {
+     "value": 0.001028446296925253,
+     "provenance": "measured, mean over 3 checkpoint(s)",
+     "checkpoints_timed": 3
+    },
+    "verification_passes": {
+     "value": 1,
+     "provenance": "pipeline of record seed-averages 3"
+    },
+    "aggregation_s_per_unit": {
+     "value": 0.0,
+     "provenance": "measured"
+    },
+    "emission_s_per_pair": {
+     "value": 0.00035548925399780273,
+     "provenance": "measured"
+    },
+    "premise_s_per_pair": {
+     "value": 5.3560733795166015e-06,
+     "provenance": "measured"
+    },
+    "decomposition": {
+     "gemma_llm": {
+      "s_per_document": 6.759963017665389,
+      "provenance": "measured active, 0.35183 s/sentence x 19.2135 corpus sentences/document (sample's own rate was 10.8928 s/document over 30.96 sentences/document)"
+     },
+     "spacy_entity": {
+      "s_per_document": 0.08256797790527344,
+      "provenance": "measured at the timing sample's own document length"
+     }
+    },
+    "decomposition_provenance": "gemma_llm=6.7600s (measured active, 0.35183 s/sentence x 19.2135 corpus sentences/document (sample's own rate was 10.8928 s/document over 30.96 sentences/document)); spacy_entity=0.0826s (measured at the timing sample's own document length)"
+   },
+   "note": "the pipeline of record is the 3-seed arm",
+   "cost_per_summary": {
+    "1": 6.9398863930530075,
+    "2": 3.518620895267676,
+    "3": 2.3781990626725653,
+    "4": 1.8079881463750105,
+    "5": 1.4658615965964774,
+    "6": 1.2377772300774552,
+    "7": 1.0748598254210109,
+    "8": 0.9526717719286777,
+    "9": 0.8576366192124185,
+    "10": 0.7816084970394112,
+    "11": 0.7194036698069506,
+    "12": 0.6675663137799001
+   }
+  },
+  "off-the-shelf emb:minilm_maxcos / gemma+ent": {
+   "inventory": "gemma+ent",
+   "decomposition_s_per_document": 6.842530995570662,
+   "per_summary_seconds": 0.02555902211382554,
+   "components": {
+    "units_per_pair": {
+     "value": 94.31173260572987,
+     "provenance": "measured split-wide"
+    },
+    "verification_s_per_unit": {
+     "value": 0.00016406838099161783,
+     "provenance": "measured over 6000 units"
+    },
+    "verification_passes": {
+     "value": 1,
+     "provenance": "single model, no seed ensemble"
+    },
+    "claim_rendering_s_per_unit": {
+     "value": 0.00010316807160533626,
+     "provenance": "measured"
+    },
+    "emission_s_per_pair": {
+     "value": 0.00035548925399780273,
+     "provenance": "measured"
+    },
+    "decomposition": {
+     "gemma_llm": {
+      "s_per_document": 6.759963017665389,
+      "provenance": "measured active, 0.35183 s/sentence x 19.2135 corpus sentences/document (sample's own rate was 10.8928 s/document over 30.96 sentences/document)"
+     },
+     "spacy_entity": {
+      "s_per_document": 0.08256797790527344,
+      "provenance": "measured at the timing sample's own document length"
+     }
+    },
+    "decomposition_provenance": "gemma_llm=6.7600s (measured active, 0.35183 s/sentence x 19.2135 corpus sentences/document (sample's own rate was 10.8928 s/document over 30.96 sentences/document)); spacy_entity=0.0826s (measured at the timing sample's own document length)"
+   },
+   "note": "timed on the gemma+ent sample; priced at this inventory's split-wide unit count",
+   "cost_per_summary": {
+    "1": 6.868090017684488,
+    "2": 3.4468245198991565,
+    "3": 2.306402687304046,
+    "4": 1.7361917710064911,
+    "5": 1.394065221227958,
+    "6": 1.1659808547089359,
+    "7": 1.0030634500524915,
+    "8": 0.8808753965601583,
+    "9": 0.7858402438438992,
+    "10": 0.7098121216708918,
+    "11": 0.6476072944384312,
+    "12": 0.5957699384113807
+   }
+  },
+  "off-the-shelf lex:rougeL_recall / gemma+ent": {
+   "inventory": "gemma+ent",
+   "decomposition_s_per_document": 6.842530995570662,
+   "per_summary_seconds": 0.025766216313410382,
+   "components": {
+    "units_per_pair": {
+     "value": 94.31173260572987,
+     "provenance": "measured split-wide"
+    },
+    "verification_s_per_unit": {
+     "value": 0.00016626528898874919,
+     "provenance": "measured over 6000 units"
+    },
+    "verification_passes": {
+     "value": 1,
+     "provenance": "single model, no seed ensemble"
+    },
+    "claim_rendering_s_per_unit": {
+     "value": 0.00010316807160533626,
+     "provenance": "measured"
+    },
+    "emission_s_per_pair": {
+     "value": 0.00035548925399780273,
+     "provenance": "measured"
+    },
+    "decomposition": {
+     "gemma_llm": {
+      "s_per_document": 6.759963017665389,
+      "provenance": "measured active, 0.35183 s/sentence x 19.2135 corpus sentences/document (sample's own rate was 10.8928 s/document over 30.96 sentences/document)"
+     },
+     "spacy_entity": {
+      "s_per_document": 0.08256797790527344,
+      "provenance": "measured at the timing sample's own document length"
+     }
+    },
+    "decomposition_provenance": "gemma_llm=6.7600s (measured active, 0.35183 s/sentence x 19.2135 corpus sentences/document (sample's own rate was 10.8928 s/document over 30.96 sentences/document)); spacy_entity=0.0826s (measured at the timing sample's own document length)"
+   },
+   "note": "timed on the gemma+ent sample; priced at this inventory's split-wide unit count",
+   "cost_per_summary": {
+    "1": 6.868297211884073,
+    "2": 3.4470317140987414,
+    "3": 2.306609881503631,
+    "4": 1.736398965206076,
+    "5": 1.394272415427543,
+    "6": 1.1661880489085208,
+    "7": 1.0032706442520765,
+    "8": 0.8810825907597432,
+    "9": 0.786047438043484,
+    "10": 0.7100193158704766,
+    "11": 0.647814488638016,
+    "12": 0.5959771326109655
+   }
+  },
+  "off-the-shelf lex:token_recall / gemma+ent": {
+   "inventory": "gemma+ent",
+   "decomposition_s_per_document": 6.842530995570662,
+   "per_summary_seconds": 0.01179314922347478,
+   "components": {
+    "units_per_pair": {
+     "value": 94.31173260572987,
+     "provenance": "measured split-wide"
+    },
+    "verification_s_per_unit": {
+     "value": 1.8106977144877117e-05,
+     "provenance": "measured over 6000 units"
+    },
+    "verification_passes": {
+     "value": 1,
+     "provenance": "single model, no seed ensemble"
+    },
+    "claim_rendering_s_per_unit": {
+     "value": 0.00010316807160533626,
+     "provenance": "measured"
+    },
+    "emission_s_per_pair": {
+     "value": 0.00035548925399780273,
+     "provenance": "measured"
+    },
+    "decomposition": {
+     "gemma_llm": {
+      "s_per_document": 6.759963017665389,
+      "provenance": "measured active, 0.35183 s/sentence x 19.2135 corpus sentences/document (sample's own rate was 10.8928 s/document over 30.96 sentences/document)"
+     },
+     "spacy_entity": {
+      "s_per_document": 0.08256797790527344,
+      "provenance": "measured at the timing sample's own document length"
+     }
+    },
+    "decomposition_provenance": "gemma_llm=6.7600s (measured active, 0.35183 s/sentence x 19.2135 corpus sentences/document (sample's own rate was 10.8928 s/document over 30.96 sentences/document)); spacy_entity=0.0826s (measured at the timing sample's own document length)"
+   },
+   "note": "timed on the gemma+ent sample; priced at this inventory's split-wide unit count",
+   "cost_per_summary": {
+    "1": 6.854324144794137,
+    "2": 3.433058647008806,
+    "3": 2.2926368144136955,
+    "4": 1.7224258981161404,
+    "5": 1.3802993483376074,
+    "6": 1.1522149818185852,
+    "7": 0.9892975771621408,
+    "8": 0.8671095236698075,
+    "9": 0.7720743709535484,
+    "10": 0.696046248780541,
+    "11": 0.6338414215480804,
+    "12": 0.5820040655210299
+   }
+  },
+  "off-the-shelf nli:alignscore / gemma+ent": {
+   "inventory": "gemma+ent",
+   "decomposition_s_per_document": 6.842530995570662,
+   "per_summary_seconds": 0.11712345564686825,
+   "components": {
+    "units_per_pair": {
+     "value": 94.31173260572987,
+     "provenance": "measured split-wide"
+    },
+    "verification_s_per_unit": {
+     "value": 0.001134938398996989,
+     "provenance": "measured over 900 units"
+    },
+    "verification_passes": {
+     "value": 1,
+     "provenance": "single model, no seed ensemble"
+    },
+    "claim_rendering_s_per_unit": {
+     "value": 0.00010316807160533626,
+     "provenance": "measured"
+    },
+    "emission_s_per_pair": {
+     "value": 0.00035548925399780273,
+     "provenance": "measured"
+    },
+    "decomposition": {
+     "gemma_llm": {
+      "s_per_document": 6.759963017665389,
+      "provenance": "measured active, 0.35183 s/sentence x 19.2135 corpus sentences/document (sample's own rate was 10.8928 s/document over 30.96 sentences/document)"
+     },
+     "spacy_entity": {
+      "s_per_document": 0.08256797790527344,
+      "provenance": "measured at the timing sample's own document length"
+     }
+    },
+    "decomposition_provenance": "gemma_llm=6.7600s (measured active, 0.35183 s/sentence x 19.2135 corpus sentences/document (sample's own rate was 10.8928 s/document over 30.96 sentences/document)); spacy_entity=0.0826s (measured at the timing sample's own document length)"
+   },
+   "note": "timed on the gemma+ent sample; priced at this inventory's split-wide unit count",
+   "cost_per_summary": {
+    "1": 6.9596544512175305,
+    "2": 3.5383889534321993,
+    "3": 2.3979671208370887,
+    "4": 1.827756204539534,
+    "5": 1.4856296547610008,
+    "6": 1.2575452882419786,
+    "7": 1.0946278835855343,
+    "8": 0.972439830093201,
+    "9": 0.8774046773769418,
+    "10": 0.8013765552039345,
+    "11": 0.7391717279714739,
+    "12": 0.6873343719444234
+   }
+  },
+  "off-the-shelf nli:minicheck / gemma+ent": {
+   "inventory": "gemma+ent",
+   "decomposition_s_per_document": 6.842530995570662,
+   "per_summary_seconds": 2.8406613469715976,
+   "components": {
+    "units_per_pair": {
+     "value": 94.31173260572987,
+     "provenance": "measured split-wide"
+    },
+    "verification_s_per_unit": {
+     "value": 0.03001297738817003,
+     "provenance": "measured over 900 units"
+    },
+    "verification_passes": {
+     "value": 1,
+     "provenance": "single model, no seed ensemble"
+    },
+    "claim_rendering_s_per_unit": {
+     "value": 0.00010316807160533626,
+     "provenance": "measured"
+    },
+    "emission_s_per_pair": {
+     "value": 0.00035548925399780273,
+     "provenance": "measured"
+    },
+    "decomposition": {
+     "gemma_llm": {
+      "s_per_document": 6.759963017665389,
+      "provenance": "measured active, 0.35183 s/sentence x 19.2135 corpus sentences/document (sample's own rate was 10.8928 s/document over 30.96 sentences/document)"
+     },
+     "spacy_entity": {
+      "s_per_document": 0.08256797790527344,
+      "provenance": "measured at the timing sample's own document length"
+     }
+    },
+    "decomposition_provenance": "gemma_llm=6.7600s (measured active, 0.35183 s/sentence x 19.2135 corpus sentences/document (sample's own rate was 10.8928 s/document over 30.96 sentences/document)); spacy_entity=0.0826s (measured at the timing sample's own document length)"
+   },
+   "note": "timed on the gemma+ent sample; priced at this inventory's split-wide unit count",
+   "cost_per_summary": {
+    "1": 9.68319234254226,
+    "2": 6.261926844756928,
+    "3": 5.121505012161818,
+    "4": 4.551294095864263,
+    "5": 4.20916754608573,
+    "6": 3.981083179566708,
+    "7": 3.8181657749102635,
+    "8": 3.6959777214179304,
+    "9": 3.6009425687016714,
+    "10": 3.5249144465286637,
+    "11": 3.462709619296203,
+    "12": 3.4108722632691526
+   }
+  },
+  "off-the-shelf nli:nli / gemma+ent": {
+   "inventory": "gemma+ent",
+   "decomposition_s_per_document": 6.842530995570662,
+   "per_summary_seconds": 0.10570219722089545,
+   "components": {
+    "units_per_pair": {
+     "value": 94.31173260572987,
+     "provenance": "measured split-wide"
+    },
+    "verification_s_per_unit": {
+     "value": 0.0010138372580210367,
+     "provenance": "measured over 6000 units"
+    },
+    "verification_passes": {
+     "value": 1,
+     "provenance": "single model, no seed ensemble"
+    },
+    "claim_rendering_s_per_unit": {
+     "value": 0.00010316807160533626,
+     "provenance": "measured"
+    },
+    "emission_s_per_pair": {
+     "value": 0.00035548925399780273,
+     "provenance": "measured"
+    },
+    "decomposition": {
+     "gemma_llm": {
+      "s_per_document": 6.759963017665389,
+      "provenance": "measured active, 0.35183 s/sentence x 19.2135 corpus sentences/document (sample's own rate was 10.8928 s/document over 30.96 sentences/document)"
+     },
+     "spacy_entity": {
+      "s_per_document": 0.08256797790527344,
+      "provenance": "measured at the timing sample's own document length"
+     }
+    },
+    "decomposition_provenance": "gemma_llm=6.7600s (measured active, 0.35183 s/sentence x 19.2135 corpus sentences/document (sample's own rate was 10.8928 s/document over 30.96 sentences/document)); spacy_entity=0.0826s (measured at the timing sample's own document length)"
+   },
+   "note": "timed on the gemma+ent sample; priced at this inventory's split-wide unit count",
+   "cost_per_summary": {
+    "1": 6.948233192791558,
+    "2": 3.5269676950062268,
+    "3": 2.386545862411116,
+    "4": 1.816334946113561,
+    "5": 1.4742083963350279,
+    "6": 1.2461240298160057,
+    "7": 1.0832066251595616,
+    "8": 0.9610185716672283,
+    "9": 0.8659834189509691,
+    "10": 0.7899552967779617,
+    "11": 0.7277504695455012,
+    "12": 0.6759131135184506
+   }
+  },
+  "off-the-shelf nli:summac_zs / gemma+ent": {
+   "inventory": "gemma+ent",
+   "decomposition_s_per_document": 6.842530995570662,
+   "per_summary_seconds": 0.32880745126439387,
+   "components": {
+    "units_per_pair": {
+     "value": 94.31173260572987,
+     "provenance": "measured split-wide"
+    },
+    "verification_s_per_unit": {
+     "value": 0.0033794523080190025,
+     "provenance": "measured over 6000 units"
+    },
+    "verification_passes": {
+     "value": 1,
+     "provenance": "single model, no seed ensemble"
+    },
+    "claim_rendering_s_per_unit": {
+     "value": 0.00010316807160533626,
+     "provenance": "measured"
+    },
+    "emission_s_per_pair": {
+     "value": 0.00035548925399780273,
+     "provenance": "measured"
+    },
+    "decomposition": {
+     "gemma_llm": {
+      "s_per_document": 6.759963017665389,
+      "provenance": "measured active, 0.35183 s/sentence x 19.2135 corpus sentences/document (sample's own rate was 10.8928 s/document over 30.96 sentences/document)"
+     },
+     "spacy_entity": {
+      "s_per_document": 0.08256797790527344,
+      "provenance": "measured at the timing sample's own document length"
+     }
+    },
+    "decomposition_provenance": "gemma_llm=6.7600s (measured active, 0.35183 s/sentence x 19.2135 corpus sentences/document (sample's own rate was 10.8928 s/document over 30.96 sentences/document)); spacy_entity=0.0826s (measured at the timing sample's own document length)"
+   },
+   "note": "timed on the gemma+ent sample; priced at this inventory's split-wide unit count",
+   "cost_per_summary": {
+    "1": 7.1713384468350565,
+    "2": 3.750072949049725,
+    "3": 2.6096511164546143,
+    "4": 2.0394402001570593,
+    "5": 1.6973136503785264,
+    "6": 1.4692292838595042,
+    "7": 1.30631187920306,
+    "8": 1.1841238257107267,
+    "9": 1.0890886729944675,
+    "10": 1.01306055082146,
+    "11": 0.9508557235889996,
+    "12": 0.899018367561949
+   }
+  },
+  "LLM cell judge (low) / gemma+ent": {
+   "inventory": "gemma+ent",
+   "decomposition_s_per_document": 6.842530995570662,
+   "per_summary_seconds": 15.844726567016618,
+   "components": {
+    "units_per_pair": {
+     "value": 94.31173260572987,
+     "provenance": "measured split-wide"
+    },
+    "verification_s_per_cell": {
+     "value": 0.168,
+     "provenance": "campaign brief, forced-choice coverage judge, 0.168-0.203 GPU-s/cell"
+    },
+    "emission_s_per_pair": {
+     "value": 0.00035548925399780273,
+     "provenance": "measured"
+    },
+    "decomposition": {
+     "gemma_llm": {
+      "s_per_document": 6.759963017665389,
+      "provenance": "measured active, 0.35183 s/sentence x 19.2135 corpus sentences/document (sample's own rate was 10.8928 s/document over 30.96 sentences/document)"
+     },
+     "spacy_entity": {
+      "s_per_document": 0.08256797790527344,
+      "provenance": "measured at the timing sample's own document length"
+     }
+    },
+    "decomposition_provenance": "gemma_llm=6.7600s (measured active, 0.35183 s/sentence x 19.2135 corpus sentences/document (sample's own rate was 10.8928 s/document over 30.96 sentences/document)); spacy_entity=0.0826s (measured at the timing sample's own document length)"
+   },
+   "note": "judges every inventory cell; needs the same inventory, so amortises the same way",
+   "cost_per_summary": {
+    "1": 22.68725756258728,
+    "2": 19.26599206480195,
+    "3": 18.12557023220684,
+    "4": 17.555359315909286,
+    "5": 17.21323276613075,
+    "6": 16.985148399611727,
+    "7": 16.822230994955284,
+    "8": 16.70004294146295,
+    "9": 16.605007788746693,
+    "10": 16.528979666573683,
+    "11": 16.466774839341223,
+    "12": 16.414937483314173
+   }
+  },
+  "LLM cell judge (high) / gemma+ent": {
+   "inventory": "gemma+ent",
+   "decomposition_s_per_document": 6.842530995570662,
+   "per_summary_seconds": 19.145637208217163,
+   "components": {
+    "units_per_pair": {
+     "value": 94.31173260572987,
+     "provenance": "measured split-wide"
+    },
+    "verification_s_per_cell": {
+     "value": 0.203,
+     "provenance": "campaign brief, forced-choice coverage judge, 0.168-0.203 GPU-s/cell"
+    },
+    "emission_s_per_pair": {
+     "value": 0.00035548925399780273,
+     "provenance": "measured"
+    },
+    "decomposition": {
+     "gemma_llm": {
+      "s_per_document": 6.759963017665389,
+      "provenance": "measured active, 0.35183 s/sentence x 19.2135 corpus sentences/document (sample's own rate was 10.8928 s/document over 30.96 sentences/document)"
+     },
+     "spacy_entity": {
+      "s_per_document": 0.08256797790527344,
+      "provenance": "measured at the timing sample's own document length"
+     }
+    },
+    "decomposition_provenance": "gemma_llm=6.7600s (measured active, 0.35183 s/sentence x 19.2135 corpus sentences/document (sample's own rate was 10.8928 s/document over 30.96 sentences/document)); spacy_entity=0.0826s (measured at the timing sample's own document length)"
+   },
+   "note": "judges every inventory cell; needs the same inventory, so amortises the same way",
+   "cost_per_summary": {
+    "1": 25.988168203787826,
+    "2": 22.566902706002494,
+    "3": 21.426480873407385,
+    "4": 20.85626995710983,
+    "5": 20.514143407331296,
+    "6": 20.286059040812273,
+    "7": 20.12314163615583,
+    "8": 20.000953582663495,
+    "9": 19.90591842994724,
+    "10": 19.829890307774228,
+    "11": 19.76768548054177,
+    "12": 19.715848124514718
+   }
+  },
+  "MARS-C humanfact / distilled / 3-seed": {
+   "inventory": "distilled",
+   "decomposition_s_per_document": 0.5804708106224886,
+   "per_summary_seconds": 0.13542281030259387,
+   "components": {
+    "units_per_pair": {
+     "value": 40.63245492371706,
+     "provenance": "measured split-wide"
+    },
+    "verification_s_per_unit": {
+     "value": 0.00110799675447899,
+     "provenance": "measured, mean over 3 checkpoint(s)",
+     "checkpoints_timed": 3
+    },
+    "verification_passes": {
+     "value": 3,
+     "provenance": "pipeline of record seed-averages 3"
+    },
+    "aggregation_s_per_unit": {
+     "value": 1.979433426322326e-09,
+     "provenance": "measured"
+    },
+    "emission_s_per_pair": {
+     "value": 0.00035548925399780273,
+     "provenance": "measured"
+    },
+    "premise_s_per_pair": {
+     "value": 5.3560733795166015e-06,
+     "provenance": "measured"
+    },
+    "decomposition": {
+     "distilled_segmenter": {
+      "s_per_document": 0.5804708106224886,
+      "provenance": "measured active, 0.03021 s/sentence x 19.2135 corpus sentences/document (sample's own rate was 0.8357 s/document over 27.66 sentences/document)"
+     }
+    },
+    "decomposition_provenance": "distilled_segmenter=0.5805s (measured active, 0.03021 s/sentence x 19.2135 corpus sentences/document (sample's own rate was 0.8357 s/document over 27.66 sentences/document))"
+   },
+   "note": "the pipeline of record is the 3-seed arm",
+   "cost_per_summary": {
+    "1": 0.7158936209250825,
+    "2": 0.4256582156138382,
+    "3": 0.32891308051009005,
+    "4": 0.280540512958216,
+    "5": 0.2515169724270916,
+    "6": 0.23216794540634197,
+    "7": 0.21834721182009226,
+    "8": 0.20798166163040493,
+    "9": 0.19991956703842595,
+    "10": 0.19346989136484272,
+    "11": 0.18819288399554737,
+    "12": 0.18379537785446792
+   }
+  },
+  "MARS-C humanfact / distilled / 1-seed": {
+   "inventory": "distilled",
+   "decomposition_s_per_document": 0.5804708106224886,
+   "per_summary_seconds": 0.04538147350936968,
+   "components": {
+    "units_per_pair": {
+     "value": 40.63245492371706,
+     "provenance": "measured split-wide"
+    },
+    "verification_s_per_unit": {
+     "value": 0.00110799675447899,
+     "provenance": "measured, mean over 3 checkpoint(s)",
+     "checkpoints_timed": 3
+    },
+    "verification_passes": {
+     "value": 1,
+     "provenance": "pipeline of record seed-averages 3"
+    },
+    "aggregation_s_per_unit": {
+     "value": 0.0,
+     "provenance": "measured"
+    },
+    "emission_s_per_pair": {
+     "value": 0.00035548925399780273,
+     "provenance": "measured"
+    },
+    "premise_s_per_pair": {
+     "value": 5.3560733795166015e-06,
+     "provenance": "measured"
+    },
+    "decomposition": {
+     "distilled_segmenter": {
+      "s_per_document": 0.5804708106224886,
+      "provenance": "measured active, 0.03021 s/sentence x 19.2135 corpus sentences/document (sample's own rate was 0.8357 s/document over 27.66 sentences/document)"
+     }
+    },
+    "decomposition_provenance": "distilled_segmenter=0.5805s (measured active, 0.03021 s/sentence x 19.2135 corpus sentences/document (sample's own rate was 0.8357 s/document over 27.66 sentences/document))"
+   },
+   "note": "the pipeline of record is the 3-seed arm",
+   "cost_per_summary": {
+    "1": 0.6258522841318583,
+    "2": 0.335616878820614,
+    "3": 0.23887174371686587,
+    "4": 0.19049917616499185,
+    "5": 0.1614756356338674,
+    "6": 0.14212660861311777,
+    "7": 0.12830587502686805,
+    "8": 0.11794032483718075,
+    "9": 0.10987823024520174,
+    "10": 0.10342855457161854,
+    "11": 0.09815154720232319,
+    "12": 0.09375404106124373
+   }
+  },
+  "off-the-shelf emb:minilm_maxcos / distilled": {
+   "inventory": "distilled",
+   "decomposition_s_per_document": 0.5804708106224886,
+   "per_summary_seconds": 0.011213962368117591,
+   "components": {
+    "units_per_pair": {
+     "value": 40.63245492371706,
+     "provenance": "measured split-wide"
+    },
+    "verification_s_per_unit": {
+     "value": 0.00016406838099161783,
+     "provenance": "measured over 6000 units"
+    },
+    "verification_passes": {
+     "value": 1,
+     "provenance": "single model, no seed ensemble"
+    },
+    "claim_rendering_s_per_unit": {
+     "value": 0.00010316807160533626,
+     "provenance": "measured"
+    },
+    "emission_s_per_pair": {
+     "value": 0.00035548925399780273,
+     "provenance": "measured"
+    },
+    "decomposition": {
+     "distilled_segmenter": {
+      "s_per_document": 0.5804708106224886,
+      "provenance": "measured active, 0.03021 s/sentence x 19.2135 corpus sentences/document (sample's own rate was 0.8357 s/document over 27.66 sentences/document)"
+     }
+    },
+    "decomposition_provenance": "distilled_segmenter=0.5805s (measured active, 0.03021 s/sentence x 19.2135 corpus sentences/document (sample's own rate was 0.8357 s/document over 27.66 sentences/document))"
+   },
+   "note": "timed on the gemma+ent sample; priced at this inventory's split-wide unit count",
+   "cost_per_summary": {
+    "1": 0.5916847729906062,
+    "2": 0.3014493676793619,
+    "3": 0.2047042325756138,
+    "4": 0.15633166502373974,
+    "5": 0.1273081244926153,
+    "6": 0.10795909747186569,
+    "7": 0.09413836388561596,
+    "8": 0.08377281369592866,
+    "9": 0.07571071910394965,
+    "10": 0.06926104343036645,
+    "11": 0.0639840360610711,
+    "12": 0.059586529919991645
+   }
+  },
+  "off-the-shelf lex:rougeL_recall / distilled": {
+   "inventory": "distilled",
+   "decomposition_s_per_document": 0.5804708106224886,
+   "per_summary_seconds": 0.011303228133282585,
+   "components": {
+    "units_per_pair": {
+     "value": 40.63245492371706,
+     "provenance": "measured split-wide"
+    },
+    "verification_s_per_unit": {
+     "value": 0.00016626528898874919,
+     "provenance": "measured over 6000 units"
+    },
+    "verification_passes": {
+     "value": 1,
+     "provenance": "single model, no seed ensemble"
+    },
+    "claim_rendering_s_per_unit": {
+     "value": 0.00010316807160533626,
+     "provenance": "measured"
+    },
+    "emission_s_per_pair": {
+     "value": 0.00035548925399780273,
+     "provenance": "measured"
+    },
+    "decomposition": {
+     "distilled_segmenter": {
+      "s_per_document": 0.5804708106224886,
+      "provenance": "measured active, 0.03021 s/sentence x 19.2135 corpus sentences/document (sample's own rate was 0.8357 s/document over 27.66 sentences/document)"
+     }
+    },
+    "decomposition_provenance": "distilled_segmenter=0.5805s (measured active, 0.03021 s/sentence x 19.2135 corpus sentences/document (sample's own rate was 0.8357 s/document over 27.66 sentences/document))"
+   },
+   "note": "timed on the gemma+ent sample; priced at this inventory's split-wide unit count",
+   "cost_per_summary": {
+    "1": 0.5917740387557712,
+    "2": 0.3015386334445269,
+    "3": 0.20479349834077878,
+    "4": 0.15642093078890473,
+    "5": 0.1273973902577803,
+    "6": 0.10804836323703068,
+    "7": 0.09422762965078096,
+    "8": 0.08386207946109367,
+    "9": 0.07579998486911466,
+    "10": 0.06935030919553145,
+    "11": 0.06407330182623609,
+    "12": 0.059675795685156637
+   }
+  },
+  "off-the-shelf lex:token_recall / distilled": {
+   "inventory": "distilled",
+   "decomposition_s_per_document": 0.5804708106224886,
+   "per_summary_seconds": 0.005283192205712437,
+   "components": {
+    "units_per_pair": {
+     "value": 40.63245492371706,
+     "provenance": "measured split-wide"
+    },
+    "verification_s_per_unit": {
+     "value": 1.8106977144877117e-05,
+     "provenance": "measured over 6000 units"
+    },
+    "verification_passes": {
+     "value": 1,
+     "provenance": "single model, no seed ensemble"
+    },
+    "claim_rendering_s_per_unit": {
+     "value": 0.00010316807160533626,
+     "provenance": "measured"
+    },
+    "emission_s_per_pair": {
+     "value": 0.00035548925399780273,
+     "provenance": "measured"
+    },
+    "decomposition": {
+     "distilled_segmenter": {
+      "s_per_document": 0.5804708106224886,
+      "provenance": "measured active, 0.03021 s/sentence x 19.2135 corpus sentences/document (sample's own rate was 0.8357 s/document over 27.66 sentences/document)"
+     }
+    },
+    "decomposition_provenance": "distilled_segmenter=0.5805s (measured active, 0.03021 s/sentence x 19.2135 corpus sentences/document (sample's own rate was 0.8357 s/document over 27.66 sentences/document))"
+   },
+   "note": "timed on the gemma+ent sample; priced at this inventory's split-wide unit count",
+   "cost_per_summary": {
+    "1": 0.585754002828201,
+    "2": 0.29551859751695675,
+    "3": 0.19877346241320865,
+    "4": 0.1504008948613346,
+    "5": 0.12137735433021016,
+    "6": 0.10202832730946054,
+    "7": 0.08820759372321081,
+    "8": 0.07784204353352352,
+    "9": 0.0697799489415445,
+    "10": 0.0633302732679613,
+    "11": 0.05805326589866595,
+    "12": 0.05365575975758649
+   }
+  },
+  "off-the-shelf nli:alignscore / distilled": {
+   "inventory": "distilled",
+   "decomposition_s_per_document": 0.5804708106224886,
+   "per_summary_seconds": 0.05066279461150921,
+   "components": {
+    "units_per_pair": {
+     "value": 40.63245492371706,
+     "provenance": "measured split-wide"
+    },
+    "verification_s_per_unit": {
+     "value": 0.001134938398996989,
+     "provenance": "measured over 900 units"
+    },
+    "verification_passes": {
+     "value": 1,
+     "provenance": "single model, no seed ensemble"
+    },
+    "claim_rendering_s_per_unit": {
+     "value": 0.00010316807160533626,
+     "provenance": "measured"
+    },
+    "emission_s_per_pair": {
+     "value": 0.00035548925399780273,
+     "provenance": "measured"
+    },
+    "decomposition": {
+     "distilled_segmenter": {
+      "s_per_document": 0.5804708106224886,
+      "provenance": "measured active, 0.03021 s/sentence x 19.2135 corpus sentences/document (sample's own rate was 0.8357 s/document over 27.66 sentences/document)"
+     }
+    },
+    "decomposition_provenance": "distilled_segmenter=0.5805s (measured active, 0.03021 s/sentence x 19.2135 corpus sentences/document (sample's own rate was 0.8357 s/document over 27.66 sentences/document))"
+   },
+   "note": "timed on the gemma+ent sample; priced at this inventory's split-wide unit count",
+   "cost_per_summary": {
+    "1": 0.6311336052339979,
+    "2": 0.3408981999227535,
+    "3": 0.24415306481900542,
+    "4": 0.19578049726713137,
+    "5": 0.16675695673600693,
+    "6": 0.14740792971525732,
+    "7": 0.13358719612900757,
+    "8": 0.12322164593932028,
+    "9": 0.11515955134734127,
+    "10": 0.10870987567375806,
+    "11": 0.10343286830446272,
+    "12": 0.09903536216338327
+   }
+  },
+  "off-the-shelf nli:minicheck / distilled": {
+   "inventory": "distilled",
+   "decomposition_s_per_document": 0.5804708106224886,
+   "per_summary_seconds": 1.2240484121244266,
+   "components": {
+    "units_per_pair": {
+     "value": 40.63245492371706,
+     "provenance": "measured split-wide"
+    },
+    "verification_s_per_unit": {
+     "value": 0.03001297738817003,
+     "provenance": "measured over 900 units"
+    },
+    "verification_passes": {
+     "value": 1,
+     "provenance": "single model, no seed ensemble"
+    },
+    "claim_rendering_s_per_unit": {
+     "value": 0.00010316807160533626,
+     "provenance": "measured"
+    },
+    "emission_s_per_pair": {
+     "value": 0.00035548925399780273,
+     "provenance": "measured"
+    },
+    "decomposition": {
+     "distilled_segmenter": {
+      "s_per_document": 0.5804708106224886,
+      "provenance": "measured active, 0.03021 s/sentence x 19.2135 corpus sentences/document (sample's own rate was 0.8357 s/document over 27.66 sentences/document)"
+     }
+    },
+    "decomposition_provenance": "distilled_segmenter=0.5805s (measured active, 0.03021 s/sentence x 19.2135 corpus sentences/document (sample's own rate was 0.8357 s/document over 27.66 sentences/document))"
+   },
+   "note": "timed on the gemma+ent sample; priced at this inventory's split-wide unit count",
+   "cost_per_summary": {
+    "1": 1.8045192227469151,
+    "2": 1.514283817435671,
+    "3": 1.417538682331923,
+    "4": 1.3691661147800487,
+    "5": 1.3401425742489244,
+    "6": 1.3207935472281747,
+    "7": 1.306972813641925,
+    "8": 1.2966072634522376,
+    "9": 1.2885451688602587,
+    "10": 1.2820954931866755,
+    "11": 1.2768184858173801,
+    "12": 1.2724209796763006
+   }
+  },
+  "off-the-shelf nli:nli / distilled": {
+   "inventory": "distilled",
+   "decomposition_s_per_document": 0.5804708106224886,
+   "per_summary_seconds": 0.045742157959593126,
+   "components": {
+    "units_per_pair": {
+     "value": 40.63245492371706,
+     "provenance": "measured split-wide"
+    },
+    "verification_s_per_unit": {
+     "value": 0.0010138372580210367,
+     "provenance": "measured over 6000 units"
+    },
+    "verification_passes": {
+     "value": 1,
+     "provenance": "single model, no seed ensemble"
+    },
+    "claim_rendering_s_per_unit": {
+     "value": 0.00010316807160533626,
+     "provenance": "measured"
+    },
+    "emission_s_per_pair": {
+     "value": 0.00035548925399780273,
+     "provenance": "measured"
+    },
+    "decomposition": {
+     "distilled_segmenter": {
+      "s_per_document": 0.5804708106224886,
+      "provenance": "measured active, 0.03021 s/sentence x 19.2135 corpus sentences/document (sample's own rate was 0.8357 s/document over 27.66 sentences/document)"
+     }
+    },
+    "decomposition_provenance": "distilled_segmenter=0.5805s (measured active, 0.03021 s/sentence x 19.2135 corpus sentences/document (sample's own rate was 0.8357 s/document over 27.66 sentences/document))"
+   },
+   "note": "timed on the gemma+ent sample; priced at this inventory's split-wide unit count",
+   "cost_per_summary": {
+    "1": 0.6262129685820818,
+    "2": 0.33597756327083744,
+    "3": 0.23923242816708934,
+    "4": 0.1908598606152153,
+    "5": 0.16183632008409085,
+    "6": 0.14248729306334124,
+    "7": 0.1286665594770915,
+    "8": 0.1183010092874042,
+    "9": 0.11023891469542518,
+    "10": 0.10378923902184198,
+    "11": 0.09851223165254663,
+    "12": 0.09411472551146718
+   }
+  },
+  "off-the-shelf nli:summac_zs / distilled": {
+   "inventory": "distilled",
+   "decomposition_s_per_document": 0.5804708106224886,
+   "per_summary_seconds": 0.14186290484550218,
+   "components": {
+    "units_per_pair": {
+     "value": 40.63245492371706,
+     "provenance": "measured split-wide"
+    },
+    "verification_s_per_unit": {
+     "value": 0.0033794523080190025,
+     "provenance": "measured over 6000 units"
+    },
+    "verification_passes": {
+     "value": 1,
+     "provenance": "single model, no seed ensemble"
+    },
+    "claim_rendering_s_per_unit": {
+     "value": 0.00010316807160533626,
+     "provenance": "measured"
+    },
+    "emission_s_per_pair": {
+     "value": 0.00035548925399780273,
+     "provenance": "measured"
+    },
+    "decomposition": {
+     "distilled_segmenter": {
+      "s_per_document": 0.5804708106224886,
+      "provenance": "measured active, 0.03021 s/sentence x 19.2135 corpus sentences/document (sample's own rate was 0.8357 s/document over 27.66 sentences/document)"
+     }
+    },
+    "decomposition_provenance": "distilled_segmenter=0.5805s (measured active, 0.03021 s/sentence x 19.2135 corpus sentences/document (sample's own rate was 0.8357 s/document over 27.66 sentences/document))"
+   },
+   "note": "timed on the gemma+ent sample; priced at this inventory's split-wide unit count",
+   "cost_per_summary": {
+    "1": 0.7223337154679907,
+    "2": 0.4320983101567465,
+    "3": 0.3353531750529984,
+    "4": 0.2869806075011243,
+    "5": 0.25795706696999987,
+    "6": 0.23860803994925028,
+    "7": 0.22478730636300054,
+    "8": 0.21442175617331327,
+    "9": 0.20635966158133423,
+    "10": 0.19990998590775105,
+    "11": 0.19463297853845568,
+    "12": 0.19023547239737623
+   }
+  },
+  "LLM cell judge (low) / distilled": {
+   "inventory": "distilled",
+   "decomposition_s_per_document": 0.5804708106224886,
+   "per_summary_seconds": 6.826607916438465,
+   "components": {
+    "units_per_pair": {
+     "value": 40.63245492371706,
+     "provenance": "measured split-wide"
+    },
+    "verification_s_per_cell": {
+     "value": 0.168,
+     "provenance": "campaign brief, forced-choice coverage judge, 0.168-0.203 GPU-s/cell"
+    },
+    "emission_s_per_pair": {
+     "value": 0.00035548925399780273,
+     "provenance": "measured"
+    },
+    "decomposition": {
+     "distilled_segmenter": {
+      "s_per_document": 0.5804708106224886,
+      "provenance": "measured active, 0.03021 s/sentence x 19.2135 corpus sentences/document (sample's own rate was 0.8357 s/document over 27.66 sentences/document)"
+     }
+    },
+    "decomposition_provenance": "distilled_segmenter=0.5805s (measured active, 0.03021 s/sentence x 19.2135 corpus sentences/document (sample's own rate was 0.8357 s/document over 27.66 sentences/document))"
+   },
+   "note": "judges every inventory cell; needs the same inventory, so amortises the same way",
+   "cost_per_summary": {
+    "1": 7.407078727060953,
+    "2": 7.116843321749709,
+    "3": 7.020098186645961,
+    "4": 6.971725619094087,
+    "5": 6.942702078562962,
+    "6": 6.923353051542213,
+    "7": 6.909532317955963,
+    "8": 6.899166767766276,
+    "9": 6.891104673174297,
+    "10": 6.884654997500713,
+    "11": 6.8793779901314185,
+    "12": 6.874980483990339
+   }
+  },
+  "LLM cell judge (high) / distilled": {
+   "inventory": "distilled",
+   "decomposition_s_per_document": 0.5804708106224886,
+   "per_summary_seconds": 8.248743838768563,
+   "components": {
+    "units_per_pair": {
+     "value": 40.63245492371706,
+     "provenance": "measured split-wide"
+    },
+    "verification_s_per_cell": {
+     "value": 0.203,
+     "provenance": "campaign brief, forced-choice coverage judge, 0.168-0.203 GPU-s/cell"
+    },
+    "emission_s_per_pair": {
+     "value": 0.00035548925399780273,
+     "provenance": "measured"
+    },
+    "decomposition": {
+     "distilled_segmenter": {
+      "s_per_document": 0.5804708106224886,
+      "provenance": "measured active, 0.03021 s/sentence x 19.2135 corpus sentences/document (sample's own rate was 0.8357 s/document over 27.66 sentences/document)"
+     }
+    },
+    "decomposition_provenance": "distilled_segmenter=0.5805s (measured active, 0.03021 s/sentence x 19.2135 corpus sentences/document (sample's own rate was 0.8357 s/document over 27.66 sentences/document))"
+   },
+   "note": "judges every inventory cell; needs the same inventory, so amortises the same way",
+   "cost_per_summary": {
+    "1": 8.829214649391051,
+    "2": 8.538979244079808,
+    "3": 8.44223410897606,
+    "4": 8.393861541424185,
+    "5": 8.36483800089306,
+    "6": 8.345488973872312,
+    "7": 8.331668240286062,
+    "8": 8.321302690096374,
+    "9": 8.313240595504395,
+    "10": 8.306790919830812,
+    "11": 8.301513912461516,
+    "12": 8.297116406320438
+   }
+  },
+  "generative 400-token judge (Gemma)": {
+   "inventory": null,
+   "decomposition_s_per_document": 0.0,
+   "per_summary_seconds": 4.2,
+   "components": {
+    "per_pair_seconds": {
+     "value": 4.2,
+     "provenance": "campaign brief, generative 400-token judge, Gemma, GPU-s/pair"
+    }
+   },
+   "note": "inventory-free: flat in summaries per source",
+   "cost_per_summary": {
+    "1": 4.2,
+    "2": 4.2,
+    "3": 4.2,
+    "4": 4.2,
+    "5": 4.2,
+    "6": 4.2,
+    "7": 4.2,
+    "8": 4.2,
+    "9": 4.2,
+    "10": 4.2,
+    "11": 4.2,
+    "12": 4.2
+   }
+  },
+  "generative 400-token judge (Qwen3.8-27B)": {
+   "inventory": null,
+   "decomposition_s_per_document": 0.0,
+   "per_summary_seconds": 2.1,
+   "components": {
+    "per_pair_seconds": {
+     "value": 2.1,
+     "provenance": "campaign brief, generative 400-token judge, Qwen3.8-27B, GPU-s/pair"
+    }
+   },
+   "note": "inventory-free: flat in summaries per source",
+   "cost_per_summary": {
+    "1": 2.1,
+    "2": 2.1,
+    "3": 2.1,
+    "4": 2.1,
+    "5": 2.1,
+    "6": 2.1,
+    "7": 2.1,
+    "8": 2.1,
+    "9": 2.1,
+    "10": 2.1,
+    "11": 2.1,
+    "12": 2.1
+   }
+  },
+  "MARS-2 recovery (historical)": {
+   "inventory": null,
+   "decomposition_s_per_document": 0.0,
+   "per_summary_seconds": 0.82,
+   "components": {
+    "per_pair_seconds": {
+     "value": 0.82,
+     "provenance": "appendix_marsc.tex cost paragraph, MARS-2 recovery, historical measurement"
+    }
+   },
+   "note": "inventory-free: flat in summaries per source",
+   "cost_per_summary": {
+    "1": 0.82,
+    "2": 0.82,
+    "3": 0.82,
+    "4": 0.82,
+    "5": 0.82,
+    "6": 0.82,
+    "7": 0.82,
+    "8": 0.82,
+    "9": 0.82,
+    "10": 0.82,
+    "11": 0.82,
+    "12": 0.82
+   }
+  },
+  "MARS-2 released one-pass tagger (historical)": {
+   "inventory": null,
+   "decomposition_s_per_document": 0.0,
+   "per_summary_seconds": 0.013,
+   "components": {
+    "per_pair_seconds": {
+     "value": 0.013,
+     "provenance": "appendix_marsc.tex cost paragraph, released one-pass tagger, historical"
+    }
+   },
+   "note": "inventory-free: flat in summaries per source",
+   "cost_per_summary": {
+    "1": 0.013,
+    "2": 0.013,
+    "3": 0.013,
+    "4": 0.013,
+    "5": 0.013,
+    "6": 0.013,
+    "7": 0.013,
+    "8": 0.013,
+    "9": 0.013,
+    "10": 0.013,
+    "11": 0.013,
+    "12": 0.013
+   }
+  }
+ },
+ "markers": {
+  "one_new_summary_per_new_source": 1,
+  "rose_summaries_per_source_split_wide": 7.71578947368421,
+  "rose_summaries_per_source_g4_window": 11.7647
+ },
+ "definition": "cost_per_summary(s) = decomposition_s_per_document / s + per_summary_seconds",
+ "built_utc": "2026-09-18T11:31:29.028668+00:00",
+ "decomposition_normalisation": {
+  "tasks_file": "/home/user/results/mars3/m32/decompose_tasks.jsonl",
+  "sentences": 38158,
+  "documents": 1986,
+  "corpus_sentences_per_document": 19.2134944612286,
+  "why": "seconds per sentence is the invariant decomposition rate; the timing sample's documents are longer than the corpus average, so a per-document figure read off the sample is not the corpus per-document figure"
+ },
+ "g4_denominator_audit": {
+  "gemma": {
+   "published_s_per_document": 6.637462235649547,
+   "published_provenance": "results/marsc/g4/cost_table.json, sacct Elapsed of 8 array tasks / 1986 documents (ALLOCATION time)",
+   "measured_s_per_sentence_active": 0.3518341252970141,
+   "measured_s_per_document_at_corpus_length": 6.759963017665389,
+   "ratio_measured_over_published": 1.0184559667033426
+  },
+  "distilled": {
+   "published_s_per_document": 0.2366565961732125,
+   "published_provenance": "results/marsc/g4/cost_table.json, sacct Elapsed of the distil job / 1986 documents (ALLOCATION time, TRAIN+PREDICT)",
+   "measured_s_per_sentence_active": 0.030211620889361666,
+   "measured_s_per_document_at_corpus_length": 0.5804708106224886,
+   "ratio_measured_over_published": 2.4527979359494942,
+   "distil_job_record": {
+    "file": "/home/user/results/mars3/m32/distill_result.json",
+    "train_sentences": 27207,
+    "predicted_sentences": 10951,
+    "job_seconds": 449.5228362083435,
+    "finding": "the published 0.2367 s/document divides this job's whole elapsed time -- which covers TRAINING on 27207 sentences as well as PREDICTION on 10951 -- by 1,986 documents, while the segmenter predicted only for the validation+test documents. It therefore charges a one-off training cost to inference and divides by a document count the segmenter never ran on, and it UNDERSTATES the per-document inference cost of the cheap arm the paper promotes."
+   }
+  }
+ },
+ "inputs": [
+  "/home/user/results/marsc_strengthen/b6b8/b6/stage_times_gpu.json",
+  "/home/user/results/marsc_strengthen/b6b8/b6/stage_times_cpu.json"
+ ],
+ "declared_constants": {
+  "llm_cell_judge_s_per_cell_low": {
+   "value": 0.168,
+   "provenance": "campaign brief, forced-choice coverage judge, 0.168-0.203 GPU-s/cell"
+  },
+  "llm_cell_judge_s_per_cell_high": {
+   "value": 0.203,
+   "provenance": "campaign brief, forced-choice coverage judge, 0.168-0.203 GPU-s/cell"
+  },
+  "generative_judge_s_per_pair_gemma": {
+   "value": 4.2,
+   "provenance": "campaign brief, generative 400-token judge, Gemma, GPU-s/pair"
+  },
+  "generative_judge_s_per_pair_qwen": {
+   "value": 2.1,
+   "provenance": "campaign brief, generative 400-token judge, Qwen3.8-27B, GPU-s/pair"
+  },
+  "mars2_recovery_s_per_pair": {
+   "value": 0.82,
+   "provenance": "appendix_marsc.tex cost paragraph, MARS-2 recovery, historical measurement"
+  },
+  "mars2_tagger_s_per_pair": {
+   "value": 0.013,
+   "provenance": "appendix_marsc.tex cost paragraph, released one-pass tagger, historical"
+  },
+  "g4_decomposition_s_per_document_allocation": {
+   "value": 6.637462235649547,
+   "provenance": "results/marsc/g4/cost_table.json, sacct Elapsed of 8 array tasks / 1986 documents (ALLOCATION time)"
+  },
+  "g4_distill_s_per_document_allocation": {
+   "value": 0.2366565961732125,
+   "provenance": "results/marsc/g4/cost_table.json, sacct Elapsed of the distil job / 1986 documents (ALLOCATION time, TRAIN+PREDICT)"
+  },
+  "minicheck_units_per_s_declared": {
+   "value": 1.36,
+   "provenance": "campaign brief, MiniCheck ~1.36 units/s on one H200"
+  }
+ },
+ "what_mc_cost_py_does_not_cover": [
+  ", AND WHY IT IS HALF-DONE",
+  "-----------------------------------------------------",
+  "`research/marsc_20260916/code/mc_cost.py` (block G4, job 4843) produced the only cost artifact in the project.",
+  "Read it before reading this file; the list below is the answer to the brief's question \"say what it does not",
+  "cover\", established by reading that source, not inferred:",
+  "1. It times ONE verifier checkpoint per label source.  The deployed emitter seed-averages THREE, so the",
+  "measured `s_per_pair` is one third of the inference cost of the pipeline of record.",
+  "2. It times only `AutoModelForSequenceClassification` at `max_length=512`, i.e. exactly the MARS-C verifier",
+  "family.  It cannot time the off-the-shelf comparators (SummaC-ZS's sentence x sentence NLI grid,",
+  "MiniCheck's Flan-T5 generator, the windowed RoBERTa-MNLI scorer, the MiniLM bi-encoder, the lexical",
+  "counters), and cannot time any generative judge.  The paper's comparison of MARS-C against off-the-shelf",
+  "verifiers is therefore a quality comparison with no cost axis.",
+  "3. Model load is excluded (`from_pretrained` happens before `t0`) -- correct for a throughput number, but it",
+  "means the figure is not comparable to the inventory figure, which is allocation wall-clock (below).",
+  "4. The inventory cost is not measured at all.  It is HARVESTED: `mc_g4_cost.sbatch` runs",
+  "`sacct -j 4704 -X -o Elapsed` and sums the *allocation* elapsed time of the eight decomposition array",
+  "tasks.  That includes model load, tokenizer build, task-file IO, checkpoint flushes and any scheduler",
+  "slack, and it is the number the paper's headline 6.637 s/document is built from.  This block re-times the",
+  "same decomposition as ACTIVE GENERATION on the current node and reports both, labelled.",
+  "5. The spaCy entity half of the `gemma+ent` inventory is never priced.  `gemma+ent` = LLM propositions PLUS a",
+  "spaCy entity pass over the same source (`m32_inventory.py`), and only the LLM half appears in the G4 table.",
+  "6. The emission rule is not priced.  `mc_diversity.py` re-segments every source into sentences and maps every",
+  "unit onto a sentence -- per-pair CPU work that a deployment pays on every summary.",
+  "7. The seed aggregation is not priced.",
+  "8. `units_per_pair` is taken from the first 200 pairs of the validation inventory, which carry 165.5 Gemma+ent",
+  "units per pair against a split-wide 94.  Every per-pair second in the G4 table is therefore inflated by",
+  "~1.76x relative to the workload the paper evaluates.  This block measures seconds per UNIT (a rate that",
+  "does not depend on the sample's unit density) and prices the curve at SPLIT-WIDE unit counts.",
+  "9. `pairs_per_document_in_sample` is likewise 11.76 in that 200-pair window; split-wide RoSE is lower.  The",
+  "amortisation denominator is re-derived here from the full inventory files.",
+  "10. There is no evidence-handling stage in the G4 table because there is none in the pipeline: the MARS-C",
+  "verifier's premise is the candidate summary alone, the source is not an input at inference",
+  "(`marsc_method.tex`).  That is a structural cost property and is reported as a measured zero, not omitted.",
+  "The off-the-shelf comparators are scored the same way (document = candidate summary), so the same holds",
+  "for them; what they do pay, and MARS-C does not, is claim RENDERING (`common.render_claim` walks the",
+  "source to turn an extracted unit into a sentence), which is timed here as its own stage."
+ ]
+}

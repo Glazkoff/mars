@@ -1,0 +1,11 @@
+{
+  "job_id": "7659",
+  "array_task": null,
+  "job_name": "mars-hj11-unisum-ev",
+  "node": "Euler",
+  "started_utc": "2026-09-27T23:01:01.215966+00:00",
+  "python": "/home/user/.venv-mars/bin/python",
+  "cwd": "/home/user/summ-mask-benchmark",
+  "gpus": null,
+  "nvidia_smi": "No devices were found"
+}

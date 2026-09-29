@@ -1,0 +1,265 @@
+{
+ "verifier": "unified_seed20260908",
+ "datasets": {
+  "AggreFact-CNN": {
+   "n_dev": 459,
+   "n_test": 558,
+   "fallback_rate_test": 0.0,
+   "facts_per_claim_test": 8.055555555555555,
+   "threshold": {
+    "whole": 0.9825,
+    "decomp_min": 0.6878,
+    "decomp_mean": 0.9786
+   },
+   "bacc_whole": 0.6716566866267465,
+   "bacc_whole_fixed05": 0.5512133627481879,
+   "bacc_decomp_min": 0.5982246034247295,
+   "bacc_decomp_min_fixed05": 0.5701229120705956,
+   "bacc_decomp_mean": 0.5847252862695662,
+   "bacc_decomp_mean_fixed05": 0.5027839058724656,
+   "bacc_whole_shuf": 0.5,
+   "bacc_decomp_min_shuf": 0.500998003992016
+  },
+  "AggreFact-XSum": {
+   "n_dev": 777,
+   "n_test": 558,
+   "fallback_rate_test": 0.005376344086021506,
+   "facts_per_claim_test": 3.195340501792115,
+   "threshold": {
+    "whole": 0.6497,
+    "decomp_min": 0.5165,
+    "decomp_mean": 0.769
+   },
+   "bacc_whole": 0.7618854829381145,
+   "bacc_whole_fixed05": 0.7487565066512435,
+   "bacc_decomp_min": 0.7254289570079044,
+   "bacc_decomp_min_fixed05": 0.7253518411413148,
+   "bacc_decomp_mean": 0.7282436861384229,
+   "bacc_decomp_mean_fixed05": 0.6416618469250048,
+   "bacc_whole_shuf": 0.5,
+   "bacc_decomp_min_shuf": 0.5
+  },
+  "ClaimVerify": {
+   "n_dev": 1093,
+   "n_test": 1088,
+   "fallback_rate_test": 0.03952205882352941,
+   "facts_per_claim_test": 2.891544117647059,
+   "threshold": {
+    "whole": 0.9619,
+    "decomp_min": 0.8407,
+    "decomp_mean": 0.9249
+   },
+   "bacc_whole": 0.7322782744340026,
+   "bacc_whole_fixed05": 0.7270008604939999,
+   "bacc_decomp_min": 0.7472775750176974,
+   "bacc_decomp_min_fixed05": 0.7281093293657354,
+   "bacc_decomp_mean": 0.7446367486043466,
+   "bacc_decomp_mean_fixed05": 0.6629809546820623,
+   "bacc_whole_shuf": 0.5012674271229405,
+   "bacc_decomp_min_shuf": 0.49792294551758925
+  },
+  "ExpertQA": {
+   "n_dev": 3773,
+   "n_test": 3702,
+   "fallback_rate_test": 0.041599135602377095,
+   "facts_per_claim_test": 3.5799567801188545,
+   "threshold": {
+    "whole": 0.532,
+    "decomp_min": 0.0926,
+    "decomp_mean": 0.7226
+   },
+   "bacc_whole": 0.6009901459664122,
+   "bacc_whole_fixed05": 0.6000837553716938,
+   "bacc_decomp_min": 0.5932666022347352,
+   "bacc_decomp_min_fixed05": 0.5955819616990691,
+   "bacc_decomp_mean": 0.6057348256124755,
+   "bacc_decomp_mean_fixed05": 0.6041154323071036,
+   "bacc_whole_shuf": 0.4987353813724186,
+   "bacc_decomp_min_shuf": 0.4992835439342739
+  },
+  "FactCheck-GPT": {
+   "n_dev": 1537,
+   "n_test": 1566,
+   "fallback_rate_test": 0.0,
+   "facts_per_claim_test": 1.686462324393359,
+   "threshold": {
+    "whole": 0.0282,
+    "decomp_min": 0.0167,
+    "decomp_mean": 0.25
+   },
+   "bacc_whole": 0.773947344895405,
+   "bacc_whole_fixed05": 0.7555046486679778,
+   "bacc_decomp_min": 0.7803839620954764,
+   "bacc_decomp_min_fixed05": 0.7521477740032183,
+   "bacc_decomp_mean": 0.7370597175040229,
+   "bacc_decomp_mean_fixed05": 0.7591386554621848,
+   "bacc_whole_shuf": 0.5050375469336671,
+   "bacc_decomp_min_shuf": 0.5011867512962632
+  },
+  "Lfqa": {
+   "n_dev": 2029,
+   "n_test": 1911,
+   "fallback_rate_test": 0.023024594453165882,
+   "facts_per_claim_test": 2.856619570905285,
+   "threshold": {
+    "whole": 0.8792,
+    "decomp_min": 0.8635,
+    "decomp_mean": 0.8784
+   },
+   "bacc_whole": 0.8599069546855769,
+   "bacc_whole_fixed05": 0.8381813254440542,
+   "bacc_decomp_min": 0.8418190133131584,
+   "bacc_decomp_min_fixed05": 0.8480436770966249,
+   "bacc_decomp_mean": 0.8502089002811686,
+   "bacc_decomp_mean_fixed05": 0.785739450535801,
+   "bacc_whole_shuf": 0.5034536297835341,
+   "bacc_decomp_min_shuf": 0.5031944805158143
+  },
+  "RAGTruth": {
+   "n_dev": 15340,
+   "n_test": 16371,
+   "fallback_rate_test": 0.035795003359599294,
+   "facts_per_claim_test": 2.997190153319895,
+   "threshold": {
+    "whole": 0.8939,
+    "decomp_min": 0.8399,
+    "decomp_mean": 0.8731
+   },
+   "bacc_whole": 0.8297891125218491,
+   "bacc_whole_fixed05": 0.8173176536666507,
+   "bacc_decomp_min": 0.8142120577707523,
+   "bacc_decomp_min_fixed05": 0.8132070713474614,
+   "bacc_decomp_mean": 0.8119794851276098,
+   "bacc_decomp_mean_fixed05": 0.6521528311970327,
+   "bacc_whole_shuf": 0.4973837479606759,
+   "bacc_decomp_min_shuf": 0.49918497479550406
+  },
+  "Reveal": {
+   "n_dev": 1656,
+   "n_test": 1710,
+   "fallback_rate_test": 0.004093567251461989,
+   "facts_per_claim_test": 1.3467836257309942,
+   "threshold": {
+    "whole": 0.4657,
+    "decomp_min": 0.0844,
+    "decomp_mean": 0.5377
+   },
+   "bacc_whole": 0.9146564885496182,
+   "bacc_whole_fixed05": 0.9153148854961832,
+   "bacc_decomp_min": 0.8972805343511451,
+   "bacc_decomp_min_fixed05": 0.90375,
+   "bacc_decomp_mean": 0.9022614503816794,
+   "bacc_decomp_mean_fixed05": 0.9046946564885496,
+   "bacc_whole_shuf": 0.5,
+   "bacc_decomp_min_shuf": 0.500868320610687
+  },
+  "TofuEval-MediaS": {
+   "n_dev": 1800,
+   "n_test": 726,
+   "fallback_rate_test": 0.004132231404958678,
+   "facts_per_claim_test": 2.8636363636363638,
+   "threshold": {
+    "whole": 0.9502,
+    "decomp_min": 0.8247,
+    "decomp_mean": 0.9005
+   },
+   "bacc_whole": 0.7323272605154898,
+   "bacc_whole_fixed05": 0.6872428847284023,
+   "bacc_decomp_min": 0.7265133070271177,
+   "bacc_decomp_min_fixed05": 0.7043699101670724,
+   "bacc_decomp_mean": 0.7254113844345562,
+   "bacc_decomp_mean_fixed05": 0.6544685584753589,
+   "bacc_whole_shuf": 0.5188586180841239,
+   "bacc_decomp_min_shuf": 0.5226681219041223
+  },
+  "TofuEval-MeetB": {
+   "n_dev": 1607,
+   "n_test": 772,
+   "fallback_rate_test": 0.0012953367875647669,
+   "facts_per_claim_test": 2.9559585492227978,
+   "threshold": {
+    "whole": 0.7317,
+    "decomp_min": 0.6913,
+    "decomp_mean": 0.7194
+   },
+   "bacc_whole": 0.684715969989282,
+   "bacc_whole_fixed05": 0.6963987138263665,
+   "bacc_decomp_min": 0.6906966773847802,
+   "bacc_decomp_min_fixed05": 0.7056162915326902,
+   "bacc_decomp_mean": 0.6894212218649518,
+   "bacc_decomp_mean_fixed05": 0.6539871382636656,
+   "bacc_whole_shuf": 0.5098606645230439,
+   "bacc_decomp_min_shuf": 0.512390139335477
+  },
+  "Wice": {
+   "n_dev": 349,
+   "n_test": 358,
+   "fallback_rate_test": 0.00558659217877095,
+   "facts_per_claim_test": 3.4972067039106145,
+   "threshold": {
+    "whole": 0.7324,
+    "decomp_min": 0.5272,
+    "decomp_mean": 0.8432
+   },
+   "bacc_whole": 0.7945252945252945,
+   "bacc_whole_fixed05": 0.8033336980705401,
+   "bacc_decomp_min": 0.7985738775212459,
+   "bacc_decomp_min_fixed05": 0.7925010030273187,
+   "bacc_decomp_mean": 0.7841485209906263,
+   "bacc_decomp_mean_fixed05": 0.6976693292482766,
+   "bacc_whole_shuf": 0.5,
+   "bacc_decomp_min_shuf": 0.5
+  }
+ },
+ "macro": {
+  "bacc_whole": 0.7596980923316174,
+  "bacc_decomp_min": 0.7466979242862494,
+  "bacc_decomp_mean": 0.742166475200857,
+  "bacc_whole_fixed05": 0.7400316631968454,
+  "bacc_decomp_min_fixed05": 0.7398910701319182,
+  "bacc_decomp_mean_fixed05": 0.6835811599506824,
+  "bacc_whole_shuf": 0.503145183252764,
+  "bacc_decomp_min_shuf": 0.5034270256274316
+ },
+ "controls": {},
+ "contrast": {
+  "decomp_min_minus_whole_macro": {
+   "observed_points": -1.3000168045368077,
+   "ci95_points": [
+    -2.132272145369297,
+    -0.4382146371238772
+   ]
+  },
+  "decomp_mean_minus_whole_macro": {
+   "observed_points": -1.7531617130760457,
+   "ci95_points": [
+    -2.53962228912487,
+    -0.8750502197971052
+   ]
+  },
+  "per_dataset_decomp_min_minus_whole_points": {
+   "AggreFact-CNN": -7.3432083202017,
+   "AggreFact-XSum": -3.6456525930210093,
+   "ClaimVerify": 1.4999300583694808,
+   "ExpertQA": -0.7723543731677052,
+   "FactCheck-GPT": 0.6436617200071493,
+   "Lfqa": -1.8087941372418426,
+   "RAGTruth": -1.557705475109672,
+   "Reveal": -1.7375954198473154,
+   "TofuEval-MediaS": -0.5813953488372103,
+   "TofuEval-MeetB": 0.5980707395498275,
+   "Wice": 0.4048582995951344
+  }
+ },
+ "bar": {
+  "registered": "M-B: macro BAcc(decomp_min) - BAcc(whole) >= +1.0 point, claim bootstrap interval excluding zero",
+  "observed_points": -1.3000168045368077,
+  "ci95_points": [
+   -2.132272145369297,
+   -0.4382146371238772
+  ],
+  "pass": false,
+  "secondary_no_dataset_worse_than_1_point": false,
+  "worst_dataset_points": -7.3432083202017
+ }
+}

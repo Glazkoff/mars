@@ -1,0 +1,9 @@
+{
+ "note": "sha256 of the pair-level / item-level outputs that A2 and A3 supersede",
+ "inputs": {
+  "/home/user/results/marsc/r07_crossed/analysis/crossed_precision.json": "7977bed7e9e431d4b2103a74ad9aa9bb8e91c810609008e895fab8ae94eac81c",
+  "/home/user/results/marsc/r02_human_rank/human_precision_ranked.json": "59bbadcb0ebd086a823c6eda09471ae63d1e42d30b4ccf1d237a5254a2f8ec1d",
+  "/home/user/results/marsc/r02_human_rank/corrected/human_precision_ranked.json": "63e526f2983890116142e6118b93355a86dba36c53f3124a35d95dd2da361704",
+  "/home/user/results/marsc/r02_human_rank/reweighted/human_precision_ranked.json": "45c932eb3567da4cd56ddab1a1be7a4673f035a63fee03deb873e30d2e10760d"
+ }
+}
