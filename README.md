@@ -62,13 +62,18 @@ out = scorer.score(candidates, sources=sources, references=references, controls=
 out[0].P, out[0].R, out[0].unsupported, out[0].omitted, out[0].controls
 ```
 
+With `controls=True` every score is recomputed with the source or the candidate of **another document** and with
+no candidate. `doc_ids=` names the document of each candidate (by default the source text does), `groups=` keeps the
+swapped candidate inside a group such as the system, and an item with no partner from another document gets no
+shuffled control; `control_info` says why.
+
 `MarsScorer.default(r_from_p=True)` scores MARS-R with the FactCG verifier instead, which needs no MARS-C
 checkpoint. `python -m mars score --help` describes the command-line entry point. The ranked top-k omission
 finder of the manuscript is research code (`research/marsc_20260916/code/`: `mc_score_units.py`,
 `mc_diversity.py`, `mc_e2_eval.py`), not part of `mars.score`.
 
 ```bash
-pip install -e ".[test]" && python -m pytest mars/tests tests/test_mars_api.py
+pip install -e ".[test]" && python -m pytest mars/tests tests/test_mars_api.py tests/test_mars_controls.py
 ```
 
 ## Data and licences

@@ -7,8 +7,12 @@ MARS-F          = harmonic mean of P and R, application-side only
 
 q is a verifier's support score in [0, 1] (a sigmoid/softmax output, not a calibrated probability). Evidence: the candidate facts with q below the threshold (unsupported) and
 the reference facts with q below the threshold (omitted), each with the span of the sentence it came from.
-Controls (`controls=True`): P with the source replaced by another item's source; R with the candidate replaced by
-another item's candidate and with no candidate. A score that survives its controls is measuring the candidate.
+Controls (`controls=True`): P with the source replaced by the source of ANOTHER DOCUMENT; R with the candidate
+replaced by the candidate of another document, and with no candidate. Documents are told apart by `doc_ids`; without
+them the source text names the document, then the reference list, then the salient facts, so two candidates of one
+source are never each other's control. `groups` (for example the system that wrote each candidate) restricts the
+candidate control to partners of the same group. An item with no valid partner gets no shuffled control and
+`control_info` says why. A score that survives its controls is measuring the candidate.
 
 Scope. This package is the scoring core. The article's configuration additionally fixes the fact decomposer (the
 Gemma-4-31B sentence decomposition or its distilled segmenter; the default here is plain sentences), the MARS-C
@@ -36,30 +40,70 @@ class MarsResult:
     unsupported: list[tuple[Fact, float]] = field(default_factory=list)
     omitted: list[tuple[Fact, float]] = field(default_factory=list)
     controls: dict = field(default_factory=dict)
+    control_info: dict = field(default_factory=dict)
 
     def as_dict(self) -> dict:
         return {"P": self.P, "R": self.R, "F": self.F, "P_min": self.P_min,
                 "n_candidate_facts": self.n_candidate_facts, "n_reference_facts": self.n_reference_facts,
                 "unsupported": [{"fact": f.text, "start": f.start, "end": f.end, "support": s} for f, s in self.unsupported],
                 "omitted": [{"fact": f.text, "start": f.start, "end": f.end, "support": s} for f, s in self.omitted],
-                "controls": self.controls}
+                "controls": self.controls, "control_info": self.control_info}
 
 
 def _f(p, r):
     return (2 * p * r / (p + r)) if (p is not None and r is not None and p + r > 0) else None
 
 
-def _derangement(n: int, seed: int) -> list[int]:
-    """A permutation with no fixed point. Needs at least two items: with one item the only permutation is the
-    identity, and an identity "shuffle" would hand the real source or candidate back as a control."""
-    if n < 2:
-        raise ValueError("the shuffled controls need at least two items to score; a single item has no other item to swap in")
+def _document_keys(n: int, doc_ids, sources, references, salient_source_facts) -> list | None:
+    """The document each item belongs to. Explicit `doc_ids` win; otherwise the input that defines the document
+    names it: the source text, else the reference list, else the salient source facts."""
+    if doc_ids is not None:
+        if len(doc_ids) != n:
+            raise ValueError(f"doc_ids has {len(doc_ids)} entries for {n} candidates")
+        return list(doc_ids)
+    if sources is not None:
+        return list(sources)
+    if references is not None:
+        return [tuple(r) for r in references]
+    if salient_source_facts is not None:
+        return [tuple(f.text for f in facts) for facts in salient_source_facts]
+    return None
+
+
+def _cross_document_partners(docs: list, strata: list | None, seed: int) -> tuple[list[int | None], list[str | None]]:
+    """For every item, the index of an item of another document (and of the same stratum when strata are given), or
+    None with the reason. Within a stratum the items are laid out document by document in a seeded order and shifted
+    by the size of the largest document, which pairs every item with another document's item and uses each item
+    once; when one document holds more than half of a stratum no such pairing exists and partners are drawn from
+    the other documents with reuse."""
     rng = random.Random(seed)
-    for _ in range(200):
-        perm = list(range(n)); rng.shuffle(perm)
-        if all(i != j for i, j in enumerate(perm)):
-            return perm
-    return [(i + 1) % n for i in range(n)]
+    n = len(docs)
+    partner: list[int | None] = [None] * n
+    reason: list[str | None] = [None] * n
+    by_stratum: dict = {}
+    for i in range(n):
+        by_stratum.setdefault(strata[i] if strata is not None else None, []).append(i)
+    for key, idx in by_stratum.items():
+        blocks: dict = {}
+        for i in idx:
+            blocks.setdefault(docs[i], []).append(i)
+        if len(blocks) < 2:
+            why = "no other document in the batch" if strata is None else f"no other document in group {key!r}"
+            for i in idx:
+                reason[i] = why
+            continue
+        groups = list(blocks.values()); rng.shuffle(groups)
+        for g in groups:
+            rng.shuffle(g)
+        order = [i for g in groups for i in g]
+        m = max(len(g) for g in groups)
+        if 2 * m <= len(order):
+            for pos, i in enumerate(order):
+                partner[i] = order[(pos + m) % len(order)]
+        else:
+            for i in idx:
+                partner[i] = rng.choice([j for j in idx if docs[j] != docs[i]])
+    return partner, reason
 
 
 class MarsScorer:
@@ -86,14 +130,17 @@ class MarsScorer:
         return cls(p, r, decomposer, **kw)
 
     # ------------------------------------------------------------------ helpers
-    def _p_axis(self, cand_facts: list[list[Fact]], sources: list[str], results: list[MarsResult], key: str | None):
-        prem, hyp, own = [], [], []
+    def _p_axis(self, cand_facts: list[list[Fact]], sources: list[str], results: list[MarsResult], key: str | None,
+                only: set[int] | None = None):
+        prem, hyp, own, facts_flat = [], [], [], []
         for i, facts in enumerate(cand_facts):
+            if only is not None and i not in only:
+                continue
             for f in facts:
-                prem.append(sources[i]); hyp.append(f.text); own.append(i)
+                prem.append(sources[i]); hyp.append(f.text); own.append(i); facts_flat.append(f)
         sup = self.p_verifier.support(prem, hyp) if prem else []
         acc: dict[int, list[tuple[Fact, float]]] = {}
-        for o, s, f in zip(own, sup, (f for facts in cand_facts for f in facts)):
+        for o, s, f in zip(own, sup, facts_flat):
             acc.setdefault(o, []).append((f, s))
         for i, r in enumerate(results):
             items = acc.get(i, [])
@@ -107,16 +154,20 @@ class MarsScorer:
                 r.controls[key] = sum(vals) / len(vals)
 
     def _r_axis(self, ref_facts: list[list[list[Fact]]], candidates: list[str], results: list[MarsResult], key: str | None,
-                weights: list[list[list[float]]] | None = None):
-        prem, hyp, own = [], [], []
+                weights: list[list[list[float]]] | None = None, only: set[int] | None = None):
+        prem, hyp = [], []
         for i, refs in enumerate(ref_facts):
-            for k, facts in enumerate(refs):
+            if only is not None and i not in only:
+                continue
+            for facts in refs:
                 for f in facts:
-                    prem.append(candidates[i]); hyp.append(f.text); own.append((i, k))
+                    prem.append(candidates[i]); hyp.append(f.text)
         sup = self.r_verifier.support(prem, hyp) if prem else []
         acc: dict[tuple[int, int], list[tuple[Fact, float]]] = {}
         it = iter(sup)
         for i, refs in enumerate(ref_facts):
+            if only is not None and i not in only:
+                continue
             for k, facts in enumerate(refs):
                 for f in facts:
                     acc.setdefault((i, k), []).append((f, next(it)))
@@ -141,25 +192,45 @@ class MarsScorer:
             else:
                 r.controls[key] = best
 
+    @staticmethod
+    def _note_partners(results: list[MarsResult], key: str, partner: list[int | None], reason: list[str | None]) -> set[int]:
+        for i, r in enumerate(results):
+            r.control_info[key] = ({"available": True, "partner": partner[i]} if partner[i] is not None
+                                   else {"available": False, "reason": reason[i]})
+        return {i for i, j in enumerate(partner) if j is not None}
+
     # ------------------------------------------------------------------ public
     def score(self, candidates: list[str], sources: list[str] | None = None, references: list[list[str]] | None = None,
               salient_source_facts: list[list[Fact]] | None = None, salience: list[list[float]] | None = None,
-              controls: bool = False) -> list[MarsResult]:
+              controls: bool = False, doc_ids: list | None = None, groups: list | None = None) -> list[MarsResult]:
         """candidates: texts to score. sources: one per candidate (P, and reference-free R when salient facts are
         given). references: a list of reference texts per candidate (reference-based R, maximum over references).
-        salient_source_facts / salience: precomputed salient facts of each source and their weights."""
+        salient_source_facts / salience: precomputed salient facts of each source and their weights.
+        doc_ids: the document of each candidate, for the shuffled controls (default: the source text, else the
+        reference list, else the salient facts). groups: a stratum per candidate, such as its system; the
+        shuffled-candidate control then swaps in a candidate of the same group and another document."""
         n = len(candidates)
         results = [MarsResult() for _ in range(n)]
-        shuffled = controls and n >= 2
-        if controls and n < 2:
-            warnings.warn("controls=True with a single item: the shuffled-source and shuffled-candidate controls need a "
-                          "pool of at least two items and are omitted; only R_no_candidate is reported", stacklevel=2)
+        if groups is not None and len(groups) != n:
+            raise ValueError(f"groups has {len(groups)} entries for {n} candidates")
+        src_partner = cand_partner = src_why = cand_why = None
+        if controls:
+            docs = _document_keys(n, doc_ids, sources, references, salient_source_facts)
+            if docs is not None:
+                src_partner, src_why = _cross_document_partners(docs, None, self.seed)
+                cand_partner, cand_why = _cross_document_partners(docs, groups, self.seed)
+                missing = sum(j is None for j in cand_partner)
+                if missing:
+                    warnings.warn(f"controls=True: {missing} of {n} items have no item of another document to swap in "
+                                  "and get no shuffled control (see control_info); R_no_candidate is still reported",
+                                  stacklevel=2)
         if sources is not None and self.p_verifier is not None:
             cand_facts = self.decomposer.facts_batch(candidates)
             self._p_axis(cand_facts, sources, results, None)
-            if shuffled:
-                perm = _derangement(n, self.seed)
-                self._p_axis(cand_facts, [sources[j] for j in perm], results, "P_shuffled_source")
+            if src_partner is not None:
+                only = self._note_partners(results, "P_shuffled_source", src_partner, src_why)
+                self._p_axis(cand_facts, [sources[j] if j is not None else "" for j in src_partner], results,
+                             "P_shuffled_source", only)
         ref_facts: list[list[list[Fact]]] | None = None
         weights = None
         if references is not None and self.r_verifier is not None:
@@ -173,9 +244,10 @@ class MarsScorer:
             weights = [[w] for w in salience] if salience is not None else None
         if ref_facts is not None:
             self._r_axis(ref_facts, candidates, results, None, weights)
-            if shuffled:
-                perm = _derangement(n, self.seed)
-                self._r_axis(ref_facts, [candidates[j] for j in perm], results, "R_shuffled_candidate", weights)
+            if cand_partner is not None:
+                only = self._note_partners(results, "R_shuffled_candidate", cand_partner, cand_why)
+                self._r_axis(ref_facts, [candidates[j] if j is not None else "" for j in cand_partner], results,
+                             "R_shuffled_candidate", weights, only)
             if controls:
                 self._r_axis(ref_facts, ["" for _ in candidates], results, "R_no_candidate", weights)
         for r in results:
@@ -183,11 +255,12 @@ class MarsScorer:
         return results
 
 
-_SCORE_KW = ("salient_source_facts", "salience", "controls")
+_SCORE_KW = ("salient_source_facts", "salience", "controls", "doc_ids", "groups")
 
 
 def score(candidates: list[str], sources: list[str] | None = None, references: list[list[str]] | None = None, **kw) -> list[dict]:
     """One-call convenience: MarsScorer.default(...) then .score(...); returns plain dicts. Keyword arguments of
-    `MarsScorer.score` (salient_source_facts, salience, controls) go to the scoring call, the rest to `default()`."""
+    `MarsScorer.score` (salient_source_facts, salience, controls, doc_ids, groups) go to the scoring call, the rest
+    to `default()`."""
     run = {k: kw.pop(k) for k in _SCORE_KW if k in kw}
     return [r.as_dict() for r in MarsScorer.default(**kw).score(candidates, sources=sources, references=references, **run)]

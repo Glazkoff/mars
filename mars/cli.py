@@ -2,7 +2,9 @@
 
 Input files are JSON lines with a "text" field (references: a "texts" list per line), aligned by line. Verifier and
 decomposer choices are flags; with no model flags the sentence decomposer and the lexical stand-in are used, which
-is a smoke test, not MARS.
+is a smoke test, not MARS. With --controls, --doc-ids (JSON lines with an "id" field) names the document of each
+candidate and --groups (a "group" field, for example the system) keeps the shuffled-candidate control inside a
+group; without --doc-ids the source text, else the reference list, names the document.
 """
 from __future__ import annotations
 
@@ -29,6 +31,8 @@ def main(argv=None) -> int:
     s.add_argument("--decomposer", default="sentences", help="sentences | llm:<path> | seq2seq:<path>")
     s.add_argument("--threshold", type=float, default=0.5)
     s.add_argument("--controls", action="store_true")
+    s.add_argument("--doc-ids", help="JSON lines with an \"id\" field: the document of each candidate, for the shuffled controls")
+    s.add_argument("--groups", help="JSON lines with a \"group\" field: the shuffled-candidate control stays inside a group")
     s.add_argument("--out", required=True)
     a = ap.parse_args(argv)
     if a.cmd == "score":
@@ -51,7 +55,9 @@ def main(argv=None) -> int:
         cands = _read(a.candidates, "text")
         srcs = _read(a.sources, "text") if a.sources else None
         refs = _read(a.references, "texts") if a.references else None
-        res = scorer.score(cands, sources=srcs, references=refs, controls=a.controls)
+        docs = _read(a.doc_ids, "id") if a.doc_ids else None
+        groups = _read(a.groups, "group") if a.groups else None
+        res = scorer.score(cands, sources=srcs, references=refs, controls=a.controls, doc_ids=docs, groups=groups)
         with open(a.out, "w", encoding="utf-8") as fh:
             for x in res:
                 fh.write(json.dumps(x.as_dict()) + "\n")
