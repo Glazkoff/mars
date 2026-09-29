@@ -1,0 +1,16 @@
+SAMSum Corpus
+
+Creators: Bogdan Gliwa, Iwona Mochol, Maciej Biesek and Aleksander Wawer (Samsung R&D Institute Poland).
+Work:     "SAMSum Corpus: A Human-annotated Dialogue Dataset for Abstractive Summarization",
+          Proceedings of the 2nd Workshop on New Frontiers in Summarization, 2019, pp. 70-79,
+          doi:10.18653/v1/D19-5409, arXiv:1911.12237.
+Source:   https://huggingface.co/datasets/knkarthick/samsum
+
+Licence:  Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International (CC BY-NC-ND 4.0)
+          https://creativecommons.org/licenses/by-nc-nd/4.0/
+          https://creativecommons.org/licenses/by-nc-nd/4.0/legalcode
+
+The SAMSum dialogues in this repository are reproduced unmodified, as they appear in the RoSE benchmark. They may
+be used for non-commercial purposes only and may not be distributed in modified form. They are provided as-is,
+without warranties of any kind, as stated in Section 5 of the licence. The MIT licence of this repository does
+not apply to them.
