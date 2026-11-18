@@ -15,7 +15,7 @@ replaced (`ANONYMIZED`, `cluster-A` / `cluster-B`, `/home/user/...`); nothing el
 | `research/mars_metric_20260923/` | metric program M0, M-A ... M-G: `PREREG.md` with outcome amendments, code, job scripts, `results_snapshot/` |
 | `research/marsc_audit_20260928/TODO.md` | the audit-response task list of 2026-09-28: what was re-run and what is still open |
 | `research/mars2_gates_20260916/`, `research/mars3_20260916/` | supporting code the MARS-C scripts import (judge-label package B21, inventories, scorers) |
-| `mars/`, `tests/test_mars_api.py`, `tests/test_b2_combine.py` | the MARS package (`mars.score`, CLI) and the tests added in the audit response |
+| `mars/`, `tests/test_mars_api.py`, `tests/test_mars_controls.py`, `tests/test_b2_combine.py` | the MARS package (`mars.score`, CLI) and the tests added in the audit and review responses; since 2026-09-29 the shuffled controls take the source or candidate of another document |
 | `registrations/NUMBERS_PROVENANCE_2026-09-17.md` | number-by-number provenance of the MARS-C conference-version figures, with the corrections applied since |
 | `results/marsc/`, `results/marsc_strengthen/`, `results/mars_metric/` | cluster result snapshot: the cluster's `~/results/<program>/` tree, same relative paths |
 | `results/SNAPSHOT_INFO.json` | when the snapshot was taken, the selection rules, and which pending outputs were absent |

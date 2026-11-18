@@ -9,7 +9,8 @@
 
 Two axes, never collapsed by the package itself: P (faithfulness, the hallucination axis) and R (coverage, the
 omission axis). F is an application-side convenience. Every score can be recomputed with the candidate replaced or
-removed (`controls=True`), because recall of omissions can be won by ignoring the candidate.
+removed (`controls=True`), because recall of omissions can be won by ignoring the candidate; the replacement comes
+from another document (`doc_ids=`, by default the source text) and, with `groups=`, from the same system.
 """
 from .score import Fact, MarsResult, MarsScorer, score  # noqa: F401
 

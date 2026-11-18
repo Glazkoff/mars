@@ -5,7 +5,7 @@ from __future__ import annotations
 import pytest
 
 from mars.inventory import Fact, SentenceDecomposer, parse_facts, sentence_spans
-from mars.score import MarsScorer, _derangement
+from mars.score import MarsScorer, _cross_document_partners
 from mars.verifiers import LexicalVerifier, Verifier, windows
 
 
@@ -58,14 +58,16 @@ def test_recall_takes_the_best_reference_and_lists_omissions():
 
 
 def test_f_is_harmonic_mean_and_controls_run():
-    src = "Alice went home. Bob stayed at the office."
-    cands = ["Alice went home. Bob flew to Paris.", "Bob stayed at the office."]
-    srcs = [src, src]
+    srcs = ["Alice went home. Bob stayed at the office.", "Carol sold the farm. Dan bought a boat."]
+    cands = ["Alice went home. Bob flew to Paris.", "Dan bought a boat."]
     sc = MarsScorer(StubVerifier(), StubVerifier(), SentenceDecomposer())
-    res = sc.score(cands, sources=srcs, references=[[src], [src]], controls=True)
-    for r in res:
+    res = sc.score(cands, sources=srcs, references=[[srcs[0]], [srcs[1]]], controls=True)
+    for i, r in enumerate(res):
         assert r.P is not None and r.R is not None and abs(r.F - 2 * r.P * r.R / (r.P + r.R)) < 1e-9
         assert set(r.controls) == {"P_shuffled_source", "R_shuffled_candidate", "R_no_candidate"}
+        assert r.control_info["P_shuffled_source"] == {"available": True, "partner": 1 - i}
+        # another document's source supports none of this candidate's facts under the stub
+        assert abs(r.controls["P_shuffled_source"] - 0.2) < 1e-9
     # no candidate at all: every reference fact is unsupported under the stub
     assert all(abs(r.controls["R_no_candidate"] - 0.2) < 1e-9 for r in res)
 
@@ -78,18 +80,30 @@ def test_reference_free_coverage_with_salience():
     assert abs(r.R - (3.0 * 1.0 + 1.0 * 0.2) / 4.0) < 1e-9
 
 
-def test_derangement_moves_everyone():
-    perm = _derangement(7, 1)
-    assert sorted(perm) == list(range(7)) and all(i != j for i, j in enumerate(perm))
-    with pytest.raises(ValueError):
-        _derangement(1, 1)
+def test_partners_move_everyone_to_another_document():
+    partner, reason = _cross_document_partners([f"d{i}" for i in range(7)], None, 1)
+    assert sorted(partner) == list(range(7)) and all(i != j for i, j in enumerate(partner))
+    assert reason == [None] * 7
+    partner, reason = _cross_document_partners(["d0", "d0", "d0"], None, 1)
+    assert partner == [None] * 3 and reason == ["no other document in the batch"] * 3
+
+
+def test_two_summaries_of_one_source_are_not_each_others_control():
+    src = "Alice went home. Bob stayed at the office."
+    sc = MarsScorer(StubVerifier(), StubVerifier(), SentenceDecomposer())
+    with pytest.warns(UserWarning, match="no item of another document"):
+        res = sc.score(["Alice went home.", "Bob stayed at the office."], sources=[src, src],
+                       references=[[src], [src]], controls=True)
+    for r in res:
+        assert set(r.controls) == {"R_no_candidate"}
+        assert not r.control_info["P_shuffled_source"]["available"]
 
 
 def test_single_item_call_never_returns_identity_shuffled_controls():
     """A one-item call has nothing to swap in: the shuffled controls must be absent, not the real inputs relabelled."""
     src = "Alice went home. Bob flew to Paris. Carol stayed at the office."
     sc = MarsScorer(StubVerifier(), StubVerifier(), SentenceDecomposer())
-    with pytest.warns(UserWarning, match="at least two items"):
+    with pytest.warns(UserWarning, match="no item of another document"):
         r = sc.score(["Alice went home."], sources=[src], references=[[src]], controls=True)[0]
     assert r.P is not None and r.R is not None
     assert "P_shuffled_source" not in r.controls and "R_shuffled_candidate" not in r.controls
