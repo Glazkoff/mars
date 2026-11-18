@@ -43,11 +43,10 @@ that were missed, are recorded in the same files.
 - **Trained checkpoints.** The three MARS-C seeds, the unified verifier and the distilled segmenter are not
   distributed. Their recipe, training manifests and hashes are in `research/marsc_20260916/` and `results/`;
   retraining a MARS-C seed takes about a minute of GPU time after the labels are prepared.
-- **Blinded annotation sheets.** They contain the full source documents of RoSE (CNN/DailyMail, XSum, SAMSum).
-  The item keys (`human_sample_key.jsonl`) and the labels (`export.jsonl`) are shipped; a sheet is rebuilt by
-  joining a key with RoSE on `pair_id`. The annotators appear only as `Annotator 1`, `Annotator 2` and
-  `Adjudicator`.
-- **Per-item score dumps** and third-party dataset copies.
+- **The annotators' completed answer sheets.** The blinded sheets, the item keys (`human_sample_key.jsonl`) and
+  the transcribed labels (`export.jsonl`) are shipped; the annotators appear only as `Annotator 1`,
+  `Annotator 2` and `Adjudicator`.
+- **Per-item score dumps** and copies of the datasets themselves.
 
 ## Using the package
 
@@ -74,9 +73,14 @@ pip install -e ".[test]" && python -m pytest mars/tests tests/test_mars_api.py
 
 ## Data and licences
 
-The code and the files produced by the authors are released under the MIT licence (`LICENSE`). RoSE, UniSumEval,
-SummEval, OmissionBench and LLM-AggreFact are public datasets used under their own licences and are not
-redistributed here; result files quote identifiers, scores and short fact strings derived from them.
+The code and the files produced by the authors are released under the MIT licence (`LICENSE`).
+
+The three blinded annotation sheets reproduce, unmodified, source documents and system summaries of the RoSE
+benchmark (CNN/DailyMail, XSum and SAMSum documents). That material is **not** under the MIT licence: it stays
+under the licences of its sources, and the SAMSum dialogues may be used for non-commercial purposes only and may not
+be redistributed in modified form. `THIRD_PARTY_NOTICES.md` lists the files, the licences (`licenses/`) and the
+original works to cite. UniSumEval, SummEval, OmissionBench and LLM-AggreFact are used under their own licences
+and are not reproduced here; result files quote only their identifiers and scores.
 
 ## Citation
 
