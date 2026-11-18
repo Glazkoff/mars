@@ -1,0 +1,33 @@
+{
+ "arm": "judgefact.distilled",
+ "variant": "res",
+ "model": "/home/user/results/marsc_strengthen/c2c4/models/surface_judgefact.distilled.json",
+ "model_arm": "judgefact.distilled",
+ "apply_units_file": "/home/user/results/mars3/m32/units_distilled_test.jsonl",
+ "apply_split": "test",
+ "unit_set": "distilled",
+ "model_fit_split": "validation",
+ "files": {
+  "/home/user/results/marsc_strengthen/c2c4/res/test/distilled_xenc_seed20260906.jsonl": {
+   "from": "/home/user/results/marsc/g1_test/scores/distilled_xenc_seed20260906.jsonl",
+   "seed_key": "20260906",
+   "n_pairs": 2829,
+   "n_pairs_skipped": 0,
+   "r2_on_fit_split": 0.3530407426705876
+  },
+  "/home/user/results/marsc_strengthen/c2c4/res/test/distilled_xenc_seed20260907.jsonl": {
+   "from": "/home/user/results/marsc/g1_test/scores/distilled_xenc_seed20260907.jsonl",
+   "seed_key": "20260907",
+   "n_pairs": 2829,
+   "n_pairs_skipped": 0,
+   "r2_on_fit_split": 0.3655541724468456
+  },
+  "/home/user/results/marsc_strengthen/c2c4/res/test/distilled_xenc_seed20260908.jsonl": {
+   "from": "/home/user/results/marsc/g1_test/scores/distilled_xenc_seed20260908.jsonl",
+   "seed_key": "20260908",
+   "n_pairs": 2829,
+   "n_pairs_skipped": 0,
+   "r2_on_fit_split": 0.3485818863291015
+  }
+ }
+}

@@ -1,0 +1,35 @@
+{
+ "registered": "research/marsc_ieee_20260922/PREREG.md amendment 3 (H-J5, measurement, no bar)",
+ "inventory": "/home/user/results/mars3/m32/units_gemma+ent_validation.jsonl",
+ "n_pairs": 200,
+ "n_units": 20218,
+ "n_latency_units": 300,
+ "seed": 20260922,
+ "claim_words": 96,
+ "warmup": 20,
+ "systems": {
+  "judge": {
+   "backend": "vllm",
+   "n_units_throughput": 20218,
+   "batch": "engine-scheduled",
+   "seconds": 66.79791593691334,
+   "units_per_s": 302.6741136519094,
+   "ms_per_unit_batched": 3.30388346705477,
+   "latency_batch1": {
+    "n": 280,
+    "median_ms": 24.08850460778922,
+    "mean_ms": 24.341791070764884,
+    "p95_ms": 27.609756914898753,
+    "min_ms": 21.51273307390511,
+    "max_ms": 33.649166114628315
+   },
+   "weight_bytes_on_disk": 62546338248,
+   "nvidia_smi_used_mib_before": 0,
+   "nvidia_smi_used_mib_after_engine": 130937,
+   "gpu_memory_utilization": 0.9,
+   "max_model_len": 8192,
+   "engine_start_s": 120.02053870307282,
+   "memory_note": "vLLM pre-allocates a KV-cache pool; used memory reflects gpu_memory_utilization, not the model"
+  }
+ }
+}

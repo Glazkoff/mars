@@ -1,0 +1,35 @@
+{
+ "variant": "qwenprops+ent",
+ "split": "test",
+ "recipe": "gemma+ent (m32_inventory.py), propositions from the unseen extractor",
+ "pairs": 2688,
+ "documents": 286,
+ "documents_with_propositions": 286,
+ "document_coverage": 1.0,
+ "units_total": 296476,
+ "mean_units_per_pair": 110.29613095238095,
+ "mean_propositions_per_pair": 65.57589285714286,
+ "ceiling_weak_pooled": 0.9058537696454332,
+ "ceiling_strict_pooled": 0.29124591906461167,
+ "cells": {
+  "rose_cnndm": {
+   "human_omitted": 8637,
+   "ceiling_weak": 0.9370151673034619,
+   "ceiling_strict": 0.3759407201574621,
+   "all_acus_weak": 0.9525452976704055
+  },
+  "rose_samsum": {
+   "human_omitted": 2197,
+   "ceiling_weak": 0.8893946290395994,
+   "ceiling_strict": 0.21483841602184797,
+   "all_acus_weak": 0.9037199124726477
+  },
+  "rose_xsum": {
+   "human_omitted": 2337,
+   "ceiling_weak": 0.8061617458279846,
+   "ceiling_strict": 0.05006418485237484,
+   "all_acus_weak": 0.8160621761658031
+  }
+ },
+ "units_file": "/home/user/results/marsc_strengthen/b4/inv/units_qwenprops+ent_test.jsonl"
+}

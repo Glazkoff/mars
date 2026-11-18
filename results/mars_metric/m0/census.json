@@ -1,0 +1,411 @@
+{
+ "sets": {
+  "unisumeval": {
+   "path": "/home/user/results/marsc/g5/UniSumEval/data/unisumeval_keyfact.jsonl",
+   "licence": "DISLab UniSumEval release (see its repository)",
+   "rows": 1828,
+   "docs": 225,
+   "systems": [
+    "Mistral-7B-Instruct-v0.2",
+    "Mixtral-8x7B-Instruct-v0.1",
+    "bart",
+    "claude2.1",
+    "gpt-3.5-turbo",
+    "gpt-4-0125-preview",
+    "llama2-chat-13b",
+    "phi-2",
+    "t5"
+   ],
+   "domains": {
+    "news": 212,
+    "lifestyle": 223,
+    "sci-fiction": 217,
+    "medical_literature": 193,
+    "report": 182,
+    "interview": 194,
+    "meeting": 194,
+    "dailylife": 209,
+    "booking": 204
+   },
+   "completeness": {
+    "n": 1828,
+    "min": 0.0,
+    "median": 0.47058823529411764,
+    "max": 1.0
+   },
+   "conciseness": {
+    "n": 1828,
+    "min": 0.0,
+    "median": 0.8333333333333334,
+    "max": 1.0
+   },
+   "faithfulness": {
+    "n": 1828,
+    "min": 0.0,
+    "median": 1.0,
+    "max": 1.0
+   },
+   "keyfacts_per_doc": {
+    "n": 1828,
+    "min": 1.0,
+    "median": 10.0,
+    "max": 20.0
+   },
+   "summary_words": {
+    "n": 1828,
+    "min": 2.0,
+    "median": 69.0,
+    "max": 2099.0
+   },
+   "source_words": {
+    "n": 1828,
+    "min": 19.0,
+    "median": 683.0,
+    "max": 8847.0
+   },
+   "geval_columns": [
+    "G-Eval",
+    "G-Eval+"
+   ]
+  },
+  "summeval": {
+   "path": "/home/user/hf_cache/hub/datasets--mteb--summeval/snapshots/bfc121155064afa2d81b5505682ffc0d96f4334c/data/test-00000-of-00001-35901af5f6649399.parquet",
+   "licence": "mteb/summeval (SummEval, Fabbri et al. 2021)",
+   "docs": 100,
+   "machine_summaries_per_doc": {
+    "n": 100,
+    "min": 16.0,
+    "median": 16.0,
+    "max": 16.0
+   },
+   "references_per_doc": {
+    "n": 100,
+    "min": 11.0,
+    "median": 11.0,
+    "max": 11.0
+   },
+   "dims": {
+    "relevance": {
+     "n": 1600,
+     "min": 1.0,
+     "median": 4.0,
+     "max": 5.0
+    },
+    "consistency": {
+     "n": 1600,
+     "min": 1.0,
+     "median": 5.0,
+     "max": 5.0
+    },
+    "coherence": {
+     "n": 1600,
+     "min": 1.0,
+     "median": 3.6666666666666665,
+     "max": 5.0
+    },
+    "fluency": {
+     "n": 1600,
+     "min": 1.0,
+     "median": 5.0,
+     "max": 5.0
+    }
+   },
+   "source_words": {
+    "n": 100,
+    "min": 100.0,
+    "median": 367.0,
+    "max": 540.0
+   }
+  },
+  "rose_test": {
+   "path": "/home/user/results/mars2_gates/b18/acu_units_test.jsonl",
+   "licence": "Salesforce/rose",
+   "pairs": 2688,
+   "docs": 286,
+   "systems": 23,
+   "acu_recall": {
+    "n": 2688,
+    "min": 0.0,
+    "median": 0.3333333333333333,
+    "max": 1.0
+   },
+   "acus_per_pair": {
+    "n": 2688,
+    "min": 1.0,
+    "median": 6.0,
+    "max": 24.0
+   }
+  },
+  "llm_aggrefact_dev": {
+   "path": "/home/user/hf_cache/hub/datasets--lytang--LLM-AggreFact/snapshots/981dfd0bd8e58e7238a9ab92b2e6ea44bce918e4/data/dev-00000-of-00001.parquet",
+   "licence": "lytang/LLM-AggreFact (per-dataset licences in its card)",
+   "rows": 30420,
+   "datasets": {
+    "AggreFact-CNN": 459,
+    "AggreFact-XSum": 777,
+    "ClaimVerify": 1093,
+    "ExpertQA": 3773,
+    "FactCheck-GPT": 1537,
+    "Lfqa": 2029,
+    "RAGTruth": 15340,
+    "Reveal": 1656,
+    "TofuEval-MediaS": 1800,
+    "TofuEval-MeetB": 1607,
+    "Wice": 349
+   },
+   "label_rate": 0.7566732412886259,
+   "doc_words": {
+    "n": 30420,
+    "min": 2.0,
+    "median": 323.0,
+    "max": 25872.0
+   },
+   "claim_words": {
+    "n": 30420,
+    "min": 1.0,
+    "median": 18.0,
+    "max": 221.0
+   }
+  },
+  "llm_aggrefact_test": {
+   "path": "/home/user/hf_cache/hub/datasets--lytang--LLM-AggreFact/snapshots/981dfd0bd8e58e7238a9ab92b2e6ea44bce918e4/data/test-00000-of-00001.parquet",
+   "licence": "lytang/LLM-AggreFact (per-dataset licences in its card)",
+   "rows": 29320,
+   "datasets": {
+    "AggreFact-CNN": 558,
+    "AggreFact-XSum": 558,
+    "ClaimVerify": 1088,
+    "ExpertQA": 3702,
+    "FactCheck-GPT": 1566,
+    "Lfqa": 1911,
+    "RAGTruth": 16371,
+    "Reveal": 1710,
+    "TofuEval-MediaS": 726,
+    "TofuEval-MeetB": 772,
+    "Wice": 358
+   },
+   "label_rate": 0.7787175989085948,
+   "doc_words": {
+    "n": 29320,
+    "min": 1.0,
+    "median": 310.0,
+    "max": 18584.0
+   },
+   "claim_words": {
+    "n": 29320,
+    "min": 1.0,
+    "median": 19.0,
+    "max": 146.0
+   }
+  },
+  "halueval_summarization": {
+   "path": "/home/user/data/public/halueval_summarization_data.json",
+   "licence": "HaluEval (MIT, Li et al. 2023)",
+   "pairs": 10000,
+   "doc_words": {
+    "n": 10000,
+    "min": 55.0,
+    "median": 594.0,
+    "max": 1881.0
+   },
+   "summary_words": {
+    "n": 10000,
+    "min": 8.0,
+    "median": 47.0,
+    "max": 534.0
+   }
+  },
+  "summedits": {
+   "path": "/home/user/data/mars_metric/summedits/summedits.json",
+   "licence": "CC BY 4.0 (Salesforce/summedits)",
+   "rows": 6348,
+   "domains": {
+    "news": 819,
+    "podcast": 500,
+    "billsum": 853,
+    "samsum": 664,
+    "sales_call": 520,
+    "sales_email": 613,
+    "shakespeare": 814,
+    "scitldr": 466,
+    "qmsumm": 431,
+    "ectsum": 668
+   },
+   "labels": {
+    "1": 2387,
+    "0": 3961
+   },
+   "fields": [
+    "doc",
+    "domain",
+    "edit_types",
+    "id",
+    "label",
+    "seed_summary",
+    "summary"
+   ]
+  },
+  "frank": {
+   "path": "/home/user/data/mars_metric/frank/human_annotations.json",
+   "licence": "FRANK (artidoro/frank, MIT) built on CNN/DM and XSum",
+   "rows": 2246,
+   "fields": [
+    "CircE",
+    "Content_Verifiability_Errors",
+    "CorefE",
+    "Discourse_Errors",
+    "EntE",
+    "Factuality",
+    "Flip_CircE",
+    "Flip_Content_Verifiability_Errors",
+    "Flip_CorefE",
+    "Flip_Discourse_Errors",
+    "Flip_EntE",
+    "Flip_GramE",
+    "Flip_LinkE",
+    "Flip_Other",
+    "Flip_OutE",
+    "Flip_RelE",
+    "Flip_Semantic_Frame_Errors",
+    "GramE",
+    "LinkE",
+    "Other",
+    "OutE",
+    "RelE",
+    "Semantic_Frame_Errors",
+    "dataset",
+    "hash",
+    "model_name",
+    "split"
+   ],
+   "models": {
+    "bart": 250,
+    "bert_sum": 250,
+    "bus": 250,
+    "pgn": 250,
+    "s2s": 250,
+    "BERTS2S": 249,
+    "PtGen": 249,
+    "TConvS2S": 249,
+    "TranS2S": 249
+   }
+  },
+  "ragtruth_train": {
+   "path": "/home/user/data/mars_metric/ragtruth/data/train-00000-of-00001.parquet",
+   "licence": "RAGTruth (wandb/RAGTruth-processed; original: ParticleMedia/RAGTruth, MIT)",
+   "rows": 15090,
+   "columns": [
+    "id",
+    "query",
+    "context",
+    "output",
+    "task_type",
+    "quality",
+    "model",
+    "temperature",
+    "hallucination_labels",
+    "hallucination_labels_processed",
+    "input_str"
+   ],
+   "span_like_columns": [
+    "hallucination_labels",
+    "hallucination_labels_processed"
+   ],
+   "example": {
+    "id": "0",
+    "query": "Summarize the following news within 116 words:",
+    "context": "Seventy years ago, Anne Frank died of typhus in a Nazi concentration camp at the age of 15. Just two weeks after her supposed death on March 31, 1945, the Berge",
+    "output": "The Anne Frank House has revealed that Anne Frank and her older sister, Margot, likely died at least a month earlier than previously believed. The sisters, who ",
+    "task_type": "Summary",
+    "quality": "good",
+    "model": "gpt-4-0613",
+    "temperature": "0.7",
+    "hallucination_labels": "[]",
+    "hallucination_labels_processed": "{'evident_conflict': 0, 'baseless_info': 0}",
+    "input_str": "Below is the original news:\n{'question': 'Summarize the following news within 116 words:', 'passages': 'Seventy years ago, Anne Frank died of typhus in a Nazi c"
+   }
+  },
+  "ragtruth_test": {
+   "path": "/home/user/data/mars_metric/ragtruth/data/test-00000-of-00001.parquet",
+   "licence": "RAGTruth (wandb/RAGTruth-processed; original: ParticleMedia/RAGTruth, MIT)",
+   "rows": 2700,
+   "columns": [
+    "id",
+    "query",
+    "context",
+    "output",
+    "task_type",
+    "quality",
+    "model",
+    "temperature",
+    "hallucination_labels",
+    "hallucination_labels_processed",
+    "input_str"
+   ],
+   "span_like_columns": [
+    "hallucination_labels",
+    "hallucination_labels_processed"
+   ],
+   "example": {
+    "id": "24",
+    "query": "Summarize the following news within 86 words:",
+    "context": "The FBI charged a Philadelphia woman on Thursday with trying to travel overseas to fight for ISIS. She's one of three women arrested this week on terror charges",
+    "output": "The FBI has charged a Philadelphia woman, Keonna Thomas, with trying to travel overseas to fight for ISIS. This follows the arrests of two New York women, Noell",
+    "task_type": "Summary",
+    "quality": "good",
+    "model": "gpt-4-0613",
+    "temperature": "0.7",
+    "hallucination_labels": "[]",
+    "hallucination_labels_processed": "{'evident_conflict': 0, 'baseless_info': 0}",
+    "input_str": "Below is the original news:\n{'question': 'Summarize the following news within 86 words:', 'passages': 'The FBI charged a Philadelphia woman on Thursday with try"
+   }
+  },
+  "minicheck_c2d": {
+   "path": "/home/user/data/mars_metric/minicheck/data/c2d-00000-of-00001-5a473df7966a0bbe.parquet",
+   "licence": "MIT (lytang/C2D-and-D2C-MiniCheck)",
+   "rows": 7076,
+   "columns": [
+    "claim",
+    "doc",
+    "label"
+   ],
+   "example": {
+    "claim": "Thirteen men finished the mile faster than 4:00:00.",
+    "doc": "In a remarkable display of athletic prowess at the recent track event, the air buzzed with excitement as the announcer h",
+    "label": "1"
+   }
+  },
+  "minicheck_d2c": {
+   "path": "/home/user/data/mars_metric/minicheck/data/d2c-00000-of-00001-fb38b2c3dc66f609.parquet",
+   "licence": "MIT (lytang/C2D-and-D2C-MiniCheck)",
+   "rows": 7319,
+   "columns": [
+    "claim",
+    "doc",
+    "label"
+   ],
+   "example": {
+    "claim": "The government aims to reform welfare.",
+    "doc": "Hunt also said the government needs to reform the welfare system to get more people back to work. The number of people n",
+    "label": "1"
+   }
+  }
+ },
+ "files": {
+  "/home/user/results/marsc/g5/UniSumEval/data/unisumeval_keyfact.jsonl": "9b7f7da1b8a9168f388bd84968a2aedb8018709149e3a0fee7a87761a698d1bb",
+  "/home/user/results/marsc/g5/UniSumEval/data/unisumeval_faithfulness.jsonl": "ddf191d1c284c4a5c8d0b203622f2191719f001ce72bb7e023826894b356397b",
+  "/home/user/hf_cache/hub/datasets--mteb--summeval/snapshots/bfc121155064afa2d81b5505682ffc0d96f4334c/data/test-00000-of-00001-35901af5f6649399.parquet": "7ff6f3f4d044223bd6922c5434d27bf28473950346fcfc2a3b7352c19163690e",
+  "/home/user/results/mars2_gates/b18/acu_units_test.jsonl": "9bb372e9b50ee4e8ba9874ba039ad604f9d2293181f464abadcd5e1944512515",
+  "/home/user/hf_cache/hub/datasets--lytang--LLM-AggreFact/snapshots/981dfd0bd8e58e7238a9ab92b2e6ea44bce918e4/data/dev-00000-of-00001.parquet": "ca9a5bda9561bbc6f7327ef81ab41727fa10e96f96e9dc74ef32ba3af3c1d8a8",
+  "/home/user/hf_cache/hub/datasets--lytang--LLM-AggreFact/snapshots/981dfd0bd8e58e7238a9ab92b2e6ea44bce918e4/data/test-00000-of-00001.parquet": "ba6976c3da990a9d7b11670efaf4e3c93c1bd0530061ec742afd6b2d5bce698c",
+  "/home/user/data/public/halueval_summarization_data.json": "86d2561eeb4271eb50b6bd90c9fd38636d30eaf4e98b648045f221adb1c2c758",
+  "/home/user/data/mars_metric/summedits/summedits.json": "21e34593330020d02b7d92f4651fdcc550f7d79a2f899392f106fd816c215a89",
+  "/home/user/data/mars_metric/frank/human_annotations.json": "7be2dfd49ad2f2582ab28578cce1dbf256fd46415a0f902a472421bca6fe31d2",
+  "/home/user/data/mars_metric/frank/benchmark_data.json": "37b2871cf526cf7726f7cedf017f7abee0e826e709a91501ebbd7f9f644cdc05",
+  "/home/user/data/mars_metric/ragtruth/data/train-00000-of-00001.parquet": "c14ae31ff459c829edc860bda034ee2dbc0a11107b7511195a32bb4ab1ee8000",
+  "/home/user/data/mars_metric/ragtruth/data/test-00000-of-00001.parquet": "2fc4fb703ea47ee0d4ab6110b86312f94fdf0bda157bc6ee67c7e61fb90d3bbd",
+  "/home/user/data/mars_metric/minicheck/data/c2d-00000-of-00001-5a473df7966a0bbe.parquet": "b554efbf2cbd7b5811e29c320a8587d67f076390dbc0c5726bf3501f37ae9e0b",
+  "/home/user/data/mars_metric/minicheck/data/d2c-00000-of-00001-fb38b2c3dc66f609.parquet": "389b1694864862a574157b8c96be82931c99571c36de61b55cee53839742b9e5"
+ },
+ "errors": {}
+}

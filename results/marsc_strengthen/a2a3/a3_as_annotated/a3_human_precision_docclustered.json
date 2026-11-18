@@ -1,0 +1,2685 @@
+{
+ "registered": "research/marsc_strengthen_20260918/PREREG.md A3",
+ "repairs": "research/marsc_20260916/code/mc_human_rank.py boot_ci L84-97 (item-level stratified bootstrap) and wilson L64-70 (item-count Wilson)",
+ "bar": "none -- this is a repair; the corrected interval is the interval",
+ "resampling_unit": "common.doc_key(source[:200])",
+ "point_estimator_unchanged": "weighted_precision (mc_human_rank.py L73-81) copied verbatim",
+ "emitted": [
+  "/home/user/results/marsc/g3/emitted_validation.jsonl"
+ ],
+ "key": [
+  "/home/user/results/marsc/g6/human_sample_key_all.jsonl"
+ ],
+ "export": [
+  "/home/user/results/marsc/g6/labels_export_all.jsonl"
+ ],
+ "e2_json": "/home/user/results/marsc/g3/eval_validation/e2_emitted.json",
+ "n_boot": 10000,
+ "seed": 20260917,
+ "n_key_items": 400,
+ "n_joined": 400,
+ "n_unjoined": 0,
+ "n_dropped_no_source_for_pair": 0,
+ "dropped_no_source_item_ids": [],
+ "unjoined_item_ids": [],
+ "n_ambiguous_text_match": 15,
+ "status_agrees_with_dump": {
+  "True": 399,
+  "False": 1
+ },
+ "rank_histogram": {
+  "1": 17,
+  "2": 28,
+  "3": 30,
+  "4": 23,
+  "5": 20,
+  "6": 24,
+  "7": 23,
+  "8": 22,
+  "9": 25,
+  "10": 27,
+  "11": 24,
+  "12": 14,
+  "13": 19,
+  "14": 16,
+  "15": 15,
+  "16": 19,
+  "17": 19,
+  "18": 12,
+  "19": 6,
+  "20": 17
+ },
+ "n_distinct_docs_all_joined": 136,
+ "annotators": {
+  "Annotator 1": 400,
+  "Annotator 2": 400
+ },
+ "budgets": {
+  "10": {
+   "weights_from": "k=10",
+   "systems": {
+    "humanfact+div1": {
+     "weights": {
+      "hit": 0.1608,
+      "false_alert": 0.0786,
+      "unknown": 0.7605
+     },
+     "n_items_in_budget": 61,
+     "n_docs_in_budget": 47,
+     "n_by_status": {
+      "unknown": 32,
+      "false_alert": 13,
+      "hit": 16
+     },
+     "Annotator 1": {
+      "doc_clustered": {
+       "point": 0.544087394503911,
+       "ci": [
+        0.40091544468158863,
+        0.6857734577981047
+       ],
+       "n_boot": 10000,
+       "n_draws_undefined": 0,
+       "n_items": 61,
+       "n_docs": 47,
+       "items_per_doc_max": 4,
+       "n_by_status_items": {
+        "false_alert": 13,
+        "hit": 16,
+        "unknown": 32
+       },
+       "n_by_status_docs": {
+        "false_alert": 11,
+        "hit": 13,
+        "unknown": 30
+       },
+       "ci_width": 0.2848580131165161,
+       "n_distinct_draw_values": 9634,
+       "frac_draws_at_0": 0.0,
+       "frac_draws_at_1": 0.0,
+       "degenerate": false,
+       "wilson_on_items": [
+        0.41724048127969954,
+        0.6598706770871635
+       ],
+       "wilson_on_clusters": [
+        0.4124545983507584,
+        0.6858903373729885
+       ]
+      },
+      "item_level_as_published": {
+       "point": 0.544087394503911,
+       "ci": [
+        0.4078731280876904,
+        0.6753596408844517
+       ],
+       "n_boot": 10000
+      },
+      "raw_by_status": {
+       "false_alert": {
+        "n": 13,
+        "n_docs": 11,
+        "rate": 0.15384615384615385,
+        "wilson_on_items": [
+         0.04325817834639353,
+         0.4223463102637225
+        ],
+        "wilson_on_clusters": [
+         0.051367689732176564,
+         0.4769805620320494
+        ]
+       },
+       "hit": {
+        "n": 16,
+        "n_docs": 13,
+        "rate": 0.5,
+        "wilson_on_items": [
+         0.27999563606162736,
+         0.7200043639383726
+        ],
+        "wilson_on_clusters": [
+         0.2320606780553453,
+         0.7085620429013344
+        ]
+       },
+       "unknown": {
+        "n": 32,
+        "n_docs": 30,
+        "rate": 0.59375,
+        "wilson_on_items": [
+         0.42260024871573304,
+         0.7448036516030203
+        ],
+        "wilson_on_clusters": [
+         0.42320360249392197,
+         0.7540937188618385
+        ]
+       }
+      }
+     },
+     "Annotator 2": {
+      "doc_clustered": {
+       "point": 0.663264471404556,
+       "ci": [
+        0.530972308884829,
+        0.7803101472637566
+       ],
+       "n_boot": 10000,
+       "n_draws_undefined": 0,
+       "n_items": 61,
+       "n_docs": 47,
+       "items_per_doc_max": 4,
+       "n_by_status_items": {
+        "false_alert": 13,
+        "hit": 16,
+        "unknown": 32
+       },
+       "n_by_status_docs": {
+        "false_alert": 11,
+        "hit": 13,
+        "unknown": 30
+       },
+       "ci_width": 0.24933783837892753,
+       "n_distinct_draw_values": 8886,
+       "frac_draws_at_0": 0.0,
+       "frac_draws_at_1": 0.0,
+       "degenerate": false,
+       "wilson_on_items": [
+        0.5304974913758339,
+        0.7625249104182455
+       ],
+       "wilson_on_clusters": [
+        0.5167092455855695,
+        0.778325561585671
+       ]
+      },
+      "item_level_as_published": {
+       "point": 0.663264471404556,
+       "ci": [
+        0.5343766081720872,
+        0.782441548305201
+       ],
+       "n_boot": 10000
+      },
+      "raw_by_status": {
+       "false_alert": {
+        "n": 13,
+        "n_docs": 11,
+        "rate": 0.07692307692307693,
+        "wilson_on_items": [
+         0.013710421238024628,
+         0.33313950928545055
+        ],
+        "wilson_on_clusters": [
+         0.016232172880513096,
+         0.3773584365306346
+        ]
+       },
+       "hit": {
+        "n": 16,
+        "n_docs": 13,
+        "rate": 0.6875,
+        "wilson_on_items": [
+         0.4440435582932624,
+         0.8583535614788456
+        ],
+        "wilson_on_clusters": [
+         0.4236934317473361,
+         0.873192963469266
+        ]
+       },
+       "unknown": {
+        "n": 32,
+        "n_docs": 30,
+        "rate": 0.71875,
+        "wilson_on_items": [
+         0.5462549056990084,
+         0.8443541950447492
+        ],
+        "wilson_on_clusters": [
+         0.5555203830046458,
+         0.8581733668254619
+        ]
+       }
+      }
+     },
+     "both_agree": {
+      "doc_clustered": {
+       "point": 0.6403070877449479,
+       "ci": [
+        0.4819112035569574,
+        0.7781565693455375
+       ],
+       "n_boot": 10000,
+       "n_draws_undefined": 0,
+       "n_items": 47,
+       "n_docs": 37,
+       "items_per_doc_max": 3,
+       "n_by_status_items": {
+        "false_alert": 12,
+        "hit": 9,
+        "unknown": 26
+       },
+       "n_by_status_docs": {
+        "false_alert": 11,
+        "hit": 7,
+        "unknown": 25
+       },
+       "ci_width": 0.2962453657885801,
+       "n_distinct_draw_values": 8022,
+       "frac_draws_at_0": 0.0,
+       "frac_draws_at_1": 0.0,
+       "degenerate": false,
+       "wilson_on_items": [
+        0.4953589653144963,
+        0.7603378675672456
+       ],
+       "wilson_on_clusters": [
+        0.48759023118801265,
+        0.7817439286863346
+       ]
+      },
+      "item_level_as_published": {
+       "point": 0.6403070877449479,
+       "ci": [
+        0.487559057943604,
+        0.77690630978185
+       ],
+       "n_boot": 10000
+      },
+      "n_items": 47,
+      "n_docs": 37
+     },
+     "either": {
+      "doc_clustered": {
+       "point": 0.7131832051084123,
+       "ci": [
+        0.589273507187457,
+        0.8255918306968442
+       ],
+       "n_boot": 10000,
+       "n_draws_undefined": 0,
+       "n_items": 61,
+       "n_docs": 47,
+       "items_per_doc_max": 4,
+       "n_by_status_items": {
+        "false_alert": 13,
+        "hit": 16,
+        "unknown": 32
+       },
+       "n_by_status_docs": {
+        "false_alert": 11,
+        "hit": 13,
+        "unknown": 30
+       },
+       "ci_width": 0.2363183235093872,
+       "n_distinct_draw_values": 9506,
+       "frac_draws_at_0": 0.0,
+       "frac_draws_at_1": 0.0,
+       "degenerate": false,
+       "wilson_on_items": [
+        0.5982856940878984,
+        0.8181145610931619
+       ],
+       "wilson_on_clusters": [
+        0.5824143637164648,
+        0.8306343663232721
+       ]
+      },
+      "item_level_as_published": {
+       "point": 0.7131832051084123,
+       "ci": [
+        0.5903343966031117,
+        0.8263126972691093
+       ],
+       "n_boot": 10000
+      },
+      "n_items": 61,
+      "n_docs": 47
+     },
+     "both_positive": {
+      "doc_clustered": {
+       "point": 0.49416866080005484,
+       "ci": [
+        0.3470334051862265,
+        0.6351211231310486
+       ],
+       "n_boot": 10000,
+       "n_draws_undefined": 0,
+       "n_items": 61,
+       "n_docs": 47,
+       "items_per_doc_max": 4,
+       "n_by_status_items": {
+        "false_alert": 13,
+        "hit": 16,
+        "unknown": 32
+       },
+       "n_by_status_docs": {
+        "false_alert": 11,
+        "hit": 13,
+        "unknown": 30
+       },
+       "ci_width": 0.28808771794482213,
+       "n_distinct_draw_values": 8987,
+       "frac_draws_at_0": 0.0,
+       "frac_draws_at_1": 0.0,
+       "degenerate": false,
+       "wilson_on_items": [
+        0.3706039532104601,
+        0.6139738151161672
+       ],
+       "wilson_on_clusters": [
+        0.3527555503073597,
+        0.627575462547891
+       ]
+      },
+      "item_level_as_published": {
+       "point": 0.49416866080005484,
+       "ci": [
+        0.3576131938726499,
+        0.6270609261355838
+       ],
+       "n_boot": 10000
+      },
+      "n_items": 61,
+      "n_docs": 47
+     }
+    },
+    "humanfact.distilled+div1": {
+     "weights": {
+      "hit": 0.1644,
+      "false_alert": 0.0838,
+      "unknown": 0.7518
+     },
+     "n_items_in_budget": 56,
+     "n_docs_in_budget": 48,
+     "n_by_status": {
+      "unknown": 32,
+      "hit": 10,
+      "false_alert": 14
+     },
+     "Annotator 1": {
+      "doc_clustered": {
+       "point": 0.6864309484600757,
+       "ci": [
+        0.5541792267722337,
+        0.8072006146296266
+       ],
+       "n_boot": 10000,
+       "n_draws_undefined": 0,
+       "n_items": 56,
+       "n_docs": 48,
+       "items_per_doc_max": 3,
+       "n_by_status_items": {
+        "false_alert": 14,
+        "hit": 10,
+        "unknown": 32
+       },
+       "n_by_status_docs": {
+        "false_alert": 12,
+        "hit": 9,
+        "unknown": 30
+       },
+       "ci_width": 0.2530213878573928,
+       "n_distinct_draw_values": 9546,
+       "frac_draws_at_0": 0.0,
+       "frac_draws_at_1": 0.0,
+       "degenerate": false,
+       "wilson_on_items": [
+        0.5482263990660007,
+        0.7859900520958
+       ],
+       "wilson_on_clusters": [
+        0.5466692858071349,
+        0.8005431655559956
+       ]
+      },
+      "item_level_as_published": {
+       "point": 0.6864309484600757,
+       "ci": [
+        0.5535885211433276,
+        0.8073023265502166
+       ],
+       "n_boot": 10000
+      },
+      "raw_by_status": {
+       "false_alert": {
+        "n": 14,
+        "n_docs": 12,
+        "rate": 0.2857142857142857,
+        "wilson_on_items": [
+         0.1172137864214107,
+         0.5464908433572745
+        ],
+        "wilson_on_clusters": [
+         0.08894166837325393,
+         0.5323053349974733
+        ]
+       },
+       "hit": {
+        "n": 10,
+        "n_docs": 9,
+        "rate": 0.6,
+        "wilson_on_items": [
+         0.31267376967973604,
+         0.8318196703288646
+        ],
+        "wilson_on_clusters": [
+         0.26665129344507676,
+         0.8112214789418183
+        ]
+       },
+       "unknown": {
+        "n": 32,
+        "n_docs": 30,
+        "rate": 0.75,
+        "wilson_on_items": [
+         0.5789344100150571,
+         0.8674759908349516
+        ],
+        "wilson_on_clusters": [
+         0.5555203830046458,
+         0.8581733668254619
+        ]
+       }
+      }
+     },
+     "Annotator 2": {
+      "doc_clustered": {
+       "point": 0.7404683895652401,
+       "ci": [
+        0.6314764415857156,
+        0.8433322788576986
+       ],
+       "n_boot": 10000,
+       "n_draws_undefined": 0,
+       "n_items": 56,
+       "n_docs": 48,
+       "items_per_doc_max": 3,
+       "n_by_status_items": {
+        "false_alert": 14,
+        "hit": 10,
+        "unknown": 32
+       },
+       "n_by_status_docs": {
+        "false_alert": 12,
+        "hit": 9,
+        "unknown": 30
+       },
+       "ci_width": 0.21185583727198298,
+       "n_distinct_draw_values": 9500,
+       "frac_draws_at_0": 0.0,
+       "frac_draws_at_1": 0.0,
+       "degenerate": false,
+       "wilson_on_items": [
+        0.604054440676616,
+        0.8304269458337248
+       ],
+       "wilson_on_clusters": [
+        0.6121562718703193,
+        0.8507936632805213
+       ]
+      },
+      "item_level_as_published": {
+       "point": 0.7404683895652401,
+       "ci": [
+        0.6251336161265659,
+        0.8408755481058898
+       ],
+       "n_boot": 10000
+      },
+      "raw_by_status": {
+       "false_alert": {
+        "n": 14,
+        "n_docs": 12,
+        "rate": 0.2857142857142857,
+        "wilson_on_items": [
+         0.1172137864214107,
+         0.5464908433572745
+        ],
+        "wilson_on_clusters": [
+         0.08894166837325393,
+         0.5323053349974733
+        ]
+       },
+       "hit": {
+        "n": 10,
+        "n_docs": 9,
+        "rate": 0.5,
+        "wilson_on_items": [
+         0.2365930904679055,
+         0.7634069095320946
+        ],
+        "wilson_on_clusters": [
+         0.18877852105818171,
+         0.7333487065549232
+        ]
+       },
+       "unknown": {
+        "n": 32,
+        "n_docs": 30,
+        "rate": 0.84375,
+        "wilson_on_items": [
+         0.6824585039808979,
+         0.9313557971878639
+        ],
+        "wilson_on_clusters": [
+         0.6643564948905445,
+         0.9266345762953239
+        ]
+       }
+      }
+     },
+     "both_agree": {
+      "doc_clustered": {
+       "point": 0.8696786351428178,
+       "ci": [
+        0.7775655100583054,
+        0.9390564766645458
+       ],
+       "n_boot": 10000,
+       "n_draws_undefined": 0,
+       "n_items": 40,
+       "n_docs": 36,
+       "items_per_doc_max": 3,
+       "n_by_status_items": {
+        "false_alert": 14,
+        "hit": 7,
+        "unknown": 19
+       },
+       "n_by_status_docs": {
+        "false_alert": 12,
+        "hit": 6,
+        "unknown": 19
+       },
+       "ci_width": 0.1614909666062404,
+       "n_distinct_draw_values": 2301,
+       "frac_draws_at_0": 0.0,
+       "frac_draws_at_1": 0.0,
+       "degenerate": false,
+       "wilson_on_items": [
+        0.7388788015730705,
+        0.9454049975008236
+       ],
+       "wilson_on_clusters": [
+        0.7134046960654578,
+        0.9391818499201202
+       ]
+      },
+      "item_level_as_published": {
+       "point": 0.8696786351428178,
+       "ci": [
+        0.8051980410319748,
+        0.928638431657485
+       ],
+       "n_boot": 10000
+      },
+      "n_items": 40,
+      "n_docs": 36
+     },
+     "either": {
+      "doc_clustered": {
+       "point": 0.8908184707600619,
+       "ci": [
+        0.8295211384265522,
+        0.9401447538669646
+       ],
+       "n_boot": 10000,
+       "n_draws_undefined": 0,
+       "n_items": 56,
+       "n_docs": 48,
+       "items_per_doc_max": 3,
+       "n_by_status_items": {
+        "false_alert": 14,
+        "hit": 10,
+        "unknown": 32
+       },
+       "n_by_status_docs": {
+        "false_alert": 12,
+        "hit": 9,
+        "unknown": 30
+       },
+       "ci_width": 0.11062361544041244,
+       "n_distinct_draw_values": 2809,
+       "frac_draws_at_0": 0.0,
+       "frac_draws_at_1": 0.0,
+       "degenerate": false,
+       "wilson_on_items": [
+        0.7853155482584336,
+        0.949960644297528
+       ],
+       "wilson_on_clusters": [
+        0.7783257830221114,
+        0.9546782809667197
+       ]
+      },
+      "item_level_as_published": {
+       "point": 0.8908184707600619,
+       "ci": [
+        0.8399777081822162,
+        0.9356737087246041
+       ],
+       "n_boot": 10000
+      },
+      "n_items": 56,
+      "n_docs": 48
+     },
+     "both_positive": {
+      "doc_clustered": {
+       "point": 0.5360808672652538,
+       "ci": [
+        0.3893606878547478,
+        0.6792249636001586
+       ],
+       "n_boot": 10000,
+       "n_draws_undefined": 0,
+       "n_items": 56,
+       "n_docs": 48,
+       "items_per_doc_max": 3,
+       "n_by_status_items": {
+        "false_alert": 14,
+        "hit": 10,
+        "unknown": 32
+       },
+       "n_by_status_docs": {
+        "false_alert": 12,
+        "hit": 9,
+        "unknown": 30
+       },
+       "ci_width": 0.2898642757454108,
+       "n_distinct_draw_values": 9563,
+       "frac_draws_at_0": 0.0,
+       "frac_draws_at_1": 0.0,
+       "degenerate": false,
+       "wilson_on_items": [
+        0.4070418193278419,
+        0.6598014709045182
+       ],
+       "wilson_on_clusters": [
+        0.4029107454256628,
+        0.6742475770994771
+       ]
+      },
+      "item_level_as_published": {
+       "point": 0.5360808672652538,
+       "ci": [
+        0.3972529153352023,
+        0.6738586756748806
+       ],
+       "n_boot": 10000
+      },
+      "n_items": 56,
+      "n_docs": 48
+     }
+    },
+    "judgefact.distilled+div1": {
+     "weights": {
+      "hit": 0.1576,
+      "false_alert": 0.0816,
+      "unknown": 0.7609
+     },
+     "n_items_in_budget": 59,
+     "n_docs_in_budget": 48,
+     "n_by_status": {
+      "false_alert": 11,
+      "unknown": 33,
+      "hit": 15
+     },
+     "Annotator 1": {
+      "doc_clustered": {
+       "point": 0.6818826213278664,
+       "ci": [
+        0.5459527342706505,
+        0.8083168523464169
+       ],
+       "n_boot": 10000,
+       "n_draws_undefined": 0,
+       "n_items": 59,
+       "n_docs": 48,
+       "items_per_doc_max": 2,
+       "n_by_status_items": {
+        "false_alert": 11,
+        "hit": 15,
+        "unknown": 33
+       },
+       "n_by_status_docs": {
+        "false_alert": 10,
+        "hit": 15,
+        "unknown": 29
+       },
+       "ci_width": 0.26236411807576643,
+       "n_distinct_draw_values": 9649,
+       "frac_draws_at_0": 0.0,
+       "frac_draws_at_1": 0.0,
+       "degenerate": false,
+       "wilson_on_items": [
+        0.5510500442346692,
+        0.7831242476021404
+       ],
+       "wilson_on_clusters": [
+        0.5466692858071349,
+        0.8005431655559956
+       ]
+      },
+      "item_level_as_published": {
+       "point": 0.6818826213278664,
+       "ci": [
+        0.5530055685855398,
+        0.8005072781212006
+       ],
+       "n_boot": 10000
+      },
+      "raw_by_status": {
+       "false_alert": {
+        "n": 11,
+        "n_docs": 10,
+        "rate": 0.5454545454545454,
+        "wilson_on_items": [
+         0.2800915373610262,
+         0.7872872838155129
+        ],
+        "wilson_on_clusters": [
+         0.2365930904679055,
+         0.7634069095320946
+        ]
+       },
+       "hit": {
+        "n": 15,
+        "n_docs": 15,
+        "rate": 0.5333333333333333,
+        "wilson_on_items": [
+         0.30116980021030193,
+         0.7519046463822293
+        ],
+        "wilson_on_clusters": [
+         0.30116980021030193,
+         0.7519046463822293
+        ]
+       },
+       "unknown": {
+        "n": 33,
+        "n_docs": 29,
+        "rate": 0.7272727272727273,
+        "wilson_on_items": [
+         0.5578244099298642,
+         0.8493255911672779
+        ],
+        "wilson_on_clusters": [
+         0.5428286757874183,
+         0.8530124490013116
+        ]
+       }
+      }
+     },
+     "Annotator 2": {
+      "doc_clustered": {
+       "point": 0.8087135333713144,
+       "ci": [
+        0.6995720496150193,
+        0.9034150308172257
+       ],
+       "n_boot": 10000,
+       "n_draws_undefined": 0,
+       "n_items": 59,
+       "n_docs": 48,
+       "items_per_doc_max": 2,
+       "n_by_status_items": {
+        "false_alert": 11,
+        "hit": 15,
+        "unknown": 33
+       },
+       "n_by_status_docs": {
+        "false_alert": 10,
+        "hit": 15,
+        "unknown": 29
+       },
+       "ci_width": 0.20384298120220645,
+       "n_distinct_draw_values": 9598,
+       "frac_draws_at_0": 0.0,
+       "frac_draws_at_1": 0.0,
+       "degenerate": false,
+       "wilson_on_items": [
+        0.6962104954994699,
+        0.8925727805939567
+       ],
+       "wilson_on_clusters": [
+        0.6806013284723911,
+        0.8980860904661598
+       ]
+      },
+      "item_level_as_published": {
+       "point": 0.8087135333713144,
+       "ci": [
+        0.7016583340610718,
+        0.9009389299194774
+       ],
+       "n_boot": 10000
+      },
+      "raw_by_status": {
+       "false_alert": {
+        "n": 11,
+        "n_docs": 10,
+        "rate": 0.45454545454545453,
+        "wilson_on_items": [
+         0.212712716184487,
+         0.7199084626389738
+        ],
+        "wilson_on_clusters": [
+         0.2365930904679055,
+         0.7634069095320946
+        ]
+       },
+       "hit": {
+        "n": 15,
+        "n_docs": 15,
+        "rate": 0.8,
+        "wilson_on_items": [
+         0.5481455127861612,
+         0.9295245065466211
+        ],
+        "wilson_on_clusters": [
+         0.5481455127861612,
+         0.9295245065466211
+        ]
+       },
+       "unknown": {
+        "n": 33,
+        "n_docs": 29,
+        "rate": 0.8484848484848485,
+        "wilson_on_items": [
+         0.6908012411525084,
+         0.9334954271964429
+        ],
+        "wilson_on_clusters": [
+         0.6944100627499951,
+         0.9450256003702607
+        ]
+       }
+      }
+     },
+     "both_agree": {
+      "doc_clustered": {
+       "point": 0.8249394734708135,
+       "ci": [
+        0.7072999181886668,
+        0.9255809940020326
+       ],
+       "n_boot": 10000,
+       "n_draws_undefined": 0,
+       "n_items": 44,
+       "n_docs": 37,
+       "items_per_doc_max": 2,
+       "n_by_status_items": {
+        "false_alert": 8,
+        "hit": 11,
+        "unknown": 25
+       },
+       "n_by_status_docs": {
+        "false_alert": 7,
+        "hit": 11,
+        "unknown": 23
+       },
+       "ci_width": 0.21828107581336587,
+       "n_distinct_draw_values": 8884,
+       "frac_draws_at_0": 0.0,
+       "frac_draws_at_1": 0.0,
+       "degenerate": false,
+       "wilson_on_items": [
+        0.6803944910916457,
+        0.904871942858174
+       ],
+       "wilson_on_clusters": [
+        0.6886351629503464,
+        0.92348792767317
+       ]
+      },
+      "item_level_as_published": {
+       "point": 0.8249394734708135,
+       "ci": [
+        0.7091156993722736,
+        0.9246540088253884
+       ],
+       "n_boot": 10000
+      },
+      "n_items": 44,
+      "n_docs": 37
+     },
+     "either": {
+      "doc_clustered": {
+       "point": 0.8696560344074753,
+       "ci": [
+        0.7794892662039636,
+        0.9456391268728312
+       ],
+       "n_boot": 10000,
+       "n_draws_undefined": 0,
+       "n_items": 59,
+       "n_docs": 48,
+       "items_per_doc_max": 2,
+       "n_by_status_items": {
+        "false_alert": 11,
+        "hit": 15,
+        "unknown": 33
+       },
+       "n_by_status_docs": {
+        "false_alert": 10,
+        "hit": 15,
+        "unknown": 29
+       },
+       "ci_width": 0.1661498606688676,
+       "n_distinct_draw_values": 9440,
+       "frac_draws_at_0": 0.0,
+       "frac_draws_at_1": 0.0,
+       "degenerate": false,
+       "wilson_on_items": [
+        0.7546033919042775,
+        0.9296582532853804
+       ],
+       "wilson_on_clusters": [
+        0.7529954171018038,
+        0.9414294856244572
+       ]
+      },
+      "item_level_as_published": {
+       "point": 0.8696560344074753,
+       "ci": [
+        0.7774306378593121,
+        0.9462399831996373
+       ],
+       "n_boot": 10000
+      },
+      "n_items": 59,
+      "n_docs": 48
+     },
+     "both_positive": {
+      "doc_clustered": {
+       "point": 0.6209401202917053,
+       "ci": [
+        0.48125346195664326,
+        0.7570987415807692
+       ],
+       "n_boot": 10000,
+       "n_draws_undefined": 0,
+       "n_items": 59,
+       "n_docs": 48,
+       "items_per_doc_max": 2,
+       "n_by_status_items": {
+        "false_alert": 11,
+        "hit": 15,
+        "unknown": 33
+       },
+       "n_by_status_docs": {
+        "false_alert": 10,
+        "hit": 15,
+        "unknown": 29
+       },
+       "ci_width": 0.2758452796241259,
+       "n_distinct_draw_values": 9685,
+       "frac_draws_at_0": 0.0,
+       "frac_draws_at_1": 0.0,
+       "degenerate": false,
+       "wilson_on_items": [
+        0.4995359106407053,
+        0.739160012099873
+       ],
+       "wilson_on_clusters": [
+        0.4836276351592814,
+        0.747847332416139
+       ]
+      },
+      "item_level_as_published": {
+       "point": 0.6209401202917053,
+       "ci": [
+        0.4879707861516218,
+        0.7498229834626626
+       ],
+       "n_boot": 10000
+      },
+      "n_items": 59,
+      "n_docs": 48
+     }
+    },
+    "mars2": {
+     "weights": {
+      "hit": 0.0658,
+      "false_alert": 0.0319,
+      "unknown": 0.9023
+     },
+     "n_items_in_budget": 63,
+     "n_docs_in_budget": 49,
+     "n_by_status": {
+      "false_alert": 15,
+      "unknown": 36,
+      "hit": 12
+     },
+     "Annotator 1": {
+      "doc_clustered": {
+       "point": 0.6649566833884798,
+       "ci": [
+        0.520686214951879,
+        0.7958452621707969
+       ],
+       "n_boot": 10000,
+       "n_draws_undefined": 0,
+       "n_items": 63,
+       "n_docs": 49,
+       "items_per_doc_max": 4,
+       "n_by_status_items": {
+        "false_alert": 15,
+        "hit": 12,
+        "unknown": 36
+       },
+       "n_by_status_docs": {
+        "false_alert": 12,
+        "hit": 10,
+        "unknown": 32
+       },
+       "ci_width": 0.27515904721891793,
+       "n_distinct_draw_values": 5565,
+       "frac_draws_at_0": 0.0,
+       "frac_draws_at_1": 0.0,
+       "degenerate": false,
+       "wilson_on_items": [
+        0.543672411420254,
+        0.7705038553749874
+       ],
+       "wilson_on_clusters": [
+        0.5337920531122896,
+        0.7879250300043162
+       ]
+      },
+      "item_level_as_published": {
+       "point": 0.6649566833884798,
+       "ci": [
+        0.5231932563824975,
+        0.7957549974841043
+       ],
+       "n_boot": 10000
+      },
+      "raw_by_status": {
+       "false_alert": {
+        "n": 15,
+        "n_docs": 12,
+        "rate": 0.0,
+        "wilson_on_items": [
+         0.0,
+         0.20388330111202968
+        ],
+        "wilson_on_clusters": [
+         0.0,
+         0.24249400674145444
+        ]
+       },
+       "hit": {
+        "n": 12,
+        "n_docs": 10,
+        "rate": 0.5833333333333334,
+        "wilson_on_items": [
+         0.3195113124987614,
+         0.8067396863776628
+        ],
+        "wilson_on_clusters": [
+         0.31267376967973604,
+         0.8318196703288646
+        ]
+       },
+       "unknown": {
+        "n": 36,
+        "n_docs": 32,
+        "rate": 0.6944444444444444,
+        "wilson_on_items": [
+         0.5314372714558399,
+         0.8199554840748559
+        ],
+        "wilson_on_clusters": [
+         0.5143332169494008,
+         0.8204745836881056
+        ]
+       }
+      }
+     },
+     "Annotator 2": {
+      "doc_clustered": {
+       "point": 0.7728209037911249,
+       "ci": [
+        0.6473606463420563,
+        0.8834451717930646
+       ],
+       "n_boot": 10000,
+       "n_draws_undefined": 0,
+       "n_items": 63,
+       "n_docs": 49,
+       "items_per_doc_max": 4,
+       "n_by_status_items": {
+        "false_alert": 15,
+        "hit": 12,
+        "unknown": 36
+       },
+       "n_by_status_docs": {
+        "false_alert": 12,
+        "hit": 10,
+        "unknown": 32
+       },
+       "ci_width": 0.23608452545100833,
+       "n_distinct_draw_values": 8753,
+       "frac_draws_at_0": 0.0,
+       "frac_draws_at_1": 0.0,
+       "degenerate": false,
+       "wilson_on_items": [
+        0.6608771888357173,
+        0.8627499224896854
+       ],
+       "wilson_on_clusters": [
+        0.6412121276060528,
+        0.8697502985203213
+       ]
+      },
+      "item_level_as_published": {
+       "point": 0.7728209037911249,
+       "ci": [
+        0.6453760883155696,
+        0.8819095649787293
+       ],
+       "n_boot": 10000
+      },
+      "raw_by_status": {
+       "false_alert": {
+        "n": 15,
+        "n_docs": 12,
+        "rate": 0.06666666666666667,
+        "wilson_on_items": [
+         0.0118668954893493,
+         0.2981652988077431
+        ],
+        "wilson_on_clusters": [
+         0.014865094400000889,
+         0.3538799112178778
+        ]
+       },
+       "hit": {
+        "n": 12,
+        "n_docs": 10,
+        "rate": 0.6666666666666666,
+        "wilson_on_items": [
+         0.39062208881531185,
+         0.8618799089375366
+        ],
+        "wilson_on_clusters": [
+         0.39677814739821715,
+         0.8922087326189844
+        ]
+       },
+       "unknown": {
+        "n": 36,
+        "n_docs": 32,
+        "rate": 0.8055555555555556,
+        "wilson_on_items": [
+         0.6497195700074787,
+         0.9024690458264719
+        ],
+        "wilson_on_clusters": [
+         0.646908447942749,
+         0.9111045531197618
+        ]
+       }
+      }
+     },
+     "both_agree": {
+      "doc_clustered": {
+       "point": 0.7830199899364165,
+       "ci": [
+        0.6374014607444002,
+        0.9004015370329623
+       ],
+       "n_boot": 10000,
+       "n_draws_undefined": 0,
+       "n_items": 53,
+       "n_docs": 42,
+       "items_per_doc_max": 4,
+       "n_by_status_items": {
+        "false_alert": 14,
+        "hit": 11,
+        "unknown": 28
+       },
+       "n_by_status_docs": {
+        "false_alert": 11,
+        "hit": 9,
+        "unknown": 26
+       },
+       "ci_width": 0.26300007628856215,
+       "n_distinct_draw_values": 4337,
+       "frac_draws_at_0": 0.0,
+       "frac_draws_at_1": 0.0,
+       "degenerate": false,
+       "wilson_on_items": [
+        0.6654225529506037,
+        0.8799540197514788
+       ],
+       "wilson_on_clusters": [
+        0.640601546799406,
+        0.8829420012567435
+       ]
+      },
+      "item_level_as_published": {
+       "point": 0.7830199899364165,
+       "ci": [
+        0.6421618407209186,
+        0.8999542564384064
+       ],
+       "n_boot": 10000
+      },
+      "n_items": 53,
+      "n_docs": 42
+     },
+     "either": {
+      "doc_clustered": {
+       "point": 0.822947206847303,
+       "ci": [
+        0.7054116885991953,
+        0.9168464222224273
+       ],
+       "n_boot": 10000,
+       "n_draws_undefined": 0,
+       "n_items": 63,
+       "n_docs": 49,
+       "items_per_doc_max": 4,
+       "n_by_status_items": {
+        "false_alert": 15,
+        "hit": 12,
+        "unknown": 36
+       },
+       "n_by_status_docs": {
+        "false_alert": 12,
+        "hit": 10,
+        "unknown": 32
+       },
+       "ci_width": 0.21143473362323195,
+       "n_distinct_draw_values": 8709,
+       "frac_draws_at_0": 0.0,
+       "frac_draws_at_1": 0.0,
+       "degenerate": false,
+       "wilson_on_items": [
+        0.7137857247627548,
+        0.8996060342184311
+       ],
+       "wilson_on_clusters": [
+        0.6864239739366526,
+        0.9002365893936289
+       ]
+      },
+      "item_level_as_published": {
+       "point": 0.822947206847303,
+       "ci": [
+        0.7117294878245887,
+        0.9177172565044803
+       ],
+       "n_boot": 10000
+      },
+      "n_items": 63,
+      "n_docs": 49
+     },
+     "both_positive": {
+      "doc_clustered": {
+       "point": 0.6148303803323016,
+       "ci": [
+        0.4711424454508028,
+        0.7500165475867926
+       ],
+       "n_boot": 10000,
+       "n_draws_undefined": 0,
+       "n_items": 63,
+       "n_docs": 49,
+       "items_per_doc_max": 4,
+       "n_by_status_items": {
+        "false_alert": 15,
+        "hit": 12,
+        "unknown": 36
+       },
+       "n_by_status_docs": {
+        "false_alert": 12,
+        "hit": 10,
+        "unknown": 32
+       },
+       "ci_width": 0.2788741021359898,
+       "n_distinct_draw_values": 5540,
+       "frac_draws_at_0": 0.0,
+       "frac_draws_at_1": 0.0,
+       "degenerate": false,
+       "wilson_on_items": [
+        0.49558630377339896,
+        0.7288253153660593
+       ],
+       "wilson_on_clusters": [
+        0.4724599944029001,
+        0.7357098829078449
+       ]
+      },
+      "item_level_as_published": {
+       "point": 0.6148303803323016,
+       "ci": [
+        0.46993402761894604,
+        0.7565938073382839
+       ],
+       "n_boot": 10000
+      },
+      "n_items": 63,
+      "n_docs": 49
+     }
+    }
+   }
+  },
+  "20": {
+   "weights_from": "k=20",
+   "systems": {
+    "humanfact+div1": {
+     "weights": {
+      "hit": 0.1416,
+      "false_alert": 0.0731,
+      "unknown": 0.7853
+     },
+     "n_items_in_budget": 100,
+     "n_docs_in_budget": 70,
+     "n_by_status": {
+      "unknown": 60,
+      "false_alert": 20,
+      "hit": 20
+     },
+     "Annotator 1": {
+      "doc_clustered": {
+       "point": 0.5600084769246302,
+       "ci": [
+        0.4511994157831137,
+        0.6606065036264777
+       ],
+       "n_boot": 10000,
+       "n_draws_undefined": 0,
+       "n_items": 100,
+       "n_docs": 70,
+       "items_per_doc_max": 5,
+       "n_by_status_items": {
+        "false_alert": 20,
+        "hit": 20,
+        "unknown": 60
+       },
+       "n_by_status_docs": {
+        "false_alert": 15,
+        "hit": 15,
+        "unknown": 51
+       },
+       "ci_width": 0.20940708784336398,
+       "n_distinct_draw_values": 9927,
+       "frac_draws_at_0": 0.0,
+       "frac_draws_at_1": 0.0,
+       "degenerate": false,
+       "wilson_on_items": [
+        0.46228104649417306,
+        0.6532797337189822
+       ],
+       "wilson_on_clusters": [
+        0.44083551050532727,
+        0.6675047109308541
+       ]
+      },
+      "item_level_as_published": {
+       "point": 0.5600084769246302,
+       "ci": [
+        0.4589621533776933,
+        0.6610554140670561
+       ],
+       "n_boot": 10000
+      },
+      "raw_by_status": {
+       "false_alert": {
+        "n": 20,
+        "n_docs": 15,
+        "rate": 0.15,
+        "wilson_on_items": [
+         0.05236874588403395,
+         0.36041886479734614
+        ],
+        "wilson_on_clusters": [
+         0.03736125909298635,
+         0.3788198283891687
+        ]
+       },
+       "hit": {
+        "n": 20,
+        "n_docs": 15,
+        "rate": 0.55,
+        "wilson_on_items": [
+         0.34208534240776256,
+         0.7418021417806118
+        ],
+        "wilson_on_clusters": [
+         0.30116980021030193,
+         0.7519046463822293
+        ]
+       },
+       "unknown": {
+        "n": 60,
+        "n_docs": 51,
+        "rate": 0.6,
+        "wilson_on_items": [
+         0.47366053489114995,
+         0.7143050946751237
+        ],
+        "wilson_on_clusters": [
+         0.4708515898078426,
+         0.7297265902074485
+        ]
+       }
+      }
+     },
+     "Annotator 2": {
+      "doc_clustered": {
+       "point": 0.659774053972435,
+       "ci": [
+        0.5605655549273914,
+        0.7508452103872267
+       ],
+       "n_boot": 10000,
+       "n_draws_undefined": 0,
+       "n_items": 100,
+       "n_docs": 70,
+       "items_per_doc_max": 5,
+       "n_by_status_items": {
+        "false_alert": 20,
+        "hit": 20,
+        "unknown": 60
+       },
+       "n_by_status_docs": {
+        "false_alert": 15,
+        "hit": 15,
+        "unknown": 51
+       },
+       "ci_width": 0.19027965545983538,
+       "n_distinct_draw_values": 9914,
+       "frac_draws_at_0": 0.0,
+       "frac_draws_at_1": 0.0,
+       "degenerate": false,
+       "wilson_on_items": [
+        0.5627772885238507,
+        0.7453847920445635
+       ],
+       "wilson_on_clusters": [
+        0.5403954969515146,
+        0.7575401119979841
+       ]
+      },
+      "item_level_as_published": {
+       "point": 0.659774053972435,
+       "ci": [
+        0.5584782569367504,
+        0.7548118594694175
+       ],
+       "n_boot": 10000
+      },
+      "raw_by_status": {
+       "false_alert": {
+        "n": 20,
+        "n_docs": 15,
+        "rate": 0.15,
+        "wilson_on_items": [
+         0.05236874588403395,
+         0.36041886479734614
+        ],
+        "wilson_on_clusters": [
+         0.03736125909298635,
+         0.3788198283891687
+        ]
+       },
+       "hit": {
+        "n": 20,
+        "n_docs": 15,
+        "rate": 0.7,
+        "wilson_on_items": [
+         0.48102718159593116,
+         0.8545227551575657
+        ],
+        "wilson_on_clusters": [
+         0.4171354773312298,
+         0.8482367556314269
+        ]
+       },
+       "unknown": {
+        "n": 60,
+        "n_docs": 51,
+        "rate": 0.7,
+        "wilson_on_items": [
+         0.5749129205003304,
+         0.8010183386322168
+        ],
+        "wilson_on_clusters": [
+         0.570009244209963,
+         0.8129127358192293
+        ]
+       }
+      }
+     },
+     "both_agree": {
+      "doc_clustered": {
+       "point": 0.6460247313446836,
+       "ci": [
+        0.5318435349169086,
+        0.7484332201866817
+       ],
+       "n_boot": 10000,
+       "n_draws_undefined": 0,
+       "n_items": 79,
+       "n_docs": 61,
+       "items_per_doc_max": 5,
+       "n_by_status_items": {
+        "false_alert": 18,
+        "hit": 13,
+        "unknown": 48
+       },
+       "n_by_status_docs": {
+        "false_alert": 15,
+        "hit": 10,
+        "unknown": 44
+       },
+       "ci_width": 0.21658968526977307,
+       "n_distinct_draw_values": 9703,
+       "frac_draws_at_0": 0.0,
+       "frac_draws_at_1": 0.0,
+       "degenerate": false,
+       "wilson_on_items": [
+        0.5355927424067636,
+        0.7420460187512418
+       ],
+       "wilson_on_clusters": [
+        0.5139190536237287,
+        0.7482588848236057
+       ]
+      },
+      "item_level_as_published": {
+       "point": 0.6460247313446836,
+       "ci": [
+        0.5342091847312518,
+        0.7510121426504281
+       ],
+       "n_boot": 10000
+      },
+      "n_items": 79,
+      "n_docs": 61
+     },
+     "either": {
+      "doc_clustered": {
+       "point": 0.7168534393888881,
+       "ci": [
+        0.6205174465259856,
+        0.801210409733415
+       ],
+       "n_boot": 10000,
+       "n_draws_undefined": 0,
+       "n_items": 100,
+       "n_docs": 70,
+       "items_per_doc_max": 5,
+       "n_by_status_items": {
+        "false_alert": 20,
+        "hit": 20,
+        "unknown": 60
+       },
+       "n_by_status_docs": {
+        "false_alert": 15,
+        "hit": 15,
+        "unknown": 51
+       },
+       "ci_width": 0.18069296320742934,
+       "n_distinct_draw_values": 9926,
+       "frac_draws_at_0": 0.0,
+       "frac_draws_at_1": 0.0,
+       "degenerate": false,
+       "wilson_on_items": [
+        0.6251197128773347,
+        0.7986031479042346
+       ],
+       "wilson_on_clusters": [
+        0.5994980341545147,
+        0.8067777962311652
+       ]
+      },
+      "item_level_as_published": {
+       "point": 0.7168534393888881,
+       "ci": [
+        0.6241672477575363,
+        0.8035363599486012
+       ],
+       "n_boot": 10000
+      },
+      "n_items": 100,
+      "n_docs": 70
+     },
+     "both_positive": {
+      "doc_clustered": {
+       "point": 0.5029290915081772,
+       "ci": [
+        0.40295763056847905,
+        0.6034323554065658
+       ],
+       "n_boot": 10000,
+       "n_draws_undefined": 0,
+       "n_items": 100,
+       "n_docs": 70,
+       "items_per_doc_max": 5,
+       "n_by_status_items": {
+        "false_alert": 20,
+        "hit": 20,
+        "unknown": 60
+       },
+       "n_by_status_docs": {
+        "false_alert": 15,
+        "hit": 15,
+        "unknown": 51
+       },
+       "ci_width": 0.20047472483808676,
+       "n_distinct_draw_values": 9877,
+       "frac_draws_at_0": 0.0,
+       "frac_draws_at_1": 0.0,
+       "degenerate": false,
+       "wilson_on_items": [
+        0.4038315303442626,
+        0.5961684696557374
+       ],
+       "wilson_on_clusters": [
+        0.3859571764276537,
+        0.6140428235723463
+       ]
+      },
+      "item_level_as_published": {
+       "point": 0.5029290915081772,
+       "ci": [
+        0.3982258637769162,
+        0.6065859956925013
+       ],
+       "n_boot": 10000
+      },
+      "n_items": 100,
+      "n_docs": 70
+     }
+    },
+    "humanfact.distilled+div1": {
+     "weights": {
+      "hit": 0.1462,
+      "false_alert": 0.0756,
+      "unknown": 0.7782
+     },
+     "n_items_in_budget": 100,
+     "n_docs_in_budget": 64,
+     "n_by_status": {
+      "false_alert": 20,
+      "unknown": 60,
+      "hit": 20
+     },
+     "Annotator 1": {
+      "doc_clustered": {
+       "point": 0.695928267700485,
+       "ci": [
+        0.6046150432404301,
+        0.7830012536845905
+       ],
+       "n_boot": 10000,
+       "n_draws_undefined": 0,
+       "n_items": 100,
+       "n_docs": 64,
+       "items_per_doc_max": 5,
+       "n_by_status_items": {
+        "false_alert": 20,
+        "hit": 20,
+        "unknown": 60
+       },
+       "n_by_status_docs": {
+        "false_alert": 16,
+        "hit": 16,
+        "unknown": 46
+       },
+       "ci_width": 0.17838621044416036,
+       "n_distinct_draw_values": 9932,
+       "frac_draws_at_0": 0.0,
+       "frac_draws_at_1": 0.0,
+       "degenerate": false,
+       "wilson_on_items": [
+        0.6041514536430607,
+        0.7810511470674569
+       ],
+       "wilson_on_clusters": [
+        0.5822979889350076,
+        0.8009484867639801
+       ]
+      },
+      "item_level_as_published": {
+       "point": 0.695928267700485,
+       "ci": [
+        0.6018297368029677,
+        0.7827104733745048
+       ],
+       "n_boot": 10000
+      },
+      "raw_by_status": {
+       "false_alert": {
+        "n": 20,
+        "n_docs": 16,
+        "rate": 0.25,
+        "wilson_on_items": [
+         0.11186170138661136,
+         0.46870087767151736
+        ],
+        "wilson_on_clusters": [
+         0.1018206748909937,
+         0.49498316541286214
+        ]
+       },
+       "hit": {
+        "n": 20,
+        "n_docs": 16,
+        "rate": 0.55,
+        "wilson_on_items": [
+         0.34208534240776256,
+         0.7418021417806118
+        ],
+        "wilson_on_clusters": [
+         0.3317855639420427,
+         0.7690134759819932
+        ]
+       },
+       "unknown": {
+        "n": 60,
+        "n_docs": 46,
+        "rate": 0.7666666666666667,
+        "wilson_on_items": [
+         0.6456372961932075,
+         0.8556043826501889
+        ],
+        "wilson_on_clusters": [
+         0.6206486143883266,
+         0.8608782222452563
+        ]
+       }
+      }
+     },
+     "Annotator 2": {
+      "doc_clustered": {
+       "point": 0.7737465123726122,
+       "ci": [
+        0.685731568470215,
+        0.8550038680372177
+       ],
+       "n_boot": 10000,
+       "n_draws_undefined": 0,
+       "n_items": 100,
+       "n_docs": 64,
+       "items_per_doc_max": 5,
+       "n_by_status_items": {
+        "false_alert": 20,
+        "hit": 20,
+        "unknown": 60
+       },
+       "n_by_status_docs": {
+        "false_alert": 16,
+        "hit": 16,
+        "unknown": 46
+       },
+       "ci_width": 0.16927229956700274,
+       "n_distinct_draw_values": 9909,
+       "frac_draws_at_0": 0.0,
+       "frac_draws_at_1": 0.0,
+       "degenerate": false,
+       "wilson_on_items": [
+        0.6784561697480407,
+        0.8415673412111582
+       ],
+       "wilson_on_clusters": [
+        0.6656721604040657,
+        0.8649768059483788
+       ]
+      },
+      "item_level_as_published": {
+       "point": 0.7737465123726122,
+       "ci": [
+        0.6959062724151338,
+        0.8459062724151338
+       ],
+       "n_boot": 10000
+      },
+      "raw_by_status": {
+       "false_alert": {
+        "n": 20,
+        "n_docs": 16,
+        "rate": 0.25,
+        "wilson_on_items": [
+         0.11186170138661136,
+         0.46870087767151736
+        ],
+        "wilson_on_clusters": [
+         0.1018206748909937,
+         0.49498316541286214
+        ]
+       },
+       "hit": {
+        "n": 20,
+        "n_docs": 16,
+        "rate": 0.55,
+        "wilson_on_items": [
+         0.34208534240776256,
+         0.7418021417806118
+        ],
+        "wilson_on_clusters": [
+         0.3317855639420427,
+         0.7690134759819932
+        ]
+       },
+       "unknown": {
+        "n": 60,
+        "n_docs": 46,
+        "rate": 0.8666666666666667,
+        "wilson_on_items": [
+         0.7583484032050036,
+         0.9308589052046665
+        ],
+        "wilson_on_clusters": [
+         0.743341422173965,
+         0.9388215963902774
+        ]
+       }
+      }
+     },
+     "both_agree": {
+      "doc_clustered": {
+       "point": 0.861182991974166,
+       "ci": [
+        0.7898419648250712,
+        0.9220438274453875
+       ],
+       "n_boot": 10000,
+       "n_draws_undefined": 0,
+       "n_items": 74,
+       "n_docs": 51,
+       "items_per_doc_max": 4,
+       "n_by_status_items": {
+        "false_alert": 20,
+        "hit": 14,
+        "unknown": 40
+       },
+       "n_by_status_docs": {
+        "false_alert": 16,
+        "hit": 12,
+        "unknown": 33
+       },
+       "ci_width": 0.1322018626203163,
+       "n_distinct_draw_values": 8572,
+       "frac_draws_at_0": 0.0,
+       "frac_draws_at_1": 0.0,
+       "degenerate": false,
+       "wilson_on_items": [
+        0.7688082144483941,
+        0.9249095140841213
+       ],
+       "wilson_on_clusters": [
+        0.7427830773909685,
+        0.9318889826604657
+       ]
+      },
+      "item_level_as_published": {
+       "point": 0.861182991974166,
+       "ci": [
+        0.8028353090422634,
+        0.9128657257317573
+       ],
+       "n_boot": 10000
+      },
+      "n_items": 74,
+      "n_docs": 51
+     },
+     "either": {
+      "doc_clustered": {
+       "point": 0.8864681329373411,
+       "ci": [
+        0.8369082108858759,
+        0.930951266836132
+       ],
+       "n_boot": 10000,
+       "n_draws_undefined": 0,
+       "n_items": 100,
+       "n_docs": 64,
+       "items_per_doc_max": 5,
+       "n_by_status_items": {
+        "false_alert": 20,
+        "hit": 20,
+        "unknown": 60
+       },
+       "n_by_status_docs": {
+        "false_alert": 16,
+        "hit": 16,
+        "unknown": 46
+       },
+       "ci_width": 0.0940430559502562,
+       "n_distinct_draw_values": 8823,
+       "frac_draws_at_0": 0.0,
+       "frac_draws_at_1": 0.0,
+       "degenerate": false,
+       "wilson_on_items": [
+        0.8136870349479304,
+        0.9374580364375789
+       ],
+       "wilson_on_clusters": [
+        0.7910135867026923,
+        0.9459988665645919
+       ]
+      },
+      "item_level_as_published": {
+       "point": 0.8864681329373411,
+       "ci": [
+        0.842374704447572,
+        0.9251511636781302
+       ],
+       "n_boot": 10000
+      },
+      "n_items": 100,
+      "n_docs": 64
+     },
+     "both_positive": {
+      "doc_clustered": {
+       "point": 0.5832066471357559,
+       "ci": [
+        0.4751480274051879,
+        0.6916770123907481
+       ],
+       "n_boot": 10000,
+       "n_draws_undefined": 0,
+       "n_items": 100,
+       "n_docs": 64,
+       "items_per_doc_max": 5,
+       "n_by_status_items": {
+        "false_alert": 20,
+        "hit": 20,
+        "unknown": 60
+       },
+       "n_by_status_docs": {
+        "false_alert": 16,
+        "hit": 16,
+        "unknown": 46
+       },
+       "ci_width": 0.21652898498556017,
+       "n_distinct_draw_values": 9944,
+       "frac_draws_at_0": 0.0,
+       "frac_draws_at_1": 0.0,
+       "degenerate": false,
+       "wilson_on_items": [
+        0.4820648670076077,
+        0.6720161732765992
+       ],
+       "wilson_on_clusters": [
+        0.4561003153727987,
+        0.6913021752806581
+       ]
+      },
+      "item_level_as_published": {
+       "point": 0.5832066471357559,
+       "ci": [
+        0.48132781735433783,
+        0.6817800005448866
+       ],
+       "n_boot": 10000
+      },
+      "n_items": 100,
+      "n_docs": 64
+     }
+    },
+    "judgefact.distilled+div1": {
+     "weights": {
+      "hit": 0.1397,
+      "false_alert": 0.0731,
+      "unknown": 0.7872
+     },
+     "n_items_in_budget": 100,
+     "n_docs_in_budget": 65,
+     "n_by_status": {
+      "false_alert": 20,
+      "unknown": 60,
+      "hit": 20
+     },
+     "Annotator 1": {
+      "doc_clustered": {
+       "point": 0.6641081267203001,
+       "ci": [
+        0.5490642972118347,
+        0.7720926637724297
+       ],
+       "n_boot": 10000,
+       "n_draws_undefined": 0,
+       "n_items": 100,
+       "n_docs": 65,
+       "items_per_doc_max": 4,
+       "n_by_status_items": {
+        "false_alert": 20,
+        "hit": 20,
+        "unknown": 60
+       },
+       "n_by_status_docs": {
+        "false_alert": 16,
+        "hit": 19,
+        "unknown": 46
+       },
+       "ci_width": 0.223028366560595,
+       "n_distinct_draw_values": 9925,
+       "frac_draws_at_0": 0.0,
+       "frac_draws_at_1": 0.0,
+       "degenerate": false,
+       "wilson_on_items": [
+        0.5627772885238507,
+        0.7453847920445635
+       ],
+       "wilson_on_clusters": [
+        0.5403837691261177,
+        0.7646649669000469
+       ]
+      },
+      "item_level_as_published": {
+       "point": 0.6641081267203001,
+       "ci": [
+        0.565602019455399,
+        0.7592854884210116
+       ],
+       "n_boot": 10000
+      },
+      "raw_by_status": {
+       "false_alert": {
+        "n": 20,
+        "n_docs": 16,
+        "rate": 0.4,
+        "wilson_on_items": [
+         0.21880653234006037,
+         0.6134184992831913
+        ],
+        "wilson_on_clusters": [
+         0.1848123255567086,
+         0.6135895945952193
+        ]
+       },
+       "hit": {
+        "n": 20,
+        "n_docs": 19,
+        "rate": 0.6,
+        "wilson_on_items": [
+         0.3865815007168088,
+         0.7811934676599397
+        ],
+        "wilson_on_clusters": [
+         0.36275903529758824,
+         0.7685810872100527
+        ]
+       },
+       "unknown": {
+        "n": 60,
+        "n_docs": 46,
+        "rate": 0.7,
+        "wilson_on_items": [
+         0.5749129205003304,
+         0.8010183386322168
+        ],
+        "wilson_on_clusters": [
+         0.5519435354811497,
+         0.8092015919940374
+        ]
+       }
+      }
+     },
+     "Annotator 2": {
+      "doc_clustered": {
+       "point": 0.8126142339852013,
+       "ci": [
+        0.7307754371260345,
+        0.8830670463983643
+       ],
+       "n_boot": 10000,
+       "n_draws_undefined": 0,
+       "n_items": 100,
+       "n_docs": 65,
+       "items_per_doc_max": 4,
+       "n_by_status_items": {
+        "false_alert": 20,
+        "hit": 20,
+        "unknown": 60
+       },
+       "n_by_status_docs": {
+        "false_alert": 16,
+        "hit": 19,
+        "unknown": 46
+       },
+       "ci_width": 0.15229160927232976,
+       "n_distinct_draw_values": 9910,
+       "frac_draws_at_0": 0.0,
+       "frac_draws_at_1": 0.0,
+       "degenerate": false,
+       "wilson_on_items": [
+        0.722211546186536,
+        0.8748524849147664
+       ],
+       "wilson_on_clusters": [
+        0.7044600616344093,
+        0.8911112801309599
+       ]
+      },
+      "item_level_as_published": {
+       "point": 0.8126142339852013,
+       "ci": [
+        0.7360514920601683,
+        0.8820788782102319
+       ],
+       "n_boot": 10000
+      },
+      "raw_by_status": {
+       "false_alert": {
+        "n": 20,
+        "n_docs": 16,
+        "rate": 0.35,
+        "wilson_on_items": [
+         0.18119182407201256,
+         0.5671457233628645
+        ],
+        "wilson_on_clusters": [
+         0.1848123255567086,
+         0.6135895945952193
+        ]
+       },
+       "hit": {
+        "n": 20,
+        "n_docs": 19,
+        "rate": 0.75,
+        "wilson_on_items": [
+         0.5312991223284828,
+         0.8881382986133887
+        ],
+        "wilson_on_clusters": [
+         0.5120844909685253,
+         0.8819358765543971
+        ]
+       },
+       "unknown": {
+        "n": 60,
+        "n_docs": 46,
+        "rate": 0.8666666666666667,
+        "wilson_on_items": [
+         0.7583484032050036,
+         0.9308589052046665
+        ],
+        "wilson_on_clusters": [
+         0.743341422173965,
+         0.9388215963902774
+        ]
+       }
+      }
+     },
+     "both_agree": {
+      "doc_clustered": {
+       "point": 0.8260066772599275,
+       "ci": [
+        0.7336146016949188,
+        0.9070492787414196
+       ],
+       "n_boot": 10000,
+       "n_draws_undefined": 0,
+       "n_items": 76,
+       "n_docs": 53,
+       "items_per_doc_max": 4,
+       "n_by_status_items": {
+        "false_alert": 17,
+        "hit": 15,
+        "unknown": 44
+       },
+       "n_by_status_docs": {
+        "false_alert": 14,
+        "hit": 15,
+        "unknown": 35
+       },
+       "ci_width": 0.17343467704650084,
+       "n_distinct_draw_values": 9774,
+       "frac_draws_at_0": 0.0,
+       "frac_draws_at_1": 0.0,
+       "degenerate": false,
+       "wilson_on_items": [
+        0.7290212529833467,
+        0.8972198094596583
+       ],
+       "wilson_on_clusters": [
+        0.7077471971562771,
+        0.9080005462170418
+       ]
+      },
+      "item_level_as_published": {
+       "point": 0.8260066772599275,
+       "ci": [
+        0.7401119226039066,
+        0.9026066171386988
+       ],
+       "n_boot": 10000
+      },
+      "n_items": 76,
+      "n_docs": 53
+     },
+     "either": {
+      "doc_clustered": {
+       "point": 0.8662678081417459,
+       "ci": [
+        0.7962909583738026,
+        0.9262404465525881
+       ],
+       "n_boot": 10000,
+       "n_draws_undefined": 0,
+       "n_items": 100,
+       "n_docs": 65,
+       "items_per_doc_max": 4,
+       "n_by_status_items": {
+        "false_alert": 20,
+        "hit": 20,
+        "unknown": 60
+       },
+       "n_by_status_docs": {
+        "false_alert": 16,
+        "hit": 19,
+        "unknown": 46
+       },
+       "ci_width": 0.1299494881787855,
+       "n_distinct_draw_values": 9887,
+       "frac_draws_at_0": 0.0,
+       "frac_draws_at_1": 0.0,
+       "degenerate": false,
+       "wilson_on_items": [
+        0.7901964855774672,
+        0.9224283257369903
+       ],
+       "wilson_on_clusters": [
+        0.7573190275079128,
+        0.9254090959792179
+       ]
+      },
+      "item_level_as_published": {
+       "point": 0.8662678081417459,
+       "ci": [
+        0.7994938300941214,
+        0.9235749564548352
+       ],
+       "n_boot": 10000
+      },
+      "n_items": 100,
+      "n_docs": 65
+     },
+     "both_positive": {
+      "doc_clustered": {
+       "point": 0.6104545525637555,
+       "ci": [
+        0.49629368960742826,
+        0.721034109768287
+       ],
+       "n_boot": 10000,
+       "n_draws_undefined": 0,
+       "n_items": 100,
+       "n_docs": 65,
+       "items_per_doc_max": 4,
+       "n_by_status_items": {
+        "false_alert": 20,
+        "hit": 20,
+        "unknown": 60
+       },
+       "n_by_status_docs": {
+        "false_alert": 16,
+        "hit": 19,
+        "unknown": 46
+       },
+       "ci_width": 0.2247404201608587,
+       "n_distinct_draw_values": 9936,
+       "frac_draws_at_0": 0.0,
+       "frac_draws_at_1": 0.0,
+       "degenerate": false,
+       "wilson_on_items": [
+        0.5120301704353077,
+        0.6998312599554769
+       ],
+       "wilson_on_clusters": [
+        0.4938420280316936,
+        0.7240499262727097
+       ]
+      },
+      "item_level_as_published": {
+       "point": 0.6104545525637555,
+       "ci": [
+        0.5066552316737708,
+        0.7087545036650511
+       ],
+       "n_boot": 10000
+      },
+      "n_items": 100,
+      "n_docs": 65
+     }
+    },
+    "mars2": {
+     "weights": {
+      "hit": 0.0681,
+      "false_alert": 0.0364,
+      "unknown": 0.8956
+     },
+     "n_items_in_budget": 100,
+     "n_docs_in_budget": 72,
+     "n_by_status": {
+      "false_alert": 20,
+      "unknown": 60,
+      "hit": 20
+     },
+     "Annotator 1": {
+      "doc_clustered": {
+       "point": 0.6046330700120761,
+       "ci": [
+        0.4726564605866095,
+        0.7298640265675722
+       ],
+       "n_boot": 10000,
+       "n_draws_undefined": 0,
+       "n_items": 100,
+       "n_docs": 72,
+       "items_per_doc_max": 4,
+       "n_by_status_items": {
+        "false_alert": 20,
+        "hit": 20,
+        "unknown": 60
+       },
+       "n_by_status_docs": {
+        "false_alert": 16,
+        "hit": 18,
+        "unknown": 48
+       },
+       "ci_width": 0.2572075659809627,
+       "n_distinct_draw_values": 7965,
+       "frac_draws_at_0": 0.0,
+       "frac_draws_at_1": 0.0,
+       "degenerate": false,
+       "wilson_on_items": [
+        0.5020025867680465,
+        0.6905987135872121
+       ],
+       "wilson_on_clusters": [
+        0.49562354991510715,
+        0.7153428561695538
+       ]
+      },
+      "item_level_as_published": {
+       "point": 0.6046330700120761,
+       "ci": [
+        0.49334284518037796,
+        0.712520348363773
+       ],
+       "n_boot": 10000
+      },
+      "raw_by_status": {
+       "false_alert": {
+        "n": 20,
+        "n_docs": 16,
+        "rate": 0.0,
+        "wilson_on_items": [
+         0.0,
+         0.16112515811625733
+        ],
+        "wilson_on_clusters": [
+         0.0,
+         0.19360768060771177
+        ]
+       },
+       "hit": {
+        "n": 20,
+        "n_docs": 18,
+        "rate": 0.55,
+        "wilson_on_items": [
+         0.34208534240776256,
+         0.7418021417806118
+        ],
+        "wilson_on_clusters": [
+         0.3371641563762133,
+         0.7544048187665993
+        ]
+       },
+       "unknown": {
+        "n": 60,
+        "n_docs": 48,
+        "rate": 0.6333333333333333,
+        "wilson_on_items": [
+         0.5068300062712408,
+         0.7437908331504575
+        ],
+        "wilson_on_clusters": [
+         0.4836276351592814,
+         0.747847332416139
+        ]
+       }
+      }
+     },
+     "Annotator 2": {
+      "doc_clustered": {
+       "point": 0.74941206938566,
+       "ci": [
+        0.6299851235150699,
+        0.8538346238442637
+       ],
+       "n_boot": 10000,
+       "n_draws_undefined": 0,
+       "n_items": 100,
+       "n_docs": 72,
+       "items_per_doc_max": 4,
+       "n_by_status_items": {
+        "false_alert": 20,
+        "hit": 20,
+        "unknown": 60
+       },
+       "n_by_status_docs": {
+        "false_alert": 16,
+        "hit": 18,
+        "unknown": 48
+       },
+       "ci_width": 0.22384950032919382,
+       "n_distinct_draw_values": 9874,
+       "frac_draws_at_0": 0.0,
+       "frac_draws_at_1": 0.0,
+       "degenerate": false,
+       "wilson_on_items": [
+        0.6569553644960361,
+        0.8245478863921109
+       ],
+       "wilson_on_clusters": [
+        0.6390649259286615,
+        0.8356094877618253
+       ]
+      },
+      "item_level_as_published": {
+       "point": 0.74941206938566,
+       "ci": [
+        0.6501487381403803,
+        0.8397067368875482
+       ],
+       "n_boot": 10000
+      },
+      "raw_by_status": {
+       "false_alert": {
+        "n": 20,
+        "n_docs": 16,
+        "rate": 0.1,
+        "wilson_on_items": [
+         0.02786648120626878,
+         0.3010336452867371
+        ],
+        "wilson_on_clusters": [
+         0.03497748773381029,
+         0.36022827272197355
+        ]
+       },
+       "hit": {
+        "n": 20,
+        "n_docs": 18,
+        "rate": 0.65,
+        "wilson_on_items": [
+         0.4328542766371354,
+         0.8188081759279874
+        ],
+        "wilson_on_clusters": [
+         0.4374946729086293,
+         0.8372122525198085
+        ]
+       },
+       "unknown": {
+        "n": 60,
+        "n_docs": 48,
+        "rate": 0.7833333333333333,
+        "wilson_on_items": [
+         0.6637997242373034,
+         0.8687695595338053
+        ],
+        "wilson_on_clusters": [
+         0.6574109872390524,
+         0.8826972704369284
+        ]
+       }
+      }
+     },
+     "both_agree": {
+      "doc_clustered": {
+       "point": 0.7381537805668754,
+       "ci": [
+        0.5959607658691335,
+        0.8623361688764137
+       ],
+       "n_boot": 10000,
+       "n_draws_undefined": 0,
+       "n_items": 81,
+       "n_docs": 59,
+       "items_per_doc_max": 4,
+       "n_by_status_items": {
+        "false_alert": 18,
+        "hit": 18,
+        "unknown": 45
+       },
+       "n_by_status_docs": {
+        "false_alert": 14,
+        "hit": 16,
+        "unknown": 37
+       },
+       "ci_width": 0.26637540300728024,
+       "n_distinct_draw_values": 7178,
+       "frac_draws_at_0": 0.0,
+       "frac_draws_at_1": 0.0,
+       "degenerate": false,
+       "wilson_on_items": [
+        0.6359565111485205,
+        0.823724410670548
+       ],
+       "wilson_on_clusters": [
+        0.6220385596797002,
+        0.839440224285418
+       ]
+      },
+      "item_level_as_published": {
+       "point": 0.7381537805668754,
+       "ci": [
+        0.6235206864922391,
+        0.8414437197081743
+       ],
+       "n_boot": 10000
+      },
+      "n_items": 81,
+      "n_docs": 59
+     },
+     "either": {
+      "doc_clustered": {
+       "point": 0.7941910687592438,
+       "ci": [
+        0.6806049055736731,
+        0.8938983448797279
+       ],
+       "n_boot": 10000,
+       "n_draws_undefined": 0,
+       "n_items": 100,
+       "n_docs": 72,
+       "items_per_doc_max": 4,
+       "n_by_status_items": {
+        "false_alert": 20,
+        "hit": 20,
+        "unknown": 60
+       },
+       "n_by_status_docs": {
+        "false_alert": 16,
+        "hit": 18,
+        "unknown": 48
+       },
+       "ci_width": 0.2132934393060547,
+       "n_distinct_draw_values": 9878,
+       "frac_draws_at_0": 0.0,
+       "frac_draws_at_1": 0.0,
+       "degenerate": false,
+       "wilson_on_items": [
+        0.7002003116360542,
+        0.8583434593941963
+       ],
+       "wilson_on_clusters": [
+        0.6843073657786722,
+        0.8694794501935623
+       ]
+      },
+      "item_level_as_published": {
+       "point": 0.7941910687592438,
+       "ci": [
+        0.7041151161089391,
+        0.8761379633290987
+       ],
+       "n_boot": 10000
+      },
+      "n_items": 100,
+      "n_docs": 72
+     },
+     "both_positive": {
+      "doc_clustered": {
+       "point": 0.5598540706384922,
+       "ci": [
+        0.43009320691858677,
+        0.6860335473037587
+       ],
+       "n_boot": 10000,
+       "n_draws_undefined": 0,
+       "n_items": 100,
+       "n_docs": 72,
+       "items_per_doc_max": 4,
+       "n_by_status_items": {
+        "false_alert": 20,
+        "hit": 20,
+        "unknown": 60
+       },
+       "n_by_status_docs": {
+        "false_alert": 16,
+        "hit": 18,
+        "unknown": 48
+       },
+       "ci_width": 0.2559403403851719,
+       "n_distinct_draw_values": 7943,
+       "frac_draws_at_0": 0.0,
+       "frac_draws_at_1": 0.0,
+       "degenerate": false,
+       "wilson_on_items": [
+        0.46228104649417306,
+        0.6532797337189822
+       ],
+       "wilson_on_clusters": [
+        0.44087390863186005,
+        0.6646092944104705
+       ]
+      },
+      "item_level_as_published": {
+       "point": 0.5598540706384922,
+       "ci": [
+        0.44516089932679276,
+        0.6711442954701904
+       ],
+       "n_boot": 10000
+      },
+      "n_items": 100,
+      "n_docs": 72
+     }
+    }
+   }
+  }
+ }
+}

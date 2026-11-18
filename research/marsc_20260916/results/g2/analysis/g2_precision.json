@@ -1,0 +1,119 @@
+{
+ "registered": "PLAN_MAIN_CONTRIBUTION.md G2",
+ "n_tasks": 69596,
+ "families": {
+  "gemma": {
+   "n_judged": 69596,
+   "coverage_accuracy_on_known": 0.6854855057774174,
+   "n_known": 9866,
+   "support_rate": 0.6441893212253578
+  },
+  "qwen": {
+   "n_judged": 69596,
+   "coverage_accuracy_on_known": 0.7054530711534563,
+   "n_known": 9866,
+   "support_rate": 0.8972498419449394
+  }
+ },
+ "systems": {
+  "humanfact+div1": {
+   "gemma": {
+    "true_omission_rate": 0.6151722084303488,
+    "n_pairs": 1388,
+    "unknown_resolved_rate": 0.6338405282071025
+   },
+   "qwen": {
+    "true_omission_rate": 0.7453765430675268,
+    "n_pairs": 1388,
+    "unknown_resolved_rate": 0.7637330971404656
+   }
+  },
+  "humanfact.distilled+div1": {
+   "gemma": {
+    "true_omission_rate": 0.6790617844159758,
+    "n_pairs": 1388,
+    "unknown_resolved_rate": 0.738829566471331
+   },
+   "qwen": {
+    "true_omission_rate": 0.7636258430517159,
+    "n_pairs": 1388,
+    "unknown_resolved_rate": 0.8171508850967883
+   }
+  },
+  "judgefact.distilled+div1": {
+   "gemma": {
+    "true_omission_rate": 0.6774417922915159,
+    "n_pairs": 1388,
+    "unknown_resolved_rate": 0.7346487371856097
+   },
+   "qwen": {
+    "true_omission_rate": 0.7621306658818036,
+    "n_pairs": 1388,
+    "unknown_resolved_rate": 0.8137019721747929
+   }
+  },
+  "mars2": {
+   "gemma": {
+    "true_omission_rate": 0.2185662513260411,
+    "n_pairs": 1388,
+    "unknown_resolved_rate": 0.21990012609653223
+   },
+   "qwen": {
+    "true_omission_rate": 0.6803310308692299,
+    "n_pairs": 1388,
+    "unknown_resolved_rate": 0.6850976157503486
+   }
+  },
+  "tagger.spacy+div1": {
+   "gemma": {
+    "true_omission_rate": 0.21446583795275814,
+    "n_pairs": 1388,
+    "unknown_resolved_rate": 0.2192182753370329
+   },
+   "qwen": {
+    "true_omission_rate": 0.6079189752834817,
+    "n_pairs": 1388,
+    "unknown_resolved_rate": 0.6191992230883737
+   }
+  }
+ },
+ "paired": {
+  "humanfact.distilled+div1": {
+   "other_minus_primary": 0.06378384743772289,
+   "ci": [
+    0.04159028483824827,
+    0.08703911964843411
+   ]
+  },
+  "judgefact.distilled+div1": {
+   "other_minus_primary": 0.06255348562941838,
+   "ci": [
+    0.04090070354322362,
+    0.08462614367302151
+   ]
+  },
+  "mars2": {
+   "other_minus_primary": -0.3987375368310628,
+   "ci": [
+    -0.4271581348150389,
+    -0.3695596734623709
+   ]
+  },
+  "tagger.spacy+div1": {
+   "other_minus_primary": -0.39933706511482153,
+   "ci": [
+    -0.4315721365401035,
+    -0.3677730630553364
+   ]
+  }
+ },
+ "kappa_true_omission": {
+  "families": [
+   "gemma",
+   "qwen"
+  ],
+  "n": 69596,
+  "kappa": 0.45654482367320476,
+  "agreement": 0.7357894131846657
+ }
+}

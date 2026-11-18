@@ -1,0 +1,22 @@
+{
+ "rows": 405,
+ "errored_notes": 293,
+ "clean_twins": 112,
+ "consultations": 112,
+ "reference_facts_per_consultation_median": 37.5,
+ "reference_facts_per_consultation_min_max": [
+  17,
+  58
+ ],
+ "omitted_facts_per_errored_note_median": 1,
+ "sentence_tasks": 9835,
+ "transcript_words_median": 1390.0,
+ "note_words_median": 444,
+ "label_semantics": "unit_labels 1 = the note states the fact; 0 = the note is the one the fact was removed from",
+ "duplicate_rule": "a sheet fact with content-token F1 >= 0.6 against the removed statement is labelled 0 with it",
+ "removed_fact_added_to_reference": 114,
+ "near_duplicates_labelled_with_removed": 43,
+ "removed_fact_in_sheet_verbatim": 141,
+ "removed_fact_near_duplicate_in_sheet": 38,
+ "sha256_acu": "6b9622d63a0f48fe943d6dac92db80bc11aea5ed4f8b716f5c886ae27dd44146"
+}

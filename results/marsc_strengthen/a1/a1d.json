@@ -1,0 +1,270 @@
+{
+ "registered": "PREREG.md Wave A / A1d",
+ "acu": "/home/user/results/mars2_gates/b18/acu_units_validation.jsonl",
+ "n_pairs": 1412,
+ "n_docs": 154,
+ "primary": "mc-A-lam1-crossenc-r04human",
+ "n_boot": 2000,
+ "boot_seed": 20260917,
+ "arm_meta": {
+  "mc-A-lam1-crossenc-r04human": {
+   "seeds": [
+    "20260906",
+    "20260907",
+    "20260908"
+   ],
+   "calibrated_files": [
+    "acu_mc-A-lam1-crossenc-r04human_seed20260906.jsonl",
+    "acu_mc-A-lam1-crossenc-r04human_seed20260907.jsonl",
+    "acu_mc-A-lam1-crossenc-r04human_seed20260908.jsonl"
+   ],
+   "logit_files": [
+    "acu_mc-A-lam1-crossenc-r04human_seed20260906_logits.jsonl",
+    "acu_mc-A-lam1-crossenc-r04human_seed20260907_logits.jsonl",
+    "acu_mc-A-lam1-crossenc-r04human_seed20260908_logits.jsonl"
+   ],
+   "n_pairs": 1412,
+   "per_seed_auroc_pooled": {
+    "20260906": 0.9716508730528262,
+    "20260907": 0.9721716014268234,
+    "20260908": 0.9714389383437895
+   }
+  },
+  "mc-A-lam1-crossenc-r04judge": {
+   "seeds": [
+    "20260906",
+    "20260907",
+    "20260908"
+   ],
+   "calibrated_files": [
+    "acu_mc-A-lam1-crossenc-r04judge_seed20260906.jsonl",
+    "acu_mc-A-lam1-crossenc-r04judge_seed20260907.jsonl",
+    "acu_mc-A-lam1-crossenc-r04judge_seed20260908.jsonl"
+   ],
+   "logit_files": [
+    "acu_mc-A-lam1-crossenc-r04judge_seed20260906_logits.jsonl",
+    "acu_mc-A-lam1-crossenc-r04judge_seed20260907_logits.jsonl",
+    "acu_mc-A-lam1-crossenc-r04judge_seed20260908_logits.jsonl"
+   ],
+   "n_pairs": 1412,
+   "per_seed_auroc_pooled": {
+    "20260906": 0.9535470556817254,
+    "20260907": 0.9605756177913491,
+    "20260908": 0.9500920628322085
+   }
+  },
+  "mc-R-lam1-crossenc-r04human": {
+   "seeds": [
+    "20260906",
+    "20260907",
+    "20260908"
+   ],
+   "calibrated_files": [
+    "acu_mc-R-lam1-crossenc-r04human_seed20260906.jsonl",
+    "acu_mc-R-lam1-crossenc-r04human_seed20260907.jsonl",
+    "acu_mc-R-lam1-crossenc-r04human_seed20260908.jsonl"
+   ],
+   "logit_files": [
+    "acu_mc-R-lam1-crossenc-r04human_seed20260906_logits.jsonl",
+    "acu_mc-R-lam1-crossenc-r04human_seed20260907_logits.jsonl",
+    "acu_mc-R-lam1-crossenc-r04human_seed20260908_logits.jsonl"
+   ],
+   "n_pairs": 1412,
+   "per_seed_auroc_pooled": {
+    "20260906": 0.9718606895296316,
+    "20260907": 0.972786423906253,
+    "20260908": 0.9714988954645258
+   }
+  },
+  "mc-R-lam1-crossenc-r04judge": {
+   "seeds": [
+    "20260906",
+    "20260907",
+    "20260908"
+   ],
+   "calibrated_files": [
+    "acu_mc-R-lam1-crossenc-r04judge_seed20260906.jsonl",
+    "acu_mc-R-lam1-crossenc-r04judge_seed20260907.jsonl",
+    "acu_mc-R-lam1-crossenc-r04judge_seed20260908.jsonl"
+   ],
+   "logit_files": [
+    "acu_mc-R-lam1-crossenc-r04judge_seed20260906_logits.jsonl",
+    "acu_mc-R-lam1-crossenc-r04judge_seed20260907_logits.jsonl",
+    "acu_mc-R-lam1-crossenc-r04judge_seed20260908_logits.jsonl"
+   ],
+   "n_pairs": 1412,
+   "per_seed_auroc_pooled": {
+    "20260906": 0.952833389797229,
+    "20260907": 0.9489038237391758,
+    "20260908": 0.9537520336701709
+   }
+  }
+ },
+ "note": "'observed' is the contrast computed once on the full sample; 'bootstrap_mean' is the mean of the resampled contrasts and is NOT the observed value (mc_e2_eval/mc_matched_auroc print the latter under the key 'mean').",
+ "modes": {
+  "cal_prob": {
+   "arms": {
+    "mc-A-lam1-crossenc-r04human": {
+     "auroc_pooled": 0.9740448322290951,
+     "auroc_doc_macro": 0.9514145859934423
+    },
+    "mc-A-lam1-crossenc-r04judge": {
+     "auroc_pooled": 0.9612671648719145,
+     "auroc_doc_macro": 0.9301515584271084
+    },
+    "mc-R-lam1-crossenc-r04human": {
+     "auroc_pooled": 0.97512856443299,
+     "auroc_doc_macro": 0.9502880532930891
+    },
+    "mc-R-lam1-crossenc-r04judge": {
+     "auroc_pooled": 0.9574526076754301,
+     "auroc_doc_macro": 0.9279283355516945
+    }
+   },
+   "paired_vs_primary": {
+    "mc-A-lam1-crossenc-r04judge": {
+     "observed": 0.012777667357180555,
+     "bootstrap_mean": 0.012803349526800218,
+     "ci": [
+      0.008152535139553638,
+      0.01801059213542671
+     ],
+     "n_boot": 2000
+    },
+    "mc-R-lam1-crossenc-r04human": {
+     "observed": -0.0010837322038949049,
+     "bootstrap_mean": -0.0011182818494525552,
+     "ci": [
+      -0.003011424047067404,
+      0.0005245605660636028
+     ],
+     "n_boot": 2000
+    },
+    "mc-R-lam1-crossenc-r04judge": {
+     "observed": 0.016592224553665047,
+     "bootstrap_mean": 0.016561395629838837,
+     "ci": [
+      0.011410928126380343,
+      0.021978284725302583
+     ],
+     "n_boot": 2000
+    }
+   }
+  },
+  "raw_prob": {
+   "arms": {
+    "mc-A-lam1-crossenc-r04human": {
+     "auroc_pooled": 0.9740039391984404,
+     "auroc_doc_macro": 0.9518773551560549
+    },
+    "mc-A-lam1-crossenc-r04judge": {
+     "auroc_pooled": 0.9612459379552387,
+     "auroc_doc_macro": 0.9299076899937372
+    },
+    "mc-R-lam1-crossenc-r04human": {
+     "auroc_pooled": 0.9751217414954871,
+     "auroc_doc_macro": 0.95076274015365
+    },
+    "mc-R-lam1-crossenc-r04judge": {
+     "auroc_pooled": 0.9575926785688723,
+     "auroc_doc_macro": 0.9288548862315962
+    }
+   },
+   "paired_vs_primary": {
+    "mc-A-lam1-crossenc-r04judge": {
+     "observed": 0.0127580012432017,
+     "bootstrap_mean": 0.012783778524692313,
+     "ci": [
+      0.008151834148403541,
+      0.01789104079462746
+     ],
+     "n_boot": 2000
+    },
+    "mc-R-lam1-crossenc-r04human": {
+     "observed": -0.0011178022970467216,
+     "bootstrap_mean": -0.0011521771857366074,
+     "ci": [
+      -0.003067076252705406,
+      0.0005424301755922416
+     ],
+     "n_boot": 2000
+    },
+    "mc-R-lam1-crossenc-r04judge": {
+     "observed": 0.016411260629568103,
+     "bootstrap_mean": 0.016382411686359524,
+     "ci": [
+      0.011258639488686478,
+      0.02178510507096835
+     ],
+     "n_boot": 2000
+    }
+   }
+  },
+  "raw_logit": {
+   "arms": {
+    "mc-A-lam1-crossenc-r04human": {
+     "auroc_pooled": 0.9739705603179114,
+     "auroc_doc_macro": 0.9508150890274897
+    },
+    "mc-A-lam1-crossenc-r04judge": {
+     "auroc_pooled": 0.9611281642431786,
+     "auroc_doc_macro": 0.9334906949293611
+    },
+    "mc-R-lam1-crossenc-r04human": {
+     "auroc_pooled": 0.9749857286890564,
+     "auroc_doc_macro": 0.9503268778469054
+    },
+    "mc-R-lam1-crossenc-r04judge": {
+     "auroc_pooled": 0.9580012298233364,
+     "auroc_doc_macro": 0.9304617938079442
+    }
+   },
+   "paired_vs_primary": {
+    "mc-A-lam1-crossenc-r04judge": {
+     "observed": 0.01284239607473281,
+     "bootstrap_mean": 0.012861563163984232,
+     "ci": [
+      0.008215706156443962,
+      0.018052689399840827
+     ],
+     "n_boot": 2000
+    },
+    "mc-R-lam1-crossenc-r04human": {
+     "observed": -0.0010151683711450143,
+     "bootstrap_mean": -0.0010504862233318485,
+     "ci": [
+      -0.0028814880140804688,
+      0.0005286041208880815
+     ],
+     "n_boot": 2000
+    },
+    "mc-R-lam1-crossenc-r04judge": {
+     "observed": 0.01596933049457505,
+     "bootstrap_mean": 0.015946789840956346,
+     "ci": [
+      0.010986504467692833,
+      0.021270189738267994
+     ],
+     "n_boot": 2000
+    }
+   }
+  }
+ },
+ "contract_shift": {
+  "mc-A-lam1-crossenc-r04judge": {
+   "calibrated_prob_mean": 0.012777667357180555,
+   "raw_logit_mean": 0.01284239607473281,
+   "delta": 6.472871755225373e-05
+  },
+  "mc-R-lam1-crossenc-r04human": {
+   "calibrated_prob_mean": -0.0010837322038949049,
+   "raw_logit_mean": -0.0010151683711450143,
+   "delta": 6.856383274989053e-05
+  },
+  "mc-R-lam1-crossenc-r04judge": {
+   "calibrated_prob_mean": 0.016592224553665047,
+   "raw_logit_mean": 0.01596933049457505,
+   "delta": -0.0006228940590899956
+  }
+ }
+}

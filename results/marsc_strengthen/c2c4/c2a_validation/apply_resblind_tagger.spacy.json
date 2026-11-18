@@ -1,0 +1,33 @@
+{
+ "arm": "tagger.spacy",
+ "variant": "resblind",
+ "model": "/home/user/results/marsc_strengthen/c2c4/models/surface_tagger.spacy.json",
+ "model_arm": "tagger.spacy",
+ "apply_units_file": "/home/user/results/mars3/m32/units_spacy_validation.jsonl",
+ "apply_split": "validation",
+ "unit_set": "spacy",
+ "model_fit_split": "validation",
+ "files": {
+  "/home/user/results/marsc_strengthen/c2c4/resblind/validation/units_spacy_tagger_seed20260906.jsonl": {
+   "from": "/home/user/results/mars3/scores/units_spacy_tagger_seed20260906.jsonl",
+   "seed_key": "20260906",
+   "n_pairs": 1466,
+   "n_pairs_skipped": 0,
+   "r2_on_fit_split": 0.014818982493364774
+  },
+  "/home/user/results/marsc_strengthen/c2c4/resblind/validation/units_spacy_tagger_seed20260907.jsonl": {
+   "from": "/home/user/results/mars3/scores/units_spacy_tagger_seed20260907.jsonl",
+   "seed_key": "20260907",
+   "n_pairs": 1466,
+   "n_pairs_skipped": 0,
+   "r2_on_fit_split": 0.01409023003933041
+  },
+  "/home/user/results/marsc_strengthen/c2c4/resblind/validation/units_spacy_tagger_seed20260908.jsonl": {
+   "from": "/home/user/results/mars3/scores/units_spacy_tagger_seed20260908.jsonl",
+   "seed_key": "20260908",
+   "n_pairs": 1466,
+   "n_pairs_skipped": 0,
+   "r2_on_fit_split": 0.013549647536890363
+  }
+ }
+}

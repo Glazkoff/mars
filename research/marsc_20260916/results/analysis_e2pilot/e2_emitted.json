@@ -1,0 +1,247 @@
+{
+ "registered": "research/marsc_20260916/PREREG.md E2 pilot",
+ "n_pairs": 1388,
+ "n_docs": 151,
+ "k": {
+  "5": {
+   "systems": {
+    "humanfact_xenc.gemma+ent": {
+     "recall": 0.18713122766117785,
+     "recall_stress": 0.17440561443032349,
+     "hit_rate": 0.11270413064361191,
+     "false_alert_rate": 0.031484149855907785,
+     "unknown_rate": 0.8558117195004802,
+     "n_pairs": 1388
+    },
+    "judgefact_xenc.gemma+ent": {
+     "recall": 0.1308968308380073,
+     "recall_stress": 0.11322345600800886,
+     "hit_rate": 0.07812199807877042,
+     "false_alert_rate": 0.02355907780979827,
+     "unknown_rate": 0.8983189241114314,
+     "n_pairs": 1388
+    },
+    "judgefact_xenc.gemma": {
+     "recall": 0.13547414416596001,
+     "recall_stress": 0.12388629461003126,
+     "hit_rate": 0.10624399615754081,
+     "false_alert_rate": 0.039721421709894324,
+     "unknown_rate": 0.8540345821325649,
+     "n_pairs": 1388
+    },
+    "judgefact_xenc.distilled": {
+     "recall": 0.15388091717887112,
+     "recall_stress": 0.15059295692764527,
+     "hit_rate": 0.0928073967339097,
+     "false_alert_rate": 0.030679634966378485,
+     "unknown_rate": 0.8765129682997117,
+     "n_pairs": 1388
+    },
+    "judgefact_xenc.spacy": {
+     "recall": 0.12925410672146437,
+     "recall_stress": 0.11628856601357797,
+     "hit_rate": 0.07317483189241114,
+     "false_alert_rate": 0.026296829971181556,
+     "unknown_rate": 0.9005283381364073,
+     "n_pairs": 1388
+    },
+    "tagger.spacy": {
+     "recall": 0.11663316997137162,
+     "recall_stress": 0.110742246311352,
+     "hit_rate": 0.06553794428434198,
+     "false_alert_rate": 0.019812680115273776,
+     "unknown_rate": 0.9146493756003842,
+     "n_pairs": 1388
+    },
+    "tagger_facts.gemma+ent": {
+     "recall": 0.1105430212489036,
+     "recall_stress": 0.0933017290023507,
+     "hit_rate": 0.06817963496637848,
+     "false_alert_rate": 0.016354466858789624,
+     "unknown_rate": 0.9154658981748319,
+     "n_pairs": 1388
+    },
+    "mars2.spacy": {
+     "recall": 0.1097418159182865,
+     "recall_stress": 0.09580841972440889,
+     "hit_rate": 0.0665465898174832,
+     "false_alert_rate": 0.02615273775216138,
+     "unknown_rate": 0.9073006724303554,
+     "n_pairs": 1388
+    }
+   },
+   "paired_recall": {
+    "judgefact_xenc.gemma+ent": {
+     "mean": 0.05613344932345091,
+     "ci": [
+      0.03145837976902885,
+      0.08110308852800037
+     ]
+    },
+    "judgefact_xenc.gemma": {
+     "mean": 0.04981013554688468,
+     "ci": [
+      0.02532244923448522,
+      0.07567693517402163
+     ]
+    },
+    "judgefact_xenc.distilled": {
+     "mean": 0.03251436541018864,
+     "ci": [
+      -0.0004156994312401652,
+      0.06415291583860512
+     ]
+    },
+    "judgefact_xenc.spacy": {
+     "mean": 0.057265055532925754,
+     "ci": [
+      0.028120651097158004,
+      0.09200529373735183
+     ]
+    },
+    "tagger.spacy": {
+     "mean": 0.07094373111215606,
+     "ci": [
+      0.039736535327904256,
+      0.10522159265503453
+     ]
+    },
+    "tagger_facts.gemma+ent": {
+     "mean": 0.076040327869406,
+     "ci": [
+      0.0526358058453292,
+      0.09994634646418821
+     ]
+    },
+    "mars2.spacy": {
+     "mean": 0.07835493512222778,
+     "ci": [
+      0.03977294663122344,
+      0.11507268298053032
+     ]
+    }
+   },
+   "primary": "humanfact_xenc.gemma+ent"
+  },
+  "10": {
+   "systems": {
+    "humanfact_xenc.gemma+ent": {
+     "recall": 0.2801264136346247,
+     "recall_stress": 0.2616969038896346,
+     "hit_rate": 0.10629288458899411,
+     "false_alert_rate": 0.03726413476053247,
+     "unknown_rate": 0.8564429806504735,
+     "n_pairs": 1388
+    },
+    "judgefact_xenc.gemma+ent": {
+     "recall": 0.21368646386293444,
+     "recall_stress": 0.1917857924971746,
+     "hit_rate": 0.08309403732674625,
+     "false_alert_rate": 0.03193272265678605,
+     "unknown_rate": 0.8849732400164677,
+     "n_pairs": 1388
+    },
+    "judgefact_xenc.gemma": {
+     "recall": 0.21724880954036963,
+     "recall_stress": 0.21267714217459155,
+     "hit_rate": 0.11103306115914184,
+     "false_alert_rate": 0.05004831663693335,
+     "unknown_rate": 0.8389186222039249,
+     "n_pairs": 1388
+    },
+    "judgefact_xenc.distilled": {
+     "recall": 0.24445997133142106,
+     "recall_stress": 0.25735824824578213,
+     "hit_rate": 0.09749010795480537,
+     "false_alert_rate": 0.03862443392342527,
+     "unknown_rate": 0.8638854581217694,
+     "n_pairs": 1388
+    },
+    "judgefact_xenc.spacy": {
+     "recall": 0.20269688420193196,
+     "recall_stress": 0.18798778492704846,
+     "hit_rate": 0.07292324230364576,
+     "false_alert_rate": 0.029774484241343033,
+     "unknown_rate": 0.8973022734550113,
+     "n_pairs": 1388
+    },
+    "tagger.spacy": {
+     "recall": 0.1941253522953617,
+     "recall_stress": 0.1811363048450566,
+     "hit_rate": 0.07076185901834318,
+     "false_alert_rate": 0.026676501532409313,
+     "unknown_rate": 0.9025616394492476,
+     "n_pairs": 1388
+    },
+    "tagger_facts.gemma+ent": {
+     "recall": 0.20229157770334236,
+     "recall_stress": 0.18135341309062017,
+     "hit_rate": 0.07437645807602582,
+     "false_alert_rate": 0.02674540277205983,
+     "unknown_rate": 0.8988781391519145,
+     "n_pairs": 1388
+    },
+    "mars2.spacy": {
+     "recall": 0.18938775821128762,
+     "recall_stress": 0.16619743049282346,
+     "hit_rate": 0.06579067746214722,
+     "false_alert_rate": 0.03193586752664563,
+     "unknown_rate": 0.9022734550112073,
+     "n_pairs": 1388
+    }
+   },
+   "paired_recall": {
+    "judgefact_xenc.gemma+ent": {
+     "mean": 0.0655901020191742,
+     "ci": [
+      0.03763093147540671,
+      0.09122158066911275
+     ]
+    },
+    "judgefact_xenc.gemma": {
+     "mean": 0.06373586527416085,
+     "ci": [
+      0.02806383770796099,
+      0.10013184665526031
+     ]
+    },
+    "judgefact_xenc.distilled": {
+     "mean": 0.035324897227315265,
+     "ci": [
+      -0.008864261069915705,
+      0.08017714316881668
+     ]
+    },
+    "judgefact_xenc.spacy": {
+     "mean": 0.07710361573289144,
+     "ci": [
+      0.0322958223498761,
+      0.1281885010535627
+     ]
+    },
+    "tagger.spacy": {
+     "mean": 0.0864240836728307,
+     "ci": [
+      0.048303688197391566,
+      0.12434412348483923
+     ]
+    },
+    "tagger_facts.gemma+ent": {
+     "mean": 0.07767007915081098,
+     "ci": [
+      0.04891218995692895,
+      0.10316429237545087
+     ]
+    },
+    "mars2.spacy": {
+     "mean": 0.08963564271376656,
+     "ci": [
+      0.044534290555737405,
+      0.13682837860479985
+     ]
+    }
+   },
+   "primary": "humanfact_xenc.gemma+ent"
+  }
+ }
+}

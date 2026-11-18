@@ -1,0 +1,17 @@
+{
+ "arm": "factcg_sent",
+ "n_pairs": 200,
+ "seconds_batched_total": 80.77624417888,
+ "seconds_per_pair_batched": 0.40388122089440004,
+ "latency_batch1_median_ms": 341.0726555157453,
+ "latency_batch1_p90_ms": 768.5807580128312,
+ "peak_alloc_batched_bytes": 53283537408,
+ "peak_alloc_batch1_bytes": 48379642368,
+ "weight_bytes_in_memory": 1740255240,
+ "alloc_after_load_bytes": 1773814272,
+ "facts_per_candidate": 5.165,
+ "reference_facts_per_pair": 0,
+ "mean_P": 0.7080330669231283,
+ "mean_R": null,
+ "device": "NVIDIA H200 NVL"
+}

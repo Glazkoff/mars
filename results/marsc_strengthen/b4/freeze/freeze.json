@@ -1,0 +1,88 @@
+{
+ "block": "B4",
+ "role": "unseen third extractor",
+ "written_utc": "2026-09-18T10:39:27.669495+00:00",
+ "written_before_model_load": true,
+ "model": {
+  "repo_id": "Qwen/Qwen3.8-27B",
+  "snapshot_dir": "/home/user/hf_cache/hub/models--Qwen--Qwen3.8-27B/snapshots/1d4bf0f2ff6012fd82039f2fa52739d0dd7c60c0",
+  "realpath": "/home/user/hf_cache/hub/models--Qwen--Qwen3.8-27B/snapshots/1d4bf0f2ff6012fd82039f2fa52739d0dd7c60c0",
+  "resolved_revision": "1d4bf0f2ff6012fd82039f2fa52739d0dd7c60c0",
+  "weight_files": [
+   "model-00001-of-00018.safetensors",
+   "model-00002-of-00018.safetensors",
+   "model-00003-of-00018.safetensors",
+   "model-00004-of-00018.safetensors",
+   "model-00005-of-00018.safetensors",
+   "model-00006-of-00018.safetensors",
+   "model-00007-of-00018.safetensors",
+   "model-00008-of-00018.safetensors",
+   "model-00009-of-00018.safetensors",
+   "model-00010-of-00018.safetensors",
+   "model-00011-of-00018.safetensors",
+   "model-00012-of-00018.safetensors",
+   "model-00013-of-00018.safetensors",
+   "model-00014-of-00018.safetensors",
+   "model-00015-of-00018.safetensors",
+   "model-00016-of-00018.safetensors",
+   "model-00017-of-00018.safetensors",
+   "model-00018-of-00018.safetensors"
+  ]
+ },
+ "prompt": {
+  "source": "research/mars3_20260916/code/m32_decompose.py::PROMPT (imported, not retyped)",
+  "sha256": "ad83f20964eab5ea9f135c857b0af4677a1ee1a2d43704e9e58b16aa759bede4",
+  "n_chars": 296
+ },
+ "decoding": {
+  "chat_template": true,
+  "enable_thinking": false,
+  "closed_think_prefix_asserted": true,
+  "padding_side": "left",
+  "tokenizer": {
+   "padding": true,
+   "truncation": true,
+   "max_length": 1024
+  },
+  "generate": {
+   "max_new_tokens": 160,
+   "do_sample": false
+  },
+  "batch_size": 12,
+  "dtype": "bfloat16",
+  "device": "cuda"
+ },
+ "parser": {
+  "source": "research/mars3_20260916/code/m32_decompose.py::parse (imported, not retyped)",
+  "drop_lines": [
+   "NONE*",
+   "facts*",
+   "<2 words"
+  ],
+  "strip_markers": "-*\u2022 / 1. / 1)",
+  "max_propositions": 12
+ },
+ "tasks": {
+  "path": "/home/user/results/mars3/m32/decompose_tasks.jsonl",
+  "sha256": "23a939a69ada1ca146beffb0229352f5987b23792b843bbe3fa707e0964d277d",
+  "splits_filter": "test",
+  "n_tasks_after_filter": 7342
+ },
+ "guards": {
+  "max_empty_raw": 0.1,
+  "max_empty_parse": 0.3,
+  "assert_after": 120,
+  "development_reference_empty_parse": {
+   "extractor": "gemma-4-31b-it",
+   "split": "test",
+   "sentences": 7342,
+   "empty_parse": 766,
+   "rate": 0.1043
+  }
+ },
+ "isolation_rule": "no unit, score, label or output statistic of this extractor informs training, mining, calibration or model selection; the development threshold is applied unchanged",
+ "shards": [
+  "0/2",
+  "1/2"
+ ]
+}

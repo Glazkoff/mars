@@ -1,0 +1,119 @@
+{
+ "registered": "PLAN_MAIN_CONTRIBUTION.md G2",
+ "n_tasks": 69596,
+ "families": {
+  "gemma_anchored": {
+   "n_judged": 69596,
+   "coverage_accuracy_on_known": 0.6920737887695114,
+   "n_known": 9866,
+   "support_rate": 0.6756279096499799
+  },
+  "qwen_anchored": {
+   "n_judged": 69596,
+   "coverage_accuracy_on_known": 0.7161970403405635,
+   "n_known": 9866,
+   "support_rate": 0.8427783205931375
+  }
+ },
+ "systems": {
+  "humanfact+div1": {
+   "gemma_anchored": {
+    "true_omission_rate": 0.6506756632896155,
+    "n_pairs": 1388,
+    "unknown_resolved_rate": 0.6740390682058984
+   },
+   "qwen_anchored": {
+    "true_omission_rate": 0.7434231137361016,
+    "n_pairs": 1388,
+    "unknown_resolved_rate": 0.7554576751787642
+   }
+  },
+  "humanfact.distilled+div1": {
+   "gemma_anchored": {
+    "true_omission_rate": 0.6993708872637114,
+    "n_pairs": 1388,
+    "unknown_resolved_rate": 0.7546371964312165
+   },
+   "qwen_anchored": {
+    "true_omission_rate": 0.7720383111050909,
+    "n_pairs": 1388,
+    "unknown_resolved_rate": 0.8271546976065193
+   }
+  },
+  "judgefact.distilled+div1": {
+   "gemma_anchored": {
+    "true_omission_rate": 0.6968361872140166,
+    "n_pairs": 1388,
+    "unknown_resolved_rate": 0.7507975941021221
+   },
+   "qwen_anchored": {
+    "true_omission_rate": 0.771316681637287,
+    "n_pairs": 1388,
+    "unknown_resolved_rate": 0.8247077349223253
+   }
+  },
+  "mars2": {
+   "gemma_anchored": {
+    "true_omission_rate": 0.2740195726514494,
+    "n_pairs": 1388,
+    "unknown_resolved_rate": 0.27376742077274846
+   },
+   "qwen_anchored": {
+    "true_omission_rate": 0.5883196909931203,
+    "n_pairs": 1388,
+    "unknown_resolved_rate": 0.5827588851234334
+   }
+  },
+  "tagger.spacy+div1": {
+   "gemma_anchored": {
+    "true_omission_rate": 0.29459133069964744,
+    "n_pairs": 1388,
+    "unknown_resolved_rate": 0.29732398698528056
+   },
+   "qwen_anchored": {
+    "true_omission_rate": 0.5506610684353511,
+    "n_pairs": 1388,
+    "unknown_resolved_rate": 0.5517341681796016
+   }
+  }
+ },
+ "paired": {
+  "humanfact.distilled+div1": {
+   "other_minus_primary": 0.048130721868391416,
+   "ci": [
+    0.0270170269048416,
+    0.06916679511355589
+   ]
+  },
+  "judgefact.distilled+div1": {
+   "other_minus_primary": 0.04607401156741658,
+   "ci": [
+    0.024024015435424186,
+    0.06737963252970514
+   ]
+  },
+  "mars2": {
+   "other_minus_primary": -0.37911123900098825,
+   "ci": [
+    -0.4085908531349164,
+    -0.34662181552214644
+   ]
+  },
+  "tagger.spacy+div1": {
+   "other_minus_primary": -0.3554275067352301,
+   "ci": [
+    -0.3844962769984582,
+    -0.3260279454861004
+   ]
+  }
+ },
+ "kappa_true_omission": {
+  "families": [
+   "gemma_anchored",
+   "qwen_anchored"
+  ],
+  "n": 69596,
+  "kappa": 0.5370102792036733,
+  "agreement": 0.7844416345766998
+ }
+}

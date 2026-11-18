@@ -1,0 +1,70 @@
+{
+ "registered": "research/marsc_20260916/PREREG.md E1",
+ "n_pairs": 1412,
+ "n_docs": 154,
+ "n_validation_tetrads": 1276,
+ "systems": {
+  "mc-A-lam1-crossenc-r04human": {
+   "auroc_pooled": 0.9740448322290951,
+   "auroc_macro": 0.9682213519279406,
+   "auroc_lexical_stress": 0.9640701453363676,
+   "n_stress": 4353,
+   "logloss": 0.20387245985919422,
+   "by_resource": {
+    "rose_cnndm": 0.9735118097788596,
+    "rose_samsum": 0.9662367187382425,
+    "rose_xsum": 0.9839865799197516
+   },
+   "four_cell_strict": 0.8189655172413793,
+   "C_positive_rate": 0.9835423197492164,
+   "n_tetrads_scored": 1276
+  },
+  "mc-A-lam1-crossenc-r04judge": {
+   "auroc_pooled": 0.9612671648719145,
+   "auroc_macro": 0.9480126497955104,
+   "auroc_lexical_stress": 0.951684200577274,
+   "n_stress": 4353,
+   "logloss": 0.7791634177898427,
+   "by_resource": {
+    "rose_cnndm": 0.9651438448013384,
+    "rose_samsum": 0.9496943992956792,
+    "rose_xsum": 0.9666326630849561
+   },
+   "four_cell_strict": 0.7695924764890282,
+   "C_positive_rate": 0.9811912225705329,
+   "n_tetrads_scored": 1276
+  },
+  "mc-R-lam1-crossenc-r04human": {
+   "auroc_pooled": 0.97512856443299,
+   "auroc_macro": 0.9707991699018698,
+   "auroc_lexical_stress": 0.9676333946474921,
+   "n_stress": 4353,
+   "logloss": 0.2028989871257701,
+   "by_resource": {
+    "rose_cnndm": 0.9743333305251389,
+    "rose_samsum": 0.9695175290080816,
+    "rose_xsum": 0.9828077890871172
+   },
+   "four_cell_strict": 0.8166144200626959,
+   "C_positive_rate": 0.9843260188087775,
+   "n_tetrads_scored": 1276
+  },
+  "mc-R-lam1-crossenc-r04judge": {
+   "auroc_pooled": 0.9545522349156111,
+   "auroc_macro": 0.9464677690808835,
+   "auroc_lexical_stress": 0.9504075089244818,
+   "n_stress": 4353,
+   "logloss": 0.7890923477423718,
+   "by_resource": {
+    "rose_cnndm": 0.95687065638405,
+    "rose_samsum": 0.9430255504386955,
+    "rose_xsum": 0.9597563832279222
+   },
+   "four_cell_strict": 0.7429467084639498,
+   "C_positive_rate": 0.9772727272727273,
+   "n_tetrads_scored": 1276
+  }
+ },
+ "primary": null,
+ "paired": {}
+}

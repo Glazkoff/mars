@@ -1,0 +1,604 @@
+{
+ "grid": [
+  1,
+  2,
+  3,
+  4,
+  5,
+  6,
+  7,
+  8,
+  9,
+  10,
+  11,
+  12
+ ],
+ "arms": {
+  "MARS-C humanfact / gemma+ent / 3-seed": {
+   "inventory": "gemma+ent",
+   "decomposition_s_per_document": 6.72003021355482,
+   "per_summary_seconds": 0.2351970595156447,
+   "components": {
+    "units_per_pair": {
+     "value": 94.31173260572987,
+     "provenance": "measured split-wide"
+    },
+    "verification_s_per_unit": {
+     "value": 0.00083,
+     "provenance": "declared (campaign brief, 0.00083 GPU-s/unit)",
+     "checkpoints_timed": 0
+    },
+    "verification_passes": {
+     "value": 3,
+     "provenance": "pipeline of record seed-averages 3"
+    },
+    "aggregation_s_per_unit": {
+     "value": 0.0,
+     "provenance": "not measured -> 0"
+    },
+    "emission_s_per_pair": {
+     "value": 0.00035548925399780273,
+     "provenance": "measured"
+    },
+    "premise_s_per_pair": {
+     "value": 5.3560733795166015e-06,
+     "provenance": "measured"
+    },
+    "decomposition": {
+     "gemma_llm": {
+      "s_per_document": 6.637462235649547,
+      "provenance": "declared allocation"
+     },
+     "spacy_entity": {
+      "s_per_document": 0.08256797790527344,
+      "provenance": "measured"
+     }
+    },
+    "decomposition_provenance": "gemma_llm=6.6375s (declared allocation); spacy_entity=0.0826s (measured)"
+   },
+   "note": "the pipeline of record is the 3-seed arm",
+   "cost_per_summary": {
+    "1": 6.955227273070465,
+    "2": 3.595212166293055,
+    "3": 2.4752071307005847,
+    "4": 1.9152046129043498,
+    "5": 1.5792031022266089,
+    "6": 1.3552020951081147,
+    "7": 1.195201375737762,
+    "8": 1.0752008362099972,
+    "9": 0.9818670832439581,
+    "10": 0.9072000808711268,
+    "11": 0.8461088971115375,
+    "12": 0.7951995773118797
+   }
+  },
+  "MARS-C humanfact / gemma+ent / 1-seed": {
+   "inventory": "gemma+ent",
+   "decomposition_s_per_document": 6.72003021355482,
+   "per_summary_seconds": 0.07863958339013313,
+   "components": {
+    "units_per_pair": {
+     "value": 94.31173260572987,
+     "provenance": "measured split-wide"
+    },
+    "verification_s_per_unit": {
+     "value": 0.00083,
+     "provenance": "declared (campaign brief, 0.00083 GPU-s/unit)",
+     "checkpoints_timed": 0
+    },
+    "verification_passes": {
+     "value": 1,
+     "provenance": "pipeline of record seed-averages 3"
+    },
+    "aggregation_s_per_unit": {
+     "value": 0.0,
+     "provenance": "not measured -> 0"
+    },
+    "emission_s_per_pair": {
+     "value": 0.00035548925399780273,
+     "provenance": "measured"
+    },
+    "premise_s_per_pair": {
+     "value": 5.3560733795166015e-06,
+     "provenance": "measured"
+    },
+    "decomposition": {
+     "gemma_llm": {
+      "s_per_document": 6.637462235649547,
+      "provenance": "declared allocation"
+     },
+     "spacy_entity": {
+      "s_per_document": 0.08256797790527344,
+      "provenance": "measured"
+     }
+    },
+    "decomposition_provenance": "gemma_llm=6.6375s (declared allocation); spacy_entity=0.0826s (measured)"
+   },
+   "note": "the pipeline of record is the 3-seed arm",
+   "cost_per_summary": {
+    "1": 6.798669796944954,
+    "2": 3.438654690167543,
+    "3": 2.318649654575073,
+    "4": 1.7586471367788383,
+    "5": 1.4226456261010973,
+    "6": 1.1986446189826032,
+    "7": 1.0386438996122505,
+    "8": 0.9186433600844857,
+    "9": 0.8253096071184465,
+    "10": 0.7506426047456152,
+    "11": 0.6895514209860258,
+    "12": 0.6386421011863681
+   }
+  },
+  "LLM cell judge (low) / gemma+ent": {
+   "inventory": "gemma+ent",
+   "decomposition_s_per_document": 6.72003021355482,
+   "per_summary_seconds": 15.844726567016618,
+   "components": {
+    "units_per_pair": {
+     "value": 94.31173260572987,
+     "provenance": "measured split-wide"
+    },
+    "verification_s_per_cell": {
+     "value": 0.168,
+     "provenance": "campaign brief, forced-choice coverage judge, 0.168-0.203 GPU-s/cell"
+    },
+    "emission_s_per_pair": {
+     "value": 0.00035548925399780273,
+     "provenance": "measured"
+    },
+    "decomposition": {
+     "gemma_llm": {
+      "s_per_document": 6.637462235649547,
+      "provenance": "declared allocation"
+     },
+     "spacy_entity": {
+      "s_per_document": 0.08256797790527344,
+      "provenance": "measured"
+     }
+    },
+    "decomposition_provenance": "gemma_llm=6.6375s (declared allocation); spacy_entity=0.0826s (measured)"
+   },
+   "note": "judges every inventory cell; needs the same inventory, so amortises the same way",
+   "cost_per_summary": {
+    "1": 22.56475678057144,
+    "2": 19.20474167379403,
+    "3": 18.08473663820156,
+    "4": 17.524734120405324,
+    "5": 17.188732609727584,
+    "6": 16.96473160260909,
+    "7": 16.804730883238737,
+    "8": 16.68473034371097,
+    "9": 16.59139659074493,
+    "10": 16.5167295883721,
+    "11": 16.45563840461251,
+    "12": 16.404729084812853
+   }
+  },
+  "LLM cell judge (high) / gemma+ent": {
+   "inventory": "gemma+ent",
+   "decomposition_s_per_document": 6.72003021355482,
+   "per_summary_seconds": 19.145637208217163,
+   "components": {
+    "units_per_pair": {
+     "value": 94.31173260572987,
+     "provenance": "measured split-wide"
+    },
+    "verification_s_per_cell": {
+     "value": 0.203,
+     "provenance": "campaign brief, forced-choice coverage judge, 0.168-0.203 GPU-s/cell"
+    },
+    "emission_s_per_pair": {
+     "value": 0.00035548925399780273,
+     "provenance": "measured"
+    },
+    "decomposition": {
+     "gemma_llm": {
+      "s_per_document": 6.637462235649547,
+      "provenance": "declared allocation"
+     },
+     "spacy_entity": {
+      "s_per_document": 0.08256797790527344,
+      "provenance": "measured"
+     }
+    },
+    "decomposition_provenance": "gemma_llm=6.6375s (declared allocation); spacy_entity=0.0826s (measured)"
+   },
+   "note": "judges every inventory cell; needs the same inventory, so amortises the same way",
+   "cost_per_summary": {
+    "1": 25.865667421771985,
+    "2": 22.505652314994574,
+    "3": 21.385647279402104,
+    "4": 20.82564476160587,
+    "5": 20.48964325092813,
+    "6": 20.265642243809634,
+    "7": 20.10564152443928,
+    "8": 19.985640984911516,
+    "9": 19.892307231945477,
+    "10": 19.817640229572646,
+    "11": 19.756549045813056,
+    "12": 19.7056397260134
+   }
+  },
+  "MARS-C humanfact / distilled / 3-seed": {
+   "inventory": "distilled",
+   "decomposition_s_per_document": 0.2366565961732125,
+   "per_summary_seconds": 0.10153565808743283,
+   "components": {
+    "units_per_pair": {
+     "value": 40.63245492371706,
+     "provenance": "measured split-wide"
+    },
+    "verification_s_per_unit": {
+     "value": 0.00083,
+     "provenance": "declared (campaign brief, 0.00083 GPU-s/unit)",
+     "checkpoints_timed": 0
+    },
+    "verification_passes": {
+     "value": 3,
+     "provenance": "pipeline of record seed-averages 3"
+    },
+    "aggregation_s_per_unit": {
+     "value": 0.0,
+     "provenance": "not measured -> 0"
+    },
+    "emission_s_per_pair": {
+     "value": 0.00035548925399780273,
+     "provenance": "measured"
+    },
+    "premise_s_per_pair": {
+     "value": 5.3560733795166015e-06,
+     "provenance": "measured"
+    },
+    "decomposition": {
+     "distilled_segmenter": {
+      "s_per_document": 0.2366565961732125,
+      "provenance": "declared allocation"
+     }
+    },
+    "decomposition_provenance": "distilled_segmenter=0.2367s (declared allocation)"
+   },
+   "note": "the pipeline of record is the 3-seed arm",
+   "cost_per_summary": {
+    "1": 0.3381922542606453,
+    "2": 0.2198639561740391,
+    "3": 0.18042119014517033,
+    "4": 0.16069980713073595,
+    "5": 0.14886697732207532,
+    "6": 0.14097842411630157,
+    "7": 0.13534374325503462,
+    "8": 0.13111773260908438,
+    "9": 0.127830835440012,
+    "10": 0.12520131770475407,
+    "11": 0.12304989410317942,
+    "12": 0.1212570411018672
+   }
+  },
+  "MARS-C humanfact / distilled / 1-seed": {
+   "inventory": "distilled",
+   "decomposition_s_per_document": 0.2366565961732125,
+   "per_summary_seconds": 0.03408578291406248,
+   "components": {
+    "units_per_pair": {
+     "value": 40.63245492371706,
+     "provenance": "measured split-wide"
+    },
+    "verification_s_per_unit": {
+     "value": 0.00083,
+     "provenance": "declared (campaign brief, 0.00083 GPU-s/unit)",
+     "checkpoints_timed": 0
+    },
+    "verification_passes": {
+     "value": 1,
+     "provenance": "pipeline of record seed-averages 3"
+    },
+    "aggregation_s_per_unit": {
+     "value": 0.0,
+     "provenance": "not measured -> 0"
+    },
+    "emission_s_per_pair": {
+     "value": 0.00035548925399780273,
+     "provenance": "measured"
+    },
+    "premise_s_per_pair": {
+     "value": 5.3560733795166015e-06,
+     "provenance": "measured"
+    },
+    "decomposition": {
+     "distilled_segmenter": {
+      "s_per_document": 0.2366565961732125,
+      "provenance": "declared allocation"
+     }
+    },
+    "decomposition_provenance": "distilled_segmenter=0.2367s (declared allocation)"
+   },
+   "note": "the pipeline of record is the 3-seed arm",
+   "cost_per_summary": {
+    "1": 0.270742379087275,
+    "2": 0.15241408100066872,
+    "3": 0.11297131497179999,
+    "4": 0.09324993195736561,
+    "5": 0.08141710214870498,
+    "6": 0.07352854894293123,
+    "7": 0.06789386808166427,
+    "8": 0.06366785743571404,
+    "9": 0.06038096026664165,
+    "10": 0.05775144253138373,
+    "11": 0.05560001892980907,
+    "12": 0.05380716592849685
+   }
+  },
+  "LLM cell judge (low) / distilled": {
+   "inventory": "distilled",
+   "decomposition_s_per_document": 0.2366565961732125,
+   "per_summary_seconds": 6.826607916438465,
+   "components": {
+    "units_per_pair": {
+     "value": 40.63245492371706,
+     "provenance": "measured split-wide"
+    },
+    "verification_s_per_cell": {
+     "value": 0.168,
+     "provenance": "campaign brief, forced-choice coverage judge, 0.168-0.203 GPU-s/cell"
+    },
+    "emission_s_per_pair": {
+     "value": 0.00035548925399780273,
+     "provenance": "measured"
+    },
+    "decomposition": {
+     "distilled_segmenter": {
+      "s_per_document": 0.2366565961732125,
+      "provenance": "declared allocation"
+     }
+    },
+    "decomposition_provenance": "distilled_segmenter=0.2367s (declared allocation)"
+   },
+   "note": "judges every inventory cell; needs the same inventory, so amortises the same way",
+   "cost_per_summary": {
+    "1": 7.063264512611677,
+    "2": 6.944936214525071,
+    "3": 6.905493448496202,
+    "4": 6.885772065481768,
+    "5": 6.873939235673107,
+    "6": 6.866050682467334,
+    "7": 6.860416001606066,
+    "8": 6.856189990960116,
+    "9": 6.852903093791044,
+    "10": 6.850273576055786,
+    "11": 6.848122152454211,
+    "12": 6.846329299452899
+   }
+  },
+  "LLM cell judge (high) / distilled": {
+   "inventory": "distilled",
+   "decomposition_s_per_document": 0.2366565961732125,
+   "per_summary_seconds": 8.248743838768563,
+   "components": {
+    "units_per_pair": {
+     "value": 40.63245492371706,
+     "provenance": "measured split-wide"
+    },
+    "verification_s_per_cell": {
+     "value": 0.203,
+     "provenance": "campaign brief, forced-choice coverage judge, 0.168-0.203 GPU-s/cell"
+    },
+    "emission_s_per_pair": {
+     "value": 0.00035548925399780273,
+     "provenance": "measured"
+    },
+    "decomposition": {
+     "distilled_segmenter": {
+      "s_per_document": 0.2366565961732125,
+      "provenance": "declared allocation"
+     }
+    },
+    "decomposition_provenance": "distilled_segmenter=0.2367s (declared allocation)"
+   },
+   "note": "judges every inventory cell; needs the same inventory, so amortises the same way",
+   "cost_per_summary": {
+    "1": 8.485400434941775,
+    "2": 8.36707213685517,
+    "3": 8.327629370826301,
+    "4": 8.307907987811866,
+    "5": 8.296075158003205,
+    "6": 8.288186604797431,
+    "7": 8.282551923936165,
+    "8": 8.278325913290216,
+    "9": 8.275039016121143,
+    "10": 8.272409498385885,
+    "11": 8.27025807478431,
+    "12": 8.268465221782998
+   }
+  },
+  "generative 400-token judge (Gemma)": {
+   "inventory": null,
+   "decomposition_s_per_document": 0.0,
+   "per_summary_seconds": 4.2,
+   "components": {
+    "per_pair_seconds": {
+     "value": 4.2,
+     "provenance": "campaign brief, generative 400-token judge, Gemma, GPU-s/pair"
+    }
+   },
+   "note": "inventory-free: flat in summaries per source",
+   "cost_per_summary": {
+    "1": 4.2,
+    "2": 4.2,
+    "3": 4.2,
+    "4": 4.2,
+    "5": 4.2,
+    "6": 4.2,
+    "7": 4.2,
+    "8": 4.2,
+    "9": 4.2,
+    "10": 4.2,
+    "11": 4.2,
+    "12": 4.2
+   }
+  },
+  "generative 400-token judge (Qwen3.8-27B)": {
+   "inventory": null,
+   "decomposition_s_per_document": 0.0,
+   "per_summary_seconds": 2.1,
+   "components": {
+    "per_pair_seconds": {
+     "value": 2.1,
+     "provenance": "campaign brief, generative 400-token judge, Qwen3.8-27B, GPU-s/pair"
+    }
+   },
+   "note": "inventory-free: flat in summaries per source",
+   "cost_per_summary": {
+    "1": 2.1,
+    "2": 2.1,
+    "3": 2.1,
+    "4": 2.1,
+    "5": 2.1,
+    "6": 2.1,
+    "7": 2.1,
+    "8": 2.1,
+    "9": 2.1,
+    "10": 2.1,
+    "11": 2.1,
+    "12": 2.1
+   }
+  },
+  "MARS-2 recovery (historical)": {
+   "inventory": null,
+   "decomposition_s_per_document": 0.0,
+   "per_summary_seconds": 0.82,
+   "components": {
+    "per_pair_seconds": {
+     "value": 0.82,
+     "provenance": "appendix_marsc.tex cost paragraph, MARS-2 recovery, historical measurement"
+    }
+   },
+   "note": "inventory-free: flat in summaries per source",
+   "cost_per_summary": {
+    "1": 0.82,
+    "2": 0.82,
+    "3": 0.82,
+    "4": 0.82,
+    "5": 0.82,
+    "6": 0.82,
+    "7": 0.82,
+    "8": 0.82,
+    "9": 0.82,
+    "10": 0.82,
+    "11": 0.82,
+    "12": 0.82
+   }
+  },
+  "MARS-2 released one-pass tagger (historical)": {
+   "inventory": null,
+   "decomposition_s_per_document": 0.0,
+   "per_summary_seconds": 0.013,
+   "components": {
+    "per_pair_seconds": {
+     "value": 0.013,
+     "provenance": "appendix_marsc.tex cost paragraph, released one-pass tagger, historical"
+    }
+   },
+   "note": "inventory-free: flat in summaries per source",
+   "cost_per_summary": {
+    "1": 0.013,
+    "2": 0.013,
+    "3": 0.013,
+    "4": 0.013,
+    "5": 0.013,
+    "6": 0.013,
+    "7": 0.013,
+    "8": 0.013,
+    "9": 0.013,
+    "10": 0.013,
+    "11": 0.013,
+    "12": 0.013
+   }
+  }
+ },
+ "markers": {
+  "one_new_summary_per_new_source": 1,
+  "rose_summaries_per_source_split_wide": 7.71578947368421,
+  "rose_summaries_per_source_g4_window": 11.7647
+ },
+ "definition": "cost_per_summary(s) = decomposition_s_per_document / s + per_summary_seconds",
+ "built_utc": "2026-09-18T10:52:39.318388+00:00",
+ "inputs": [
+  "/home/user/results/marsc_strengthen/b6b8/b6/stage_times_cpu.json"
+ ],
+ "declared_constants": {
+  "llm_cell_judge_s_per_cell_low": {
+   "value": 0.168,
+   "provenance": "campaign brief, forced-choice coverage judge, 0.168-0.203 GPU-s/cell"
+  },
+  "llm_cell_judge_s_per_cell_high": {
+   "value": 0.203,
+   "provenance": "campaign brief, forced-choice coverage judge, 0.168-0.203 GPU-s/cell"
+  },
+  "generative_judge_s_per_pair_gemma": {
+   "value": 4.2,
+   "provenance": "campaign brief, generative 400-token judge, Gemma, GPU-s/pair"
+  },
+  "generative_judge_s_per_pair_qwen": {
+   "value": 2.1,
+   "provenance": "campaign brief, generative 400-token judge, Qwen3.8-27B, GPU-s/pair"
+  },
+  "mars2_recovery_s_per_pair": {
+   "value": 0.82,
+   "provenance": "appendix_marsc.tex cost paragraph, MARS-2 recovery, historical measurement"
+  },
+  "mars2_tagger_s_per_pair": {
+   "value": 0.013,
+   "provenance": "appendix_marsc.tex cost paragraph, released one-pass tagger, historical"
+  },
+  "g4_decomposition_s_per_document_allocation": {
+   "value": 6.637462235649547,
+   "provenance": "results/marsc/g4/cost_table.json, sacct Elapsed of 8 array tasks / 1986 documents (ALLOCATION time)"
+  },
+  "g4_distill_s_per_document_allocation": {
+   "value": 0.2366565961732125,
+   "provenance": "results/marsc/g4/cost_table.json, sacct Elapsed of the distil job / 1986 documents (ALLOCATION time, TRAIN+PREDICT)"
+  },
+  "minicheck_units_per_s_declared": {
+   "value": 1.36,
+   "provenance": "campaign brief, MiniCheck ~1.36 units/s on one H200"
+  }
+ },
+ "what_mc_cost_py_does_not_cover": [
+  ", AND WHY IT IS HALF-DONE",
+  "-----------------------------------------------------",
+  "`research/marsc_20260916/code/mc_cost.py` (block G4, job 4843) produced the only cost artifact in the project.",
+  "Read it before reading this file; the list below is the answer to the brief's question \"say what it does not",
+  "cover\", established by reading that source, not inferred:",
+  "1. It times ONE verifier checkpoint per label source.  The deployed emitter seed-averages THREE, so the",
+  "measured `s_per_pair` is one third of the inference cost of the pipeline of record.",
+  "2. It times only `AutoModelForSequenceClassification` at `max_length=512`, i.e. exactly the MARS-C verifier",
+  "family.  It cannot time the off-the-shelf comparators (SummaC-ZS's sentence x sentence NLI grid,",
+  "MiniCheck's Flan-T5 generator, the windowed RoBERTa-MNLI scorer, the MiniLM bi-encoder, the lexical",
+  "counters), and cannot time any generative judge.  The paper's comparison of MARS-C against off-the-shelf",
+  "verifiers is therefore a quality comparison with no cost axis.",
+  "3. Model load is excluded (`from_pretrained` happens before `t0`) -- correct for a throughput number, but it",
+  "means the figure is not comparable to the inventory figure, which is allocation wall-clock (below).",
+  "4. The inventory cost is not measured at all.  It is HARVESTED: `mc_g4_cost.sbatch` runs",
+  "`sacct -j 4704 -X -o Elapsed` and sums the *allocation* elapsed time of the eight decomposition array",
+  "tasks.  That includes model load, tokenizer build, task-file IO, checkpoint flushes and any scheduler",
+  "slack, and it is the number the paper's headline 6.637 s/document is built from.  This block re-times the",
+  "same decomposition as ACTIVE GENERATION on the current node and reports both, labelled.",
+  "5. The spaCy entity half of the `gemma+ent` inventory is never priced.  `gemma+ent` = LLM propositions PLUS a",
+  "spaCy entity pass over the same source (`m32_inventory.py`), and only the LLM half appears in the G4 table.",
+  "6. The emission rule is not priced.  `mc_diversity.py` re-segments every source into sentences and maps every",
+  "unit onto a sentence -- per-pair CPU work that a deployment pays on every summary.",
+  "7. The seed aggregation is not priced.",
+  "8. `units_per_pair` is taken from the first 200 pairs of the validation inventory, which carry 165.5 Gemma+ent",
+  "units per pair against a split-wide 94.  Every per-pair second in the G4 table is therefore inflated by",
+  "~1.76x relative to the workload the paper evaluates.  This block measures seconds per UNIT (a rate that",
+  "does not depend on the sample's unit density) and prices the curve at SPLIT-WIDE unit counts.",
+  "9. `pairs_per_document_in_sample` is likewise 11.76 in that 200-pair window; split-wide RoSE is lower.  The",
+  "amortisation denominator is re-derived here from the full inventory files.",
+  "10. There is no evidence-handling stage in the G4 table because there is none in the pipeline: the MARS-C",
+  "verifier's premise is the candidate summary alone, the source is not an input at inference",
+  "(`marsc_method.tex`).  That is a structural cost property and is reported as a measured zero, not omitted.",
+  "The off-the-shelf comparators are scored the same way (document = candidate summary), so the same holds",
+  "for them; what they do pay, and MARS-C does not, is claim RENDERING (`common.render_claim` walks the",
+  "source to turn an extracted unit into a sentence), which is timed here as its own stage."
+ ]
+}

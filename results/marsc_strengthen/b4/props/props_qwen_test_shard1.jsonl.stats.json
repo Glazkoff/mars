@@ -1,0 +1,16 @@
+{
+ "shard": "1/2",
+ "sentences": 3671,
+ "propositions": 10842,
+ "props_per_sentence": 2.9534186870062653,
+ "blank_raw_rate": 0.003268864069735767,
+ "empty_parse_rate": 0.07191500953418686,
+ "development_reference_empty_parse": {
+  "extractor": "gemma-4-31b-it",
+  "split": "test",
+  "sentences": 7342,
+  "empty_parse": 766,
+  "rate": 0.1043
+ },
+ "seconds": 1315.4697861671448
+}

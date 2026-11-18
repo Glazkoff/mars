@@ -1,0 +1,17 @@
+{
+ "arm": "mars_seq2seq",
+ "n_pairs": 200,
+ "seconds_batched_total": 265.9230748300906,
+ "seconds_per_pair_batched": 1.329615374150453,
+ "latency_batch1_median_ms": 1772.4906463408843,
+ "latency_batch1_p90_ms": 3696.620058035478,
+ "peak_alloc_batched_bytes": 59148464640,
+ "peak_alloc_batch1_bytes": 59055248896,
+ "weight_bytes_in_memory": 7605168660,
+ "alloc_after_load_bytes": 7638741504,
+ "facts_per_candidate": 10.35,
+ "reference_facts_per_pair": 14.035,
+ "mean_P": 0.7414646320941375,
+ "mean_R": 0.2520546068866906,
+ "device": "NVIDIA H200 NVL"
+}

@@ -1,0 +1,11 @@
+{
+ "acu_file": "/home/user/results/marsc/g7_unisum/acu_units_unisum.jsonl",
+ "rows": 1822,
+ "documents": 224,
+ "documents_with_triples": 224,
+ "crossed_cells": 17207,
+ "same_fact_triples": 26489,
+ "facts_per_document_median": 11,
+ "label_semantics": "labels[fi]=1 conveys the fact (UniSumEval keyfact_label true), 0 omits it",
+ "sha256_docs_unisum": "c23000007331dbfe6cac4ba9f52d62a996f769126eac298f202d87d3350c7b52"
+}

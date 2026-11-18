@@ -1,0 +1,171 @@
+{
+ "registered": "research/marsc_ieee_20260922/PREREG.md, Amendment H-J14",
+ "python": "3.12.14",
+ "steps": 600,
+ "tetrads_per_step": 2,
+ "natural_per_step": 4,
+ "facts_per_natural": 6,
+ "facts_per_natural_arm_R": 4,
+ "human_data": "/home/user/results/marsc/e0",
+ "judge_data": "/home/user/results/marsc/r04_matched/e0_judge",
+ "runs": {
+  "armA_seed20260906": {
+   "cells_human": 16332,
+   "cells_judge": 16287,
+   "identical_sequence": false,
+   "same_cell_at_same_position": 63,
+   "cells_in_common_multiset": 5495,
+   "share_of_human_cells_also_drawn_by_judge": 0.33645603722752876,
+   "distinct_cells_human": 12676,
+   "distinct_cells_judge": 12636,
+   "distinct_cells_in_common": 5072,
+   "encodings_human": 4800,
+   "encodings_judge": 4800,
+   "identical_encodings": false,
+   "pool_human": {
+    "train_docs": 853,
+    "tetrad_docs": 401,
+    "tetrad_groups": 3434
+   },
+   "pool_judge": {
+    "train_docs": 853,
+    "tetrad_docs": 346,
+    "tetrad_groups": 2260
+   }
+  },
+  "armA_seed20260907": {
+   "cells_human": 16297,
+   "cells_judge": 16391,
+   "identical_sequence": false,
+   "same_cell_at_same_position": 81,
+   "cells_in_common_multiset": 5519,
+   "share_of_human_cells_also_drawn_by_judge": 0.33865128551267104,
+   "distinct_cells_human": 12854,
+   "distinct_cells_judge": 12649,
+   "distinct_cells_in_common": 5126,
+   "encodings_human": 4800,
+   "encodings_judge": 4800,
+   "identical_encodings": false,
+   "pool_human": {
+    "train_docs": 853,
+    "tetrad_docs": 401,
+    "tetrad_groups": 3434
+   },
+   "pool_judge": {
+    "train_docs": 853,
+    "tetrad_docs": 346,
+    "tetrad_groups": 2260
+   }
+  },
+  "armA_seed20260908": {
+   "cells_human": 16296,
+   "cells_judge": 16335,
+   "identical_sequence": false,
+   "same_cell_at_same_position": 70,
+   "cells_in_common_multiset": 5347,
+   "share_of_human_cells_also_drawn_by_judge": 0.3281173294059892,
+   "distinct_cells_human": 12923,
+   "distinct_cells_judge": 12592,
+   "distinct_cells_in_common": 4957,
+   "encodings_human": 4800,
+   "encodings_judge": 4800,
+   "identical_encodings": false,
+   "pool_human": {
+    "train_docs": 853,
+    "tetrad_docs": 401,
+    "tetrad_groups": 3434
+   },
+   "pool_judge": {
+    "train_docs": 853,
+    "tetrad_docs": 346,
+    "tetrad_groups": 2260
+   }
+  },
+  "armR_seed20260906": {
+   "cells_human": 17689,
+   "cells_judge": 17689,
+   "identical_sequence": true,
+   "same_cell_at_same_position": 17689,
+   "cells_in_common_multiset": 17689,
+   "share_of_human_cells_also_drawn_by_judge": 1.0,
+   "distinct_cells_human": 14309,
+   "distinct_cells_judge": 14309,
+   "distinct_cells_in_common": 14309,
+   "targets_that_differ": 5755,
+   "share_of_targets_that_differ": 0.32534343377240094,
+   "omitted_rate_human": 0.6541918706540788,
+   "omitted_rate_judge": 0.3356323138673752,
+   "encodings_human": 4800,
+   "encodings_judge": 4800,
+   "identical_encodings": true,
+   "pool_human": {
+    "train_docs": 853,
+    "tetrad_docs": 401,
+    "tetrad_groups": 3434
+   },
+   "pool_judge": {
+    "train_docs": 853,
+    "tetrad_docs": 346,
+    "tetrad_groups": 2260
+   }
+  },
+  "armR_seed20260907": {
+   "cells_human": 17683,
+   "cells_judge": 17683,
+   "identical_sequence": true,
+   "same_cell_at_same_position": 17683,
+   "cells_in_common_multiset": 17683,
+   "share_of_human_cells_also_drawn_by_judge": 1.0,
+   "distinct_cells_human": 14336,
+   "distinct_cells_judge": 14336,
+   "distinct_cells_in_common": 14336,
+   "targets_that_differ": 5716,
+   "share_of_targets_that_differ": 0.3232483175931686,
+   "omitted_rate_human": 0.6498897245942431,
+   "omitted_rate_judge": 0.33218345303398744,
+   "encodings_human": 4800,
+   "encodings_judge": 4800,
+   "identical_encodings": true,
+   "pool_human": {
+    "train_docs": 853,
+    "tetrad_docs": 401,
+    "tetrad_groups": 3434
+   },
+   "pool_judge": {
+    "train_docs": 853,
+    "tetrad_docs": 346,
+    "tetrad_groups": 2260
+   }
+  },
+  "armR_seed20260908": {
+   "cells_human": 17758,
+   "cells_judge": 17758,
+   "identical_sequence": true,
+   "same_cell_at_same_position": 17758,
+   "cells_in_common_multiset": 17758,
+   "share_of_human_cells_also_drawn_by_judge": 1.0,
+   "distinct_cells_human": 14393,
+   "distinct_cells_judge": 14393,
+   "distinct_cells_in_common": 14393,
+   "targets_that_differ": 5899,
+   "share_of_targets_that_differ": 0.33218830949431244,
+   "omitted_rate_human": 0.6640387431017006,
+   "omitted_rate_judge": 0.33815745016330667,
+   "encodings_human": 4800,
+   "encodings_judge": 4800,
+   "identical_encodings": true,
+   "pool_human": {
+    "train_docs": 853,
+    "tetrad_docs": 401,
+    "tetrad_groups": 3434
+   },
+   "pool_judge": {
+    "train_docs": 853,
+    "tetrad_docs": 346,
+    "tetrad_groups": 2260
+   }
+  }
+ },
+ "arm_R_identical_for_every_seed": true,
+ "arm_A_identical_for_any_seed": false
+}

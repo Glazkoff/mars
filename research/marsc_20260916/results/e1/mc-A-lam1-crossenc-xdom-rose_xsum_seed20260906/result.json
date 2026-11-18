@@ -1,0 +1,50 @@
+{
+ "tag": "mc-A-lam1-crossenc-xdom-rose_xsum",
+ "system": "mc:A|lam1|crossenc",
+ "config": {
+  "arm": "A",
+  "lam": 1.0,
+  "repr": "crossenc",
+  "backbone": "",
+  "data_dir": "/home/user/results/marsc/e0",
+  "resources": "rose_cnndm,rose_samsum",
+  "seed": 20260906,
+  "steps": 600,
+  "tetrads_per_step": 2,
+  "natural_per_step": 4,
+  "facts_per_natural": 6,
+  "lr": 0.0,
+  "max_len": 0,
+  "eval_acu": "/home/user/results/mars2_gates/b18/acu_units_validation.jsonl",
+  "out": "/home/user/results/marsc/e1/mc-A-lam1-crossenc-xdom-rose_xsum_seed20260906",
+  "tag": "mc-A-lam1-crossenc-xdom-rose_xsum",
+  "scores_out": "/home/user/results/marsc/scores",
+  "eval_units": [],
+  "save_model": false,
+  "limit": 0,
+  "device": null
+ },
+ "backbone": "/home/user/hf_cache/hub/models--microsoft--deberta-large-mnli/snapshots/7296194b9009373def4f7c5dad292651e4b5cf4e",
+ "lr": 2e-05,
+ "max_len": 512,
+ "train_docs": 566,
+ "tetrad_docs": 344,
+ "cells_per_step_R": null,
+ "train_seconds": 61.6355357170105,
+ "cost": {
+  "encodings": 4800,
+  "tokens": 1181298,
+  "cells": 16810
+ },
+ "train_bce_last50": 0.20660229202359914,
+ "train_aux_last50": 0.0,
+ "train_four_cell_last200": 0.89,
+ "grad_norm_mean": 7.059207918941975,
+ "calibration": {
+  "n_cells": 5769,
+  "omitted_rate": 0.5801698734616051,
+  "slope": 0.7390898358485374,
+  "intercept": 0.14869981875535657
+ },
+ "eval_seconds_per_pair": 0.005981711422755428
+}

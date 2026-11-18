@@ -1,0 +1,71 @@
+{
+ "declared_before_numbers": true,
+ "rule_id": "mean_per_pair_normalised_rank_v1",
+ "rule": "fused[p][j] = 1 - mean over constituents f of ((rank_desc_f(p, j) - 1) / (n_finite(p) - 1)), ranks over the pair's finite scores with ties averaged, higher = more likely omitted; a unit non-finite in any constituent is written null.",
+ "fused_system": "fuse.mc_nli.distilled",
+ "unit_set": "distilled",
+ "n_output_seeds": 3,
+ "output_seed_labels": [
+  "20260906",
+  "20260907",
+  "20260908"
+ ],
+ "constituents": [
+  {
+   "name": "humanfact",
+   "n_files": 3,
+   "broadcast": false,
+   "files": [
+    "/home/user/results/marsc/g1_test/scores/distilled_humanfact_seed20260906.jsonl",
+    "/home/user/results/marsc/g1_test/scores/distilled_humanfact_seed20260907.jsonl",
+    "/home/user/results/marsc/g1_test/scores/distilled_humanfact_seed20260908.jsonl"
+   ],
+   "sha256": {
+    "distilled_humanfact_seed20260906.jsonl": "8b7df1b399024e1e6e04fd3846d8d3273e41fe3ca905e78266d89bdff42d3c4d",
+    "distilled_humanfact_seed20260907.jsonl": "7a50e6af25a30dbcd2e7a479975e76a4ec980f9a9bcb89ab385486126d5fb64b",
+    "distilled_humanfact_seed20260908.jsonl": "b7a31a49a45055db35aecb524e66d41d2243e18bf7dfdf933f0c59db74acbf55"
+   },
+   "seed_tokens": [
+    "20260906",
+    "20260907",
+    "20260908"
+   ]
+  },
+  {
+   "name": "nli",
+   "n_files": 1,
+   "broadcast": true,
+   "files": [
+    "/home/user/results/marsc/r06b_fast/scores/distilled_nli_nli.jsonl"
+   ],
+   "sha256": {
+    "distilled_nli_nli.jsonl": "f3a466d5e77019d0d580528c54a2311745dfee9a116a37b3b180a8c59dd2a4cb"
+   },
+   "seed_tokens": [
+    ""
+   ]
+  }
+ ],
+ "output_stats": {
+  "n_pairs_written": [
+   2829,
+   2829,
+   2829
+  ],
+  "n_units_null_propagated": [
+   0,
+   0,
+   0
+  ],
+  "n_pairs_dropped_shape": [
+   0,
+   0,
+   0
+  ]
+ },
+ "outputs": [
+  "fuse.mc_nli.distilled_seed20260906.jsonl",
+  "fuse.mc_nli.distilled_seed20260907.jsonl",
+  "fuse.mc_nli.distilled_seed20260908.jsonl"
+ ]
+}

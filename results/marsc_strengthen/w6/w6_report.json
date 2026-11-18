@@ -1,0 +1,269 @@
+{
+ "n_docs": 100,
+ "n_rows": 1600,
+ "counters": [
+  "cnt_words",
+  "cnt_chars",
+  "cnt_sents",
+  "cnt_entities",
+  "cnt_novelty",
+  "cnt_rougeL_recall",
+  "cnt_token_recall",
+  "cnt_compression"
+ ],
+ "doc_tokens": 500,
+ "seed": 20260921,
+ "n_boot": 2000,
+ "gpt2_snapshot": "/home/user/hf_cache/hub/models--openai-community--gpt2/snapshots/607a30d783dfa663caf39e06633721c8d4cfcd7e/",
+ "cells": [
+  {
+   "metric": "shannon_score",
+   "axis": "relevance",
+   "n": 1600,
+   "tau_summary_level": 0.27781754032736844,
+   "tau_summary_level_ci": [
+    0.2343716837980458,
+    0.3160392631510434
+   ],
+   "tau_system_level": 0.5833333333333334,
+   "tau_counter_only": 0.22664915736950572,
+   "tau_metric_model": 0.27781754032736844,
+   "reproduction_fraction": 0.8158201858040782,
+   "reproduction_fraction_matched": 0.8158201858040782,
+   "r2_counters": 0.14047317027319428,
+   "r2_counters_plus_metric": 0.20551947600008869,
+   "r2_metric_only": 0.15741007714051714,
+   "conditional_increment_r2": 0.0650463057268944,
+   "conditional_increment_ci": [
+    0.024926828746585722,
+    0.1009947011167775
+   ],
+   "conditional_increment_p_one_sided": 0.0015,
+   "reproduction_fraction_ci": [
+    0.7162192658405304,
+    0.9127347078516099
+   ],
+   "increment_clears_zero": true,
+   "increment_bh_significant": true
+  },
+  {
+   "metric": "shannon_score",
+   "axis": "coherence",
+   "n": 1600,
+   "tau_summary_level": 0.2513587964697286,
+   "tau_summary_level_ci": [
+    0.20851789881749896,
+    0.28899324055553954
+   ],
+   "tau_system_level": 0.38333333333333336,
+   "tau_counter_only": 0.2523244060462442,
+   "tau_metric_model": 0.2513587964697286,
+   "reproduction_fraction": 1.0038415587203524,
+   "reproduction_fraction_matched": 1.0038415587203524,
+   "r2_counters": 0.1277755403251064,
+   "r2_counters_plus_metric": 0.19837972381973867,
+   "r2_metric_only": 0.10722805195847807,
+   "conditional_increment_r2": 0.07060418349463227,
+   "conditional_increment_ci": [
+    0.03494136452048284,
+    0.10437684057901475
+   ],
+   "conditional_increment_p_one_sided": 0.0,
+   "reproduction_fraction_ci": [
+    0.855036960222332,
+    1.186516131267636
+   ],
+   "increment_clears_zero": true,
+   "increment_bh_significant": true
+  },
+  {
+   "metric": "shannon_score",
+   "axis": "fluency",
+   "n": 1600,
+   "tau_summary_level": 0.22959772109158239,
+   "tau_summary_level_ci": [
+    0.18803785078932325,
+    0.2690836681515476
+   ],
+   "tau_system_level": 0.5941474602165634,
+   "tau_counter_only": 0.23719268521331274,
+   "tau_metric_model": 0.22959772109158239,
+   "reproduction_fraction": 1.0330794403603896,
+   "reproduction_fraction_matched": 1.0330794403603896,
+   "r2_counters": 0.1502259532843352,
+   "r2_counters_plus_metric": 0.1696659010821795,
+   "r2_metric_only": 0.048709323217815625,
+   "conditional_increment_r2": 0.019439947797844304,
+   "conditional_increment_ci": [
+    0.004526583649801311,
+    0.03532677795838624
+   ],
+   "conditional_increment_p_one_sided": 0.0045,
+   "reproduction_fraction_ci": [
+    0.8423315371088829,
+    1.263297365062027
+   ],
+   "increment_clears_zero": true,
+   "increment_bh_significant": true
+  },
+  {
+   "metric": "shannon_score",
+   "axis": "consistency",
+   "n": 1600,
+   "tau_summary_level": 0.30420286298765004,
+   "tau_summary_level_ci": [
+    0.26914659360145926,
+    0.3382016122531615
+   ],
+   "tau_system_level": 0.6833333333333333,
+   "tau_counter_only": 0.3239389093404887,
+   "tau_metric_model": 0.30420286298765004,
+   "reproduction_fraction": 1.0648779112694935,
+   "reproduction_fraction_matched": 1.0648779112694935,
+   "r2_counters": 0.23236644921613658,
+   "r2_counters_plus_metric": 0.24781797836586839,
+   "r2_metric_only": 0.07762026839646008,
+   "conditional_increment_r2": 0.015451529149731802,
+   "conditional_increment_ci": [
+    0.0006420568716738045,
+    0.029821173640659296
+   ],
+   "conditional_increment_p_one_sided": 0.0195,
+   "reproduction_fraction_ci": [
+    0.9391047907536222,
+    1.217676608580382
+   ],
+   "increment_clears_zero": true,
+   "increment_bh_significant": true
+  },
+  {
+   "metric": "blanc_help",
+   "axis": "relevance",
+   "n": 1600,
+   "tau_summary_level": 0.18437672389200416,
+   "tau_summary_level_ci": [
+    0.1367122622725305,
+    0.22616875451559448
+   ],
+   "tau_system_level": 0.3666666666666667,
+   "tau_counter_only": 0.22664915736950572,
+   "tau_metric_model": 0.18437672389200416,
+   "reproduction_fraction": 1.2292720717950385,
+   "reproduction_fraction_matched": 1.2292720717950385,
+   "r2_counters": 0.14047317027319428,
+   "r2_counters_plus_metric": 0.1480526954475735,
+   "r2_metric_only": 0.04837430075566962,
+   "conditional_increment_r2": 0.007579525174379209,
+   "conditional_increment_ci": [
+    -0.004307571151981054,
+    0.019959318133334288
+   ],
+   "conditional_increment_p_one_sided": 0.1095,
+   "reproduction_fraction_ci": [
+    1.0198322937449604,
+    1.5363055928975646
+   ],
+   "increment_clears_zero": false,
+   "increment_bh_significant": false
+  },
+  {
+   "metric": "blanc_help",
+   "axis": "coherence",
+   "n": 1600,
+   "tau_summary_level": 0.08191189036613547,
+   "tau_summary_level_ci": [
+    0.03457669148027665,
+    0.12545839003112072
+   ],
+   "tau_system_level": 0.13333333333333333,
+   "tau_counter_only": 0.2523244060462442,
+   "tau_metric_model": 0.08191189036613547,
+   "reproduction_fraction": 3.08043685621693,
+   "reproduction_fraction_matched": 3.08043685621693,
+   "r2_counters": 0.1277755403251064,
+   "r2_counters_plus_metric": 0.13532351128713294,
+   "r2_metric_only": 0.015466752085609325,
+   "conditional_increment_r2": 0.007547970962026529,
+   "conditional_increment_ci": [
+    -0.002484972875190178,
+    0.017621219685654364
+   ],
+   "conditional_increment_p_one_sided": 0.0615,
+   "reproduction_fraction_ci": [
+    1.975502177297687,
+    7.081889727893552
+   ],
+   "increment_clears_zero": false,
+   "increment_bh_significant": false
+  },
+  {
+   "metric": "blanc_help",
+   "axis": "fluency",
+   "n": 1600,
+   "tau_summary_level": 0.12368532227150476,
+   "tau_summary_level_ci": [
+    0.07283643164243747,
+    0.17157193750373134
+   ],
+   "tau_system_level": 0.35983578576496095,
+   "tau_counter_only": 0.23719268521331274,
+   "tau_metric_model": 0.12368532227150476,
+   "reproduction_fraction": 1.9177108557201727,
+   "reproduction_fraction_matched": 1.9177108557201727,
+   "r2_counters": 0.1502259532843352,
+   "r2_counters_plus_metric": 0.15142340660471643,
+   "r2_metric_only": 0.013832890217255533,
+   "conditional_increment_r2": 0.0011974533203812365,
+   "conditional_increment_ci": [
+    -0.008633746697582156,
+    0.01011444431769406
+   ],
+   "conditional_increment_p_one_sided": 0.3625,
+   "reproduction_fraction_ci": [
+    1.3683130084770634,
+    3.216847989038836
+   ],
+   "increment_clears_zero": false,
+   "increment_bh_significant": false
+  },
+  {
+   "metric": "blanc_help",
+   "axis": "consistency",
+   "n": 1600,
+   "tau_summary_level": 0.22994054993434257,
+   "tau_summary_level_ci": [
+    0.17994930830199043,
+    0.27452310825279974
+   ],
+   "tau_system_level": 0.5666666666666667,
+   "tau_counter_only": 0.3239389093404887,
+   "tau_metric_model": 0.22994054993434257,
+   "reproduction_fraction": 1.4087941836835065,
+   "reproduction_fraction_matched": 1.4087941836835065,
+   "r2_counters": 0.23236644921613658,
+   "r2_counters_plus_metric": 0.23627894951654826,
+   "r2_metric_only": 0.040415722806339205,
+   "conditional_increment_r2": 0.003912500300411681,
+   "conditional_increment_ci": [
+    -0.001640727349356713,
+    0.009842438166021832
+   ],
+   "conditional_increment_p_one_sided": 0.091,
+   "reproduction_fraction_ci": [
+    1.1811553511098483,
+    1.7536215205465502
+   ],
+   "increment_clears_zero": false,
+   "increment_bh_significant": false
+  }
+ ],
+ "n_cells_increment_clears_zero": 4,
+ "n_cells_increment_bh_significant": 4,
+ "registered_prediction": {
+  "statement": "counters reproduce >= 1/2 of Shannon's summary-level tau with relevance",
+  "shannon_relevance_reproduction_fraction": 0.8158201858040782,
+  "shannon_relevance_reproduction_fraction_matched": 0.8158201858040782,
+  "holds": true,
+  "holds_matched": true
+ }
+}

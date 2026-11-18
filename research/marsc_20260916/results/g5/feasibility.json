@@ -1,0 +1,133 @@
+{
+ "our_sources": 1291,
+ "pools": {
+  "UniSumEval": {
+   "url": "https://github.com/DISL-Lab/UniSumEval-v1.0",
+   "clone": "ok",
+   "licence": null,
+   "files": [
+    {
+     "path": "data/unisumeval_faithfulness.jsonl",
+     "records": 2025,
+     "keys": [
+      "uid",
+      "doc_id",
+      "source",
+      "domain",
+      "length",
+      "input_type",
+      "redact_type",
+      "input_context",
+      "reference",
+      "model",
+      "prompt",
+      "summary"
+     ],
+     "size_kb": 27314
+    },
+    {
+     "path": "data/unisumeval_keyfact.jsonl",
+     "records": 2025,
+     "keys": [
+      "uid",
+      "doc_id",
+      "source",
+      "domain",
+      "length",
+      "input_type",
+      "prompt",
+      "redact_type",
+      "input_context",
+      "reference",
+      "model",
+      "summary"
+     ],
+     "size_kb": 31906
+    },
+    {
+     "path": "results/evaluators_benchmark_faithfulness.csv",
+     "records": 2,
+     "keys": [
+      "",
+      "source",
+      "pearson_corr",
+      "pearson_corr_pvalue",
+      "spearman_corr",
+      "spearmancorr_pvalue",
+      "rank_corr",
+      "rank_corr_pvalue",
+      "metric"
+     ],
+     "size_kb": 0
+    }
+   ],
+   "records": 4052,
+   "text_records": 3942,
+   "overlap_sha1": 1,
+   "overlap_jaccard": 0,
+   "fact_fields": {
+    "fact_verification_label": 2025,
+    "fact_verification_error_type": 2025,
+    "pred_keyfact": 2025,
+    "keyfact_validation_label": 2025,
+    "keyfact": 2025,
+    "keyfact_label": 2025,
+    "completeness": 2025,
+    "sentence_label": 2025,
+    "machine_evaluation_results_completeness": 2025
+   },
+   "errors": 0,
+   "unique_texts": 220
+  },
+  "QAPyramid": {
+   "url": "https://github.com/ZhangShiyue/QAPyramid",
+   "clone": "ok",
+   "licence": "MIT License  Copyright (c) 2024 ShiyueZhang  Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the \"Software\"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, m",
+   "files": [
+    {
+     "path": "raw_data/QA_generation.json",
+     "records": 1,
+     "keys": [
+      "e8fe5735b1f8b533062b0a8e7072b4d181f51d3f",
+      "e809facdb21e9df97dc3073fe922b021add14f0c",
+      "01b0585316ca58505df1d4ace2d888d0e50e7600",
+      "037b49be7f2d2f7b0b9eb48e7bc7e9f97ad2971d",
+      "0593bf53f38aa56a4c6093e77558f9fb86f61d0a",
+      "042aac3be278658a55b253138a43a2ad1d631ba2",
+      "024f1985b8bf8024af3b151f9f994ce93bdf5166",
+      "03105036194ae0b369f39dfe29fd55481c65b9aa",
+      "006bafe16458202fd775ead449eae2083841586f",
+      "e76a854501139a3c4bf594683abb41ee82e0083e",
+      "4a6317a1be7562823b26d210ff60f8000837cc1a",
+      "ea0fc96ad633f81956eb82dbd9ba39690e5fadaf"
+     ],
+     "size_kb": 5744
+    },
+    {
+     "path": "raw_data/QA_presence.json",
+     "records": 1,
+     "keys": [
+      "bart",
+      "pegasus",
+      "brio",
+      "brio-ext",
+      "matchsum",
+      "mixtral-8x22b-instruct-v0.1",
+      "llama-3-8b-instruct",
+      "GPT4",
+      "llama-3-70b-instruct",
+      "mixtral-8x7b-instruct-v0.1"
+     ],
+     "size_kb": 3975
+    }
+   ],
+   "records": 2,
+   "text_records": 0,
+   "overlap_sha1": 0,
+   "overlap_jaccard": 0,
+   "fact_fields": {},
+   "errors": 0,
+   "unique_texts": 0
+  }
+ }
+}

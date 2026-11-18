@@ -1,0 +1,77 @@
+{
+ "declared_before_numbers": true,
+ "rule_id": "mean_per_pair_normalised_rank_v1",
+ "rule": "fused[p][j] = 1 - mean over constituents f of ((rank_desc_f(p, j) - 1) / (n_finite(p) - 1)), ranks over the pair's finite scores with ties averaged, higher = more likely omitted; a unit non-finite in any constituent is written null.",
+ "fused_system": "fuse.mc_judge",
+ "unit_set": "gemma+ent",
+ "n_output_seeds": 3,
+ "output_seed_labels": [
+  "20260906",
+  "20260907",
+  "20260908"
+ ],
+ "constituents": [
+  {
+   "name": "humanfact",
+   "n_files": 3,
+   "broadcast": false,
+   "files": [
+    "/home/user/results/marsc/scores/units_gemma+ent_mc-A-lam1-crossenc-inv_seed20260906.jsonl",
+    "/home/user/results/marsc/scores/units_gemma+ent_mc-A-lam1-crossenc-inv_seed20260907.jsonl",
+    "/home/user/results/marsc/scores/units_gemma+ent_mc-A-lam1-crossenc-inv_seed20260908.jsonl"
+   ],
+   "sha256": {
+    "units_gemma+ent_mc-A-lam1-crossenc-inv_seed20260906.jsonl": "782f24ba2d6d23ceca76ba98647f47b1241cd6e5b14487e0a84d16a5d2433d30",
+    "units_gemma+ent_mc-A-lam1-crossenc-inv_seed20260907.jsonl": "1b1a7067f5dc8389a2dacb49ac31755a2ca600b683db95439ec6f4e68314b954",
+    "units_gemma+ent_mc-A-lam1-crossenc-inv_seed20260908.jsonl": "1d4ad0c4575a9c6191eb1cf066dfeffc64d871ea89355627d820b033d5b2fd89"
+   },
+   "seed_tokens": [
+    "20260906",
+    "20260907",
+    "20260908"
+   ]
+  },
+  {
+   "name": "judgefact",
+   "n_files": 3,
+   "broadcast": false,
+   "files": [
+    "/home/user/results/mars3/scores/units_gemma+ent_xenc_seed20260906.jsonl",
+    "/home/user/results/mars3/scores/units_gemma+ent_xenc_seed20260907.jsonl",
+    "/home/user/results/mars3/scores/units_gemma+ent_xenc_seed20260908.jsonl"
+   ],
+   "sha256": {
+    "units_gemma+ent_xenc_seed20260906.jsonl": "3ac299a2417536e4240d86c5c002439b7c9ed57eea04f36c17c2bf392e86dea6",
+    "units_gemma+ent_xenc_seed20260907.jsonl": "a6f9b289639effdab6e605a4af53c20f2565332327f909eb5fe75186c73c2d45",
+    "units_gemma+ent_xenc_seed20260908.jsonl": "ce1504c9ff25c7991121a742dd20a9896f3ee0f545f00bf693134781fab2ee2f"
+   },
+   "seed_tokens": [
+    "20260906",
+    "20260907",
+    "20260908"
+   ]
+  }
+ ],
+ "output_stats": {
+  "n_pairs_written": [
+   1466,
+   1466,
+   1466
+  ],
+  "n_units_null_propagated": [
+   0,
+   0,
+   0
+  ],
+  "n_pairs_dropped_shape": [
+   0,
+   0,
+   0
+  ]
+ },
+ "outputs": [
+  "fuse.mc_judge_seed20260906.jsonl",
+  "fuse.mc_judge_seed20260907.jsonl",
+  "fuse.mc_judge_seed20260908.jsonl"
+ ]
+}

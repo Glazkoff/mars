@@ -1,0 +1,100 @@
+{
+ "registered": "research/marsc_ieee_20260922/PREREG.md amendment 3 (H-J5, measurement, no bar)",
+ "inventory": "/home/user/results/mars3/m32/units_gemma+ent_validation.jsonl",
+ "n_pairs": 200,
+ "n_units": 20218,
+ "n_latency_units": 300,
+ "seed": 20260922,
+ "claim_words": 96,
+ "warmup": 20,
+ "systems": {
+  "marsc": {
+   "backend": "hf",
+   "n_units_throughput": 20218,
+   "batch": 64,
+   "seconds": 15.808057735208422,
+   "units_per_s": 1278.968000918263,
+   "ms_per_unit_batched": 0.7818803905039283,
+   "latency_batch1": {
+    "n": 280,
+    "median_ms": 13.554435106925666,
+    "mean_ms": 13.565823252013486,
+    "p95_ms": 13.864086009562016,
+    "min_ms": 12.95190304517746,
+    "max_ms": 15.10752597823739
+   },
+   "n_params": 406213633,
+   "weight_bytes_in_memory": 1624854532,
+   "memory_after_load_bytes": 1624859136,
+   "peak_alloc_batched_bytes": 3884536320,
+   "peak_alloc_batch1_bytes": 1689367040,
+   "dtype_note": "fp32 HF default unless the checkpoint says otherwise"
+  },
+  "factcg": {
+   "backend": "hf",
+   "n_units_throughput": 20218,
+   "batch": 64,
+   "seconds": 25.834844147088006,
+   "units_per_s": 782.5864899703251,
+   "ms_per_unit_batched": 1.277814034379662,
+   "latency_batch1": {
+    "n": 280,
+    "median_ms": 13.586276909336448,
+    "mean_ms": 14.461613873884614,
+    "p95_ms": 13.964002951979637,
+    "min_ms": 12.991352006793022,
+    "max_ms": 256.67774491012096
+   },
+   "n_params": 435063810,
+   "weight_bytes_in_memory": 1740255240,
+   "memory_after_load_bytes": 1740259840,
+   "peak_alloc_batched_bytes": 6898223616,
+   "peak_alloc_batch1_bytes": 3454567424,
+   "dtype_note": "fp32 HF default unless the checkpoint says otherwise"
+  },
+  "nli": {
+   "backend": "hf",
+   "n_units_throughput": 20218,
+   "batch": 64,
+   "seconds": 10.888382124016061,
+   "units_per_s": 1856.8415187602554,
+   "ms_per_unit_batched": 0.5385489229407489,
+   "latency_batch1": {
+    "n": 280,
+    "median_ms": 4.521885071881115,
+    "mean_ms": 15.19203484474149,
+    "p95_ms": 32.809751806780696,
+    "min_ms": 4.10480098798871,
+    "max_ms": 34.74230598658323
+   },
+   "n_params": null,
+   "weight_bytes_in_memory": null,
+   "memory_after_load_bytes": -1029524480,
+   "peak_alloc_batched_bytes": 2697022976,
+   "peak_alloc_batch1_bytes": 2374221824,
+   "dtype_note": "fp32 HF default unless the checkpoint says otherwise"
+  },
+  "alignscore": {
+   "backend": "hf",
+   "n_units_throughput": 20218,
+   "batch": 64,
+   "seconds": 13.946544051868841,
+   "units_per_s": 1449.6781370930946,
+   "ms_per_unit_batched": 0.6898082922083708,
+   "latency_batch1": {
+    "n": 280,
+    "median_ms": 4.380732425488532,
+    "mean_ms": 8.081968529482506,
+    "p95_ms": 34.98059697449207,
+    "min_ms": 4.178579896688461,
+    "max_ms": 38.00936392508447
+   },
+   "n_params": null,
+   "weight_bytes_in_memory": null,
+   "memory_after_load_bytes": 0,
+   "peak_alloc_batched_bytes": 2660272128,
+   "peak_alloc_batch1_bytes": 2382383616,
+   "dtype_note": "fp32 HF default unless the checkpoint says otherwise"
+  }
+ }
+}

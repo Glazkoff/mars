@@ -1,0 +1,111 @@
+{
+ "registered": "research/marsc_strengthen_20260918/PREREG.md Wave C / C1 (H-SEL) and C3 (H-COMP)",
+ "declared_before_numbers": {
+  "bar_c1_H_SEL": "H-SEL passes against a comparator iff the document-clustered 95% interval of the paired precision difference excludes zero from above at EVERY coverage grid point in [0.20, 1.00].",
+  "bar_c3_H_COMP": "H-COMP passes iff, at coverage 1.00, the document-clustered 95% interval of the paired omission-precision difference against EACH constituent excludes zero from above.",
+  "c3_primary_coverage": 1.0,
+  "dominance_interval": [
+   0.2,
+   1.0
+  ],
+  "coverage_definition": "filled slots / available emitted slots at k=10, a single global score threshold per family",
+  "precision_definition": "hits / (hits + false_alerts) among filled slots; equals the evaluator's omission_precision at coverage 1",
+  "unknown_slots": "counted in the coverage denominator, excluded from the precision ratio; precision_strict charges them as false alerts",
+  "bootstrap": "document-clustered (common.doc_key), 2000 replicates, rng seed 20260918, one shared resample per replicate so every difference is paired",
+  "multiplicity": "the C1 bar is a conjunction over grid points and the C3 bar a conjunction over two constituents; conjunctions need no multiplicity correction",
+  "who_enters_the_c1_bar": "only systems passed as --comparator (the off-the-shelf verifier families). Systems passed as --control -- the B0 shuffled/no-summary arms and the sibling MARS-C judge-label arms -- are computed and reported on the same axes but are excluded from the bar conjunction, because the registered bar is about off-the-shelf comparators.",
+  "hit_yield_is_not_recall": "hit_yield_per_pair double-counts two emitted units hitting one ACU; it is never reported as recall",
+  "ties": "slots tied on score are ordered by the evaluator's emission order; a real threshold cannot split a tie, so a grid point falling inside a tie run is an interpolation of that run",
+  "equal_precision_addendum_carries_NO_bar": "Beside the equal-coverage bars above, the same curves are read at EQUAL PRECISION: for each target p* the largest grid coverage a family can fill while holding precision >= p*, and the hit yield it reaches there. This is a reported quantity, not a bar, and no claim in this campaign turns on it. The p* grid is fixed at (0.70, 0.72, 0.75, 0.78) because those values bracket the omission precisions already frozen and published in the r06b_fast TEST table (SummaC-ZS distilled 0.7074, MARS-C gemma+ent 0.7202, MARS-C distilled 0.7517); it is not chosen after reading anything this job computes."
+ },
+ "label": "validation MECHANICAL DRY RUN",
+ "dry_run_note": "Validation carries no off-the-shelf comparator and no summary-blind control (r06b_fast and r03_sumblind wrote TEST only), so no C1 or C3 bar is evaluated here and no number in this file is a paper number. This run exists to prove the C1/C3 code path before the sealed-TEST job.",
+ "k_label": "10",
+ "n_boot": 2000,
+ "grid": [
+  0.05,
+  0.1,
+  0.15,
+  0.2,
+  0.25,
+  0.3,
+  0.35,
+  0.4,
+  0.45,
+  0.5,
+  0.55,
+  0.6,
+  0.65,
+  0.7,
+  0.75,
+  0.8,
+  0.85,
+  0.9,
+  0.95,
+  1.0
+ ],
+ "n_pairs": 1388,
+ "n_docs": 151,
+ "acu": {
+  "path": "/home/user/results/mars2_gates/b18/acu_units_validation.jsonl",
+  "sha256": "a6a431c033b3bd4b9afbfbbaad92480a3b81cd95e39c80602b8019807e50e30a"
+ },
+ "emitted_dumps": [
+  {
+   "path": "/home/user/results/marsc_strengthen/c1c3/validation/emitted_validation_k10.jsonl",
+   "sha256": "737abee4909d37eb86112cd20c984a0b800161db5b4212cffdd4ca88ce5bd709"
+  }
+ ],
+ "systems": [
+  "fuse.mc_judge",
+  "fuse.mc_judge.distilled",
+  "mc.humanfact",
+  "mc.humanfact.distilled",
+  "mc.judgefact",
+  "mc.judgefact.distilled"
+ ],
+ "system_pair_coverage": {
+  "mc.humanfact": {
+   "n_pairs": 1388,
+   "n_pairs_dropped_to_common": 0
+  },
+  "mc.humanfact.distilled": {
+   "n_pairs": 1388,
+   "n_pairs_dropped_to_common": 0
+  },
+  "mc.judgefact": {
+   "n_pairs": 1388,
+   "n_pairs_dropped_to_common": 0
+  },
+  "mc.judgefact.distilled": {
+   "n_pairs": 1388,
+   "n_pairs_dropped_to_common": 0
+  },
+  "fuse.mc_judge": {
+   "n_pairs": 1388,
+   "n_pairs_dropped_to_common": 0
+  },
+  "fuse.mc_judge.distilled": {
+   "n_pairs": 1388,
+   "n_pairs_dropped_to_common": 0
+  }
+ },
+ "roles": {
+  "primary": [
+   "mc.humanfact",
+   "mc.humanfact.distilled"
+  ],
+  "comparator": [],
+  "control": [],
+  "fusion": {
+   "fuse.mc_judge": [
+    "mc.humanfact",
+    "mc.judgefact"
+   ],
+   "fuse.mc_judge.distilled": [
+    "mc.humanfact.distilled",
+    "mc.judgefact.distilled"
+   ]
+  }
+ }
+}

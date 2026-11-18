@@ -1,0 +1,309 @@
+{
+ "registered": "research/marsc_strengthen_20260918/PREREG.md A3b",
+ "purpose": "disclosure -- what the 400-item two-annotator human study actually contains",
+ "key_files": [
+  "/home/user/results/marsc/g6/human_sample_key_all.jsonl"
+ ],
+ "export_files": [
+  "/home/user/results/marsc/g6/labels_export_all.jsonl"
+ ],
+ "n_key_items": 400,
+ "annotators": {
+  "Annotator 1": {
+   "n_items": 400,
+   "q1_counts": {
+    "A": 342,
+    "B": 58
+   },
+   "q2_counts": {
+    "B": 281,
+    "A": 119
+   },
+   "q1_q2_joint_counts": {
+    "A|A": 119,
+    "A|B": 223,
+    "B|B": 58
+   },
+   "verdict_counts": {
+    "true": 223,
+    "false": 177
+   },
+   "q1_constant": false,
+   "q2_constant": false,
+   "n_with_comment": 0,
+   "timing": {
+    "n_timestamps": 400,
+    "span_seconds": 54086.09293270111,
+    "median_gap_seconds": 49.62238812446594,
+    "frac_gaps_under_3s": 0.0,
+    "frac_gaps_under_1s": 0.0
+   }
+  },
+  "Annotator 2": {
+   "n_items": 400,
+   "q1_counts": {
+    "A": 400
+   },
+   "q2_counts": {
+    "B": 263,
+    "A": 137
+   },
+   "q1_q2_joint_counts": {
+    "A|A": 137,
+    "A|B": 263
+   },
+   "verdict_counts": {
+    "true": 263,
+    "false": 137
+   },
+   "q1_constant": true,
+   "q2_constant": false,
+   "n_with_comment": 0,
+   "timing": {
+    "n_timestamps": 400,
+    "span_seconds": 49222.57169294357,
+    "median_gap_seconds": 0.9390475749969482,
+    "frac_gaps_under_3s": 0.9924812030075187,
+    "frac_gaps_under_1s": 0.8571428571428571
+   }
+  }
+ },
+ "agreement": {
+  "annotator_x": "Annotator 1",
+  "annotator_y": "Annotator 2",
+  "n_co_labelled": 400,
+  "q1_support": {
+   "n": 400,
+   "categories": [
+    "A",
+    "B"
+   ],
+   "contingency": {
+    "A|A": 342,
+    "A|B": 0,
+    "B|A": 58,
+    "B|B": 0
+   },
+   "marginal_x": {
+    "A": 342,
+    "B": 58
+   },
+   "marginal_y": {
+    "A": 400,
+    "B": 0
+   },
+   "p_observed": 0.855,
+   "p_expected": 0.855,
+   "kappa": 0.0,
+   "x_is_constant": false,
+   "y_is_constant": true,
+   "kappa_uninformative_constant_rater": true
+  },
+  "q2_coverage": {
+   "n": 400,
+   "categories": [
+    "A",
+    "B"
+   ],
+   "contingency": {
+    "A|A": 104,
+    "A|B": 15,
+    "B|A": 33,
+    "B|B": 248
+   },
+   "marginal_x": {
+    "A": 119,
+    "B": 281
+   },
+   "marginal_y": {
+    "A": 137,
+    "B": 263
+   },
+   "p_observed": 0.88,
+   "p_expected": 0.5637875,
+   "kappa": 0.7249047196034043,
+   "x_is_constant": false,
+   "y_is_constant": false,
+   "kappa_uninformative_constant_rater": false
+  },
+  "composite_verdict_q1A_and_q2B": {
+   "n": 400,
+   "categories": [
+    "False",
+    "True"
+   ],
+   "contingency": {
+    "False|False": 112,
+    "False|True": 65,
+    "True|False": 25,
+    "True|True": 198
+   },
+   "marginal_x": {
+    "False": 177,
+    "True": 223
+   },
+   "marginal_y": {
+    "False": 137,
+    "True": 263
+   },
+   "p_observed": 0.775,
+   "p_expected": 0.5181125,
+   "kappa": 0.5330860418666183,
+   "x_is_constant": false,
+   "y_is_constant": false,
+   "kappa_uninformative_constant_rater": false
+  }
+ },
+ "by_system": {
+  "humanfact+div1": {
+   "n": 100,
+   "Annotator 1_q1": {
+    "A": 85,
+    "B": 15
+   },
+   "Annotator 2_q1": {
+    "A": 100
+   },
+   "Annotator 1_q2": {
+    "B": 65,
+    "A": 35
+   },
+   "Annotator 2_q2": {
+    "A": 41,
+    "B": 59
+   },
+   "q1_kappa": 0.0,
+   "q2_kappa": 0.7885835095137421
+  },
+  "humanfact.distilled+div1": {
+   "n": 100,
+   "Annotator 1_q1": {
+    "A": 84,
+    "B": 16
+   },
+   "Annotator 2_q1": {
+    "A": 100
+   },
+   "Annotator 1_q2": {
+    "A": 22,
+    "B": 78
+   },
+   "Annotator 2_q2": {
+    "A": 32,
+    "B": 68
+   },
+   "q1_kappa": 0.0,
+   "q2_kappa": 0.6492985971943886
+  },
+  "judgefact.distilled+div1": {
+   "n": 100,
+   "Annotator 1_q1": {
+    "A": 84,
+    "B": 16
+   },
+   "Annotator 2_q1": {
+    "A": 100
+   },
+   "Annotator 1_q2": {
+    "B": 78,
+    "A": 22
+   },
+   "Annotator 2_q2": {
+    "B": 74,
+    "A": 26
+   },
+   "q1_kappa": 0.0,
+   "q2_kappa": 0.6170678336980305
+  },
+  "mars2": {
+   "n": 100,
+   "Annotator 1_q1": {
+    "A": 89,
+    "B": 11
+   },
+   "Annotator 2_q1": {
+    "A": 100
+   },
+   "Annotator 1_q2": {
+    "A": 40,
+    "B": 60
+   },
+   "Annotator 2_q2": {
+    "A": 38,
+    "B": 62
+   },
+   "q1_kappa": 0.0,
+   "q2_kappa": 0.7899159663865547
+  }
+ },
+ "by_status": {
+  "false_alert": {
+   "n": 80,
+   "Annotator 1_q1": {
+    "A": 74,
+    "B": 6
+   },
+   "Annotator 2_q1": {
+    "A": 80
+   },
+   "Annotator 1_q2": {
+    "B": 22,
+    "A": 58
+   },
+   "Annotator 2_q2": {
+    "B": 17,
+    "A": 63
+   },
+   "q1_kappa": 0.0,
+   "q2_kappa": 0.6290050590219225
+  },
+  "hit": {
+   "n": 80,
+   "Annotator 1_q1": {
+    "A": 69,
+    "B": 11
+   },
+   "Annotator 2_q1": {
+    "A": 80
+   },
+   "Annotator 1_q2": {
+    "A": 24,
+    "B": 56
+   },
+   "Annotator 2_q2": {
+    "A": 27,
+    "B": 53
+   },
+   "q1_kappa": 0.0,
+   "q2_kappa": 0.6264367816091955
+  },
+  "unknown": {
+   "n": 240,
+   "Annotator 1_q1": {
+    "A": 199,
+    "B": 41
+   },
+   "Annotator 2_q1": {
+    "A": 240
+   },
+   "Annotator 1_q2": {
+    "B": 203,
+    "A": 37
+   },
+   "Annotator 2_q2": {
+    "B": 193,
+    "A": 47
+   },
+   "q1_kappa": 0.0,
+   "q2_kappa": 0.6547176597530273
+  }
+ },
+ "disclosure": {
+  "statement": "On Q1 (support), Annotator 2 answered a single value on all 400 items ({'A': 400}), so Cohen's kappa on Q1 is 0 by construction and the two-annotator agreement filter carries no information on that question. Q2 (coverage) is non-degenerate for both raters.",
+  "q1_kappa": 0.0,
+  "q2_kappa": 0.7249047196034043,
+  "q2_raw_agreement": 0.88,
+  "composite_verdict_kappa": 0.5330860418666183,
+  "remedy": "no analysis can repair a constant rater; only new annotation can."
+ }
+}

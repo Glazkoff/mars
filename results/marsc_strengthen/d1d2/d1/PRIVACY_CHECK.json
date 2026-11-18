@@ -1,0 +1,24 @@
+{
+ "file": "marsc_strengthen/d1d2/d1/export.jsonl",
+ "records": 1058,
+ "fields": [
+  "annotator",
+  "answers",
+  "comment",
+  "item_id",
+  "q1",
+  "q2",
+  "role",
+  "ts"
+ ],
+ "annotator_labels": {
+  "Adjudicator": 58,
+  "Annotator 1": 500,
+  "Annotator 2": 500
+ },
+ "non_empty_comments": 0,
+ "email_like_values": 0,
+ "identifying_labels_found": 0,
+ "status": "CLEAN",
+ "action": "shipped unchanged: annotators appear only as the neutral labels 'Annotator 1', 'Annotator 2', 'Adjudicator'; every comment is empty; no e-mail-like value; the only other fields are item ids, the two A/B answers and a Unix timestamp per answer"
+}

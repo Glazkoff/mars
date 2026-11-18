@@ -1,0 +1,56 @@
+{
+ "registered": "research/marsc_ieee_20260922/PREREG.md amendment 3 (H-J5, measurement, no bar)",
+ "inventory": "/home/user/results/mars3/m32/units_gemma+ent_validation.jsonl",
+ "n_pairs": 200,
+ "n_units": 20218,
+ "n_latency_units": 300,
+ "seed": 20260922,
+ "claim_words": 96,
+ "warmup": 20,
+ "systems": {
+  "nli": {
+   "backend": "hf",
+   "n_units_throughput": 20218,
+   "batch": 64,
+   "seconds": 11.493271522922441,
+   "units_per_s": 1759.116188952533,
+   "ms_per_unit_batched": 0.5684672827639945,
+   "latency_batch1": {
+    "n": 280,
+    "median_ms": 4.611912998370826,
+    "mean_ms": 16.049648439677963,
+    "p95_ms": 33.74659898690879,
+    "min_ms": 4.129917826503515,
+    "max_ms": 117.27552581578493
+   },
+   "n_params": 355362819,
+   "weight_bytes_in_memory": 710725638,
+   "memory_after_load_bytes": 710735360,
+   "peak_alloc_batched_bytes": 1072163840,
+   "peak_alloc_batch1_bytes": 749362688,
+   "weight_dtype": "torch.float16"
+  },
+  "alignscore": {
+   "backend": "hf",
+   "n_units_throughput": 20218,
+   "batch": 64,
+   "seconds": 13.949194333981723,
+   "units_per_s": 1449.4027049825236,
+   "ms_per_unit_batched": 0.6899393774845051,
+   "latency_batch1": {
+    "n": 280,
+    "median_ms": 4.377808072604239,
+    "mean_ms": 8.157372996876282,
+    "p95_ms": 35.43932898901403,
+    "min_ms": 4.163417965173721,
+    "max_ms": 38.25773694552481
+   },
+   "n_params": 355362819,
+   "weight_bytes_in_memory": 710725638,
+   "memory_after_load_bytes": 0,
+   "peak_alloc_batched_bytes": 1035412992,
+   "peak_alloc_batch1_bytes": 757524480,
+   "weight_dtype": "torch.float16"
+  }
+ }
+}

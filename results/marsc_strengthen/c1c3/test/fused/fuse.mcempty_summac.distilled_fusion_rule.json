@@ -1,0 +1,71 @@
+{
+ "declared_before_numbers": true,
+ "rule_id": "mean_per_pair_normalised_rank_v1",
+ "rule": "fused[p][j] = 1 - mean over constituents f of ((rank_desc_f(p, j) - 1) / (n_finite(p) - 1)), ranks over the pair's finite scores with ties averaged, higher = more likely omitted; a unit non-finite in any constituent is written null.",
+ "fused_system": "fuse.mcempty_summac.distilled",
+ "unit_set": "distilled",
+ "n_output_seeds": 3,
+ "output_seed_labels": [
+  "20260906",
+  "20260907",
+  "20260908"
+ ],
+ "constituents": [
+  {
+   "name": "humanfactempty",
+   "n_files": 3,
+   "broadcast": false,
+   "files": [
+    "/home/user/results/marsc/r03_sumblind/scores/distilled_humanfactempty_seed20260906.jsonl",
+    "/home/user/results/marsc/r03_sumblind/scores/distilled_humanfactempty_seed20260907.jsonl",
+    "/home/user/results/marsc/r03_sumblind/scores/distilled_humanfactempty_seed20260908.jsonl"
+   ],
+   "sha256": {
+    "distilled_humanfactempty_seed20260906.jsonl": "325ec6fd2af69ae090edf28b7008794ab92e27a723110dd0d4cff2e205182b27",
+    "distilled_humanfactempty_seed20260907.jsonl": "abd18b4b4b5382e6d69ebe7d622fb34358caaf1aa2665b7880ac408e02bf42b0",
+    "distilled_humanfactempty_seed20260908.jsonl": "6d2dd439c58d286138bd051f09029774f2e6ab6e7542139ae7aac5dd5f2b8371"
+   },
+   "seed_tokens": [
+    "20260906",
+    "20260907",
+    "20260908"
+   ]
+  },
+  {
+   "name": "summac",
+   "n_files": 1,
+   "broadcast": true,
+   "files": [
+    "/home/user/results/marsc/r06b_fast/scores/distilled_nli_summac_zs.jsonl"
+   ],
+   "sha256": {
+    "distilled_nli_summac_zs.jsonl": "553974bd1703296395180952beb93ac1124acc3fbfa694e9aa332d1aeca972ec"
+   },
+   "seed_tokens": [
+    ""
+   ]
+  }
+ ],
+ "output_stats": {
+  "n_pairs_written": [
+   2829,
+   2829,
+   2829
+  ],
+  "n_units_null_propagated": [
+   0,
+   0,
+   0
+  ],
+  "n_pairs_dropped_shape": [
+   0,
+   0,
+   0
+  ]
+ },
+ "outputs": [
+  "fuse.mcempty_summac.distilled_seed20260906.jsonl",
+  "fuse.mcempty_summac.distilled_seed20260907.jsonl",
+  "fuse.mcempty_summac.distilled_seed20260908.jsonl"
+ ]
+}

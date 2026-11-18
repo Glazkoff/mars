@@ -1,0 +1,32 @@
+cff-version: 1.2.0
+title: "MARS: A Fact-Level Coverage Metric and Reference-Free Omission Detector Trained on Natural Human Coverage Labels"
+message: "If you use MARS, its code or its result files, please cite the manuscript."
+type: software
+authors:
+  - family-names: "Glazkov"
+    given-names: "Nikita"
+    orcid: "https://orcid.org/0000-0003-0400-9849"
+  - family-names: "Volkova"
+    given-names: "Olga"
+  - family-names: "Pchelin"
+    given-names: "Konstantin"
+  - family-names: "Nasonov"
+    given-names: "Ivan"
+  - family-names: "Mozikov"
+    given-names: "Mikhail"
+  - family-names: "Sukhorukov"
+    given-names: "Daniil"
+  - family-names: "Bespalov"
+    given-names: "Iaroslav"
+  - family-names: "Makarov"
+    given-names: "Ilya"
+  - family-names: "Dylov"
+    given-names: "Dmitry V."
+license: MIT
+repository-code: "https://github.com/Glazkoff/mars"
+keywords:
+  - "summarization evaluation"
+  - "coverage"
+  - "omission detection"
+  - "fact verification"
+  - "cross-encoder verifiers"

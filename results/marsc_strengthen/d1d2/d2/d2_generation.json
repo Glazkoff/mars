@@ -1,0 +1,28 @@
+{
+ "block": "D2",
+ "stage": "generation",
+ "shard": "0/1",
+ "model_snapshot": "/home/user/hf_cache/hub/models--Qwen--Qwen3.5-9B/snapshots/c202236235762e1c871ad0ccb60c8ee5ba337b9a",
+ "model_revision": "c202236235762e1c871ad0ccb60c8ee5ba337b9a",
+ "expect_revision": "c202236235762e1c871ad0ccb60c8ee5ba337b9a",
+ "prompt_sha256": "65cc67c2199739739ab520c454e49197337b4b5a23665eda90d9d9755ea943dd",
+ "prompt_template": "You are revising a short summary of a document.\n\nDOCUMENT:\n{source}\n\nCURRENT SUMMARY:\n{summary}\n{feedback}\nRewrite the summary. Keep everything important that the current summary already gets right, and make it as\ninformative as possible about the document. Use at most {W} words. Every statement must be supported by the\ndocument; do not invent anything. Reply with the revised summary only \u2014 no preamble, no list, no explanation.\n\nREVISED SUMMARY:",
+ "feedback_header": "\nFACTS FROM THE DOCUMENT THAT MAY BE MISSING FROM THE CURRENT SUMMARY:\n",
+ "decoding": {
+  "do_sample": false,
+  "num_beams": 1,
+  "num_return_sequences": 1,
+  "enable_thinking": false,
+  "think_guard": "closed",
+  "think_guard_contract": "refuse iff the rendered prompt leaves a think block open"
+ },
+ "feedback_token_cap": 400,
+ "batch_size": 8,
+ "max_input_tokens": 6144,
+ "limit": 0,
+ "n_rows_shard": 1602,
+ "n_generated": 1602,
+ "n_over_budget": 292,
+ "seconds": 631.0,
+ "outcome_policy": "no outcome is computed; every outcome needs two blinded reviewers plus adjudication"
+}

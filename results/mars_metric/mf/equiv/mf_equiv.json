@@ -1,0 +1,1619 @@
+{
+ "n_sampled": 200,
+ "tol": 0.001,
+ "marsP_factcg": {
+  "n_checked": 200,
+  "n_within_tol": 200,
+  "max_abs_diff": 1.9956913899221718e-10,
+  "pass": true
+ },
+ "marsR_marsc": {
+  "n_checked": 184,
+  "n_within_tol": 184,
+  "max_abs_diff": 6.457169854368061e-08,
+  "pass": true
+ },
+ "rows": [
+  {
+   "pair_id": "rose:rose:cnndm:01b4613f86c44ceec7beb897c5167088c61deeac:frost",
+   "n_ref_sets": 1,
+   "computed_marsP_factcg": 0.8903028508027394,
+   "stored_marsP_factcg": 0.8903028508027394,
+   "computed_marsR_marsc": 0.6049187342325847,
+   "stored_marsR_marsc": 0.6049187342325847
+  },
+  {
+   "pair_id": "unisum:DISL_434:claude2.1",
+   "n_ref_sets": 1,
+   "computed_marsP_factcg": 0.6075815445055133,
+   "stored_marsP_factcg": 0.6075815445055133,
+   "computed_marsR_marsc": 0.0733403883329252,
+   "stored_marsR_marsc": 0.07334038833292517
+  },
+  {
+   "pair_id": "unisum:DISL_1183:Mixtral-8x7B-Instruct-v0.1",
+   "n_ref_sets": 1,
+   "computed_marsP_factcg": 0.5150881027181943,
+   "stored_marsP_factcg": 0.5150881027181943,
+   "computed_marsR_marsc": 0.202783958779441,
+   "stored_marsR_marsc": 0.202783958779441
+  },
+  {
+   "pair_id": "unisum:DISL_305:gpt-3.5-turbo",
+   "n_ref_sets": 0,
+   "computed_marsP_factcg": 0.712549015879631,
+   "stored_marsP_factcg": 0.712549015879631,
+   "computed_marsR_marsc": null,
+   "stored_marsR_marsc": null
+  },
+  {
+   "pair_id": "unisum:DISL_662:claude2.1",
+   "n_ref_sets": 1,
+   "computed_marsP_factcg": 0.8894598670303822,
+   "stored_marsP_factcg": 0.8894598670303822,
+   "computed_marsR_marsc": 0.16522837241490682,
+   "stored_marsR_marsc": 0.16522837241490684
+  },
+  {
+   "pair_id": "rose:rose:cnndm:eaa1e0beb5663230ff3f63ca2e1d5fbcf85575b9:brio",
+   "n_ref_sets": 1,
+   "computed_marsP_factcg": 0.8731038698128292,
+   "stored_marsP_factcg": 0.8731038698128292,
+   "computed_marsR_marsc": 0.5495530125640687,
+   "stored_marsR_marsc": 0.5495530125640687
+  },
+  {
+   "pair_id": "unisum:DISL_1260:gpt-4-0125-preview",
+   "n_ref_sets": 1,
+   "computed_marsP_factcg": 0.8541927526394526,
+   "stored_marsP_factcg": 0.8541927526394526,
+   "computed_marsR_marsc": 0.5125352382659912,
+   "stored_marsR_marsc": 0.5125352382659912
+  },
+  {
+   "pair_id": "unisum:DISL_1329:claude2.1",
+   "n_ref_sets": 1,
+   "computed_marsP_factcg": 0.8405595302581788,
+   "stored_marsP_factcg": 0.8405595302581788,
+   "computed_marsR_marsc": 0.12894765535990396,
+   "stored_marsR_marsc": 0.12894765535990396
+  },
+  {
+   "pair_id": "unisum:DISL_843:Mistral-7B-Instruct-v0.2",
+   "n_ref_sets": 1,
+   "computed_marsP_factcg": 0.6779176176392606,
+   "stored_marsP_factcg": 0.6779176174396915,
+   "computed_marsR_marsc": 0.20033055398522354,
+   "stored_marsR_marsc": 0.20033055398522354
+  },
+  {
+   "pair_id": "rose:rose:cnndm:0451937396c6255148f50dd4ac505b646ada2b3d:bart",
+   "n_ref_sets": 1,
+   "computed_marsP_factcg": 0.861404666533837,
+   "stored_marsP_factcg": 0.861404666533837,
+   "computed_marsR_marsc": 0.39103782839245266,
+   "stored_marsR_marsc": 0.391037830600032
+  },
+  {
+   "pair_id": "summeval:dm-test-632cfdb03aacd90a34a470f6a70b47eee62ec5f0:15",
+   "n_ref_sets": 11,
+   "computed_marsP_factcg": 0.780051052570343,
+   "stored_marsP_factcg": 0.780051052570343,
+   "computed_marsR_marsc": 0.7573154303762647,
+   "stored_marsR_marsc": 0.7573154171307882
+  },
+  {
+   "pair_id": "rose:rose:xsum:35232149:frost",
+   "n_ref_sets": 1,
+   "computed_marsP_factcg": 0.6454263143241405,
+   "stored_marsP_factcg": 0.6454263143241405,
+   "computed_marsR_marsc": 0.34296589758661056,
+   "stored_marsR_marsc": 0.34296589758661056
+  },
+  {
+   "pair_id": "summeval:dm-test-0f0789390d67698283cc87b2e046b5c5cd77edb7:12",
+   "n_ref_sets": 11,
+   "computed_marsP_factcg": 0.9325818353229098,
+   "stored_marsP_factcg": 0.9325818353229098,
+   "computed_marsR_marsc": 0.706432390780676,
+   "stored_marsR_marsc": 0.7064323794274104
+  },
+  {
+   "pair_id": "unisum:DISL_413:claude2.1",
+   "n_ref_sets": 1,
+   "computed_marsP_factcg": 0.638578139692545,
+   "stored_marsP_factcg": 0.638578139692545,
+   "computed_marsR_marsc": 0.22757067141078768,
+   "stored_marsR_marsc": 0.22757067141078766
+  },
+  {
+   "pair_id": "summeval:dm-test-81bd721b16cad47dfd8d24baca5b30b006291db2:6",
+   "n_ref_sets": 11,
+   "computed_marsP_factcg": 0.8731301697817716,
+   "stored_marsP_factcg": 0.8731301697817716,
+   "computed_marsR_marsc": 0.9691983222961426,
+   "stored_marsR_marsc": 0.9691983222961426
+  },
+  {
+   "pair_id": "unisum:DISL_1096:bart",
+   "n_ref_sets": 1,
+   "computed_marsP_factcg": 0.7725173681974411,
+   "stored_marsP_factcg": 0.7725173681974411,
+   "computed_marsR_marsc": 0.007879992326100668,
+   "stored_marsR_marsc": 0.007879992326100666
+  },
+  {
+   "pair_id": "summeval:cnn-test-5139ccfabee55ddb83e7937f5802c0a67aee8975:2",
+   "n_ref_sets": 11,
+   "computed_marsP_factcg": 0.9725440570286342,
+   "stored_marsP_factcg": 0.9725440570286342,
+   "computed_marsR_marsc": 0.8550234105851916,
+   "stored_marsR_marsc": 0.8550234172079297
+  },
+  {
+   "pair_id": "summeval:cnn-test-c05bda9b387ec8ae43803170b6f59b4b82505db9:5",
+   "n_ref_sets": 11,
+   "computed_marsP_factcg": 0.9760664880275727,
+   "stored_marsP_factcg": 0.9760664880275727,
+   "computed_marsR_marsc": 0.9855964382489522,
+   "stored_marsR_marsc": 0.9855964382489522
+  },
+  {
+   "pair_id": "summeval:dm-test-81bd721b16cad47dfd8d24baca5b30b006291db2:0",
+   "n_ref_sets": 11,
+   "computed_marsP_factcg": 0.710559219121933,
+   "stored_marsP_factcg": 0.710559219121933,
+   "computed_marsR_marsc": 0.5633275389671326,
+   "stored_marsR_marsc": 0.5633275389671325
+  },
+  {
+   "pair_id": "unisum:DISL_1102:t5",
+   "n_ref_sets": 1,
+   "computed_marsP_factcg": 0.772394098341465,
+   "stored_marsP_factcg": 0.772394098341465,
+   "computed_marsR_marsc": 0.20984033743540448,
+   "stored_marsR_marsc": 0.20984033743540442
+  },
+  {
+   "pair_id": "rose:rose:samsum:13865290:BART",
+   "n_ref_sets": 1,
+   "computed_marsP_factcg": 0.7808263227343559,
+   "stored_marsP_factcg": 0.7808263227343559,
+   "computed_marsR_marsc": 0.7032399415969849,
+   "stored_marsR_marsc": 0.7032399415969848
+  },
+  {
+   "pair_id": "unisum:DISL_78:gpt-3.5-turbo",
+   "n_ref_sets": 1,
+   "computed_marsP_factcg": 0.9324334859848022,
+   "stored_marsP_factcg": 0.9324334859848022,
+   "computed_marsR_marsc": 0.1447128474712372,
+   "stored_marsR_marsc": 0.14471284747123717
+  },
+  {
+   "pair_id": "rose:rose:cnndm:0451937396c6255148f50dd4ac505b646ada2b3d:matchsum",
+   "n_ref_sets": 1,
+   "computed_marsP_factcg": 0.8584555387496948,
+   "stored_marsP_factcg": 0.8584555387496948,
+   "computed_marsR_marsc": 0.6646716373938102,
+   "stored_marsR_marsc": 0.6646716373938102
+  },
+  {
+   "pair_id": "rose:rose:xsum:33039327:bart",
+   "n_ref_sets": 1,
+   "computed_marsP_factcg": 0.7500620484352112,
+   "stored_marsP_factcg": 0.7500620484352112,
+   "computed_marsR_marsc": 0.00271675984064738,
+   "stored_marsR_marsc": 0.00271675984064738
+  },
+  {
+   "pair_id": "rose:rose:samsum:13815679:BART",
+   "n_ref_sets": 1,
+   "computed_marsP_factcg": 0.8222227394580841,
+   "stored_marsP_factcg": 0.8222227394580841,
+   "computed_marsR_marsc": 0.8785396019617716,
+   "stored_marsR_marsc": 0.8785396019617716
+  },
+  {
+   "pair_id": "rose:rose:xsum:33105999:bart",
+   "n_ref_sets": 1,
+   "computed_marsP_factcg": 0.8437670171260834,
+   "stored_marsP_factcg": 0.8437670171260834,
+   "computed_marsR_marsc": 0.45338725050290424,
+   "stored_marsR_marsc": 0.45338725050290424
+  },
+  {
+   "pair_id": "rose:rose:cnndm:037b49be7f2d2f7b0b9eb48e7bc7e9f97ad2971d:gold",
+   "n_ref_sets": 1,
+   "computed_marsP_factcg": 0.9547839562098185,
+   "stored_marsP_factcg": 0.9547839562098185,
+   "computed_marsR_marsc": 0.15681160437433342,
+   "stored_marsR_marsc": 0.15681160542002895
+  },
+  {
+   "pair_id": "rose:rose:cnndm:0676f9f099979c6a501b0b20225b463826fe407b:bart",
+   "n_ref_sets": 1,
+   "computed_marsP_factcg": 0.8909566232136318,
+   "stored_marsP_factcg": 0.8909566232136318,
+   "computed_marsR_marsc": 0.3907521093885104,
+   "stored_marsR_marsc": 0.39075210938851035
+  },
+  {
+   "pair_id": "unisum:DISL_1494:bart",
+   "n_ref_sets": 0,
+   "computed_marsP_factcg": 0.9031571984291077,
+   "stored_marsP_factcg": 0.9031571984291077,
+   "computed_marsR_marsc": null,
+   "stored_marsR_marsc": null
+  },
+  {
+   "pair_id": "summeval:dm-test-130ff8f2dfb6ab67861d5924b0ff5acd63c7d8ce:11",
+   "n_ref_sets": 10,
+   "computed_marsP_factcg": 0.9156137645244599,
+   "stored_marsP_factcg": 0.9156137645244599,
+   "computed_marsR_marsc": 0.8919603327910105,
+   "stored_marsR_marsc": 0.8919603327910105
+  },
+  {
+   "pair_id": "summeval:dm-test-a3b6201aca77b5bdaa5df02d6acee2be66233237:6",
+   "n_ref_sets": 11,
+   "computed_marsP_factcg": 0.9046519994735718,
+   "stored_marsP_factcg": 0.9046519994735718,
+   "computed_marsR_marsc": 0.6373450219631195,
+   "stored_marsR_marsc": 0.6373450338840485
+  },
+  {
+   "pair_id": "rose:rose:xsum:40627233:brio",
+   "n_ref_sets": 1,
+   "computed_marsP_factcg": 0.3909540977329016,
+   "stored_marsP_factcg": 0.3909540977329016,
+   "computed_marsR_marsc": 0.25028739869594574,
+   "stored_marsR_marsc": 0.25028739869594574
+  },
+  {
+   "pair_id": "rose:rose:cnndm:05ccf000bb7aa7797c92e21ce54eaf94478b359a:glob",
+   "n_ref_sets": 1,
+   "computed_marsP_factcg": 0.8254550881683826,
+   "stored_marsP_factcg": 0.8254550881683826,
+   "computed_marsR_marsc": 0.5725180228551229,
+   "stored_marsR_marsc": 0.5725180228551229
+  },
+  {
+   "pair_id": "rose:rose:xsum:29259013:bart.beam_patience",
+   "n_ref_sets": 1,
+   "computed_marsP_factcg": 0.43131376756355166,
+   "stored_marsP_factcg": 0.43131376756355166,
+   "computed_marsR_marsc": 0.3661510944366455,
+   "stored_marsR_marsc": 0.3661510944366455
+  },
+  {
+   "pair_id": "summeval:dm-test-9b5a04b9879fe716a2dcd66dd331f99534603c16:15",
+   "n_ref_sets": 11,
+   "computed_marsP_factcg": 0.7619055360555649,
+   "stored_marsP_factcg": 0.7619055360555649,
+   "computed_marsR_marsc": 0.8497307466136085,
+   "stored_marsR_marsc": 0.8497307234340243
+  },
+  {
+   "pair_id": "rose:rose:samsum:13828647:CODS",
+   "n_ref_sets": 1,
+   "computed_marsP_factcg": 0.5265352725982666,
+   "stored_marsP_factcg": 0.5265352725982666,
+   "computed_marsR_marsc": 0.05816514293352763,
+   "stored_marsR_marsc": 0.05816514293352763
+  },
+  {
+   "pair_id": "summeval:dm-test-e428e25bbf8e06643154ce31b7c6fab64c81e857:10",
+   "n_ref_sets": 11,
+   "computed_marsP_factcg": 0.9074164628982544,
+   "stored_marsP_factcg": 0.9074164628982544,
+   "computed_marsR_marsc": 0.44079932769139607,
+   "stored_marsR_marsc": 0.44079930782318116
+  },
+  {
+   "pair_id": "unisum:DISL_1521:claude2.1",
+   "n_ref_sets": 0,
+   "computed_marsP_factcg": 0.6827855812651771,
+   "stored_marsP_factcg": 0.6827855812651771,
+   "computed_marsR_marsc": null,
+   "stored_marsR_marsc": null
+  },
+  {
+   "pair_id": "summeval:dm-test-d680ebcdcd59fd5ee9b602a06bcd5230c212835b:7",
+   "n_ref_sets": 11,
+   "computed_marsP_factcg": 0.9588778242468834,
+   "stored_marsP_factcg": 0.9588778242468834,
+   "computed_marsR_marsc": 0.893748919169108,
+   "stored_marsR_marsc": 0.893748919169108
+  },
+  {
+   "pair_id": "summeval:dm-test-9afda3cde191a883d8c166ceb5765eb53205d8f4:11",
+   "n_ref_sets": 11,
+   "computed_marsP_factcg": 0.9115143716335297,
+   "stored_marsP_factcg": 0.9115143716335297,
+   "computed_marsR_marsc": 0.5905898064374924,
+   "stored_marsR_marsc": 0.5905898064374924
+  },
+  {
+   "pair_id": "summeval:dm-test-8bc8f134bc3ceaeec0df8f29e96e13d319717ab8:6",
+   "n_ref_sets": 11,
+   "computed_marsP_factcg": 0.8996914803981781,
+   "stored_marsP_factcg": 0.8996914803981781,
+   "computed_marsR_marsc": 0.9853866298993429,
+   "stored_marsR_marsc": 0.9853866298993428
+  },
+  {
+   "pair_id": "summeval:dm-test-6c1341bedf92a304318545fbf1aad88651de7909:3",
+   "n_ref_sets": 11,
+   "computed_marsP_factcg": 0.9243216173989433,
+   "stored_marsP_factcg": 0.9243216173989433,
+   "computed_marsR_marsc": 0.6605514619085523,
+   "stored_marsR_marsc": 0.6605514619085523
+  },
+  {
+   "pair_id": "summeval:dm-test-8847383b72167c3f3dd2161b5b091b580c8f4da7:15",
+   "n_ref_sets": 11,
+   "computed_marsP_factcg": 0.8483442110674722,
+   "stored_marsP_factcg": 0.8483442110674722,
+   "computed_marsR_marsc": 0.9526858273006621,
+   "stored_marsR_marsc": 0.9526858301389785
+  },
+  {
+   "pair_id": "rose:rose:xsum:35002451:cliff-pegasus",
+   "n_ref_sets": 1,
+   "computed_marsP_factcg": 0.8775328000386556,
+   "stored_marsP_factcg": 0.8775328000386556,
+   "computed_marsR_marsc": 0.2493314693371455,
+   "stored_marsR_marsc": 0.24933146933714548
+  },
+  {
+   "pair_id": "rose:rose:cnndm:03bb4de60f6c60d51b65c89bdacf029634560bf4:frost",
+   "n_ref_sets": 1,
+   "computed_marsP_factcg": 0.8706483926091876,
+   "stored_marsP_factcg": 0.8706483926091876,
+   "computed_marsR_marsc": 0.29527492892174495,
+   "stored_marsR_marsc": 0.295274928921745
+  },
+  {
+   "pair_id": "unisum:DISL_1260:Mixtral-8x7B-Instruct-v0.1",
+   "n_ref_sets": 1,
+   "computed_marsP_factcg": 0.8341400250792503,
+   "stored_marsP_factcg": 0.8341400250792503,
+   "computed_marsR_marsc": 0.528158700466156,
+   "stored_marsR_marsc": 0.5281587084134419
+  },
+  {
+   "pair_id": "rose:rose:samsum:13716169:S-BART",
+   "n_ref_sets": 1,
+   "computed_marsP_factcg": 0.7914915084838867,
+   "stored_marsP_factcg": 0.7914915084838867,
+   "computed_marsR_marsc": 0.4939732253551483,
+   "stored_marsR_marsc": 0.4939732253551483
+  },
+  {
+   "pair_id": "unisum:DISL_1190:Mistral-7B-Instruct-v0.2",
+   "n_ref_sets": 1,
+   "computed_marsP_factcg": 0.7070872994030223,
+   "stored_marsP_factcg": 0.7070872994030223,
+   "computed_marsR_marsc": 0.10489672422409058,
+   "stored_marsR_marsc": 0.10489672422409058
+  },
+  {
+   "pair_id": "summeval:dm-test-2abe0f81f5b22c8a406165717e3bd7fce6fe47c6:9",
+   "n_ref_sets": 11,
+   "computed_marsP_factcg": 0.8820373245647976,
+   "stored_marsP_factcg": 0.8820373245647976,
+   "computed_marsR_marsc": 0.555553967044467,
+   "stored_marsR_marsc": 0.5555539698827835
+  },
+  {
+   "pair_id": "unisum:DISL_422:llama2-chat-13b",
+   "n_ref_sets": 1,
+   "computed_marsP_factcg": 0.9564450979232788,
+   "stored_marsP_factcg": 0.9564450979232788,
+   "computed_marsR_marsc": 0.012729680421305638,
+   "stored_marsR_marsc": 0.012729680421305636
+  },
+  {
+   "pair_id": "unisum:DISL_843:llama2-chat-13b",
+   "n_ref_sets": 1,
+   "computed_marsP_factcg": 0.8113447604355989,
+   "stored_marsP_factcg": 0.8113447604355989,
+   "computed_marsR_marsc": 0.42664382515884025,
+   "stored_marsR_marsc": 0.4266438174053906
+  },
+  {
+   "pair_id": "unisum:DISL_1581:gpt-4-0125-preview",
+   "n_ref_sets": 0,
+   "computed_marsP_factcg": 0.878425596015794,
+   "stored_marsP_factcg": 0.878425596015794,
+   "computed_marsR_marsc": null,
+   "stored_marsR_marsc": null
+  },
+  {
+   "pair_id": "summeval:dm-test-46609841ffd23e9c22d1507edf7b176ecc4d834f:1",
+   "n_ref_sets": 11,
+   "computed_marsP_factcg": 0.8530147075653076,
+   "stored_marsP_factcg": 0.8530147075653076,
+   "computed_marsR_marsc": 0.5291354109843572,
+   "stored_marsR_marsc": 0.5291354109843572
+  },
+  {
+   "pair_id": "rose:rose:cnndm:e872c83027ba2221da1f636def3206f778249473:glob",
+   "n_ref_sets": 1,
+   "computed_marsP_factcg": 0.8670513955029574,
+   "stored_marsP_factcg": 0.8670513955029574,
+   "computed_marsR_marsc": 0.2967174324122342,
+   "stored_marsR_marsc": 0.2967174342184356
+  },
+  {
+   "pair_id": "summeval:dm-test-e428e25bbf8e06643154ce31b7c6fab64c81e857:9",
+   "n_ref_sets": 11,
+   "computed_marsP_factcg": 0.892013669013977,
+   "stored_marsP_factcg": 0.892013669013977,
+   "computed_marsR_marsc": 0.5428256789843242,
+   "stored_marsR_marsc": 0.5428256789843242
+  },
+  {
+   "pair_id": "rose:rose:xsum:34696691:bart",
+   "n_ref_sets": 1,
+   "computed_marsP_factcg": 0.48731160163879395,
+   "stored_marsP_factcg": 0.48731160163879395,
+   "computed_marsR_marsc": 0.20114675760269166,
+   "stored_marsR_marsc": 0.20114675760269166
+  },
+  {
+   "pair_id": "rose:rose:samsum:13727853:PEGASUS",
+   "n_ref_sets": 1,
+   "computed_marsP_factcg": 0.715213306248188,
+   "stored_marsP_factcg": 0.715213306248188,
+   "computed_marsR_marsc": 0.0028701970974604287,
+   "stored_marsR_marsc": 0.0028701970974604287
+  },
+  {
+   "pair_id": "summeval:dm-test-97bbda7ec22a736cd174b51513c72a6372d13d35:15",
+   "n_ref_sets": 11,
+   "computed_marsP_factcg": 0.7765543311834335,
+   "stored_marsP_factcg": 0.7765543311834335,
+   "computed_marsR_marsc": 0.7739218711853028,
+   "stored_marsR_marsc": 0.7739218632380167
+  },
+  {
+   "pair_id": "summeval:dm-test-f37fd6e9b6cc18a7132568e307ef3b130931e809:13",
+   "n_ref_sets": 11,
+   "computed_marsP_factcg": 0.9494818704468864,
+   "stored_marsP_factcg": 0.9494818704468864,
+   "computed_marsR_marsc": 0.4757173756758372,
+   "stored_marsR_marsc": 0.4757173756758372
+  },
+  {
+   "pair_id": "unisum:DISL_1362:gpt-3.5-turbo",
+   "n_ref_sets": 1,
+   "computed_marsP_factcg": 0.7970156520605087,
+   "stored_marsP_factcg": 0.7970156520605087,
+   "computed_marsR_marsc": 0.5497752030690511,
+   "stored_marsR_marsc": 0.5497752030690511
+  },
+  {
+   "pair_id": "summeval:dm-test-4fb64a2298e18626db776fccf834be87388827e0:13",
+   "n_ref_sets": 11,
+   "computed_marsP_factcg": 0.7583137055238088,
+   "stored_marsP_factcg": 0.7583137055238088,
+   "computed_marsR_marsc": 0.9495998869339625,
+   "stored_marsR_marsc": 0.9495998869339625
+  },
+  {
+   "pair_id": "summeval:dm-test-e470f0a87d7513bf880412524332047020422c3f:8",
+   "n_ref_sets": 11,
+   "computed_marsP_factcg": 0.9320653796195983,
+   "stored_marsP_factcg": 0.9320653796195983,
+   "computed_marsR_marsc": 0.7285471984318325,
+   "stored_marsR_marsc": 0.7285471984318325
+  },
+  {
+   "pair_id": "rose:rose:samsum:13864627:PEGASUS",
+   "n_ref_sets": 1,
+   "computed_marsP_factcg": 0.7574382126331329,
+   "stored_marsP_factcg": 0.7574382126331329,
+   "computed_marsR_marsc": 0.495373139778773,
+   "stored_marsR_marsc": 0.495373139778773
+  },
+  {
+   "pair_id": "unisum:DISL_909:Mistral-7B-Instruct-v0.2",
+   "n_ref_sets": 1,
+   "computed_marsP_factcg": 0.8283941100041071,
+   "stored_marsP_factcg": 0.8283941100041071,
+   "computed_marsR_marsc": 0.006402075290679932,
+   "stored_marsR_marsc": 0.006402075290679932
+  },
+  {
+   "pair_id": "rose:rose:cnndm:02b7cd5b0d1e192f1dcb9da18d21c1a2bec00562:ctrlsum",
+   "n_ref_sets": 1,
+   "computed_marsP_factcg": 0.9729301830132803,
+   "stored_marsP_factcg": 0.9729301830132803,
+   "computed_marsR_marsc": 0.25590994528361727,
+   "stored_marsR_marsc": 0.25590994528361727
+  },
+  {
+   "pair_id": "summeval:dm-test-cf4ba8f94f2dd5604eb8f8a4e655c10cf0996365:2",
+   "n_ref_sets": 11,
+   "computed_marsP_factcg": 0.9445057348771528,
+   "stored_marsP_factcg": 0.9445057348771528,
+   "computed_marsR_marsc": 0.5929457346598308,
+   "stored_marsR_marsc": 0.5929457346598308
+  },
+  {
+   "pair_id": "rose:rose:samsum:13828832:BART",
+   "n_ref_sets": 1,
+   "computed_marsP_factcg": 0.5997313857078552,
+   "stored_marsP_factcg": 0.5997313857078552,
+   "computed_marsR_marsc": 0.36336180567741394,
+   "stored_marsR_marsc": 0.36336180567741394
+  },
+  {
+   "pair_id": "unisum:DISL_1480:gpt-4-0125-preview",
+   "n_ref_sets": 0,
+   "computed_marsP_factcg": 0.7748693444512107,
+   "stored_marsP_factcg": 0.7748693444512107,
+   "computed_marsR_marsc": null,
+   "stored_marsR_marsc": null
+  },
+  {
+   "pair_id": "rose:rose:xsum:36626723:cliff-pegasus",
+   "n_ref_sets": 1,
+   "computed_marsP_factcg": 0.7333540320396423,
+   "stored_marsP_factcg": 0.7333540320396423,
+   "computed_marsR_marsc": 0.0023984014987945557,
+   "stored_marsR_marsc": 0.0023984014987945557
+  },
+  {
+   "pair_id": "summeval:dm-test-4a593dc4c7e0b4d09bfdc66bb315c47b54eb15df:13",
+   "n_ref_sets": 11,
+   "computed_marsP_factcg": 0.9375753700733185,
+   "stored_marsP_factcg": 0.9375753700733185,
+   "computed_marsR_marsc": 0.9518325924873352,
+   "stored_marsR_marsc": 0.9518325924873352
+  },
+  {
+   "pair_id": "rose:rose:cnndm:e7cf3fffdc93587e901c6499aaecffcf66f1a7ab:bart",
+   "n_ref_sets": 1,
+   "computed_marsP_factcg": 0.937149662237901,
+   "stored_marsP_factcg": 0.937149662237901,
+   "computed_marsR_marsc": 0.12985698966418996,
+   "stored_marsR_marsc": 0.1298569779770047
+  },
+  {
+   "pair_id": "rose:rose:cnndm:e92c09d37dfc1e9622c06df68c9da763ad8df64d:bart",
+   "n_ref_sets": 1,
+   "computed_marsP_factcg": 0.950655710697174,
+   "stored_marsP_factcg": 0.950655710697174,
+   "computed_marsR_marsc": 0.49980477823151487,
+   "stored_marsR_marsc": 0.49980477160877657
+  },
+  {
+   "pair_id": "summeval:dm-test-81bd721b16cad47dfd8d24baca5b30b006291db2:7",
+   "n_ref_sets": 11,
+   "computed_marsP_factcg": 0.9107062646320888,
+   "stored_marsP_factcg": 0.9107062646320888,
+   "computed_marsR_marsc": 0.8013876517613729,
+   "stored_marsR_marsc": 0.8013876517613729
+  },
+  {
+   "pair_id": "rose:rose:cnndm:e9efb02e379d1afd373eb650d6c35f9db09d680b:cliff",
+   "n_ref_sets": 1,
+   "computed_marsP_factcg": 0.8705455660820007,
+   "stored_marsP_factcg": 0.8705455660820007,
+   "computed_marsR_marsc": 0.5328340965604026,
+   "stored_marsR_marsc": 0.5328340965604025
+  },
+  {
+   "pair_id": "rose:rose:cnndm:02c232ef55d64e86a8f16c220d4cb8269d7731b3:gold",
+   "n_ref_sets": 1,
+   "computed_marsP_factcg": 0.9042897603728555,
+   "stored_marsP_factcg": 0.9042897603728555,
+   "computed_marsR_marsc": 0.4045695642630259,
+   "stored_marsR_marsc": 0.40456956426302587
+  },
+  {
+   "pair_id": "rose:rose:cnndm:017e7b1d6176178312cc59efea0a0e13f2a439bb:cliff",
+   "n_ref_sets": 1,
+   "computed_marsP_factcg": 0.9277839461962382,
+   "stored_marsP_factcg": 0.9277839461962382,
+   "computed_marsR_marsc": 0.2471785619854927,
+   "stored_marsR_marsc": 0.2471785644690196
+  },
+  {
+   "pair_id": "rose:rose:xsum:38429471:frost",
+   "n_ref_sets": 1,
+   "computed_marsP_factcg": 0.5739849656820297,
+   "stored_marsP_factcg": 0.5739849656820297,
+   "computed_marsR_marsc": 0.34011947824841454,
+   "stored_marsR_marsc": 0.3401194782484146
+  },
+  {
+   "pair_id": "summeval:dm-test-3785743303ddb8b594be7c449a37458b99e83812:8",
+   "n_ref_sets": 11,
+   "computed_marsP_factcg": 0.5735823661088943,
+   "stored_marsP_factcg": 0.5735823661088943,
+   "computed_marsR_marsc": 0.07713910440603891,
+   "stored_marsR_marsc": 0.07713910440603891
+  },
+  {
+   "pair_id": "rose:rose:samsum:13730015:Ctrl-DiaSumm",
+   "n_ref_sets": 1,
+   "computed_marsP_factcg": 0.5391540601849556,
+   "stored_marsP_factcg": 0.5391540601849556,
+   "computed_marsR_marsc": 0.5729116598765056,
+   "stored_marsR_marsc": 0.5729116598765055
+  },
+  {
+   "pair_id": "summeval:dm-test-1749a22e2b6facaa057213cb9b33261b319bbd2b:15",
+   "n_ref_sets": 11,
+   "computed_marsP_factcg": 0.925322599709034,
+   "stored_marsP_factcg": 0.925322599709034,
+   "computed_marsR_marsc": 0.983173131942749,
+   "stored_marsR_marsc": 0.983173131942749
+  },
+  {
+   "pair_id": "unisum:DISL_1231:phi-2",
+   "n_ref_sets": 1,
+   "computed_marsP_factcg": 0.7660630494356155,
+   "stored_marsP_factcg": 0.7660630494356155,
+   "computed_marsR_marsc": 0.16211743901173273,
+   "stored_marsR_marsc": 0.16211743901173273
+  },
+  {
+   "pair_id": "unisum:DISL_313:bart",
+   "n_ref_sets": 0,
+   "computed_marsP_factcg": 0.8554206490516663,
+   "stored_marsP_factcg": 0.8554206490516663,
+   "computed_marsR_marsc": null,
+   "stored_marsR_marsc": null
+  },
+  {
+   "pair_id": "unisum:DISL_1651:t5",
+   "n_ref_sets": 0,
+   "computed_marsP_factcg": 0.9402880924088615,
+   "stored_marsP_factcg": 0.9402880924088615,
+   "computed_marsR_marsc": null,
+   "stored_marsR_marsc": null
+  },
+  {
+   "pair_id": "summeval:cnn-test-e49792c337d3f4c13e22f710efa44cf6a4e59aba:1",
+   "n_ref_sets": 11,
+   "computed_marsP_factcg": 0.949508547782898,
+   "stored_marsP_factcg": 0.949508547782898,
+   "computed_marsR_marsc": 0.2833903857639858,
+   "stored_marsR_marsc": 0.2833903857639858
+  },
+  {
+   "pair_id": "unisum:DISL_1395:Mistral-7B-Instruct-v0.2",
+   "n_ref_sets": 1,
+   "computed_marsP_factcg": 0.8976841382682323,
+   "stored_marsP_factcg": 0.8976841382682323,
+   "computed_marsR_marsc": 0.9896780451138814,
+   "stored_marsR_marsc": 0.9896780451138814
+  },
+  {
+   "pair_id": "summeval:dm-test-c6667409fcdea2c89ba9f0d3a72c50e3967b4b1b:15",
+   "n_ref_sets": 11,
+   "computed_marsP_factcg": 0.9394911527633667,
+   "stored_marsP_factcg": 0.9394911527633667,
+   "computed_marsR_marsc": 0.5376323411862055,
+   "stored_marsR_marsc": 0.5376323411862055
+  },
+  {
+   "pair_id": "rose:rose:samsum:13828146:UniLM",
+   "n_ref_sets": 1,
+   "computed_marsP_factcg": 0.556750892351071,
+   "stored_marsP_factcg": 0.556750892351071,
+   "computed_marsR_marsc": 0.9840079148610433,
+   "stored_marsR_marsc": 0.9840079148610433
+  },
+  {
+   "pair_id": "summeval:dm-test-d3c9ce137ba24a69253508b3416630465c050ae4:12",
+   "n_ref_sets": 11,
+   "computed_marsP_factcg": 0.9233140349388123,
+   "stored_marsP_factcg": 0.9233140349388123,
+   "computed_marsR_marsc": 0.5070552854310898,
+   "stored_marsR_marsc": 0.5070552854310899
+  },
+  {
+   "pair_id": "rose:rose:samsum:13828411:S-BART",
+   "n_ref_sets": 1,
+   "computed_marsP_factcg": 0.4777929103001952,
+   "stored_marsP_factcg": 0.4777929103001952,
+   "computed_marsR_marsc": 0.7109616200129191,
+   "stored_marsR_marsc": 0.7109615554412205
+  },
+  {
+   "pair_id": "summeval:dm-test-155754e1f2bc83f6836af78703edd4d00f19f381:10",
+   "n_ref_sets": 11,
+   "computed_marsP_factcg": 0.9243645866711935,
+   "stored_marsP_factcg": 0.9243645866711935,
+   "computed_marsR_marsc": 0.6264694184064865,
+   "stored_marsR_marsc": 0.6264694233735402
+  },
+  {
+   "pair_id": "rose:rose:cnndm:04c28c2d6c524d96e046cadf32eb44803f83a98c:bart",
+   "n_ref_sets": 1,
+   "computed_marsP_factcg": 0.9342940449714661,
+   "stored_marsP_factcg": 0.9342940449714661,
+   "computed_marsR_marsc": 0.004786975681781769,
+   "stored_marsR_marsc": 0.004786975681781769
+  },
+  {
+   "pair_id": "unisum:DISL_376:phi-2",
+   "n_ref_sets": 0,
+   "computed_marsP_factcg": 0.38791662773915697,
+   "stored_marsP_factcg": 0.38791662773915697,
+   "computed_marsR_marsc": null,
+   "stored_marsR_marsc": null
+  },
+  {
+   "pair_id": "unisum:DISL_104:claude2.1",
+   "n_ref_sets": 1,
+   "computed_marsP_factcg": 0.8759166640894753,
+   "stored_marsP_factcg": 0.8759166640894753,
+   "computed_marsR_marsc": 0.4871912201245626,
+   "stored_marsR_marsc": 0.4871912201245626
+  },
+  {
+   "pair_id": "rose:rose:xsum:38305193:bart",
+   "n_ref_sets": 1,
+   "computed_marsP_factcg": 0.8595262765884399,
+   "stored_marsP_factcg": 0.8595262765884399,
+   "computed_marsR_marsc": 0.002157820595635308,
+   "stored_marsR_marsc": 0.002157820595635308
+  },
+  {
+   "pair_id": "summeval:dm-test-1747dcd6a007ee97954b6b10cde549bf82f6a4eb:9",
+   "n_ref_sets": 11,
+   "computed_marsP_factcg": 0.9464523047208786,
+   "stored_marsP_factcg": 0.9464523047208786,
+   "computed_marsR_marsc": 0.49955804149309796,
+   "stored_marsR_marsc": 0.4995580414930979
+  },
+  {
+   "pair_id": "unisum:DISL_1356:Mistral-7B-Instruct-v0.2",
+   "n_ref_sets": 1,
+   "computed_marsP_factcg": 0.79714035987854,
+   "stored_marsP_factcg": 0.79714035987854,
+   "computed_marsR_marsc": 0.804288923740387,
+   "stored_marsR_marsc": 0.804288923740387
+  },
+  {
+   "pair_id": "rose:rose:cnndm:0257a95ebd93f21f548813eee4baa49b3529965f:bart",
+   "n_ref_sets": 1,
+   "computed_marsP_factcg": 0.927715003490448,
+   "stored_marsP_factcg": 0.927715003490448,
+   "computed_marsR_marsc": 0.3456487109263738,
+   "stored_marsR_marsc": 0.34564869602521264
+  },
+  {
+   "pair_id": "rose:rose:cnndm:e7e0da452bf0da71eb3420d41bd67e7a3e2383f8:glob",
+   "n_ref_sets": 1,
+   "computed_marsP_factcg": 0.9352676073710123,
+   "stored_marsP_factcg": 0.9352676073710123,
+   "computed_marsR_marsc": 0.3242792342648362,
+   "stored_marsR_marsc": 0.3242792324586348
+  },
+  {
+   "pair_id": "unisum:DISL_162:bart",
+   "n_ref_sets": 1,
+   "computed_marsP_factcg": 0.946662289755685,
+   "stored_marsP_factcg": 0.946662289755685,
+   "computed_marsR_marsc": 0.32134045053411414,
+   "stored_marsR_marsc": 0.32134045053411414
+  },
+  {
+   "pair_id": "unisum:DISL_708:gpt-3.5-turbo",
+   "n_ref_sets": 1,
+   "computed_marsP_factcg": 0.6153423725382278,
+   "stored_marsP_factcg": 0.6153423725382278,
+   "computed_marsR_marsc": 0.24412183869968762,
+   "stored_marsR_marsc": 0.24412183869968765
+  },
+  {
+   "pair_id": "rose:rose:xsum:14528047:bart",
+   "n_ref_sets": 1,
+   "computed_marsP_factcg": 0.5158783718943596,
+   "stored_marsP_factcg": 0.5158783718943596,
+   "computed_marsR_marsc": 0.008844580915239122,
+   "stored_marsR_marsc": 0.008844574292500813
+  },
+  {
+   "pair_id": "summeval:dm-test-cf4ba8f94f2dd5604eb8f8a4e655c10cf0996365:6",
+   "n_ref_sets": 11,
+   "computed_marsP_factcg": 0.9447851235216315,
+   "stored_marsP_factcg": 0.9447851235216315,
+   "computed_marsR_marsc": 0.8874793907006582,
+   "stored_marsR_marsc": 0.8874793887138367
+  },
+  {
+   "pair_id": "rose:rose:xsum:39113446:brio",
+   "n_ref_sets": 1,
+   "computed_marsP_factcg": 0.4771280686060588,
+   "stored_marsP_factcg": 0.4771280686060588,
+   "computed_marsR_marsc": 0.5872188528378804,
+   "stored_marsR_marsc": 0.5872188528378804
+  },
+  {
+   "pair_id": "unisum:DISL_634:gpt-4-0125-preview",
+   "n_ref_sets": 1,
+   "computed_marsP_factcg": 0.5556020203815855,
+   "stored_marsP_factcg": 0.5556020203815855,
+   "computed_marsR_marsc": 0.17690793921550116,
+   "stored_marsR_marsc": 0.1769079392155012
+  },
+  {
+   "pair_id": "unisum:DISL_866:bart",
+   "n_ref_sets": 0,
+   "computed_marsP_factcg": 0.870392270386219,
+   "stored_marsP_factcg": 0.870392270386219,
+   "computed_marsR_marsc": null,
+   "stored_marsR_marsc": null
+  },
+  {
+   "pair_id": "unisum:DISL_576:Mixtral-8x7B-Instruct-v0.1",
+   "n_ref_sets": 1,
+   "computed_marsP_factcg": 0.7746916892436835,
+   "stored_marsP_factcg": 0.7746916892436835,
+   "computed_marsR_marsc": 0.4198166827360789,
+   "stored_marsR_marsc": 0.4198166827360789
+  },
+  {
+   "pair_id": "summeval:dm-test-2cfc33d01364162579f46b2764914a03a29453ce:3",
+   "n_ref_sets": 11,
+   "computed_marsP_factcg": 0.9228231395993914,
+   "stored_marsP_factcg": 0.9228231395993914,
+   "computed_marsR_marsc": 0.46611631578869295,
+   "stored_marsR_marsc": 0.46611631578869295
+  },
+  {
+   "pair_id": "summeval:dm-test-14c813567696f4e63a39993c09d4edb454036179:1",
+   "n_ref_sets": 11,
+   "computed_marsP_factcg": 0.9537141521771749,
+   "stored_marsP_factcg": 0.9537141521771749,
+   "computed_marsR_marsc": 0.7487911074249832,
+   "stored_marsR_marsc": 0.7487911074249833
+  },
+  {
+   "pair_id": "summeval:dm-test-e470f0a87d7513bf880412524332047020422c3f:14",
+   "n_ref_sets": 11,
+   "computed_marsP_factcg": 0.9246590360999107,
+   "stored_marsP_factcg": 0.9246590360999107,
+   "computed_marsR_marsc": 0.499702587723732,
+   "stored_marsR_marsc": 0.499702587723732
+  },
+  {
+   "pair_id": "rose:rose:cnndm:000642916e3a6c33411c617cf2f3c134a206fba8:bart",
+   "n_ref_sets": 1,
+   "computed_marsP_factcg": 0.9637825906276702,
+   "stored_marsP_factcg": 0.9637825906276702,
+   "computed_marsR_marsc": 0.32704756296042237,
+   "stored_marsR_marsc": 0.327047561154221
+  },
+  {
+   "pair_id": "rose:rose:samsum:13680525:PEGASUS",
+   "n_ref_sets": 1,
+   "computed_marsP_factcg": 0.385975094512105,
+   "stored_marsP_factcg": 0.385975094512105,
+   "computed_marsR_marsc": 0.512925922870636,
+   "stored_marsR_marsc": 0.512925922870636
+  },
+  {
+   "pair_id": "rose:rose:xsum:37094364:bart",
+   "n_ref_sets": 1,
+   "computed_marsP_factcg": 0.9541372656822205,
+   "stored_marsP_factcg": 0.9541372656822205,
+   "computed_marsR_marsc": 0.20503042141596478,
+   "stored_marsR_marsc": 0.20503042141596475
+  },
+  {
+   "pair_id": "rose:rose:cnndm:0257a95ebd93f21f548813eee4baa49b3529965f:pegasus",
+   "n_ref_sets": 1,
+   "computed_marsP_factcg": 0.9303653687238693,
+   "stored_marsP_factcg": 0.9303653687238693,
+   "computed_marsR_marsc": 0.28083482881387073,
+   "stored_marsR_marsc": 0.28083482881387073
+  },
+  {
+   "pair_id": "rose:rose:cnndm:072f81068d4d416468aec0ffd1fa94073739f3e5:glob",
+   "n_ref_sets": 1,
+   "computed_marsP_factcg": 0.8739763119003989,
+   "stored_marsP_factcg": 0.8739763119003989,
+   "computed_marsR_marsc": 0.276705514639616,
+   "stored_marsR_marsc": 0.27670551712314284
+  },
+  {
+   "pair_id": "unisum:DISL_560:Mixtral-8x7B-Instruct-v0.1",
+   "n_ref_sets": 1,
+   "computed_marsP_factcg": 0.84792715501278,
+   "stored_marsP_factcg": 0.84792715501278,
+   "computed_marsR_marsc": 0.1399304916461309,
+   "stored_marsR_marsc": 0.1399304916461309
+  },
+  {
+   "pair_id": "rose:rose:xsum:36626723:bart.beam_patience",
+   "n_ref_sets": 1,
+   "computed_marsP_factcg": 0.7897685468196869,
+   "stored_marsP_factcg": 0.7897685468196869,
+   "computed_marsR_marsc": 0.00239640474319458,
+   "stored_marsR_marsc": 0.00239640474319458
+  },
+  {
+   "pair_id": "unisum:DISL_1591:phi-2",
+   "n_ref_sets": 0,
+   "computed_marsP_factcg": 0.8760667783873421,
+   "stored_marsP_factcg": 0.8760667783873421,
+   "computed_marsR_marsc": null,
+   "stored_marsR_marsc": null
+  },
+  {
+   "pair_id": "rose:rose:samsum:13819478:PEGASUS",
+   "n_ref_sets": 1,
+   "computed_marsP_factcg": 0.39662617444992065,
+   "stored_marsP_factcg": 0.39662617444992065,
+   "computed_marsR_marsc": 0.30423492193222046,
+   "stored_marsR_marsc": 0.3042349219322205
+  },
+  {
+   "pair_id": "unisum:DISL_413:gpt-3.5-turbo",
+   "n_ref_sets": 1,
+   "computed_marsP_factcg": 0.631699051707983,
+   "stored_marsP_factcg": 0.631699051707983,
+   "computed_marsR_marsc": 0.15963453905923025,
+   "stored_marsR_marsc": 0.15963453905923022
+  },
+  {
+   "pair_id": "unisum:DISL_704:llama2-chat-13b",
+   "n_ref_sets": 1,
+   "computed_marsP_factcg": 0.8916329840819041,
+   "stored_marsP_factcg": 0.8916329840819041,
+   "computed_marsR_marsc": 0.31762186723685115,
+   "stored_marsR_marsc": 0.3176218687363391
+  },
+  {
+   "pair_id": "rose:rose:cnndm:e7f12c2f25d615e95605f660aac2cf035ab55e95:gold",
+   "n_ref_sets": 1,
+   "computed_marsP_factcg": 0.77727039371218,
+   "stored_marsP_factcg": 0.77727039371218,
+   "computed_marsR_marsc": 0.35251835163901835,
+   "stored_marsR_marsc": 0.35251833995183307
+  },
+  {
+   "pair_id": "summeval:dm-test-f26d8400ae49b90d109c165d0f44b8f6ca253c08:13",
+   "n_ref_sets": 11,
+   "computed_marsP_factcg": 0.9463505612479316,
+   "stored_marsP_factcg": 0.9463505612479316,
+   "computed_marsR_marsc": 0.7042664537827173,
+   "stored_marsR_marsc": 0.7042664537827173
+  },
+  {
+   "pair_id": "unisum:DISL_909:llama2-chat-13b",
+   "n_ref_sets": 1,
+   "computed_marsP_factcg": 0.8458988964557648,
+   "stored_marsP_factcg": 0.8458988964557648,
+   "computed_marsR_marsc": 0.007939577102661133,
+   "stored_marsR_marsc": 0.007939577102661133
+  },
+  {
+   "pair_id": "rose:rose:cnndm:e9bcc1c3b5d1e68836908c23f044965b1debf725:gsum",
+   "n_ref_sets": 1,
+   "computed_marsP_factcg": 0.6911472608335316,
+   "stored_marsP_factcg": 0.6911472608335316,
+   "computed_marsR_marsc": 0.663965787490209,
+   "stored_marsR_marsc": 0.663965787490209
+  },
+  {
+   "pair_id": "rose:rose:cnndm:04c28c2d6c524d96e046cadf32eb44803f83a98c:cliff",
+   "n_ref_sets": 1,
+   "computed_marsP_factcg": 0.9001167640089989,
+   "stored_marsP_factcg": 0.9001167640089989,
+   "computed_marsR_marsc": 0.00311736265818278,
+   "stored_marsR_marsc": 0.0031173626581827802
+  },
+  {
+   "pair_id": "unisum:DISL_162:Mistral-7B-Instruct-v0.2",
+   "n_ref_sets": 1,
+   "computed_marsP_factcg": 0.8784409070014954,
+   "stored_marsP_factcg": 0.8784409070014954,
+   "computed_marsR_marsc": 0.2968566616376241,
+   "stored_marsR_marsc": 0.2968566616376241
+  },
+  {
+   "pair_id": "unisum:DISL_1205:gpt-3.5-turbo",
+   "n_ref_sets": 1,
+   "computed_marsP_factcg": 0.8660636118480137,
+   "stored_marsP_factcg": 0.8660636118480137,
+   "computed_marsR_marsc": 0.09109854130517868,
+   "stored_marsR_marsc": 0.09109854130517869
+  },
+  {
+   "pair_id": "unisum:DISL_302:phi-2",
+   "n_ref_sets": 1,
+   "computed_marsP_factcg": 0.49341584245363873,
+   "stored_marsP_factcg": 0.49341584245363873,
+   "computed_marsR_marsc": 0.9872721433639526,
+   "stored_marsR_marsc": 0.9872721433639526
+  },
+  {
+   "pair_id": "rose:rose:cnndm:02e60fdc3d782171884eae7a88d710350bfbc3e7:brio-ext",
+   "n_ref_sets": 1,
+   "computed_marsP_factcg": 0.9127643182873726,
+   "stored_marsP_factcg": 0.9127643182873726,
+   "computed_marsR_marsc": 0.8249783686229161,
+   "stored_marsR_marsc": 0.8249783686229161
+  },
+  {
+   "pair_id": "rose:rose:xsum:37902151:cliff-pegasus",
+   "n_ref_sets": 1,
+   "computed_marsP_factcg": 0.9542665481567383,
+   "stored_marsP_factcg": 0.9542665481567383,
+   "computed_marsR_marsc": 0.0023301998774210614,
+   "stored_marsR_marsc": 0.002330199877421061
+  },
+  {
+   "pair_id": "unisum:DISL_437:gpt-4-0125-preview",
+   "n_ref_sets": 1,
+   "computed_marsP_factcg": 0.7479146827871983,
+   "stored_marsP_factcg": 0.7479146827871983,
+   "computed_marsR_marsc": 0.2889548699061076,
+   "stored_marsR_marsc": 0.2889548699061076
+  },
+  {
+   "pair_id": "summeval:cnn-test-d75b043ebefc3098aea84d92bb8bec0f509b1563:3",
+   "n_ref_sets": 11,
+   "computed_marsP_factcg": 0.9701969146728515,
+   "stored_marsP_factcg": 0.9701969146728515,
+   "computed_marsR_marsc": 0.8236778662318275,
+   "stored_marsR_marsc": 0.8236778662318276
+  },
+  {
+   "pair_id": "rose:rose:cnndm:052aa26caf86c5d7d01e6ef0ac3152e1520f1709:gsum",
+   "n_ref_sets": 1,
+   "computed_marsP_factcg": 0.8830186948180199,
+   "stored_marsP_factcg": 0.8830186948180199,
+   "computed_marsR_marsc": 0.5528596621571166,
+   "stored_marsR_marsc": 0.5528596675757206
+  },
+  {
+   "pair_id": "unisum:DISL_46:t5",
+   "n_ref_sets": 1,
+   "computed_marsP_factcg": 0.7470073451598486,
+   "stored_marsP_factcg": 0.7470073451598486,
+   "computed_marsR_marsc": 0.0022933792184900354,
+   "stored_marsR_marsc": 0.0022933792184900354
+  },
+  {
+   "pair_id": "rose:rose:cnndm:03c0089924efd758408bf6044ccb87ddcc1ad02c:ctrlsum",
+   "n_ref_sets": 1,
+   "computed_marsP_factcg": 0.8647591918706894,
+   "stored_marsP_factcg": 0.8647591918706894,
+   "computed_marsR_marsc": 0.7974675516287486,
+   "stored_marsR_marsc": 0.7974675516287486
+  },
+  {
+   "pair_id": "summeval:dm-test-e06ff0eb7c4fa4416fda84a9a239b15480c5a9d9:6",
+   "n_ref_sets": 11,
+   "computed_marsP_factcg": 0.8730973154306412,
+   "stored_marsP_factcg": 0.8730973154306412,
+   "computed_marsR_marsc": 0.7165491713417901,
+   "stored_marsR_marsc": 0.7165491713417901
+  },
+  {
+   "pair_id": "rose:rose:cnndm:068f529825cc39af930a462c5e9685cbd7961fa5:pegasus",
+   "n_ref_sets": 1,
+   "computed_marsP_factcg": 0.855083703994751,
+   "stored_marsP_factcg": 0.855083703994751,
+   "computed_marsR_marsc": 0.5089677714166188,
+   "stored_marsR_marsc": 0.5089677714166188
+  },
+  {
+   "pair_id": "rose:rose:samsum:13821583:Ctrl-DiaSumm",
+   "n_ref_sets": 1,
+   "computed_marsP_factcg": 0.8050616639001029,
+   "stored_marsP_factcg": 0.8050616639001029,
+   "computed_marsR_marsc": 0.744525171816349,
+   "stored_marsR_marsc": 0.744525171816349
+  },
+  {
+   "pair_id": "unisum:DISL_1477:phi-2",
+   "n_ref_sets": 0,
+   "computed_marsP_factcg": 0.7882204502820969,
+   "stored_marsP_factcg": 0.7882204502820969,
+   "computed_marsR_marsc": null,
+   "stored_marsR_marsc": null
+  },
+  {
+   "pair_id": "unisum:DISL_447:phi-2",
+   "n_ref_sets": 1,
+   "computed_marsP_factcg": 0.86541926746185,
+   "stored_marsP_factcg": 0.86541926746185,
+   "computed_marsR_marsc": 0.053140890936479494,
+   "stored_marsR_marsc": 0.05314089093647949
+  },
+  {
+   "pair_id": "rose:rose:xsum:32271731:pegasus",
+   "n_ref_sets": 1,
+   "computed_marsP_factcg": 0.3064680341631174,
+   "stored_marsP_factcg": 0.3064680341631174,
+   "computed_marsR_marsc": 0.002976866563161214,
+   "stored_marsR_marsc": 0.002976866563161214
+  },
+  {
+   "pair_id": "unisum:DISL_1269:claude2.1",
+   "n_ref_sets": 1,
+   "computed_marsP_factcg": 0.8367867097258568,
+   "stored_marsP_factcg": 0.8367867097258568,
+   "computed_marsR_marsc": 0.06320667763551076,
+   "stored_marsR_marsc": 0.06320667763551076
+  },
+  {
+   "pair_id": "rose:rose:samsum:13729824:PEGASUS",
+   "n_ref_sets": 1,
+   "computed_marsP_factcg": 0.7284730275472006,
+   "stored_marsP_factcg": 0.7284730275472006,
+   "computed_marsR_marsc": 0.017851498391893175,
+   "stored_marsR_marsc": 0.017851498391893175
+  },
+  {
+   "pair_id": "rose:rose:cnndm:e7956d10c4d6ccbcf19283fb8fb481f68ef18aec:gsum",
+   "n_ref_sets": 1,
+   "computed_marsP_factcg": 0.8213485702872276,
+   "stored_marsP_factcg": 0.8213485702872276,
+   "computed_marsR_marsc": 0.3121552010377248,
+   "stored_marsR_marsc": 0.3121552050113678
+  },
+  {
+   "pair_id": "rose:rose:cnndm:060cc51c4ae6c738da32dc9e6f0b2f354c97a4f0:brio-ext",
+   "n_ref_sets": 1,
+   "computed_marsP_factcg": 0.9040864109992981,
+   "stored_marsP_factcg": 0.9040864109992981,
+   "computed_marsR_marsc": 0.7044296571702668,
+   "stored_marsR_marsc": 0.7044296571702667
+  },
+  {
+   "pair_id": "unisum:DISL_1026:claude2.1",
+   "n_ref_sets": 0,
+   "computed_marsP_factcg": 0.8544061694826398,
+   "stored_marsP_factcg": 0.8544061694826398,
+   "computed_marsR_marsc": null,
+   "stored_marsR_marsc": null
+  },
+  {
+   "pair_id": "unisum:DISL_1480:t5",
+   "n_ref_sets": 0,
+   "computed_marsP_factcg": 0.7339982874691486,
+   "stored_marsP_factcg": 0.7339982874691486,
+   "computed_marsR_marsc": null,
+   "stored_marsR_marsc": null
+  },
+  {
+   "pair_id": "rose:rose:cnndm:0439bdd9b93cadd6d24b0bbfe872c323a535cfba:pegasus",
+   "n_ref_sets": 1,
+   "computed_marsP_factcg": 0.8603883186976115,
+   "stored_marsP_factcg": 0.8603883186976115,
+   "computed_marsR_marsc": 0.6600461055835088,
+   "stored_marsR_marsc": 0.6600461055835087
+  },
+  {
+   "pair_id": "summeval:dm-test-e428e25bbf8e06643154ce31b7c6fab64c81e857:5",
+   "n_ref_sets": 11,
+   "computed_marsP_factcg": 0.9062593380610148,
+   "stored_marsP_factcg": 0.9062593380610148,
+   "computed_marsR_marsc": 0.17169551849365233,
+   "stored_marsR_marsc": 0.17169551849365233
+  },
+  {
+   "pair_id": "rose:rose:xsum:36398775:bart",
+   "n_ref_sets": 1,
+   "computed_marsP_factcg": 0.6928771883249283,
+   "stored_marsP_factcg": 0.6928771883249283,
+   "computed_marsR_marsc": 0.7726837860213386,
+   "stored_marsR_marsc": 0.7726837860213386
+  },
+  {
+   "pair_id": "rose:rose:cnndm:01205b429804a281ec89e3ce12dd75f6dad645e8:frost",
+   "n_ref_sets": 1,
+   "computed_marsP_factcg": 0.9379611313343048,
+   "stored_marsP_factcg": 0.9379611313343048,
+   "computed_marsR_marsc": 0.11967394004265468,
+   "stored_marsR_marsc": 0.11967394004265468
+  },
+  {
+   "pair_id": "summeval:cnn-test-e49792c337d3f4c13e22f710efa44cf6a4e59aba:14",
+   "n_ref_sets": 11,
+   "computed_marsP_factcg": 0.7193142995238304,
+   "stored_marsP_factcg": 0.7193142995238304,
+   "computed_marsR_marsc": 0.17937509218851724,
+   "stored_marsR_marsc": 0.17937509218851724
+  },
+  {
+   "pair_id": "summeval:dm-test-d296270ab4a4cf20f2d9c1aae7514687806f2b35:10",
+   "n_ref_sets": 11,
+   "computed_marsP_factcg": 0.9566585481166839,
+   "stored_marsP_factcg": 0.9566585481166839,
+   "computed_marsR_marsc": 0.9462965776522955,
+   "stored_marsR_marsc": 0.9462965751687686
+  },
+  {
+   "pair_id": "summeval:dm-test-18243373494a1722ddcd162ec67b63dd749633ab:15",
+   "n_ref_sets": 11,
+   "computed_marsP_factcg": 0.9596640586853027,
+   "stored_marsP_factcg": 0.9596640586853027,
+   "computed_marsR_marsc": 0.48141707479953766,
+   "stored_marsR_marsc": 0.48141707479953766
+  },
+  {
+   "pair_id": "rose:rose:cnndm:e7d5d4880ba4ece2ac8365a89d64e7bab9492da8:simcls",
+   "n_ref_sets": 1,
+   "computed_marsP_factcg": 0.8757440447807312,
+   "stored_marsP_factcg": 0.8757440447807312,
+   "computed_marsR_marsc": 0.619718090693156,
+   "stored_marsR_marsc": 0.6197180906931559
+  },
+  {
+   "pair_id": "summeval:dm-test-8bc8f134bc3ceaeec0df8f29e96e13d319717ab8:15",
+   "n_ref_sets": 11,
+   "computed_marsP_factcg": 0.7512008994817734,
+   "stored_marsP_factcg": 0.7512008994817734,
+   "computed_marsR_marsc": 0.6584164063135782,
+   "stored_marsR_marsc": 0.6584164063135782
+  },
+  {
+   "pair_id": "unisum:DISL_929:gpt-4-0125-preview",
+   "n_ref_sets": 1,
+   "computed_marsP_factcg": 0.8191419020295143,
+   "stored_marsP_factcg": 0.8191419020295143,
+   "computed_marsR_marsc": 0.9368520379066467,
+   "stored_marsR_marsc": 0.9368520379066467
+  },
+  {
+   "pair_id": "summeval:dm-test-6f027d030f9ca86446dc893f1d10ced4c9a3561f:10",
+   "n_ref_sets": 11,
+   "computed_marsP_factcg": 0.8598819971084595,
+   "stored_marsP_factcg": 0.8598819971084595,
+   "computed_marsR_marsc": 0.9753649632136028,
+   "stored_marsR_marsc": 0.9753649632136028
+  },
+  {
+   "pair_id": "summeval:dm-test-6c1341bedf92a304318545fbf1aad88651de7909:14",
+   "n_ref_sets": 11,
+   "computed_marsP_factcg": 0.7501832991838455,
+   "stored_marsP_factcg": 0.7501832991838455,
+   "computed_marsR_marsc": 0.9777832759751214,
+   "stored_marsR_marsc": 0.9777832759751214
+  },
+  {
+   "pair_id": "summeval:dm-test-23e8c1d71474d239aa9ae37b9a05031b0054b8ce:9",
+   "n_ref_sets": 11,
+   "computed_marsP_factcg": 0.8321982324123383,
+   "stored_marsP_factcg": 0.8321982324123383,
+   "computed_marsR_marsc": 0.6306370629204644,
+   "stored_marsR_marsc": 0.6306370629204644
+  },
+  {
+   "pair_id": "summeval:dm-test-0783c68a744df6afa009d16e72709f2b4d90dea1:14",
+   "n_ref_sets": 11,
+   "computed_marsP_factcg": 0.906381219625473,
+   "stored_marsP_factcg": 0.906381219625473,
+   "computed_marsR_marsc": 0.7842123375998603,
+   "stored_marsR_marsc": 0.7842123342884911
+  },
+  {
+   "pair_id": "unisum:DISL_284:phi-2",
+   "n_ref_sets": 0,
+   "computed_marsP_factcg": 0.5077067473903298,
+   "stored_marsP_factcg": 0.5077067473903298,
+   "computed_marsR_marsc": null,
+   "stored_marsR_marsc": null
+  },
+  {
+   "pair_id": "summeval:dm-test-d680ebcdcd59fd5ee9b602a06bcd5230c212835b:2",
+   "n_ref_sets": 11,
+   "computed_marsP_factcg": 0.9666468302408854,
+   "stored_marsP_factcg": 0.9666468302408854,
+   "computed_marsR_marsc": 0.984200139840444,
+   "stored_marsR_marsc": 0.984200139840444
+  },
+  {
+   "pair_id": "rose:rose:samsum:13716119:MV-BART",
+   "n_ref_sets": 1,
+   "computed_marsP_factcg": 0.9170354157686234,
+   "stored_marsP_factcg": 0.9170354157686234,
+   "computed_marsR_marsc": 0.4969579246309068,
+   "stored_marsR_marsc": 0.4969579246309068
+  },
+  {
+   "pair_id": "unisum:DISL_802:bart",
+   "n_ref_sets": 1,
+   "computed_marsP_factcg": 0.6788980886340141,
+   "stored_marsP_factcg": 0.6788980886340141,
+   "computed_marsR_marsc": 0.09253689038812818,
+   "stored_marsR_marsc": 0.09253690343591112
+  },
+  {
+   "pair_id": "summeval:dm-test-8b59fa7715418c4bcc0d50e3caeb239129de453e:4",
+   "n_ref_sets": 11,
+   "computed_marsP_factcg": 0.775053858757019,
+   "stored_marsP_factcg": 0.775053858757019,
+   "computed_marsR_marsc": 0.402766231695811,
+   "stored_marsR_marsc": 0.4027662316958109
+  },
+  {
+   "pair_id": "rose:rose:cnndm:0439bdd9b93cadd6d24b0bbfe872c323a535cfba:brio-ext",
+   "n_ref_sets": 1,
+   "computed_marsP_factcg": 0.863355961712924,
+   "stored_marsP_factcg": 0.863355961712924,
+   "computed_marsR_marsc": 0.48627241949240363,
+   "stored_marsR_marsc": 0.48627241949240363
+  },
+  {
+   "pair_id": "summeval:dm-test-23e8c1d71474d239aa9ae37b9a05031b0054b8ce:4",
+   "n_ref_sets": 11,
+   "computed_marsP_factcg": 0.9399564663569132,
+   "stored_marsP_factcg": 0.9399564663569132,
+   "computed_marsR_marsc": 0.32931914594438344,
+   "stored_marsR_marsc": 0.32931914594438344
+  },
+  {
+   "pair_id": "rose:rose:xsum:40265040:pegasus",
+   "n_ref_sets": 1,
+   "computed_marsP_factcg": 0.07323171105235815,
+   "stored_marsP_factcg": 0.07323171105235815,
+   "computed_marsR_marsc": 0.0029125114281972246,
+   "stored_marsR_marsc": 0.002912511428197225
+  },
+  {
+   "pair_id": "rose:rose:samsum:13863152:PLM-BART",
+   "n_ref_sets": 1,
+   "computed_marsP_factcg": 0.662659078836441,
+   "stored_marsP_factcg": 0.662659078836441,
+   "computed_marsR_marsc": 0.9906469782193501,
+   "stored_marsR_marsc": 0.9906469782193501
+  },
+  {
+   "pair_id": "rose:rose:xsum:35232149:cliff",
+   "n_ref_sets": 1,
+   "computed_marsP_factcg": 0.642471386740605,
+   "stored_marsP_factcg": 0.642471386740605,
+   "computed_marsR_marsc": 0.33134551180733574,
+   "stored_marsR_marsc": 0.3313455118073358
+  },
+  {
+   "pair_id": "summeval:cnn-test-b1c3fc03a2b74cf4c79844c1fe2fdce70a8a436e:4",
+   "n_ref_sets": 11,
+   "computed_marsP_factcg": 0.9577733874320984,
+   "stored_marsP_factcg": 0.9577733874320984,
+   "computed_marsR_marsc": 0.6110089341799418,
+   "stored_marsR_marsc": 0.6110089222590129
+  },
+  {
+   "pair_id": "rose:rose:cnndm:e8c90d557031700caa1afb66dfc85358ef719108:gold",
+   "n_ref_sets": 1,
+   "computed_marsP_factcg": 0.9334033250808715,
+   "stored_marsP_factcg": 0.9334033250808715,
+   "computed_marsR_marsc": 0.0027322513716561453,
+   "stored_marsR_marsc": 0.0027322513716561453
+  },
+  {
+   "pair_id": "unisum:DISL_405:bart",
+   "n_ref_sets": 1,
+   "computed_marsP_factcg": 0.8250349648296833,
+   "stored_marsP_factcg": 0.8250349648296833,
+   "computed_marsR_marsc": 0.00670122583162839,
+   "stored_marsR_marsc": 0.006701230186305635
+  },
+  {
+   "pair_id": "summeval:dm-test-9afda3cde191a883d8c166ceb5765eb53205d8f4:0",
+   "n_ref_sets": 11,
+   "computed_marsP_factcg": 0.7184107026883534,
+   "stored_marsP_factcg": 0.7184107026883534,
+   "computed_marsR_marsc": 0.3873691062132517,
+   "stored_marsR_marsc": 0.38736910621325177
+  },
+  {
+   "pair_id": "rose:rose:samsum:13680972:BART",
+   "n_ref_sets": 1,
+   "computed_marsP_factcg": 0.857744574546814,
+   "stored_marsP_factcg": 0.857744574546814,
+   "computed_marsR_marsc": 0.751701553662618,
+   "stored_marsR_marsc": 0.751701553662618
+  },
+  {
+   "pair_id": "rose:rose:cnndm:06fbf6895442e07e38f1d60af3e82b4f71893e75:pegasus",
+   "n_ref_sets": 1,
+   "computed_marsP_factcg": 0.920375406742096,
+   "stored_marsP_factcg": 0.920375406742096,
+   "computed_marsR_marsc": 0.2854024981841063,
+   "stored_marsR_marsc": 0.28540252722226656
+  },
+  {
+   "pair_id": "rose:rose:samsum:13681082:S-BART",
+   "n_ref_sets": 1,
+   "computed_marsP_factcg": 0.46684839874505996,
+   "stored_marsP_factcg": 0.46684839874505996,
+   "computed_marsR_marsc": 0.08122515678405762,
+   "stored_marsR_marsc": 0.08122515678405762
+  },
+  {
+   "pair_id": "summeval:dm-test-d296270ab4a4cf20f2d9c1aae7514687806f2b35:4",
+   "n_ref_sets": 11,
+   "computed_marsP_factcg": 0.9604119743619647,
+   "stored_marsP_factcg": 0.9604119743619647,
+   "computed_marsR_marsc": 0.5765421638886133,
+   "stored_marsR_marsc": 0.5765421042839686
+  },
+  {
+   "pair_id": "unisum:DISL_1336:phi-2",
+   "n_ref_sets": 1,
+   "computed_marsP_factcg": 0.7596355761800494,
+   "stored_marsP_factcg": 0.7596355761800494,
+   "computed_marsR_marsc": 0.29162833591302234,
+   "stored_marsR_marsc": 0.29162833591302234
+  },
+  {
+   "pair_id": "unisum:DISL_1507:bart",
+   "n_ref_sets": 0,
+   "computed_marsP_factcg": 0.891745408376058,
+   "stored_marsP_factcg": 0.891745408376058,
+   "computed_marsR_marsc": null,
+   "stored_marsR_marsc": null
+  },
+  {
+   "pair_id": "rose:rose:cnndm:065f3e0f95ca9e33f905b0cadcc336d35ac4141d:frost",
+   "n_ref_sets": 1,
+   "computed_marsP_factcg": 0.9241792062918345,
+   "stored_marsP_factcg": 0.9241792062918345,
+   "computed_marsR_marsc": 0.317680021127065,
+   "stored_marsR_marsc": 0.31768001390225964
+  },
+  {
+   "pair_id": "rose:rose:xsum:27689664:cliff",
+   "n_ref_sets": 1,
+   "computed_marsP_factcg": 0.4303372415403525,
+   "stored_marsP_factcg": 0.4303372415403525,
+   "computed_marsR_marsc": 0.004174735811021593,
+   "stored_marsR_marsc": 0.004174735811021593
+  },
+  {
+   "pair_id": "summeval:dm-test-6c1341bedf92a304318545fbf1aad88651de7909:10",
+   "n_ref_sets": 11,
+   "computed_marsP_factcg": 0.9340873435139656,
+   "stored_marsP_factcg": 0.9340873435139656,
+   "computed_marsR_marsc": 0.6566481325361464,
+   "stored_marsR_marsc": 0.6566481325361464
+  },
+  {
+   "pair_id": "unisum:DISL_1309:claude2.1",
+   "n_ref_sets": 1,
+   "computed_marsP_factcg": 0.8020209007793002,
+   "stored_marsP_factcg": 0.8020209007793002,
+   "computed_marsR_marsc": 0.6712716221809387,
+   "stored_marsR_marsc": 0.671271608935462
+  },
+  {
+   "pair_id": "rose:rose:xsum:36159172:brio",
+   "n_ref_sets": 1,
+   "computed_marsP_factcg": 0.16166122009356818,
+   "stored_marsP_factcg": 0.16166122009356818,
+   "computed_marsR_marsc": 0.0033581952253977456,
+   "stored_marsR_marsc": 0.0033581952253977456
+  },
+  {
+   "pair_id": "rose:rose:xsum:37961583:pegasus",
+   "n_ref_sets": 1,
+   "computed_marsP_factcg": 0.3198075443506241,
+   "stored_marsP_factcg": 0.3198075443506241,
+   "computed_marsR_marsc": 0.741904228925705,
+   "stored_marsR_marsc": 0.741904228925705
+  },
+  {
+   "pair_id": "summeval:dm-test-3ba3bde4a1440134bb38ec22ba50db59986b544c:10",
+   "n_ref_sets": 11,
+   "computed_marsP_factcg": 0.8370811522006989,
+   "stored_marsP_factcg": 0.8370811522006989,
+   "computed_marsR_marsc": 0.35053639610608417,
+   "stored_marsR_marsc": 0.35053639610608417
+  },
+  {
+   "pair_id": "rose:rose:xsum:39431070:brio",
+   "n_ref_sets": 1,
+   "computed_marsP_factcg": 0.609101414680481,
+   "stored_marsP_factcg": 0.609101414680481,
+   "computed_marsR_marsc": 0.2564195841550827,
+   "stored_marsR_marsc": 0.2564195841550827
+  },
+  {
+   "pair_id": "rose:rose:samsum:13716336:Ctrl-DiaSumm",
+   "n_ref_sets": 1,
+   "computed_marsP_factcg": 0.6734228928883871,
+   "stored_marsP_factcg": 0.6734228928883871,
+   "computed_marsR_marsc": 0.37092915508482194,
+   "stored_marsR_marsc": 0.37092915508482194
+  },
+  {
+   "pair_id": "rose:rose:cnndm:017e7b1d6176178312cc59efea0a0e13f2a439bb:simcls",
+   "n_ref_sets": 1,
+   "computed_marsP_factcg": 0.9017468154430389,
+   "stored_marsP_factcg": 0.9017468154430389,
+   "computed_marsR_marsc": 0.1479005018870036,
+   "stored_marsR_marsc": 0.1479005018870036
+  },
+  {
+   "pair_id": "rose:rose:cnndm:0219f1f77ce407a032deced3f5a36f184c52d24b:bart",
+   "n_ref_sets": 1,
+   "computed_marsP_factcg": 0.7721590201059977,
+   "stored_marsP_factcg": 0.7721590201059977,
+   "computed_marsR_marsc": 0.6045314371585846,
+   "stored_marsR_marsc": 0.6045314371585846
+  },
+  {
+   "pair_id": "unisum:DISL_1356:gpt-4-0125-preview",
+   "n_ref_sets": 1,
+   "computed_marsP_factcg": 0.8556599766016006,
+   "stored_marsP_factcg": 0.8556599766016006,
+   "computed_marsR_marsc": 0.6887311935424805,
+   "stored_marsR_marsc": 0.6887311935424805
+  },
+  {
+   "pair_id": "rose:rose:cnndm:017e7b1d6176178312cc59efea0a0e13f2a439bb:brio",
+   "n_ref_sets": 1,
+   "computed_marsP_factcg": 0.9221943508494984,
+   "stored_marsP_factcg": 0.9221943508494984,
+   "computed_marsR_marsc": 0.12687270840009054,
+   "stored_marsR_marsc": 0.12687270840009052
+  },
+  {
+   "pair_id": "rose:rose:cnndm:ea13039a2983e407b84b58448200a55a324d72b1:brio",
+   "n_ref_sets": 1,
+   "computed_marsP_factcg": 0.9277771040797234,
+   "stored_marsP_factcg": 0.9277771040797234,
+   "computed_marsR_marsc": 0.29625045011440915,
+   "stored_marsR_marsc": 0.2962504501144091
+  },
+  {
+   "pair_id": "unisum:DISL_343:gpt-4-0125-preview",
+   "n_ref_sets": 0,
+   "computed_marsP_factcg": 0.8808179696400961,
+   "stored_marsP_factcg": 0.8808179696400961,
+   "computed_marsR_marsc": null,
+   "stored_marsR_marsc": null
+  },
+  {
+   "pair_id": "unisum:DISL_185:Mixtral-8x7B-Instruct-v0.1",
+   "n_ref_sets": 1,
+   "computed_marsP_factcg": 0.8996575268415304,
+   "stored_marsP_factcg": 0.8996575268415304,
+   "computed_marsR_marsc": 0.6060453003103082,
+   "stored_marsR_marsc": 0.6060452659924824
+  },
+  {
+   "pair_id": "unisum:DISL_1347:bart",
+   "n_ref_sets": 1,
+   "computed_marsP_factcg": 0.817866841952006,
+   "stored_marsP_factcg": 0.817866841952006,
+   "computed_marsR_marsc": 0.0025619566440582275,
+   "stored_marsR_marsc": 0.0025619566440582275
+  },
+  {
+   "pair_id": "rose:rose:samsum:13730348:UniLM",
+   "n_ref_sets": 1,
+   "computed_marsP_factcg": 0.6800779402256012,
+   "stored_marsP_factcg": 0.6800779402256012,
+   "computed_marsR_marsc": 0.4557342661751641,
+   "stored_marsR_marsc": 0.4557342661751641
+  },
+  {
+   "pair_id": "rose:rose:cnndm:4a6317a1be7562823b26d210ff60f8000837cc1a:ctrlsum",
+   "n_ref_sets": 1,
+   "computed_marsP_factcg": 0.9111349474300038,
+   "stored_marsP_factcg": 0.9111349474300038,
+   "computed_marsR_marsc": 0.41353513465987307,
+   "stored_marsR_marsc": 0.4135351346598732
+  }
+ ],
+ "pass": true
+}

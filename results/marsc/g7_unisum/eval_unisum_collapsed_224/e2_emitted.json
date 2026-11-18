@@ -1,0 +1,1079 @@
+{
+ "registered": "research/marsc_20260916/PREREG.md E2 pilot",
+ "n_pairs": 223,
+ "n_docs": 222,
+ "k": {
+  "5": {
+   "systems": {
+    "humanfact+div1": {
+     "recall": 0.2607696702024076,
+     "recall_stress": 0.26106275855709243,
+     "hit_rate": 0.22130044843049324,
+     "false_alert_rate": 0.12443946188340806,
+     "unknown_rate": 0.6542600896860987,
+     "n_pairs": 223
+    },
+    "judgefact+div1": {
+     "recall": 0.21834044919569454,
+     "recall_stress": 0.21598657854638717,
+     "hit_rate": 0.176457399103139,
+     "false_alert_rate": 0.10112107623318384,
+     "unknown_rate": 0.7224215246636769,
+     "n_pairs": 223
+    },
+    "humanfact.single+div1": {
+     "recall": 0.28651661083143015,
+     "recall_stress": 0.30213442193107265,
+     "hit_rate": 0.24461883408071747,
+     "false_alert_rate": 0.12354260089686098,
+     "unknown_rate": 0.6318385650224214,
+     "n_pairs": 223
+    },
+    "judgefact.single+div1": {
+     "recall": 0.22882204389387906,
+     "recall_stress": 0.2290965414171156,
+     "hit_rate": 0.18632286995515693,
+     "false_alert_rate": 0.09843049327354259,
+     "unknown_rate": 0.7152466367713004,
+     "n_pairs": 223
+    },
+    "humanfact": {
+     "recall": 0.2537163210034905,
+     "recall_stress": 0.27283360578815125,
+     "hit_rate": 0.27152466367713,
+     "false_alert_rate": 0.10470852017937218,
+     "unknown_rate": 0.6237668161434976,
+     "n_pairs": 223
+    },
+    "judgefact": {
+     "recall": 0.20292781523467346,
+     "recall_stress": 0.20860212355427665,
+     "hit_rate": 0.21771300448430492,
+     "false_alert_rate": 0.0804932735426009,
+     "unknown_rate": 0.7017937219730941,
+     "n_pairs": 223
+    }
+   },
+   "paired_recall": {
+    "judgefact+div1": {
+     "mean": 0.042255960530567495,
+     "ci": [
+      0.012910562625964269,
+      0.06799704180672857
+     ]
+    },
+    "humanfact.single+div1": {
+     "mean": -0.02563073611088181,
+     "ci": [
+      -0.040324193825620046,
+      -0.010450504955379707
+     ]
+    },
+    "judgefact.single+div1": {
+     "mean": 0.0317829332196711,
+     "ci": [
+      0.007900522385457416,
+      0.05959790295789027
+     ]
+    },
+    "humanfact": {
+     "mean": 0.00712323907214283,
+     "ci": [
+      -0.012817291043402184,
+      0.027131477175459925
+     ]
+    },
+    "judgefact": {
+     "mean": 0.057186840290217984,
+     "ci": [
+      0.029937449315122964,
+      0.08571720237127213
+     ]
+    }
+   },
+   "primary": "humanfact+div1",
+   "by_resource": {
+    "humanfact+div1": {
+     "unisum_CNNDM": {
+      "recall": 0.2720613876863877,
+      "recall_stress": 0.2656956469456469,
+      "hit_rate": 0.25833333333333336,
+      "false_alert_rate": 0.11666666666666665,
+      "unknown_rate": 0.625,
+      "n_pairs": 24
+     },
+     "unisum_GovReport": {
+      "recall": 0.035249413125574114,
+      "recall_stress": 0.04588304093567252,
+      "hit_rate": 0.08800000000000001,
+      "false_alert_rate": 0.008,
+      "unknown_rate": 0.904,
+      "n_pairs": 25
+     },
+     "unisum_MeetingBank": {
+      "recall": 0.095,
+      "recall_stress": 0.1101190476190476,
+      "hit_rate": 0.064,
+      "false_alert_rate": 0.04800000000000001,
+      "unknown_rate": 0.888,
+      "n_pairs": 25
+     },
+     "unisum_MultiWOZ": {
+      "recall": 0.5318412698412698,
+      "recall_stress": 0.5650462962962962,
+      "hit_rate": 0.43200000000000005,
+      "false_alert_rate": 0.096,
+      "unknown_rate": 0.47200000000000003,
+      "n_pairs": 25
+     },
+     "unisum_Pubmed": {
+      "recall": 0.24563702963702966,
+      "recall_stress": 0.22645502645502646,
+      "hit_rate": 0.32,
+      "false_alert_rate": 0.08,
+      "unknown_rate": 0.6,
+      "n_pairs": 25
+     },
+     "unisum_SQuALITY": {
+      "recall": 0.04099167499167499,
+      "recall_stress": 0.042803640803640804,
+      "hit_rate": 0.08,
+      "false_alert_rate": 0.0,
+      "unknown_rate": 0.92,
+      "n_pairs": 25
+     },
+     "unisum_dialogsum": {
+      "recall": 0.5015238095238095,
+      "recall_stress": 0.4806763285024154,
+      "hit_rate": 0.33,
+      "false_alert_rate": 0.13,
+      "unknown_rate": 0.54,
+      "n_pairs": 25
+     },
+     "unisum_mediasum": {
+      "recall": 0.07205860805860805,
+      "recall_stress": 0.08283730158730158,
+      "hit_rate": 0.11200000000000002,
+      "false_alert_rate": 0.048,
+      "unknown_rate": 0.84,
+      "n_pairs": 25
+     },
+     "unisum_wikihow": {
+      "recall": 0.6666666666666666,
+      "recall_stress": 0.7053571428571428,
+      "hit_rate": 0.3125,
+      "false_alert_rate": 0.6124999999999999,
+      "unknown_rate": 0.075,
+      "n_pairs": 24
+     }
+    },
+    "judgefact+div1": {
+     "unisum_CNNDM": {
+      "recall": 0.1465803872053872,
+      "recall_stress": 0.14658038720538719,
+      "hit_rate": 0.15,
+      "false_alert_rate": 0.03333333333333333,
+      "unknown_rate": 0.8166666666666668,
+      "n_pairs": 24
+     },
+     "unisum_GovReport": {
+      "recall": 0.023305322128851537,
+      "recall_stress": 0.025999999999999995,
+      "hit_rate": 0.04,
+      "false_alert_rate": 0.024000000000000004,
+      "unknown_rate": 0.9359999999999999,
+      "n_pairs": 25
+     },
+     "unisum_MeetingBank": {
+      "recall": 0.08471428571428571,
+      "recall_stress": 0.10218253968253967,
+      "hit_rate": 0.08,
+      "false_alert_rate": 0.008,
+      "unknown_rate": 0.912,
+      "n_pairs": 25
+     },
+     "unisum_MultiWOZ": {
+      "recall": 0.5115238095238095,
+      "recall_stress": 0.549537037037037,
+      "hit_rate": 0.44,
+      "false_alert_rate": 0.07200000000000001,
+      "unknown_rate": 0.488,
+      "n_pairs": 25
+     },
+     "unisum_Pubmed": {
+      "recall": 0.059969696969696965,
+      "recall_stress": 0.06865079365079366,
+      "hit_rate": 0.14400000000000002,
+      "false_alert_rate": 0.008,
+      "unknown_rate": 0.8480000000000001,
+      "n_pairs": 25
+     },
+     "unisum_SQuALITY": {
+      "recall": 0.011713286713286713,
+      "recall_stress": 0.01337995337995338,
+      "hit_rate": 0.024000000000000004,
+      "false_alert_rate": 0.0,
+      "unknown_rate": 0.976,
+      "n_pairs": 25
+     },
+     "unisum_dialogsum": {
+      "recall": 0.4937460317460317,
+      "recall_stress": 0.464975845410628,
+      "hit_rate": 0.33000000000000007,
+      "false_alert_rate": 0.13,
+      "unknown_rate": 0.5399999999999999,
+      "n_pairs": 25
+     },
+     "unisum_mediasum": {
+      "recall": 0.06283882783882784,
+      "recall_stress": 0.07096052096052095,
+      "hit_rate": 0.10400000000000002,
+      "false_alert_rate": 0.016,
+      "unknown_rate": 0.8800000000000001,
+      "n_pairs": 25
+     },
+     "unisum_wikihow": {
+      "recall": 0.7037037037037037,
+      "recall_stress": 0.6845238095238095,
+      "hit_rate": 0.27916666666666673,
+      "false_alert_rate": 0.6375000000000001,
+      "unknown_rate": 0.08333333333333333,
+      "n_pairs": 24
+     }
+    },
+    "humanfact.single+div1": {
+     "unisum_CNNDM": {
+      "recall": 0.3154957311207311,
+      "recall_stress": 0.3282272126022126,
+      "hit_rate": 0.2833333333333333,
+      "false_alert_rate": 0.13333333333333333,
+      "unknown_rate": 0.5833333333333334,
+      "n_pairs": 24
+     },
+     "unisum_GovReport": {
+      "recall": 0.04257412762675921,
+      "recall_stress": 0.05087606837606838,
+      "hit_rate": 0.10400000000000001,
+      "false_alert_rate": 0.0,
+      "unknown_rate": 0.8959999999999999,
+      "n_pairs": 25
+     },
+     "unisum_MeetingBank": {
+      "recall": 0.15782683982683982,
+      "recall_stress": 0.18908730158730158,
+      "hit_rate": 0.12,
+      "false_alert_rate": 0.05600000000000001,
+      "unknown_rate": 0.8240000000000001,
+      "n_pairs": 25
+     },
+     "unisum_MultiWOZ": {
+      "recall": 0.6011111111111112,
+      "recall_stress": 0.7018518518518517,
+      "hit_rate": 0.512,
+      "false_alert_rate": 0.09600000000000002,
+      "unknown_rate": 0.392,
+      "n_pairs": 25
+     },
+     "unisum_Pubmed": {
+      "recall": 0.25897036297036297,
+      "recall_stress": 0.26812169312169315,
+      "hit_rate": 0.336,
+      "false_alert_rate": 0.07200000000000001,
+      "unknown_rate": 0.592,
+      "n_pairs": 25
+     },
+     "unisum_SQuALITY": {
+      "recall": 0.028325008325008328,
+      "recall_stress": 0.031060051060051063,
+      "hit_rate": 0.064,
+      "false_alert_rate": 0.0,
+      "unknown_rate": 0.9359999999999999,
+      "n_pairs": 25
+     },
+     "unisum_dialogsum": {
+      "recall": 0.5393015873015873,
+      "recall_stress": 0.5223429951690821,
+      "hit_rate": 0.35400000000000004,
+      "false_alert_rate": 0.12200000000000001,
+      "unknown_rate": 0.5239999999999999,
+      "n_pairs": 25
+     },
+     "unisum_mediasum": {
+      "recall": 0.06597924297924297,
+      "recall_stress": 0.07572751322751321,
+      "hit_rate": 0.10400000000000001,
+      "false_alert_rate": 0.05600000000000001,
+      "unknown_rate": 0.8400000000000002,
+      "n_pairs": 25
+     },
+     "unisum_wikihow": {
+      "recall": 0.6805555555555556,
+      "recall_stress": 0.7232142857142857,
+      "hit_rate": 0.32916666666666666,
+      "false_alert_rate": 0.5958333333333333,
+      "unknown_rate": 0.075,
+      "n_pairs": 24
+     }
+    },
+    "judgefact.single+div1": {
+     "unisum_CNNDM": {
+      "recall": 0.1648989898989899,
+      "recall_stress": 0.1668004449254449,
+      "hit_rate": 0.15833333333333335,
+      "false_alert_rate": 0.06666666666666667,
+      "unknown_rate": 0.7749999999999999,
+      "n_pairs": 24
+     },
+     "unisum_GovReport": {
+      "recall": 0.026858435681965092,
+      "recall_stress": 0.030188034188034188,
+      "hit_rate": 0.04800000000000001,
+      "false_alert_rate": 0.008,
+      "unknown_rate": 0.944,
+      "n_pairs": 25
+     },
+     "unisum_MeetingBank": {
+      "recall": 0.11035064935064934,
+      "recall_stress": 0.116765873015873,
+      "hit_rate": 0.09600000000000002,
+      "false_alert_rate": 0.008,
+      "unknown_rate": 0.8960000000000001,
+      "n_pairs": 25
+     },
+     "unisum_MultiWOZ": {
+      "recall": 0.5381904761904761,
+      "recall_stress": 0.6027777777777777,
+      "hit_rate": 0.456,
+      "false_alert_rate": 0.08800000000000001,
+      "unknown_rate": 0.45599999999999996,
+      "n_pairs": 25
+     },
+     "unisum_Pubmed": {
+      "recall": 0.05833333333333333,
+      "recall_stress": 0.06478174603174604,
+      "hit_rate": 0.14400000000000002,
+      "false_alert_rate": 0.016,
+      "unknown_rate": 0.84,
+      "n_pairs": 25
+     },
+     "unisum_SQuALITY": {
+      "recall": 0.016713286713286712,
+      "recall_stress": 0.019094239094239095,
+      "hit_rate": 0.032,
+      "false_alert_rate": 0.0,
+      "unknown_rate": 0.968,
+      "n_pairs": 25
+     },
+     "unisum_dialogsum": {
+      "recall": 0.5073650793650792,
+      "recall_stress": 0.4903381642512077,
+      "hit_rate": 0.33,
+      "false_alert_rate": 0.114,
+      "unknown_rate": 0.5559999999999999,
+      "n_pairs": 25
+     },
+     "unisum_mediasum": {
+      "recall": 0.06339438339438339,
+      "recall_stress": 0.06633089133089132,
+      "hit_rate": 0.10400000000000002,
+      "false_alert_rate": 0.016,
+      "unknown_rate": 0.88,
+      "n_pairs": 25
+     },
+     "unisum_wikihow": {
+      "recall": 0.7037037037037037,
+      "recall_stress": 0.6845238095238095,
+      "hit_rate": 0.3125,
+      "false_alert_rate": 0.5875,
+      "unknown_rate": 0.10000000000000002,
+      "n_pairs": 24
+     }
+    },
+    "humanfact": {
+     "unisum_CNNDM": {
+      "recall": 0.22984758297258298,
+      "recall_stress": 0.24061147186147183,
+      "hit_rate": 0.25,
+      "false_alert_rate": 0.09166666666666667,
+      "unknown_rate": 0.6583333333333333,
+      "n_pairs": 24
+     },
+     "unisum_GovReport": {
+      "recall": 0.03330672835935994,
+      "recall_stress": 0.03865384615384616,
+      "hit_rate": 0.09600000000000002,
+      "false_alert_rate": 0.0,
+      "unknown_rate": 0.904,
+      "n_pairs": 25
+     },
+     "unisum_MeetingBank": {
+      "recall": 0.1323376623376623,
+      "recall_stress": 0.15982142857142856,
+      "hit_rate": 0.168,
+      "false_alert_rate": 0.05600000000000001,
+      "unknown_rate": 0.7760000000000001,
+      "n_pairs": 25
+     },
+     "unisum_MultiWOZ": {
+      "recall": 0.5265714285714286,
+      "recall_stress": 0.6006944444444444,
+      "hit_rate": 0.5840000000000001,
+      "false_alert_rate": 0.064,
+      "unknown_rate": 0.35200000000000004,
+      "n_pairs": 25
+     },
+     "unisum_Pubmed": {
+      "recall": 0.2483036963036963,
+      "recall_stress": 0.26299348799348804,
+      "hit_rate": 0.35200000000000004,
+      "false_alert_rate": 0.07200000000000001,
+      "unknown_rate": 0.576,
+      "n_pairs": 25
+     },
+     "unisum_SQuALITY": {
+      "recall": 0.025248085248085247,
+      "recall_stress": 0.026615606615606614,
+      "hit_rate": 0.064,
+      "false_alert_rate": 0.0,
+      "unknown_rate": 0.9359999999999999,
+      "n_pairs": 25
+     },
+     "unisum_dialogsum": {
+      "recall": 0.4848571428571428,
+      "recall_stress": 0.5277777777777778,
+      "hit_rate": 0.41,
+      "false_alert_rate": 0.10600000000000001,
+      "unknown_rate": 0.48400000000000004,
+      "n_pairs": 25
+     },
+     "unisum_mediasum": {
+      "recall": 0.06264590964590963,
+      "recall_stress": 0.06878306878306878,
+      "hit_rate": 0.09600000000000002,
+      "false_alert_rate": 0.07200000000000001,
+      "unknown_rate": 0.8320000000000001,
+      "n_pairs": 25
+     },
+     "unisum_wikihow": {
+      "recall": 0.6504629629629629,
+      "recall_stress": 0.7038690476190477,
+      "hit_rate": 0.4291666666666667,
+      "false_alert_rate": 0.49583333333333335,
+      "unknown_rate": 0.075,
+      "n_pairs": 24
+     }
+    },
+    "judgefact": {
+     "unisum_CNNDM": {
+      "recall": 0.0998526936026936,
+      "recall_stress": 0.10175414862914862,
+      "hit_rate": 0.13333333333333333,
+      "false_alert_rate": 0.05833333333333333,
+      "unknown_rate": 0.8083333333333332,
+      "n_pairs": 24
+     },
+     "unisum_GovReport": {
+      "recall": 0.020191769015298427,
+      "recall_stress": 0.023521367521367516,
+      "hit_rate": 0.04,
+      "false_alert_rate": 0.008,
+      "unknown_rate": 0.9519999999999998,
+      "n_pairs": 25
+     },
+     "unisum_MeetingBank": {
+      "recall": 0.11035064935064934,
+      "recall_stress": 0.116765873015873,
+      "hit_rate": 0.136,
+      "false_alert_rate": 0.008,
+      "unknown_rate": 0.8560000000000001,
+      "n_pairs": 25
+     },
+     "unisum_MultiWOZ": {
+      "recall": 0.5058730158730158,
+      "recall_stress": 0.5636574074074074,
+      "hit_rate": 0.544,
+      "false_alert_rate": 0.05600000000000001,
+      "unknown_rate": 0.4,
+      "n_pairs": 25
+     },
+     "unisum_Pubmed": {
+      "recall": 0.05166666666666666,
+      "recall_stress": 0.0564484126984127,
+      "hit_rate": 0.136,
+      "false_alert_rate": 0.016,
+      "unknown_rate": 0.8480000000000001,
+      "n_pairs": 25
+     },
+     "unisum_SQuALITY": {
+      "recall": 0.016713286713286712,
+      "recall_stress": 0.019094239094239095,
+      "hit_rate": 0.04,
+      "false_alert_rate": 0.0,
+      "unknown_rate": 0.96,
+      "n_pairs": 25
+     },
+     "unisum_dialogsum": {
+      "recall": 0.4073650793650793,
+      "recall_stress": 0.43599033816425115,
+      "hit_rate": 0.39399999999999996,
+      "false_alert_rate": 0.098,
+      "unknown_rate": 0.508,
+      "n_pairs": 25
+     },
+     "unisum_mediasum": {
+      "recall": 0.06339438339438339,
+      "recall_stress": 0.06633089133089132,
+      "hit_rate": 0.11200000000000002,
+      "false_alert_rate": 0.016,
+      "unknown_rate": 0.872,
+      "n_pairs": 25
+     },
+     "unisum_wikihow": {
+      "recall": 0.6805555555555556,
+      "recall_stress": 0.6741071428571428,
+      "hit_rate": 0.4291666666666667,
+      "false_alert_rate": 0.4791666666666667,
+      "unknown_rate": 0.09166666666666667,
+      "n_pairs": 24
+     }
+    }
+   }
+  },
+  "10": {
+   "systems": {
+    "humanfact+div1": {
+     "recall": 0.3402063023633553,
+     "recall_stress": 0.3330571915563102,
+     "hit_rate": 0.1949676133532636,
+     "false_alert_rate": 0.13774289985052315,
+     "unknown_rate": 0.6672894867962134,
+     "n_pairs": 223
+    },
+    "judgefact+div1": {
+     "recall": 0.28907126727674304,
+     "recall_stress": 0.289858984715444,
+     "hit_rate": 0.1586447433981066,
+     "false_alert_rate": 0.12294469357249625,
+     "unknown_rate": 0.7184105630293972,
+     "n_pairs": 223
+    },
+    "humanfact.single+div1": {
+     "recall": 0.38746558861552227,
+     "recall_stress": 0.3984982870874334,
+     "hit_rate": 0.21783756851021424,
+     "false_alert_rate": 0.13056801195814646,
+     "unknown_rate": 0.6515944195316393,
+     "n_pairs": 223
+    },
+    "judgefact.single+div1": {
+     "recall": 0.3120500417389462,
+     "recall_stress": 0.3154446871017005,
+     "hit_rate": 0.1703039362232187,
+     "false_alert_rate": 0.1139760837070254,
+     "unknown_rate": 0.7157199800697559,
+     "n_pairs": 223
+    },
+    "humanfact": {
+     "recall": 0.3535131912041929,
+     "recall_stress": 0.364892684821544,
+     "hit_rate": 0.2420528151469856,
+     "false_alert_rate": 0.12204783258594919,
+     "unknown_rate": 0.6358993522670653,
+     "n_pairs": 223
+    },
+    "judgefact": {
+     "recall": 0.27500126102657096,
+     "recall_stress": 0.2817754058247636,
+     "hit_rate": 0.19945191828599898,
+     "false_alert_rate": 0.10052316890881913,
+     "unknown_rate": 0.7000249128051819,
+     "n_pairs": 223
+    }
+   },
+   "paired_recall": {
+    "judgefact+div1": {
+     "mean": 0.051097852289906,
+     "ci": [
+      0.022518346508773962,
+      0.07829735270840701
+     ]
+    },
+    "humanfact.single+div1": {
+     "mean": -0.047005243175979004,
+     "ci": [
+      -0.06674564569298738,
+      -0.025804734165098243
+     ]
+    },
+    "judgefact.single+div1": {
+     "mean": 0.02866941670839948,
+     "ci": [
+      0.003188154431827494,
+      0.05825544168151409
+     ]
+    },
+    "humanfact": {
+     "mean": -0.014000156441641334,
+     "ci": [
+      -0.03819357184856927,
+      0.01271718345890559
+     ]
+    },
+    "judgefact": {
+     "mean": 0.06449841467912393,
+     "ci": [
+      0.037621523388104816,
+      0.09394648588257513
+     ]
+    }
+   },
+   "primary": "humanfact+div1",
+   "by_resource": {
+    "humanfact+div1": {
+     "unisum_CNNDM": {
+      "recall": 0.41660804473304475,
+      "recall_stress": 0.4226927008177008,
+      "hit_rate": 0.20833333333333334,
+      "false_alert_rate": 0.11666666666666668,
+      "unknown_rate": 0.6749999999999999,
+      "n_pairs": 24
+     },
+     "unisum_GovReport": {
+      "recall": 0.07505053357375338,
+      "recall_stress": 0.08421637426900584,
+      "hit_rate": 0.08,
+      "false_alert_rate": 0.004,
+      "unknown_rate": 0.9159999999999999,
+      "n_pairs": 25
+     },
+     "unisum_MeetingBank": {
+      "recall": 0.143,
+      "recall_stress": 0.1532738095238095,
+      "hit_rate": 0.052000000000000005,
+      "false_alert_rate": 0.064,
+      "unknown_rate": 0.8839999999999999,
+      "n_pairs": 25
+     },
+     "unisum_MultiWOZ": {
+      "recall": 0.6688571428571428,
+      "recall_stress": 0.6453703703703703,
+      "hit_rate": 0.3234285714285714,
+      "false_alert_rate": 0.18685714285714286,
+      "unknown_rate": 0.48971428571428577,
+      "n_pairs": 25
+     },
+     "unisum_Pubmed": {
+      "recall": 0.30432101232101233,
+      "recall_stress": 0.3173585673585674,
+      "hit_rate": 0.27599999999999997,
+      "false_alert_rate": 0.08,
+      "unknown_rate": 0.644,
+      "n_pairs": 25
+     },
+     "unisum_SQuALITY": {
+      "recall": 0.055526473526473524,
+      "recall_stress": 0.057914751914751914,
+      "hit_rate": 0.05600000000000001,
+      "false_alert_rate": 0.0,
+      "unknown_rate": 0.9440000000000001,
+      "n_pairs": 25
+     },
+     "unisum_dialogsum": {
+      "recall": 0.616031746031746,
+      "recall_stress": 0.5652173913043478,
+      "hit_rate": 0.3211746031746031,
+      "false_alert_rate": 0.1644761904761905,
+      "unknown_rate": 0.5143492063492063,
+      "n_pairs": 25
+     },
+     "unisum_mediasum": {
+      "recall": 0.1469267399267399,
+      "recall_stress": 0.17592592592592593,
+      "hit_rate": 0.10800000000000001,
+      "false_alert_rate": 0.044000000000000004,
+      "unknown_rate": 0.848,
+      "n_pairs": 25
+     },
+     "unisum_wikihow": {
+      "recall": 0.7546296296296295,
+      "recall_stress": 0.7440476190476191,
+      "hit_rate": 0.33594576719576713,
+      "false_alert_rate": 0.5972222222222222,
+      "unknown_rate": 0.06683201058201059,
+      "n_pairs": 24
+     }
+    },
+    "judgefact+div1": {
+     "unisum_CNNDM": {
+      "recall": 0.27138498075998074,
+      "recall_stress": 0.2656640812890813,
+      "hit_rate": 0.14583333333333334,
+      "false_alert_rate": 0.07916666666666666,
+      "unknown_rate": 0.775,
+      "n_pairs": 24
+     },
+     "unisum_GovReport": {
+      "recall": 0.03609653092006033,
+      "recall_stress": 0.057111111111111106,
+      "hit_rate": 0.036,
+      "false_alert_rate": 0.012000000000000002,
+      "unknown_rate": 0.9520000000000001,
+      "n_pairs": 25
+     },
+     "unisum_MeetingBank": {
+      "recall": 0.14604761904761904,
+      "recall_stress": 0.15773809523809523,
+      "hit_rate": 0.052000000000000005,
+      "false_alert_rate": 0.027999999999999997,
+      "unknown_rate": 0.92,
+      "n_pairs": 25
+     },
+     "unisum_MultiWOZ": {
+      "recall": 0.6797142857142857,
+      "recall_stress": 0.732175925925926,
+      "hit_rate": 0.33542857142857146,
+      "false_alert_rate": 0.1908571428571428,
+      "unknown_rate": 0.47371428571428564,
+      "n_pairs": 25
+     },
+     "unisum_Pubmed": {
+      "recall": 0.07983682983682984,
+      "recall_stress": 0.10677910052910052,
+      "hit_rate": 0.10400000000000001,
+      "false_alert_rate": 0.027999999999999997,
+      "unknown_rate": 0.8680000000000001,
+      "n_pairs": 25
+     },
+     "unisum_SQuALITY": {
+      "recall": 0.029635364635364633,
+      "recall_stress": 0.025587745587745587,
+      "hit_rate": 0.027999999999999997,
+      "false_alert_rate": 0.0,
+      "unknown_rate": 0.972,
+      "n_pairs": 25
+     },
+     "unisum_dialogsum": {
+      "recall": 0.6265396825396825,
+      "recall_stress": 0.5700483091787439,
+      "hit_rate": 0.31717460317460316,
+      "false_alert_rate": 0.1644761904761905,
+      "unknown_rate": 0.5183492063492063,
+      "n_pairs": 25
+     },
+     "unisum_mediasum": {
+      "recall": 0.1074053724053724,
+      "recall_stress": 0.13335877085877085,
+      "hit_rate": 0.08800000000000001,
+      "false_alert_rate": 0.024,
+      "unknown_rate": 0.8880000000000001,
+      "n_pairs": 25
+     },
+     "unisum_wikihow": {
+      "recall": 0.7546296296296295,
+      "recall_stress": 0.7440476190476191,
+      "hit_rate": 0.3276124338624338,
+      "false_alert_rate": 0.5972222222222222,
+      "unknown_rate": 0.07516534391534391,
+      "n_pairs": 24
+     }
+    },
+    "humanfact.single+div1": {
+     "unisum_CNNDM": {
+      "recall": 0.4935756373256373,
+      "recall_stress": 0.5146900553150554,
+      "hit_rate": 0.25,
+      "false_alert_rate": 0.09583333333333333,
+      "unknown_rate": 0.6541666666666667,
+      "n_pairs": 24
+     },
+     "unisum_GovReport": {
+      "recall": 0.08645261343403757,
+      "recall_stress": 0.10330881691408006,
+      "hit_rate": 0.10000000000000002,
+      "false_alert_rate": 0.004,
+      "unknown_rate": 0.8959999999999999,
+      "n_pairs": 25
+     },
+     "unisum_MeetingBank": {
+      "recall": 0.27116017316017316,
+      "recall_stress": 0.30863095238095234,
+      "hit_rate": 0.09200000000000001,
+      "false_alert_rate": 0.04800000000000001,
+      "unknown_rate": 0.86,
+      "n_pairs": 25
+     },
+     "unisum_MultiWOZ": {
+      "recall": 0.767904761904762,
+      "recall_stress": 0.8391203703703702,
+      "hit_rate": 0.37542857142857144,
+      "false_alert_rate": 0.17485714285714288,
+      "unknown_rate": 0.44971428571428573,
+      "n_pairs": 25
+     },
+     "unisum_Pubmed": {
+      "recall": 0.32298767898767905,
+      "recall_stress": 0.34043549043549043,
+      "hit_rate": 0.288,
+      "false_alert_rate": 0.08,
+      "unknown_rate": 0.632,
+      "n_pairs": 25
+     },
+     "unisum_SQuALITY": {
+      "recall": 0.0586033966033966,
+      "recall_stress": 0.06235919635919635,
+      "hit_rate": 0.06,
+      "false_alert_rate": 0.0,
+      "unknown_rate": 0.94,
+      "n_pairs": 25
+     },
+     "unisum_dialogsum": {
+      "recall": 0.6674603174603176,
+      "recall_stress": 0.6183574879227053,
+      "hit_rate": 0.34117460317460313,
+      "false_alert_rate": 0.14847619047619048,
+      "unknown_rate": 0.5103492063492063,
+      "n_pairs": 25
+     },
+     "unisum_mediasum": {
+      "recall": 0.17146642246642244,
+      "recall_stress": 0.20618386243386244,
+      "hit_rate": 0.12000000000000002,
+      "false_alert_rate": 0.04800000000000001,
+      "unknown_rate": 0.8320000000000001,
+      "n_pairs": 25
+     },
+     "unisum_wikihow": {
+      "recall": 0.7546296296296295,
+      "recall_stress": 0.7440476190476191,
+      "hit_rate": 0.3401124338624339,
+      "false_alert_rate": 0.5930555555555556,
+      "unknown_rate": 0.06683201058201059,
+      "n_pairs": 24
+     }
+    },
+    "judgefact.single+div1": {
+     "unisum_CNNDM": {
+      "recall": 0.30790945165945166,
+      "recall_stress": 0.3150853775853776,
+      "hit_rate": 0.15833333333333333,
+      "false_alert_rate": 0.0625,
+      "unknown_rate": 0.7791666666666667,
+      "n_pairs": 24
+     },
+     "unisum_GovReport": {
+      "recall": 0.043441182140872545,
+      "recall_stress": 0.04914799820062978,
+      "hit_rate": 0.044000000000000004,
+      "false_alert_rate": 0.012000000000000002,
+      "unknown_rate": 0.9440000000000001,
+      "n_pairs": 25
+     },
+     "unisum_MeetingBank": {
+      "recall": 0.22768398268398266,
+      "recall_stress": 0.24454365079365079,
+      "hit_rate": 0.07600000000000001,
+      "false_alert_rate": 0.012000000000000002,
+      "unknown_rate": 0.9119999999999999,
+      "n_pairs": 25
+     },
+     "unisum_MultiWOZ": {
+      "recall": 0.7046666666666666,
+      "recall_stress": 0.7657407407407408,
+      "hit_rate": 0.3394285714285715,
+      "false_alert_rate": 0.17485714285714288,
+      "unknown_rate": 0.48571428571428577,
+      "n_pairs": 25
+     },
+     "unisum_Pubmed": {
+      "recall": 0.0872004662004662,
+      "recall_stress": 0.11273148148148149,
+      "hit_rate": 0.11600000000000002,
+      "false_alert_rate": 0.027999999999999997,
+      "unknown_rate": 0.8560000000000001,
+      "n_pairs": 25
+     },
+     "unisum_SQuALITY": {
+      "recall": 0.02720679320679321,
+      "recall_stress": 0.029587745587745587,
+      "hit_rate": 0.028000000000000004,
+      "false_alert_rate": 0.0,
+      "unknown_rate": 0.9719999999999999,
+      "n_pairs": 25
+     },
+     "unisum_dialogsum": {
+      "recall": 0.6549206349206349,
+      "recall_stress": 0.606280193236715,
+      "hit_rate": 0.3371746031746031,
+      "false_alert_rate": 0.1524761904761905,
+      "unknown_rate": 0.5103492063492062,
+      "n_pairs": 25
+     },
+     "unisum_mediasum": {
+      "recall": 0.12954822954822956,
+      "recall_stress": 0.15578194953194954,
+      "hit_rate": 0.10800000000000001,
+      "false_alert_rate": 0.008,
+      "unknown_rate": 0.884,
+      "n_pairs": 25
+     },
+     "unisum_wikihow": {
+      "recall": 0.7476851851851851,
+      "recall_stress": 0.7351190476190477,
+      "hit_rate": 0.3317791005291005,
+      "false_alert_rate": 0.5930555555555556,
+      "unknown_rate": 0.07516534391534391,
+      "n_pairs": 24
+     }
+    },
+    "humanfact": {
+     "unisum_CNNDM": {
+      "recall": 0.3674497955747955,
+      "recall_stress": 0.38099146224146224,
+      "hit_rate": 0.24166666666666667,
+      "false_alert_rate": 0.10833333333333334,
+      "unknown_rate": 0.65,
+      "n_pairs": 24
+     },
+     "unisum_GovReport": {
+      "recall": 0.06319491035280508,
+      "recall_stress": 0.07286437246963562,
+      "hit_rate": 0.1,
+      "false_alert_rate": 0.008,
+      "unknown_rate": 0.8919999999999999,
+      "n_pairs": 25
+     },
+     "unisum_MeetingBank": {
+      "recall": 0.27509956709956707,
+      "recall_stress": 0.31547619047619047,
+      "hit_rate": 0.14800000000000002,
+      "false_alert_rate": 0.036000000000000004,
+      "unknown_rate": 0.816,
+      "n_pairs": 25
+     },
+     "unisum_MultiWOZ": {
+      "recall": 0.6965396825396826,
+      "recall_stress": 0.7793981481481481,
+      "hit_rate": 0.49942857142857133,
+      "false_alert_rate": 0.14285714285714285,
+      "unknown_rate": 0.35771428571428565,
+      "n_pairs": 25
+     },
+     "unisum_Pubmed": {
+      "recall": 0.32832101232101235,
+      "recall_stress": 0.3468457468457468,
+      "hit_rate": 0.29600000000000004,
+      "false_alert_rate": 0.08,
+      "unknown_rate": 0.624,
+      "n_pairs": 25
+     },
+     "unisum_SQuALITY": {
+      "recall": 0.05244955044955045,
+      "recall_stress": 0.057914751914751914,
+      "hit_rate": 0.05600000000000001,
+      "false_alert_rate": 0.0,
+      "unknown_rate": 0.9440000000000001,
+      "n_pairs": 25
+     },
+     "unisum_dialogsum": {
+      "recall": 0.6306031746031746,
+      "recall_stress": 0.5996376811594203,
+      "hit_rate": 0.3851746031746031,
+      "false_alert_rate": 0.12047619047619049,
+      "unknown_rate": 0.49434920634920637,
+      "n_pairs": 25
+     },
+     "unisum_mediasum": {
+      "recall": 0.13120146520146517,
+      "recall_stress": 0.15393518518518517,
+      "hit_rate": 0.10400000000000001,
+      "false_alert_rate": 0.044000000000000004,
+      "unknown_rate": 0.8519999999999999,
+      "n_pairs": 25
+     },
+     "unisum_wikihow": {
+      "recall": 0.7476851851851851,
+      "recall_stress": 0.7351190476190477,
+      "hit_rate": 0.35261243386243385,
+      "false_alert_rate": 0.576388888888889,
+      "unknown_rate": 0.07099867724867724,
+      "n_pairs": 24
+     }
+    },
+    "judgefact": {
+     "unisum_CNNDM": {
+      "recall": 0.20025252525252527,
+      "recall_stress": 0.20701509139009136,
+      "hit_rate": 0.15416666666666667,
+      "false_alert_rate": 0.06666666666666667,
+      "unknown_rate": 0.7791666666666668,
+      "n_pairs": 24
+     },
+     "unisum_GovReport": {
+      "recall": 0.0336975923972828,
+      "recall_stress": 0.03940440845704003,
+      "hit_rate": 0.04800000000000001,
+      "false_alert_rate": 0.008,
+      "unknown_rate": 0.9440000000000001,
+      "n_pairs": 25
+     },
+     "unisum_MeetingBank": {
+      "recall": 0.19495670995670994,
+      "recall_stress": 0.2181547619047619,
+      "hit_rate": 0.12000000000000002,
+      "false_alert_rate": 0.008,
+      "unknown_rate": 0.872,
+      "n_pairs": 25
+     },
+     "unisum_MultiWOZ": {
+      "recall": 0.6166031746031746,
+      "recall_stress": 0.7016203703703704,
+      "hit_rate": 0.5114285714285713,
+      "false_alert_rate": 0.11485714285714285,
+      "unknown_rate": 0.3737142857142857,
+      "n_pairs": 25
+     },
+     "unisum_Pubmed": {
+      "recall": 0.08053379953379952,
+      "recall_stress": 0.10439814814814814,
+      "hit_rate": 0.11199999999999999,
+      "false_alert_rate": 0.027999999999999997,
+      "unknown_rate": 0.86,
+      "n_pairs": 25
+     },
+     "unisum_SQuALITY": {
+      "recall": 0.02720679320679321,
+      "recall_stress": 0.029587745587745587,
+      "hit_rate": 0.032,
+      "false_alert_rate": 0.0,
+      "unknown_rate": 0.968,
+      "n_pairs": 25
+     },
+     "unisum_dialogsum": {
+      "recall": 0.6155555555555555,
+      "recall_stress": 0.5887681159420289,
+      "hit_rate": 0.3811746031746032,
+      "false_alert_rate": 0.11247619047619047,
+      "unknown_rate": 0.5063492063492063,
+      "n_pairs": 25
+     },
+     "unisum_mediasum": {
+      "recall": 0.09288156288156287,
+      "recall_stress": 0.10237586487586486,
+      "hit_rate": 0.09200000000000001,
+      "false_alert_rate": 0.008,
+      "unknown_rate": 0.9,
+      "n_pairs": 25
+     },
+     "unisum_wikihow": {
+      "recall": 0.7407407407407407,
+      "recall_stress": 0.7261904761904762,
+      "hit_rate": 0.3484457671957672,
+      "false_alert_rate": 0.576388888888889,
+      "unknown_rate": 0.07516534391534391,
+      "n_pairs": 24
+     }
+    }
+   }
+  }
+ }
+}

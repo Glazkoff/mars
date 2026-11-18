@@ -1,0 +1,477 @@
+{
+ "registered": "PREREG.md Wave A / A1b",
+ "units": {
+  "name": "gemma+ent",
+  "path": "/home/user/results/mars3/m32/units_gemma+ent_validation.jsonl",
+  "n_pairs": 1466
+ },
+ "k": 10,
+ "comparisons": {
+  "single_seed_20260906_noRule": {
+   "n_calibrated_files": 1,
+   "n_raw_files": 1,
+   "calibrated_files": [
+    "units_gemma+ent_mc-A-lam1-crossenc-inv_seed20260906.jsonl"
+   ],
+   "raw_files": [
+    "units_gemma+ent_mc-A-lam1-crossenc-inv_seed20260906.jsonl"
+   ],
+   "n_pairs_compared": 1466,
+   "n_pairs_topk_set_changed": 0,
+   "n_pairs_topk_order_changed": 0,
+   "share_topk_set_changed": 0.0,
+   "examples": []
+  },
+  "single_seed_20260906_div1": {
+   "n_calibrated_files": 1,
+   "n_raw_files": 1,
+   "calibrated_files": [
+    "units_gemma+ent_mc-A-lam1-crossenc-inv_seed20260906_div1.jsonl"
+   ],
+   "raw_files": [
+    "units_gemma+ent_mc-A-lam1-crossenc-inv_seed20260906_div1.jsonl"
+   ],
+   "n_pairs_compared": 1466,
+   "n_pairs_topk_set_changed": 0,
+   "n_pairs_topk_order_changed": 0,
+   "share_topk_set_changed": 0.0,
+   "examples": []
+  },
+  "single_seed_20260907_noRule": {
+   "n_calibrated_files": 1,
+   "n_raw_files": 1,
+   "calibrated_files": [
+    "units_gemma+ent_mc-A-lam1-crossenc-inv_seed20260907.jsonl"
+   ],
+   "raw_files": [
+    "units_gemma+ent_mc-A-lam1-crossenc-inv_seed20260907.jsonl"
+   ],
+   "n_pairs_compared": 1466,
+   "n_pairs_topk_set_changed": 0,
+   "n_pairs_topk_order_changed": 0,
+   "share_topk_set_changed": 0.0,
+   "examples": []
+  },
+  "single_seed_20260907_div1": {
+   "n_calibrated_files": 1,
+   "n_raw_files": 1,
+   "calibrated_files": [
+    "units_gemma+ent_mc-A-lam1-crossenc-inv_seed20260907_div1.jsonl"
+   ],
+   "raw_files": [
+    "units_gemma+ent_mc-A-lam1-crossenc-inv_seed20260907_div1.jsonl"
+   ],
+   "n_pairs_compared": 1466,
+   "n_pairs_topk_set_changed": 0,
+   "n_pairs_topk_order_changed": 0,
+   "share_topk_set_changed": 0.0,
+   "examples": []
+  },
+  "single_seed_20260908_noRule": {
+   "n_calibrated_files": 1,
+   "n_raw_files": 1,
+   "calibrated_files": [
+    "units_gemma+ent_mc-A-lam1-crossenc-inv_seed20260908.jsonl"
+   ],
+   "raw_files": [
+    "units_gemma+ent_mc-A-lam1-crossenc-inv_seed20260908.jsonl"
+   ],
+   "n_pairs_compared": 1466,
+   "n_pairs_topk_set_changed": 0,
+   "n_pairs_topk_order_changed": 0,
+   "share_topk_set_changed": 0.0,
+   "examples": []
+  },
+  "single_seed_20260908_div1": {
+   "n_calibrated_files": 1,
+   "n_raw_files": 1,
+   "calibrated_files": [
+    "units_gemma+ent_mc-A-lam1-crossenc-inv_seed20260908_div1.jsonl"
+   ],
+   "raw_files": [
+    "units_gemma+ent_mc-A-lam1-crossenc-inv_seed20260908_div1.jsonl"
+   ],
+   "n_pairs_compared": 1466,
+   "n_pairs_topk_set_changed": 0,
+   "n_pairs_topk_order_changed": 0,
+   "share_topk_set_changed": 0.0,
+   "examples": []
+  },
+  "consensus_noRule": {
+   "n_calibrated_files": 3,
+   "n_raw_files": 3,
+   "calibrated_files": [
+    "units_gemma+ent_mc-A-lam1-crossenc-inv_seed20260906.jsonl",
+    "units_gemma+ent_mc-A-lam1-crossenc-inv_seed20260907.jsonl",
+    "units_gemma+ent_mc-A-lam1-crossenc-inv_seed20260908.jsonl"
+   ],
+   "raw_files": [
+    "units_gemma+ent_mc-A-lam1-crossenc-inv_seed20260906.jsonl",
+    "units_gemma+ent_mc-A-lam1-crossenc-inv_seed20260907.jsonl",
+    "units_gemma+ent_mc-A-lam1-crossenc-inv_seed20260908.jsonl"
+   ],
+   "n_pairs_compared": 1466,
+   "n_pairs_topk_set_changed": 518,
+   "n_pairs_topk_order_changed": 1125,
+   "share_topk_set_changed": 0.3533424283765348,
+   "examples": [
+    {
+     "pair_id": "natural:100052:Qwen/Qwen2.5-7B-Instruct",
+     "only_calibrated": [
+      18
+     ],
+     "only_raw": [
+      54
+     ]
+    },
+    {
+     "pair_id": "natural:100055:Qwen/Qwen2.5-7B-Instruct",
+     "only_calibrated": [
+      10
+     ],
+     "only_raw": [
+      27
+     ]
+    },
+    {
+     "pair_id": "natural:100181:microsoft/phi-4",
+     "only_calibrated": [
+      42
+     ],
+     "only_raw": [
+      11
+     ]
+    },
+    {
+     "pair_id": "natural:1203:Qwen/Qwen2.5-7B-Instruct",
+     "only_calibrated": [
+      26
+     ],
+     "only_raw": [
+      145
+     ]
+    },
+    {
+     "pair_id": "natural:1286:Qwen/Qwen2.5-7B-Instruct",
+     "only_calibrated": [
+      107
+     ],
+     "only_raw": [
+      80
+     ]
+    }
+   ]
+  },
+  "consensus_div1": {
+   "n_calibrated_files": 3,
+   "n_raw_files": 3,
+   "calibrated_files": [
+    "units_gemma+ent_mc-A-lam1-crossenc-inv_seed20260906_div1.jsonl",
+    "units_gemma+ent_mc-A-lam1-crossenc-inv_seed20260907_div1.jsonl",
+    "units_gemma+ent_mc-A-lam1-crossenc-inv_seed20260908_div1.jsonl"
+   ],
+   "raw_files": [
+    "units_gemma+ent_mc-A-lam1-crossenc-inv_seed20260906_div1.jsonl",
+    "units_gemma+ent_mc-A-lam1-crossenc-inv_seed20260907_div1.jsonl",
+    "units_gemma+ent_mc-A-lam1-crossenc-inv_seed20260908_div1.jsonl"
+   ],
+   "n_pairs_compared": 1466,
+   "n_pairs_topk_set_changed": 154,
+   "n_pairs_topk_order_changed": 767,
+   "share_topk_set_changed": 0.10504774897680765,
+   "examples": [
+    {
+     "pair_id": "natural:100052:Qwen/Qwen2.5-7B-Instruct",
+     "only_calibrated": [
+      18
+     ],
+     "only_raw": [
+      54
+     ]
+    },
+    {
+     "pair_id": "natural:100055:Qwen/Qwen2.5-7B-Instruct",
+     "only_calibrated": [
+      10
+     ],
+     "only_raw": [
+      27
+     ]
+    },
+    {
+     "pair_id": "natural:2562:microsoft/phi-4",
+     "only_calibrated": [
+      4
+     ],
+     "only_raw": [
+      102
+     ]
+    },
+    {
+     "pair_id": "natural:2637:Qwen/Qwen2.5-7B-Instruct",
+     "only_calibrated": [
+      13
+     ],
+     "only_raw": [
+      44
+     ]
+    },
+    {
+     "pair_id": "natural:499:Qwen/Qwen2.5-7B-Instruct",
+     "only_calibrated": [
+      36
+     ],
+     "only_raw": [
+      6
+     ]
+    }
+   ]
+  },
+  "single_model_noRule": {
+   "n_calibrated_files": 1,
+   "n_raw_files": 1,
+   "calibrated_files": [
+    "gemma+ent_humanfact_seedavg.jsonl"
+   ],
+   "raw_files": [
+    "gemma+ent_humanfact_seedavg.jsonl"
+   ],
+   "n_pairs_compared": 1466,
+   "n_pairs_topk_set_changed": 518,
+   "n_pairs_topk_order_changed": 1125,
+   "share_topk_set_changed": 0.3533424283765348,
+   "examples": [
+    {
+     "pair_id": "natural:100052:Qwen/Qwen2.5-7B-Instruct",
+     "only_calibrated": [
+      18
+     ],
+     "only_raw": [
+      54
+     ]
+    },
+    {
+     "pair_id": "natural:100055:Qwen/Qwen2.5-7B-Instruct",
+     "only_calibrated": [
+      10
+     ],
+     "only_raw": [
+      27
+     ]
+    },
+    {
+     "pair_id": "natural:100181:microsoft/phi-4",
+     "only_calibrated": [
+      42
+     ],
+     "only_raw": [
+      11
+     ]
+    },
+    {
+     "pair_id": "natural:1203:Qwen/Qwen2.5-7B-Instruct",
+     "only_calibrated": [
+      26
+     ],
+     "only_raw": [
+      145
+     ]
+    },
+    {
+     "pair_id": "natural:1286:Qwen/Qwen2.5-7B-Instruct",
+     "only_calibrated": [
+      107
+     ],
+     "only_raw": [
+      80
+     ]
+    }
+   ]
+  },
+  "single_model_div1": {
+   "n_calibrated_files": 1,
+   "n_raw_files": 1,
+   "calibrated_files": [
+    "gemma+ent_humanfact_seedavg_div1.jsonl"
+   ],
+   "raw_files": [
+    "gemma+ent_humanfact_seedavg_div1.jsonl"
+   ],
+   "n_pairs_compared": 1466,
+   "n_pairs_topk_set_changed": 510,
+   "n_pairs_topk_order_changed": 1015,
+   "share_topk_set_changed": 0.3478854024556617,
+   "examples": [
+    {
+     "pair_id": "natural:100052:Qwen/Qwen2.5-7B-Instruct",
+     "only_calibrated": [
+      18
+     ],
+     "only_raw": [
+      54
+     ]
+    },
+    {
+     "pair_id": "natural:100055:Qwen/Qwen2.5-7B-Instruct",
+     "only_calibrated": [
+      10
+     ],
+     "only_raw": [
+      27
+     ]
+    },
+    {
+     "pair_id": "natural:100181:microsoft/phi-4",
+     "only_calibrated": [
+      42
+     ],
+     "only_raw": [
+      11
+     ]
+    },
+    {
+     "pair_id": "natural:1286:Qwen/Qwen2.5-7B-Instruct",
+     "only_calibrated": [
+      56,
+      60
+     ],
+     "only_raw": [
+      30,
+      57
+     ]
+    },
+    {
+     "pair_id": "natural:1582:microsoft/phi-4",
+     "only_calibrated": [
+      31
+     ],
+     "only_raw": [
+      34
+     ]
+    }
+   ]
+  },
+  "leadunion_noRule": {
+   "n_calibrated_files": 1,
+   "n_raw_files": 1,
+   "calibrated_files": [
+    "gemma+ent_humanfact_seedlead.jsonl"
+   ],
+   "raw_files": [
+    "gemma+ent_humanfact_seedlead.jsonl"
+   ],
+   "n_pairs_compared": 1466,
+   "n_pairs_topk_set_changed": 154,
+   "n_pairs_topk_order_changed": 767,
+   "share_topk_set_changed": 0.10504774897680765,
+   "examples": [
+    {
+     "pair_id": "natural:100052:Qwen/Qwen2.5-7B-Instruct",
+     "only_calibrated": [
+      18
+     ],
+     "only_raw": [
+      54
+     ]
+    },
+    {
+     "pair_id": "natural:100055:Qwen/Qwen2.5-7B-Instruct",
+     "only_calibrated": [
+      10
+     ],
+     "only_raw": [
+      27
+     ]
+    },
+    {
+     "pair_id": "natural:2562:microsoft/phi-4",
+     "only_calibrated": [
+      4
+     ],
+     "only_raw": [
+      102
+     ]
+    },
+    {
+     "pair_id": "natural:2637:Qwen/Qwen2.5-7B-Instruct",
+     "only_calibrated": [
+      13
+     ],
+     "only_raw": [
+      44
+     ]
+    },
+    {
+     "pair_id": "natural:499:Qwen/Qwen2.5-7B-Instruct",
+     "only_calibrated": [
+      36
+     ],
+     "only_raw": [
+      6
+     ]
+    }
+   ]
+  },
+  "leadunion_div1": {
+   "n_calibrated_files": 1,
+   "n_raw_files": 1,
+   "calibrated_files": [
+    "gemma+ent_humanfact_seedlead_div1.jsonl"
+   ],
+   "raw_files": [
+    "gemma+ent_humanfact_seedlead_div1.jsonl"
+   ],
+   "n_pairs_compared": 1466,
+   "n_pairs_topk_set_changed": 152,
+   "n_pairs_topk_order_changed": 760,
+   "share_topk_set_changed": 0.10368349249658936,
+   "examples": [
+    {
+     "pair_id": "natural:100052:Qwen/Qwen2.5-7B-Instruct",
+     "only_calibrated": [
+      18
+     ],
+     "only_raw": [
+      54
+     ]
+    },
+    {
+     "pair_id": "natural:100055:Qwen/Qwen2.5-7B-Instruct",
+     "only_calibrated": [
+      10
+     ],
+     "only_raw": [
+      27
+     ]
+    },
+    {
+     "pair_id": "natural:2562:microsoft/phi-4",
+     "only_calibrated": [
+      4
+     ],
+     "only_raw": [
+      102
+     ]
+    },
+    {
+     "pair_id": "natural:2637:Qwen/Qwen2.5-7B-Instruct",
+     "only_calibrated": [
+      13
+     ],
+     "only_raw": [
+      44
+     ]
+    },
+    {
+     "pair_id": "natural:499:Qwen/Qwen2.5-7B-Instruct",
+     "only_calibrated": [
+      36
+     ],
+     "only_raw": [
+      6
+     ]
+    }
+   ]
+  }
+ }
+}

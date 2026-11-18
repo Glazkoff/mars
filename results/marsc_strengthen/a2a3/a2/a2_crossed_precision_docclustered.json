@@ -1,0 +1,169 @@
+{
+ "registered": "research/marsc_strengthen_20260918/PREREG.md A2",
+ "repairs": "research/marsc_20260916/code/mc_crossed_precision.py L63/73/75/77-79 (variable named by_doc, keyed by pair_id; common.doc_key never called)",
+ "bar": "none -- this is a repair; the corrected interval is the interval",
+ "estimand": "share of a system's top-k emitted units the validated coverage judge answers omitted",
+ "note": "judge-estimated omission rate among emitted units, NOT a human confirmed-omission rate",
+ "resampling_unit": "common.doc_key(source[:200]) -- the unit mc_e2_eval.py already uses",
+ "max_rank": 10,
+ "n_boot": 5000,
+ "seed": 20260917,
+ "n_tasks": 40586,
+ "n_coverage_answers": 40586,
+ "unjudged_slots": 0,
+ "n_pairs": 1388,
+ "n_docs": 151,
+ "pairs_per_doc": {
+  "mean": 9.19205298013245,
+  "min": 8,
+  "max": 12,
+  "n_multi_summary_docs": 151
+ },
+ "naive_design_effect_sqrt_npairs_over_ndocs": 3.031839867165225,
+ "pair_id_docfield_crosscheck": {
+  "n_docfields": 151,
+  "n_doc_keys": 151,
+  "docfields_split_across_doc_keys": [],
+  "partition_identical": true
+ },
+ "systems": {
+  "humanfact+div1": {
+   "judged_omission_rate": 0.8344068775444856,
+   "ci_doc_clustered": [
+    0.79795599053178,
+    0.8672977380506193
+   ],
+   "ci_pair_level_as_published": [
+    0.8208055083825078,
+    0.8472649710100177
+   ],
+   "boot_mean_doc_clustered": 0.8338217862106329,
+   "width_inflation_doc_over_pair": 2.6206786016411554,
+   "n_units": 12464,
+   "n_pairs": 1388,
+   "n_docs": 151
+  },
+  "humanfact.distilled+div1": {
+   "judged_omission_rate": 0.8662032272082704,
+   "ci_doc_clustered": [
+    0.8363904580946546,
+    0.8947545908135894
+   ],
+   "ci_pair_level_as_published": [
+    0.8538575045171769,
+    0.8779920291843923
+   ],
+   "boot_mean_doc_clustered": 0.8660028150313057,
+   "width_inflation_doc_over_pair": 2.418283911686779,
+   "n_units": 12084,
+   "n_pairs": 1388,
+   "n_docs": 151
+  },
+  "judgefact+div1": {
+   "judged_omission_rate": 0.8452083619230593,
+   "ci_doc_clustered": [
+    0.8068745208734834,
+    0.8795675857345778
+   ],
+   "ci_pair_level_as_published": [
+    0.8312143843488403,
+    0.8586040851859476
+   ],
+   "boot_mean_doc_clustered": 0.8445748653044562,
+   "width_inflation_doc_over_pair": 2.6540291656859103,
+   "n_units": 11900,
+   "n_pairs": 1388,
+   "n_docs": 151
+  },
+  "judgefact.distilled+div1": {
+   "judged_omission_rate": 0.8703750400256165,
+   "ci_doc_clustered": [
+    0.8403997767269021,
+    0.8989370369625285
+   ],
+   "ci_pair_level_as_published": [
+    0.8580679420543434,
+    0.8822686590846713
+   ],
+   "boot_mean_doc_clustered": 0.8701533869188516,
+   "width_inflation_doc_over_pair": 2.4188233828885535,
+   "n_units": 12096,
+   "n_pairs": 1388,
+   "n_docs": 151
+  },
+  "mars2": {
+   "judged_omission_rate": 0.8394295206074744,
+   "ci_doc_clustered": [
+    0.8005651086190121,
+    0.8738426608753934
+   ],
+   "ci_pair_level_as_published": [
+    0.8252484876034948,
+    0.8527246938040347
+   ],
+   "boot_mean_doc_clustered": 0.8388714381047252,
+   "width_inflation_doc_over_pair": 2.6669457828912853,
+   "n_units": 11207,
+   "n_pairs": 1388,
+   "n_docs": 151
+  }
+ },
+ "crossed": {
+  "inventories": [
+   "distilled",
+   "gemma+ent"
+  ],
+  "verifiers": [
+   "human",
+   "judge"
+  ],
+  "inventory_effect_gemma+ent_minus_distilled": {
+   "point_observed": -0.028481513883170946,
+   "ci_doc_clustered": [
+    -0.045059236680156954,
+    -0.013364486011167484
+   ],
+   "ci_pair_level_as_published": [
+    -0.035519017885732584,
+    -0.02167879943163625
+   ],
+   "boot_mean_doc_clustered": -0.02887977521753419,
+   "p_two_sided_doc_clustered": 0.0007998400319936012,
+   "crosses_zero_doc_clustered": false,
+   "crosses_zero_pair_level": false,
+   "width_inflation_doc_over_pair": 2.2900469941360404
+  },
+  "verifier_effect_judge_minus_human": {
+   "point_observed": 0.0074866485979598356,
+   "ci_doc_clustered": [
+    0.002711364791090215,
+    0.012067442862251533
+   ],
+   "ci_pair_level_as_published": [
+    0.005076509680481222,
+    0.009909384863455465
+   ],
+   "boot_mean_doc_clustered": 0.007451825490684603,
+   "p_two_sided_doc_clustered": 0.0023995200959808036,
+   "crosses_zero_doc_clustered": false,
+   "crosses_zero_pair_level": false,
+   "width_inflation_doc_over_pair": 1.935923796278018
+  },
+  "interaction": {
+   "point_observed": 0.006629671561227752,
+   "ci_doc_clustered": [
+    -0.0023952141896391855,
+    0.016118104618966893
+   ],
+   "ci_pair_level_as_published": [
+    0.0018502198549928991,
+    0.011579768194501622
+   ],
+   "boot_mean_doc_clustered": 0.006602507206277551,
+   "p_two_sided_doc_clustered": 0.14917016596680663,
+   "crosses_zero_doc_clustered": true,
+   "crosses_zero_pair_level": false,
+   "width_inflation_doc_over_pair": 1.902793239993387
+  }
+ }
+}

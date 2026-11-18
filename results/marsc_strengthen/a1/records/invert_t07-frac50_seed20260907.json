@@ -1,0 +1,19 @@
+{
+ "in": "/home/user/results/marsc/t07_curve/scores/gemma+ent_t07-frac50_seed20260907.jsonl",
+ "out": "/home/user/results/marsc_strengthen/a1/raw/t07/gemma+ent_t07-frac50_seed20260907.jsonl",
+ "calibration": {
+  "n_cells": 7225,
+  "omitted_rate": 0.6094117647058823,
+  "slope": 0.6920598661208898,
+  "intercept": 0.2586425918599005,
+  "result_json": "/home/user/results/marsc/t07_curve/t07-frac50_seed20260907/result.json"
+ },
+ "n_pairs": 1466,
+ "n_units": 138261,
+ "n_null": 0,
+ "n_clipped": 0,
+ "raw_logit_min": -5.305562496185303,
+ "raw_logit_max": 6.769217014312739,
+ "system": "mc:A|lam1|crossenc",
+ "unit_set": "gemma+ent"
+}

@@ -1,0 +1,480 @@
+{
+ "registered": "research/marsc_strengthen_20260918/PREREG.md Wave D / D1b",
+ "estimands": {
+  "agreement_only": "the published estimand: items the two annotators labelled the same way; disagreements DROPPED",
+  "adjudicated": "agreed verdict where they agree, the adjudicator's verdict where they do not; no item dropped",
+  "selection_gap": "agreement_only - adjudicated"
+ },
+ "roles": {
+  "annotators": [
+   "Annotator 1",
+   "Annotator 2"
+  ],
+  "adjudicator": "Adjudicator",
+  "declared": {
+   "Adjudicator": "adjudicator",
+   "Annotator 1": "annotator",
+   "Annotator 2": "annotator"
+  }
+ },
+ "n_labelled": {
+  "Adjudicator": 58,
+  "Annotator 1": 500,
+  "Annotator 2": 500
+ },
+ "adjudicator_present": true,
+ "budgets": {
+  "10": {
+   "weights_from": "k=10",
+   "systems": {
+    "humanfact+div1": {
+     "weights": {
+      "unknown": 0.8296,
+      "hit": 0.1207,
+      "false_alert": 0.0497
+     },
+     "n_items_in_budget": 100,
+     "n_by_status": {
+      "unknown": 60,
+      "hit": 20,
+      "false_alert": 20
+     },
+     "n_documents": 76,
+     "per_annotator": {
+      "Annotator 1": {
+       "point": 0.877616774735831,
+       "ci": [
+        0.8077689697456794,
+        0.9358629627398932
+       ],
+       "n_items": 100,
+       "n_docs": 76,
+       "n_boot_valid": 10000,
+       "note": null
+      },
+      "Annotator 2": {
+       "point": 0.8971353952243722,
+       "ci": [
+        0.8349890024137467,
+        0.9487918538994476
+       ],
+       "n_items": 100,
+       "n_docs": 76,
+       "n_boot_valid": 10000,
+       "note": null
+      }
+     },
+     "agreement_only": {
+      "point": 0.9036967025070102,
+      "ci": [
+       0.8418408052964659,
+       0.9536056032049812
+      ],
+      "n_items": 91,
+      "n_docs": 71,
+      "n_boot_valid": 10000,
+      "note": null,
+      "n_dropped_disagreements": 9
+     },
+     "adjudicated": {
+      "point": 0.9024448504185536,
+      "ci": [
+       0.8371558592776027,
+       0.9536310910691987
+      ],
+      "n_items": 100,
+      "n_docs": 76,
+      "n_boot_valid": 10000,
+      "note": null,
+      "n_unresolved_excluded": 0
+     },
+     "adjudicated_lower": {
+      "point": 0.9024448504185536,
+      "ci": [
+       0.8387844670067813,
+       0.9547295200306968
+      ],
+      "n_items": 100,
+      "n_docs": 76,
+      "n_boot_valid": 10000,
+      "note": null
+     },
+     "adjudicated_upper": {
+      "point": 0.9024448504185536,
+      "ci": [
+       0.8384676698580015,
+       0.9540853495126438
+      ],
+      "n_items": 100,
+      "n_docs": 76,
+      "n_boot_valid": 10000,
+      "note": null
+     },
+     "selection_gap": 0.001252
+    },
+    "humanfact.distilled+div1": {
+     "weights": {
+      "unknown": 0.8233,
+      "hit": 0.1264,
+      "false_alert": 0.0503
+     },
+     "n_items_in_budget": 100,
+     "n_by_status": {
+      "unknown": 60,
+      "hit": 20,
+      "false_alert": 20
+     },
+     "n_documents": 75,
+     "per_annotator": {
+      "Annotator 1": {
+       "point": 0.9057536013524847,
+       "ci": [
+        0.8572036440566851,
+        0.9475128162340762
+       ],
+       "n_items": 100,
+       "n_docs": 75,
+       "n_boot_valid": 10000,
+       "note": null
+      },
+      "Annotator 2": {
+       "point": 0.9522320809127366,
+       "ci": [
+        0.913006465885738,
+        0.9831637487788103
+       ],
+       "n_items": 100,
+       "n_docs": 75,
+       "n_boot_valid": 10000,
+       "note": null
+      }
+     },
+     "agreement_only": {
+      "point": 0.9537886151899121,
+      "ci": [
+       0.9251876449652269,
+       0.9817105804857966
+      ],
+      "n_items": 87,
+      "n_docs": 67,
+      "n_boot_valid": 10000,
+      "note": null,
+      "n_dropped_disagreements": 13
+     },
+     "adjudicated": {
+      "point": 0.9421729001799247,
+      "ci": [
+       0.9018219097160391,
+       0.9731762152396394
+      ],
+      "n_items": 100,
+      "n_docs": 75,
+      "n_boot_valid": 10000,
+      "note": null,
+      "n_unresolved_excluded": 0
+     },
+     "adjudicated_lower": {
+      "point": 0.9421729001799247,
+      "ci": [
+       0.9022603213686874,
+       0.9736123659033636
+      ],
+      "n_items": 100,
+      "n_docs": 75,
+      "n_boot_valid": 10000,
+      "note": null
+     },
+     "adjudicated_upper": {
+      "point": 0.9421729001799247,
+      "ci": [
+       0.9026330482650337,
+       0.973078515967138
+      ],
+      "n_items": 100,
+      "n_docs": 75,
+      "n_boot_valid": 10000,
+      "note": null
+     },
+     "selection_gap": 0.011616
+    },
+    "judgefact+div1": {
+     "weights": {
+      "unknown": 0.8737,
+      "hit": 0.087,
+      "false_alert": 0.0394
+     },
+     "n_items_in_budget": 100,
+     "n_by_status": {
+      "false_alert": 20,
+      "unknown": 60,
+      "hit": 20
+     },
+     "n_documents": 69,
+     "per_annotator": {
+      "Annotator 1": {
+       "point": 0.8550961043639357,
+       "ci": [
+        0.7745421760729851,
+        0.9230133564837187
+       ],
+       "n_items": 100,
+       "n_docs": 69,
+       "n_boot_valid": 10000,
+       "note": null
+      },
+      "Annotator 2": {
+       "point": 0.8775278320982571,
+       "ci": [
+        0.8006929583424963,
+        0.9399591364198396
+       ],
+       "n_items": 100,
+       "n_docs": 69,
+       "n_boot_valid": 10000,
+       "note": null
+      }
+     },
+     "agreement_only": {
+      "point": 0.9034515515254438,
+      "ci": [
+       0.8311875607321458,
+       0.9605264398790099
+      ],
+      "n_items": 87,
+      "n_docs": 63,
+      "n_boot_valid": 10000,
+      "note": null,
+      "n_dropped_disagreements": 13
+     },
+     "adjudicated": {
+      "point": 0.8735924849046246,
+      "ci": [
+       0.7973899610022875,
+       0.9373929010703472
+      ],
+      "n_items": 100,
+      "n_docs": 69,
+      "n_boot_valid": 10000,
+      "note": null,
+      "n_unresolved_excluded": 0
+     },
+     "adjudicated_lower": {
+      "point": 0.8735924849046246,
+      "ci": [
+       0.7986086562272476,
+       0.9379443616648171
+      ],
+      "n_items": 100,
+      "n_docs": 69,
+      "n_boot_valid": 10000,
+      "note": null
+     },
+     "adjudicated_upper": {
+      "point": 0.8735924849046246,
+      "ci": [
+       0.7962817412567825,
+       0.9387203266733444
+      ],
+      "n_items": 100,
+      "n_docs": 69,
+      "n_boot_valid": 10000,
+      "note": null
+     },
+     "selection_gap": 0.029859
+    },
+    "judgefact.distilled+div1": {
+     "weights": {
+      "unknown": 0.8447,
+      "hit": 0.1094,
+      "false_alert": 0.0459
+     },
+     "n_items_in_budget": 100,
+     "n_by_status": {
+      "unknown": 60,
+      "false_alert": 20,
+      "hit": 20
+     },
+     "n_documents": 69,
+     "per_annotator": {
+      "Annotator 1": {
+       "point": 0.8942361397008372,
+       "ci": [
+        0.8372029963223738,
+        0.9412744691636092
+       ],
+       "n_items": 100,
+       "n_docs": 69,
+       "n_boot_valid": 10000,
+       "note": null
+      },
+      "Annotator 2": {
+       "point": 0.9672525178018694,
+       "ci": [
+        0.9223658997827352,
+        0.9979135867734571
+       ],
+       "n_items": 100,
+       "n_docs": 69,
+       "n_boot_valid": 10000,
+       "note": null
+      }
+     },
+     "agreement_only": {
+      "point": 0.9768346770413356,
+      "ci": [
+       0.9414915072092176,
+       1.0
+      ],
+      "n_items": 81,
+      "n_docs": 59,
+      "n_boot_valid": 10000,
+      "note": null,
+      "n_dropped_disagreements": 19
+     },
+     "adjudicated": {
+      "point": 0.9261377615006937,
+      "ci": [
+       0.8773515645320218,
+       0.9652624596687693
+      ],
+      "n_items": 100,
+      "n_docs": 69,
+      "n_boot_valid": 10000,
+      "note": null,
+      "n_unresolved_excluded": 0
+     },
+     "adjudicated_lower": {
+      "point": 0.9261377615006937,
+      "ci": [
+       0.8772057171580202,
+       0.9648797643939956
+      ],
+      "n_items": 100,
+      "n_docs": 69,
+      "n_boot_valid": 10000,
+      "note": null
+     },
+     "adjudicated_upper": {
+      "point": 0.9261377615006937,
+      "ci": [
+       0.8781705278523495,
+       0.9650739697880639
+      ],
+      "n_items": 100,
+      "n_docs": 69,
+      "n_boot_valid": 10000,
+      "note": null
+     },
+     "selection_gap": 0.050697
+    },
+    "mars2": {
+     "weights": {
+      "unknown": 0.9023,
+      "hit": 0.0658,
+      "false_alert": 0.0319
+     },
+     "n_items_in_budget": 100,
+     "n_by_status": {
+      "unknown": 60,
+      "hit": 20,
+      "false_alert": 20
+     },
+     "n_documents": 72,
+     "per_annotator": {
+      "Annotator 1": {
+       "point": 0.8478520729457328,
+       "ci": [
+        0.7641149226666866,
+        0.9163196819060916
+       ],
+       "n_items": 100,
+       "n_docs": 72,
+       "n_boot_valid": 10000,
+       "note": null
+      },
+      "Annotator 2": {
+       "point": 0.8593174679413873,
+       "ci": [
+        0.7779358014786503,
+        0.9284245925658905
+       ],
+       "n_items": 100,
+       "n_docs": 72,
+       "n_boot_valid": 10000,
+       "note": null
+      }
+     },
+     "agreement_only": {
+      "point": 0.8562312819021806,
+      "ci": [
+       0.7736665328417166,
+       0.9253201686534365
+      ],
+      "n_items": 96,
+      "n_docs": 69,
+      "n_boot_valid": 10000,
+      "note": null,
+      "n_dropped_disagreements": 4
+     },
+     "adjudicated": {
+      "point": 0.8478520729457328,
+      "ci": [
+       0.7655303393252142,
+       0.9180606328393223
+      ],
+      "n_items": 100,
+      "n_docs": 72,
+      "n_boot_valid": 10000,
+      "note": null,
+      "n_unresolved_excluded": 0
+     },
+     "adjudicated_lower": {
+      "point": 0.8478520729457328,
+      "ci": [
+       0.7665032206715438,
+       0.9175242427101978
+      ],
+      "n_items": 100,
+      "n_docs": 72,
+      "n_boot_valid": 10000,
+      "note": null
+     },
+     "adjudicated_upper": {
+      "point": 0.8478520729457328,
+      "ci": [
+       0.7662068940110462,
+       0.9174873211774829
+      ],
+      "n_items": 100,
+      "n_docs": 72,
+      "n_boot_valid": 10000,
+      "note": null
+     },
+     "selection_gap": 0.008379
+    }
+   }
+  }
+ },
+ "rater_degeneracy": {
+  "Annotator 1": {
+   "n": 500,
+   "distinct_answer_patterns": 3,
+   "modal_share": 0.766
+  },
+  "Annotator 2": {
+   "n": 500,
+   "distinct_answer_patterns": 3,
+   "modal_share": 0.85
+  }
+ },
+ "agreement": {
+  "n_colabelled": 500,
+  "n_agree": 442,
+  "n_disagree": 58,
+  "n_adjudicated": 58,
+  "n_unresolved": 0,
+  "verdict_kappa": 0.6303377947737412,
+  "q1_kappa": 0.14807930607187264,
+  "q2_kappa": 0.6589997325488098
+ }
+}

@@ -1,0 +1,124 @@
+{
+ "families": {
+  "gemma_anchored": {
+   "coverage_vs_human": {
+    "Annotator 1": {
+     "n": 223,
+     "accuracy": 0.7757847533632287
+    },
+    "Annotator 2": {
+     "n": 300,
+     "accuracy": 0.7866666666666666
+    },
+    "both_agree": {
+     "n": 189,
+     "accuracy": 0.8306878306878307
+    }
+   },
+   "verdict_vs_human": {
+    "Annotator 1": {
+     "n": 223,
+     "accuracy": 0.7309417040358744
+    },
+    "Annotator 2": {
+     "n": 300,
+     "accuracy": 0.75
+    },
+    "both_agree": {
+     "n": 171,
+     "accuracy": 0.8187134502923976
+    }
+   }
+  },
+  "qwen_anchored": {
+   "coverage_vs_human": {
+    "Annotator 1": {
+     "n": 223,
+     "accuracy": 0.7892376681614349
+    },
+    "Annotator 2": {
+     "n": 300,
+     "accuracy": 0.7766666666666666
+    },
+    "both_agree": {
+     "n": 189,
+     "accuracy": 0.8412698412698413
+    }
+   },
+   "verdict_vs_human": {
+    "Annotator 1": {
+     "n": 223,
+     "accuracy": 0.7399103139013453
+    },
+    "Annotator 2": {
+     "n": 300,
+     "accuracy": 0.7466666666666667
+    },
+    "both_agree": {
+     "n": 171,
+     "accuracy": 0.8245614035087719
+    }
+   }
+  },
+  "gemma_plain": {
+   "coverage_vs_human": {
+    "Annotator 1": {
+     "n": 223,
+     "accuracy": 0.9013452914798207
+    },
+    "Annotator 2": {
+     "n": 300,
+     "accuracy": 0.8633333333333333
+    },
+    "both_agree": {
+     "n": 189,
+     "accuracy": 0.9523809523809523
+    }
+   },
+   "verdict_vs_human": {
+    "Annotator 1": {
+     "n": 223,
+     "accuracy": 0.7085201793721974
+    },
+    "Annotator 2": {
+     "n": 300,
+     "accuracy": 0.7066666666666667
+    },
+    "both_agree": {
+     "n": 171,
+     "accuracy": 0.7777777777777778
+    }
+   }
+  },
+  "qwen_plain": {
+   "coverage_vs_human": {
+    "Annotator 1": {
+     "n": 223,
+     "accuracy": 0.8834080717488789
+    },
+    "Annotator 2": {
+     "n": 300,
+     "accuracy": 0.8433333333333334
+    },
+    "both_agree": {
+     "n": 189,
+     "accuracy": 0.9312169312169312
+    }
+   },
+   "verdict_vs_human": {
+    "Annotator 1": {
+     "n": 223,
+     "accuracy": 0.7847533632286996
+    },
+    "Annotator 2": {
+     "n": 300,
+     "accuracy": 0.7933333333333333
+    },
+    "both_agree": {
+     "n": 171,
+     "accuracy": 0.8830409356725146
+    }
+   }
+  }
+ }
+}

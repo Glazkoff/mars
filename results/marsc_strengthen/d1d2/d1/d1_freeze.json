@@ -1,0 +1,112 @@
+{
+ "block": "D1",
+ "registered": "research/marsc_strengthen_20260918/PREREG.md, Wave D / D1",
+ "purpose": "blinded precision sample of the CORRECTED emitter; frozen before any label exists",
+ "sample_argv": "mc_human_sample.py --emitted /home/user/results/marsc/r07_crossed/emitted_validation_k10.jsonl --acu /home/user/results/mars2_gates/b18/acu_units_validation.jsonl --systems humanfact+div1 humanfact.distilled+div1 judgefact+div1 judgefact.distilled+div1 mars2 --per-system 100 --strata unknown=0.6,hit=0.2,false_alert=0.2 --seed 20260916 --id-offset 400 --out /home/user/results/marsc_strengthen/d1d2/d1",
+ "inputs": {
+  "emitted": "/home/user/results/marsc/r07_crossed/emitted_validation_k10.jsonl",
+  "emitted_sha256": "2b31bcbbf57df0e77e5845af748ce4531706715ed23ef991541966068309bd2a",
+  "acu": "/home/user/results/mars2_gates/b18/acu_units_validation.jsonl",
+  "acu_sha256": "a6a431c033b3bd4b9afbfbbaad92480a3b81cd95e39c80602b8019807e50e30a",
+  "prior_keys": {
+   "/home/user/results/marsc/g6/human_sample_key.jsonl": "0a433237cb91c11625037a242528d47091bfbf59f549d29976c5d3dc0af46687",
+   "/home/user/results/marsc/g6/human_sample_key_all.jsonl": "b137290987897a77b7d3483798b4d9f99d0c5c24a874b271a9c6b2c81b6d9131",
+   "/home/user/results/marsc/g6b/human_sample_key.jsonl": "5b15e78a76a51ef3045c1e0dfa92983e5af3ca21935606a7a9c6ebe4ce0c8e97"
+  }
+ },
+ "artifacts": {
+  "human_sample_blind.jsonl": "2b9acc515512b688cb35e73364579d2bfdf48d78fde6685957392a14d3db81a2",
+  "human_sample_key.jsonl": "70f2ccfcb185468548d8563ea998c6e4307a4947ecc8b086303d86c5b9b577a7"
+ },
+ "n_items": 500,
+ "item_id_min": "H401",
+ "item_id_max": "H900",
+ "n_prior_ids_checked": 400,
+ "cells_system_x_status": {
+  "humanfact+div1|false_alert": 20,
+  "humanfact+div1|hit": 20,
+  "humanfact+div1|unknown": 60,
+  "humanfact.distilled+div1|false_alert": 20,
+  "humanfact.distilled+div1|hit": 20,
+  "humanfact.distilled+div1|unknown": 60,
+  "judgefact+div1|false_alert": 20,
+  "judgefact+div1|hit": 20,
+  "judgefact+div1|unknown": 60,
+  "judgefact.distilled+div1|false_alert": 20,
+  "judgefact.distilled+div1|hit": 20,
+  "judgefact.distilled+div1|unknown": 60,
+  "mars2|false_alert": 20,
+  "mars2|hit": 20,
+  "mars2|unknown": 60
+ },
+ "n_documents": 147,
+ "n_pairs": 418,
+ "resources": {
+  "rose_cnndm": 174,
+  "rose_xsum": 130,
+  "rose_samsum": 196
+ },
+ "summarizers": {
+  "cliff": 19,
+  "simcls": 12,
+  "ctrlsum": 17,
+  "matchsum": 11,
+  "brio-ext": 15,
+  "brio-ranking": 18,
+  "frost": 38,
+  "gold": 20,
+  "S-BART": 28,
+  "brio": 32,
+  "PEGASUS": 28,
+  "PLM-BART": 21,
+  "gsum": 19,
+  "pegasus": 27,
+  "BART": 31,
+  "UniLM": 20,
+  "bart": 25,
+  "CODS": 18,
+  "Ctrl-DiaSumm": 29,
+  "MV-BART": 21,
+  "bart.beam_patience": 25,
+  "glob": 10,
+  "cliff-pegasus": 16
+ },
+ "rank_histogram": {
+  "1": 50,
+  "2": 39,
+  "3": 60,
+  "4": 57,
+  "5": 54,
+  "6": 45,
+  "7": 45,
+  "8": 45,
+  "9": 52,
+  "10": 53
+ },
+ "rank_recovery": {
+  "n_ambiguous_text_match": 57,
+  "n_tie_broken_on_status": 4,
+  "n_status_mismatch_after_tiebreak": 0,
+  "n_status_mismatch_unambiguous": 0,
+  "status_mismatch_item_ids": [],
+  "note": "An ambiguous match means the pair carries two emitted units with identical text and score. Blinding is unaffected (the annotator sees neither rank nor status); only a rank-restricted re-analysis is. mc_human_rank.py records this as a diagnostic and does not resolve it."
+ },
+ "items_per_document": {
+  "min": 1,
+  "max": 11,
+  "mean": 3.401360544217687
+ },
+ "review_priority": {
+  "order_seed": 20260918,
+  "pilot_docs": 30,
+  "n_pilot_items": 109,
+  "rule": "documents in the frozen round-robin order; any prefix is a pre-registered, domain-balanced subsample"
+ },
+ "analysis_contract": {
+  "clustering": "bootstrap resamples doc_key clusters (A3 repair), never items inside status strata",
+  "roles": "TWO blinded annotators PLUS an adjudicator; the agreement-conditioned rate is reported beside the adjudicated rate, and the two are never conflated",
+  "scorer": "research/marsc_strengthen_20260918/code/d1b_adjudicate.py"
+ },
+ "checks_failed": [],
+ "status": "FROZEN"
+}

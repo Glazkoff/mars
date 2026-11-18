@@ -1,0 +1,51 @@
+{
+ "units": "/home/user/results/mars3/m32/units_gemma+ent_test.jsonl",
+ "units_name": "gemma+ent",
+ "split": "test",
+ "unit_set": "m2",
+ "candidate_mode": "real",
+ "shuffle_seed": 20260917,
+ "shard": "2/2",
+ "row_offset": 887,
+ "row_end": 2829,
+ "n_rows": 1942,
+ "n_units": 150127,
+ "n_units_pool": 300360,
+ "batch": 64,
+ "device": "cuda",
+ "claim_word_cap": 96,
+ "systems": "lex,minilm,nli,summac_zs",
+ "timings": {
+  "lex": {
+   "score_s": 18.618400812149048,
+   "units_per_s": 8063.367069745204,
+   "out": [
+    "gemma+ent_lex_token_recall.part2of2.jsonl",
+    "gemma+ent_lex_rougeL_recall.part2of2.jsonl"
+   ]
+  },
+  "minilm": {
+   "score_s": 22.951380491256714,
+   "units_per_s": 6541.088021140628,
+   "out": [
+    "gemma+ent_emb_minilm_maxcos.part2of2.jsonl"
+   ]
+  },
+  "nli": {
+   "load_s": 0.3737664222717285,
+   "score_s": 59.692845821380615,
+   "units_per_s": 2514.991502486349,
+   "out": [
+    "gemma+ent_nli_nli.part2of2.jsonl"
+   ]
+  },
+  "summac_zs": {
+   "load_s": 0.7196578979492188,
+   "score_s": 815.2252614498138,
+   "units_per_s": 184.1540088355591,
+   "out": [
+    "gemma+ent_nli_summac_zs.part2of2.jsonl"
+   ]
+  }
+ }
+}

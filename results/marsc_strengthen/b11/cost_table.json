@@ -1,0 +1,475 @@
+{
+ "usd_per_gpu_hour": 0.0,
+ "rows": [
+  {
+   "system": "lex:token_recall",
+   "ms_per_unit": 0.018,
+   "source": "B1/B6 measured (RESULTS.md 3.8-3.9)",
+   "s_per_1k_units": 0.018
+  },
+  {
+   "system": "emb:minilm_maxcos",
+   "ms_per_unit": 0.164,
+   "source": "B1/B6 measured (RESULTS.md 3.8-3.9)",
+   "s_per_1k_units": 0.164
+  },
+  {
+   "system": "lex:rougeL_recall",
+   "ms_per_unit": 0.166,
+   "source": "B1/B6 measured (RESULTS.md 3.8-3.9)",
+   "s_per_1k_units": 0.166
+  },
+  {
+   "system": "nli:minicheck7b_empty",
+   "ms_per_unit": 0.6167659415605258,
+   "units_per_s": 1621.3606047536039,
+   "n_units": 138261,
+   "candidate_mode": "empty",
+   "unit_set": "gemma+ent",
+   "split": "validation",
+   "source": "gemma+ent_nli_minicheck7b_empty.receipt.json",
+   "s_per_1k_units": 0.6167659415605258
+  },
+  {
+   "system": "nli:minicheck7b_empty",
+   "ms_per_unit": 0.6266326875085916,
+   "units_per_s": 1595.831210107898,
+   "n_units": 300360,
+   "candidate_mode": "empty",
+   "unit_set": "gemma+ent",
+   "split": "test",
+   "source": "gemma+ent_nli_minicheck7b_empty.receipt.json",
+   "s_per_1k_units": 0.6266326875085916
+  },
+  {
+   "system": "nli:minicheck7b_empty",
+   "ms_per_unit": 0.6358534634796926,
+   "units_per_s": 1572.6893969052624,
+   "n_units": 58592,
+   "candidate_mode": "empty",
+   "unit_set": "distilled",
+   "split": "validation",
+   "source": "distilled_nli_minicheck7b_empty.receipt.json",
+   "s_per_1k_units": 0.6358534634796926
+  },
+  {
+   "system": "nli:minicheck7b_empty",
+   "ms_per_unit": 0.6500592183594472,
+   "units_per_s": 1538.321389432331,
+   "n_units": 123576,
+   "candidate_mode": "empty",
+   "unit_set": "distilled",
+   "split": "test",
+   "source": "distilled_nli_minicheck7b_empty.receipt.json",
+   "s_per_1k_units": 0.6500592183594472
+  },
+  {
+   "system": "nli:minicheck7b_shuf",
+   "ms_per_unit": 0.7966281875197707,
+   "units_per_s": 1255.2907562980026,
+   "n_units": 138261,
+   "candidate_mode": "shuffled",
+   "unit_set": "gemma+ent",
+   "split": "validation",
+   "source": "gemma+ent_nli_minicheck7b_shuffled.receipt.json",
+   "s_per_1k_units": 0.7966281875197707
+  },
+  {
+   "system": "nli:minicheck7b",
+   "ms_per_unit": 0.7995109173355226,
+   "units_per_s": 1250.764659140158,
+   "n_units": 138261,
+   "candidate_mode": "real",
+   "unit_set": "gemma+ent",
+   "split": "validation",
+   "source": "gemma+ent_nli_minicheck7b_real.receipt.json",
+   "s_per_1k_units": 0.7995109173355226
+  },
+  {
+   "system": "nli:minicheck7b",
+   "ms_per_unit": 0.8571195108688279,
+   "units_per_s": 1166.6984444051914,
+   "n_units": 300360,
+   "candidate_mode": "real",
+   "unit_set": "gemma+ent",
+   "split": "test",
+   "source": "gemma+ent_nli_minicheck7b_real.receipt.json",
+   "s_per_1k_units": 0.8571195108688279
+  },
+  {
+   "system": "nli:minicheck7b_shuf",
+   "ms_per_unit": 0.8596352658365137,
+   "units_per_s": 1163.284057485586,
+   "n_units": 300360,
+   "candidate_mode": "shuffled",
+   "unit_set": "gemma+ent",
+   "split": "test",
+   "source": "gemma+ent_nli_minicheck7b_shuffled.receipt.json",
+   "s_per_1k_units": 0.8596352658365137
+  },
+  {
+   "system": "nli:minicheck7b",
+   "ms_per_unit": 0.885147989968144,
+   "units_per_s": 1129.7545849208666,
+   "n_units": 58592,
+   "candidate_mode": "real",
+   "unit_set": "distilled",
+   "split": "validation",
+   "source": "distilled_nli_minicheck7b_real.receipt.json",
+   "s_per_1k_units": 0.885147989968144
+  },
+  {
+   "system": "nli:minicheck7b_shuf",
+   "ms_per_unit": 0.9086495016130315,
+   "units_per_s": 1100.534362506999,
+   "n_units": 58592,
+   "candidate_mode": "shuffled",
+   "unit_set": "distilled",
+   "split": "validation",
+   "source": "distilled_nli_minicheck7b_shuffled.receipt.json",
+   "s_per_1k_units": 0.9086495016130315
+  },
+  {
+   "system": "nli:minicheck7b",
+   "ms_per_unit": 0.9187293309659768,
+   "units_per_s": 1088.4598611307783,
+   "n_units": 123576,
+   "candidate_mode": "real",
+   "unit_set": "distilled",
+   "split": "test",
+   "source": "distilled_nli_minicheck7b_real.receipt.json",
+   "s_per_1k_units": 0.9187293309659768
+  },
+  {
+   "system": "nli:minicheck7b_shuf",
+   "ms_per_unit": 0.9359792825079368,
+   "units_per_s": 1068.3997164130824,
+   "n_units": 123576,
+   "candidate_mode": "shuffled",
+   "unit_set": "distilled",
+   "split": "test",
+   "source": "distilled_nli_minicheck7b_shuffled.receipt.json",
+   "s_per_1k_units": 0.9359792825079368
+  },
+  {
+   "system": "nli:nli (windowed RoBERTa-MNLI)",
+   "ms_per_unit": 1.014,
+   "source": "B1/B6 measured (RESULTS.md 3.8-3.9)",
+   "s_per_1k_units": 1.014
+  },
+  {
+   "system": "MARS-C verifier / gemma+ent (1 seed)",
+   "ms_per_unit": 1.028446296925253,
+   "unit_set": "gemma+ent",
+   "source": "b6/stage_times_gpu.json [humanfact|gemma+ent|*]",
+   "n_measurements": 3,
+   "s_per_1k_units": 1.028446296925253
+  },
+  {
+   "system": "MARS-C verifier / distilled (1 seed)",
+   "ms_per_unit": 1.10799675447899,
+   "unit_set": "distilled",
+   "source": "b6/stage_times_gpu.json [humanfact|distilled|*]",
+   "n_measurements": 3,
+   "s_per_1k_units": 1.10799675447899
+  },
+  {
+   "system": "nli:alignscore",
+   "ms_per_unit": 1.135,
+   "source": "B1/B6 measured (RESULTS.md 3.8-3.9)",
+   "s_per_1k_units": 1.135
+  },
+  {
+   "system": "nli:judge_gemma31_empty",
+   "ms_per_unit": 1.9734224945942869,
+   "units_per_s": 506.7338609645212,
+   "n_units": 138261,
+   "candidate_mode": "empty",
+   "unit_set": "gemma+ent",
+   "split": "validation",
+   "source": "gemma+ent_nli_judge_gemma31_empty.receipt.json",
+   "s_per_1k_units": 1.9734224945942869
+  },
+  {
+   "system": "nli:judge_gemma31_empty",
+   "ms_per_unit": 2.005732119011965,
+   "units_per_s": 498.5710656578635,
+   "n_units": 300360,
+   "candidate_mode": "empty",
+   "unit_set": "gemma+ent",
+   "split": "test",
+   "source": "gemma+ent_nli_judge_gemma31_empty.receipt.json",
+   "s_per_1k_units": 2.005732119011965
+  },
+  {
+   "system": "nli:factcg_empty",
+   "ms_per_unit": 2.0868573558598595,
+   "units_per_s": 479.1894363033569,
+   "n_units": 138261,
+   "candidate_mode": "empty",
+   "unit_set": "gemma+ent",
+   "split": "validation",
+   "source": "gemma+ent_nli_factcg_empty.receipt.json",
+   "s_per_1k_units": 2.0868573558598595
+  },
+  {
+   "system": "nli:factcg_empty",
+   "ms_per_unit": 2.1373448656400913,
+   "units_per_s": 467.8702141502655,
+   "n_units": 58592,
+   "candidate_mode": "empty",
+   "unit_set": "distilled",
+   "split": "validation",
+   "source": "distilled_nli_factcg_empty.receipt.json",
+   "s_per_1k_units": 2.1373448656400913
+  },
+  {
+   "system": "nli:judge_gemma31_empty",
+   "ms_per_unit": 2.1481156463117825,
+   "units_per_s": 465.5242848386468,
+   "n_units": 58592,
+   "candidate_mode": "empty",
+   "unit_set": "distilled",
+   "split": "validation",
+   "source": "distilled_nli_judge_gemma31_empty.receipt.json",
+   "s_per_1k_units": 2.1481156463117825
+  },
+  {
+   "system": "nli:judge_gemma31_empty",
+   "ms_per_unit": 2.175983585354085,
+   "units_per_s": 459.56229023541823,
+   "n_units": 123576,
+   "candidate_mode": "empty",
+   "unit_set": "distilled",
+   "split": "test",
+   "source": "distilled_nli_judge_gemma31_empty.receipt.json",
+   "s_per_1k_units": 2.175983585354085
+  },
+  {
+   "system": "nli:factcg_empty",
+   "ms_per_unit": 2.182186889750041,
+   "units_per_s": 458.25589214979897,
+   "n_units": 300360,
+   "candidate_mode": "empty",
+   "unit_set": "gemma+ent",
+   "split": "test",
+   "source": "gemma+ent_nli_factcg_empty.receipt.json",
+   "s_per_1k_units": 2.182186889750041
+  },
+  {
+   "system": "nli:factcg_empty",
+   "ms_per_unit": 2.22145391489114,
+   "units_per_s": 450.15563604388524,
+   "n_units": 123576,
+   "candidate_mode": "empty",
+   "unit_set": "distilled",
+   "split": "test",
+   "source": "distilled_nli_factcg_empty.receipt.json",
+   "s_per_1k_units": 2.22145391489114
+  },
+  {
+   "system": "nli:judge_gemma31",
+   "ms_per_unit": 3.0162004445614867,
+   "units_per_s": 331.5429522607162,
+   "n_units": 300360,
+   "candidate_mode": "real",
+   "unit_set": "gemma+ent",
+   "split": "test",
+   "source": "gemma+ent_nli_judge_gemma31_real.receipt.json",
+   "s_per_1k_units": 3.0162004445614867
+  },
+  {
+   "system": "nli:judge_gemma31",
+   "ms_per_unit": 3.0564203725919348,
+   "units_per_s": 327.1801251448833,
+   "n_units": 138261,
+   "candidate_mode": "real",
+   "unit_set": "gemma+ent",
+   "split": "validation",
+   "source": "gemma+ent_nli_judge_gemma31_real.receipt.json",
+   "s_per_1k_units": 3.0564203725919348
+  },
+  {
+   "system": "MARS-C emitter of record / gemma+ent (3 seeds)",
+   "ms_per_unit": 3.085338890775759,
+   "unit_set": "gemma+ent",
+   "source": "b6/stage_times_gpu.json [humanfact|gemma+ent|*] x 3 seeds",
+   "n_measurements": 3,
+   "s_per_1k_units": 3.085338890775759
+  },
+  {
+   "system": "nli:judge_gemma31_shuf",
+   "ms_per_unit": 3.1014330283289566,
+   "units_per_s": 322.4315956094648,
+   "n_units": 300360,
+   "candidate_mode": "shuffled",
+   "unit_set": "gemma+ent",
+   "split": "test",
+   "source": "gemma+ent_nli_judge_gemma31_shuffled.receipt.json",
+   "s_per_1k_units": 3.1014330283289566
+  },
+  {
+   "system": "nli:judge_gemma31_shuf",
+   "ms_per_unit": 3.1505811073131667,
+   "units_per_s": 317.40176365521523,
+   "n_units": 138261,
+   "candidate_mode": "shuffled",
+   "unit_set": "gemma+ent",
+   "split": "validation",
+   "source": "gemma+ent_nli_judge_gemma31_shuffled.receipt.json",
+   "s_per_1k_units": 3.1505811073131667
+  },
+  {
+   "system": "MARS-C emitter of record / distilled (3 seeds)",
+   "ms_per_unit": 3.32399026343697,
+   "unit_set": "distilled",
+   "source": "b6/stage_times_gpu.json [humanfact|distilled|*] x 3 seeds",
+   "n_measurements": 3,
+   "s_per_1k_units": 3.32399026343697
+  },
+  {
+   "system": "nli:summac_zs",
+   "ms_per_unit": 3.379,
+   "source": "B1/B6 measured (RESULTS.md 3.8-3.9)",
+   "s_per_1k_units": 3.379
+  },
+  {
+   "system": "nli:factcg_shuf",
+   "ms_per_unit": 3.3983169294960938,
+   "units_per_s": 294.2633135009809,
+   "n_units": 138261,
+   "candidate_mode": "shuffled",
+   "unit_set": "gemma+ent",
+   "split": "validation",
+   "source": "gemma+ent_nli_factcg_shuffled.receipt.json",
+   "s_per_1k_units": 3.3983169294960938
+  },
+  {
+   "system": "nli:factcg",
+   "ms_per_unit": 3.420532472684016,
+   "units_per_s": 292.3521434121402,
+   "n_units": 138261,
+   "candidate_mode": "real",
+   "unit_set": "gemma+ent",
+   "split": "validation",
+   "source": "gemma+ent_nli_factcg_real.receipt.json",
+   "s_per_1k_units": 3.420532472684016
+  },
+  {
+   "system": "nli:factcg_shuf",
+   "ms_per_unit": 3.464484466255069,
+   "units_per_s": 288.643233860693,
+   "n_units": 58592,
+   "candidate_mode": "shuffled",
+   "unit_set": "distilled",
+   "split": "validation",
+   "source": "distilled_nli_factcg_shuffled.receipt.json",
+   "s_per_1k_units": 3.464484466255069
+  },
+  {
+   "system": "nli:factcg",
+   "ms_per_unit": 3.503932926350119,
+   "units_per_s": 285.39359086466663,
+   "n_units": 58592,
+   "candidate_mode": "real",
+   "unit_set": "distilled",
+   "split": "validation",
+   "source": "distilled_nli_factcg_real.receipt.json",
+   "s_per_1k_units": 3.503932926350119
+  },
+  {
+   "system": "nli:factcg_shuf",
+   "ms_per_unit": 3.7167803895729077,
+   "units_per_s": 269.05006354569935,
+   "n_units": 300360,
+   "candidate_mode": "shuffled",
+   "unit_set": "gemma+ent",
+   "split": "test",
+   "source": "gemma+ent_nli_factcg_shuffled.receipt.json",
+   "s_per_1k_units": 3.7167803895729077
+  },
+  {
+   "system": "nli:factcg",
+   "ms_per_unit": 3.7319951478770417,
+   "units_per_s": 267.95318867680027,
+   "n_units": 300360,
+   "candidate_mode": "real",
+   "unit_set": "gemma+ent",
+   "split": "test",
+   "source": "gemma+ent_nli_factcg_real.receipt.json",
+   "s_per_1k_units": 3.7319951478770417
+  },
+  {
+   "system": "nli:factcg_shuf",
+   "ms_per_unit": 3.7517502113878667,
+   "units_per_s": 266.54226525120254,
+   "n_units": 123576,
+   "candidate_mode": "shuffled",
+   "unit_set": "distilled",
+   "split": "test",
+   "source": "distilled_nli_factcg_shuffled.receipt.json",
+   "s_per_1k_units": 3.7517502113878667
+  },
+  {
+   "system": "nli:factcg",
+   "ms_per_unit": 3.774352877658803,
+   "units_per_s": 264.9460801397804,
+   "n_units": 123576,
+   "candidate_mode": "real",
+   "unit_set": "distilled",
+   "split": "test",
+   "source": "distilled_nli_factcg_real.receipt.json",
+   "s_per_1k_units": 3.774352877658803
+  },
+  {
+   "system": "nli:judge_gemma31",
+   "ms_per_unit": 4.589857831638019,
+   "units_per_s": 217.87167199536592,
+   "n_units": 58592,
+   "candidate_mode": "real",
+   "unit_set": "distilled",
+   "split": "validation",
+   "source": "distilled_nli_judge_gemma31_real.receipt.json",
+   "s_per_1k_units": 4.589857831638019
+  },
+  {
+   "system": "nli:judge_gemma31",
+   "ms_per_unit": 4.593104446266912,
+   "units_per_s": 217.71767041194965,
+   "n_units": 123576,
+   "candidate_mode": "real",
+   "unit_set": "distilled",
+   "split": "test",
+   "source": "distilled_nli_judge_gemma31_real.receipt.json",
+   "s_per_1k_units": 4.593104446266912
+  },
+  {
+   "system": "nli:judge_gemma31_shuf",
+   "ms_per_unit": 4.783521200095349,
+   "units_per_s": 209.05102291175533,
+   "n_units": 123576,
+   "candidate_mode": "shuffled",
+   "unit_set": "distilled",
+   "split": "test",
+   "source": "distilled_nli_judge_gemma31_shuffled.receipt.json",
+   "s_per_1k_units": 4.783521200095349
+  },
+  {
+   "system": "nli:judge_gemma31_shuf",
+   "ms_per_unit": 4.78835057229178,
+   "units_per_s": 208.84018095637978,
+   "n_units": 58592,
+   "candidate_mode": "shuffled",
+   "unit_set": "distilled",
+   "split": "validation",
+   "source": "distilled_nli_judge_gemma31_shuffled.receipt.json",
+   "s_per_1k_units": 4.78835057229178
+  },
+  {
+   "system": "nli:minicheck (Flan-T5-Large)",
+   "ms_per_unit": 30.013,
+   "source": "B1/B6 measured (RESULTS.md 3.8-3.9)",
+   "s_per_1k_units": 30.013
+  }
+ ]
+}

@@ -1,0 +1,49 @@
+{
+ "n_pairs": 1412,
+ "n_docs": 154,
+ "primary": "mc-A-lam1-crossenc-r04human",
+ "arms": {
+  "mc-A-lam1-crossenc-r04human": {
+   "auroc_pooled": 0.9740448322290951,
+   "auroc_doc_macro": 0.9514145859934423
+  },
+  "mc-A-lam1-crossenc-r04judge": {
+   "auroc_pooled": 0.9612671648719145,
+   "auroc_doc_macro": 0.9301515584271084
+  },
+  "mc-R-lam1-crossenc-r04human": {
+   "auroc_pooled": 0.97512856443299,
+   "auroc_doc_macro": 0.9502880532930891
+  },
+  "mc-R-lam1-crossenc-r04judge": {
+   "auroc_pooled": 0.9574526076754301,
+   "auroc_doc_macro": 0.9279283355516945
+  }
+ },
+ "paired_vs_primary": {
+  "mc-A-lam1-crossenc-r04judge": {
+   "mean": 0.012803349526800218,
+   "ci": [
+    0.008152535139553638,
+    0.01801059213542671
+   ],
+   "n_boot": 2000
+  },
+  "mc-R-lam1-crossenc-r04human": {
+   "mean": -0.0011182818494525552,
+   "ci": [
+    -0.003011424047067404,
+    0.0005245605660636028
+   ],
+   "n_boot": 2000
+  },
+  "mc-R-lam1-crossenc-r04judge": {
+   "mean": 0.016561395629838837,
+   "ci": [
+    0.011410928126380343,
+    0.021978284725302583
+   ],
+   "n_boot": 2000
+  }
+ }
+}

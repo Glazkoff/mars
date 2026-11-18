@@ -1,0 +1,219 @@
+{
+ "registered": "research/marsc_20260916/PREREG.md E0",
+ "seed": 20260916,
+ "jaccard": 0.5,
+ "length_ratio": 1.25,
+ "excluded_systems": [
+  "gold"
+ ],
+ "documents": 1500,
+ "clusters": 1500,
+ "near_duplicate_clusters_gt1": 0,
+ "clusters_touching_heldout_with_train_docs": 0,
+ "label_conflicts": 0,
+ "roles": {
+  "train": {
+   "docs": 853,
+   "docs_with_tetrads": 408,
+   "by_resource": {
+    "rose_cnndm": {
+     "docs": 283,
+     "summaries": 3396,
+     "facts": 3178,
+     "docs_with_tetrads": 250,
+     "tetrads": 13964,
+     "eligible_summary_pairs": 2936
+    },
+    "rose_samsum": {
+     "docs": 283,
+     "summaries": 2264,
+     "facts": 1330,
+     "docs_with_tetrads": 97,
+     "tetrads": 691,
+     "eligible_summary_pairs": 303
+    },
+    "rose_xsum": {
+     "docs": 287,
+     "summaries": 2296,
+     "facts": 1315,
+     "docs_with_tetrads": 61,
+     "tetrads": 383,
+     "eligible_summary_pairs": 231
+    }
+   }
+  },
+  "tune": {
+   "docs": 101,
+   "docs_with_tetrads": 52,
+   "by_resource": {
+    "rose_cnndm": {
+     "docs": 35,
+     "summaries": 420,
+     "facts": 368,
+     "docs_with_tetrads": 31,
+     "tetrads": 1302,
+     "eligible_summary_pairs": 307
+    },
+    "rose_samsum": {
+     "docs": 28,
+     "summaries": 224,
+     "facts": 113,
+     "docs_with_tetrads": 12,
+     "tetrads": 64,
+     "eligible_summary_pairs": 33
+    },
+    "rose_xsum": {
+     "docs": 38,
+     "summaries": 304,
+     "facts": 186,
+     "docs_with_tetrads": 9,
+     "tetrads": 33,
+     "eligible_summary_pairs": 25
+    }
+   }
+  },
+  "calib": {
+   "docs": 106,
+   "docs_with_tetrads": 52,
+   "by_resource": {
+    "rose_cnndm": {
+     "docs": 37,
+     "summaries": 444,
+     "facts": 435,
+     "docs_with_tetrads": 33,
+     "tetrads": 1944,
+     "eligible_summary_pairs": 413
+    },
+    "rose_samsum": {
+     "docs": 26,
+     "summaries": 208,
+     "facts": 123,
+     "docs_with_tetrads": 8,
+     "tetrads": 62,
+     "eligible_summary_pairs": 24
+    },
+    "rose_xsum": {
+     "docs": 43,
+     "summaries": 344,
+     "facts": 182,
+     "docs_with_tetrads": 11,
+     "tetrads": 80,
+     "eligible_summary_pairs": 38
+    }
+   }
+  },
+  "validation": {
+   "docs": 154,
+   "docs_with_tetrads": 69,
+   "by_resource": {
+    "rose_cnndm": {
+     "docs": 45,
+     "summaries": 540,
+     "facts": 479,
+     "docs_with_tetrads": 37,
+     "tetrads": 2270,
+     "eligible_summary_pairs": 444
+    },
+    "rose_samsum": {
+     "docs": 61,
+     "summaries": 488,
+     "facts": 264,
+     "docs_with_tetrads": 19,
+     "tetrads": 106,
+     "eligible_summary_pairs": 47
+    },
+    "rose_xsum": {
+     "docs": 48,
+     "summaries": 384,
+     "facts": 236,
+     "docs_with_tetrads": 13,
+     "tetrads": 84,
+     "eligible_summary_pairs": 46
+    }
+   }
+  },
+  "test": {
+   "docs": 286,
+   "docs_with_tetrads": 140,
+   "by_resource": {
+    "rose_cnndm": {
+     "docs": 100,
+     "summaries": 1200,
+     "facts": 1158,
+     "docs_with_tetrads": 94,
+     "tetrads": 5325,
+     "eligible_summary_pairs": 1084
+    },
+    "rose_samsum": {
+     "docs": 102,
+     "summaries": 816,
+     "facts": 457,
+     "docs_with_tetrads": 36,
+     "tetrads": 400,
+     "eligible_summary_pairs": 164
+    },
+    "rose_xsum": {
+     "docs": 84,
+     "summaries": 672,
+     "facts": 386,
+     "docs_with_tetrads": 10,
+     "tetrads": 97,
+     "eligible_summary_pairs": 45
+    }
+   }
+  }
+ },
+ "collisions_train": {
+  "sampled_tetrads": 5022,
+  "collided": 100,
+  "rate": 0.019912385503783353,
+  "empty_or_truncated_masks": 0,
+  "by_resource": {
+   "rose_cnndm": {
+    "collided": 47,
+    "sampled": 4077,
+    "rate": 0.011528084375766495
+   },
+   "rose_samsum": {
+    "collided": 21,
+    "sampled": 580,
+    "rate": 0.03620689655172414
+   },
+   "rose_xsum": {
+    "collided": 32,
+    "sampled": 365,
+    "rate": 0.08767123287671233
+   }
+  }
+ },
+ "collisions_validation": {
+  "sampled_tetrads": 778,
+  "collided": 9,
+  "rate": 0.011568123393316195,
+  "empty_or_truncated_masks": 0,
+  "by_resource": {
+   "rose_cnndm": {
+    "collided": 2,
+    "sampled": 595,
+    "rate": 0.0033613445378151263
+   },
+   "rose_samsum": {
+    "collided": 7,
+    "sampled": 99,
+    "rate": 0.0707070707070707
+   },
+   "rose_xsum": {
+    "collided": 0,
+    "sampled": 84,
+    "rate": 0.0
+   }
+  }
+ },
+ "gate": {
+  "eligible_training_docs_ge_200": true,
+  "resources_ge_3": true,
+  "each_resource_ge_50": true,
+  "collision_rate_le_0.05": true,
+  "PASS": true
+ }
+}

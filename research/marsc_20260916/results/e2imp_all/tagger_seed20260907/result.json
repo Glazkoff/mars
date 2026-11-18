@@ -1,0 +1,37 @@
+{
+ "tag": "importance_all",
+ "config": {
+  "backbone": "answerdotai/ModernBERT-large",
+  "train": "/home/user/results/marsc/e2imp/imp_rows_train.jsonl",
+  "pretrain_rows": "",
+  "pretrain_epochs": 1.0,
+  "exclude_resource": "",
+  "label_frac": 1.0,
+  "source_only": true,
+  "epochs": 3.0,
+  "lr": 3e-05,
+  "batch": 8,
+  "eval_batch": 16,
+  "max_len": 3072,
+  "steps": 0,
+  "seed": 20260907,
+  "tag": "importance_all",
+  "out": "/home/user/results/marsc/e2imp_all/tagger_seed20260907",
+  "save_model": true,
+  "eval_m2": "/dev/null",
+  "eval_acu": "/nonexistent",
+  "eval_units": [
+   "gemma+ent=/home/user/results/mars3/m32/units_gemma+ent_validation.jsonl",
+   "distilled=/home/user/results/mars3/m32/units_distilled_validation.jsonl",
+   "gemma=/home/user/results/mars3/m32/units_gemma_validation.jsonl",
+   "spacy=/home/user/results/mars3/m32/units_spacy_validation.jsonl"
+  ],
+  "scores_out": "/home/user/results/marsc/e2imp_all/scores",
+  "limit": 0,
+  "device": null
+ },
+ "train_rows": 853,
+ "train_loss": 0.3486121764779091,
+ "train_seconds": 162.38388109207153,
+ "seconds_per_pair_m2": 0.00020360946655273438
+}

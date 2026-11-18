@@ -1,0 +1,768 @@
+{
+ "registered": "research/marsc_strengthen_20260918/PREREG.md Wave B / B5",
+ "ESTIMAND_IS_A_LOWER_BOUND": true,
+ "MUST_NOT_BE_REPORTED_AS_PRECISION": "judge-CONFIRMED omissions only. This is a CONSERVATIVE LOWER BOUND on useful yield and is NOT precision: the coverage judge's positive omission verdict is near-exact (precision_on_judge_omitted 0.9900 on 63,343 human-ACU cells) but its recall is only 0.5535, so the true useful yield is strictly larger by an unknown amount. Never report this quantity as a precision, never compare it against a precision target, never report it without the recall shortfall beside it.",
+ "TRANSPORTABILITY_CAVEAT": "TRANSPORTABILITY CAVEAT. precision_on_judge_omitted was measured on HUMAN-ACU cells (reference atomic content units judged against the candidate). The units bounded here are INVENTORY units (gemma+ent / distilled / MARS-2 extractions from the source). The bound is conservative only under the assumption that the judge's positive-verdict precision transports from the ACU population to the inventory population. That assumption is stated, not tested; no human labels on the corrected emission exist to test it. This is exactly the gap Wave D / D1 would close.",
+ "design": {
+  "estimand": "count of judge-CONFIRMED omissions among the corrected top-k emission, per document",
+  "confirmed_rule": "coverage judge p_b >= 0.5",
+  "max_rank": 10,
+  "n_boot": 5000,
+  "seed": 20260918,
+  "bootstrap_cluster": "common.doc_key(source) = sha1(source[:200])[:16]",
+  "why_not_pair_id": "RoSE contributes 8-12 summaries of one source document; clustering on pair_id (as mc_crossed_precision.py does) is anti-conservative by up to sqrt(n_pairs/n_docs)",
+  "selection_on_rank_refused": "the 100 pre-drift human items are NOT re-analysed on the surviving subset; that would be a selection on rank, not a measurement"
+ },
+ "inputs": {
+  "tasks": {
+   "path": "/home/user/results/marsc/r07_crossed/tasks.jsonl",
+   "sha256": "399319bf4c578c9eac056a02bafeefe99cc1b4340567a0c7adf40381c3c8a1ba"
+  },
+  "judgment_shards": [
+   {
+    "path": "/home/user/results/marsc/r07_crossed/judgments/gemma_coverage_shard0.jsonl",
+    "sha256": "c751853f1eb0e0666493f5d5c5d011e7b35e4cb4e460e0222d63ee36fe6ba7e7"
+   },
+   {
+    "path": "/home/user/results/marsc/r07_crossed/judgments/gemma_coverage_shard1.jsonl",
+    "sha256": "ab2b4622a27b0388a9b4c6959b05493f95c9ee094332deb0b5a0ada3a223a6cb"
+   },
+   {
+    "path": "/home/user/results/marsc/r07_crossed/judgments/gemma_coverage_shard2.jsonl",
+    "sha256": "18598f560a88b015078e67f8555329f40a6e8e9de6c9fda4cd22e6ae6b86e338"
+   },
+   {
+    "path": "/home/user/results/marsc/r07_crossed/judgments/gemma_coverage_shard3.jsonl",
+    "sha256": "9812eceea1dc1e47b624c21a6c9d57f6461fef14a131a4a8112903011e8d0477"
+   },
+   {
+    "path": "/home/user/results/marsc/r07_crossed/judgments/gemma_coverage_shard4.jsonl",
+    "sha256": "129655231dc789d74459637fd234e32f05a0086004791f4b79d9c45b343f837d"
+   },
+   {
+    "path": "/home/user/results/marsc/r07_crossed/judgments/gemma_coverage_shard5.jsonl",
+    "sha256": "93d1e10d9420a3def7dd6c20b41ab2110092ef86f4a7f0f258b7ff4063881424"
+   },
+   {
+    "path": "/home/user/results/marsc/r07_crossed/judgments/gemma_coverage_shard6.jsonl",
+    "sha256": "55f3dbb8c7e2f8768e1d587a3a546375abefd0a56c65a587306c5ae21d84152d"
+   },
+   {
+    "path": "/home/user/results/marsc/r07_crossed/judgments/gemma_coverage_shard7.jsonl",
+    "sha256": "61f8390e92b16203a9e452bef1775c082aae106d331fab112d00c74ebd396645"
+   }
+  ],
+  "probability_key": "p_b"
+ },
+ "counts": {
+  "task_rows": 40586,
+  "coverage_answers": 40586,
+  "unjudged_emitted_slots": 0,
+  "pairs_common": 1388,
+  "documents_common": 151,
+  "summaries_per_document_mean": 9.19205298013245,
+  "anticonservatism_factor_if_clustered_on_pair_id": 3.031839867165225
+ },
+ "metric_glossary": {
+  "lb_confirmed_per_emitted_list": "LOWER BOUND: judge-confirmed omissions in one top-k list, averaged within document then across documents",
+  "lb_confirmed_rate_per_emitted_slot": "LOWER BOUND: confirmed / emitted slots, per document",
+  "lb_confirmed_per_document_all_summaries": "LOWER BOUND: confirmed omissions summed over every summary of the document",
+  "lb_distinct_confirmed_units_per_document": "LOWER BOUND: distinct confirmed unit texts per document (deduplicated across that document's summaries)",
+  "share_documents_with_at_least_one_confirmed": "share of documents where the emission surfaces at least one judge-confirmed omission"
+ },
+ "systems": {
+  "humanfact+div1": {
+   "n_emitted_units_on_common_pairs": 12464,
+   "n_confirmed_units_on_common_pairs": 10835,
+   "n_pairs_any": 1388,
+   "n_pairs_common": 1388,
+   "lb_confirmed_per_emitted_list": {
+    "point_observed": 7.604304635761589,
+    "ci95": [
+     7.1368515452538634,
+     8.049420529801326
+    ],
+    "boot_mean_not_the_estimate": 7.600890838852097,
+    "per_document_median": 9.0,
+    "per_document_iqr": [
+     5.875,
+     9.791666666666668
+    ]
+   },
+   "lb_confirmed_rate_per_emitted_slot": {
+    "point_observed": 0.8180992759361793,
+    "ci95": [
+     0.7784494104213205,
+     0.8543975614932866
+    ],
+    "boot_mean_not_the_estimate": 0.8177973166524307,
+    "per_document_median": 0.9279279279279279,
+    "per_document_iqr": [
+     0.699020127118644,
+     0.9958333333333333
+    ]
+   },
+   "lb_confirmed_per_document_all_summaries": {
+    "point_observed": 71.75496688741723,
+    "ci95": [
+     66.3773178807947,
+     76.9273178807947
+    ],
+    "boot_mean_not_the_estimate": 71.72423311258278,
+    "per_document_median": 77.0,
+    "per_document_iqr": [
+     47.0,
+     100.0
+    ]
+   },
+   "lb_distinct_confirmed_units_per_document": {
+    "point_observed": 17.32450331125828,
+    "ci95": [
+     15.801158940397352,
+     18.887417218543046
+    ],
+    "boot_mean_not_the_estimate": 17.314321854304637,
+    "per_document_median": 17.0,
+    "per_document_iqr": [
+     10.0,
+     22.0
+    ]
+   },
+   "share_documents_with_at_least_one_confirmed": {
+    "point_observed": 1.0,
+    "ci95": [
+     1.0,
+     1.0
+    ],
+    "boot_mean_not_the_estimate": 1.0,
+    "per_document_median": 1.0,
+    "per_document_iqr": [
+     1.0,
+     1.0
+    ]
+   }
+  },
+  "humanfact.distilled+div1": {
+   "n_emitted_units_on_common_pairs": 12084,
+   "n_confirmed_units_on_common_pairs": 10907,
+   "n_pairs_any": 1388,
+   "n_pairs_common": 1388,
+   "lb_confirmed_per_emitted_list": {
+    "point_observed": 7.652593818984546,
+    "ci95": [
+     7.167735927152319,
+     8.114245309050773
+    ],
+    "boot_mean_not_the_estimate": 7.64957610375276,
+    "per_document_median": 9.25,
+    "per_document_iqr": [
+     6.125,
+     10.0
+    ]
+   },
+   "lb_confirmed_rate_per_emitted_slot": {
+    "point_observed": 0.8545537219401906,
+    "ci95": [
+     0.8216080994269664,
+     0.8850101014027635
+    ],
+    "boot_mean_not_the_estimate": 0.8542254178495845,
+    "per_document_median": 0.95,
+    "per_document_iqr": [
+     0.7782738095238095,
+     1.0
+    ]
+   },
+   "lb_confirmed_per_document_all_summaries": {
+    "point_observed": 72.23178807947019,
+    "ci95": [
+     66.66192052980132,
+     77.61622516556291
+    ],
+    "boot_mean_not_the_estimate": 72.20574834437086,
+    "per_document_median": 77.0,
+    "per_document_iqr": [
+     50.5,
+     100.5
+    ]
+   },
+   "lb_distinct_confirmed_units_per_document": {
+    "point_observed": 14.887417218543046,
+    "ci95": [
+     13.516390728476821,
+     16.304635761589402
+    ],
+    "boot_mean_not_the_estimate": 14.879229139072846,
+    "per_document_median": 15.0,
+    "per_document_iqr": [
+     8.0,
+     19.0
+    ]
+   },
+   "share_documents_with_at_least_one_confirmed": {
+    "point_observed": 1.0,
+    "ci95": [
+     1.0,
+     1.0
+    ],
+    "boot_mean_not_the_estimate": 1.0,
+    "per_document_median": 1.0,
+    "per_document_iqr": [
+     1.0,
+     1.0
+    ]
+   }
+  },
+  "judgefact+div1": {
+   "n_emitted_units_on_common_pairs": 11900,
+   "n_confirmed_units_on_common_pairs": 10424,
+   "n_pairs_any": 1388,
+   "n_pairs_common": 1388,
+   "lb_confirmed_per_emitted_list": {
+    "point_observed": 7.329194260485651,
+    "ci95": [
+     6.8722337196468,
+     7.7693225717439285
+    ],
+    "boot_mean_not_the_estimate": 7.3268979028697565,
+    "per_document_median": 8.5,
+    "per_document_iqr": [
+     5.5,
+     9.5
+    ]
+   },
+   "lb_confirmed_rate_per_emitted_slot": {
+    "point_observed": 0.8271132576516143,
+    "ci95": [
+     0.7862097269213172,
+     0.8663269648568069
+    ],
+    "boot_mean_not_the_estimate": 0.8268008114209264,
+    "per_document_median": 0.9722222222222222,
+    "per_document_iqr": [
+     0.7112745098039216,
+     1.0
+    ]
+   },
+   "lb_confirmed_per_document_all_summaries": {
+    "point_observed": 69.03311258278146,
+    "ci95": [
+     63.953476821192055,
+     74.03973509933775
+    ],
+    "boot_mean_not_the_estimate": 69.0105536423841,
+    "per_document_median": 75.0,
+    "per_document_iqr": [
+     44.0,
+     94.5
+    ]
+   },
+   "lb_distinct_confirmed_units_per_document": {
+    "point_observed": 13.834437086092715,
+    "ci95": [
+     12.860927152317881,
+     14.814569536423841
+    ],
+    "boot_mean_not_the_estimate": 13.826806622516555,
+    "per_document_median": 14.0,
+    "per_document_iqr": [
+     10.0,
+     18.0
+    ]
+   },
+   "share_documents_with_at_least_one_confirmed": {
+    "point_observed": 1.0,
+    "ci95": [
+     1.0,
+     1.0
+    ],
+    "boot_mean_not_the_estimate": 1.0,
+    "per_document_median": 1.0,
+    "per_document_iqr": [
+     1.0,
+     1.0
+    ]
+   }
+  },
+  "judgefact.distilled+div1": {
+   "n_emitted_units_on_common_pairs": 12096,
+   "n_confirmed_units_on_common_pairs": 10978,
+   "n_pairs_any": 1388,
+   "n_pairs_common": 1388,
+   "lb_confirmed_per_emitted_list": {
+    "point_observed": 7.696192052980132,
+    "ci95": [
+     7.2027593818984545,
+     8.163086368653422
+    ],
+    "boot_mean_not_the_estimate": 7.6931599889624716,
+    "per_document_median": 9.333333333333334,
+    "per_document_iqr": [
+     6.25,
+     10.0
+    ]
+   },
+   "lb_confirmed_rate_per_emitted_slot": {
+    "point_observed": 0.8585564591773202,
+    "ci95": [
+     0.8251569783807986,
+     0.889499252414712
+    ],
+    "boot_mean_not_the_estimate": 0.858231840836224,
+    "per_document_median": 0.9666666666666667,
+    "per_document_iqr": [
+     0.7729166666666667,
+     1.0
+    ]
+   },
+   "lb_confirmed_per_document_all_summaries": {
+    "point_observed": 72.70198675496688,
+    "ci95": [
+     67.13228476821192,
+     78.21870860927152
+    ],
+    "boot_mean_not_the_estimate": 72.6753880794702,
+    "per_document_median": 79.0,
+    "per_document_iqr": [
+     50.5,
+     101.0
+    ]
+   },
+   "lb_distinct_confirmed_units_per_document": {
+    "point_observed": 13.417218543046358,
+    "ci95": [
+     12.324503311258278,
+     14.543046357615895
+    ],
+    "boot_mean_not_the_estimate": 13.409245033112585,
+    "per_document_median": 14.0,
+    "per_document_iqr": [
+     8.0,
+     18.0
+    ]
+   },
+   "share_documents_with_at_least_one_confirmed": {
+    "point_observed": 1.0,
+    "ci95": [
+     1.0,
+     1.0
+    ],
+    "boot_mean_not_the_estimate": 1.0,
+    "per_document_median": 1.0,
+    "per_document_iqr": [
+     1.0,
+     1.0
+    ]
+   }
+  },
+  "mars2": {
+   "n_emitted_units_on_common_pairs": 11207,
+   "n_confirmed_units_on_common_pairs": 9805,
+   "n_pairs_any": 1388,
+   "n_pairs_common": 1388,
+   "lb_confirmed_per_emitted_list": {
+    "point_observed": 6.852924944812361,
+    "ci95": [
+     6.40500137969095,
+     7.281456953642384
+    ],
+    "boot_mean_not_the_estimate": 6.850964459161149,
+    "per_document_median": 7.916666666666667,
+    "per_document_iqr": [
+     5.0625,
+     8.895833333333332
+    ]
+   },
+   "lb_confirmed_rate_per_emitted_slot": {
+    "point_observed": 0.8185267564355669,
+    "ci95": [
+     0.7780829021911055,
+     0.8574425518934926
+    ],
+    "boot_mean_not_the_estimate": 0.8183147472772682,
+    "per_document_median": 0.9478260869565217,
+    "per_document_iqr": [
+     0.6864936313386205,
+     1.0
+    ]
+   },
+   "lb_confirmed_per_document_all_summaries": {
+    "point_observed": 64.93377483443709,
+    "ci95": [
+     59.90728476821192,
+     69.90728476821192
+    ],
+    "boot_mean_not_the_estimate": 64.91227947019867,
+    "per_document_median": 68.0,
+    "per_document_iqr": [
+     40.5,
+     91.5
+    ]
+   },
+   "lb_distinct_confirmed_units_per_document": {
+    "point_observed": 11.072847682119205,
+    "ci95": [
+     10.304635761589404,
+     11.834437086092715
+    ],
+    "boot_mean_not_the_estimate": 11.070362913907285,
+    "per_document_median": 11.0,
+    "per_document_iqr": [
+     8.0,
+     14.0
+    ]
+   },
+   "share_documents_with_at_least_one_confirmed": {
+    "point_observed": 1.0,
+    "ci95": [
+     1.0,
+     1.0
+    ],
+    "boot_mean_not_the_estimate": 1.0,
+    "per_document_median": 1.0,
+    "per_document_iqr": [
+     1.0,
+     1.0
+    ]
+   }
+  }
+ },
+ "paired_contrasts_vs_primary": {
+  "humanfact+div1_minus_humanfact.distilled+div1": {
+   "lb_confirmed_per_emitted_list": {
+    "observed_contrast": -0.04828918322295807,
+    "ci95": [
+     -0.23013934878587197,
+     0.14404663355408379
+    ],
+    "boot_mean_not_the_observed_contrast": -0.048685264900662266,
+    "boot_two_sided_p_approx": 0.6088,
+    "excludes_zero": false
+   },
+   "lb_confirmed_rate_per_emitted_slot": {
+    "observed_contrast": -0.036454446004011515,
+    "ci95": [
+     -0.05413043458898783,
+     -0.01963478248321056
+    ],
+    "boot_mean_not_the_observed_contrast": -0.03642810119715392,
+    "boot_two_sided_p_approx": 0.0,
+    "excludes_zero": true
+   },
+   "lb_confirmed_per_document_all_summaries": {
+    "observed_contrast": -0.4768211920529801,
+    "ci95": [
+     -2.020033112582781,
+     1.1456953642384107
+    ],
+    "boot_mean_not_the_observed_contrast": -0.4815152317880795,
+    "boot_two_sided_p_approx": 0.5471999999999999,
+    "excludes_zero": false
+   },
+   "lb_distinct_confirmed_units_per_document": {
+    "observed_contrast": 2.437086092715232,
+    "ci95": [
+     1.880794701986755,
+     3.000165562913905
+    ],
+    "boot_mean_not_the_observed_contrast": 2.4350927152317885,
+    "boot_two_sided_p_approx": 0.0,
+    "excludes_zero": true
+   },
+   "share_documents_with_at_least_one_confirmed": {
+    "observed_contrast": 0.0,
+    "ci95": [
+     0.0,
+     0.0
+    ],
+    "boot_mean_not_the_observed_contrast": 0.0,
+    "boot_two_sided_p_approx": 0.0,
+    "excludes_zero": false
+   }
+  },
+  "humanfact+div1_minus_judgefact+div1": {
+   "lb_confirmed_per_emitted_list": {
+    "observed_contrast": 0.2751103752759382,
+    "ci95": [
+     0.14017660044150115,
+     0.42329608167770416
+    ],
+    "boot_mean_not_the_observed_contrast": 0.27399293598234,
+    "boot_two_sided_p_approx": 0.0,
+    "excludes_zero": true
+   },
+   "lb_confirmed_rate_per_emitted_slot": {
+    "observed_contrast": -0.009013981715434952,
+    "ci95": [
+     -0.016514304826386234,
+     -0.0014255962082739162
+    ],
+    "boot_mean_not_the_observed_contrast": -0.009003494768495783,
+    "boot_two_sided_p_approx": 0.02079999999999993,
+    "excludes_zero": true
+   },
+   "lb_confirmed_per_document_all_summaries": {
+    "observed_contrast": 2.7218543046357615,
+    "ci95": [
+     1.3377483443708609,
+     4.324503311258278
+    ],
+    "boot_mean_not_the_observed_contrast": 2.7136794701986755,
+    "boot_two_sided_p_approx": 0.0,
+    "excludes_zero": true
+   },
+   "lb_distinct_confirmed_units_per_document": {
+    "observed_contrast": 3.4900662251655628,
+    "ci95": [
+     2.6951986754966892,
+     4.3509933774834435
+    ],
+    "boot_mean_not_the_observed_contrast": 3.48751523178808,
+    "boot_two_sided_p_approx": 0.0,
+    "excludes_zero": true
+   },
+   "share_documents_with_at_least_one_confirmed": {
+    "observed_contrast": 0.0,
+    "ci95": [
+     0.0,
+     0.0
+    ],
+    "boot_mean_not_the_observed_contrast": 0.0,
+    "boot_two_sided_p_approx": 0.0,
+    "excludes_zero": false
+   }
+  },
+  "humanfact+div1_minus_judgefact.distilled+div1": {
+   "lb_confirmed_per_emitted_list": {
+    "observed_contrast": -0.09188741721854304,
+    "ci95": [
+     -0.2792701434878587,
+     0.10017935982339936
+    ],
+    "boot_mean_not_the_observed_contrast": -0.09226915011037527,
+    "boot_two_sided_p_approx": 0.3380000000000001,
+    "excludes_zero": false
+   },
+   "lb_confirmed_rate_per_emitted_slot": {
+    "observed_contrast": -0.040457183241140844,
+    "ci95": [
+     -0.0576257380748248,
+     -0.02373060827577053
+    ],
+    "boot_mean_not_the_observed_contrast": -0.04043452418379346,
+    "boot_two_sided_p_approx": 0.0,
+    "excludes_zero": true
+   },
+   "lb_confirmed_per_document_all_summaries": {
+    "observed_contrast": -0.9470198675496688,
+    "ci95": [
+     -2.5100993377483443,
+     0.6490066225165563
+    ],
+    "boot_mean_not_the_observed_contrast": -0.9511549668874172,
+    "boot_two_sided_p_approx": 0.246,
+    "excludes_zero": false
+   },
+   "lb_distinct_confirmed_units_per_document": {
+    "observed_contrast": 3.9072847682119205,
+    "ci95": [
+     3.218543046357616,
+     4.6092715231788075
+    ],
+    "boot_mean_not_the_observed_contrast": 3.905076821192053,
+    "boot_two_sided_p_approx": 0.0,
+    "excludes_zero": true
+   },
+   "share_documents_with_at_least_one_confirmed": {
+    "observed_contrast": 0.0,
+    "ci95": [
+     0.0,
+     0.0
+    ],
+    "boot_mean_not_the_observed_contrast": 0.0,
+    "boot_two_sided_p_approx": 0.0,
+    "excludes_zero": false
+   }
+  },
+  "humanfact+div1_minus_mars2": {
+   "lb_confirmed_per_emitted_list": {
+    "observed_contrast": 0.7513796909492273,
+    "ci95": [
+     0.5118584437086093,
+     0.9837265452538629
+    ],
+    "boot_mean_not_the_observed_contrast": 0.7499263796909492,
+    "boot_two_sided_p_approx": 0.0,
+    "excludes_zero": true
+   },
+   "lb_confirmed_rate_per_emitted_slot": {
+    "observed_contrast": -0.0004274804993875552,
+    "ci95": [
+     -0.018322519463922556,
+     0.01710644096182706
+    ],
+    "boot_mean_not_the_observed_contrast": -0.0005174306248375212,
+    "boot_two_sided_p_approx": 0.9623999999999999,
+    "excludes_zero": false
+   },
+   "lb_confirmed_per_document_all_summaries": {
+    "observed_contrast": 6.821192052980132,
+    "ci95": [
+     4.715066225165563,
+     8.84122516556291
+    ],
+    "boot_mean_not_the_observed_contrast": 6.811953642384107,
+    "boot_two_sided_p_approx": 0.0,
+    "excludes_zero": true
+   },
+   "lb_distinct_confirmed_units_per_document": {
+    "observed_contrast": 6.251655629139073,
+    "ci95": [
+     5.238245033112583,
+     7.298013245033113
+    ],
+    "boot_mean_not_the_observed_contrast": 6.243958940397351,
+    "boot_two_sided_p_approx": 0.0,
+    "excludes_zero": true
+   },
+   "share_documents_with_at_least_one_confirmed": {
+    "observed_contrast": 0.0,
+    "ci95": [
+     0.0,
+     0.0
+    ],
+    "boot_mean_not_the_observed_contrast": 0.0,
+    "boot_two_sided_p_approx": 0.0,
+    "excludes_zero": false
+   }
+  }
+ },
+ "primary": "humanfact+div1",
+ "judge_validation_printed_beside_the_bound": {
+  "source": "/home/user/results/marsc/r04_matched/e0_judge/relabel_report.json",
+  "sha256": "ba3d73fbd384253fb54c95ec503ed7e3781784572e2ffd04bbcf6f6fd7aa70ff",
+  "n": 63343,
+  "raw_agreement": 0.7162748843597556,
+  "cohen_kappa": 0.47268441949978696,
+  "human_covered_judge_covered": 23365,
+  "human_covered_judge_omitted": 222,
+  "human_omitted_judge_covered": 17750,
+  "human_omitted_judge_omitted": 22006,
+  "human_covered_rate": 0.3723694804477211,
+  "judge_covered_rate": 0.6490851396365818,
+  "recall_on_human_omitted": 0.5535265117215011,
+  "precision_on_judge_omitted": 0.9900125967248515,
+  "unjudged_cells_dropped": 0,
+  "cells_below_min_choice_mass": 0,
+  "reading": "the bound omits the human-omitted facts the judge missed; with recall_on_human_omitted = r, a crude first-order back-of-envelope on the same population would be bound / r, which is NOT reported as an estimate here because r was measured on a different (human-ACU) population."
+ },
+ "lower_bound_sanity_flag": {
+  "source": "/home/user/results/marsc/r02_human_rank/human_precision_ranked.json",
+  "sha256": "59bbadcb0ebd086a823c6eda09471ae63d1e42d30b4ccf1d237a5254a2f8ec1d",
+  "NOT_A_COMPARATOR": "the human cells are on the PRE-DRIFT emission and are agreement-conditioned against a degenerate second annotator (PREREG A3b: annotator 2 answered `A` on all 400 items, kappa exactly 0.0). Neither side identifies the other.",
+  "reading": "a flag only. Where `judged_rate_above_human_ci_upper` is true, the transportability assumption behind the word BOUND is under strain for that cell and the manuscript must report the bound with that strain stated, or not at all.",
+  "per_system": {
+   "humanfact+div1": {
+    "judge_confirmed_rate_corrected_emission": 0.8180992759361793,
+    "human_agreement_conditioned_rate_PRE_DRIFT": 0.6403070877449479,
+    "human_ci95": [
+     0.49411060807854745,
+     0.7770455129744563
+    ],
+    "n_annotated_items_in_budget": 61,
+    "judged_rate_above_human_ci_upper": true
+   },
+   "humanfact.distilled+div1": {
+    "judge_confirmed_rate_corrected_emission": 0.8545537219401906,
+    "human_agreement_conditioned_rate_PRE_DRIFT": 0.8696786351428178,
+    "human_ci95": [
+     0.8047446488201428,
+     0.9286270968521895
+    ],
+    "n_annotated_items_in_budget": 56,
+    "judged_rate_above_human_ci_upper": false
+   },
+   "judgefact+div1": {
+    "status": "no human cell at this budget"
+   },
+   "judgefact.distilled+div1": {
+    "judge_confirmed_rate_corrected_emission": 0.8585564591773202,
+    "human_agreement_conditioned_rate_PRE_DRIFT": 0.8249394734708135,
+    "human_ci95": [
+     0.7073316027452374,
+     0.9246540088253884
+    ],
+    "n_annotated_items_in_budget": 59,
+    "judged_rate_above_human_ci_upper": false
+   },
+   "mars2": {
+    "judge_confirmed_rate_corrected_emission": 0.8185267564355669,
+    "human_agreement_conditioned_rate_PRE_DRIFT": 0.7830199899364165,
+    "human_ci95": [
+     0.6481428113992956,
+     0.9059352271167834
+    ],
+    "n_annotated_items_in_budget": 63,
+    "judged_rate_above_human_ci_upper": false
+   }
+  },
+  "any_flagged": true
+ },
+ "emission_drift_that_motivates_this_block": {
+  "source": "/home/user/results/marsc/r02_human_rank/emitted_overlap.json",
+  "sha256": "9b078c12d15918e3593048801a95b5f80e866753119be0bf82b6b9096c988571",
+  "k": 10,
+  "systems": {
+   "humanfact+div1": {
+    "n_pairs": 1388,
+    "units_as_annotated": 12497,
+    "units_corrected": 12464,
+    "shared": 7382,
+    "jaccard_like_recall": 0.5907017684244219
+   },
+   "humanfact.distilled+div1": {
+    "n_pairs": 1388,
+    "units_as_annotated": 12072,
+    "units_corrected": 12084,
+    "shared": 8012,
+    "jaccard_like_recall": 0.6636845593108018
+   },
+   "judgefact.distilled+div1": {
+    "n_pairs": 1388,
+    "units_as_annotated": 12081,
+    "units_corrected": 12096,
+    "shared": 7638,
+    "jaccard_like_recall": 0.6322324310901416
+   },
+   "mars2": {
+    "n_pairs": 1388,
+    "units_as_annotated": 11258,
+    "units_corrected": 11258,
+    "shared": 11258,
+    "jaccard_like_recall": 1.0
+   }
+  },
+  "annotated_items_still_in_corrected_topk": {
+   "judgefact.distilled+div1": {
+    "in": 48,
+    "of": 100,
+    "share": 0.48
+   },
+   "humanfact+div1": {
+    "in": 51,
+    "of": 100,
+    "share": 0.51
+   },
+   "mars2": {
+    "in": 70,
+    "of": 100,
+    "share": 0.7
+   },
+   "humanfact.distilled+div1": {
+    "in": 53,
+    "of": 100,
+    "share": 0.53
+   }
+  }
+ }
+}

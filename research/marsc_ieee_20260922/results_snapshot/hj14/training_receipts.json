@@ -1,0 +1,110 @@
+{
+ "mc-A-lam1-crossenc-r04human_seed20260906": {
+  "cost": {
+   "encodings": 4800,
+   "tokens": 1024501,
+   "cells": 16332
+  },
+  "train_docs": 853,
+  "tetrad_docs": 401
+ },
+ "mc-A-lam1-crossenc-r04human_seed20260907": {
+  "cost": {
+   "encodings": 4800,
+   "tokens": 1007641,
+   "cells": 16297
+  },
+  "train_docs": 853,
+  "tetrad_docs": 401
+ },
+ "mc-A-lam1-crossenc-r04human_seed20260908": {
+  "cost": {
+   "encodings": 4800,
+   "tokens": 1028068,
+   "cells": 16296
+  },
+  "train_docs": 853,
+  "tetrad_docs": 401
+ },
+ "mc-A-lam1-crossenc-r04judge_seed20260906": {
+  "cost": {
+   "encodings": 4800,
+   "tokens": 1007689,
+   "cells": 16287
+  },
+  "train_docs": 853,
+  "tetrad_docs": 346
+ },
+ "mc-A-lam1-crossenc-r04judge_seed20260907": {
+  "cost": {
+   "encodings": 4800,
+   "tokens": 1013212,
+   "cells": 16391
+  },
+  "train_docs": 853,
+  "tetrad_docs": 346
+ },
+ "mc-A-lam1-crossenc-r04judge_seed20260908": {
+  "cost": {
+   "encodings": 4800,
+   "tokens": 1026474,
+   "cells": 16335
+  },
+  "train_docs": 853,
+  "tetrad_docs": 346
+ },
+ "mc-R-lam1-crossenc-r04human_seed20260906": {
+  "cost": {
+   "encodings": 4800,
+   "tokens": 986474,
+   "cells": 17689
+  },
+  "train_docs": 853,
+  "tetrad_docs": 401
+ },
+ "mc-R-lam1-crossenc-r04human_seed20260907": {
+  "cost": {
+   "encodings": 4800,
+   "tokens": 981134,
+   "cells": 17683
+  },
+  "train_docs": 853,
+  "tetrad_docs": 401
+ },
+ "mc-R-lam1-crossenc-r04human_seed20260908": {
+  "cost": {
+   "encodings": 4800,
+   "tokens": 980319,
+   "cells": 17758
+  },
+  "train_docs": 853,
+  "tetrad_docs": 401
+ },
+ "mc-R-lam1-crossenc-r04judge_seed20260906": {
+  "cost": {
+   "encodings": 4800,
+   "tokens": 986474,
+   "cells": 17689
+  },
+  "train_docs": 853,
+  "tetrad_docs": 346
+ },
+ "mc-R-lam1-crossenc-r04judge_seed20260907": {
+  "cost": {
+   "encodings": 4800,
+   "tokens": 981134,
+   "cells": 17683
+  },
+  "train_docs": 853,
+  "tetrad_docs": 346
+ },
+ "mc-R-lam1-crossenc-r04judge_seed20260908": {
+  "cost": {
+   "encodings": 4800,
+   "tokens": 980319,
+   "cells": 17758
+  },
+  "train_docs": 853,
+  "tetrad_docs": 346
+ }
+}

@@ -1,0 +1,21 @@
+{
+ "registered": "research/marsc_ieee_20260922/PREREG.md H-J12 (unit-matched judge twin)",
+ "judge_glob": "/home/user/results/marsc_strengthen/hj12/gemma_twin/judge/judge_shard*.jsonl",
+ "threshold_p_omitted": 0.5,
+ "roles": {
+  "train": {
+   "docs": 853,
+   "labelled_cells": 56102,
+   "docs_with_tetrads": 329,
+   "tetrads": 6954
+  },
+  "calib": {
+   "docs": 106,
+   "labelled_cells": 7201,
+   "docs_with_tetrads": 38,
+   "tetrads": 916
+  }
+ },
+ "judge_covered_rate": 0.33113754482409996,
+ "unjudged_cells_dropped": 0
+}

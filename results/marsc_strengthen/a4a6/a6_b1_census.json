@@ -1,0 +1,71 @@
+{
+ "registered": "research/marsc_strengthen_20260918/PREREG.md Wave A / A6 (closes provenance C06)",
+ "selection": "b21_finetune_xenc.py: split=='train' (default 'train') and non-empty units; cell = (unit, label) with label is not None",
+ "file": "/home/user/data/plan2026/b1/training_rows.jsonl",
+ "file_sha256": "a686ebe19f4370874e7241cce7f4d853bd2388e90ee984d1779c7e25587f8aab",
+ "file_bytes": 25199836,
+ "rows_in_file": 2987,
+ "rows_selected": 2625,
+ "n_pairs_distinct": 2625,
+ "n_documents_distinct": 1411,
+ "units_in_selected_rows": 85600,
+ "labels_none": 0,
+ "cells": 85600,
+ "cells_by_label_value": {
+  "0": 43744,
+  "1": 41856
+ },
+ "cells_by_label_source": {
+  "judge": 84646,
+  "human": 954
+ },
+ "cells_by_resource": {
+  "rose_cnndm": 28027,
+  "rose_xsum": 25146,
+  "natural770": 20021,
+  "rose_samsum": 12406
+ },
+ "rows_training_eligible": 2625,
+ "cells_training_eligible": 85600,
+ "claim": {
+  "cells": 85600,
+  "pairs": 2625
+ },
+ "matches_claim": {
+  "cells": true,
+  "pairs": true,
+  "rows": true
+ },
+ "configs": {
+  "/home/user/results/mars2_gates/b21/xenc_seed20260906/training_config.json": {
+   "exists": true,
+   "sha256": "e640bf86c6e4130d8e4667d271c39451663fe7c8d2f1c9d4de3b1a97af24845f",
+   "examples": 85600,
+   "train": "/home/user/data/plan2026/b1/training_rows.jsonl",
+   "seed": 20260906,
+   "steps": 5350,
+   "batch": 16,
+   "epochs": 1.0
+  },
+  "/home/user/results/mars2_gates/b21/xenc_seed20260907/training_config.json": {
+   "exists": true,
+   "sha256": "2d8217982f9c66ba8fdd40d75820d30a35a0abd1eb42ff852c3248470adbd6b7",
+   "examples": 85600,
+   "train": "/home/user/data/plan2026/b1/training_rows.jsonl",
+   "seed": 20260907,
+   "steps": 5350,
+   "batch": 16,
+   "epochs": 1.0
+  },
+  "/home/user/results/mars2_gates/b21/xenc_seed20260908/training_config.json": {
+   "exists": true,
+   "sha256": "026d48c8d7ca881169d5b6028d432ca305dcc4352046a85269e416912965467d",
+   "examples": 85600,
+   "train": "/home/user/data/plan2026/b1/training_rows.jsonl",
+   "seed": 20260908,
+   "steps": 5350,
+   "batch": 16,
+   "epochs": 1.0
+  }
+ }
+}

@@ -1,0 +1,69 @@
+{
+ "registered": "research/marsc_20260916/PREREG.md E1",
+ "n_pairs": 1412,
+ "n_docs": 154,
+ "n_validation_tetrads": 1276,
+ "systems": {
+  "mc-A-lam1-crossenc-full": {
+   "auroc_pooled": 0.9740448322290951,
+   "auroc_macro": 0.9682213519279406,
+   "auroc_lexical_stress": 0.9640701453363676,
+   "n_stress": 4353,
+   "logloss": 0.20387245985919422,
+   "by_resource": {
+    "rose_cnndm": 0.9735118097788596,
+    "rose_samsum": 0.9662367187382425,
+    "rose_xsum": 0.9839865799197516
+   },
+   "four_cell_strict": 0.8189655172413793,
+   "C_positive_rate": 0.9835423197492164,
+   "n_tetrads_scored": 1276
+  },
+  "mc-R-lam1-crossenc-full": {
+   "auroc_pooled": 0.97512856443299,
+   "auroc_macro": 0.9707991699018698,
+   "auroc_lexical_stress": 0.9676333946474921,
+   "n_stress": 4353,
+   "logloss": 0.2028989871257701,
+   "by_resource": {
+    "rose_cnndm": 0.9743333305251389,
+    "rose_samsum": 0.9695175290080816,
+    "rose_xsum": 0.9828077890871172
+   },
+   "four_cell_strict": 0.8166144200626959,
+   "C_positive_rate": 0.9843260188087775,
+   "n_tetrads_scored": 1276
+  }
+ },
+ "primary": "mc-A-lam1-crossenc-full",
+ "paired": {
+  "mc-R-lam1-crossenc-full": {
+   "lexical_stress": {
+    "mean": -0.003534584855160749,
+    "ci": [
+     -0.007536803432530478,
+     0.0006084176154795561
+    ]
+   },
+   "pooled": {
+    "mean": -0.0010580354442528484,
+    "ci": [
+     -0.002925742451324387,
+     0.0005239388126852677
+    ]
+   }
+  }
+ },
+ "screen": {
+  "strongest_control": "mc-R-lam1-crossenc-full",
+  "delta_lexical_stress": -0.0035632493111245056,
+  "ci_lexical_stress": [
+   -0.007536803432530478,
+   0.0006084176154795561
+  ],
+  "delta_pooled": -0.0010837322038949049,
+  "generic_contrast_ties": false,
+  "PASS": false,
+  "HEADROOM": false
+ }
+}

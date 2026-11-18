@@ -1,0 +1,36 @@
+{
+ "registered": "research/marsc_20260916/PREREG.md R04 (matched-unit label-source control)",
+ "judge_glob": "/home/user/results/marsc/r04_matched/judge/judge_shard*.jsonl",
+ "threshold_p_omitted": 0.5,
+ "roles": {
+  "train": {
+   "docs": 853,
+   "labelled_cells": 56118,
+   "cells_flipped_by_judge": 15861,
+   "docs_with_tetrads": 346,
+   "tetrads": 9260
+  },
+  "calib": {
+   "docs": 106,
+   "labelled_cells": 7225,
+   "cells_flipped_by_judge": 2111,
+   "docs_with_tetrads": 45,
+   "tetrads": 1117
+  }
+ },
+ "judge_vs_human_cells": {
+  "n": 63343,
+  "raw_agreement": 0.7162748843597556,
+  "cohen_kappa": 0.47268441949978696,
+  "human_covered_judge_covered": 23365,
+  "human_covered_judge_omitted": 222,
+  "human_omitted_judge_covered": 17750,
+  "human_omitted_judge_omitted": 22006,
+  "human_covered_rate": 0.3723694804477211,
+  "judge_covered_rate": 0.6490851396365818,
+  "recall_on_human_omitted": 0.5535265117215011,
+  "precision_on_judge_omitted": 0.9900125967248515,
+  "unjudged_cells_dropped": 0,
+  "cells_below_min_choice_mass": 0
+ }
+}

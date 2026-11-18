@@ -1,0 +1,35 @@
+{
+ "tag": "importance",
+ "config": {
+  "backbone": "answerdotai/ModernBERT-large",
+  "train": "/home/user/results/marsc/e2imp/imp_rows_train.jsonl",
+  "pretrain_rows": "",
+  "pretrain_epochs": 1.0,
+  "exclude_resource": "",
+  "label_frac": 1.0,
+  "source_only": true,
+  "epochs": 3.0,
+  "lr": 3e-05,
+  "batch": 8,
+  "eval_batch": 16,
+  "max_len": 3072,
+  "steps": 0,
+  "seed": 20260906,
+  "tag": "importance",
+  "out": "/home/user/results/marsc/e2imp/tagger_seed20260906",
+  "save_model": false,
+  "eval_m2": "/dev/null",
+  "eval_acu": "/nonexistent",
+  "eval_units": [
+   "gemma+ent=/home/user/results/mars3/m32/units_gemma+ent_validation.jsonl",
+   "gemma+ent_tune=/home/user/results/marsc/e2imp/units_gemma+ent_tune.jsonl"
+  ],
+  "scores_out": "/home/user/results/marsc/e2imp/scores",
+  "limit": 0,
+  "device": null
+ },
+ "train_rows": 853,
+ "train_loss": 0.36712402909994124,
+ "train_seconds": 161.09810757637024,
+ "seconds_per_pair_m2": 0.0005786418914794922
+}

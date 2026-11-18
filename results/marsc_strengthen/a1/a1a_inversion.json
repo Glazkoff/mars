@@ -1,0 +1,548 @@
+{
+ "registered": "PREREG.md Wave A / A1a (inversion gate)",
+ "tol": 1e-06,
+ "files": [
+  {
+   "tag": "primary-inv_seed20260906",
+   "calibrated": "/home/user/results/marsc/scores/acu_mc-A-lam1-crossenc-inv_seed20260906.jsonl",
+   "raw_logits": "/home/user/results/marsc/scores/acu_mc-A-lam1-crossenc-inv_seed20260906_logits.jsonl",
+   "calibration": {
+    "n_cells": 7225,
+    "omitted_rate": 0.6094117647058823,
+    "slope": 0.7432703171630644,
+    "intercept": 0.159028867622954,
+    "result_json": "/home/user/results/marsc/e1/mc-A-lam1-crossenc-inv_seed20260906/result.json"
+   },
+   "n_pairs": 1412,
+   "n_units": 9760,
+   "n_pairs_len_mismatch": 0,
+   "n_saturated_probs": 0,
+   "max_abs_err": 3.197442310920451e-14,
+   "mean_abs_err": 3.891251838601455e-15,
+   "p999_abs_err": 2.930988785010413e-14,
+   "pass": true
+  },
+  {
+   "tag": "primary-inv_seed20260907",
+   "calibrated": "/home/user/results/marsc/scores/acu_mc-A-lam1-crossenc-inv_seed20260907.jsonl",
+   "raw_logits": "/home/user/results/marsc/scores/acu_mc-A-lam1-crossenc-inv_seed20260907_logits.jsonl",
+   "calibration": {
+    "n_cells": 7225,
+    "omitted_rate": 0.6094117647058823,
+    "slope": 0.8407525057011231,
+    "intercept": 0.35465454013818903,
+    "result_json": "/home/user/results/marsc/e1/mc-A-lam1-crossenc-inv_seed20260907/result.json"
+   },
+   "n_pairs": 1412,
+   "n_units": 9760,
+   "n_pairs_len_mismatch": 0,
+   "n_saturated_probs": 0,
+   "max_abs_err": 6.217248937900877e-14,
+   "mean_abs_err": 5.427213020959694e-15,
+   "p999_abs_err": 4.973799150320701e-14,
+   "pass": true
+  },
+  {
+   "tag": "primary-inv_seed20260908",
+   "calibrated": "/home/user/results/marsc/scores/acu_mc-A-lam1-crossenc-inv_seed20260908.jsonl",
+   "raw_logits": "/home/user/results/marsc/scores/acu_mc-A-lam1-crossenc-inv_seed20260908_logits.jsonl",
+   "calibration": {
+    "n_cells": 7225,
+    "omitted_rate": 0.6094117647058823,
+    "slope": 0.7454711748588515,
+    "intercept": 0.3653080414607523,
+    "result_json": "/home/user/results/marsc/e1/mc-A-lam1-crossenc-inv_seed20260908/result.json"
+   },
+   "n_pairs": 1412,
+   "n_units": 9760,
+   "n_pairs_len_mismatch": 0,
+   "n_saturated_probs": 0,
+   "max_abs_err": 2.5757174171303632e-14,
+   "mean_abs_err": 2.7081312284113366e-15,
+   "p999_abs_err": 2.1316282072803006e-14,
+   "pass": true
+  },
+  {
+   "tag": "t07-frac10_seed20260906",
+   "calibrated": "/home/user/results/marsc/t07_curve/scores/acu_t07-frac10_seed20260906.jsonl",
+   "raw_logits": "/home/user/results/marsc/t07_curve/scores/acu_t07-frac10_seed20260906_logits.jsonl",
+   "calibration": {
+    "n_cells": 2772,
+    "omitted_rate": 0.5797258297258298,
+    "slope": 0.5716651137412251,
+    "intercept": 0.2679016875133194,
+    "result_json": "/home/user/results/marsc/t07_curve/t07-frac10_seed20260906/result.json"
+   },
+   "n_pairs": 1412,
+   "n_units": 9760,
+   "n_pairs_len_mismatch": 0,
+   "n_saturated_probs": 0,
+   "max_abs_err": 1.7763568394002505e-14,
+   "mean_abs_err": 1.9925045509129865e-15,
+   "p999_abs_err": 1.4210854715202004e-14,
+   "pass": true
+  },
+  {
+   "tag": "t07-frac10_seed20260907",
+   "calibrated": "/home/user/results/marsc/t07_curve/scores/acu_t07-frac10_seed20260907.jsonl",
+   "raw_logits": "/home/user/results/marsc/t07_curve/scores/acu_t07-frac10_seed20260907_logits.jsonl",
+   "calibration": {
+    "n_cells": 2772,
+    "omitted_rate": 0.5797258297258298,
+    "slope": 0.5582822790514593,
+    "intercept": 0.426284801410572,
+    "result_json": "/home/user/results/marsc/t07_curve/t07-frac10_seed20260907/result.json"
+   },
+   "n_pairs": 1412,
+   "n_units": 9760,
+   "n_pairs_len_mismatch": 0,
+   "n_saturated_probs": 0,
+   "max_abs_err": 1.509903313490213e-14,
+   "mean_abs_err": 1.8233331866773145e-15,
+   "p999_abs_err": 1.3322676295501878e-14,
+   "pass": true
+  },
+  {
+   "tag": "t07-frac10_seed20260908",
+   "calibrated": "/home/user/results/marsc/t07_curve/scores/acu_t07-frac10_seed20260908.jsonl",
+   "raw_logits": "/home/user/results/marsc/t07_curve/scores/acu_t07-frac10_seed20260908_logits.jsonl",
+   "calibration": {
+    "n_cells": 2772,
+    "omitted_rate": 0.5797258297258298,
+    "slope": 0.6156873057817496,
+    "intercept": 0.3486168097762179,
+    "result_json": "/home/user/results/marsc/t07_curve/t07-frac10_seed20260908/result.json"
+   },
+   "n_pairs": 1412,
+   "n_units": 9760,
+   "n_pairs_len_mismatch": 0,
+   "n_saturated_probs": 0,
+   "max_abs_err": 2.220446049250313e-14,
+   "mean_abs_err": 2.5905562346343463e-15,
+   "p999_abs_err": 2.042810365310288e-14,
+   "pass": true
+  },
+  {
+   "tag": "t07-frac25_seed20260906",
+   "calibrated": "/home/user/results/marsc/t07_curve/scores/acu_t07-frac25_seed20260906.jsonl",
+   "raw_logits": "/home/user/results/marsc/t07_curve/scores/acu_t07-frac25_seed20260906_logits.jsonl",
+   "calibration": {
+    "n_cells": 5385,
+    "omitted_rate": 0.578644382544104,
+    "slope": 0.7138161418636078,
+    "intercept": 0.2743433510907456,
+    "result_json": "/home/user/results/marsc/t07_curve/t07-frac25_seed20260906/result.json"
+   },
+   "n_pairs": 1412,
+   "n_units": 9760,
+   "n_pairs_len_mismatch": 0,
+   "n_saturated_probs": 0,
+   "max_abs_err": 3.375077994860476e-14,
+   "mean_abs_err": 3.963709500248028e-15,
+   "p999_abs_err": 3.108624468950438e-14,
+   "pass": true
+  },
+  {
+   "tag": "t07-frac25_seed20260907",
+   "calibrated": "/home/user/results/marsc/t07_curve/scores/acu_t07-frac25_seed20260907.jsonl",
+   "raw_logits": "/home/user/results/marsc/t07_curve/scores/acu_t07-frac25_seed20260907_logits.jsonl",
+   "calibration": {
+    "n_cells": 5385,
+    "omitted_rate": 0.578644382544104,
+    "slope": 0.7530099219213725,
+    "intercept": 0.3488277116304698,
+    "result_json": "/home/user/results/marsc/t07_curve/t07-frac25_seed20260907/result.json"
+   },
+   "n_pairs": 1412,
+   "n_units": 9760,
+   "n_pairs_len_mismatch": 0,
+   "n_saturated_probs": 0,
+   "max_abs_err": 5.240252676230739e-14,
+   "mean_abs_err": 4.8527641408176224e-15,
+   "p999_abs_err": 4.529709940470639e-14,
+   "pass": true
+  },
+  {
+   "tag": "t07-frac25_seed20260908",
+   "calibrated": "/home/user/results/marsc/t07_curve/scores/acu_t07-frac25_seed20260908.jsonl",
+   "raw_logits": "/home/user/results/marsc/t07_curve/scores/acu_t07-frac25_seed20260908_logits.jsonl",
+   "calibration": {
+    "n_cells": 5385,
+    "omitted_rate": 0.578644382544104,
+    "slope": 0.7387641925014765,
+    "intercept": 0.4442946398744982,
+    "result_json": "/home/user/results/marsc/t07_curve/t07-frac25_seed20260908/result.json"
+   },
+   "n_pairs": 1412,
+   "n_units": 9760,
+   "n_pairs_len_mismatch": 0,
+   "n_saturated_probs": 0,
+   "max_abs_err": 2.7533531010703882e-14,
+   "mean_abs_err": 2.5768668491712588e-15,
+   "p999_abs_err": 2.4868995751603507e-14,
+   "pass": true
+  },
+  {
+   "tag": "t07-frac50_seed20260906",
+   "calibrated": "/home/user/results/marsc/t07_curve/scores/acu_t07-frac50_seed20260906.jsonl",
+   "raw_logits": "/home/user/results/marsc/t07_curve/scores/acu_t07-frac50_seed20260906_logits.jsonl",
+   "calibration": {
+    "n_cells": 7225,
+    "omitted_rate": 0.6094117647058823,
+    "slope": 0.7333960799776269,
+    "intercept": 0.37300560272515415,
+    "result_json": "/home/user/results/marsc/t07_curve/t07-frac50_seed20260906/result.json"
+   },
+   "n_pairs": 1412,
+   "n_units": 9760,
+   "n_pairs_len_mismatch": 0,
+   "n_saturated_probs": 0,
+   "max_abs_err": 4.3520742565306136e-14,
+   "mean_abs_err": 4.1493359597089044e-15,
+   "p999_abs_err": 3.730349362740526e-14,
+   "pass": true
+  },
+  {
+   "tag": "t07-frac50_seed20260907",
+   "calibrated": "/home/user/results/marsc/t07_curve/scores/acu_t07-frac50_seed20260907.jsonl",
+   "raw_logits": "/home/user/results/marsc/t07_curve/scores/acu_t07-frac50_seed20260907_logits.jsonl",
+   "calibration": {
+    "n_cells": 7225,
+    "omitted_rate": 0.6094117647058823,
+    "slope": 0.6920598661208898,
+    "intercept": 0.2586425918599005,
+    "result_json": "/home/user/results/marsc/t07_curve/t07-frac50_seed20260907/result.json"
+   },
+   "n_pairs": 1412,
+   "n_units": 9760,
+   "n_pairs_len_mismatch": 0,
+   "n_saturated_probs": 0,
+   "max_abs_err": 3.108624468950438e-14,
+   "mean_abs_err": 3.383393514481833e-15,
+   "p999_abs_err": 2.685940359015309e-14,
+   "pass": true
+  },
+  {
+   "tag": "t07-frac50_seed20260908",
+   "calibrated": "/home/user/results/marsc/t07_curve/scores/acu_t07-frac50_seed20260908.jsonl",
+   "raw_logits": "/home/user/results/marsc/t07_curve/scores/acu_t07-frac50_seed20260908_logits.jsonl",
+   "calibration": {
+    "n_cells": 7225,
+    "omitted_rate": 0.6094117647058823,
+    "slope": 0.734842028198427,
+    "intercept": 0.6201980470044248,
+    "result_json": "/home/user/results/marsc/t07_curve/t07-frac50_seed20260908/result.json"
+   },
+   "n_pairs": 1412,
+   "n_units": 9760,
+   "n_pairs_len_mismatch": 0,
+   "n_saturated_probs": 0,
+   "max_abs_err": 3.8191672047105385e-14,
+   "mean_abs_err": 3.95389793159513e-15,
+   "p999_abs_err": 3.32907035272033e-14,
+   "pass": true
+  },
+  {
+   "tag": "t07-frac100_seed20260906",
+   "calibrated": "/home/user/results/marsc/t07_curve/scores/acu_t07-frac100_seed20260906.jsonl",
+   "raw_logits": "/home/user/results/marsc/t07_curve/scores/acu_t07-frac100_seed20260906_logits.jsonl",
+   "calibration": {
+    "n_cells": 7225,
+    "omitted_rate": 0.6094117647058823,
+    "slope": 0.7432703171630644,
+    "intercept": 0.159028867622954,
+    "result_json": "/home/user/results/marsc/t07_curve/t07-frac100_seed20260906/result.json"
+   },
+   "n_pairs": 1412,
+   "n_units": 9760,
+   "n_pairs_len_mismatch": 0,
+   "n_saturated_probs": 0,
+   "max_abs_err": 3.197442310920451e-14,
+   "mean_abs_err": 3.891251838601455e-15,
+   "p999_abs_err": 2.930988785010413e-14,
+   "pass": true
+  },
+  {
+   "tag": "t07-frac100_seed20260907",
+   "calibrated": "/home/user/results/marsc/t07_curve/scores/acu_t07-frac100_seed20260907.jsonl",
+   "raw_logits": "/home/user/results/marsc/t07_curve/scores/acu_t07-frac100_seed20260907_logits.jsonl",
+   "calibration": {
+    "n_cells": 7225,
+    "omitted_rate": 0.6094117647058823,
+    "slope": 0.8407525057011231,
+    "intercept": 0.35465454013818903,
+    "result_json": "/home/user/results/marsc/t07_curve/t07-frac100_seed20260907/result.json"
+   },
+   "n_pairs": 1412,
+   "n_units": 9760,
+   "n_pairs_len_mismatch": 0,
+   "n_saturated_probs": 0,
+   "max_abs_err": 6.217248937900877e-14,
+   "mean_abs_err": 5.427213020959694e-15,
+   "p999_abs_err": 4.973799150320701e-14,
+   "pass": true
+  },
+  {
+   "tag": "t07-frac100_seed20260908",
+   "calibrated": "/home/user/results/marsc/t07_curve/scores/acu_t07-frac100_seed20260908.jsonl",
+   "raw_logits": "/home/user/results/marsc/t07_curve/scores/acu_t07-frac100_seed20260908_logits.jsonl",
+   "calibration": {
+    "n_cells": 7225,
+    "omitted_rate": 0.6094117647058823,
+    "slope": 0.7454711748588515,
+    "intercept": 0.3653080414607523,
+    "result_json": "/home/user/results/marsc/t07_curve/t07-frac100_seed20260908/result.json"
+   },
+   "n_pairs": 1412,
+   "n_units": 9760,
+   "n_pairs_len_mismatch": 0,
+   "n_saturated_probs": 0,
+   "max_abs_err": 2.5757174171303632e-14,
+   "mean_abs_err": 2.7081312284113366e-15,
+   "p999_abs_err": 2.1316282072803006e-14,
+   "pass": true
+  },
+  {
+   "tag": "mc-A-lam1-crossenc-r04human_seed20260906",
+   "calibrated": "/home/user/results/marsc/r04_matched/scores/acu_mc-A-lam1-crossenc-r04human_seed20260906.jsonl",
+   "raw_logits": "/home/user/results/marsc/r04_matched/scores/acu_mc-A-lam1-crossenc-r04human_seed20260906_logits.jsonl",
+   "calibration": {
+    "n_cells": 7225,
+    "omitted_rate": 0.6094117647058823,
+    "slope": 0.7432703171630644,
+    "intercept": 0.159028867622954,
+    "result_json": "/home/user/results/marsc/r04_matched/models/mc-A-lam1-crossenc-r04human_seed20260906/result.json"
+   },
+   "n_pairs": 1412,
+   "n_units": 9760,
+   "n_pairs_len_mismatch": 0,
+   "n_saturated_probs": 0,
+   "max_abs_err": 3.197442310920451e-14,
+   "mean_abs_err": 3.891251838601455e-15,
+   "p999_abs_err": 2.930988785010413e-14,
+   "pass": true
+  },
+  {
+   "tag": "mc-A-lam1-crossenc-r04human_seed20260907",
+   "calibrated": "/home/user/results/marsc/r04_matched/scores/acu_mc-A-lam1-crossenc-r04human_seed20260907.jsonl",
+   "raw_logits": "/home/user/results/marsc/r04_matched/scores/acu_mc-A-lam1-crossenc-r04human_seed20260907_logits.jsonl",
+   "calibration": {
+    "n_cells": 7225,
+    "omitted_rate": 0.6094117647058823,
+    "slope": 0.8407525057011231,
+    "intercept": 0.35465454013818903,
+    "result_json": "/home/user/results/marsc/r04_matched/models/mc-A-lam1-crossenc-r04human_seed20260907/result.json"
+   },
+   "n_pairs": 1412,
+   "n_units": 9760,
+   "n_pairs_len_mismatch": 0,
+   "n_saturated_probs": 0,
+   "max_abs_err": 6.217248937900877e-14,
+   "mean_abs_err": 5.427213020959694e-15,
+   "p999_abs_err": 4.973799150320701e-14,
+   "pass": true
+  },
+  {
+   "tag": "mc-A-lam1-crossenc-r04human_seed20260908",
+   "calibrated": "/home/user/results/marsc/r04_matched/scores/acu_mc-A-lam1-crossenc-r04human_seed20260908.jsonl",
+   "raw_logits": "/home/user/results/marsc/r04_matched/scores/acu_mc-A-lam1-crossenc-r04human_seed20260908_logits.jsonl",
+   "calibration": {
+    "n_cells": 7225,
+    "omitted_rate": 0.6094117647058823,
+    "slope": 0.7454711748588515,
+    "intercept": 0.3653080414607523,
+    "result_json": "/home/user/results/marsc/r04_matched/models/mc-A-lam1-crossenc-r04human_seed20260908/result.json"
+   },
+   "n_pairs": 1412,
+   "n_units": 9760,
+   "n_pairs_len_mismatch": 0,
+   "n_saturated_probs": 0,
+   "max_abs_err": 2.5757174171303632e-14,
+   "mean_abs_err": 2.7081312284113366e-15,
+   "p999_abs_err": 2.1316282072803006e-14,
+   "pass": true
+  },
+  {
+   "tag": "mc-A-lam1-crossenc-r04judge_seed20260906",
+   "calibrated": "/home/user/results/marsc/r04_matched/scores/acu_mc-A-lam1-crossenc-r04judge_seed20260906.jsonl",
+   "raw_logits": "/home/user/results/marsc/r04_matched/scores/acu_mc-A-lam1-crossenc-r04judge_seed20260906_logits.jsonl",
+   "calibration": {
+    "n_cells": 7225,
+    "omitted_rate": 0.3219377162629758,
+    "slope": 0.6753040480065382,
+    "intercept": -0.4440229346405582,
+    "result_json": "/home/user/results/marsc/r04_matched/models/mc-A-lam1-crossenc-r04judge_seed20260906/result.json"
+   },
+   "n_pairs": 1412,
+   "n_units": 9760,
+   "n_pairs_len_mismatch": 0,
+   "n_saturated_probs": 0,
+   "max_abs_err": 4.440892098500626e-15,
+   "mean_abs_err": 3.1890604950023173e-16,
+   "p999_abs_err": 4.440892098500626e-15,
+   "pass": true
+  },
+  {
+   "tag": "mc-A-lam1-crossenc-r04judge_seed20260907",
+   "calibrated": "/home/user/results/marsc/r04_matched/scores/acu_mc-A-lam1-crossenc-r04judge_seed20260907.jsonl",
+   "raw_logits": "/home/user/results/marsc/r04_matched/scores/acu_mc-A-lam1-crossenc-r04judge_seed20260907_logits.jsonl",
+   "calibration": {
+    "n_cells": 7225,
+    "omitted_rate": 0.3219377162629758,
+    "slope": 0.6700922980700649,
+    "intercept": -0.3511690795485217,
+    "result_json": "/home/user/results/marsc/r04_matched/models/mc-A-lam1-crossenc-r04judge_seed20260907/result.json"
+   },
+   "n_pairs": 1412,
+   "n_units": 9760,
+   "n_pairs_len_mismatch": 0,
+   "n_saturated_probs": 0,
+   "max_abs_err": 4.440892098500626e-15,
+   "mean_abs_err": 3.014948956902538e-16,
+   "p999_abs_err": 3.552713678800501e-15,
+   "pass": true
+  },
+  {
+   "tag": "mc-A-lam1-crossenc-r04judge_seed20260908",
+   "calibrated": "/home/user/results/marsc/r04_matched/scores/acu_mc-A-lam1-crossenc-r04judge_seed20260908.jsonl",
+   "raw_logits": "/home/user/results/marsc/r04_matched/scores/acu_mc-A-lam1-crossenc-r04judge_seed20260908_logits.jsonl",
+   "calibration": {
+    "n_cells": 7225,
+    "omitted_rate": 0.3219377162629758,
+    "slope": 0.7139060754192326,
+    "intercept": -0.16975968705969502,
+    "result_json": "/home/user/results/marsc/r04_matched/models/mc-A-lam1-crossenc-r04judge_seed20260908/result.json"
+   },
+   "n_pairs": 1412,
+   "n_units": 9760,
+   "n_pairs_len_mismatch": 0,
+   "n_saturated_probs": 0,
+   "max_abs_err": 4.440892098500626e-15,
+   "mean_abs_err": 3.682846433131676e-16,
+   "p999_abs_err": 3.552713678800501e-15,
+   "pass": true
+  },
+  {
+   "tag": "mc-R-lam1-crossenc-r04human_seed20260906",
+   "calibrated": "/home/user/results/marsc/r04_matched/scores/acu_mc-R-lam1-crossenc-r04human_seed20260906.jsonl",
+   "raw_logits": "/home/user/results/marsc/r04_matched/scores/acu_mc-R-lam1-crossenc-r04human_seed20260906_logits.jsonl",
+   "calibration": {
+    "n_cells": 7225,
+    "omitted_rate": 0.6094117647058823,
+    "slope": 0.7321284944269296,
+    "intercept": 0.2459935221378282,
+    "result_json": "/home/user/results/marsc/r04_matched/models/mc-R-lam1-crossenc-r04human_seed20260906/result.json"
+   },
+   "n_pairs": 1412,
+   "n_units": 9760,
+   "n_pairs_len_mismatch": 0,
+   "n_saturated_probs": 0,
+   "max_abs_err": 2.5757174171303632e-14,
+   "mean_abs_err": 2.560314103544443e-15,
+   "p999_abs_err": 1.9539925233402755e-14,
+   "pass": true
+  },
+  {
+   "tag": "mc-R-lam1-crossenc-r04human_seed20260907",
+   "calibrated": "/home/user/results/marsc/r04_matched/scores/acu_mc-R-lam1-crossenc-r04human_seed20260907.jsonl",
+   "raw_logits": "/home/user/results/marsc/r04_matched/scores/acu_mc-R-lam1-crossenc-r04human_seed20260907_logits.jsonl",
+   "calibration": {
+    "n_cells": 7225,
+    "omitted_rate": 0.6094117647058823,
+    "slope": 0.7109971207151928,
+    "intercept": 0.20870957267385304,
+    "result_json": "/home/user/results/marsc/r04_matched/models/mc-R-lam1-crossenc-r04human_seed20260907/result.json"
+   },
+   "n_pairs": 1412,
+   "n_units": 9760,
+   "n_pairs_len_mismatch": 0,
+   "n_saturated_probs": 0,
+   "max_abs_err": 2.4868995751603507e-14,
+   "mean_abs_err": 2.756694043404193e-15,
+   "p999_abs_err": 2.220446049250313e-14,
+   "pass": true
+  },
+  {
+   "tag": "mc-R-lam1-crossenc-r04human_seed20260908",
+   "calibrated": "/home/user/results/marsc/r04_matched/scores/acu_mc-R-lam1-crossenc-r04human_seed20260908.jsonl",
+   "raw_logits": "/home/user/results/marsc/r04_matched/scores/acu_mc-R-lam1-crossenc-r04human_seed20260908_logits.jsonl",
+   "calibration": {
+    "n_cells": 7225,
+    "omitted_rate": 0.6094117647058823,
+    "slope": 0.7502096071897695,
+    "intercept": 0.11714724544858723,
+    "result_json": "/home/user/results/marsc/r04_matched/models/mc-R-lam1-crossenc-r04human_seed20260908/result.json"
+   },
+   "n_pairs": 1412,
+   "n_units": 9760,
+   "n_pairs_len_mismatch": 0,
+   "n_saturated_probs": 0,
+   "max_abs_err": 2.220446049250313e-14,
+   "mean_abs_err": 2.734537694383094e-15,
+   "p999_abs_err": 2.0642154652252213e-14,
+   "pass": true
+  },
+  {
+   "tag": "mc-R-lam1-crossenc-r04judge_seed20260906",
+   "calibrated": "/home/user/results/marsc/r04_matched/scores/acu_mc-R-lam1-crossenc-r04judge_seed20260906.jsonl",
+   "raw_logits": "/home/user/results/marsc/r04_matched/scores/acu_mc-R-lam1-crossenc-r04judge_seed20260906_logits.jsonl",
+   "calibration": {
+    "n_cells": 7225,
+    "omitted_rate": 0.3219377162629758,
+    "slope": 0.6972048761728106,
+    "intercept": -0.12413384559403842,
+    "result_json": "/home/user/results/marsc/r04_matched/models/mc-R-lam1-crossenc-r04judge_seed20260906/result.json"
+   },
+   "n_pairs": 1412,
+   "n_units": 9760,
+   "n_pairs_len_mismatch": 0,
+   "n_saturated_probs": 0,
+   "max_abs_err": 4.440892098500626e-15,
+   "mean_abs_err": 2.7443269846809007e-16,
+   "p999_abs_err": 3.766764677949834e-15,
+   "pass": true
+  },
+  {
+   "tag": "mc-R-lam1-crossenc-r04judge_seed20260907",
+   "calibrated": "/home/user/results/marsc/r04_matched/scores/acu_mc-R-lam1-crossenc-r04judge_seed20260907.jsonl",
+   "raw_logits": "/home/user/results/marsc/r04_matched/scores/acu_mc-R-lam1-crossenc-r04judge_seed20260907_logits.jsonl",
+   "calibration": {
+    "n_cells": 7225,
+    "omitted_rate": 0.3219377162629758,
+    "slope": 0.6327923672258622,
+    "intercept": -0.16809517712477706,
+    "result_json": "/home/user/results/marsc/r04_matched/models/mc-R-lam1-crossenc-r04judge_seed20260907/result.json"
+   },
+   "n_pairs": 1412,
+   "n_units": 9760,
+   "n_pairs_len_mismatch": 0,
+   "n_saturated_probs": 0,
+   "max_abs_err": 5.329070518200751e-15,
+   "mean_abs_err": 3.497578651855182e-16,
+   "p999_abs_err": 4.440892098500626e-15,
+   "pass": true
+  },
+  {
+   "tag": "mc-R-lam1-crossenc-r04judge_seed20260908",
+   "calibrated": "/home/user/results/marsc/r04_matched/scores/acu_mc-R-lam1-crossenc-r04judge_seed20260908.jsonl",
+   "raw_logits": "/home/user/results/marsc/r04_matched/scores/acu_mc-R-lam1-crossenc-r04judge_seed20260908_logits.jsonl",
+   "calibration": {
+    "n_cells": 7225,
+    "omitted_rate": 0.3219377162629758,
+    "slope": 0.6841638032373789,
+    "intercept": -0.4343459870315119,
+    "result_json": "/home/user/results/marsc/r04_matched/models/mc-R-lam1-crossenc-r04judge_seed20260908/result.json"
+   },
+   "n_pairs": 1412,
+   "n_units": 9760,
+   "n_pairs_len_mismatch": 0,
+   "n_saturated_probs": 0,
+   "max_abs_err": 3.552713678800501e-15,
+   "mean_abs_err": 3.371908303148505e-16,
+   "p999_abs_err": 2.6645352591003757e-15,
+   "pass": true
+  }
+ ],
+ "pass": true,
+ "n_files": 27
+}

@@ -1,0 +1,162 @@
+{
+ "registered": "research/marsc_20260916/PREREG.md E1",
+ "n_pairs": 1412,
+ "n_docs": 154,
+ "n_validation_tetrads": 1276,
+ "systems": {
+  "mc:A|lam1|crossenc": {
+   "auroc_pooled": 0.9691158619071341,
+   "auroc_macro": 0.9675038067921117,
+   "auroc_lexical_stress": 0.9554808314490741,
+   "n_stress": 4353,
+   "logloss": 0.2314429718867249,
+   "by_resource": {
+    "rose_cnndm": 0.970282840511739,
+    "rose_samsum": 0.961274116965401,
+    "rose_xsum": 0.9814552021701841
+   },
+   "four_cell_strict": 0.8040752351097179,
+   "C_positive_rate": 0.9811912225705329,
+   "n_tetrads_scored": 1276
+  },
+  "mc:B|lam1|crossenc": {
+   "auroc_pooled": 0.9699368441256225,
+   "auroc_macro": 0.9674070829793887,
+   "auroc_lexical_stress": 0.9593966977599733,
+   "n_stress": 4353,
+   "logloss": 0.23033010413516705,
+   "by_resource": {
+    "rose_cnndm": 0.9720683565719678,
+    "rose_samsum": 0.9583366254307945,
+    "rose_xsum": 0.9821896795351333
+   },
+   "four_cell_strict": 0.8205329153605015,
+   "C_positive_rate": 0.9796238244514106,
+   "n_tetrads_scored": 1276
+  },
+  "mc:C|lam1|crossenc": {
+   "auroc_pooled": 0.9705243748550404,
+   "auroc_macro": 0.9681706924578692,
+   "auroc_lexical_stress": 0.9615153079400623,
+   "n_stress": 4353,
+   "logloss": 0.22840906949354645,
+   "by_resource": {
+    "rose_cnndm": 0.9716427912328832,
+    "rose_samsum": 0.9625194704049844,
+    "rose_xsum": 0.9818904480160799
+   },
+   "four_cell_strict": 0.8001567398119123,
+   "C_positive_rate": 0.9835423197492164,
+   "n_tetrads_scored": 1276
+  },
+  "mc:D|lam1|crossenc": {
+   "auroc_pooled": 0.9699185604368892,
+   "auroc_macro": 0.9715395026950628,
+   "auroc_lexical_stress": 0.9602589735573602,
+   "n_stress": 4353,
+   "logloss": 0.23130427241664256,
+   "by_resource": {
+    "rose_cnndm": 0.9713737001363791,
+    "rose_samsum": 0.9612581267777326,
+    "rose_xsum": 0.9816758476337285
+   },
+   "four_cell_strict": 0.799373040752351,
+   "C_positive_rate": 0.9827586206896551,
+   "n_tetrads_scored": 1276
+  },
+  "mc:R|lam1|crossenc": {
+   "auroc_pooled": 0.9691290395413309,
+   "auroc_macro": 0.9686739709941296,
+   "auroc_lexical_stress": 0.9605098042066844,
+   "n_stress": 4353,
+   "logloss": 0.2257418845784767,
+   "by_resource": {
+    "rose_cnndm": 0.9708153856675045,
+    "rose_samsum": 0.9601632692220867,
+    "rose_xsum": 0.9756035635753633
+   },
+   "four_cell_strict": 0.8072100313479624,
+   "C_positive_rate": 0.9866771159874608,
+   "n_tetrads_scored": 1276
+  }
+ },
+ "primary": "mc:D|lam1|crossenc",
+ "paired": {
+  "mc:A|lam1|crossenc": {
+   "lexical_stress": {
+    "mean": 0.004791607076011722,
+    "ci": [
+     -0.0005406696279014328,
+     0.010790423255961521
+    ]
+   },
+   "pooled": {
+    "mean": 0.0008101472209784889,
+    "ci": [
+     -0.0003540698914862417,
+     0.0018957170114152538
+    ]
+   }
+  },
+  "mc:B|lam1|crossenc": {
+   "lexical_stress": {
+    "mean": 0.00089727508396964,
+    "ci": [
+     -0.0039179908223298116,
+     0.0052102372218386095
+    ]
+   },
+   "pooled": {
+    "mean": -5.302476516195754e-07,
+    "ci": [
+     -0.0014809344102272664,
+     0.0017378596646205357
+    ]
+   }
+  },
+  "mc:C|lam1|crossenc": {
+   "lexical_stress": {
+    "mean": -0.001208121996209366,
+    "ci": [
+     -0.00561582031077896,
+     0.002767965950210873
+    ]
+   },
+   "pooled": {
+    "mean": -0.0006163778143078362,
+    "ci": [
+     -0.0022657350324647996,
+     0.0009940825225258573
+    ]
+   }
+  },
+  "mc:R|lam1|crossenc": {
+   "lexical_stress": {
+    "mean": -0.00022799072252207165,
+    "ci": [
+     -0.00640527646900981,
+     0.005525256663309149
+    ]
+   },
+   "pooled": {
+    "mean": 0.0007623549554394792,
+    "ci": [
+     -0.0018062003055339198,
+     0.0034143247398689815
+    ]
+   }
+  }
+ },
+ "screen": {
+  "strongest_control": "mc:C|lam1|crossenc",
+  "delta_lexical_stress": -0.0012563343827021178,
+  "ci_lexical_stress": [
+   -0.00561582031077896,
+   0.002767965950210873
+  ],
+  "delta_pooled": -0.0006058144181512182,
+  "generic_contrast_ties": true,
+  "PASS": false,
+  "HEADROOM": false
+ }
+}

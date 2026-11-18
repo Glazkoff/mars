@@ -1,0 +1,239 @@
+{
+ "annotators": {
+  "Annotator 1": 400,
+  "Annotator 2": 400
+ },
+ "systems": {
+  "judgefact.distilled+div1": {
+   "Annotator 1": {
+    "all": {
+     "n": 100,
+     "confirmed_omission_rate": 0.62
+    },
+    "false_alert": {
+     "n": 20,
+     "confirmed_omission_rate": 0.4
+    },
+    "unknown": {
+     "n": 60,
+     "confirmed_omission_rate": 0.7
+    },
+    "hit": {
+     "n": 20,
+     "confirmed_omission_rate": 0.6
+    }
+   },
+   "Annotator 2": {
+    "all": {
+     "n": 100,
+     "confirmed_omission_rate": 0.74
+    },
+    "false_alert": {
+     "n": 20,
+     "confirmed_omission_rate": 0.35
+    },
+    "unknown": {
+     "n": 60,
+     "confirmed_omission_rate": 0.8666666666666667
+    },
+    "hit": {
+     "n": 20,
+     "confirmed_omission_rate": 0.75
+    }
+   }
+  },
+  "humanfact+div1": {
+   "Annotator 1": {
+    "all": {
+     "n": 100,
+     "confirmed_omission_rate": 0.5
+    },
+    "unknown": {
+     "n": 60,
+     "confirmed_omission_rate": 0.6
+    },
+    "false_alert": {
+     "n": 20,
+     "confirmed_omission_rate": 0.15
+    },
+    "hit": {
+     "n": 20,
+     "confirmed_omission_rate": 0.55
+    }
+   },
+   "Annotator 2": {
+    "all": {
+     "n": 100,
+     "confirmed_omission_rate": 0.59
+    },
+    "unknown": {
+     "n": 60,
+     "confirmed_omission_rate": 0.7
+    },
+    "false_alert": {
+     "n": 20,
+     "confirmed_omission_rate": 0.15
+    },
+    "hit": {
+     "n": 20,
+     "confirmed_omission_rate": 0.7
+    }
+   }
+  },
+  "mars2": {
+   "Annotator 1": {
+    "all": {
+     "n": 100,
+     "confirmed_omission_rate": 0.49
+    },
+    "false_alert": {
+     "n": 20,
+     "confirmed_omission_rate": 0.0
+    },
+    "unknown": {
+     "n": 60,
+     "confirmed_omission_rate": 0.6333333333333333
+    },
+    "hit": {
+     "n": 20,
+     "confirmed_omission_rate": 0.55
+    }
+   },
+   "Annotator 2": {
+    "all": {
+     "n": 100,
+     "confirmed_omission_rate": 0.62
+    },
+    "false_alert": {
+     "n": 20,
+     "confirmed_omission_rate": 0.1
+    },
+    "unknown": {
+     "n": 60,
+     "confirmed_omission_rate": 0.7833333333333333
+    },
+    "hit": {
+     "n": 20,
+     "confirmed_omission_rate": 0.65
+    }
+   }
+  },
+  "humanfact.distilled+div1": {
+   "Annotator 1": {
+    "all": {
+     "n": 100,
+     "confirmed_omission_rate": 0.62
+    },
+    "false_alert": {
+     "n": 20,
+     "confirmed_omission_rate": 0.25
+    },
+    "unknown": {
+     "n": 60,
+     "confirmed_omission_rate": 0.7666666666666667
+    },
+    "hit": {
+     "n": 20,
+     "confirmed_omission_rate": 0.55
+    }
+   },
+   "Annotator 2": {
+    "all": {
+     "n": 100,
+     "confirmed_omission_rate": 0.68
+    },
+    "false_alert": {
+     "n": 20,
+     "confirmed_omission_rate": 0.25
+    },
+    "unknown": {
+     "n": 60,
+     "confirmed_omission_rate": 0.8666666666666667
+    },
+    "hit": {
+     "n": 20,
+     "confirmed_omission_rate": 0.55
+    }
+   }
+  }
+ },
+ "agreement": {
+  "n": 400,
+  "q1_raw": 0.855,
+  "q1_kappa": 0.0,
+  "q2_raw": 0.88,
+  "q2_kappa": 0.7249047196034043,
+  "verdict_raw": 0.775,
+  "verdict_kappa": 0.5330860418666183
+ },
+ "evaluator_status_vs_human": {
+  "Annotator 1": {
+   "n": 160,
+   "agreement_q2_vs_status": 0.7125
+  },
+  "Annotator 2": {
+   "n": 160,
+   "agreement_q2_vs_status": 0.725
+  }
+ },
+ "systems_both_agree": {
+  "judgefact.distilled+div1": {
+   "n": 76,
+   "confirmed_omission_rate": 0.7368421052631579
+  },
+  "mars2": {
+   "n": 81,
+   "confirmed_omission_rate": 0.5679012345679012
+  },
+  "humanfact+div1": {
+   "n": 79,
+   "confirmed_omission_rate": 0.5569620253164557
+  },
+  "humanfact.distilled+div1": {
+   "n": 74,
+   "confirmed_omission_rate": 0.7027027027027027
+  }
+ },
+ "precision_natural_mix": {
+  "judgefact.distilled+div1": {
+   "weights": {
+    "hit": 0.15757656328621744,
+    "false_alert": 0.08156391519143681,
+    "unknown": 0.7608595215223456
+   },
+   "Annotator 1": 0.659773169113947,
+   "Annotator 2": 0.8061413781010321,
+   "both_agree": 0.8187416228535485
+  },
+  "humanfact+div1": {
+   "weights": {
+    "hit": 0.16083178948812954,
+    "false_alert": 0.07861860161932209,
+    "unknown": 0.7605496088925485
+   },
+   "Annotator 1": 0.5565800397968986,
+   "Annotator 2": 0.656759769109373,
+   "both_agree": 0.6429583413237954
+  },
+  "mars2": {
+   "weights": {
+    "hit": 0.06579067746214722,
+    "false_alert": 0.03193586752664563,
+    "unknown": 0.9022734550112073
+   },
+   "Annotator 1": 0.6076247274446123,
+   "Annotator 2": 0.7527384001951726,
+   "both_agree": 0.74197365679114
+  },
+  "humanfact.distilled+div1": {
+   "weights": {
+    "hit": 0.16442094368967566,
+    "false_alert": 0.08379734458624949,
+    "unknown": 0.7517817117240748
+   },
+   "Annotator 1": 0.6877468341643415,
+   "Annotator 2": 0.7629250053367489,
+   "both_agree": 0.8478913300430643
+  }
+ }
+}
