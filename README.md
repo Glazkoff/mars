@@ -38,15 +38,17 @@ The analysis plans are internal dated documents, not entries in an external regi
 was written into its plan, with endpoints and criteria, before its data were read; outcomes, including the criteria
 that were missed, are recorded in the same files.
 
-## What is not here
+## Reproducing the results
 
-- **Trained checkpoints.** The three MARS-C seeds, the unified verifier and the distilled segmenter are not
-  distributed. Their recipe, training manifests and hashes are in `research/marsc_20260916/` and `results/`;
-  retraining a MARS-C seed takes about a minute of GPU time after the labels are prepared.
-- **The annotators' completed answer sheets.** The blinded sheets, the item keys (`human_sample_key.jsonl`) and
-  the transcribed labels (`export.jsonl`) are shipped; the annotators appear only as `Annotator 1`,
-  `Annotator 2` and `Adjudicator`.
-- **Per-item score dumps** and copies of the datasets themselves.
+The [checkpoint release](https://huggingface.co/Glazkov/MARS-omission-checkpoints/tree/7c36d79c15c635862c497484255a9ad249e5f083) contains 13 trained models, inference code, checksum manifests and 12 numeric test-score files. Use the pinned revision to select the same weights as the authors. Obtain text-bearing inputs under each source's terms. Numeric scores alone do not reconstruct the original inputs.
+
+The November revision results are in [results/revision](results/revision). Start with these files:
+
+| Question | Evidence |
+|---|---|
+| How does the matching rule affect omission detection? | `h2-test.json` and `h2-val.json` report the test and validation comparisons. |
+| Which documents contribute to the UniSumEval ranking? | `h3-unisum.json` records eligibility, exclusions and within-document comparisons. |
+| How reliable are fact matches and the human comparison of the two pipelines? | `e2c-result.json` and `g6b-result.json` report adjudicated results. `independent-agreement-20261117.json` reports agreement before adjudication. |
 
 ## Using the package
 

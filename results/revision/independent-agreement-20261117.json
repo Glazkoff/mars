@@ -1,0 +1,79 @@
+{
+  "e2c": {
+    "decision": {
+      "items": 400,
+      "agree": 324,
+      "raw": 0.81,
+      "kappa": 0.6313229925900773,
+      "counts_reviewer1_by_reviewer2": {
+        "different": {
+          "different": 186,
+          "same": 42,
+          "uncertain": 13
+        },
+        "same": {
+          "different": 17,
+          "same": 138,
+          "uncertain": 4
+        }
+      }
+    },
+    "joint_uncertain": 0
+  },
+  "g6b": {
+    "decision": {
+      "items": 200,
+      "agree": 191,
+      "raw": 0.955,
+      "kappa": 0.7572815533980582,
+      "counts_reviewer1_by_reviewer2": {
+        "not_omitted": {
+          "not_omitted": 16,
+          "omitted": 0,
+          "uncertain": 0
+        },
+        "omitted": {
+          "not_omitted": 8,
+          "omitted": 175,
+          "uncertain": 1
+        }
+      }
+    },
+    "joint_uncertain": 0,
+    "supported": {
+      "items": 200,
+      "agree": 194,
+      "raw": 0.97,
+      "kappa": 0.735624586913417,
+      "counts_reviewer1_by_reviewer2": {
+        "no": {
+          "no": 9,
+          "uncertain": 0,
+          "yes": 0
+        },
+        "yes": {
+          "no": 5,
+          "uncertain": 1,
+          "yes": 185
+        }
+      }
+    },
+    "conveyed": {
+      "items": 200,
+      "agree": 197,
+      "raw": 0.985,
+      "kappa": 0.8159509202453987,
+      "counts_reviewer1_by_reviewer2": {
+        "no": {
+          "no": 190,
+          "yes": 3
+        },
+        "yes": {
+          "no": 0,
+          "yes": 7
+        }
+      }
+    },
+    "both_fields_agree": 191
+  }
+}

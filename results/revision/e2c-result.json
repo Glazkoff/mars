@@ -1,0 +1,200 @@
+{
+  "annotation_sha256": {
+    "arbiter": "b68764cd4e99ef0156a5be3e2c514c25ad80aed2d2951b943448b79b997a95bc",
+    "first": "a17e86646e4900f3daaabc18d922cc722425ac874f71cce92c60cf3725efe1bb",
+    "second": "fbb3c873dd7d87b9e3caa9f863ca3497400489568009d48d7682e19566fc67c6"
+  },
+  "halves": {
+    "dev": {
+      "best_token": "tok3",
+      "contrasts_against_best_token": {
+        "llm_with_span": {
+          "accuracy_delta": 0.03471809655366975,
+          "descriptive_ci95": null
+        },
+        "nli_with_span": {
+          "accuracy_delta": 0.027787820581655187,
+          "descriptive_ci95": null
+        },
+        "nli_without_span": {
+          "accuracy_delta": -0.034048070330832125,
+          "descriptive_ci95": null
+        }
+      },
+      "decision_requires_all_labels": false,
+      "items": 200,
+      "kappa_3class": 0.6076555023923447,
+      "raw_agreement": 0.795,
+      "rules": {
+        "llm_with_span": {
+          "accuracy": 0.9070452193041258,
+          "precision": 0.9358039101254741,
+          "recall": 0.2885434369689093,
+          "weighted_counts": {
+            "fn": 11386.720000000001,
+            "fp": 316.8,
+            "tn": 109583.92000000003,
+            "tp": 4618.079999999999
+          }
+        },
+        "nli_with_span": {
+          "accuracy": 0.9001149433321113,
+          "precision": 0.6971308195424397,
+          "recall": 0.3788013595921223,
+          "weighted_counts": {
+            "fn": 9942.160000000002,
+            "fp": 2633.9200000000005,
+            "tn": 107266.80000000003,
+            "tp": 6062.64
+          }
+        },
+        "nli_without_span": {
+          "accuracy": 0.838279052419624,
+          "precision": 0.42955032618524325,
+          "recall": 0.8298860341897432,
+          "weighted_counts": {
+            "fn": 2722.64,
+            "fp": 17638.92,
+            "tn": 92261.80000000005,
+            "tp": 13282.160000000002
+          }
+        },
+        "tok1": {
+          "accuracy": 0.7761728000487985,
+          "precision": 0.29090829162814413,
+          "recall": 0.5292412276317106,
+          "weighted_counts": {
+            "fn": 7534.400000000001,
+            "fp": 20646.68,
+            "tn": 89254.04000000001,
+            "tp": 8470.400000000003
+          }
+        },
+        "tok2": {
+          "accuracy": 0.8487176733792132,
+          "precision": 0.4142190143227698,
+          "recall": 0.45897230830750774,
+          "weighted_counts": {
+            "fn": 8659.04,
+            "fp": 10388.24,
+            "tn": 99512.48000000004,
+            "tp": 7345.76
+          }
+        },
+        "tok3": {
+          "accuracy": 0.8723271227504561,
+          "precision": 0.49732085928687036,
+          "recall": 0.4054733579926022,
+          "weighted_counts": {
+            "fn": 9515.28,
+            "fp": 6559.4400000000005,
+            "tn": 103341.28000000003,
+            "tp": 6489.5199999999995
+          }
+        }
+      },
+      "unresolved": 1
+    },
+    "heldout": {
+      "best_token": "tok3",
+      "contrasts_against_best_token": {
+        "llm_with_span": {
+          "accuracy_delta": 0.01493870692200483,
+          "descriptive_ci95": [
+            -0.07103247393459942,
+            0.06337674501560038
+          ]
+        },
+        "nli_with_span": {
+          "accuracy_delta": 0.013857922049833937,
+          "descriptive_ci95": [
+            -0.07197929987773835,
+            0.06248100018679381
+          ]
+        },
+        "nli_without_span": {
+          "accuracy_delta": -0.16614075354824287,
+          "descriptive_ci95": [
+            -0.3633916297382267,
+            -0.007159839807624027
+          ]
+        }
+      },
+      "decision_requires_all_labels": false,
+      "items": 200,
+      "kappa_3class": 0.6555796103129304,
+      "raw_agreement": 0.825,
+      "rules": {
+        "llm_with_span": {
+          "accuracy": 0.8649951458846944,
+          "precision": 0.9798746872716807,
+          "recall": 0.16665254612240432,
+          "weighted_counts": {
+            "fn": 17705.000000000007,
+            "fp": 72.72,
+            "tn": 110363.72000000002,
+            "tp": 3540.6399999999994
+          }
+        },
+        "nli_with_span": {
+          "accuracy": 0.8639143610125235,
+          "precision": 0.6881182742173428,
+          "recall": 0.2862874453299594,
+          "weighted_counts": {
+            "fn": 15163.28,
+            "fp": 2756.7599999999993,
+            "tn": 107679.68,
+            "tp": 6082.359999999999
+          }
+        },
+        "nli_without_span": {
+          "accuracy": 0.6839156854144467,
+          "precision": 0.24147503230134795,
+          "recall": 0.4479300223481148,
+          "weighted_counts": {
+            "fn": 11729.08,
+            "fp": 29893.560000000005,
+            "tn": 80542.87999999999,
+            "tp": 9516.560000000001
+          }
+        },
+        "tok1": {
+          "accuracy": 0.7855981618759363,
+          "precision": 0.39914130875354653,
+          "recall": 0.6507575201311894,
+          "weighted_counts": {
+            "fn": 7419.879999999998,
+            "fp": 20813.000000000004,
+            "tn": 89623.43999999997,
+            "tp": 13825.759999999998
+          }
+        },
+        "tok2": {
+          "accuracy": 0.8296442462026724,
+          "precision": 0.4764003988530589,
+          "recall": 0.5639971307054059,
+          "weighted_counts": {
+            "fn": 9263.159999999998,
+            "fp": 13169.64,
+            "tn": 97266.8,
+            "tp": 11982.48
+          }
+        },
+        "tok3": {
+          "accuracy": 0.8500564389626896,
+          "precision": 0.5644760493962941,
+          "recall": 0.30921356099416153,
+          "weighted_counts": {
+            "fn": 14676.2,
+            "fp": 5068.679999999999,
+            "tn": 105367.76,
+            "tp": 6569.439999999998
+          }
+        }
+      },
+      "unresolved": 1
+    }
+  },
+  "scope": "sampled strata; unresolved gold excluded from metrics",
+  "selection_key_sha256": "a87f2decade91215a7f5569f4b7315c5474dd166c3a93c374ca8476e8a734329"
+}

@@ -1,12 +1,12 @@
 # MARS public release — file manifest
-# files: 1456
-# total_bytes: 35939649
-# tree_digest: 477278266931408639b77f06ab2736d7d7ec9d3e0077d6c2b870b0ca129bb51c
+# files: 1462
+# total_bytes: 38795368
+# tree_digest: 3c185dd247275be3d6a36a2a6beb5364c581baad7225821714df61a9d2d25f54
 # sha256  size  path
 32a10e9df66e538c8182646dcd761b9389e2505c6aab734559817023a046330d  76  .gitignore
 e94ddaa5dd086d50fa73c00a6cfe7dcf58969f8713d58c6a3d068a27a01d145e  994  CITATION.cff
 00d20ccedcb18859184e50387adece08f1936b04a9218315f330b7ddf4af0260  1073  LICENSE
-6771b3843985920c86d783dd163327857d14fd050cc88a3501fecf7e273f9ed8  5473  README.md
+0e07b49d1440148e6d7b084db3b2919d8d2e387bba01e08617ba7c21653ada0b  5908  README.md
 3e76ca6aa2794511fe6476b3ae7d8633eeecd3f643e70f3bc16675fd7b7a4ec7  12055  RESULTS_MAP.md
 3f3075404568f9e45f55c01f163e64bffbb388ee8e0cb8936083539a46bcb81a  5184  THIRD_PARTY_NOTICES.md
 c95bae1d1ce0235ecccd3560b772ec1efb97f348a79f0fbe0a634f0c2ccefe2c  11358  licenses/Apache-2.0.txt
@@ -1455,6 +1455,12 @@ ed2b39400a7e0c9966bd362c366cf406646376f479d6c08fedafecb74364bbee  100  results/m
 9799f48f2e572d68a465b6c638c7783f9ffb4732200d41ae255270554e76818b  100  results/marsc_strengthen/w6/complete.json
 1b3d7a2daa926fbd761e5dee211e242af55274968e7534523f698de8f104ac20  319  results/marsc_strengthen/w6/started.json
 5a9b3bc0ad5d7c8c8752ed8d09bcf5a260d7c365adad352396f8e1fd87bd06af  8104  results/marsc_strengthen/w6/w6_report.json
+e2190b982d9483a6e50e388bb955f6d214bd0d3d1cf67c863f5471d862ce9511  6028  results/revision/e2c-result.json
+3f86ee2e8c3f4801c57eab26803c71493cca17ce9d54adb942da0c90ee7ce8bc  3807  results/revision/g6b-result.json
+1ac16befc23ab1835f11e28edd40a09136c4d6e2a926757cd2fcb0c3b64d398f  1418868  results/revision/h2-test.json
+485be0faa841c2b96d1d04b8387523e57204f3574c58b89d0c2a470fc1030802  1417912  results/revision/h2-val.json
+3ab14be5a4a372e06b37793937b098f6dfd4157068e1bc82025c2587aa21df50  7127  results/revision/h3-unisum.json
+4661e9fddf3bf6bf0a93fc0cd4b44051603849edfc4dfa4cab2b9f834743862e  1542  results/revision/independent-agreement-20261117.json
 06badaea22e715a3c6bd6a82193d2d53c1ad3d1baf04d7eee0585ea0c92942dc  2105  tests/test_b2_combine.py
 29a9e3f2fcb497c2fe78231288c5d5a6054845c6ef12b40b1e6ded494fe7c026  2570  tests/test_d1_reconcile.py
 d10af1011bb386eb6f697cf8379c32f25f847a0a2a60ca3fde9fbb637ae5f7c5  937  tests/test_mars_api.py

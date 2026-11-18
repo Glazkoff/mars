@@ -1,0 +1,295 @@
+{
+  "all_pairs": 1828,
+  "all_docs": 225,
+  "tolerance": 0.0001,
+  "original_pair_eligible": 911,
+  "expanded_pair_eligible": 1440,
+  "original_ranked": 78,
+  "expanded_ranked": 129,
+  "original_ranked_lost": 0,
+  "stages": {
+    "original": {
+      "ranked_documents": 78,
+      "pairs_in_ranked_documents": 636,
+      "tau": {
+        "marsR_factcg": 0.39019820962086366,
+        "marsR_marsc": 0.30790018403246555,
+        "geval_completeness": 0.3992648285923514
+      }
+    },
+    "original_shared": {
+      "ranked_documents": 78,
+      "pairs_in_ranked_documents": 636,
+      "tau": {
+        "marsR_factcg": 0.39019820962086366,
+        "marsR_marsc": 0.30790018403246555,
+        "geval_completeness": 0.3992648285923514
+      }
+    },
+    "expanded_same_documents": {
+      "ranked_documents": 78,
+      "pairs_in_ranked_documents": 636,
+      "tau": {
+        "marsR_factcg": 0.39019820962086366,
+        "marsR_marsc": 0.30790018403246555,
+        "geval_completeness": 0.3992648285923514
+      }
+    },
+    "expanded_all": {
+      "ranked_documents": 129,
+      "pairs_in_ranked_documents": 1042,
+      "tau": {
+        "marsR_factcg": 0.4270007151139868,
+        "marsR_marsc": 0.37161946492243564,
+        "geval_completeness": 0.419423978819906
+      }
+    },
+    "expanded_added_documents": {
+      "ranked_documents": 51,
+      "pairs_in_ranked_documents": 406,
+      "tau": {
+        "marsR_factcg": 0.4832868999858222,
+        "marsR_marsc": 0.4690724827541547,
+        "geval_completeness": 0.4502556203444012
+      }
+    }
+  },
+  "added_documents": {
+    "quartile": {
+      "1": {
+        "docs": 0,
+        "pairs": 0,
+        "tau": {
+          "marsR_factcg": null,
+          "marsR_marsc": null,
+          "geval_completeness": null
+        }
+      },
+      "2": {
+        "docs": 1,
+        "pairs": 6,
+        "tau": {
+          "marsR_factcg": 0.5012804118276031,
+          "marsR_marsc": 0.3580574370197165,
+          "geval_completeness": 0.3580574370197165
+        }
+      },
+      "3": {
+        "docs": 7,
+        "pairs": 53,
+        "tau": {
+          "marsR_factcg": 0.4236821203068901,
+          "marsR_marsc": 0.37538169987564146,
+          "geval_completeness": 0.47867135795472204
+        }
+      },
+      "4": {
+        "docs": 43,
+        "pairs": 347,
+        "tau": {
+          "marsR_factcg": 0.4925715498907232,
+          "marsR_marsc": 0.48690621591424843,
+          "geval_completeness": 0.44777394639213225
+        }
+      }
+    },
+    "domain": {
+      "booking": {
+        "docs": 0,
+        "pairs": 0,
+        "tau": {
+          "marsR_factcg": null,
+          "marsR_marsc": null,
+          "geval_completeness": null
+        }
+      },
+      "dailylife": {
+        "docs": 0,
+        "pairs": 0,
+        "tau": {
+          "marsR_factcg": null,
+          "marsR_marsc": null,
+          "geval_completeness": null
+        }
+      },
+      "interview": {
+        "docs": 2,
+        "pairs": 13,
+        "tau": {
+          "marsR_factcg": 0.6857583749052298,
+          "marsR_marsc": 0.6471825374147068,
+          "geval_completeness": 0.48371173070873835
+        }
+      },
+      "lifestyle": {
+        "docs": 0,
+        "pairs": 0,
+        "tau": {
+          "marsR_factcg": null,
+          "marsR_marsc": null,
+          "geval_completeness": null
+        }
+      },
+      "medical_literature": {
+        "docs": 11,
+        "pairs": 83,
+        "tau": {
+          "marsR_factcg": 0.3674889740811808,
+          "marsR_marsc": 0.3700104975983214,
+          "geval_completeness": 0.4746252448371452
+        }
+      },
+      "meeting": {
+        "docs": 1,
+        "pairs": 8,
+        "tau": {
+          "marsR_factcg": 0.1889822365046136,
+          "marsR_marsc": 0.1889822365046136,
+          "geval_completeness": 0.6158402871356008
+        }
+      },
+      "news": {
+        "docs": 1,
+        "pairs": 6,
+        "tau": {
+          "marsR_factcg": 0.5012804118276031,
+          "marsR_marsc": 0.3580574370197165,
+          "geval_completeness": 0.3580574370197165
+        }
+      },
+      "report": {
+        "docs": 11,
+        "pairs": 79,
+        "tau": {
+          "marsR_factcg": 0.4203502365912833,
+          "marsR_marsc": 0.3903002180518785,
+          "geval_completeness": 0.3493801379696075
+        }
+      },
+      "sci-fiction": {
+        "docs": 25,
+        "pairs": 217,
+        "tau": {
+          "marsR_factcg": 0.556784847349486,
+          "marsR_marsc": 0.5487149599982377,
+          "geval_completeness": 0.4783062496446954
+        }
+      }
+    }
+  },
+  "contrasts": {
+    "within_original_documents": {
+      "marsR_factcg": {
+        "delta": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ]
+      },
+      "marsR_marsc": {
+        "delta": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ]
+      },
+      "geval_completeness": {
+        "delta": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ]
+      }
+    },
+    "adding_documents": {
+      "marsR_factcg": {
+        "delta": 0.03680250549312314,
+        "ci95": [
+          -0.0001852665379019748,
+          0.07464713671858111
+        ]
+      },
+      "marsR_marsc": {
+        "delta": 0.06371928088997009,
+        "ci95": [
+          0.02460167814696755,
+          0.105809198239153
+        ]
+      },
+      "geval_completeness": {
+        "delta": 0.0201591502275546,
+        "ci95": [
+          -0.013417950040263301,
+          0.05315315982023141
+        ]
+      }
+    },
+    "total": {
+      "marsR_factcg": {
+        "delta": 0.03680250549312314,
+        "ci95": [
+          -0.0001852665379019748,
+          0.07464713671858111
+        ]
+      },
+      "marsR_marsc": {
+        "delta": 0.06371928088997009,
+        "ci95": [
+          0.02460167814696755,
+          0.105809198239153
+        ]
+      },
+      "geval_completeness": {
+        "delta": 0.0201591502275546,
+        "ci95": [
+          -0.013417950040263301,
+          0.05315315982023141
+        ]
+      }
+    }
+  },
+  "exclusion_counts": {
+    "historical": {
+      "no_common_pairs": 113,
+      "undefined_metric_in_cohort_definition": 34,
+      "ranked": 78
+    },
+    "expanded": {
+      "ranked": 129,
+      "undefined_metric_in_cohort_definition": 50,
+      "no_common_pairs": 46
+    }
+  },
+  "quartile_word_cuts": [
+    214.0,
+    773.0,
+    3359.0
+  ],
+  "three_metric_sensitivity": {
+    "eligible_pairs": 1440,
+    "same_eligible_pairs_as_e4b": true,
+    "ranked_documents": 178,
+    "shared_original_ranked_documents": 78,
+    "new_ranked_documents": 100,
+    "original_shared_tau": {
+      "marsR_factcg": 0.39019820962086366,
+      "marsR_marsc": 0.30790018403246555,
+      "geval_completeness": 0.3992648285923514
+    },
+    "expanded_same_documents_tau": {
+      "marsR_factcg": 0.39019820962086366,
+      "marsR_marsc": 0.30790018403246555,
+      "geval_completeness": 0.3992648285923514
+    },
+    "expanded_all_tau": {
+      "marsR_factcg": 0.4167899990106864,
+      "marsR_marsc": 0.36310293416822154,
+      "geval_completeness": 0.4201750053610873
+    }
+  },
+  "bootstrap": {
+    "draws": 5000,
+    "seed": 20261117,
+    "sampling_unit": "source_document"
+  }
+}

@@ -1,0 +1,127 @@
+{
+  "threshold": -0.03,
+  "historical_rule_on_new_sample": null,
+  "agreement_unique_item_count": 191,
+  "unique_items": 200,
+  "results": {
+    "first": {
+      "human_fact": {
+        "estimate": 0.9402568717277487,
+        "variance": 0.0006999986579954221,
+        "unresolved_weight_fraction": 0.0,
+        "unknown_label_bounds": [
+          0.9402568717277487,
+          0.9402568717277487
+        ],
+        "covered_weight_fraction": null
+      },
+      "judge_label": {
+        "estimate": 0.8716639397905759,
+        "variance": 0.0012970163738587677,
+        "unresolved_weight_fraction": 0.0,
+        "unknown_label_bounds": [
+          0.8716639397905759,
+          0.8716639397905759
+        ],
+        "covered_weight_fraction": null
+      },
+      "margin": 0.06859293193717286,
+      "approximate_ci95": [
+        -0.018993887899918127,
+        0.15617975177426385
+      ],
+      "unknown_label_margin_bounds": [
+        0.06859293193717286,
+        0.06859293193717286
+      ],
+      "meets_historical_point_threshold": true
+    },
+    "second": {
+      "human_fact": {
+        "estimate": null,
+        "variance": null,
+        "unresolved_weight_fraction": 0.01324770942408377,
+        "unknown_label_bounds": [
+          0.8937614528795812,
+          0.907009162303665
+        ],
+        "covered_weight_fraction": null
+      },
+      "judge_label": {
+        "estimate": 0.819044502617801,
+        "variance": 0.001674677975717301,
+        "unresolved_weight_fraction": 0.0,
+        "unknown_label_bounds": [
+          0.819044502617801,
+          0.819044502617801
+        ],
+        "covered_weight_fraction": null
+      },
+      "margin": null,
+      "approximate_ci95": null,
+      "unknown_label_margin_bounds": [
+        0.07471695026178016,
+        0.08796465968586398
+      ],
+      "meets_historical_point_threshold": null
+    },
+    "adjudicated": {
+      "human_fact": {
+        "estimate": null,
+        "variance": null,
+        "unresolved_weight_fraction": 0.02,
+        "unknown_label_bounds": [
+          0.9070091623036648,
+          0.9270091623036648
+        ],
+        "covered_weight_fraction": null
+      },
+      "judge_label": {
+        "estimate": null,
+        "variance": null,
+        "unresolved_weight_fraction": 0.03261943717277487,
+        "unknown_label_bounds": [
+          0.819044502617801,
+          0.8516639397905759
+        ],
+        "covered_weight_fraction": null
+      },
+      "margin": null,
+      "approximate_ci95": null,
+      "unknown_label_margin_bounds": [
+        0.05534522251308893,
+        0.10796465968586377
+      ],
+      "meets_historical_point_threshold": null
+    },
+    "both_agree": {
+      "human_fact": {
+        "estimate": 0.937343637929792,
+        "variance": 0.0007662782620862594,
+        "unresolved_weight_fraction": 0.04649541884816754,
+        "unknown_label_bounds": null,
+        "covered_weight_fraction": 0.9535045811518325
+      },
+      "judge_label": {
+        "estimate": 0.8645358948188292,
+        "variance": 0.0014289177363189963,
+        "unresolved_weight_fraction": 0.05261943717277487,
+        "unknown_label_bounds": null,
+        "covered_weight_fraction": 0.947380562827225
+      },
+      "margin": 0.07280774311096283,
+      "approximate_ci95": [
+        -0.019022290272600287,
+        0.16463777649452593
+      ],
+      "unknown_label_margin_bounds": null,
+      "meets_historical_point_threshold": true
+    }
+  },
+  "annotation_sha256": {
+    "first": "ae4be874edd850e5697daea279fbd1cb38d7211daeef6182fabfedf861ee1961",
+    "second": "3b06806213e4bb307515f71bb22892b91089e48edff9ff15d40e54fffe300a63",
+    "adjudicated": "66ca9b9e0654158bfe257cfa73db8eae2510b16ac56788a5485a4f06545c4795"
+  },
+  "selection_sha256": "60df206199086d6d8b04ad83f9ea781675489e1b08c8549e57448d64957eddc0"
+}
