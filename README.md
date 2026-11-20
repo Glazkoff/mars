@@ -46,13 +46,13 @@ The [checkpoint release](https://huggingface.co/Glazkov/MARS-omission-checkpoint
 
 From an environment with the Hugging Face CLI and the model dependencies listed in the [release environment](https://huggingface.co/Glazkov/MARS-omission-checkpoints/tree/dc38d98ecdeaaeab9470330b76d52af570fc1d88/environment), download the scorer and one checkpoint:
 
-    hf download Glazkov/MARS-omission-checkpoints --revision dc38d98ecdeaaeab9470330b76d52af570fc1d88 --include "research/*" "results/marsc/e1/mc-A-lam1-crossenc-inv_seed20260906/model/*" --local-dir mars-example
+    hf download Glazkov/MARS-omission-checkpoints --revision dc38d98ecdeaaeab9470330b76d52af570fc1d88 --include "research/*" --include "results/marsc/e1/mc-A-lam1-crossenc-inv_seed20260906/model/*" --local-dir mars-example
     cd mars-example
     mkdir -p example-output
     printf '%s\n' '{"pair_id":"example","candidate":"The ferry sails on Monday.","source":"The ferry sails on Monday and costs five dollars.","units":[{"text":"The fare is five dollars."}]}' > example.jsonl
     python research/marsc_20260916/code/mc_score_units.py --units example=example.jsonl --models results/marsc/e1/mc-A-lam1-crossenc-inv_seed20260906/model --tag humanfact --scores-out example-output
 
-The example writes `example-output/example_humanfact_seed20260906.jsonl`. In each row, `scores` follows the input unit order. A larger score indicates stronger evidence that the candidate omits the unit. In the ferry example, the scored unit is the fare. With the example input and seed above, the recorded omission score was approximately 0.997 (one value in the scores array).
+The example writes `example-output/example_humanfact_seed20260906.jsonl`. In each row, `scores` follows the input unit order. A larger score indicates stronger evidence that the candidate omits the unit. In the ferry example, the scored unit is the fare. With the example input and seed above, the CPU run produced `"scores": [0.9967880249023438]` (approximately 0.997).
 
 The November revision results are in [results/revision](results/revision). Start with these files:
 
